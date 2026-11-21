@@ -1,0 +1,310 @@
+{
+  "status": "completed_stage_readout_development",
+  "selected_candidate": {
+    "name": "separate_shape_r8_alpha_1",
+    "kind": "separate",
+    "rank": 8,
+    "alpha": 1.0,
+    "preserve_spatial_mean": true
+  },
+  "passed_both_folds": true,
+  "folds": [
+    {
+      "fold": 1,
+      "reference": {
+        "stage2_mean_rmse_K": 1.0424203058648727,
+        "segments": [
+          {
+            "case_index": 3,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 1.2014645032383444,
+            "bias_K": -1.1331924306997532
+          },
+          {
+            "case_index": 7,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 0.6531046565556905,
+            "bias_K": 0.36361132410463104
+          },
+          {
+            "case_index": 3,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.7554283813918716,
+            "bias_K": 0.5972069991392426
+          },
+          {
+            "case_index": 7,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.859430858971666,
+            "bias_K": -0.5602709656079167
+          },
+          {
+            "case_index": 3,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 0.8112698105336905,
+            "bias_K": -0.7519527851879717
+          },
+          {
+            "case_index": 7,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 1.503842253131765,
+            "bias_K": 1.3795773781175245
+          },
+          {
+            "case_index": 3,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.6105645692427978,
+            "bias_K": 0.5185856856099758
+          },
+          {
+            "case_index": 7,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.7332527694619051,
+            "bias_K": -0.34811526286406885
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "candidate": {
+            "name": "separate_shape_r8_alpha_1",
+            "kind": "separate",
+            "rank": 8,
+            "alpha": 1.0,
+            "preserve_spatial_mean": true
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 1.0223198183259465,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 1.1731734223174901,
+                "bias_K": -1.133192430699749
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.6372750001338934,
+                "bias_K": 0.3636113241046255
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.7863193038288809,
+                "bias_K": -0.7519527851879728
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 1.4925115470235215,
+                "bias_K": 1.379577378117524
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "passed": true,
+          "fit": {
+            "rank": 8,
+            "alpha": 1.0,
+            "samples": 12,
+            "training_basis_rmse_K": 0.013075832292931371
+          }
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "reference": {
+        "stage2_mean_rmse_K": 0.8891441491868607,
+        "segments": [
+          {
+            "case_index": 1,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 0.4285423622771467,
+            "bias_K": 0.1400645622710273
+          },
+          {
+            "case_index": 5,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 1.6082184550233707,
+            "bias_K": 1.5081093379399324
+          },
+          {
+            "case_index": 1,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.4314443944641615,
+            "bias_K": 0.00022742792612512555
+          },
+          {
+            "case_index": 5,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.5520916451589454,
+            "bias_K": -0.3521168919425075
+          },
+          {
+            "case_index": 1,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 0.5929664088530192,
+            "bias_K": 0.49102197210907605
+          },
+          {
+            "case_index": 5,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 0.9268493705939066,
+            "bias_K": 0.852222657814156
+          },
+          {
+            "case_index": 1,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.5555050612370604,
+            "bias_K": -0.293967370678665
+          },
+          {
+            "case_index": 5,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.5801839059220675,
+            "bias_K": -0.4223737186959452
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "candidate": {
+            "name": "separate_shape_r8_alpha_1",
+            "kind": "separate",
+            "rank": 8,
+            "alpha": 1.0,
+            "preserve_spatial_mean": true
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 0.8773481092605074,
+            "segments": [
+              {
+                "case_index": 1,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.4252653469492752,
+                "bias_K": 0.1400645622710285
+              },
+              {
+                "case_index": 5,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 1.596811083352503,
+                "bias_K": 1.5081093379399346
+              },
+              {
+                "case_index": 1,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.4314443944641615,
+                "bias_K": 0.00022742792612512555
+              },
+              {
+                "case_index": 5,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.5520916451589454,
+                "bias_K": -0.3521168919425075
+              },
+              {
+                "case_index": 1,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.5694140177568713,
+                "bias_K": 0.491021972109076
+              },
+              {
+                "case_index": 5,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.9179019889833802,
+                "bias_K": 0.8522226578141551
+              },
+              {
+                "case_index": 1,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.5555050612370604,
+                "bias_K": -0.293967370678665
+              },
+              {
+                "case_index": 5,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.5801839059220675,
+                "bias_K": -0.4223737186959452
+              }
+            ]
+          },
+          "passed": true,
+          "fit": {
+            "rank": 8,
+            "alpha": 1.0,
+            "samples": 12,
+            "training_basis_rmse_K": 0.027435589408978264
+          }
+        }
+      ]
+    }
+  ],
+  "seconds": 2.8736089000012726,
+  "historical_test_scored": false,
+  "artifacts": {
+    "protocol.json": "d1f63c34274e8eb65ee0fdc5d9c9b46f63d6c75000edd20e8f74c8bcfaaebe05",
+    "fold1/separate_shape_r8_alpha_1/readout.pt": "b4a453d4bcd3e00b44d7d42224a41e3288469b4c2c81aeb96a4ffa3f7651b371",
+    "fold2/separate_shape_r8_alpha_1/readout.pt": "6a456f7fcb4c0ca48bbcf66b4f89166952270308479468b0b2b2812d9c332308",
+    "source/examples/fit_thermal_readout.py": "90848fc97e65c832c58970e4feae2abe96de99b5a7b6a13c5d0db3a59e5f8d4b",
+    "source/examples/stage_readout_study.py": "1fb3a0dc92882381ba420d6410b9c4a940897c1bd042256d6ad6fce54d05b043",
+    "source/SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358",
+    "source/SciML/models/v13/thermal_readout.py": "090ac9057c34112041628f45f69351034dbe34ad24b2e0f8150916505d0b86cf"
+  }
+}

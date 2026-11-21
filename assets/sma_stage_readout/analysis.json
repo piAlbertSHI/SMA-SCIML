@@ -1,0 +1,564 @@
+{
+  "status": "completed_stage_readout_report",
+  "four_segments": [
+    {
+      "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "cycle": 1,
+      "stage": 2,
+      "modal_metrics": {
+        "rmse_K": 0.9581039358784768,
+        "spatial_mean_mse_K2": 0.8916276222618543,
+        "spatial_centered_mse_K2": 0.04437985900946911
+      },
+      "shared_metrics": {
+        "rmse_K": 0.9970401974334528,
+        "spatial_mean_mse_K2": 0.9664916901567744,
+        "spatial_centered_mse_K2": 0.03990954041545595
+      },
+      "staged_metrics": {
+        "rmse_K": 0.9902462424422622,
+        "spatial_mean_mse_K2": 0.9664916901567748,
+        "spatial_centered_mse_K2": 0.026888938772612597
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "cycle": 2,
+      "stage": 2,
+      "modal_metrics": {
+        "rmse_K": 0.9258730022700762,
+        "spatial_mean_mse_K2": 0.8469465478216202,
+        "spatial_centered_mse_K2": 0.027566603190086428
+      },
+      "shared_metrics": {
+        "rmse_K": 0.9722880045842,
+        "spatial_mean_mse_K2": 0.9261835016699939,
+        "spatial_centered_mse_K2": 0.0357029392047011
+      },
+      "staged_metrics": {
+        "rmse_K": 0.9679923243199932,
+        "spatial_mean_mse_K2": 0.9261835016699935,
+        "spatial_centered_mse_K2": 0.02740480287368889
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "cycle": 3,
+      "stage": 2,
+      "modal_metrics": {
+        "rmse_K": 0.41019104436769444,
+        "spatial_mean_mse_K2": 0.07011592552111862,
+        "spatial_centered_mse_K2": 0.10251522828932662
+      },
+      "shared_metrics": {
+        "rmse_K": 0.41182591921722406,
+        "spatial_mean_mse_K2": 0.06132006114604644,
+        "spatial_centered_mse_K2": 0.11008555230594312
+      },
+      "staged_metrics": {
+        "rmse_K": 0.33091776792170396,
+        "spatial_mean_mse_K2": 0.06132006114604632,
+        "spatial_centered_mse_K2": 0.05200293543605966
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c",
+      "cycle": 1,
+      "stage": 2,
+      "modal_metrics": {
+        "rmse_K": 1.5799481001370033,
+        "spatial_mean_mse_K2": 2.0590884291809637,
+        "spatial_centered_mse_K2": 0.44938305266792683
+      },
+      "shared_metrics": {
+        "rmse_K": 1.5802039284763187,
+        "spatial_mean_mse_K2": 1.9570004739513651,
+        "spatial_centered_mse_K2": 0.5467228157759899
+      },
+      "staged_metrics": {
+        "rmse_K": 1.5520267682756028,
+        "spatial_mean_mse_K2": 1.957000473951365,
+        "spatial_centered_mse_K2": 0.4574603764798377
+      }
+    }
+  ],
+  "all_segments": [
+    {
+      "case_id": "confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c",
+      "cycle": 1,
+      "stage": 2,
+      "modal_metrics": {
+        "rmse_K": 0.38303637024725695,
+        "spatial_mean_mse_K2": 0.11691355645036276,
+        "spatial_centered_mse_K2": 0.034206966053208804
+      },
+      "shared_metrics": {
+        "rmse_K": 0.15025866930664733,
+        "spatial_mean_mse_K2": 0.016819927094540995,
+        "spatial_centered_mse_K2": 0.006523248385636945
+      },
+      "staged_metrics": {
+        "rmse_K": 0.1332580959342791,
+        "spatial_mean_mse_K2": 0.016819927094541016,
+        "spatial_centered_mse_K2": 0.0018723520440404248
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c",
+      "cycle": 1,
+      "stage": 4,
+      "modal_metrics": {
+        "rmse_K": 0.2588953435735705,
+        "spatial_mean_mse_K2": 0.03633253980134115,
+        "spatial_centered_mse_K2": 0.030906005395146013
+      },
+      "shared_metrics": {
+        "rmse_K": 0.23435685124689665,
+        "spatial_mean_mse_K2": 0.022484135983608617,
+        "spatial_centered_mse_K2": 0.032886684732113945
+      },
+      "staged_metrics": {
+        "rmse_K": 0.23435685124689665,
+        "spatial_mean_mse_K2": 0.022484135983608617,
+        "spatial_centered_mse_K2": 0.032886684732113945
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c",
+      "cycle": 2,
+      "stage": 2,
+      "modal_metrics": {
+        "rmse_K": 0.27575774832783895,
+        "spatial_mean_mse_K2": 0.06352755817811491,
+        "spatial_centered_mse_K2": 0.013978833746756817
+      },
+      "shared_metrics": {
+        "rmse_K": 0.15069499927178118,
+        "spatial_mean_mse_K2": 0.010873050853071923,
+        "spatial_centered_mse_K2": 0.013005570371286237
+      },
+      "staged_metrics": {
+        "rmse_K": 0.14135862182667006,
+        "spatial_mean_mse_K2": 0.010873050853071942,
+        "spatial_centered_mse_K2": 0.010029369919932385
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c",
+      "cycle": 2,
+      "stage": 4,
+      "modal_metrics": {
+        "rmse_K": 0.29241156075998154,
+        "spatial_mean_mse_K2": 0.054854157573092734,
+        "spatial_centered_mse_K2": 0.03109321634293212
+      },
+      "shared_metrics": {
+        "rmse_K": 0.25016591225815754,
+        "spatial_mean_mse_K2": 0.026215413619775956,
+        "spatial_centered_mse_K2": 0.036503060042234324
+      },
+      "staged_metrics": {
+        "rmse_K": 0.25016591225815754,
+        "spatial_mean_mse_K2": 0.026215413619775956,
+        "spatial_centered_mse_K2": 0.036503060042234324
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "cycle": 1,
+      "stage": 2,
+      "modal_metrics": {
+        "rmse_K": 0.9581039358784768,
+        "spatial_mean_mse_K2": 0.8916276222618543,
+        "spatial_centered_mse_K2": 0.04437985900946911
+      },
+      "shared_metrics": {
+        "rmse_K": 0.9970401974334528,
+        "spatial_mean_mse_K2": 0.9664916901567744,
+        "spatial_centered_mse_K2": 0.03990954041545595
+      },
+      "staged_metrics": {
+        "rmse_K": 0.9902462424422622,
+        "spatial_mean_mse_K2": 0.9664916901567748,
+        "spatial_centered_mse_K2": 0.026888938772612597
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "cycle": 1,
+      "stage": 4,
+      "modal_metrics": {
+        "rmse_K": 1.2034807456226568,
+        "spatial_mean_mse_K2": 0.6807652995423745,
+        "spatial_centered_mse_K2": 0.7710185360173872
+      },
+      "shared_metrics": {
+        "rmse_K": 0.8309980087172835,
+        "spatial_mean_mse_K2": 0.4123015833721649,
+        "spatial_centered_mse_K2": 0.2908402083935677
+      },
+      "staged_metrics": {
+        "rmse_K": 0.8309980087172835,
+        "spatial_mean_mse_K2": 0.4123015833721649,
+        "spatial_centered_mse_K2": 0.2908402083935677
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "cycle": 2,
+      "stage": 2,
+      "modal_metrics": {
+        "rmse_K": 0.9258730022700762,
+        "spatial_mean_mse_K2": 0.8469465478216202,
+        "spatial_centered_mse_K2": 0.027566603190086428
+      },
+      "shared_metrics": {
+        "rmse_K": 0.9722880045842,
+        "spatial_mean_mse_K2": 0.9261835016699939,
+        "spatial_centered_mse_K2": 0.0357029392047011
+      },
+      "staged_metrics": {
+        "rmse_K": 0.9679923243199932,
+        "spatial_mean_mse_K2": 0.9261835016699935,
+        "spatial_centered_mse_K2": 0.02740480287368889
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "cycle": 2,
+      "stage": 4,
+      "modal_metrics": {
+        "rmse_K": 1.6335299565041266,
+        "spatial_mean_mse_K2": 1.3172777851813418,
+        "spatial_centered_mse_K2": 1.355357714316739
+      },
+      "shared_metrics": {
+        "rmse_K": 1.1502747825044317,
+        "spatial_mean_mse_K2": 0.8118833046539011,
+        "spatial_centered_mse_K2": 0.5191390224287928
+      },
+      "staged_metrics": {
+        "rmse_K": 1.1502747825044317,
+        "spatial_mean_mse_K2": 0.8118833046539011,
+        "spatial_centered_mse_K2": 0.5191390224287928
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "cycle": 3,
+      "stage": 2,
+      "modal_metrics": {
+        "rmse_K": 0.41019104436769444,
+        "spatial_mean_mse_K2": 0.07011592552111862,
+        "spatial_centered_mse_K2": 0.10251522828932662
+      },
+      "shared_metrics": {
+        "rmse_K": 0.41182591921722406,
+        "spatial_mean_mse_K2": 0.06132006114604644,
+        "spatial_centered_mse_K2": 0.11008555230594312
+      },
+      "staged_metrics": {
+        "rmse_K": 0.33091776792170396,
+        "spatial_mean_mse_K2": 0.06132006114604632,
+        "spatial_centered_mse_K2": 0.05200293543605966
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "cycle": 3,
+      "stage": 4,
+      "modal_metrics": {
+        "rmse_K": 1.6844318448820976,
+        "spatial_mean_mse_K2": 1.5029971182744528,
+        "spatial_centered_mse_K2": 1.349719481148517
+      },
+      "shared_metrics": {
+        "rmse_K": 1.2320579793492301,
+        "spatial_mean_mse_K2": 1.0133782712456387,
+        "spatial_centered_mse_K2": 0.5254361314001043
+      },
+      "staged_metrics": {
+        "rmse_K": 1.2320579793492301,
+        "spatial_mean_mse_K2": 1.0133782712456387,
+        "spatial_centered_mse_K2": 0.5254361314001043
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_10_confirm50_recas_047_r40_t200_p1584_v1019_t2p4_1c_2c",
+      "cycle": 1,
+      "stage": 2,
+      "modal_metrics": {
+        "rmse_K": 0.4702926459205307,
+        "spatial_mean_mse_K2": 0.12406848758752949,
+        "spatial_centered_mse_K2": 0.09967193669949952
+      },
+      "shared_metrics": {
+        "rmse_K": 0.3787840876379986,
+        "spatial_mean_mse_K2": 0.0803177166878581,
+        "spatial_centered_mse_K2": 0.0638302941410085
+      },
+      "staged_metrics": {
+        "rmse_K": 0.33047556180581833,
+        "spatial_mean_mse_K2": 0.08031771668785816,
+        "spatial_centered_mse_K2": 0.029633150430902578
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_10_confirm50_recas_047_r40_t200_p1584_v1019_t2p4_1c_2c",
+      "cycle": 1,
+      "stage": 4,
+      "modal_metrics": {
+        "rmse_K": 0.5109824607020426,
+        "spatial_mean_mse_K2": 0.09447538493655644,
+        "spatial_centered_mse_K2": 0.167673423497283
+      },
+      "shared_metrics": {
+        "rmse_K": 0.43234890711074686,
+        "spatial_mean_mse_K2": 0.050493859749903225,
+        "spatial_centered_mse_K2": 0.1366221236721407
+      },
+      "staged_metrics": {
+        "rmse_K": 0.43234890711074686,
+        "spatial_mean_mse_K2": 0.050493859749903225,
+        "spatial_centered_mse_K2": 0.1366221236721407
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_10_confirm50_recas_047_r40_t200_p1584_v1019_t2p4_1c_2c",
+      "cycle": 2,
+      "stage": 2,
+      "modal_metrics": {
+        "rmse_K": 0.3235250438550157,
+        "spatial_mean_mse_K2": 0.05375170509983371,
+        "spatial_centered_mse_K2": 0.053148495390278584
+      },
+      "shared_metrics": {
+        "rmse_K": 0.2374512815576313,
+        "spatial_mean_mse_K2": 0.01964140497198092,
+        "spatial_centered_mse_K2": 0.03701760525494194
+      },
+      "staged_metrics": {
+        "rmse_K": 0.22127296616522926,
+        "spatial_mean_mse_K2": 0.019641404971980886,
+        "spatial_centered_mse_K2": 0.0296655142993071
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_10_confirm50_recas_047_r40_t200_p1584_v1019_t2p4_1c_2c",
+      "cycle": 2,
+      "stage": 4,
+      "modal_metrics": {
+        "rmse_K": 0.5016046238796702,
+        "spatial_mean_mse_K2": 0.12378307632270873,
+        "spatial_centered_mse_K2": 0.13072210560458078
+      },
+      "shared_metrics": {
+        "rmse_K": 0.3889336660878409,
+        "spatial_mean_mse_K2": 0.06349852962325264,
+        "spatial_centered_mse_K2": 0.08894871389762922
+      },
+      "staged_metrics": {
+        "rmse_K": 0.3889336660878409,
+        "spatial_mean_mse_K2": 0.06349852962325264,
+        "spatial_centered_mse_K2": 0.08894871389762922
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c",
+      "cycle": 1,
+      "stage": 2,
+      "modal_metrics": {
+        "rmse_K": 1.5799481001370033,
+        "spatial_mean_mse_K2": 2.0590884291809637,
+        "spatial_centered_mse_K2": 0.44938305266792683
+      },
+      "shared_metrics": {
+        "rmse_K": 1.5802039284763187,
+        "spatial_mean_mse_K2": 1.9570004739513651,
+        "spatial_centered_mse_K2": 0.5467228157759899
+      },
+      "staged_metrics": {
+        "rmse_K": 1.5520267682756028,
+        "spatial_mean_mse_K2": 1.957000473951365,
+        "spatial_centered_mse_K2": 0.4574603764798377
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c",
+      "cycle": 1,
+      "stage": 4,
+      "modal_metrics": {
+        "rmse_K": 1.0378722260024462,
+        "spatial_mean_mse_K2": 0.2793536340016925,
+        "spatial_centered_mse_K2": 0.7990725861179021
+      },
+      "shared_metrics": {
+        "rmse_K": 0.7715713567675667,
+        "spatial_mean_mse_K2": 0.1705347907369239,
+        "spatial_centered_mse_K2": 0.4252542877232572
+      },
+      "staged_metrics": {
+        "rmse_K": 0.7715713567675667,
+        "spatial_mean_mse_K2": 0.1705347907369239,
+        "spatial_centered_mse_K2": 0.4252542877232572
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c",
+      "cycle": 2,
+      "stage": 2,
+      "modal_metrics": {
+        "rmse_K": 1.9568631408163206,
+        "spatial_mean_mse_K2": 3.290499932484084,
+        "spatial_centered_mse_K2": 0.5430688993798937
+      },
+      "shared_metrics": {
+        "rmse_K": 1.938642548336869,
+        "spatial_mean_mse_K2": 3.1471532959375974,
+        "spatial_centered_mse_K2": 0.6148214083980245
+      },
+      "staged_metrics": {
+        "rmse_K": 1.8990873195960736,
+        "spatial_mean_mse_K2": 3.147153295937597,
+        "spatial_centered_mse_K2": 0.4628078218203995
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c",
+      "cycle": 2,
+      "stage": 4,
+      "modal_metrics": {
+        "rmse_K": 1.4544342966299235,
+        "spatial_mean_mse_K2": 0.4621839962444141,
+        "spatial_centered_mse_K2": 1.654780569911317
+      },
+      "shared_metrics": {
+        "rmse_K": 1.0140285687572266,
+        "spatial_mean_mse_K2": 0.21130534162116754,
+        "spatial_centered_mse_K2": 0.820040563960806
+      },
+      "staged_metrics": {
+        "rmse_K": 1.0140285687572266,
+        "spatial_mean_mse_K2": 0.21130534162116754,
+        "spatial_centered_mse_K2": 0.820040563960806
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c",
+      "cycle": 3,
+      "stage": 2,
+      "modal_metrics": {
+        "rmse_K": 1.2067316711963019,
+        "spatial_mean_mse_K2": 0.8235849671696397,
+        "spatial_centered_mse_K2": 0.7034209941734365
+      },
+      "shared_metrics": {
+        "rmse_K": 1.1462801054362328,
+        "spatial_mean_mse_K2": 0.7116784477752555,
+        "spatial_centered_mse_K2": 0.6442093729036512
+      },
+      "staged_metrics": {
+        "rmse_K": 1.012269686419671,
+        "spatial_mean_mse_K2": 0.7116784477752556,
+        "spatial_centered_mse_K2": 0.35843414072411334
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c",
+      "cycle": 3,
+      "stage": 4,
+      "modal_metrics": {
+        "rmse_K": 1.567076399487368,
+        "spatial_mean_mse_K2": 0.9679278060822343,
+        "spatial_centered_mse_K2": 1.501742879283002
+      },
+      "shared_metrics": {
+        "rmse_K": 1.1163063450179072,
+        "spatial_mean_mse_K2": 0.49888854800078625,
+        "spatial_centered_mse_K2": 0.7626694132403949
+      },
+      "staged_metrics": {
+        "rmse_K": 1.1163063450179072,
+        "spatial_mean_mse_K2": 0.49888854800078625,
+        "spatial_centered_mse_K2": 0.7626694132403949
+      }
+    }
+  ],
+  "regressions_vs_shared": [],
+  "seed_segment_regressions_vs_shared": [
+    {
+      "case_id": "confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c",
+      "cycle": 2,
+      "stage": 2,
+      "seed": 20261123,
+      "modal": {
+        "rmse_K": 0.22679056290668384,
+        "spatial_mean_mse_K2": 0.0422600165783178,
+        "spatial_centered_mse_K2": 0.009173942845212717
+      },
+      "shared": {
+        "rmse_K": 0.12350453923145485,
+        "spatial_mean_mse_K2": 0.008211807531222163,
+        "spatial_centered_mse_K2": 0.0070415636795518105
+      },
+      "staged": {
+        "rmse_K": 0.1268854471372728,
+        "spatial_mean_mse_K2": 0.008211807531222241,
+        "spatial_centered_mse_K2": 0.007888109164003409
+      }
+    }
+  ],
+  "all_test_mean_rmse_K": {
+    "modal": 1.0870324548216248,
+    "shared": 0.9178943464158088,
+    "staged": 0.899921118989
+  },
+  "all_test_by_seed": [
+    {
+      "seed": 20261121,
+      "model": "modal",
+      "sma_rmse_K": 1.0586756516383093
+    },
+    {
+      "seed": 20261121,
+      "model": "shared",
+      "sma_rmse_K": 0.9523439815989819
+    },
+    {
+      "seed": 20261121,
+      "model": "staged",
+      "sma_rmse_K": 0.933040023391351
+    },
+    {
+      "seed": 20261122,
+      "model": "modal",
+      "sma_rmse_K": 1.1799528447541754
+    },
+    {
+      "seed": 20261122,
+      "model": "shared",
+      "sma_rmse_K": 0.9711128614831707
+    },
+    {
+      "seed": 20261122,
+      "model": "staged",
+      "sma_rmse_K": 0.9531151262757669
+    },
+    {
+      "seed": 20261123,
+      "model": "modal",
+      "sma_rmse_K": 1.0224688680723895
+    },
+    {
+      "seed": 20261123,
+      "model": "shared",
+      "sma_rmse_K": 0.8302261961652737
+    },
+    {
+      "seed": 20261123,
+      "model": "staged",
+      "sma_rmse_K": 0.8136082072998818
+    }
+  ],
+  "fresh_solver_calls": 0
+}

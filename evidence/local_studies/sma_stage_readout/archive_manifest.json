@@ -1,0 +1,71 @@
+{
+  "status": "local_git_archive",
+  "github_uploaded": false,
+  "runs": {
+    "diagnosis": {
+      "source_run": "run-output-sma-stage-diagnosis",
+      "copied_files": {
+        "diagnosis.json": "32ff96acab0fc6f0329208df21f8228009b4d9fa0bc7ebc250d668d2b88dbc31"
+      }
+    },
+    "initial_development": {
+      "source_run": "run-output-sma-stage-development",
+      "copied_files": {
+        "fold1/separate_r4_alpha_1/readout.pt": "deac5422d514664f08e86846873e92e253f5615df3a9bba9db01eddd49c8c4e3",
+        "fold1/separate_r4_alpha_10/readout.pt": "93fb9c03274204208d1c3a61cedbecb7e86b0a22cad76c1a7e2d14126ca22ca4",
+        "fold1/separate_r4_alpha_100/readout.pt": "6cdf43975902a959e356cdc5484d5c6803ed3be1cd1c241b35917614bc5cc9b6",
+        "fold1/separate_r8_alpha_1/readout.pt": "72d5e3937d5f476ab20adf8dc23239475779cec1220b6992d7a065d0dc5e0fa0",
+        "fold1/separate_r8_alpha_10/readout.pt": "d7eb9abf8b4447b6829b75ee1a5e4dc211286e3853fa4c8addc70b87b4d5a762",
+        "fold1/separate_r8_alpha_100/readout.pt": "780fda2ffec5e78d83d9d28d6e3a3417747fe451277dfb4e31701c9de698e56b",
+        "fold1/shared_alpha_10/readout.pt": "058c073b700e761504a8b7abbc27024c6bc688766e3b5f233338dd57fb78bb03",
+        "fold1/shared_alpha_100/readout.pt": "7e9e8c38afa3854ce010b581ced6cb49e516599ac90bbd8826cb80db1684e49f",
+        "fold1/shrink_0/readout.pt": "bf7e8a4a7ddd398153bf355364c61aaef138cdaf1d0112a424a77849d15d966e",
+        "fold1/shrink_0.5/readout.pt": "903438db1849cc64f1d169da6e535d799706ecb0e30474425b2f8edc84c16efb",
+        "fold1/shrink_0.75/readout.pt": "9b9fd71889560f3a1fd459e55be8b08e52fd13780b1a4cc9d627372fae37acea",
+        "fold2/separate_r8_alpha_1/readout.pt": "f4ea38814b82ca2f32e96030463e451d8a4a479fba925ba8cad1eac40cbbc0e4",
+        "protocol.json": "8fad17858621300f8d916282503769026d283536f40a840a2476836bc960815c",
+        "source/examples/fit_thermal_readout.py": "90848fc97e65c832c58970e4feae2abe96de99b5a7b6a13c5d0db3a59e5f8d4b",
+        "source/examples/stage_readout_study.py": "78cb7100ec70182194f0a98d90eb9291b58e0333279a7b99c0b55a9f40b2530d",
+        "source/SciML/models/v13/stage_thermal_readout.py": "edace745cca0fc584d178f42284222bbfd726818fcf6018a177f73f183c71fca",
+        "source/SciML/models/v13/thermal_readout.py": "090ac9057c34112041628f45f69351034dbe34ad24b2e0f8150916505d0b86cf",
+        "summary.json": "4d30fa6f61342f1148702cc5f1e2b02b8d3870b36eae3adf5387faa02de2d378"
+      }
+    },
+    "shape_development": {
+      "source_run": "run-output-sma-stage-shape-development",
+      "copied_files": {
+        "fold1/separate_shape_r8_alpha_1/readout.pt": "b4a453d4bcd3e00b44d7d42224a41e3288469b4c2c81aeb96a4ffa3f7651b371",
+        "fold2/separate_shape_r8_alpha_1/readout.pt": "6a456f7fcb4c0ca48bbcf66b4f89166952270308479468b0b2b2812d9c332308",
+        "protocol.json": "d1f63c34274e8eb65ee0fdc5d9c9b46f63d6c75000edd20e8f74c8bcfaaebe05",
+        "source/examples/fit_thermal_readout.py": "90848fc97e65c832c58970e4feae2abe96de99b5a7b6a13c5d0db3a59e5f8d4b",
+        "source/examples/stage_readout_study.py": "1fb3a0dc92882381ba420d6410b9c4a940897c1bd042256d6ad6fce54d05b043",
+        "source/SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358",
+        "source/SciML/models/v13/thermal_readout.py": "090ac9057c34112041628f45f69351034dbe34ad24b2e0f8150916505d0b86cf",
+        "summary.json": "d6070d7f2792dd87afc7322f9a09408037d035a0b315b52e1be876d6683051f3"
+      }
+    },
+    "formal": {
+      "source_run": "run-output-sma-stage-formal",
+      "copied_files": {
+        "protocol.json": "1f085e5240387dedbe5e6bb4df52e2d95f382279ac011abfcbed647819889b8b",
+        "s20261121/evaluation.json": "23a5c391f1c006e1d79a1d9c8608cf3282aee02b505a426b563479d8fc8de1cc",
+        "s20261121/fit.json": "b3d0a0264ff57197f04134c18c90919fe25603a72356058dfcf6ad2f7506c4a8",
+        "s20261121/model.pt": "2c0b3d32da2e8dc5aab8cf745fb7ac7837913da4563799179c0bb8668b09c944",
+        "s20261121/test_predictions.npz": "06627f7def118fd43d174efb8d9b91b69a862ce9fa09838b9a918195f52ad32e",
+        "s20261122/evaluation.json": "6ec7a237ee8ab6596806adf4d3bbd9d605aa6988a04db939afb7c3c8a607ddff",
+        "s20261122/fit.json": "d38d031b5097854a406bb548392754856b6f916e399963a2ca6f5c992ebe2240",
+        "s20261122/model.pt": "9c7bcd761a00a937eabc778f9d0b37e60ede817982fe1edaccabd9b476032d40",
+        "s20261122/test_predictions.npz": "4fac49f4f1814debde52756e8f7559ad58d3797f8bd77f7fc60f8d0d912f2d4f",
+        "s20261123/evaluation.json": "9c80939211cf5879d32ad2ae0289ca843ff9ee5772d0ea8deeb486b8b79496b8",
+        "s20261123/fit.json": "a06576f57dc467d41c54fb393080fcc1491d39c0126ca362fd74bb330e60a714",
+        "s20261123/model.pt": "13e129e12bd18e126b3ad5d7323b0a8536d8a141755843f8272c7751d353bf7b",
+        "s20261123/test_predictions.npz": "dc5754d554183d4b41ada23a1042616e3bdb9ee64badf61bd27107502df35ac2",
+        "source/examples/fit_thermal_readout.py": "90848fc97e65c832c58970e4feae2abe96de99b5a7b6a13c5d0db3a59e5f8d4b",
+        "source/examples/stage_readout_study.py": "1fb3a0dc92882381ba420d6410b9c4a940897c1bd042256d6ad6fce54d05b043",
+        "source/SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358",
+        "source/SciML/models/v13/thermal_readout.py": "090ac9057c34112041628f45f69351034dbe34ad24b2e0f8150916505d0b86cf",
+        "summary.json": "861c33dac75bdd33f49fd82d91ac5bdd2c74b701fcbd0f2bf4fd677e19acb9e3"
+      }
+    }
+  }
+}

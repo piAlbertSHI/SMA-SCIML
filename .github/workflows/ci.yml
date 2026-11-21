@@ -26,6 +26,8 @@ jobs:
       - run: python -m examples.verify_modal_evidence
       - run: python -m unittest SciML.tests.test_selective_sma SciML.tests.test_thermal_readout -v
       - run: python -m examples.verify_thermal_readout
+      - run: python -m unittest SciML.tests.test_stage_thermal_readout -v
+      - run: python -m examples.verify_stage_readout
       - run: python -m examples.modal_showcase --output demo-output-ci-modal --no-animation
       - run: node examples/test_field_explorer.cjs
       - run: node examples/test_field_explorer.cjs assets/showcase/explorer.html

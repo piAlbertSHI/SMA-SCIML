@@ -1,0 +1,25 @@
+{
+  "status": "verified_stage_thermal_readout",
+  "checkpoints_replayed": 3,
+  "cases_per_checkpoint": 4,
+  "max_replay_difference": 0.0,
+  "max_training_only_refit_difference": 0.0,
+  "max_spatial_mean_difference_K": 1.1368683772161603e-13,
+  "stage4_state_fluid_initial_exact": true,
+  "inner_folds": [
+    {
+      "runtime_refit": "passed",
+      "before_K": 1.0424203058648738,
+      "after_K": 1.0223198183259483,
+      "all_stage2_segments_nonregressing": true
+    },
+    {
+      "runtime_refit": "passed",
+      "before_K": 0.8891441491868627,
+      "after_K": 0.8773481092605098,
+      "all_stage2_segments_nonregressing": true
+    }
+  ],
+  "fresh_solver_calls": 0,
+  "neural_training_updates": 0
+}

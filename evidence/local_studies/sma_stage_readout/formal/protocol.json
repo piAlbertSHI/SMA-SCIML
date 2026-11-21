@@ -1,0 +1,38 @@
+{
+  "purpose": "fixed candidate fit on eight training cases before historical test evaluation",
+  "fresh_solver_calls": 0,
+  "neural_training_updates": 0,
+  "source_sha256": {
+    "examples/stage_readout_study.py": "1fb3a0dc92882381ba420d6410b9c4a940897c1bd042256d6ad6fce54d05b043",
+    "SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358",
+    "examples/fit_thermal_readout.py": "90848fc97e65c832c58970e4feae2abe96de99b5a7b6a13c5d0db3a59e5f8d4b",
+    "SciML/models/v13/thermal_readout.py": "090ac9057c34112041628f45f69351034dbe34ad24b2e0f8150916505d0b86cf"
+  },
+  "candidate": {
+    "name": "separate_shape_r8_alpha_1",
+    "kind": "separate",
+    "rank": 8,
+    "alpha": 1.0,
+    "preserve_spatial_mean": true
+  },
+  "development_sha256": "d6070d7f2792dd87afc7322f9a09408037d035a0b315b52e1be876d6683051f3",
+  "data_sha256": {
+    "state": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "fields": "15f5cf30948efea558ba514cafea99f146dcdc13435b66b906e58d582a721096"
+  },
+  "fit_ids": [
+    "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+    "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+    "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+    "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+    "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+    "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+    "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+    "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c"
+  ],
+  "checkpoint_sha256": {
+    "evidence/local_studies/sma_readout/formal/s20261121/model.pt": "73a4107b9ee9ac15727def7afdb31d4515727404b700a41e64c999f87cce1fb8",
+    "evidence/local_studies/sma_readout/formal/s20261122/model.pt": "ff2bc562477ed40c135e636d4d7e139d609465e7f23694342c52b870ab4d9dd6",
+    "evidence/local_studies/sma_readout/formal/s20261123/model.pt": "226e50d9c1f19214be34b5db2ffd7f89752d7c6b8276ff2404b87edb5c55eefe"
+  }
+}

@@ -67,6 +67,14 @@ def audit():
     for path in sorted(readout_root.glob('*.svg')):
         label=' '.join(''.join(node.itertext()) for node in ET.parse(path).iter() if node.tag.endswith('}text'))
         if FORBIDDEN.search(label):violations.append({'file':path.relative_to(ROOT).as_posix(),'text':'forbidden readout figure label'})
+    stage_root=ROOT/'assets/sma_stage_readout'
+    stage_manifest=json.loads((stage_root/'manifest.json').read_text())
+    for name,expected in stage_manifest['artifacts'].items():assert sha(stage_root/name)==expected,name
+    for name,expected in stage_manifest['input_sha256'].items():assert sha(ROOT/name)==expected,name
+    assert sha(ROOT/'examples/stage_readout_report.py')==stage_manifest['generator_sha256']
+    for path in sorted(stage_root.glob('*.svg')):
+        label=' '.join(''.join(node.itertext()) for node in ET.parse(path).iter() if node.tag.endswith('}text'))
+        if FORBIDDEN.search(label):violations.append({'file':path.relative_to(ROOT).as_posix(),'text':'forbidden stage figure label'})
     inventory={}
     for path in sorted(ROOT.rglob('*')):
         if not included(path):continue
@@ -87,6 +95,7 @@ def audit():
         'showcase_input_and_output_hashes_checked':True,'fresh_training_calls':0,'fresh_solver_calls':0,
         'modal_showcase_input_output_and_label_checks':True,
         'sma_readout_input_output_and_label_checks':True,
+        'stage_readout_input_output_and_label_checks':True,
         'scope':'Maintained prose, generated showcase labels and repository inventory; technical paths and immutable historical evidence retain their identifiers.',
         'browser_rendering_acceptance':'pending; tracked separately from text/array/interaction-logic checks',
         'file_categories':{k:sum(v==k for v in inventory.values()) for k in sorted(set(inventory.values()))},

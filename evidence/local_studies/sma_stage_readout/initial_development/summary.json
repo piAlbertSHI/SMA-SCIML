@@ -1,0 +1,1065 @@
+{
+  "status": "completed_stage_readout_development",
+  "selected_candidate": {
+    "name": "separate_r8_alpha_1",
+    "kind": "separate",
+    "rank": 8,
+    "alpha": 1.0
+  },
+  "passed_both_folds": false,
+  "folds": [
+    {
+      "fold": 1,
+      "reference": {
+        "stage2_mean_rmse_K": 1.0424203058648727,
+        "segments": [
+          {
+            "case_index": 3,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 1.2014645032383444,
+            "bias_K": -1.1331924306997532
+          },
+          {
+            "case_index": 7,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 0.6531046565556905,
+            "bias_K": 0.36361132410463104
+          },
+          {
+            "case_index": 3,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.7554283813918716,
+            "bias_K": 0.5972069991392426
+          },
+          {
+            "case_index": 7,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.859430858971666,
+            "bias_K": -0.5602709656079167
+          },
+          {
+            "case_index": 3,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 0.8112698105336905,
+            "bias_K": -0.7519527851879717
+          },
+          {
+            "case_index": 7,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 1.503842253131765,
+            "bias_K": 1.3795773781175245
+          },
+          {
+            "case_index": 3,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.6105645692427978,
+            "bias_K": 0.5185856856099758
+          },
+          {
+            "case_index": 7,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.7332527694619051,
+            "bias_K": -0.34811526286406885
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "candidate": {
+            "name": "shrink_0",
+            "kind": "shrink",
+            "scale": 0.0
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 1.0959167855474155,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 1.201321660431671,
+                "bias_K": -1.091346690235942
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.8083854114648349,
+                "bias_K": 0.40177639932056486
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.8425066419086928,
+                "bias_K": -0.7449649556621817
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 1.531453428384463,
+                "bias_K": 1.3563339650753126
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "passed": false,
+          "fit": {
+            "scale": 0.0
+          }
+        },
+        {
+          "candidate": {
+            "name": "shrink_0.5",
+            "kind": "shrink",
+            "scale": 0.5
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 1.063999124612502,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 1.1974568721321628,
+                "bias_K": -1.1122695604678476
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.7253805589204241,
+                "bias_K": 0.3826938617125978
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.8204416142977378,
+                "bias_K": -0.7484588704250761
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 1.5127174530996834,
+                "bias_K": 1.3679556715964183
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "passed": false,
+          "fit": {
+            "scale": 0.5
+          }
+        },
+        {
+          "candidate": {
+            "name": "shrink_0.75",
+            "kind": "shrink",
+            "scale": 0.75
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 1.0518476410995463,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 1.1984779352110655,
+                "bias_K": -1.1227309955838003
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.6876783255393878,
+                "bias_K": 0.37315259290861486
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.8142024724860144,
+                "bias_K": -0.750205827806524
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 1.5070318311617175,
+                "bias_K": 1.373766524856972
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "passed": false,
+          "fit": {
+            "scale": 0.75
+          }
+        },
+        {
+          "candidate": {
+            "name": "shared_alpha_10",
+            "kind": "shared",
+            "rank": 12,
+            "alpha": 10.0
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 1.0711694634749889,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 1.2303185650336197,
+                "bias_K": -1.1434190445278045
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.7180935285351161,
+                "bias_K": 0.34240945925460153
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.8410721184010789,
+                "bias_K": -0.7568702154809382
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 1.4951936419301406,
+                "bias_K": 1.3347874351973272
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "passed": false,
+          "fit": {
+            "rank": 12,
+            "alpha": 10.0,
+            "samples": 24,
+            "training_basis_rmse_K": 0.02500257973742164
+          }
+        },
+        {
+          "candidate": {
+            "name": "shared_alpha_100",
+            "kind": "shared",
+            "rank": 12,
+            "alpha": 100.0
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 1.0894552549361443,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 1.2171876834286435,
+                "bias_K": -1.1148988732684668
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.7770652586589178,
+                "bias_K": 0.37973727001835317
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.8275650273245232,
+                "bias_K": -0.7312716351571014
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 1.5360030503324926,
+                "bias_K": 1.3794826016771378
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "passed": false,
+          "fit": {
+            "rank": 12,
+            "alpha": 100.0,
+            "samples": 24,
+            "training_basis_rmse_K": 0.02500257973742164
+          }
+        },
+        {
+          "candidate": {
+            "name": "separate_r4_alpha_1",
+            "kind": "separate",
+            "rank": 4,
+            "alpha": 1.0
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 0.8262368018024058,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.883808946566599,
+                "bias_K": -0.8347816235468116
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.47228040765471024,
+                "bias_K": 0.3633289322935093
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.5613130034966092,
+                "bias_K": -0.46716296647238753
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 1.3875448494917044,
+                "bias_K": 1.3034605606002332
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "passed": true,
+          "fit": {
+            "rank": 4,
+            "alpha": 1.0,
+            "samples": 12,
+            "training_basis_rmse_K": 0.09300635792068965
+          }
+        },
+        {
+          "candidate": {
+            "name": "separate_r4_alpha_10",
+            "kind": "separate",
+            "rank": 4,
+            "alpha": 10.0
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 0.9495803785994692,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 1.1023681968544694,
+                "bias_K": -1.0395165593722069
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.5562271743832555,
+                "bias_K": 0.3657538945174764
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.6760295642111911,
+                "bias_K": -0.6165806927880887
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 1.4636965789489602,
+                "bias_K": 1.371771803761749
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "passed": true,
+          "fit": {
+            "rank": 4,
+            "alpha": 10.0,
+            "samples": 12,
+            "training_basis_rmse_K": 0.09300635792068965
+          }
+        },
+        {
+          "candidate": {
+            "name": "separate_r4_alpha_100",
+            "kind": "separate",
+            "rank": 4,
+            "alpha": 100.0
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 1.046956002895933,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 1.1918440039790548,
+                "bias_K": -1.0838997798911052
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.7087014795024394,
+                "bias_K": 0.36513964537843907
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.7764387427001912,
+                "bias_K": -0.6889236973667164
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 1.510839785402047,
+                "bias_K": 1.373588256322702
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "passed": false,
+          "fit": {
+            "rank": 4,
+            "alpha": 100.0,
+            "samples": 12,
+            "training_basis_rmse_K": 0.09300635792068965
+          }
+        },
+        {
+          "candidate": {
+            "name": "separate_r8_alpha_1",
+            "kind": "separate",
+            "rank": 8,
+            "alpha": 1.0
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 0.8209088365871473,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.8699932111876835,
+                "bias_K": -0.8324980720120377
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.47906993509500523,
+                "bias_K": 0.368273959581979
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.5462194585277658,
+                "bias_K": -0.4672900399174474
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 1.388352741538135,
+                "bias_K": 1.3068952638881297
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "passed": true,
+          "fit": {
+            "rank": 8,
+            "alpha": 1.0,
+            "samples": 12,
+            "training_basis_rmse_K": 0.013075832292931371
+          }
+        },
+        {
+          "candidate": {
+            "name": "separate_r8_alpha_10",
+            "kind": "separate",
+            "rank": 8,
+            "alpha": 10.0
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 0.9441986936353113,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 1.0920762748899362,
+                "bias_K": -1.0370531388748845
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.5607198621825243,
+                "bias_K": 0.3702498100160809
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.6623645249605344,
+                "bias_K": -0.6161518837344067
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 1.4616341125082506,
+                "bias_K": 1.3744696097730016
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "passed": true,
+          "fit": {
+            "rank": 8,
+            "alpha": 10.0,
+            "samples": 12,
+            "training_basis_rmse_K": 0.013075832292931371
+          }
+        },
+        {
+          "candidate": {
+            "name": "separate_r8_alpha_100",
+            "kind": "separate",
+            "rank": 8,
+            "alpha": 100.0
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 1.0406204446363363,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 1.1857068125155887,
+                "bias_K": -1.0829141827903908
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.7063561200260197,
+                "bias_K": 0.36712507079589896
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.767947494075771,
+                "bias_K": -0.6890524554643539
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 1.5024713519279662,
+                "bias_K": 1.3740647834579716
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "passed": false,
+          "fit": {
+            "rank": 8,
+            "alpha": 100.0,
+            "samples": 12,
+            "training_basis_rmse_K": 0.013075832292931371
+          }
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "reference": {
+        "stage2_mean_rmse_K": 0.8891441491868607,
+        "segments": [
+          {
+            "case_index": 1,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 0.4285423622771467,
+            "bias_K": 0.1400645622710273
+          },
+          {
+            "case_index": 5,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 1.6082184550233707,
+            "bias_K": 1.5081093379399324
+          },
+          {
+            "case_index": 1,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.4314443944641615,
+            "bias_K": 0.00022742792612512555
+          },
+          {
+            "case_index": 5,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.5520916451589454,
+            "bias_K": -0.3521168919425075
+          },
+          {
+            "case_index": 1,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 0.5929664088530192,
+            "bias_K": 0.49102197210907605
+          },
+          {
+            "case_index": 5,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 0.9268493705939066,
+            "bias_K": 0.852222657814156
+          },
+          {
+            "case_index": 1,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.5555050612370604,
+            "bias_K": -0.293967370678665
+          },
+          {
+            "case_index": 5,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.5801839059220675,
+            "bias_K": -0.4223737186959452
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "candidate": {
+            "name": "separate_r8_alpha_1",
+            "kind": "separate",
+            "rank": 8,
+            "alpha": 1.0
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 0.8603966780473791,
+            "segments": [
+              {
+                "case_index": 1,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.4136745934261995,
+                "bias_K": 0.298595345468463
+              },
+              {
+                "case_index": 5,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 1.4438880901441578,
+                "bias_K": 1.3820801847913764
+              },
+              {
+                "case_index": 1,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.4314443944641615,
+                "bias_K": 0.00022742792612512555
+              },
+              {
+                "case_index": 5,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.5520916451589454,
+                "bias_K": -0.3521168919425075
+              },
+              {
+                "case_index": 1,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.7021874629219397,
+                "bias_K": 0.6697224435789788
+              },
+              {
+                "case_index": 5,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.8818365656972189,
+                "bias_K": 0.8397666095946263
+              },
+              {
+                "case_index": 1,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.5555050612370604,
+                "bias_K": -0.293967370678665
+              },
+              {
+                "case_index": 5,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.5801839059220675,
+                "bias_K": -0.4223737186959452
+              }
+            ]
+          },
+          "passed": false,
+          "fit": {
+            "rank": 8,
+            "alpha": 1.0,
+            "samples": 12,
+            "training_basis_rmse_K": 0.027435589408978264
+          }
+        }
+      ]
+    }
+  ],
+  "seconds": 3.1741497999901185,
+  "historical_test_scored": false,
+  "artifacts": {
+    "protocol.json": "8fad17858621300f8d916282503769026d283536f40a840a2476836bc960815c",
+    "fold1/separate_r4_alpha_1/readout.pt": "deac5422d514664f08e86846873e92e253f5615df3a9bba9db01eddd49c8c4e3",
+    "fold1/separate_r4_alpha_10/readout.pt": "93fb9c03274204208d1c3a61cedbecb7e86b0a22cad76c1a7e2d14126ca22ca4",
+    "fold1/separate_r4_alpha_100/readout.pt": "6cdf43975902a959e356cdc5484d5c6803ed3be1cd1c241b35917614bc5cc9b6",
+    "fold1/separate_r8_alpha_1/readout.pt": "72d5e3937d5f476ab20adf8dc23239475779cec1220b6992d7a065d0dc5e0fa0",
+    "fold1/separate_r8_alpha_10/readout.pt": "d7eb9abf8b4447b6829b75ee1a5e4dc211286e3853fa4c8addc70b87b4d5a762",
+    "fold1/separate_r8_alpha_100/readout.pt": "780fda2ffec5e78d83d9d28d6e3a3417747fe451277dfb4e31701c9de698e56b",
+    "fold1/shared_alpha_10/readout.pt": "058c073b700e761504a8b7abbc27024c6bc688766e3b5f233338dd57fb78bb03",
+    "fold1/shared_alpha_100/readout.pt": "7e9e8c38afa3854ce010b581ced6cb49e516599ac90bbd8826cb80db1684e49f",
+    "fold1/shrink_0/readout.pt": "bf7e8a4a7ddd398153bf355364c61aaef138cdaf1d0112a424a77849d15d966e",
+    "fold1/shrink_0.5/readout.pt": "903438db1849cc64f1d169da6e535d799706ecb0e30474425b2f8edc84c16efb",
+    "fold1/shrink_0.75/readout.pt": "9b9fd71889560f3a1fd459e55be8b08e52fd13780b1a4cc9d627372fae37acea",
+    "fold2/separate_r8_alpha_1/readout.pt": "f4ea38814b82ca2f32e96030463e451d8a4a479fba925ba8cad1eac40cbbc0e4",
+    "source/examples/fit_thermal_readout.py": "90848fc97e65c832c58970e4feae2abe96de99b5a7b6a13c5d0db3a59e5f8d4b",
+    "source/examples/stage_readout_study.py": "78cb7100ec70182194f0a98d90eb9291b58e0333279a7b99c0b55a9f40b2530d",
+    "source/SciML/models/v13/stage_thermal_readout.py": "edace745cca0fc584d178f42284222bbfd726818fcf6018a177f73f183c71fca",
+    "source/SciML/models/v13/thermal_readout.py": "090ac9057c34112041628f45f69351034dbe34ad24b2e0f8150916505d0b86cf"
+  }
+}
