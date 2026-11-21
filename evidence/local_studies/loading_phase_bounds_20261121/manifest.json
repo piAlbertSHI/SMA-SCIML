@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "phase_front_diagnostics.png": "40830cd6583bef69ba4e9f42d0c0ff1143e04fa7c32e339a4fccd105d15be001",
+    "phase_ridge.npz": "fe8a23c9b2479f5d274777b66057483694ab390fb134c435be62438224839dfa",
+    "phase_violations.csv": "41cf7f20f0988601b2c072a62b22b27996c717c6cc7fb06bf917a954911a08eb",
+    "protocol.json": "b04577be36ac289f33075dab735c430b01bd76b10bb767b8c89646449167f34f",
+    "summary.json": "988e5004ffb0ad74792463da9b4a8999bd0d3bbe160b3e98571954e71ccdc87b"
+  }
+}

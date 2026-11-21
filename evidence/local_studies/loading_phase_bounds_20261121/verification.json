@@ -1,0 +1,42 @@
+{
+  "status": "verified",
+  "summary_sha256": "988e5004ffb0ad74792463da9b4a8999bd0d3bbe160b3e98571954e71ccdc87b",
+  "test_violation_coordinates_and_values_verified": 899,
+  "nonphase_channels_elementwise_equal": true,
+  "phase_bounds_and_time_monotonicity_passed": true,
+  "test_transition_by_material": {
+    "recA": {
+      "cases": 15,
+      "points": 5469,
+      "clipped_front_rmse": 0.01171861448935598,
+      "constrained_front_rmse": 0.004656952047109108
+    },
+    "recAs": {
+      "cases": 15,
+      "points": 5364,
+      "clipped_front_rmse": 0.00421964658432175,
+      "constrained_front_rmse": 0.004263541873457123
+    }
+  },
+  "test_case_front_rmse_increases_vs_clipping": {
+    "paper220_reca_006_r35_t175_p0916_v0959_t2p4_1c": 0.0002541055646668208,
+    "paper220_recas_196_r38_t190_p1282_v0935_t2p4_1c": 0.0008348633181416024,
+    "paper220_recas_116_r38_t190_p1172_v0826_t2p4_1c": 0.0028405175127067146,
+    "paper220_recas_176_r42_t210_p1290_v1181_t2p4_1c": 0.0010054838648930163,
+    "paper220_recas_154_r42_t210_p1318_v0950_t2p4_1c": 0.00039033964383427405
+  },
+  "test_threshold_0p9_missed_nodes_by_case": {
+    "clipped": {
+      "paper220_recas_117_r40_t200_p1590_v1098_t2p4_1c": 1,
+      "paper220_recas_122_r38_t190_p1588_v0874_t2p4_1c": 1,
+      "paper220_recas_209_r40_t200_p1496_v0849_t2p8_1c": 7
+    },
+    "constrained": {
+      "paper220_recas_117_r40_t200_p1590_v1098_t2p4_1c": 2,
+      "paper220_recas_194_r35_t175_p1654_v0921_t2p4_1c": 1,
+      "paper220_recas_122_r38_t190_p1588_v0874_t2p4_1c": 2,
+      "paper220_recas_209_r40_t200_p1496_v0849_t2p8_1c": 7
+    }
+  },
+  "fresh_solver_calls": 0
+}

@@ -1,0 +1,63 @@
+{
+  "study": "Bounds and transformation fronts during first loading on a fixed numerical archive",
+  "base_file_sha256": {
+    "loading_data.npz": "f0b9554de0b5a44202fc84badf5576f83fb914b88b23660d90e47d80010bdfe7",
+    "pod_ridge.npz": "bf72d6bd3e0a3aee9fd737ee8cc3fafce95e09bec372737ccb3bc917c3ef8a59",
+    "test_predictions.npz": "5a1365a7e62851a50899f9335b710b57fdfd329264685237638db2e073e87d15",
+    "protocol.json": "e77b5cfaca1825ca8201796e979fecbdf2f598aa57c3f4d300a907604193bc46",
+    "summary.json": "1d6a4e9c2f9a41db3123a8cfa4be7b9da5016dc8aee90dff5806646e1066d221"
+  },
+  "source_sha256": {
+    "examples/loading_phase_study.py": "aaba48095a6329587c373821f0ae2859bc1bfc6755baa8abaf8904244d2bd6eb",
+    "examples/loading_phase_report.py": "a5ed215ab17c60fa5fb593961ac984780b4f4ee54a613af759ba51178bf66428",
+    "SciML/models/v13/loading_phase_reconstruction.py": "ec5a08e81d0ed35a371af1ee0c7aa4c5be5390b2ed882d72f373d33f1eca93e2",
+    "examples/loading_field_benchmark.py": "07a255a94eb8f83fab589c31123415193bc0c980337b57aa8c00d2545599ae6f",
+    "SciML/models/v13/loading_field_operator.py": "05477d4d26009eaed07f85718521f59550d4d19234f3e92c16254d0afd514b54",
+    "SciML/models/v12/learning_coordinate_operator.py": "ca25e4c97c90f0e853879b3d8e76f394658f13d709e6494b88aff5e4456e69e3"
+  },
+  "case_counts": {
+    "train": 140,
+    "validation": 30,
+    "test": 30
+  },
+  "native_grid": [
+    50,
+    51
+  ],
+  "fit_grid": [
+    26,
+    26
+  ],
+  "basis_rank": 8,
+  "fit_budget": "Shared frozen rank-eight POD; one Ridge coefficient fit per readout, alpha=1. No basis refit.",
+  "new_ridge_fits": 1,
+  "fit_scope": "Phase only; the pressure mean for each material uses the training partition.",
+  "methods": {
+    "raw": "Original POD/Ridge with bilinear interpolation.",
+    "clipped": "Original native-grid phase clipped pointwise to [0, 1].",
+    "monotone_linear": "Bounded isotonic projection at the original POD phase anchors; linear resampling.",
+    "monotone_cubic": "Same constrained anchors; shape-preserving cubic time and linear radial interpolation.",
+    "material_pressure_raw": "Material-centered pressure and its interaction in the phase Ridge; raw ablation.",
+    "material_pressure_monotone": "Material-dependent pressure Ridge with bounded isotonic anchors and linear resampling."
+  },
+  "violation_tolerance": 1e-06,
+  "temporal_decrease_tolerance": 1e-12,
+  "transition_band": [
+    0.1,
+    0.9
+  ],
+  "arrival_thresholds": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "selection_candidates": [
+    "clipped",
+    "monotone_linear",
+    "monotone_cubic",
+    "material_pressure_monotone"
+  ],
+  "selection": "Minimum validation RMSE inside the reference transition band, evaluated before the fixed test retest.",
+  "arrival_comparison": "First crossing by linear interpolation of native samples; common reachable radial nodes across all predictors and reference. Report missed and false crossings separately.",
+  "fresh_solver_calls": 0
+}

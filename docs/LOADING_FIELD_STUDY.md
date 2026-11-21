@@ -64,6 +64,8 @@ Neural RMSE is averaged across seeds with sample standard deviation. The final c
 
 POD/Ridge is the reference for first loading at this budget and within the archived material–geometry range. The charts show where the neural models lose accuracy near the transformation front and the mechanical boundary. Different loading protocols, independent material or aspect-ratio coverage, and transfer from loading to unloading and cycle rollout remain open. / 在当前数据范围和预算下，以 POD/Ridge 作为首循环加载阶段的参考基线。图中可见神经模型在相变前沿和力学边界附近的误差。跨加载协议、独立材料或厚径比，以及向卸载和跨循环推进的迁移仍待核验。
 
+A phase-only follow-up locates every POD/Ridge violation and compares direct clipping with material-conditioned bounded reconstruction. / 后续相分数专项已定位 POD/Ridge 越界点，并对照直接裁剪与材料条件有界重建。 [Phase constraints and front accuracy / 相分数约束与前沿精度](LOADING_PHASE_CONSTRAINTS.md)
+
 ## Verification / 验证
 
 The source HDF5 fields match the loading snapshot. All ten saved checkpoints reproduced their stored test predictions exactly in the recorded local environment. The replay checks the fixed split, the train-only POD refit, paired field and energy identities and all initial fields. / 加载快照与来源 HDF5 完全一致。10 个保存的检查点在记录的本地环境中逐点复现测试预测。回放还校验了固定工况划分、仅用训练集重建的 POD、跨版本场与能量恒等关系和全部首帧。 [Verification record / 验证记录](../evidence/local_studies/loading_field_benchmark_20261121/verification.json) · [Artifact hashes / 产物哈希](../evidence/local_studies/loading_field_benchmark_20261121/manifest.json) · [Figure provenance / 图表来源](../assets/loading_field_study/manifest.json)
