@@ -1,0 +1,14 @@
+{
+  "artifacts": {
+    "analysis.json": "353e65fc7f4def0c6ad82999dbf90c27c4797654c21287a9382f3a54f4e277c0",
+    "inspected_physics_source/Build_Diameter_Strip_Geometry.m": "d55cb8162f66258b9500f40ef638e8e7d59c1f922b8f9b55384d12cfe656d74c",
+    "inspected_physics_source/Build_Simulink_Exchange_Params.m": "1c4bcdd33237ebfd051b46cc60076a5afef8e30f59fe0b23ba9903f2201afbdc",
+    "inspected_physics_source/Compress_Diameter101_To_Radial51.m": "c935238b2291b4485302614aeae8f2a969316dc7b83f2265581f230ec302c5a7",
+    "inspected_physics_source/Map_Radial51_To_Diameter101.m": "af4437470a368378ecfc89ccaa65d146922a6382b03467aa3a45fc284b597736",
+    "inspected_physics_source/Run_Simulink_Exchange_Hook.m": "db07382e6f63f25baf606a8acec36e6c1989b0159dae8cb86fe5f883406c318b"
+  },
+  "source_sha256": {
+    "examples/audit_thermal_means.py": "489670ff723a4435be05572f7e0b23cd7ed85fbed8843cfb90b776d9fca4a7e2",
+    "SciML/models/v13/thermal_geometry.py": "99f6a3badee67e7c15ee6cd1bd71427b639a96fc35c8a7e4ad57b8ab8aad100a"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "status": "local_development_archive",
+  "runs": {
+    "diagnosis": {
+      "source_run": "run-output-sma-mean-diagnosis",
+      "copied_files": {
+        "diagnosis.json": "3e498e8d55f69033fa948ad66f1d4a8bb9952b1f997792cdf845face9b8ac23c",
+        "mean_curves.npz": "04bcab1c4c85d1cb54208ad7cce90ad3a802bcc81d829d3a09dbbddec59d2957"
+      }
+    },
+    "direction": {
+      "source_run": "run-output-sma-mean-direction-diagnosis",
+      "copied_files": {
+        "curves.npz": "bb1a15a7abb0a6ee2db45956e4035facf5d9fd18000b9d8c08fae19d281c14d8",
+        "diagnosis.json": "6579802d52b11cef0f6d4007d145b3191a15df66da79b95fbb234ba75c4ff94a"
+      }
+    },
+    "residual": {
+      "source_run": "run-output-sma-mean-development",
+      "copied_files": {
+        "fold1/compact_alpha_1/readout.pt": "31a8f0389b6a490230986009fa4a7b060132da81cbbd93f16ae7ab88e6f85ad4",
+        "fold1/compact_alpha_10/readout.pt": "72047be9889053eda123ba5d8f6a3d610469c2b7d982fb5c6432ad71e704c16f",
+        "fold1/full_alpha_1/readout.pt": "a33ceb2e54ff600b81f0a36402b4fe5437cd9e6dc8cdddcc53d5cdd5bc788115",
+        "fold1/full_alpha_10/readout.pt": "82734ce6ba3cd494c30f7328f421fbdbd741e4e35fb80427bdbb61594673eb6c",
+        "fold2/full_alpha_1/readout.pt": "1c53764cf4089ec527088166469e5ef70510d78f427b8f5b483be0a32b3aec93",
+        "protocol.json": "d67efd6549a619cc62bc5fcc8c309e27883908b83065393a90619105b355bd54",
+        "source/examples/mean_readout_study.py": "a4e92e659bbf26569dd2e750a9ffb9954d2e180e666caed9f40f7912a0212725",
+        "source/examples/stage_readout_study.py": "1fb3a0dc92882381ba420d6410b9c4a940897c1bd042256d6ad6fce54d05b043",
+        "source/SciML/models/v13/mean_thermal_readout.py": "949a80b7b26a5f7777e3990d870dd63351467e9c7106f698d9bfb495796adff0",
+        "source/SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358",
+        "summary.json": "e7ab4f0a628814d77616ac5157c18b93e1e420b396e9207104d3d24a52359967"
+      }
+    },
+    "compact": {
+      "source_run": "run-output-sma-mean-compact-development",
+      "copied_files": {
+        "fold1/compact_alpha_1/readout.pt": "31a8f0389b6a490230986009fa4a7b060132da81cbbd93f16ae7ab88e6f85ad4",
+        "fold1/compact_alpha_10/readout.pt": "72047be9889053eda123ba5d8f6a3d610469c2b7d982fb5c6432ad71e704c16f",
+        "fold2/compact_alpha_1/readout.pt": "18a843346dfc1a4b7cfde8cc2346088e75a42b500322bf3a832b79c6a57560af",
+        "protocol.json": "89d41530204d79b3721e63dd3f9cbc7749fa5dbfbe58e436d45eb1be4315a1d6",
+        "source/examples/mean_readout_study.py": "1f28632ac0913aa6078c0a5acdb12d935259fbc77bee72de07e270533df209d9",
+        "source/examples/stage_readout_study.py": "1fb3a0dc92882381ba420d6410b9c4a940897c1bd042256d6ad6fce54d05b043",
+        "source/SciML/models/v13/mean_thermal_readout.py": "949a80b7b26a5f7777e3990d870dd63351467e9c7106f698d9bfb495796adff0",
+        "source/SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358",
+        "summary.json": "28a0c95e08a0ff607065928527ff18977bdc394abe35934659b6a873c8ee9334"
+      }
+    },
+    "evolution": {
+      "source_run": "run-output-sma-mean-evolution-development",
+      "copied_files": {
+        "fold1/autonomous_evolution/readout.pt": "175052a2f387157fc63424dcf0128e243473636a71319ff87d902d77a62fa64b",
+        "fold1/observed_evolution/readout.pt": "d1347ea60d671ac0ef3d2a9ecb6f8676c85f97a7b0bd82c55496399d7401cfe3",
+        "fold2/autonomous_evolution/readout.pt": "8f67d19ce146b77c7324572af234430e05de0eea03fd01dd71453222e63a482a",
+        "protocol.json": "ba95c4fd0e55892f4ecb6af99c121395d136f3a761d87f3610e1ab06f7414032",
+        "source/examples/mean_readout_study.py": "def047c0d852089286df1f2f901d34e6e32b8dd7e5367e1bb6bb3e1c02784faf",
+        "source/examples/stage_readout_study.py": "1fb3a0dc92882381ba420d6410b9c4a940897c1bd042256d6ad6fce54d05b043",
+        "source/SciML/models/v13/mean_thermal_readout.py": "58b59349d986103d1c1d77eff6ad9820e7bceaa9ba21e623d9b9b5e314f79f31",
+        "source/SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358",
+        "summary.json": "dcc0eb44629e414c8cefcf82b3c2284249f1cecca555667ab99805892a451393"
+      }
+    },
+    "observed_blend": {
+      "source_run": "run-output-sma-mean-observed-blend-development",
+      "copied_files": {
+        "fold1/observed_blend_0.25/readout.pt": "30f236f7db164190b876200dc1ded9e18c95bdb6cf3f34106023266111456e53",
+        "fold1/observed_blend_0.5/readout.pt": "294e0e9d22f25b86ddd440444ea7cf2cc3c7da2125553c03a773a99991f29541",
+        "fold2/observed_blend_0.5/readout.pt": "05213b18d2d65c1a0d28a7f970d9d97d95a3db61572d22a018e55b5f4ed34330",
+        "protocol.json": "80ca91c090fbaec3bad6233dbb0721295a8521f685d1115984088b0464f6f9cf",
+        "source/examples/mean_readout_study.py": "53b43a8d8d7c39000812a3b7df8811f69d4c90ce18b03363f11b8f8418912639",
+        "source/examples/stage_readout_study.py": "1fb3a0dc92882381ba420d6410b9c4a940897c1bd042256d6ad6fce54d05b043",
+        "source/SciML/models/v13/mean_thermal_readout.py": "bacccc6962593407a214e88ca81e755db03b59dad438763638aeb163deca2085",
+        "source/SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358",
+        "summary.json": "9413a810bfffeb36975395661237d1a6f0add1a7fe512ef617ca2524509a771b"
+      }
+    },
+    "interaction": {
+      "source_run": "run-output-sma-mean-interaction-development",
+      "copied_files": {
+        "fold1/autonomous_interaction/readout.pt": "8aae3d92602ba04acd88de7f7216b323ff0029abf546963edfd30a0103dbde6a",
+        "fold1/observed_interaction/readout.pt": "5ee8eae5970246a473de4510dee649511181d520e665cd214aa507eac70d727e",
+        "fold2/autonomous_interaction/readout.pt": "9fc2749ff87cb27ca5f69c86d2bf3f31d78c678147283929bb4be34045805076",
+        "protocol.json": "598e0a81ace771d49d3d2eaf7a7559bc4a7d1cead2c27f74eacc96a4a135a16a",
+        "source/examples/mean_readout_study.py": "1c7c53d1eaf4e894c5b1ef3c1328ca1065c9b39ae2e3fced8dff8ef5e4d9e597",
+        "source/examples/stage_readout_study.py": "1fb3a0dc92882381ba420d6410b9c4a940897c1bd042256d6ad6fce54d05b043",
+        "source/SciML/models/v13/mean_thermal_readout.py": "ff10845eb7cae287004e5ed8cf0b81f6e7ab6a5ea99cb9ebb33a64c9deed7408",
+        "source/SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358",
+        "summary.json": "358471fc1a5d552917474048e610ca655a9f43dc48e2ddca0ecb7e6fc02668a1"
+      }
+    },
+    "profile_evolution": {
+      "source_run": "run-output-sma-mean-profile-evolution-development",
+      "copied_files": {
+        "fold1/autonomous_profile_evolution/readout.pt": "da3122cca59c2c8b6beba891d2b9403a0640daf14db09d217b78bdbb451501a7",
+        "fold1/observed_profile_evolution/readout.pt": "95528b1a0b07c9c7598bc50b1f73a7a222a95b4b665c399fd1fc3b276108b2d3",
+        "fold2/autonomous_profile_evolution/readout.pt": "51f331506770df6dccdf233dd030cbe80440eb9bb5096eb9ebf80d252b171fa3",
+        "protocol.json": "c08f832a4275252b692cfbe6659b5a1d0c95987071afe9a036147913fd4409d0",
+        "source/examples/mean_readout_study.py": "62f8a25833b1bd854228f4a91de08d1fec1b9107e27bc8fa551e9e3ee93d42f0",
+        "source/examples/stage_readout_study.py": "1fb3a0dc92882381ba420d6410b9c4a940897c1bd042256d6ad6fce54d05b043",
+        "source/SciML/models/v13/mean_thermal_readout.py": "ff10845eb7cae287004e5ed8cf0b81f6e7ab6a5ea99cb9ebb33a64c9deed7408",
+        "source/SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358",
+        "summary.json": "38b92ca8b988b42ddf2af5b359410856f771d2c065df11007062a4c01805851c"
+      }
+    },
+    "context": {
+      "source_run": "run-output-sma-mean-context-development",
+      "copied_files": {
+        "fold1/compact_context_evolution/readout.pt": "b7831803ef6a9c25f6465236d2e7939ceba467f6215b033fdd609ecec4137bb3",
+        "fold1/full_context_evolution/readout.pt": "27e5bf49041e33b8435ad249c669a6bb375160dc2edc43b55729f13d3c7c4dd4",
+        "fold2/full_context_evolution/readout.pt": "2250ec09377a2317fb74403e4552265b3b7ad88e21fe6e092f0cf73687d0568d",
+        "protocol.json": "9367584f279e0cc91184de5f94609575b1cd7a89b16117784aebcf44e3912f67",
+        "source/examples/mean_readout_study.py": "558f9ad3ce0d5ce97f774fd34f36247eff6a15801a0c35ba659d55bc322677fc",
+        "source/examples/stage_readout_study.py": "cafd8479e929b427a3996ab3c1e4dc287e509c8f888cd73f9d8f02f69defed99",
+        "source/SciML/models/v13/mean_thermal_readout.py": "3ce03ed7826c0b5c8e3b24cc6993cf3e2f675a60ba0f521854678e014577a23a",
+        "source/SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358",
+        "summary.json": "0409dfdde0cfb19a951dda65ab2f4305f9a10c94436ba4d609aa8bc4c0b9e844"
+      }
+    },
+    "reliable": {
+      "source_run": "run-output-sma-mean-reliable-development",
+      "copied_files": {
+        "fold1/deletion_sensitive_evolution/readout.pt": "97d9283dbe8cb6db3e041908d2c64b4bb7fc7ab7d1bf0ff2f5bd5f1dcdb9a232",
+        "fold2/deletion_sensitive_evolution/readout.pt": "826a779af151695bfd581e9a8e25cb41082c77535677c982f72b8a81b94fef6d",
+        "protocol.json": "090f50531adfa23a94aae09d516c6dcf42fd326ea4e17e6579acfc69b9a3f66b",
+        "source/examples/mean_readout_study.py": "0b4f805f88bdc640dcf80976a792115f246baa9fa38d1fdbac11d24395dbb437",
+        "source/examples/stage_readout_study.py": "cafd8479e929b427a3996ab3c1e4dc287e509c8f888cd73f9d8f02f69defed99",
+        "source/SciML/models/v13/mean_thermal_readout.py": "641e42068385955af730ad9ede49c86999ee7f8636167ea6b71a5ad40ef96150",
+        "source/SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358",
+        "summary.json": "3519435d150124a6f51c073b13626c9cbd6c138fa1914d07ba286bb4cf27f95d"
+      }
+    },
+    "pointwise": {
+      "source_run": "run-output-sma-mean-pointwise-development",
+      "copied_files": {
+        "fold1/pointwise_sensitive_evolution/readout.pt": "5a633299377e1da180bf08d3af3ff475ecbed9804783a916215eb28a4d7d180c",
+        "fold2/pointwise_sensitive_evolution/readout.pt": "f187f901d964b773c8df220318120e00c37a5d2cba70d72072f40cbc31822afb",
+        "protocol.json": "56b4d6e33bdd6f9f080229cf1944763d44cdc86fd8946cc156cde73856f711c0",
+        "source/examples/mean_readout_study.py": "208dd17daa5573d6f70a7837dcb7756de0925af266e51d8007940137693d8f7f",
+        "source/examples/stage_readout_study.py": "cafd8479e929b427a3996ab3c1e4dc287e509c8f888cd73f9d8f02f69defed99",
+        "source/SciML/models/v13/mean_thermal_readout.py": "ab03a7ec49f408c695675aa1c88d12ddd9640a20958505f2308fac8af94ff089",
+        "source/SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358",
+        "summary.json": "9e8d41803e7c8f9ca2b6ac514e588a177b5349f73438c5eece45cc7058ab9de0"
+      }
+    },
+    "latent": {
+      "source_run": "run-output-sma-mean-latent-development",
+      "copied_files": {
+        "fold1/latent_increment/readout.pt": "c998342b59e2e8ee2f8e67b49b484739b8ae2e5ac421828906859c5921d8027e",
+        "fold1/latent_residual/readout.pt": "a4d2b348808b8ecad350c43dd113740399b8608769a25df745da4580dc1d3042",
+        "fold2/latent_increment/readout.pt": "3fd3a653637fb76b42492779cda7e598ba6d0ab1ec1ba2ca3392cba898dad6ad",
+        "protocol.json": "28d8b140003768cc35cdf8d3f9bde622531f90f3c6adfcb6b29e969f3171bd11",
+        "source/examples/mean_readout_study.py": "0bec2833cfee2b5ce175f0c937c5828bac847e8c9ee04fcd8a4cfb4baa66baa3",
+        "source/examples/stage_readout_study.py": "b3034334b72c9e3e921bfec8035f89ce87421f1b4deff20d88d7b0fe2717847b",
+        "source/SciML/models/v13/mean_thermal_readout.py": "c3e6b2c770735ec97759eb86ed291331dc80b9fca2bafc63f58ee86a0268aaca",
+        "source/SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358",
+        "summary.json": "27ee3dedb30a78003d215b808d3dfcd90d9a21bd76b64c44dedf473810b81a79"
+      }
+    },
+    "kernel": {
+      "source_run": "run-output-sma-mean-kernel-development",
+      "copied_files": {
+        "fold1/autonomous_thermal_kernel/readout.pt": "7d89e9a1868c7a5b80ff674f7de52c0fe2c43cdfa325390911bb23e971990be8",
+        "fold1/observed_thermal_kernel/readout.pt": "9a703452c3db3c78cd30398d0b660ffad350481d9416206a509cf098970210d5",
+        "protocol.json": "3d8d97edbbf64fb4a61ce3caf3bdd175e8ec17d20c3424c9b975642b1770b936",
+        "source/examples/mean_readout_study.py": "e631e486db926af141ba30e42ff72fb59e906f6cfa233813614aa166466d45af",
+        "source/examples/stage_readout_study.py": "f803034e8ca78edb84a460f9ed3581ae9bc9b95bc6da78ef71953c9b61f4b41d",
+        "source/SciML/models/v13/kernel_mean_readout.py": "ddb53418fd9076146252e58a87d0cbe66fe6184e4cb00b05986ba743ed309950",
+        "source/SciML/models/v13/mean_thermal_readout.py": "43fe029751b26a2399d5fe8f499b271e4728cb541776a5d1362ef3975d0c1a45",
+        "source/SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358",
+        "summary.json": "1e33ea3b512ba9ee9bc586a1cd9f7184efc1b21fd4e0377174fa695b0568c9cd"
+      }
+    }
+  },
+  "github_uploaded": false
+}

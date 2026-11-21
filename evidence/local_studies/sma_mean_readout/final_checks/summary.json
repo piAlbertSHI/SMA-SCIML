@@ -1,0 +1,53 @@
+{
+  "status": "verified_mean_development_stage",
+  "goal_status": "active",
+  "candidate_promoted": false,
+  "numerical_objective_achieved": false,
+  "tests": {
+    "modules": [
+      "SciML.tests.test_learning_coordinate_operator",
+      "SciML.tests.test_learning_ensemble",
+      "SciML.tests.test_learning_pinn_inverse",
+      "SciML.tests.test_learning_pool_loop",
+      "SciML.tests.test_learning_design_loop",
+      "SciML.tests.test_learning_exercises",
+      "SciML.tests.test_acquisition_diversity",
+      "SciML.tests.test_multistep_historical",
+      "SciML.tests.test_hierarchical_operator",
+      "SciML.tests.test_formal_hierarchical",
+      "SciML.tests.test_modal_operator",
+      "SciML.tests.test_selective_sma",
+      "SciML.tests.test_thermal_readout",
+      "SciML.tests.test_stage_thermal_readout",
+      "SciML.tests.test_mean_thermal_readout",
+      "SciML.tests.test_thermal_geometry"
+    ],
+    "tests_run": 74,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": true
+  },
+  "replay": {
+    "internal_scores_replayed": 32,
+    "max_score_replay_difference_K": 0.0,
+    "max_readout_refit_difference": 0.0,
+    "local_backbone_folds_available": 2,
+    "baseline_checkpoint_hashes_unchanged": true,
+    "historical_test_candidates_scored": 0,
+    "fresh_solver_calls": 0
+  },
+  "physical_increment_identity_max_abs_K": 1.2789769243681803e-13,
+  "baseline_verification_sha256": "6bbfb43da5850d311eaeda19d6ab5f5b299df317feba0d973c2d6bb0caf83cdf",
+  "seconds": 14.74625759999617,
+  "remaining_work": "Reduce stage2 mean bias while retaining third-cycle and segment-level improvements; investigate calibrated increment conditioning or soft consistency using training cases only.",
+  "fresh_solver_calls": 0,
+  "neural_training_updates": 0,
+  "github_pushes": 0,
+  "artifacts": {
+    "increment_replay.json": "48de1b90acf2c5ca41dddae8a3ea7be3713f8f4cfa5f781bc83e320391d09738",
+    "mean_replay.json": "8168622c172cc13e6782c1b18d1b8efe7ad8e4547ffa6431fc4220f46f0ef0cb",
+    "tests.json": "39eefef2b17ead4587ee3efe40c77117d03bce2389d8dcafd8272f17fa5f0327",
+    "unittest.log": "f6abbeab13a38126b39df71613b7f5cddb564647fac602a00c1dccf646a7ccc9"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "purpose": "mean-temperature correction selection on training cases only",
+  "candidates": [
+    {
+      "name": "observed_thermal_kernel",
+      "kind": "thermal_kernel",
+      "rank": 3,
+      "alpha": 0.1,
+      "mode": "increment",
+      "entry": "observed",
+      "observed_context": true
+    },
+    {
+      "name": "autonomous_thermal_kernel",
+      "kind": "thermal_kernel",
+      "rank": 3,
+      "alpha": 0.1,
+      "mode": "increment",
+      "entry": "autonomous",
+      "observed_context": false
+    }
+  ],
+  "data_sha256": {
+    "state": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "fields": "15f5cf30948efea558ba514cafea99f146dcdc13435b66b906e58d582a721096"
+  },
+  "folds": [
+    {
+      "checkpoint": "run-output-hro-modal-refinement/refined/model.pt",
+      "checkpoint_sha256": "c276a2bd8f9975c6726398ce2546c498597d5c78eccbc8aab81c5f4aa6909c60",
+      "fit_ids": [
+        "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+        "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+        "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+        "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+        "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+        "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c"
+      ],
+      "validation_ids": [
+        "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+        "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c"
+      ]
+    },
+    {
+      "checkpoint": "run-output-sma-physical-fold2/refined/model.pt",
+      "checkpoint_sha256": "92e0423fbe4328a452eace5ecb10c7ac850f948bf65d179b4ea73c0ca16ecba9",
+      "fit_ids": [
+        "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+        "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+        "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+        "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+        "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+        "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c"
+      ],
+      "validation_ids": [
+        "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+        "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c"
+      ]
+    }
+  ],
+  "gate": "stage2 mean RMSE decreases; every stage2 validation segment is nonregressing; preserve state/fluid/stage4/initial/spatial differences",
+  "selection": "lowest eligible first-fold mean; fixed candidate on second fold; no historical test scoring",
+  "source_sha256": {
+    "SciML/models/v13/mean_thermal_readout.py": "43fe029751b26a2399d5fe8f499b271e4728cb541776a5d1362ef3975d0c1a45",
+    "examples/mean_readout_study.py": "e631e486db926af141ba30e42ff72fb59e906f6cfa233813614aa166466d45af",
+    "SciML/models/v13/kernel_mean_readout.py": "ddb53418fd9076146252e58a87d0cbe66fe6184e4cb00b05986ba743ed309950",
+    "examples/stage_readout_study.py": "f803034e8ca78edb84a460f9ed3581ae9bc9b95bc6da78ef71953c9b61f4b41d",
+    "SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358"
+  },
+  "fresh_solver_calls": 0,
+  "neural_training_updates": 0
+}

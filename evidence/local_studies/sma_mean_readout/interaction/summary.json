@@ -1,0 +1,395 @@
+{
+  "status": "completed_mean_readout_development",
+  "selected_candidate": {
+    "name": "autonomous_interaction",
+    "kind": "interaction",
+    "rank": 3,
+    "alpha": 1.0,
+    "mode": "increment",
+    "entry": "autonomous"
+  },
+  "passed_both_folds": false,
+  "folds": [
+    {
+      "fold": 1,
+      "reference": {
+        "stage2_mean_rmse_K": 1.0223198183259465,
+        "segments": [
+          {
+            "case_index": 3,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 1.1731734223174901,
+            "bias_K": -1.133192430699749
+          },
+          {
+            "case_index": 7,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 0.6372750001338934,
+            "bias_K": 0.3636113241046255
+          },
+          {
+            "case_index": 3,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.7554283813918716,
+            "bias_K": 0.5972069991392426
+          },
+          {
+            "case_index": 7,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.859430858971666,
+            "bias_K": -0.5602709656079167
+          },
+          {
+            "case_index": 3,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 0.7863193038288809,
+            "bias_K": -0.7519527851879728
+          },
+          {
+            "case_index": 7,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 1.4925115470235215,
+            "bias_K": 1.379577378117524
+          },
+          {
+            "case_index": 3,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.6105645692427978,
+            "bias_K": 0.5185856856099758
+          },
+          {
+            "case_index": 7,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.7332527694619051,
+            "bias_K": -0.34811526286406885
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "candidate": {
+            "name": "observed_interaction",
+            "kind": "interaction",
+            "rank": 3,
+            "alpha": 1.0,
+            "mode": "increment",
+            "entry": "observed"
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 0.6823597975834312,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.9443725620655229,
+                "bias_K": -0.8906380568917928
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.8524020278453008,
+                "bias_K": -0.8267574941797239
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.4594461531191807,
+                "bias_K": -0.40458300073032005
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.4732184473037202,
+                "bias_K": -0.03235927676945387
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "fit": {
+            "samples": 12,
+            "features": 10,
+            "rank": 3,
+            "alpha": 1.0,
+            "training_basis_rmse_K": 0.009732112878668195
+          },
+          "passed": false
+        },
+        {
+          "candidate": {
+            "name": "autonomous_interaction",
+            "kind": "interaction",
+            "rank": 3,
+            "alpha": 1.0,
+            "mode": "increment",
+            "entry": "autonomous"
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 0.5413114568961659,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.7927126174843504,
+                "bias_K": -0.7431260531339136
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.3832215976645776,
+                "bias_K": -0.3167488691671533
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.3695671939177866,
+                "bias_K": -0.3051759876905892
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.6197444185179493,
+                "bias_K": 0.3504898071637816
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "fit": {
+            "samples": 12,
+            "features": 10,
+            "rank": 3,
+            "alpha": 1.0,
+            "training_basis_rmse_K": 0.01196372827476073
+          },
+          "passed": true
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "reference": {
+        "stage2_mean_rmse_K": 0.8773481092605074,
+        "segments": [
+          {
+            "case_index": 1,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 0.4252653469492752,
+            "bias_K": 0.1400645622710285
+          },
+          {
+            "case_index": 5,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 1.596811083352503,
+            "bias_K": 1.5081093379399346
+          },
+          {
+            "case_index": 1,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.4314443944641615,
+            "bias_K": 0.00022742792612512555
+          },
+          {
+            "case_index": 5,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.5520916451589454,
+            "bias_K": -0.3521168919425075
+          },
+          {
+            "case_index": 1,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 0.5694140177568713,
+            "bias_K": 0.491021972109076
+          },
+          {
+            "case_index": 5,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 0.9179019889833802,
+            "bias_K": 0.8522226578141551
+          },
+          {
+            "case_index": 1,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.5555050612370604,
+            "bias_K": -0.293967370678665
+          },
+          {
+            "case_index": 5,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.5801839059220675,
+            "bias_K": -0.4223737186959452
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "candidate": {
+            "name": "autonomous_interaction",
+            "kind": "interaction",
+            "rank": 3,
+            "alpha": 1.0,
+            "mode": "increment",
+            "entry": "autonomous"
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 0.8534760034354285,
+            "segments": [
+              {
+                "case_index": 1,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.23326166935766265,
+                "bias_K": 0.04718795842556954
+              },
+              {
+                "case_index": 5,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 1.696539168935601,
+                "bias_K": 1.618037143258992
+              },
+              {
+                "case_index": 1,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.4314443944641615,
+                "bias_K": 0.00022742792612512555
+              },
+              {
+                "case_index": 5,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.5520916451589454,
+                "bias_K": -0.3521168919425075
+              },
+              {
+                "case_index": 1,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.38180234822632986,
+                "bias_K": 0.34738643387558915
+              },
+              {
+                "case_index": 5,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 1.1023008272221204,
+                "bias_K": 1.0672539724564039
+              },
+              {
+                "case_index": 1,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.5555050612370604,
+                "bias_K": -0.293967370678665
+              },
+              {
+                "case_index": 5,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.5801839059220675,
+                "bias_K": -0.4223737186959452
+              }
+            ]
+          },
+          "fit": {
+            "samples": 12,
+            "features": 10,
+            "rank": 3,
+            "alpha": 1.0,
+            "training_basis_rmse_K": 0.014094049755040118
+          },
+          "passed": false
+        }
+      ]
+    }
+  ],
+  "seconds": 3.1072104000049876,
+  "historical_test_scored": false,
+  "artifacts": {
+    "protocol.json": "598e0a81ace771d49d3d2eaf7a7559bc4a7d1cead2c27f74eacc96a4a135a16a",
+    "fold1/autonomous_interaction/readout.pt": "8aae3d92602ba04acd88de7f7216b323ff0029abf546963edfd30a0103dbde6a",
+    "fold1/observed_interaction/readout.pt": "5ee8eae5970246a473de4510dee649511181d520e665cd214aa507eac70d727e",
+    "fold2/autonomous_interaction/readout.pt": "9fc2749ff87cb27ca5f69c86d2bf3f31d78c678147283929bb4be34045805076",
+    "source/examples/mean_readout_study.py": "1c7c53d1eaf4e894c5b1ef3c1328ca1065c9b39ae2e3fced8dff8ef5e4d9e597",
+    "source/examples/stage_readout_study.py": "1fb3a0dc92882381ba420d6410b9c4a940897c1bd042256d6ad6fce54d05b043",
+    "source/SciML/models/v13/mean_thermal_readout.py": "ff10845eb7cae287004e5ed8cf0b81f6e7ab6a5ea99cb9ebb33a64c9deed7408",
+    "source/SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358"
+  }
+}

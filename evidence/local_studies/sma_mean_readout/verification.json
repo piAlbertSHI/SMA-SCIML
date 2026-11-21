@@ -1,0 +1,10 @@
+{
+  "status": "verified_mean_development_without_promotion",
+  "internal_scores_replayed": 32,
+  "max_score_replay_difference_K": 0.0,
+  "max_readout_refit_difference": 0.0,
+  "local_backbone_folds_available": 2,
+  "baseline_checkpoint_hashes_unchanged": true,
+  "historical_test_candidates_scored": 0,
+  "fresh_solver_calls": 0
+}

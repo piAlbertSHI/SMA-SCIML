@@ -1,0 +1,249 @@
+{
+  "status": "completed_mean_readout_development",
+  "selected_candidate": null,
+  "passed_both_folds": false,
+  "folds": [
+    {
+      "fold": 1,
+      "reference": {
+        "stage2_mean_rmse_K": 1.0223198183259465,
+        "segments": [
+          {
+            "case_index": 3,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 1.1731734223174901,
+            "bias_K": -1.133192430699749
+          },
+          {
+            "case_index": 7,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 0.6372750001338934,
+            "bias_K": 0.3636113241046255
+          },
+          {
+            "case_index": 3,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.7554283813918716,
+            "bias_K": 0.5972069991392426
+          },
+          {
+            "case_index": 7,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.859430858971666,
+            "bias_K": -0.5602709656079167
+          },
+          {
+            "case_index": 3,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 0.7863193038288809,
+            "bias_K": -0.7519527851879728
+          },
+          {
+            "case_index": 7,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 1.4925115470235215,
+            "bias_K": 1.379577378117524
+          },
+          {
+            "case_index": 3,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.6105645692427978,
+            "bias_K": 0.5185856856099758
+          },
+          {
+            "case_index": 7,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.7332527694619051,
+            "bias_K": -0.34811526286406885
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "candidate": {
+            "name": "observed_thermal_kernel",
+            "kind": "thermal_kernel",
+            "rank": 3,
+            "alpha": 0.1,
+            "mode": "increment",
+            "entry": "observed",
+            "observed_context": true
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 0.7641154915605817,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.6714504290058818,
+                "bias_K": -0.1901312872133392
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.6433875979057584,
+                "bias_K": 0.2932877210506833
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.5518092590739526,
+                "bias_K": 0.19827094709822424
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 1.1898146802567338,
+                "bias_K": 1.0641331522839435
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "fit": {
+            "samples": 12,
+            "thermal_features": 210,
+            "geometry_features": 4,
+            "rank": 3,
+            "alpha": 0.1,
+            "reference_temperature_K": 293.0,
+            "training_basis_rmse_K": 0.011172613304769713
+          },
+          "passed": false
+        },
+        {
+          "candidate": {
+            "name": "autonomous_thermal_kernel",
+            "kind": "thermal_kernel",
+            "rank": 3,
+            "alpha": 0.1,
+            "mode": "increment",
+            "entry": "autonomous",
+            "observed_context": false
+          },
+          "metrics": {
+            "stage2_mean_rmse_K": 0.8842368610342553,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.6866602446991044,
+                "bias_K": 0.4979561738661382
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.9207476003076531,
+                "bias_K": 0.8028482304971775
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.6878530476008161,
+                "bias_K": 0.5359576296354797
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 1.2416865515294475,
+                "bias_K": 1.1205455521448457
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "fit": {
+            "samples": 12,
+            "thermal_features": 210,
+            "geometry_features": 4,
+            "rank": 3,
+            "alpha": 0.1,
+            "reference_temperature_K": 293.0,
+            "training_basis_rmse_K": 0.01429216369569516
+          },
+          "passed": false
+        }
+      ]
+    }
+  ],
+  "seconds": 1.5261060999910114,
+  "historical_test_scored": false,
+  "artifacts": {
+    "protocol.json": "3d8d97edbbf64fb4a61ce3caf3bdd175e8ec17d20c3424c9b975642b1770b936",
+    "fold1/autonomous_thermal_kernel/readout.pt": "7d89e9a1868c7a5b80ff674f7de52c0fe2c43cdfa325390911bb23e971990be8",
+    "fold1/observed_thermal_kernel/readout.pt": "9a703452c3db3c78cd30398d0b660ffad350481d9416206a509cf098970210d5",
+    "source/examples/mean_readout_study.py": "e631e486db926af141ba30e42ff72fb59e906f6cfa233813614aa166466d45af",
+    "source/examples/stage_readout_study.py": "f803034e8ca78edb84a460f9ed3581ae9bc9b95bc6da78ef71953c9b61f4b41d",
+    "source/SciML/models/v13/kernel_mean_readout.py": "ddb53418fd9076146252e58a87d0cbe66fe6184e4cb00b05986ba743ed309950",
+    "source/SciML/models/v13/mean_thermal_readout.py": "43fe029751b26a2399d5fe8f499b271e4728cb541776a5d1362ef3975d0c1a45",
+    "source/SciML/models/v13/stage_thermal_readout.py": "ab99d2ad643e94f7e1b50f94c4f0360423ef23a535d4167129999a5891642358"
+  }
+}

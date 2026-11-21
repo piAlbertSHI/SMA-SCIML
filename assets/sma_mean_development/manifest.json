@@ -1,0 +1,13 @@
+{
+  "artifacts": {
+    "analysis.json": "edd1ec70d555f721a91ff64d2b8e2f1c2ba1f06ee8198094345c64ff946e4c41",
+    "mean_error_decomposition.png": "989bb34a594fe0d468af6ffae2116c10eb79daa4fffadc8bfa17e7d6720f22cd",
+    "mean_error_decomposition.svg": "c9cb21d08d3a46c80284b2c75056d95f2e6e46b496751ccc7d75100a797f3590"
+  },
+  "input_sha256": {
+    "evidence/local_studies/sma_mean_readout/diagnosis/diagnosis.json": "3e498e8d55f69033fa948ad66f1d4a8bb9952b1f997792cdf845face9b8ac23c",
+    "evidence/local_studies/sma_mean_readout/summary.json": "e22093eaaa96d408d673a405df80e4027c6c959d8e258d2adbe5d27800c091a3",
+    "evidence/local_studies/sma_mean_readout/diagnosis/mean_curves.npz": "04bcab1c4c85d1cb54208ad7cce90ad3a802bcc81d829d3a09dbbddec59d2957"
+  },
+  "generator_sha256": "82965093664fc210b258f3eab6a09696335a186a46289c4773c64be439a2176e"
+}

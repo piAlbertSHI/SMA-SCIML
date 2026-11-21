@@ -30,16 +30,28 @@ SOURCES=['examples/stage_readout_study.py','SciML/models/v13/stage_thermal_reado
          'examples/fit_thermal_readout.py','SciML/models/v13/thermal_readout.py']
 
 
-def cache(source,arrays,selected):
+def cache(source,arrays,selected,*,include_state=False):
+    exchanges=arrays['fields'].shape[1]
+    if exchanges<2 or exchanges%2 or arrays['fields'].shape[2:]!=(2,50,101):
+        raise ValueError('Expected paired stage2/stage4 fields on the native grid')
+    cycles=exchanges//2
+    if arrays['states'].shape[1:]!=(5*cycles-1,515):
+        raise ValueError('State/field horizons are not aligned')
+    schedule=[1,2,3,4]+[5,1,2,3,4]*(cycles-1)
     source.eval().requires_grad_(False)
     state=arrays['initial'][selected];control=arrays['control'][selected];memory=None;exchange=0
     values={k:[] for k in ('initial','control','stage','base','truth','case','cycle')}
+    if include_state:values.update({'entry_state':[],'exit_state':[],'latent':[],'observed_entry_state':[]})
     times=torch.linspace(0,1,50,dtype=torch.float64);positions=torch.linspace(0,1,101,dtype=torch.float64)
     with torch.no_grad():
-        for stage in [1,2,3,4,5,1,2,3,4]:
+        for step,stage in enumerate(schedule):
             decode=stage in (2,4)
             out=source.step(state,control,stage,memory,times=times if decode else None,positions=positions if decode else None)
             if decode:
+                if include_state:
+                    values['entry_state'].append(state);values['latent'].append(out['latent'])
+                    values['exit_state'].append(out['state'])
+                    values['observed_entry_state'].append(arrays['states'][selected,step-1])
                 for k,v in {'initial':source.initial_fields(state,stage),'control':control,
                     'stage':torch.full((len(selected),),stage),'base':out['field'],
                     'truth':arrays['fields'][selected,exchange],'case':torch.tensor(selected),
@@ -74,8 +86,21 @@ def metrics(pred,values):
 
 
 def gate(candidate,reference):
-    return candidate['stage2_mean_rmse_K']<reference['stage2_mean_rmse_K'] and all(
-        a['rmse_K']<=b['rmse_K'] for a,b in zip(candidate['segments'],reference['segments']) if a['stage']==2)
+    indexed=[]
+    for record in (candidate,reference):
+        rows={}
+        for r in record['segments']:
+            key=(r['case_index'],r['cycle'],r['stage'])
+            if key in rows or not np.isfinite(r['rmse_K']) or r['rmse_K']<0:
+                raise ValueError('Duplicate or invalid validation segment')
+            rows[key]=r['rmse_K']
+        values=[v for k,v in rows.items() if k[2]==2]
+        if not values or not np.isclose(record['stage2_mean_rmse_K'],np.mean(values),rtol=0,atol=1e-12):
+            raise ValueError('Invalid aggregate validation metric')
+        indexed.append(rows)
+    a,b=indexed
+    if set(a)!=set(b):raise ValueError('Validation segment identities differ')
+    return candidate['stage2_mean_rmse_K']<reference['stage2_mean_rmse_K'] and all(a[k]<=b[k] for k in a if k[2]==2)
 
 
 def protocol(output,purpose,extra):

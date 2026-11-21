@@ -1,0 +1,13 @@
+{
+  "artifacts": {
+    "fold1.pt": "9b5e553471b95decc1d3e7e116be311006a02d0c9ae4298c7fe70264b2ef0668",
+    "fold2.pt": "a03bf0ed2d8953b6cb5220979d06d5da9b81a9899bb19ec6820bb7c33127c7ce",
+    "protocol.json": "4a383183736cd0490d17d52d9b83b8998f4548c6efc19a14d8f92bf26b9239fa",
+    "summary.json": "f730f6aea4e7f1af51998b35ee5a426e58a470253fe4f40a097a3b59c36f79a8",
+    "source/examples/increment_consistency_study.py": "ef79a3958b2ba3bfad22bcc2b5553ba32f77e891b5babe93ee99f3f3daab4cf9",
+    "source/examples/mean_readout_study.py": "de547549ddb340343ecaa11dbaed5d724fb4859a14e5dbb1973dd9389996da89",
+    "source/examples/stage_readout_study.py": "5966874e7706420480d5abaf40ea0d4038a191cb77996edbb8fe56130529cabe",
+    "source/SciML/models/v13/increment_consistency.py": "3902fb50b506d0ffaeeda2c5f1567d5fc3241541776379dad9ba725d0070a632",
+    "source/SciML/models/v13/thermal_geometry.py": "99f6a3badee67e7c15ee6cd1bd71427b639a96fc35c8a7e4ad57b8ab8aad100a"
+  }
+}

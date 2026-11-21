@@ -1,0 +1,54 @@
+{
+  "candidate": "stage2 linear minimum-gradient heat-increment projection",
+  "parameters_fitted": 0,
+  "data_sha256": {
+    "state": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "fields": "15f5cf30948efea558ba514cafea99f146dcdc13435b66b906e58d582a721096"
+  },
+  "gate": "stage2 mean RMSE strictly decreases and every stage2 validation segment nonregresses",
+  "folds": [
+    {
+      "fit_ids": [
+        "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+        "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+        "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+        "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+        "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+        "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c"
+      ],
+      "validation_ids": [
+        "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+        "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c"
+      ],
+      "checkpoint": "run-output-hro-modal-refinement/refined/model.pt",
+      "checkpoint_sha256": "c276a2bd8f9975c6726398ce2546c498597d5c78eccbc8aab81c5f4aa6909c60"
+    },
+    {
+      "fit_ids": [
+        "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+        "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+        "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+        "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+        "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+        "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c"
+      ],
+      "validation_ids": [
+        "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+        "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c"
+      ],
+      "checkpoint": "run-output-sma-physical-fold2/refined/model.pt",
+      "checkpoint_sha256": "92e0423fbe4328a452eace5ecb10c7ac850f948bf65d179b4ea73c0ca16ecba9"
+    }
+  ],
+  "source_sha256": {
+    "examples/increment_consistency_study.py": "ef79a3958b2ba3bfad22bcc2b5553ba32f77e891b5babe93ee99f3f3daab4cf9",
+    "SciML/models/v13/increment_consistency.py": "3902fb50b506d0ffaeeda2c5f1567d5fc3241541776379dad9ba725d0070a632",
+    "SciML/models/v13/thermal_geometry.py": "99f6a3badee67e7c15ee6cd1bd71427b639a96fc35c8a7e4ad57b8ab8aad100a",
+    "examples/stage_readout_study.py": "5966874e7706420480d5abaf40ea0d4038a191cb77996edbb8fe56130529cabe",
+    "examples/mean_readout_study.py": "de547549ddb340343ecaa11dbaed5d724fb4859a14e5dbb1973dd9389996da89"
+  },
+  "motivation": "training-only capacity increment identity; absolute endpoint identity is false",
+  "selection": "one fixed candidate; no hyperparameter search, no historical test evaluation",
+  "fresh_solver_calls": 0,
+  "neural_training_updates": 0
+}

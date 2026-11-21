@@ -75,6 +75,14 @@ def audit():
     for path in sorted(stage_root.glob('*.svg')):
         label=' '.join(''.join(node.itertext()) for node in ET.parse(path).iter() if node.tag.endswith('}text'))
         if FORBIDDEN.search(label):violations.append({'file':path.relative_to(ROOT).as_posix(),'text':'forbidden stage figure label'})
+    mean_root=ROOT/'assets/sma_mean_development'
+    mean_manifest=json.loads((mean_root/'manifest.json').read_text())
+    for name,expected in mean_manifest['artifacts'].items():assert sha(mean_root/name)==expected,name
+    for name,expected in mean_manifest['input_sha256'].items():assert sha(ROOT/name)==expected,name
+    assert sha(ROOT/'examples/mean_development_report.py')==mean_manifest['generator_sha256']
+    for path in sorted(mean_root.glob('*.svg')):
+        label=' '.join(''.join(node.itertext()) for node in ET.parse(path).iter() if node.tag.endswith('}text'))
+        if FORBIDDEN.search(label):violations.append({'file':path.relative_to(ROOT).as_posix(),'text':'forbidden mean figure label'})
     inventory={}
     for path in sorted(ROOT.rglob('*')):
         if not included(path):continue
@@ -96,6 +104,7 @@ def audit():
         'modal_showcase_input_output_and_label_checks':True,
         'sma_readout_input_output_and_label_checks':True,
         'stage_readout_input_output_and_label_checks':True,
+        'mean_readout_input_output_and_label_checks':True,
         'scope':'Maintained prose, generated showcase labels and repository inventory; technical paths and immutable historical evidence retain their identifiers.',
         'browser_rendering_acceptance':'pending; tracked separately from text/array/interaction-logic checks',
         'file_categories':{k:sum(v==k for v in inventory.values()) for k in sorted(set(inventory.values()))},

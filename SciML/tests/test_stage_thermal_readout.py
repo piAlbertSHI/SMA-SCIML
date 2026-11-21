@@ -66,9 +66,11 @@ class StageReadoutTests(unittest.TestCase):
         with self.assertRaises(ValueError):StageThermalReadoutOperator(self.ref,self.head,-.1)
 
     def test_gate_rejects_segment_tradeoff_and_no_improvement(self):
-        ref={'stage2_mean_rmse_K':1.,'segments':[{'stage':2,'rmse_K':.5},{'stage':2,'rmse_K':1.5}]}
+        ref={'stage2_mean_rmse_K':1.,'segments':[{'case_index':0,'cycle':1,'stage':2,'rmse_K':.5},
+                                              {'case_index':0,'cycle':2,'stage':2,'rmse_K':1.5}]}
         self.assertFalse(gate(ref,ref))
         changed=copy.deepcopy(ref);changed['stage2_mean_rmse_K']=.9;changed['segments'][0]['rmse_K']=.6
+        changed['segments'][1]['rmse_K']=1.2
         self.assertFalse(gate(changed,ref))
 
     def test_spatial_mean_is_preserved_independently_of_query_set(self):
