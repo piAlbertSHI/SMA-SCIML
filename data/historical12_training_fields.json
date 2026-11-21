@@ -1,0 +1,23 @@
+{
+  "status": "verified_training_fields_only",
+  "case_count": 8,
+  "field_samples": 32,
+  "train_case_ids": [
+    "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+    "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+    "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+    "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+    "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+    "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+    "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+    "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c"
+  ],
+  "test_labels_exported": false,
+  "initial_reconstruction_max_abs_K": 5.684341886080802e-14,
+  "snapshot_sha256": "15f5cf30948efea558ba514cafea99f146dcdc13435b66b906e58d582a721096",
+  "source_dataset_manifest_sha256": "2c1a9e812e8f49c315e1bd84ed59daf7da827cfe285fe10e3cf6b977be730a1c",
+  "source_hdf5_sha256": "58acc8ff382c93b8e040c1108f339c6d6b5ec6af4b7f63458606e861edf7e8a5",
+  "state_snapshot_sha256": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+  "raw_mat_reaudit": false,
+  "fresh_solver_calls": 0
+}

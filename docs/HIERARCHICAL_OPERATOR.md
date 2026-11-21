@@ -1,0 +1,129 @@
+# SMA Neural State-Space Operator
+
+## Implemented architecture / 已实现架构
+
+**A 3,106,989-parameter model now combines spatial encoding, latent attention, recurrent memory, five stage-specific transition heads and a continuous-coordinate temperature decoder.** The complete forward/backward and joint-training path is implemented. Three optimizer updates on existing training data and exact checkpoint replay establish execution correctness; predictive accuracy and advantage over the reference models remain unevaluated.
+
+**现已构建 3,106,989 参数的模型，整合空间编码、潜变量注意力、循环记忆、五个阶段转移头和连续坐标温度场解码器。** 完整前向、反向与联合训练路径均已实现。已使用现有训练数据完成三次优化更新并验证检查点精确回放；预测精度及相对参考模型的优势尚未评价。
+
+![Implemented architecture / 已实现模型架构](../assets/operator_showcase_v2/architecture.png)
+
+## Why this structure / 为什么采用这套结构
+
+The previous historical model used five independent `529 → 32 → 32 → d` residual MLPs and a separately trained field decoder. The new model changes how information is represented and propagated, rather than only widening those MLPs.
+
+此前历史模型采用五个独立的 `529 → 32 → 32 → d` 残差 MLP，场解码器单独训练。新模型改变了信息表示与传递方式，同时保留原状态合同和仿射先验。
+
+| Component / 模块 | Implemented structure / 实现 | Intended role / 设计目的 |
+|---|---|---|
+| Mechanical encoder / 力学编码 | Four channels × 51 radial nodes; Conv1D lift to 128; three residual blocks, dilations 1/2/4 / 4×51 输入、128 通道、三层膨胀残差块 | Preserve radial neighborhood structure in displacement, phase and SMA temperature / 保留位移、相分数和温度的径向邻域 |
+| Transport encoder / 输运编码 | Three channels × 101 axial nodes; independent encoder with the same widths / 3×101 输入，独立同宽编码器 | Preserve separate fluid paths and directional thermal memory without conflating radial and axial coordinates / 分别保留两条流路和方向记忆，避免混用径向与轴向坐标 |
+| Latent attention / 潜变量注意力 | 152 spatial tokens → 16 latent tokens; width 128; eight heads; three pre-norm Transformer blocks; FFN width 512 | Fuse spatial information through a fixed-size representation / 用固定大小的潜变量融合空间信息 |
+| Stage context / 阶段条件 | Nine controls + eight side values + five stage indicators → `22 → 128 → 128` GELU | Condition a shared backbone on stage, operating conditions and carried side state / 按阶段、工况和侧状态调制共享主干 |
+| Temporal memory / 时间记忆 | GRUCell input256 / hidden256; memory projection and FiLM modulation | Carry learned history across loading, exchange, unloading and mechanical restart / 在加载、换热、卸载及重启间携带历史 |
+| Transition heads / 状态转移头 | Five FiLM-conditioned heads; active sizes 414/414/414/261/204 | Preserve stage ownership while learning corrections on top of the frozen affine maps / 在冻结仿射映射上修正活动状态，保留阶段归属 |
+| Field decoder / 场解码器 | 18 Fourier coordinate features →128→128; query-to-latent attention; `128→128→2` output | Query SMA and fluid temperature at nonuniform space/time points / 查询非均匀时空坐标上的两类温度 |
+| Hard constraints / 硬约束 | Exact stage-entry field values; phase range, displacement endpoints, antisymmetric memory | Preserve known interface constraints by construction / 通过输出构造保留已知接口约束 |
+
+These are design motivations, not demonstrated accuracy benefits. With only eight historical training cases, a larger model has substantial overfitting risk. Model capacity must be assessed with training-only validation and subsequent independent data, not inferred from the parameter count.
+
+以上是设计动机，不是已证实的精度收益。历史训练集只有八个工况，更大模型有明显过拟合风险；能力应通过训练集内部验证及后续独立数据评价，不能由参数量推断。
+
+## State, recurrence and outputs / 状态、递推与输出
+
+The explicit state stays at **515 dimensions**: 51 radial displacements, 51 transverse displacements, 51 SMA temperatures, 51 phase fractions, two 101-point fluid fields, eight side temperatures and 101 odd temperature-memory values. The learned **256-dimensional hidden state is additional**, not a replacement for the physical state. The two coordinate systems are encoded separately before attention fusion.
+
+显式状态仍为 **515 维**：径向位移 51、横向位移 51、SMA 温度 51、相分数 51、两条 101 点流体温度、侧温度 8，以及反对称温度记忆 101。新增的 **256 维学习隐状态**独立存在，不替代物理状态。径向和轴向坐标分别编码后再融合。
+
+For transition j at stage k, with known control u and normalized state/control features z:
+
+$$Z_j=\operatorname{AttentionEncoder}(x_j,u,k),\qquad h_{j+1}=\operatorname{GRU}([\operatorname{mean}(Z_j),c_j],h_j).$$
+
+$$\widetilde Z_j=(1+\gamma(h_{j+1}))\odot Z_j+\beta(h_{j+1}).$$
+
+$$x_{j+1}=P\!\left(x_j+S_k\!\left[A_kz_j+b_k+0.1\,\sigma_k\odot R_k(\widetilde Z_j,h_{j+1},c_j)\right]\right).$$
+
+Here c is the encoded condition, S inserts active increments, and σ is the frozen train-only input scale for the active channels. **The new residual uses input scales rather than the old residual-RMS amplitude**, allowing a different correction range; this is an architectural change, not a claim of improvement. The scale multiplier is fixed at 0.1. A and b remain unchanged. P enforces phase fraction in [0,1], the three zero displacement endpoints and antisymmetric memory; temperatures are not clipped.
+
+c 为条件编码，S 写入活动增量，σ 为活动通道的原训练输入尺度。**新残差采用输入尺度，不沿用旧模型的残差 RMS 幅值**，因此修正范围发生变化；这是结构变化，尚未证明带来收益。倍率固定为 0.1，A、b 不更新。P 保留相分数 [0,1]、三个位移零端点和反对称记忆，不裁剪温度。
+
+The first allowed state combines the very first observed mechanical frame with declared thermal conditions. Autonomous rollout subsequently consumes only predicted states, known controls and persistent hidden memory. At every new cycle, the learned fifth transition performs the mechanical restart. Two cycles contain nine transitions; three cycles contain fourteen. No future observations enter inference.
+
+允许的初态由最早已观测力学帧和声明热初值组成。之后自主推进仅使用预测状态、已知控制和持续传递的隐状态。每个新循环先执行第五类力学重启转移；两循环九步、三循环十四步，推理不读取未来观测。
+
+For exchange stages 2 and 4, the decoder receives the latent context and the **predicted entry state**, reconstructing the SMA entry as mirrored radial temperature plus directional memory. It returns:
+
+$$\widehat T_f(x,\tau)=T_{f,0}^{\mathrm{interp}}(x)+s_f(1-e^{-4\tau})\,D_f(x,\tau;\widetilde Z_j),\qquad f\in\{\mathrm{SMA},\mathrm{fluid}\}.$$
+
+换热阶段 2、4 的解码器从**预测入口状态**重构初始场：镜像径向 SMA 温度加方向记忆，流体温度采用对应路径。τ=0 时输出严格等于插值初场。输入支持 [0,1] 内非均匀坐标，超过 1,024 个查询时分块执行；坐标可查询并不等于已通过新网格泛化验证。
+
+The field and state branches share encoders and recurrent context and are jointly differentiable. The decoded field is **not fed back into the explicit state**. Complete thermodynamic closure, end-of-stage mechanical re-equilibration consistency and PDE residual enforcement are not implemented. The historical side-state carry rules are retained.
+
+场与状态分支共享编码和循环上下文，并可联合反向传播；**解码温度场不直接反馈显式状态**。完整热力学闭合、阶段末力学重平衡一致性及 PDE 残差约束尚未实现，历史侧状态传递规则继续保留。
+
+## Training system / 训练系统
+
+The runnable trainer uses complete two-cycle sequences from the original eight training cases. The new field snapshot contains **32 training exchange segments**, taken from the same sealed HDF5 and checked against the existing state-entry reconstruction. Test labels are not exported into this training snapshot or used in the objective. The raw MAT availability limitation remains unchanged; see the [data card](DATA_CARD.md).
+
+训练入口使用原八个训练工况的完整两循环序列。新快照包含同一封存 HDF5 中的 **32 段训练换热场**，并核对其初场与原状态入口重构一致。测试标签没有进入这份训练快照或训练目标。原始 MAT 可用性限制保持不变，详见数据说明。
+
+$$L=L_{\mathrm{state}}+L_{\mathrm{field}}+0.01L_{\nabla_x\mathrm{field}}.$$
+
+State loss equally weights the eight state blocks after train-only normalization. Field loss normalizes each field using RMS temporal changes estimated from training fields and omits time zero. The gradient term compares finite spatial differences of prediction and target on the sampled grid; it is **supervised gradient matching, not a governing-equation residual**. Gradients traverse the entire state/memory chain and field decoder without detach or teacher forcing.
+
+状态损失按训练尺度归一化后对八个状态块等权。场损失用训练场时间变化 RMS 归一化，排除零时刻。梯度项比较采样网格上的预测/真值空间差分，是**有监督梯度匹配，不是控制方程残差**。梯度贯穿状态、记忆和场解码器，不截断、不读取中间真值推进。
+
+| Setting / 设置 | Trainer default / 默认 | Execution check actually run / 本次实际运行 |
+|---|---|---|
+| Precision / 精度 | CPU float64 | CPU float64 |
+| Optimizer / 优化器 | AdamW, lr=3e-4, wd=1e-4, clip=1 | AdamW, lr=1e-4, wd=1e-4, clip=1 |
+| Budget / 预算 | 200 updates, 8 cases per batch | **3 updates, 2 cases per batch** |
+| Schedule / 调度 | Linear warmup, then cosine to 10% | One warmup update; same rule |
+| Field queries / 场监督查询 | Eight times including 0/1; 26 spatial positions per stage | Same / 相同 |
+| Model selection / 模型选择 | No test-based selection | No test scores computed / 未计算测试分数 |
+
+The execution experiment records model weights, optimizer/scheduler state, RNG state, queried indices, source/data hashes and all loss components. It completed one three-cycle inference at 10 × 51 query points per exchange segment, with outputs **[1,14,515]** for states and **[1,6,2,10,51]** for fields. All nine major modules received finite nonzero gradients. Checkpoint reload reproduced state, field and final memory exactly in the recorded environment. Saving a checkpoint over an existing file is refused. The trainer does not yet expose automatic resume orchestration; saved optimizer/RNG state is retained for a future explicit resume workflow.
+
+本次保存了模型、优化器/调度器状态、随机数状态、查询索引、源码/数据哈希与各项损失。三循环推理每段换热采用 10×51 查询，状态输出 **[1,14,515]**，场输出 **[1,6,2,10,51]**。九个主要模块均有有限非零梯度；重载后状态、场和末隐状态在记录环境中精确一致。禁止覆盖旧检查点。训练器尚未提供自动续跑编排，已保存的优化器/随机数状态为后续显式续跑保留。
+
+## Code and usage / 代码与运行
+
+```bash
+# Existing weights + execution evidence / 已保存权重与运行证据
+python -m examples.verify_hierarchical
+# Short joint-training execution check, new directory / 新目录联合训练检查
+python -m examples.train_hierarchical --output run-output-v13 --updates 3 --batch-cases 2 --lr 0.0001
+# Full default training recipe; no accuracy claim until evaluated / 完整默认训练配置
+python -m examples.train_hierarchical --output run-output-v13-training
+# Figures + offline interactive page / 绘图与离线交互页面
+python -m examples.operator_showcase --output demo-output-operator
+```
+
+```python
+from SciML.models.v13.hierarchical_operator import HierarchicalStateOperator
+model = HierarchicalStateOperator.load("evidence/architecture/v13_execution_v1/model.pt")
+# initial: [B,515], control: [B,9], times/positions: 1-D float64 tensors in [0,1]
+prediction = model(initial, control, cycles=3, times=times, positions=positions)
+```
+
+[Model implementation / 模型实现](../SciML/models/v13/hierarchical_operator.py) · [Trainer / 训练器](../examples/train_hierarchical.py) · [Execution protocol / 实际运行协议](../evidence/architecture/v13_execution_v1/protocol.json) · [Execution summary / 运行验证结果](../evidence/architecture/v13_execution_v1/summary.json) · [Contract tests / 接口验证](../SciML/tests/test_hierarchical_operator.py)
+
+## What the demonstrations show / 演示材料的含义
+
+The README's animations and field atlas use **trained reference models**, with fixed case/seed and documented source arrays. They show the existing system's numerical output and error structure. They are not outputs of the three-update v13 checkpoint. The architecture diagram describes the implemented v13 code. The [interactive explorer](../assets/operator_showcase_v2/explorer.html) is a single offline HTML file: download/open it locally after cloning, switch exchange segment/view, and play the stored fields. GitHub renders the GIFs and PNGs directly but does not execute HTML demos inside README.
+
+README 的动画和温度场图谱来自**已训练参考模型**，工况/种子固定且数组来源明确，展示已有系统的数值输出和误差结构，不是三次更新的 v13 结果。架构图对应已实现 v13 代码。交互演示为单个离线 HTML 文件，克隆后本地打开即可切换换热段、显示模式并播放保存的场；GitHub 可直接显示 GIF/PNG，但不会在 README 中执行 HTML。
+
+The offline page's logic is checked with a mock DOM/canvas. Real-browser preview was blocked by this environment's local-file URL policy, so browser rendering/interaction QA is not claimed. No hosting or public sharing was enabled for the preview.
+
+离线页面逻辑采用模拟 DOM/canvas 校验。本环境的本地文件 URL 策略阻止了真实浏览器预览，因此不宣称完成浏览器渲染/交互验收；没有为预览启用托管或公开分享。
+
+## Research basis and next evaluation / 方法依据与后续评价
+
+The latent bottleneck draws on the cross-attention approach in [Perceiver](https://arxiv.org/abs/2103.03206); conditional affine modulation follows [FiLM](https://arxiv.org/abs/1709.07871). These are component inspirations, not claims of reproducing those models or of methodological novelty. Attention is implemented with [PyTorch MultiheadAttention](https://docs.pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html).
+
+潜变量压缩参考 Perceiver 的交叉注意力思路，条件仿射调制采用 FiLM 思路。这里只说明模块依据，不声称复现原论文完整模型或已证明方法创新。
+
+Next evaluations should compare spatial encoding, persistent hidden memory, train-input residual scaling and joint field supervision separately, using case-level splits within the eight training cases before touching the historical test cohort again. The prior one-step/multi-step results and strong affine/POD references remain available for comparison. No new batch of physical simulations is required to run this training code.
+
+后续应在八个训练工况内部按工况划分验证，分别对照空间编码、持续隐记忆、输入尺度残差和联合场监督，再使用历史测试工况。原单步/多步结果及仿射/POD 强基线继续保留。运行本训练代码不需要新增大批物理仿真。

@@ -4,6 +4,8 @@
 
 从 README、SHOWCASE 和 MODELS 开始。图像已经随仓库提交，无需运行代码。详细旧报告在 `SciML/docs/learning_closed_loop_report`，里面的原科学复现命令可能需要未打包的原始归档。
 
+新主模型的架构、公式和运行状态见 [HIERARCHICAL_OPERATOR](HIERARCHICAL_OPERATOR.md)。README 聚焦模型与场演示，原统计图保留于 [RESULTS_GALLERY](RESULTS_GALLERY.md)。克隆后可直接用浏览器打开 `assets/operator_showcase_v2/explorer.html`，无需服务器；本环境只完成模拟 DOM/canvas 逻辑检查，真实浏览器验收待完成。
+
 ## 环境和最小演示
 
 在 Python 3.12 虚拟环境安装根目录 `requirements.txt`。它是兼容范围声明，不是跨平台逐位复现保证；本次实际版本见 `evidence/current_environment.json`。CPU 即可，不需要 MATLAB、GPU、云服务或 API 密钥。
@@ -15,6 +17,9 @@ python -m examples.train_scalar --output run-output --epochs 200 --seed 701
 python -m examples.research_gallery --output demo-output-research
 python -m examples.multicycle_multistep --verify-only
 python -m examples.multicycle_gallery --output demo-output-multicycle
+python -m examples.verify_hierarchical
+python -m examples.train_hierarchical --output run-output-v13 --updates 3 --batch-cases 2 --lr 0.0001
+python -m examples.operator_showcase --output demo-output-operator
 python -m SciML.evaluation.learning_exercises --output-root learning-exercises
 ```
 
@@ -33,7 +38,8 @@ The multi-cycle comparison can be checked with `python -m examples.multicycle_mu
 ## 验证当前分发
 
 ```bash
-python -m unittest SciML.tests.test_learning_coordinate_operator SciML.tests.test_learning_ensemble SciML.tests.test_learning_pinn_inverse SciML.tests.test_learning_pool_loop SciML.tests.test_learning_design_loop SciML.tests.test_learning_exercises SciML.tests.test_acquisition_diversity SciML.tests.test_multistep_historical -v
+python -m unittest SciML.tests.test_learning_coordinate_operator SciML.tests.test_learning_ensemble SciML.tests.test_learning_pinn_inverse SciML.tests.test_learning_pool_loop SciML.tests.test_learning_design_loop SciML.tests.test_learning_exercises SciML.tests.test_acquisition_diversity SciML.tests.test_multistep_historical SciML.tests.test_hierarchical_operator -v
+node examples/test_field_explorer.cjs
 python -m examples.validate_bundle
 ```
 

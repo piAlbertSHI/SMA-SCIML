@@ -1,0 +1,55 @@
+{
+  "status": "completed_architecture_execution_check",
+  "accuracy_claim": false,
+  "fresh_solver_calls": 0,
+  "parameter_report": {
+    "trainable": 3106989,
+    "by_module": {
+      "mechanical": 200960,
+      "transport": 200832,
+      "condition": 19456,
+      "encoder": 663424,
+      "recurrence": 394752,
+      "memory_projection": 32896,
+      "memory_film": 65792,
+      "transitions": 1426859,
+      "decoder": 102018
+    },
+    "frozen_buffer_values": 907578
+  },
+  "training_updates": 3,
+  "training_seconds": 2.2310607000035816,
+  "major_module_gradient_coverage": {
+    "mechanical": true,
+    "transport": true,
+    "condition": true,
+    "encoder": true,
+    "recurrence": true,
+    "memory_projection": true,
+    "memory_film": true,
+    "transitions": true,
+    "decoder": true
+  },
+  "three_cycle_state_shape": [
+    1,
+    14,
+    515
+  ],
+  "three_cycle_field_shape": [
+    1,
+    6,
+    2,
+    10,
+    51
+  ],
+  "checkpoint_replay_exact": true,
+  "frozen_prior_and_scalers_unchanged": true,
+  "test_scores_computed": false,
+  "artifacts": {
+    "execution_arrays.npz": "537369c86fbfa06a2a25b92b9610ea11e4442b51982ec28d32ddeedeafda3df9",
+    "history.json": "b0bba24b8a70839c737d6c66a557244f4b7a3ad04ab7bbd8e601d55017d8afb3",
+    "model.pt": "b897c987bc9d76e1fcd6ce469081fc689976c4e67803152097fe80469401212a",
+    "protocol.json": "4a12a8405f8c178b088030e3503e93a14cdb8600f7ac8e16bbf6b7bb2ac70dd6",
+    "training_state.pt": "78260c9adc8354cfec200011c712e0e0ecfbe50d09c966fb9699c2746931bd2a"
+  }
+}

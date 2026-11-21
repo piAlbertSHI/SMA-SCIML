@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-21",
+  "scope": "Hierarchical state/field architecture implementation and presentation; not predictive-performance validation",
+  "python_tests": {"count": 35, "failures": 0, "errors": 0, "exit_code": 0, "new_architecture_tests": 7},
+  "full_architecture_execution": {
+    "trainable_parameters": 3106989,
+    "frozen_buffer_values": 907578,
+    "updates": 3,
+    "batch_cases": 2,
+    "seed": 20261121,
+    "all_nine_major_modules_receive_gradients": true,
+    "three_cycle_state_shape": [1, 14, 515],
+    "three_cycle_field_shape": [1, 6, 2, 10, 51],
+    "checkpoint_replay_exact_in_recorded_environment": true,
+    "standalone_replay_max_absolute_difference": 0.0,
+    "cross_environment_replay_absolute_tolerance": 1e-8,
+    "test_accuracy_computed": false,
+    "evidence": "evidence/architecture/v13_execution_v1/summary.json"
+  },
+  "training_data": {
+    "existing_train_cases": 8,
+    "new_training_field_snapshot_samples": 32,
+    "test_labels_exported_into_training_snapshot": false,
+    "raw_mat_reaudit": false,
+    "provenance": "data/historical12_training_fields.json"
+  },
+  "presentation": {
+    "readme_statistical_gallery_moved_to": "docs/RESULTS_GALLERY.md",
+    "historical_figures_preserved": 17,
+    "architecture_figure": "assets/operator_showcase_v2/architecture.png",
+    "atlas": "assets/operator_showcase_v2/multicycle_field_atlas.png",
+    "new_gif_frames": 84,
+    "new_gif": "assets/operator_animation_v2/multicycle_fields.gif",
+    "new_gif_size_pixels": [1080, 594],
+    "numerical_demo_model": "Archived v12 historical state model and historical DeepONet, seed 20260910",
+    "v13_numerical_performance_demo_claimed": false,
+    "static_figures_visually_inspected": true
+  },
+  "offline_explorer": {
+    "path": "assets/operator_showcase_v2/explorer.html",
+    "mock_dom_canvas_logic_exit_code": 0,
+    "checks": ["embedded_data", "no_external_resources", "statistics", "segment_change", "error_view", "time_slider", "play_pause", "reset"],
+    "real_browser_qa_completed": false,
+    "reason": "Built-in browser rejected file URL navigation by browser security policy; no alternative browser or hosting workaround was used"
+  },
+  "fresh_physical_solver_calls": 0,
+  "github_ci": "Current Linux run is recorded by GitHub Actions, not asserted by this local record"
+}

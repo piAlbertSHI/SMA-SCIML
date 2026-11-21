@@ -17,6 +17,10 @@ jobs:
       - run: python -m examples.validate_bundle
       - run: python -m unittest SciML.tests.test_learning_coordinate_operator SciML.tests.test_learning_ensemble SciML.tests.test_learning_pinn_inverse SciML.tests.test_learning_pool_loop SciML.tests.test_learning_design_loop SciML.tests.test_learning_exercises SciML.tests.test_acquisition_diversity SciML.tests.test_multistep_historical -v
       - run: python -m examples.multicycle_multistep --verify-only
+      - run: python -m unittest SciML.tests.test_hierarchical_operator -v
+      - run: python -m examples.verify_hierarchical
+      - run: node examples/test_field_explorer.cjs
       - run: python -m examples.showcase --output demo-output-ci --no-animation
       - run: python -m examples.research_gallery --output demo-output-ci-research
       - run: python -m examples.multicycle_gallery --output demo-output-ci-multicycle
+      - run: python -m examples.operator_showcase --output demo-output-ci-operator --no-animation

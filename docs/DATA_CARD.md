@@ -8,6 +8,7 @@
 | field_demo.npz | 原顺序第一个test stage4，branch/初场/真值/旧预测 | 全测试集评价或请求级自主场预测 |
 | uq_predictions.npz | 保存的5成员预测和区间 | 真实观测噪声分解 |
 | historical12_state.npz | 历史12工况的118个状态转移、初态/控制和20个测试场；支持六次多步/单步续训 | 新的独立测试集、当前63版本或重新核验的原始MAT |
+| historical12_training_fields.npz | 同一历史版本八个训练工况的32段换热场，支持新架构联合训练 | 测试标签、新仿真或已完成新模型精度验证 |
 | checkpoints | 成功实验权重；排除失败wp3-r1权重 | 每个检查点都能仅靠小样本示例复现其训练 |
 | evidence/archive | 原协议、结果、诊断、历史审计的路径清理副本 | 原产物清单可直接用于校验本分发 |
 | 详细报告副本 | 保留解释，改写可用链接，标注未打包来源 | 原19文件的字节相同副本 |
@@ -27,3 +28,9 @@ The original HDF5 artifact manifest and all 12 request hashes were checked. Ever
 已核验原 HDF5 产物清单及12份请求哈希，全部派生后态与样本ID均与原训练/测试目标数组完全一致。清单明确记录原始 MAT 不可用；保留旧质量报告，不将其重新签发为新的原始来源审核。两个三循环测试工况已经参与开发分析，不能据此声称独立泛化验证。
 
 [Snapshot provenance / 快照来源](../data/historical12_state.json) · [Extraction code / 提取代码](../examples/export_multicycle.py) · [Experiment / 实验说明](MULTICYCLE_MULTISTEP.md)
+
+The additional training-field snapshot contains `(32,2,50,101)` temperatures from the same verified HDF5. Its case IDs exactly match the original eight training cases; field-entry reconstruction agrees with the portable state snapshot within 1e-9 K. Source manifest, HDF5 and both portable snapshots are bound by hashes. No raw MAT re-audit or new physics run was performed.
+
+新增训练场快照为 `(32,2,50,101)` 温度数组，来自同一已核验 HDF5，工况 ID 严格对应原八个训练工况，初场重构与状态快照在 1e-9 K 容差内一致。清单绑定源 manifest、HDF5 和两份便携快照哈希，没有重新审核原始 MAT 或运行新物理仿真。
+
+[Training-field provenance / 训练场来源](../data/historical12_training_fields.json) · [Export code / 提取实现](../examples/export_training_fields.py)

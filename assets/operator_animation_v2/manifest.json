@@ -1,0 +1,18 @@
+{
+  "status": "completed_architecture_and_field_showcase",
+  "architecture": "v13 implemented, execution-checked, accuracy pending",
+  "numerical_demos": "archived v12 autonomous model and historical field decoder; never relabelled as v13 results",
+  "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+  "seed": 20260910,
+  "figures": [],
+  "input_sha256": {
+    "data/historical12_state.npz": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "evidence/experiments/multicycle_multistep_v1/s20260910/archived_one_step.npz": "507147d8cfb1b1aaffa6d24f7c389446ee7cbb507e86671ef69b042e2f4097d1"
+  },
+  "generator_sha256": "dec267aeebe421339ecd18ddcda1fd81a6686e29027f84db651a2d46fdb24d5c",
+  "artifacts": {
+    "multicycle_fields.gif": "3aa7cd3e421775d7a84ed343d9791883ade384d7af54cf22ea3e515db8ba62b3"
+  },
+  "fresh_training_calls": 0,
+  "fresh_solver_calls": 0
+}

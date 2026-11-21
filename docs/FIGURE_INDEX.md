@@ -1,8 +1,17 @@
 # Figure index / 图表索引
 
-The README contains 17 static figures plus a temperature animation. The latest three multi-cycle figures have PNG and editable SVG exports. All numbers come from committed result files; the diversity and multi-step studies include new training on existing data, with no new physical simulations.
+The README now presents the implemented architecture, two temperature animations, a space–time atlas and an offline field explorer. The previous 17 statistical figures are preserved in the [detailed gallery](RESULTS_GALLERY.md). All numerical displays use committed source arrays. The v13 architecture is implemented and execution-checked; its accuracy is not yet evaluated.
 
-README 展示 17 组静态图和温度动画。最新三组多循环图均提供 PNG 与可编辑 SVG；所有数字来自已提交结果，多样性和多步实验使用现有数据新训模型，没有新增物理仿真。
+README 现展示模型架构、两段温度动画、时空场图谱和离线交互演示。原 17 组统计图保留于详细图集。数值演示来自已提交数组；v13 新架构已实现并验证运行，但精度尚未评价。
+
+| Homepage asset / 首页素材 | Files / 文件 | Source and scope / 来源与范围 |
+|---|---|---|
+| Hierarchical architecture / 分层架构 | [PNG](../assets/operator_showcase_v2/architecture.png), [SVG](../assets/operator_showcase_v2/architecture.svg) | Implemented v13 code and measured parameter count / 已实现代码与实际参数数目 |
+| Three-cycle thermal replay / 三循环热演化 | [GIF](../assets/operator_animation_v2/multicycle_fields.gif) | Trained v12 historical state model + DeepONet, fixed case/seed / 已训练历史参考模型，固定工况和种子 |
+| Space–time atlas / 时空场图谱 | [PNG](../assets/operator_showcase_v2/multicycle_field_atlas.png), [SVG](../assets/operator_showcase_v2/multicycle_field_atlas.svg) | Same archived reference, prediction and signed error / 同一归档参考、预测与有符号误差 |
+| Offline explorer / 离线交互 | [HTML](../assets/operator_showcase_v2/explorer.html) | Same fields rounded to four decimals; local open; mock-DOM checks, real-browser QA pending / 同源四位小数字段，本地打开，模拟逻辑已验证、真实浏览器验收待完成 |
+
+[Showcase generator / 新展示生成器](../examples/operator_showcase.py) · [Figure manifest / 新素材清单](../assets/operator_showcase_v2/manifest.json)
 
 | # | Question / 展示问题 | Figure / 图片 | Editable / 可编辑 | Numerical source / 数值来源 |
 |---|---|---|---|---|

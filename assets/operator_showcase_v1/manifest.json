@@ -1,0 +1,34 @@
+{
+  "status": "completed_architecture_and_field_showcase",
+  "architecture": "v13 implemented, execution-checked, accuracy pending",
+  "numerical_demos": "archived v12 autonomous model and historical field decoder; never relabelled as v13 results",
+  "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+  "seed": 20260910,
+  "figures": [
+    {
+      "name": "architecture",
+      "scope": "Implemented v13 architecture, 3-update execution validation only; not an accuracy claim; parameters read from execution summary"
+    },
+    {
+      "name": "multicycle_field_atlas",
+      "scope": "v12 archived state model and frozen historical DeepONet; first three-cycle test case; six exchange segments, not continuous wall-clock time; no v13 prediction"
+    }
+  ],
+  "input_sha256": {
+    "evidence/architecture/v13_execution_v1/summary.json": "d7930822efef341ca76e3d1705794c1a4c4c9fa9f2d38db06bb1d545e467b97b",
+    "data/historical12_state.npz": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "evidence/experiments/multicycle_multistep_v1/s20260910/archived_one_step.npz": "507147d8cfb1b1aaffa6d24f7c389446ee7cbb507e86671ef69b042e2f4097d1",
+    "examples/templates/field_explorer.html": "10e580e18e66b754db31c7db3961d669dec269a3896a5d49f91c099823fc5883"
+  },
+  "generator_sha256": "3b6d86f75979bf6ad3f64a95ffeb046d34feacff3ae584d1c65395b30ad78900",
+  "artifacts": {
+    "architecture.png": "2cbce99bb285800c9dca6a7adf714567a83685d754f036b970af438dc803e412",
+    "architecture.svg": "99e117701ac51cd39d1d1d5becfae8c3015700bdc02f73d1d6652177ff9c158f",
+    "explorer.html": "b386cf22e49d8bfc739d08970281a58ef2956a42169be797e6dcd63d15f3b2b4",
+    "multicycle_field_atlas.png": "40fdb9b2ef8c6e9f9c43439f5e0e894aff6afb50951c5d70e6d6f1d892962cda",
+    "multicycle_field_atlas.svg": "6e299dc3999e7865e3a5b43ba102efcc8b21cad890b2e4ca6274c6da0579f7f2",
+    "multicycle_fields.gif": "39b2bb1bf3288bff685798a86d741843064d580d474057f3bd0df468956b692b"
+  },
+  "fresh_training_calls": 0,
+  "fresh_solver_calls": 0
+}

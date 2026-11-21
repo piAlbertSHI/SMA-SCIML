@@ -1,296 +1,113 @@
 # SMA SciML
+### Neural state-space operators for elastocaloric cooling
+### 面向弹热制冷的神经状态空间算子
 
-### Scientific Machine Learning for Elastocaloric Cooling
-### 面向弹热制冷的科学机器学习
+**Spatial encoding · Latent attention · Recurrent dynamics · Continuous temperature fields**
 
-**Hybrid dynamics · Neural operators · Inverse modeling · Uncertainty-aware design**  
-**混合动力学模型 · 神经算子 · 参数反演 · 不确定性驱动设计**
+[Architecture / 架构](docs/HIERARCHICAL_OPERATOR.md) · [Field explorer / 场演示](#demos) · [Results / 完整结果](docs/RESULTS_GALLERY.md) · [Run / 运行](#run)
 
-[English](#english) · [中文](#chinese) · [Gallery / 图文成果](#gallery) · [Results / 成果展示](docs/SHOWCASE.md) · [Run / 运行](#run) · [Technical details / 架构参数](docs/MODELS.md)
+SMA SciML models the coupled mechanical, phase-transformation and thermal dynamics of pressure-driven shape-memory-alloy cooling. The current development centers on a **hierarchical recurrent operator** that advances physical states and decodes temperature fields within one differentiable model.
 
-![DeepONet temperature-field prediction / DeepONet 温度场预测](assets/temperature_evolution.gif)
+SMA SciML 面向压力驱动形状记忆合金制冷中的力学、相变与传热耦合。当前核心为**分层循环神经算子**，在同一个可微模型中推进物理状态、保留历史记忆并解码温度场。
 
-*DeepONet prediction versus the numerical reference for a fixed test case: SMA and heat-transfer-fluid temperatures during stage 4, conditioned on the observed stage-entry fields.*  
-*固定测试工况第四阶段的 SMA 与传热流体温度预测；以已知阶段入口场为条件，与数值解对照。*
+![Trained DeepONet temperature-field replay / 已训练 DeepONet 温度场演示](assets/temperature_evolution.gif)
 
-<a id="english"></a>
+*Trained reference model: a fixed test stage with observed entry fields. This existing numerical demonstration is separate from the new architecture below, whose accuracy has not yet been evaluated.*
 
-## Overview
+*已训练参考模型：固定测试换热阶段，输入为已知入口场。该数值演示与下方新增架构分开标注；新架构精度尚未评价。*
 
-SMA SciML is a computational research project that connects multiphysics simulation with machine learning for **pressure-driven NiTi shape-memory-alloy elastocaloric cooling**. The physical system is a clamped thin circular plate undergoing loading, heat rejection, unloading and heat absorption. Its coupled mechanical, phase-transformation and thermal states make it a useful setting for studying predictive models with physical structure.
+## Architecture / 模型架构
 
-The project addresses three linked questions: **How accurately can cycle performance be predicted from operating conditions? What state information is needed to propagate an entire cycle? How can predictive uncertainty guide the next simulation or design candidate?** The implemented workflow spans scalar surrogates, autonomous stage transitions, temperature-field operators, inverse problems and offline design decisions.
+![Implemented hierarchical recurrent operator / 已实现分层循环算子](assets/operator_showcase_v2/architecture.png)
 
-The main benchmark contains **63 simulated operating conditions**, split by complete case into **37 training / 13 calibration / 13 test cases**. Temperature-field evaluation uses 50 time points × 101 spatial points for each heat-exchange stage. An independent historical dataset supports additional two- and three-cycle rollout studies. COP denotes the coefficient of performance.
+**3.11 million trainable parameters · 515 explicit state variables · 256 recurrent memory variables · two temperature fields**
 
-### Selected results
+**311 万可训练参数 · 515 维显式状态 · 256 维循环记忆 · SMA/流体双温度场**
 
-| Result | Measured outcome | Evaluation setting |
+| Layer / 层级 | Implemented design / 已实现设计 | Purpose / 作用 |
 |---|---|---|
-| Cycle-performance prediction | **69.3% lower COP RMSE:** 0.0627 → 0.0192 | Ridge → five-member neural ensemble; mean over three seeds |
-| Autonomous state propagation | **36.3% lower final-stage SMA-state RMSE:** 0.1260 → 0.0802 K | Affine → Ridge + neural residual; three-seed mean; no future stage-state input |
-| Directional memory transfer | **65.1% lower stage-4 SMA-field RMSE:** 1.6966 → 0.5927 K | Fixed-seed cascade comparison; transfer of predicted stage-2 spatial memory |
-| Field-model comparison | POD/Ridge leads in **3 of 4** stage/field metrics; Fourier leads in stage-4 SMA temperature | Matched supervision; neural-model means over three seeds |
-| Multi-cycle training | Third-cycle SMA-state RMSE **1.5432 → 1.5334 K** with multi-step training; matched one-step continuation reaches **1.5163 K** | Three seeds; fixed two-case cohort; no new simulations; [full comparison](docs/MULTICYCLE_MULTISTEP.md) |
+| Spatial representation / 空间表示 | Separate radial and axial residual CNN encoders, width 128, dilations 1/2/4 / 独立径向与轴向残差编码器 | Preserve mechanical, phase and transport structure / 保留力学、相变及输运结构 |
+| Information fusion / 信息融合 | 152 spatial tokens → 16 latent tokens; three Transformer blocks, eight heads / 152 空间 token 压缩至 16 潜 token | Combine spatial information without flattening everything into a small MLP / 融合结构化空间信息 |
+| Cycle dynamics / 循环动力学 | GRU memory + FiLM-conditioned stage heads + frozen affine prior / GRU 记忆、FiLM 阶段头与冻结仿射先验 | Carry history through exchange and mechanical restart / 跨换热与力学重启传递历史 |
+| Field prediction / 场预测 | Fourier coordinate features + query-to-latent attention; exact initial values / 傅里叶坐标特征、交叉注意力与硬初值 | Query two continuous-coordinate temperature fields / 查询两类连续坐标温度场 |
+| Joint training / 联合训练 | Multi-step state + field + supervised spatial-gradient losses / 多步状态、场值与空间梯度监督 | Backpropagate field errors through the state and memory chain / 将场误差回传至状态与记忆链 |
 
-These are reductions in prediction error, not gains in physical cooling efficiency. [Results and evaluation context →](docs/SHOWCASE.md)
+The architecture, joint trainer, self-contained checkpoint format and inference API are implemented. **Execution verification is complete; accuracy benchmarking is pending.** Seven architecture tests and a three-update joint-training run verify gradients, stage ownership, hard initial conditions, causal rollout and checkpoint replay. The larger parameter count is a capacity choice, not evidence of better prediction.
 
-### Model architecture
+架构、联合训练器、自包含检查点和推理接口已实现。**运行验证完成，精度基准尚待开展。** 七项架构测试及三次联合训练更新验证了梯度、阶段归属、硬初值、因果推进和权重回放。更大的参数量表示容量选择，不直接代表预测更好。
 
-```mermaid
-flowchart TD
-    A["Operating conditions / 工况参数"] --> B["Scalar surrogates / 性能代理"]
-    B --> C["Ensemble + calibration / 集成与区间校准"]
-    C --> D["Active sampling + candidate review / 主动选样与候选回查"]
-    A --> E["Four stage-specific state models / 四阶段状态模型"]
-    E --> F["DeepONet or Fourier field decoder / 温度场算子"]
-    F --> G["SMA + fluid temperature fields / 两类温度场"]
-    G --> H["Predicted stage-2 spatial memory / 预测方向记忆"]
-    H -->|"DeepONet stage 4 / 第四阶段"| F
-```
+[Architecture report: dimensions, equations, losses and execution evidence / 架构报告：维度、公式、损失与运行证据](docs/HIERARCHICAL_OPERATOR.md) · [Editable SVG / 可编辑架构图](assets/operator_showcase_v2/architecture.svg)
 
-The scalar/design and state/field paths share the simulation dataset. They are separately trained modules; field-to-performance energy readout and joint training are research extensions. PINN inversion is a complementary branch using manufactured diffusion data and local thermal-response curves.
-
-| Module | Implemented architecture | Purpose |
-|---|---|---|
-| Performance surrogate | `7 → 32 → 32 → 5` SiLU MLP; five-member ensemble; Ridge/RF/HistGB baselines | Predict cooling energy, pumping work, COP, specific cooling power and temperature span |
-| Hybrid state model | Four stage-specific Ridge + residual MLPs: `426 → 32 → 32 → d`, `d = 204 / 313 / 313 / 160` | Advance 414 state variables using 12 control features |
-| Historical multi-cycle model | Five Ridge + residual MLPs: `529 → 32 → 32 → d`, `d = 414 / 414 / 414 / 261 / 204`; **146,411 neural parameters** | Advance 515 states, including directional memory and restart; full gradients through nine transitions |
-| DeepONet | Three branches `204 / 9 / 8 → 32 → 32 → 32`; fusion `96 → 48`; coordinate trunk `2 → 32 → 32 → 48`; **20,898 parameters** | Query two temperature fields with an exact initial-condition construction |
-| Fourier / POD baselines | Spatial Fourier: width 12, two layers, eight modes, **7,886 parameters**; POD: four modes per field + Ridge | Compare spectral and low-rank representations under matched supervision |
-| Inverse models | Diffusion PINN `2 → 24 → 24 → 1` + `log(a)`; local ODE network `1 → 24 → 24 → 1` + `log(k)` | Identify a diffusion coefficient or a local effective thermal-response rate |
-| Uncertainty and design | Five-member, six-output ensemble; conformal calibration; three-member acquisition models | Compare `12 → 17 → 22` label budgets and review three candidates from a finite pool |
-
-### Research direction
-
-The strongest finding is that **state representation and interfaces can matter as much as network architecture**. A radial state representation discarded directional temperature information needed by a later stage; transferring the predicted antisymmetric component substantially improved the cascade without retraining the field network. The strong POD baseline also identifies where added neural complexity has yet to pay off.
-
-The first multi-step experiment is complete: two-cycle training fit improves, but third-cycle prediction does not beat the matched one-step continuation. The next priorities are diagnosing memory/restart errors with training-only validation, material-property inputs for transfer, objective-specific acquisition, and energy-consistent field-to-performance readout. [Research questions and milestones →](docs/SHOWCASE.md#potential)
-
-### Evaluation scope
-
-Results are numerical benchmarks on the current simulation domain. The test split has informed development; an independent confirmation set and experimental validation remain future work. The main field operators enforce initial conditions but do not yet enforce the full SMA governing equations or energy balance. PINN diffusion results use a manufactured problem. The finite-pool design study evaluates archived candidates, with engineering safety still unverified. Detailed data coverage and COP accounting are documented in the [data card](docs/DATA_CARD.md).
-
-<a id="chinese"></a>
-
-## 项目概述
-
-SMA SciML 是一个将多物理仿真与机器学习结合的计算研究项目，面向**压力驱动 NiTi 形状记忆合金的弹热制冷**。研究对象为周边夹持薄圆板，经历加载、放热、卸载和吸热四个阶段。力学响应、相变与传热相互耦合，为研究具有物理结构的预测模型提供了具体问题。
-
-项目围绕三个问题展开：**能否从工况准确预测循环性能？推进完整循环需要保留哪些状态信息？如何利用预测不确定性选择下一次仿真或设计候选？** 当前已实现性能代理、阶段自主推进、温度场算子、参数反演与离线设计决策的完整工作流程。
-
-主数据集包含 **63 个数值工况**，按完整工况划分为 **37 个训练 / 13 个校准 / 13 个测试样本**。每个换热阶段在 50 个时刻 × 101 个空间点上评价温度场；独立的历史数据还支持两循环和三循环推演。COP 表示制冷性能系数。
-
-### 关键结果
-
-| 结果 | 定量表现 | 评价条件 |
-|---|---|---|
-| 循环性能预测 | **COP RMSE 降低 69.3%：**0.0627 → 0.0192 | Ridge → 五成员神经集成，三个种子均值 |
-| 自主状态推进 | **末阶段 SMA 状态 RMSE 降低 36.3%：**0.1260 → 0.0802 K | 仿射基线 → Ridge + 神经残差，三个种子均值，不读取未来阶段状态 |
-| 方向记忆传递 | **第四阶段 SMA 场 RMSE 降低 65.1%：**1.6966 → 0.5927 K | 固定种子级联对照，传递预测的第二阶段空间记忆 |
-| 场模型对照 | POD/Ridge 在 **4 项指标中的 3 项**领先；Fourier 在第四阶段 SMA 温度上领先 | 相同监督数据，神经模型取三个种子均值 |
-| 多循环训练 | 多步训练使第三循环 SMA 状态 RMSE **1.5432 → 1.5334 K**；同预算单步续训为 **1.5163 K** | 三个种子、固定两个测试工况，无新增仿真；[完整对照](docs/MULTICYCLE_MULTISTEP.md) |
-
-以上百分比指预测误差下降，不代表实体制冷效率提高。[查看图表与评价条件 →](docs/SHOWCASE.md)
-
-### 模型架构
-
-上方架构图展示两条共用仿真数据的路径：**工况 → 性能代理 → 不确定性与设计决策**，以及**工况 → 四阶段状态模型 → 温度场算子**。各模块分别训练；场到性能的能量读出与联合训练属于后续研究。PINN 反演作为补充支线，分别处理制造扩散问题和局部温度响应曲线。
-
-| 模块 | 已实现架构 | 解决的问题 |
-|---|---|---|
-| 性能代理 | `7 → 32 → 32 → 5` SiLU MLP、五成员集成，配套 Ridge/RF/HistGB 基线 | 预测冷量、泵功、COP、比制冷功率与温差 |
-| 混合状态模型 | 四个阶段专属 Ridge + 残差 MLP：`426 → 32 → 32 → d`，`d = 204 / 313 / 313 / 160` | 由 414 维状态和 12 维控制推进循环状态 |
-| 历史多循环模型 | 五个 Ridge + 残差 MLP：`529 → 32 → 32 → d`，`d = 414 / 414 / 414 / 261 / 204`；**146,411 神经参数** | 推进含方向记忆和重启的 515 维状态，梯度穿过完整九步链 |
-| DeepONet | 三个 branch：`204 / 9 / 8 → 32 → 32 → 32`；融合 `96 → 48`；trunk：`2 → 32 → 32 → 48`；**20,898 参数** | 查询 SMA/流体温度场，通过输出构造严格满足初值 |
-| Fourier / POD 对照 | 一维空间 Fourier：宽度 12、两层、8 个模式、**7,886 参数**；POD：每场 4 模态 + Ridge | 在相同监督下比较频域表示与低秩表示 |
-| 反演模型 | 扩散 PINN：`2 → 24 → 24 → 1` + `log(a)`；局部 ODE：`1 → 24 → 24 → 1` + `log(k)` | 识别扩散系数或局部有效热响应率 |
-| 不确定性与设计 | 五成员六输出集成、conformal 校准、三成员选样模型 | 比较 `12 → 17 → 22` 标签预算，并回查有限池中的三个候选 |
-
-### 项目潜力
-
-一个核心发现是：**状态表示和模块接口，与网络架构同样重要。** 原径向状态丢失了后续阶段需要的方向温度信息；传递预测场的反对称分量后，无需重训场网络即可明显改善级联误差。POD 的强基线表现也明确了神经模型在哪些任务上尚未体现优势。
-
-首轮多步训练已完成：两循环训练拟合改善，但第三循环预测尚未超过同预算单步续训。下一阶段将结合训练集内部验证定位记忆/重启误差，引入物性特征研究迁移，研究目标相关选样，并建立满足能量核算要求的场到性能读出。[查看研究问题与验收目标 →](docs/SHOWCASE.md#potential)
-
-### 评价范围
-
-当前成果来自既有仿真范围内的数值基准。测试集已参与开发，新的独立确认集和实物验证仍待完成。主场算子已满足硬初值，但尚未加入完整 SMA 控制方程与能量闭合；扩散 PINN 使用制造问题。设计研究采用有限候选池的归档回查，工程安全尚待验证。数据覆盖和 COP 功分母口径见[数据说明](docs/DATA_CARD.md)。
-
+<a id="demos"></a>
 <a id="gallery"></a>
 
-## Results gallery / 图文成果汇报
+## Numerical demonstrations / 数值演示
 
-**Seventeen result figures across the modeling pipeline, plus the temperature animation above.** The gallery includes completed diversity-acquisition and multi-step training experiments using existing data, without new physics simulations. Figures 15–17 show the latest multi-cycle comparison.
+### Three-cycle thermal evolution / 三循环热演化
 
-**17 组结果图覆盖模型全流程，另有上方温度动画。** 本页汇集各支线研究，以及使用现有数据完成的多样性选样和多步训练实验，没有新增物理仿真。最新多循环对照见图 15–17。
+![Three-cycle temperature fields, reference and errors / 三循环温度场、数值参考与误差](assets/operator_animation_v2/multicycle_fields.gif)
 
-[Figure index & editable SVG / 图表索引与可编辑 SVG](docs/FIGURE_INDEX.md) · [Architecture and detailed results / 架构及详细结果](docs/SHOWCASE.md)
+A trained historical state model supplies every exchange entry to its field decoder, using its own predictions across three cycles. The animation reveals reference, predicted and error fields through six exchange segments. **Fixed first three-cycle test case, seed 20260910; these are archived v12 results, not v13 results.**
 
-### 01 · Performance surrogates / 性能代理
+已训练的历史状态模型在三循环中自主推进，为各换热段提供预测入口，再由场算子解码。动画展示六段换热中的数值参考、预测及误差场。**固定第一个三循环测试工况、种子 20260910；这是已保存 v12 结果，不是 v13 的精度展示。**
 
-![Performance surrogate benchmarks](assets/scalar_benchmarks.png)
+<details>
+<summary><strong>Inspect the complete space–time field atlas / 展开完整时空场图谱</strong></summary>
 
-The five-member ensemble reduces COP RMSE from **0.0627 to 0.0192** and specific-cooling-power RMSE from **23.59 to 7.50 W/kg** versus Ridge. Bars show three-seed means, with seed standard deviations.  
-五成员集成相比 Ridge，将 COP RMSE 从 **0.0627 降至 0.0192**，比制冷功率 RMSE 从 **23.59 降至 7.50 W/kg**。图中为三个种子均值与种子间标准差。
+![SMA and fluid space-time atlas / SMA 与流体时空场图谱](assets/operator_showcase_v2/multicycle_field_atlas.png)
 
-### 02 · Autonomous stage dynamics / 四阶段自主推进
+Each band is one exchange segment with normalized local time. Reference and prediction share temperature limits; signed error uses its own scale. The bands omit mechanical-stage durations and are not a continuous wall-clock axis. Later-cycle errors remain visible.
 
-![Autonomous state propagation](assets/research_v1/state_dynamics.png)
+每条带对应一个换热阶段，使用局部归一化时间；参考与预测共用温度色标，有符号误差单独标度。条带未包含力学阶段时长，不能作为连续实际时间轴；后续循环的误差如实保留。
 
-Ridge plus neural residuals improves both thermal-state and phase-fraction prediction over the affine baseline. Stage-3 errors reveal where mechanical unloading and re-equilibration make propagation harder. Inputs are requested conditions and predicted states.  
-Ridge 加神经残差同时改善温度状态与相变量预测。第三阶段误差较高，提示卸载与重平衡是状态推进中的难点；输入仅来自工况请求和自身预测状态。
+</details>
 
-### 03 · Neural operators versus low-rank models / 神经算子与低秩基线
+### Offline field explorer / 离线交互场演示
 
-![Temperature-field model comparison](assets/operator_comparison.png)
+[Open the demo file in the repository / 查看演示文件](assets/operator_showcase_v2/explorer.html)
 
-DeepONet, spatial Fourier and POD/Ridge are compared under matched supervision. POD leads in three of four field metrics, while Fourier leads for stage-4 SMA temperature; the result makes model selection depend on measured performance.  
-DeepONet、空间 Fourier 与 POD/Ridge 使用相同监督进行比较。POD 在四项场指标中的三项领先，Fourier 在第四阶段 SMA 温度上领先，模型选择以实际对照结果为依据。
+After cloning, open `assets/operator_showcase_v2/explorer.html` locally. Switch between numerical reference, prediction and error; select any of the six exchange segments and play the stored fields. It is self-contained and needs no server, MATLAB, network connection or API key. GitHub displays the GIFs above directly; the interactive HTML runs locally.
 
-### 04 · What the field model predicts / 温度场预测的实际输出
+克隆后在浏览器打开上述 HTML，可切换参考/预测/误差、选择六个换热段并播放场演化。文件自包含，不需要服务器、MATLAB、联网或 API 密钥。GitHub 直接显示上方 GIF，交互 HTML 在本地运行。
 
-![Reference temperature fields, predictions and errors](assets/field_replay.png)
+Logic checks use a mock DOM/canvas; actual browser QA remains pending because this environment blocks local-file previews. / 已校验模拟 DOM/canvas 下的交互逻辑；本环境禁止本地文件预览，真实浏览器验收待完成。
 
-A fixed stage-4 test example shows reference fields, predicted fields and spatial error patterns. SMA/fluid RMSE is **0.6281 / 0.4891 K** for this example, conditioned on observed entry fields; aggregate performance is reported separately above.  
-固定第四阶段测试样本展示数值场、预测场与空间误差。该样本的 SMA/流体 RMSE 为 **0.6281 / 0.4891 K**，使用已知入口场；全测试集结果见上一图。
+## Established results and evaluation scope / 已有结果与评价范围
 
-### 05 · Directional memory across stages / 跨阶段方向记忆
+The project also includes performance ensembles, DeepONet/Fourier/POD comparisons, inverse PINNs, calibrated uncertainty and offline acquisition/design studies. On the main **63-case numerical benchmark**, the five-member performance ensemble reduces COP prediction RMSE **0.0627 → 0.0192** relative to Ridge. Transferring predicted directional memory reduces stage-4 field error **1.6966 → 0.5927 K** in a fixed-seed cascade comparison.
 
-![Repairing lost spatial information](assets/memory_repair.png)
+项目还包含性能集成、DeepONet/Fourier/POD 对照、逆问题 PINN、区间校准和离线选样/设计支线。在主 **63 工况数值基准**上，五成员性能集成将 COP 预测 RMSE 相比 Ridge 从 **0.0627 降至 0.0192**；固定种子级联对照中，传递预测方向记忆使第四阶段场误差从 **1.6966 降至 0.5927 K**。
 
-Carrying the odd component of the **predicted** earlier field lowers stage-4 SMA-field error by **65.1%** with fixed weights and seed. This isolates information loss at the state–field interface as a major source of cascade error.  
-在权重与种子固定时，传递前一阶段**预测场**的奇分量，使第四阶段 SMA 场误差下降 **65.1%**，明确了状态—场接口的信息损失是级联误差的重要来源。
+The separate historical corpus contains eight two-cycle training cases and four test cases. Its latest multi-step continuation only slightly improves third-cycle error and does not beat matched one-step continuation on the primary metrics. POD and affine baselines remain strong. These results motivate the new architecture; they do not validate it. Full physical energy closure, independent confirmation and experimental validation remain open.
 
-### 06 · Architecture ablations / 架构消融与初值一致性
+独立历史数据采用八个两循环训练工况及四个测试工况。此前多步续训对第三循环的改善有限，主要指标未超过同预算单步续训；POD 和仿射基线仍然很强。这些结果为新架构提供研究动机，但不构成新架构的验证。完整物理能量闭合、独立确认与实物验证仍待完成。
 
-![Operator ablations: field accuracy and initial condition](assets/research_v1/operator_ablations.png)
-
-Removing the stage input increases several field errors. Removing hard initial conditions can reduce an individual future error while producing initial-frame errors up to **8.87 K**. Accuracy and interface consistency are therefore evaluated separately.  
-去掉阶段输入后，多项场误差上升；去掉硬初值虽然可能降低某项未来误差，却引入最高 **8.87 K** 的初始帧误差。因此需要同时评价预测精度与接口一致性。
-
-### 07 · PINN inverse problem / PINN 参数反演
-
-![Manufactured diffusion inverse problem](assets/research_v1/pinn_inverse.png)
-
-With 12 observations, the inverse PINN reconstructs a manufactured diffusion field and identifies its coefficient with **0.0458%–0.1906%** error across three seeds. The error maps share a color scale; this is a controlled heat-equation study, distinct from SMA material calibration.  
-使用 12 个观测，逆问题 PINN 重构制造扩散温度场，三个种子的系数误差为 **0.0458%–0.1906%**。误差图使用相同色标；该支线验证热方程反演方法，与 SMA 材料标定分别处理。
-
-### 08 · Local thermal-response identification / 局部热响应辨识
-
-![Local response rates and withheld-tail prediction](assets/research_v1/local_thermal.png)
-
-Six fits compare a local ODE PINN with classical ODE identification. Estimated effective rates agree closely; the PINN has lower withheld-tail error in four fits and higher error in two. The parameters describe local response rather than universal material constants.  
-六组拟合比较局部 ODE PINN 与经典 ODE 识别。两者的有效速率接近；PINN 在四组留出时间尾段上误差更低、两组更高。识别参数描述局部响应，而非通用材料常数。
-
-### 09 · Calibrated uncertainty / 校准后的预测不确定性
-
-![Predictions with calibrated intervals](assets/research_v1/uncertainty_intervals.png)
-
-Nominal 90% simultaneous intervals cover all six outputs in **13/13** archived test cases. The plot also exposes interval width, so coverage is not mistaken for precision. With only 13 calibration cases, finite 95% intervals are unavailable under the implemented rule.  
-名义 90% 同时区间在 **13/13** 个归档测试工况上覆盖全部六个目标，图中同时展示区间宽度。当前仅有 13 个校准工况，按所用规则无法给出有限的 95% 区间。
-
-### 10 · Generalization under distribution shift / 分布变化下的泛化
-
-![Geometry, material and protocol distribution shifts](assets/research_v1/ood_generalization.png)
-
-Geometry, material and operating-protocol shifts use separate splits and retrained models. Material shift markedly increases prediction error; coverage can drop below its nominal level. The figure identifies specific transfer challenges instead of treating every OOD task as equivalent.  
-几何、材料和运行协议变化分别采用独立切分并重新训练。材料变化显著放大预测误差，区间覆盖也可能低于名义水平；不同分布变化对应的迁移难点需要分别分析。
-
-### 11 · Physics-loss ablation / 物理损失消融
-
-![Data, PDE, interface and energy losses](assets/research_v1/physics_ablation.png)
-
-In a manufactured four-stage heat equation, the full loss reduces unobserved-field RMSE from **0.0273 to 0.0052 K**. Additional energy loss improves energy residuals but slightly worsens cycle-interface error relative to the interface-only variant. This is a controlled physics-loss study, not SMA energy-closure validation.  
-在制造四阶段热方程中，完整损失将未观测场 RMSE 从 **0.0273 降至 0.0052 K**。加入能量项改善能量残差，但相对接口约束版本略增循环接口误差；这是物理损失对照实验，尚不代表真实 SMA 能量闭合。
-
-### 12 · Historical multi-cycle prediction / 历史多循环推演
-
-![Three-cycle temperature-field prediction](assets/research_v1/historical_rollout.png)
-
-An independent historical profile uses eight training and four test cases. The plotted cohort consists of the **same two three-cycle test cases** at all horizons; training uses cycles 1–2. Autonomous third-cycle stage-4 errors are **2.076 K (SMA)** and **0.989 K (fluid)**, motivating multi-step training.  
-独立历史版本使用八个训练、四个测试工况。图中各预测长度始终对应**相同的两个三循环测试工况**，训练仅使用第一、第二循环。自主第三循环末阶段误差为 **2.076 K（SMA）**和 **0.989 K（流体）**，为多步训练提供明确目标。
-
-### 13 · New: diversity-aware acquisition / 本次新增：多样性选样
-
-![Four acquisition strategies across all six targets](assets/research_v1/diversity_acquisition.png)
-
-A fixed **50:50 composite-score / distance-rank** rule was evaluated over **four strategies × three seeds**, with identical 12→17→22 budgets and 200 updates per member. All three original baselines were reproduced. At 22 labels, diversity lowers temperature-span RMSE from **0.03480 to 0.02534 K**, but increases COP RMSE from **0.03751 to 0.05794** versus composite. Shading is seed standard deviation; all six targets are shown.  
-本次以固定 **50:50 复合分数/距离排名**构建新策略，完成**四策略 × 三种子**实验，各策略采用相同的 12→17→22 预算和每成员 200 次更新，三个原基线均得到重现。22 标签时，多样性策略使温差 RMSE 从 **0.03480 降至 0.02534 K**，但 COP RMSE 相比原复合策略由 **0.03751 升至 0.05794**。阴影为种子标准差，全部六个目标均予展示。
-
-[Protocol, decisions, weights and results / 协议、决策记录、权重与结果](docs/ACQUISITION_DIVERSITY.md)
-
-### 14 · Candidate design trade-offs / 候选设计权衡
-
-![Verified candidate trade-offs](assets/design_tradeoff.png)
-
-Three candidates from a 15-case pool were checked against archived numerical results after prediction. The study connects calibrated surrogates to candidate review; it does not establish a continuous global optimum or engineering safety certification.  
-对 15 个候选中的三个方案先预测、后进行归档数值回查，将校准代理模型连接到候选设计评价。当前结果限定于有限候选池，尚未验证连续全局最优或工程安全。
-
-### 15 · New: multi-step training / 新增：多步训练对照
-
-![Multi-cycle horizon comparison](assets/multicycle_v1/multicycle_horizons.png)
-
-Eight two-cycle training cases supervise a differentiable nine-transition chain. Three seeds compare archived weights with **300-update one-step and multi-step continuations**, keeping the field decoders frozen. Third-cycle SMA-state RMSE is **1.5432 → 1.5334 K** with multi-step training; the matched one-step continuation reaches **1.5163 K**. Shading denotes seed SD, with the same two test cases at every horizon.
-
-八个两循环训练工况监督完整可微九步链，三个种子比较原模型、**300 次单步续训和多步续训**，场解码器始终冻结。多步训练将第三循环 SMA 状态 RMSE 从 **1.5432 降至 1.5334 K**，同预算单步续训为 **1.5163 K**。各循环均使用相同两个测试工况，阴影为种子标准差。
-
-### 16 · Training fit versus long-horizon error / 训练拟合与长时误差
-
-![Training loss and third-cycle state diagnostics](assets/multicycle_v1/multicycle_diagnosis.png)
-
-Multi-step training lowers the common autonomous training loss by **87.3%**, while third-cycle SMA-field RMSE falls only **0.37%** and directional-memory error increases **3.34%**. All eight state blocks and both fields are reported. The experiment establishes a working cross-step training path and identifies a remaining generalization problem; it does not establish multi-step superiority.
-
-多步训练使统一评价的自主推进训练损失下降 **87.3%**，但第三循环 SMA 场 RMSE 只降低 **0.37%**，方向记忆误差反而增加 **3.34%**。图中完整展示八个状态块和两类温度场。跨步训练链已实现并验证，长期泛化问题仍待解决，当前结果不支持宣称多步训练更优。
-
-### 17 · Every case and seed / 逐工况、逐种子结果
-
-![Third-cycle comparison for both test cases](assets/multicycle_v1/multicycle_cases.png)
-
-Both three-cycle cases are shown, without selecting the best seed. Multi-step SMA-state error improves for recA but worsens slightly for recAs; these are two specific cases, not material-transfer evidence. All new weights, predictions, protocols and bilingual model details are included in the [multi-cycle study](docs/MULTICYCLE_MULTISTEP.md).
-
-展示两个三循环工况及全部种子，不挑选最优结果。多步训练改善 recA 工况的 SMA 状态误差，但使 recAs 工况略有退化；这不构成材料迁移结论。新增权重、预测数组、协议和中英文模型说明均已保存，见[多循环研究报告](docs/MULTICYCLE_MULTISTEP.md)。
+[Complete result gallery / 完整结果图集](docs/RESULTS_GALLERY.md) · [Multi-step comparison / 多步对照](docs/MULTICYCLE_MULTISTEP.md) · [Data and provenance / 数据来源](docs/DATA_CARD.md)
 
 <a id="run"></a>
 
-## Run the project / 运行项目
+## Run / 运行
 
-Python 3.12 · CPU · PyTorch / scikit-learn. The bundled examples do not require MATLAB or a GPU.  
-推荐 Python 3.12，CPU 即可运行；随仓库提供的示例不需要 MATLAB 或 GPU。
+Python 3.12 · CPU · PyTorch. No new physical simulations are needed.
 
 ```bash
-python -m venv .venv
-# Windows PowerShell: .venv\Scripts\Activate.ps1
-# macOS / Linux: source .venv/bin/activate
 python -m pip install -r requirements.txt
-python -m examples.showcase --output demo-output
-python -m examples.train_scalar --output run-output --epochs 200
-python -m examples.research_gallery --output demo-output-research
-python -m examples.multicycle_multistep --verify-only
-python -m examples.multicycle_gallery --output demo-output-multicycle
+python -m examples.validate_bundle
+python -m examples.verify_hierarchical
+# Small execution check in a fresh directory / 新目录小规模运行验证
+python -m examples.train_hierarchical --output run-output-v13 --updates 3 --batch-cases 2 --lr 0.0001
+# Generate architecture and numerical demonstrations / 生成架构与数值演示
+python -m examples.operator_showcase --output demo-output-operator
 ```
-
-`showcase` loads saved weights and produces six figures, a temperature animation and numerical summaries. `train_scalar` fits a new three-member, six-output ensemble on the bundled training cases. Use new output directories for each run.  
-`showcase` 加载已有权重，生成六张图、温度动画与数值摘要；`train_scalar` 使用已打包训练工况新训三成员六输出集成。每次运行使用新的输出目录。
-
-`research_gallery` generates the nine additional figures in PNG and editable SVG from archived results and the completed diversity experiment. To rerun that experiment, see the [protocol and command](docs/ACQUISITION_DIVERSITY.md).
-`research_gallery` 根据归档结果及本次多样性实验生成九组新增 PNG 与可编辑 SVG；重新运行新实验的方法见协议说明。
-
-`multicycle_multistep --verify-only` replays the nine model/decoder combinations and recomputes saved metrics. `multicycle_gallery` generates three additional PNG/SVG figures. Six continuation fits can be rerun with `python -m examples.multicycle_multistep --output run-output-multicycle`, using only bundled data.
-
-`multicycle_multistep --verify-only` 回放九组模型/解码组合并重算指标；`multicycle_gallery` 生成三组多循环 PNG/SVG。使用 `python -m examples.multicycle_multistep --output run-output-multicycle` 可仅依靠仓库数据重新完成六次续训。
 
 | Resource / 资源 | Contents / 内容 |
 |---|---|
-| [Results / 成果展示](docs/SHOWCASE.md) | Architectures, comparisons and research questions / 架构、对照结果与研究问题 |
-| [Model details / 模型参数](docs/MODELS.md) | Dimensions, losses and training budgets (Chinese) / 维度、损失与训练预算 |
-| [Quickstart / 使用说明](docs/QUICKSTART.md) | Commands and verification / 运行命令与验证 |
-| [Interview brief / 中文面试汇报](docs/INTERVIEW_ZH.md) | Technical narrative and detailed discussion / 项目主线与技术问答 |
-| [Roadmap / 后续路线](docs/ROADMAP.md) | Experimental priorities and working conventions / 实验优先级与开发约定 |
-| [Latest evidence / 最新验证记录](evidence/portable_multicycle_validation_20261121.json) | 28 local tests and nine model/decoder replays; current CI in Actions / 28 项本地测试、九组模型回放，最新 CI 见 Actions |
+| [Architecture report / 新架构报告](docs/HIERARCHICAL_OPERATOR.md) | Implemented modules, parameter counts, equations and training contract / 模块、参数、公式与训练合同 |
+| [Model source / 模型代码](SciML/models/v13/hierarchical_operator.py) | Spatial encoding, latent attention, recurrence and coordinate decoder / 空间编码、注意力、递推与场解码 |
+| [Execution evidence / 运行证据](evidence/architecture/v13_execution_v1/summary.json) | Gradient coverage, checkpoint replay and output shapes / 梯度覆盖、回放与输出形状 |
+| [Research portfolio / 项目支线](docs/SHOWCASE.md) | Prior models, experiments and research questions / 已有模型、实验与研究问题 |
+| [Quickstart / 使用说明](docs/QUICKSTART.md) | Environment, commands and validation / 环境、命令与验证 |
 
-Code is organized under `SciML/`; `checkpoints/`, `data/`, `assets/` and `evidence/` hold weights, compact data, figures and experiment records. Full raw MAT/HDF5 archives and the complete MATLAB/Simulink project remain outside this distribution.  
-代码位于 `SciML/`，权重、轻量数据、展示图和实验记录分别位于 `checkpoints/`、`data/`、`assets/` 和 `evidence/`。完整原始 MAT/HDF5 与 MATLAB/Simulink 工程未包含在本分发中。
+**Private repository.** GitHub Pages remains disabled. Public release requires owner approval. Historical reports, comparisons and failed evidence are preserved.
 
-**Repository status / 仓库状态:** private; GitHub Pages is disabled. Public release requires owner approval and the [release checklist](docs/PUBLIC_RELEASE_CHECKLIST.md). No open-source license is currently granted.  
-仓库继续保持私有，未启用 GitHub Pages；公开需所有者批准并完成检查清单，当前未授予开源许可证。
+**仓库继续保持 private，未启用 GitHub Pages。** 公开发布需所有者批准，历史报告、对照与失败证据均保留。

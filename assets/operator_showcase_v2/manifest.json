@@ -1,0 +1,33 @@
+{
+  "status": "completed_architecture_and_field_showcase",
+  "architecture": "v13 implemented, execution-checked, accuracy pending",
+  "numerical_demos": "archived v12 autonomous model and historical field decoder; never relabelled as v13 results",
+  "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+  "seed": 20260910,
+  "figures": [
+    {
+      "name": "architecture",
+      "scope": "Implemented v13 architecture, 3-update execution validation only; not an accuracy claim; parameters read from execution summary"
+    },
+    {
+      "name": "multicycle_field_atlas",
+      "scope": "v12 archived state model and frozen historical DeepONet; first three-cycle test case; six exchange segments, not continuous wall-clock time; no v13 prediction"
+    }
+  ],
+  "input_sha256": {
+    "evidence/architecture/v13_execution_v1/summary.json": "d7930822efef341ca76e3d1705794c1a4c4c9fa9f2d38db06bb1d545e467b97b",
+    "data/historical12_state.npz": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "evidence/experiments/multicycle_multistep_v1/s20260910/archived_one_step.npz": "507147d8cfb1b1aaffa6d24f7c389446ee7cbb507e86671ef69b042e2f4097d1",
+    "examples/templates/field_explorer.html": "10e580e18e66b754db31c7db3961d669dec269a3896a5d49f91c099823fc5883"
+  },
+  "generator_sha256": "71574989846d25eb18af21171e32b93b80987004603dcf0f9bf01de527f500ad",
+  "artifacts": {
+    "architecture.png": "c3b93138532ab300dc7cd1f44539229933d2874ab192e7ed6c7f808b9d414f1b",
+    "architecture.svg": "9ef7bb5eff1f9d52546e2c9b5364c94d8f31c30d5e55f644661dd2c6e8acd1e7",
+    "explorer.html": "b386cf22e49d8bfc739d08970281a58ef2956a42169be797e6dcd63d15f3b2b4",
+    "multicycle_field_atlas.png": "40fdb9b2ef8c6e9f9c43439f5e0e894aff6afb50951c5d70e6d6f1d892962cda",
+    "multicycle_field_atlas.svg": "2d5ac21f00d6c23358e8ef30c4f0454d3cdaaff629d9c40799ec9713b4fd4db3"
+  },
+  "fresh_training_calls": 0,
+  "fresh_solver_calls": 0
+}
