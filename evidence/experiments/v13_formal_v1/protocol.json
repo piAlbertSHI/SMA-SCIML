@@ -1,0 +1,104 @@
+{
+  "experiment": "v13_formal_v1",
+  "written_before_training": true,
+  "seeds": [
+    20261121,
+    20261122,
+    20261123
+  ],
+  "groups": {
+    "train": [
+      "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+      "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+      "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+      "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+      "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+      "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+      "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+      "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c"
+    ],
+    "test": [
+      "confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c",
+      "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "confirm_temporal12_10_confirm50_recas_047_r40_t200_p1584_v1019_t2p4_1c_2c",
+      "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c"
+    ]
+  },
+  "fixed_three_cycle_cases": [
+    "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+    "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c"
+  ],
+  "training": {
+    "updates_per_seed": 200,
+    "batch_cases": 2,
+    "total_updates": 600,
+    "optimizer": "AdamW",
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "warmup_updates": 20,
+    "cosine_final_fraction": 0.1,
+    "selection": "fixed final update; no early stopping, test selection or hyperparameter search",
+    "precision": "CPU float64, one BLAS/PyTorch thread",
+    "train_cases": 8,
+    "cycles": [
+      1,
+      2
+    ],
+    "query_sampling": "8 times including zero/end, 26 spatial positions; see per-update logs",
+    "initialization": "fresh neural weights; frozen training-only Ridge and scalers from historical seed 20260910",
+    "loss": "eight-block state MSE + field MSE + 0.01 supervised spatial-gradient MSE; normalized with training data"
+  },
+  "evaluation": {
+    "input": "observed first mechanical frame plus declared thermal defaults, control9 and requested horizon only",
+    "autonomous": true,
+    "teacher_forcing": false,
+    "test_cases": 4,
+    "three_cycle_cases": 2,
+    "transitions": 46,
+    "exchange_segments": 20,
+    "field_grid": [
+      50,
+      101
+    ],
+    "exclude_field_time_zero": true,
+    "primary_endpoints": [
+      "c3s4 SMA state RMSE",
+      "c3s4 future SMA field RMSE",
+      "c3s4 future HTF field RMSE"
+    ],
+    "aggregation": "pooled RMSE over fixed two cases per seed; arithmetic mean and sample SD across seeds",
+    "limitations": "historical test cohort already examined; seed SD is not a confidence interval over independent cases"
+  },
+  "comparison": "same cases, input information, horizons and evaluation grids; different training budgets/supervision, not an architecture-only ablation",
+  "reference_modes": [
+    "archived_one_step",
+    "single_step_continue",
+    "multistep",
+    "affine_state_only"
+  ],
+  "old_summary_sha256": "f9c9bdcff7891d2c86ded855f8cdd873ce208ad4306724efcc6f91a46cfb93f2",
+  "data_sha256": {
+    "state": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "fields": "15f5cf30948efea558ba514cafea99f146dcdc13435b66b906e58d582a721096"
+  },
+  "source_sha256": {
+    "examples/formal_hierarchical.py": "36b85119ef85c9129f7240ed4cd600503e619d544ec0fd7b9a939a408fb23fb0",
+    "examples/train_hierarchical.py": "54b757afdd43e1697c36e187f659bc53b1e44ac60d8b1650a22f1b2fe7ed325d",
+    "examples/multicycle_multistep.py": "cc17a04c5f61241c7ed0b529fd6e16440921101bb2748089ecc270616ef07235",
+    "SciML/models/v13/hierarchical_operator.py": "959b2ecacb7fdc56e052809793d59739986acd68f861d2c103c7bc6f116d0c8f"
+  },
+  "demonstration_selection": {
+    "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+    "new_seed": 20261121,
+    "old_seed": 20260910,
+    "old_mode": "archived_one_step",
+    "rule": "first sorted case and first listed seeds; no best-seed selection"
+  },
+  "environment": {
+    "python": "3.12.4",
+    "torch": "2.13.0+cpu",
+    "numpy": "2.4.6"
+  },
+  "fresh_solver_calls": 0
+}

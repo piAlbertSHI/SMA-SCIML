@@ -1,0 +1,46 @@
+{
+  "status": "completed_formal_v13_demonstrations",
+  "selection": {
+    "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+    "new_seed": 20261121,
+    "old_seed": 20260910,
+    "old_mode": "archived_one_step",
+    "rule": "first sorted case and first listed seeds; no best-seed selection"
+  },
+  "figures": [
+    {
+      "name": "architecture",
+      "scope": "Implemented v13 architecture; 04  JOINT OUTPUTS; parameters read from preserved execution summary"
+    },
+    {
+      "name": "field_atlas_1",
+      "scope": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c; six exchange segments with local time; first preset seeds, not selected by error; shared limits for both model errors"
+    },
+    {
+      "name": "field_atlas_2",
+      "scope": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c; six exchange segments with local time; first preset seeds, not selected by error; shared limits for both model errors"
+    }
+  ],
+  "input_sha256": {
+    "evidence/experiments/v13_formal_v1/protocol.json": "69d2f6396e1eb2d4cfc2943e16d38d560d91b9fb31ee41ce1fbceef697e49cf6",
+    "evidence/experiments/v13_formal_v1/summary.json": "dd4c092cbd051406e004c27fc5cd03e822eb60756e19159449af8bd710c54180",
+    "data/historical12_state.npz": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "evidence/experiments/v13_formal_v1/s20261121/test_predictions.npz": "862e31b289c38e773723de0ab3b4deca3725e7aad145b00d699821ed62eb52c9",
+    "evidence/experiments/multicycle_multistep_v1/s20260910/archived_one_step.npz": "507147d8cfb1b1aaffa6d24f7c389446ee7cbb507e86671ef69b042e2f4097d1",
+    "evidence/architecture/v13_execution_v1/summary.json": "d7930822efef341ca76e3d1705794c1a4c4c9fa9f2d38db06bb1d545e467b97b",
+    "examples/templates/field_explorer.html": "10e580e18e66b754db31c7db3961d669dec269a3896a5d49f91c099823fc5883"
+  },
+  "generator_sha256": "1196d56126135fd92a8baf57a3139754d8b954b849b1840f15c220163c6b1d9b",
+  "artifacts": {
+    "architecture.png": "342e1c354f048dfa0f85cbaae68c00edb2538589dbd214dc320add920f3085b4",
+    "architecture.svg": "1e3a6bbd915c7b8550259062609071f5f56f93c170e9e77bd41d1a30db61bdea",
+    "explorer.html": "fb1d89cba2ef88d7bf9ecbc26674e1482cc470b8d1a98b47b0b56dcceb49d841",
+    "field_atlas_1.png": "4159562ab0fda7a10c283fd510a1e277443e11a81ebe251a1f7787e3828a47a3",
+    "field_atlas_1.svg": "8b2c3fad225f3415b3c7388043b5626e661db255426fbd9e1429471a83ec8e6d",
+    "field_atlas_2.png": "5dd2377eb98b4b480e10bb2d471262b4aedd7ff21d174938426ba6323436fca4",
+    "field_atlas_2.svg": "170508327014b61896976552cd5b7ab0da9aa547d9f39b02f8be084c937c14b2",
+    "v13_comparison.gif": "dbe609f68041e9a779abc9fa78be3c4f617569fe8c682d53f1045fd2c344f1c1"
+  },
+  "fresh_training_calls": 0,
+  "fresh_solver_calls": 0
+}

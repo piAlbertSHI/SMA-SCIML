@@ -4,7 +4,7 @@ const vm=require('node:vm');
 const assert=require('node:assert/strict');
 const path=require('node:path');
 const root=path.resolve(__dirname,'..');
-const html=fs.readFileSync(path.join(root,'assets/operator_showcase_v2/explorer.html'),'utf8');
+const html=fs.readFileSync(path.resolve(root,process.argv[2]||'assets/operator_showcase_v2/explorer.html'),'utf8');
 assert(!html.includes('__FIELD_DATA__'));
 assert(!/<(?:script|link)[^>]+(?:src|href)=/i.test(html),'Demo must remain offline');
 const scripts=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];

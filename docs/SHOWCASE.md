@@ -7,9 +7,9 @@
 
 [Detailed results: 17 figures / 详细结果：17 组图](RESULTS_GALLERY.md) · [Figure downloads and SVG / 图表下载与 SVG](FIGURE_INDEX.md)
 
-**Current architecture / 当前架构:** the [3.11M-parameter hierarchical recurrent operator](HIERARCHICAL_OPERATOR.md) adds dual spatial encoders, latent attention, persistent GRU memory and joint state/field decoding. It is implemented and execution-checked; accuracy evaluation is pending. The benchmark results below belong to the trained reference models.
+**Current architecture / 当前架构:** the [3.11M-parameter hierarchical recurrent operator](HIERARCHICAL_OPERATOR.md) adds dual spatial encoders, latent attention, persistent GRU memory and joint state/field decoding. [Formal training and comparison](V13_FORMAL_BENCHMARK.md) are complete: three seeds ×200 updates, 6.7 CPU training minutes; third-cycle state/field gains with early-cycle and state-component regressions. The sections below retain the reference-model results.
 
-**当前新增模型**整合双路空间编码、潜变量注意力、GRU 持续记忆和联合状态/场解码，约 311 万参数，已实现并通过运行验证，精度尚待评价。下文基准结果属于已有训练参考模型。
+**当前主模型**整合双路空间编码、潜变量注意力、GRU 持续记忆及联合状态/场解码，约311万参数，已完成三种子各200次正式训练，训练6.7 CPU分钟；第三循环状态/场改善，早期循环和部分状态分量退步。下文继续保留旧参考模型结果。
 
 The project studies pressure-driven NiTi elastocaloric cooling through a connected set of performance surrogates, stage-transition models, temperature-field operators and decision methods. Its contribution is the combination of explicit physical state representations, controlled model comparisons and diagnosis of errors across module interfaces.
 
@@ -171,7 +171,7 @@ These are the next research milestones, not completed results. The broader objec
 
 The original six PNG figures and animation use `python -m examples.showcase`. Nine PNG/SVG figures use `python -m examples.research_gallery`, and three multi-cycle comparisons use `python -m examples.multicycle_gallery`. The **17-figure statistical gallery** is preserved in [detailed results](RESULTS_GALLERY.md). The README now focuses on architecture, field animations and an offline explorer. New assets use `python -m examples.operator_showcase`. See the [figure index](FIGURE_INDEX.md) for sources and editable files.
 
-原六张 PNG 与动画由 `python -m examples.showcase` 生成，九组 PNG/SVG 由 `python -m examples.research_gallery` 生成，三组多循环图由 `python -m examples.multicycle_gallery` 生成。**17 组统计图**保留于详细图集。README 现聚焦架构、场动画与离线交互演示，新增材料由 `python -m examples.operator_showcase` 生成；图表索引提供来源与可编辑文件。
+原六张 PNG 与动画由 `python -m examples.showcase` 生成，九组 PNG/SVG 由 `python -m examples.research_gallery` 生成，三组多循环图由 `python -m examples.multicycle_gallery` 生成。**17 组统计图**保留于详细图集。README 当前架构、新旧场对照动画与交互演示由 `python -m examples.formal_gallery` 生成；原 `operator_showcase` 参考演示保留，图表索引提供来源与可编辑文件。
 
 | Evidence / 证据 | Location / 位置 |
 |---|---|
@@ -180,6 +180,7 @@ The original six PNG figures and animation use `python -m examples.showcase`. Ni
 | Diffusion inverse results / 扩散反演结果 | [PINN summary](../evidence/archive/wp5-pinn-r1/summary.json) |
 | Local effective-rate study / 局部有效速率研究 | [local ODE summary](../evidence/archive/wp5-local-thermal-r2/summary.json) |
 | Multi-step continuation / 多步续训 | [protocol and results](MULTICYCLE_MULTISTEP.md) |
+| Formal v13 comparison / v13 正式对照 | [protocol, results and regressions](V13_FORMAL_BENCHMARK.md) |
 | Data coverage and COP definition / 数据范围与 COP 定义 | [data card](DATA_CARD.md) |
 | Dimensions, losses and training / 维度、损失与训练设置 | [model details](MODELS.md) |
 | Reproduction commands / 运行命令 | [quickstart](QUICKSTART.md) |

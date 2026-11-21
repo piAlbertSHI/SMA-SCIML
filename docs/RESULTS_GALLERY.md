@@ -4,6 +4,8 @@ The complete statistical gallery is preserved here. The [project homepage](../RE
 
 完整统计图集保留于此；项目首页聚焦当前架构与场演示。本页继续保留基线、不确定性定义与负结果，避免只展示有利指标。
 
+**New formal v13 results / 新增 v13 正式结果:** [three-seed training report](V13_FORMAL_BENCHMARK.md), [comparison animation](../assets/v13_formal_v1/v13_comparison.gif), [recA atlas](../assets/v13_formal_v1/field_atlas_1.png), [recAS atlas](../assets/v13_formal_v1/field_atlas_2.png). Third-cycle gains and early-cycle/state-component regressions are reported together. / 第三循环改善与早期循环、部分状态分量退步一并报告。
+
 <a id="gallery"></a>
 
 ## Results gallery / 图文成果汇报

@@ -1,17 +1,20 @@
 # Figure index / 图表索引
 
-The README now presents the implemented architecture, two temperature animations, a space–time atlas and an offline field explorer. The previous 17 statistical figures are preserved in the [detailed gallery](RESULTS_GALLERY.md). All numerical displays use committed source arrays. The v13 architecture is implemented and execution-checked; its accuracy is not yet evaluated.
+The README presents the trained architecture, a v12/v13 comparison animation, both three-cycle field atlases and a v13 offline explorer. The previous17 statistical figures and reference animations are preserved. All numerical displays use committed source arrays; see the [formal benchmark](V13_FORMAL_BENCHMARK.md) for accuracy and tradeoffs.
 
-README 现展示模型架构、两段温度动画、时空场图谱和离线交互演示。原 17 组统计图保留于详细图集。数值演示来自已提交数组；v13 新架构已实现并验证运行，但精度尚未评价。
+README 展示已训练架构、v12/v13对照动画、两个三循环图谱及v13离线演示。原17组统计图及参考动画保留；全部数值来自已提交数组，精度与取舍见正式训练报告。
 
 | Homepage asset / 首页素材 | Files / 文件 | Source and scope / 来源与范围 |
 |---|---|---|
-| Hierarchical architecture / 分层架构 | [PNG](../assets/operator_showcase_v2/architecture.png), [SVG](../assets/operator_showcase_v2/architecture.svg) | Implemented v13 code and measured parameter count / 已实现代码与实际参数数目 |
-| Three-cycle thermal replay / 三循环热演化 | [GIF](../assets/operator_animation_v2/multicycle_fields.gif) | Trained v12 historical state model + DeepONet, fixed case/seed / 已训练历史参考模型，固定工况和种子 |
-| Space–time atlas / 时空场图谱 | [PNG](../assets/operator_showcase_v2/multicycle_field_atlas.png), [SVG](../assets/operator_showcase_v2/multicycle_field_atlas.svg) | Same archived reference, prediction and signed error / 同一归档参考、预测与有符号误差 |
-| Offline explorer / 离线交互 | [HTML](../assets/operator_showcase_v2/explorer.html) | Same fields rounded to four decimals; local open; mock-DOM checks, real-browser QA pending / 同源四位小数字段，本地打开，模拟逻辑已验证、真实浏览器验收待完成 |
+| Hierarchical architecture / 分层架构 | [PNG](../assets/v13_formal_v1/architecture.png), [SVG](../assets/v13_formal_v1/architecture.svg) | Implemented v13 code, actual parameters and formal training status / 代码、实际参数及正式训练状态 |
+| Three-cycle comparison / 三循环对照 | [GIF](../assets/v13_formal_v1/v13_comparison.gif) | Reference, old v12, trained v13 and absolute errors; fixed recA case, first preset seeds / 固定recA工况及预定首种子 |
+| recA atlas / recA图谱 | [PNG](../assets/v13_formal_v1/field_atlas_1.png), [SVG](../assets/v13_formal_v1/field_atlas_1.svg) | All six exchange segments with shared scales / 六段换热，新旧模型共用色标 |
+| recAS atlas / recAS图谱 | [PNG](../assets/v13_formal_v1/field_atlas_2.png), [SVG](../assets/v13_formal_v1/field_atlas_2.svg) | Second three-cycle test case, same seed rule / 第二三循环测试工况，同一种子规则 |
+| Offline explorer / 离线交互 | [HTML](../assets/v13_formal_v1/explorer.html) | Trained v13 fields rounded to4decimals; mock-DOM checked, real-browser QA pending / v13四位小数场，模拟逻辑已检查、真实浏览器待验收 |
 
-[Showcase generator / 新展示生成器](../examples/operator_showcase.py) · [Figure manifest / 新素材清单](../assets/operator_showcase_v2/manifest.json)
+[Formal gallery generator / 正式结果展示生成器](../examples/formal_gallery.py) · [Source manifest / 素材清单](../assets/v13_formal_v1/manifest.json)
+
+Preserved reference-only displays / 保留原参考模型展示：[animation / 动画](../assets/operator_animation_v2/multicycle_fields.gif), [atlas / 图谱](../assets/operator_showcase_v2/multicycle_field_atlas.png), [explorer / 交互](../assets/operator_showcase_v2/explorer.html).
 
 | # | Question / 展示问题 | Figure / 图片 | Editable / 可编辑 | Numerical source / 数值来源 |
 |---|---|---|---|---|

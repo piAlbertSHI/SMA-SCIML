@@ -1,0 +1,54 @@
+{
+  "scope": "Formal v13 training, local checkpoint replay, benchmark alignment and presentation checks",
+  "status": "passed_local_checks",
+  "fresh_solver_calls": 0,
+  "training": {
+    "seeds": [20261121, 20261122, 20261123],
+    "updates_per_seed": 200,
+    "batch_cases": 2,
+    "training_seconds": 403.6032725999976,
+    "training_and_evaluation_seconds": 426.40374699999666,
+    "test_based_retraining": false
+  },
+  "python_tests": {
+    "passed": 37,
+    "modules": [
+      "SciML.tests.test_learning_coordinate_operator",
+      "SciML.tests.test_learning_ensemble",
+      "SciML.tests.test_learning_pinn_inverse",
+      "SciML.tests.test_learning_pool_loop",
+      "SciML.tests.test_learning_design_loop",
+      "SciML.tests.test_learning_exercises",
+      "SciML.tests.test_acquisition_diversity",
+      "SciML.tests.test_multistep_historical",
+      "SciML.tests.test_hierarchical_operator",
+      "SciML.tests.test_formal_hierarchical"
+    ]
+  },
+  "formal_replay": {
+    "command": "python -m examples.formal_hierarchical --verify-only",
+    "checkpoints": 3,
+    "test_cases_per_checkpoint": 4,
+    "max_absolute_difference": 0.0,
+    "cross_platform_absolute_tolerance": 1e-8,
+    "all_saved_test_scores_recomputed": true,
+    "old_prediction_sets_checked": 9,
+    "training_case_membership_checked": true
+  },
+  "presentation": {
+    "new_gif_frames": 60,
+    "new_gif_dimensions": [1575, 630],
+    "architecture_and_reca_atlas_visually_inspected": true,
+    "gif_final_frame_visually_inspected": true,
+    "offline_explorer_logic": "passed mock DOM/canvas: embedded data, statistics, segments, error view, time, play/pause, reset",
+    "actual_browser_qa": "pending; local-file preview blocked by environment policy",
+    "public_hosting_enabled": false
+  },
+  "scientific_limits": [
+    "Only two historical three-cycle test cases, previously studied",
+    "Different old/new training recipes; not an equal-budget architecture ablation",
+    "Early-cycle and some state-component regressions retained in reports",
+    "Spatial oscillations and large full-grid gradient errors retained in plots and diagnostics",
+    "No new independent confirmation or experimental validation"
+  ]
+}

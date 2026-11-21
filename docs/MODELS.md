@@ -1,8 +1,8 @@
 # 模型架构与训练设置
 
-**Current development / 当前新增主模型:** [Hierarchical recurrent state-space operator](HIERARCHICAL_OPERATOR.md), **3,106,989 trainable parameters**, dual spatial CNNs, latent cross-attention, GRU memory, five FiLM transition heads and a joint coordinate field decoder. Implemented and execution-checked; accuracy evaluation pending. The tables below document the trained reference models.
+**Current model / 当前主模型:** [Hierarchical recurrent state-space operator](HIERARCHICAL_OPERATOR.md), **3,106,989 trainable parameters**, dual spatial CNNs, latent cross-attention, GRU memory, five FiLM transition heads and a joint coordinate field decoder. [Formal training](V13_FORMAL_BENCHMARK.md) is complete: three seeds ×200 updates; third-cycle SMA state/field RMSE **1.120/1.600 K**, with early-cycle and some state-component regressions. The tables below document the preserved reference models.
 
-当前新增主模型采用双路空间 CNN、潜变量交叉注意力、GRU 记忆、五个 FiLM 阶段头及联合坐标场解码，约 **311 万可训练参数**。已实现并完成运行验证，尚未评价精度；下表继续记录已有参考模型。
+当前主模型采用双路空间 CNN、潜变量交叉注意力、GRU 记忆、五个 FiLM 阶段头及联合坐标场解码，约 **311 万可训练参数**。已完成三种子各200次正式训练，第三循环 SMA 状态/场 RMSE 为 **1.120/1.600 K**；早期循环及部分状态量退步。下表继续保留已有参考模型记录。
 
 `a→b` 表示全连接层维度，除注明外在 CPU float64 上训练。下面列的是实际已运行配置，不是拟议架构。
 

@@ -2,11 +2,11 @@
 
 ## Implemented architecture / 已实现架构
 
-**A 3,106,989-parameter model now combines spatial encoding, latent attention, recurrent memory, five stage-specific transition heads and a continuous-coordinate temperature decoder.** The complete forward/backward and joint-training path is implemented. Three optimizer updates on existing training data and exact checkpoint replay establish execution correctness; predictive accuracy and advantage over the reference models remain unevaluated.
+**A 3,106,989-parameter model combines spatial encoding, latent attention, recurrent memory, five stage-specific transition heads and a continuous-coordinate temperature decoder.** The first formal run is complete: three seeds × 200 updates, 6.7 CPU training minutes, zero new simulations. Third-cycle SMA state RMSE is **1.120 K**, versus **1.543 K** for the original neural reference. Early-cycle and some state-component errors increase; see the [full benchmark](V13_FORMAL_BENCHMARK.md) for the fixed protocol, all comparisons and limitations.
 
-**现已构建 3,106,989 参数的模型，整合空间编码、潜变量注意力、循环记忆、五个阶段转移头和连续坐标温度场解码器。** 完整前向、反向与联合训练路径均已实现。已使用现有训练数据完成三次优化更新并验证检查点精确回放；预测精度及相对参考模型的优势尚未评价。
+**3,106,989 参数的模型整合空间编码、潜变量注意力、循环记忆、五个阶段转移头和连续坐标温度场解码器。** 首轮正式训练已完成：三种子各200次更新，训练6.7 CPU分钟，未新增仿真。第三循环 SMA 状态 RMSE 为 **1.120 K**，原神经参考为 **1.543 K**；早期循环及部分状态分量退步，完整协议、对照与限制见正式报告。
 
-![Implemented architecture / 已实现模型架构](../assets/operator_showcase_v2/architecture.png)
+![Trained architecture / 已训练模型架构](../assets/v13_formal_v1/architecture.png)
 
 ## Why this structure / 为什么采用这套结构
 
@@ -73,7 +73,11 @@ State loss equally weights the eight state blocks after train-only normalization
 
 状态损失按训练尺度归一化后对八个状态块等权。场损失用训练场时间变化 RMS 归一化，排除零时刻。梯度项比较采样网格上的预测/真值空间差分，是**有监督梯度匹配，不是控制方程残差**。梯度贯穿状态、记忆和场解码器，不截断、不读取中间真值推进。
 
-| Setting / 设置 | Trainer default / 默认 | Execution check actually run / 本次实际运行 |
+The original execution check below is preserved as engineering evidence. The subsequent formal run uses batch2, 200 updates per seed and lr3e-4; its separate evaluation is documented in the [formal report](V13_FORMAL_BENCHMARK.md).
+
+下表保留最初运行检查。后续正式训练使用批次2、每种子200次更新及学习率3e-4，其独立评价记录见正式报告。
+
+| Setting / 设置 | Trainer default / 默认 | Original execution check / 最初运行检查 |
 |---|---|---|
 | Precision / 精度 | CPU float64 | CPU float64 |
 | Optimizer / 优化器 | AdamW, lr=3e-4, wd=1e-4, clip=1 | AdamW, lr=1e-4, wd=1e-4, clip=1 |
@@ -91,6 +95,8 @@ The execution experiment records model weights, optimizer/scheduler state, RNG s
 ```bash
 # Existing weights + execution evidence / 已保存权重与运行证据
 python -m examples.verify_hierarchical
+# Formal trained weights + all test scores / 正式训练权重与全部测试指标
+python -m examples.formal_hierarchical --verify-only
 # Short joint-training execution check, new directory / 新目录联合训练检查
 python -m examples.train_hierarchical --output run-output-v13 --updates 3 --batch-cases 2 --lr 0.0001
 # Full default training recipe; no accuracy claim until evaluated / 完整默认训练配置
@@ -101,7 +107,7 @@ python -m examples.operator_showcase --output demo-output-operator
 
 ```python
 from SciML.models.v13.hierarchical_operator import HierarchicalStateOperator
-model = HierarchicalStateOperator.load("evidence/architecture/v13_execution_v1/model.pt")
+model = HierarchicalStateOperator.load("evidence/experiments/v13_formal_v1/s20261121/model.pt")
 # initial: [B,515], control: [B,9], times/positions: 1-D float64 tensors in [0,1]
 prediction = model(initial, control, cycles=3, times=times, positions=positions)
 ```
@@ -110,9 +116,9 @@ prediction = model(initial, control, cycles=3, times=times, positions=positions)
 
 ## What the demonstrations show / 演示材料的含义
 
-The README's animations and field atlas use **trained reference models**, with fixed case/seed and documented source arrays. They show the existing system's numerical output and error structure. They are not outputs of the three-update v13 checkpoint. The architecture diagram describes the implemented v13 code. The [interactive explorer](../assets/operator_showcase_v2/explorer.html) is a single offline HTML file: download/open it locally after cloning, switch exchange segment/view, and play the stored fields. GitHub renders the GIFs and PNGs directly but does not execute HTML demos inside README.
+The README now compares **formally trained v13 predictions with the archived v12 reference**, using the first preset seeds and both three-cycle cases. These are final200-update outputs, not the original three-update checkpoint. The [interactive explorer](../assets/v13_formal_v1/explorer.html) plays saved v13 fields in a single offline file. GitHub renders GIFs/PNGs directly but does not execute the HTML inside README. The original reference-only displays remain in their historical asset directories.
 
-README 的动画和温度场图谱来自**已训练参考模型**，工况/种子固定且数组来源明确，展示已有系统的数值输出和误差结构，不是三次更新的 v13 结果。架构图对应已实现 v13 代码。交互演示为单个离线 HTML 文件，克隆后本地打开即可切换换热段、显示模式并播放保存的场；GitHub 可直接显示 GIF/PNG，但不会在 README 中执行 HTML。
+README 现在对照**正式训练 v13 与归档 v12**，采用预定首个种子并展示两个三循环工况。这些是200次更新的末次结果，不是原三次更新权重。离线 HTML 播放保存的 v13 场；GitHub 可直接显示 GIF/PNG，但不会在 README 内执行 HTML。原参考模型演示保留在历史素材目录中。
 
 The offline page's logic is checked with a mock DOM/canvas. Real-browser preview was blocked by this environment's local-file URL policy, so browser rendering/interaction QA is not claimed. No hosting or public sharing was enabled for the preview.
 
@@ -124,6 +130,6 @@ The latent bottleneck draws on the cross-attention approach in [Perceiver](https
 
 潜变量压缩参考 Perceiver 的交叉注意力思路，条件仿射调制采用 FiLM 思路。这里只说明模块依据，不声称复现原论文完整模型或已证明方法创新。
 
-Next evaluations should compare spatial encoding, persistent hidden memory, train-input residual scaling and joint field supervision separately, using case-level splits within the eight training cases before touching the historical test cohort again. The prior one-step/multi-step results and strong affine/POD references remain available for comparison. No new batch of physical simulations is required to run this training code.
+The formal benchmark evaluates the complete system, without isolating each module's contribution. Next work should address the observed spatial oscillations and state/field tradeoffs, and compare spatial encoding, memory and joint supervision with case-level validation inside the eight training cases. The historical test cohort is already studied; repeated tuning on it must not be presented as independent confirmation. Strong affine/POD references remain important.
 
-后续应在八个训练工况内部按工况划分验证，分别对照空间编码、持续隐记忆、输入尺度残差和联合场监督，再使用历史测试工况。原单步/多步结果及仿射/POD 强基线继续保留。运行本训练代码不需要新增大批物理仿真。
+正式基准评价了整体系统，未隔离各模块贡献。后续先处理空间振荡及状态/场取舍，在八个训练工况内部按工况验证空间编码、记忆与联合监督；历史测试集已分析过，不能反复依其调参后称独立确认。继续保留仿射/POD 强基线。

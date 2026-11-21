@@ -4,7 +4,7 @@
 
 从 README、SHOWCASE 和 MODELS 开始。图像已经随仓库提交，无需运行代码。详细旧报告在 `SciML/docs/learning_closed_loop_report`，里面的原科学复现命令可能需要未打包的原始归档。
 
-新主模型的架构、公式和运行状态见 [HIERARCHICAL_OPERATOR](HIERARCHICAL_OPERATOR.md)。README 聚焦模型与场演示，原统计图保留于 [RESULTS_GALLERY](RESULTS_GALLERY.md)。克隆后可直接用浏览器打开 `assets/operator_showcase_v2/explorer.html`，无需服务器；本环境只完成模拟 DOM/canvas 逻辑检查，真实浏览器验收待完成。
+新主模型的架构和公式见 [HIERARCHICAL_OPERATOR](HIERARCHICAL_OPERATOR.md)，正式训练与第三循环对照见 [V13_FORMAL_BENCHMARK](V13_FORMAL_BENCHMARK.md)。README 聚焦模型与场演示，原统计图保留于 [RESULTS_GALLERY](RESULTS_GALLERY.md)。克隆后可在浏览器打开 `assets/v13_formal_v1/explorer.html`，无需服务器；本环境只完成模拟 DOM/canvas 逻辑检查，真实浏览器验收待完成。
 
 ## 环境和最小演示
 
@@ -18,6 +18,8 @@ python -m examples.research_gallery --output demo-output-research
 python -m examples.multicycle_multistep --verify-only
 python -m examples.multicycle_gallery --output demo-output-multicycle
 python -m examples.verify_hierarchical
+python -m examples.formal_hierarchical --verify-only
+python -m examples.formal_gallery --output demo-output-v13
 python -m examples.train_hierarchical --output run-output-v13 --updates 3 --batch-cases 2 --lr 0.0001
 python -m examples.operator_showcase --output demo-output-operator
 python -m SciML.evaluation.learning_exercises --output-root learning-exercises
@@ -38,12 +40,17 @@ The multi-cycle comparison can be checked with `python -m examples.multicycle_mu
 ## 验证当前分发
 
 ```bash
-python -m unittest SciML.tests.test_learning_coordinate_operator SciML.tests.test_learning_ensemble SciML.tests.test_learning_pinn_inverse SciML.tests.test_learning_pool_loop SciML.tests.test_learning_design_loop SciML.tests.test_learning_exercises SciML.tests.test_acquisition_diversity SciML.tests.test_multistep_historical SciML.tests.test_hierarchical_operator -v
+python -m unittest SciML.tests.test_learning_coordinate_operator SciML.tests.test_learning_ensemble SciML.tests.test_learning_pinn_inverse SciML.tests.test_learning_pool_loop SciML.tests.test_learning_design_loop SciML.tests.test_learning_exercises SciML.tests.test_acquisition_diversity SciML.tests.test_multistep_historical SciML.tests.test_hierarchical_operator SciML.tests.test_formal_hierarchical -v
 node examples/test_field_explorer.cjs
+node examples/test_field_explorer.cjs assets/v13_formal_v1/explorer.html
 python -m examples.validate_bundle
 ```
 
 GitHub Actions 执行相同的小测试和无动画重放。历史 292 项测试记录不是当前移植分发的测试数，当前结果单独保存。
+
+To repeat the formal v13 protocol, run `python -m examples.formal_hierarchical --output run-output-v13-formal` in a fresh directory. This performs all three fixed200-update fits and evaluation, without physical simulations; the recorded run took7.1 minutes including evaluation. Saved weights, optimizer/RNG states and complete logs are in `evidence/experiments/v13_formal_v1/s20261121` through `s20261123`. The verification command above only replays weights; it does not retrain.
+
+如需重做正式 v13 训练，使用上述 `formal_hierarchical --output run-output-v13-formal` 新目录命令：执行三种子各200次更新并评价，不做物理仿真；本轮含评价用时7.1分钟。三个种子目录保存权重、优化器/随机数状态与完整日志。`--verify-only` 只回放，不重训。
 
 ## 继续研究
 
