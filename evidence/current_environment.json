@@ -1,0 +1,17 @@
+{
+  "python": "3.12.4",
+  "platform": "Windows",
+  "packages": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pandas": "3.0.3",
+    "scikit-learn": "1.9.0",
+    "torch": "2.13.0+cpu",
+    "h5py": "3.16.0",
+    "pyarrow": "25.0.1",
+    "matplotlib": "3.10.9",
+    "pillow": "12.2.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "note": "observed environment, not a tested fresh installation lock"
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "label": "未来初态受影响工况",
+    "displayed": 63.0,
+    "source_value": 63,
+    "rounding_tolerance": 0.0
+  },
+  {
+    "label": "未来 HTF 初态最大差",
+    "displayed": 0.0165883,
+    "source_value": 0.016588283706596485,
+    "rounding_tolerance": 5e-08
+  },
+  {
+    "label": "旧输入阶段1误差",
+    "displayed": 0.108866,
+    "source_value": 0.10886621495748597,
+    "rounding_tolerance": 5e-07
+  },
+  {
+    "label": "请求输入阶段1误差",
+    "displayed": 3.253811,
+    "source_value": 3.2538108284346903,
+    "rounding_tolerance": 5e-07
+  },
+  {
+    "label": "纯镜像入口最大差",
+    "displayed": 3.355853,
+    "source_value": 3.3558528162654397,
+    "rounding_tolerance": 5e-07
+  },
+  {
+    "label": "修复串接阶段4SMA误差",
+    "displayed": 0.592715,
+    "source_value": 0.5927147694802074,
+    "rounding_tolerance": 5e-07
+  },
+  {
+    "label": "修复串接阶段4HTF误差",
+    "displayed": 0.610452,
+    "source_value": 0.6104524185744381,
+    "rounding_tolerance": 5e-07
+  },
+  {
+    "label": "跨批浮点最大差",
+    "displayed": 5.68434e-14,
+    "source_value": 5.684341886080802e-14,
+    "rounding_tolerance": 5e-20
+  },
+  {
+    "label": "材料列零数据梯度网络",
+    "displayed": 9.0,
+    "source_value": 9,
+    "rounding_tolerance": 0.0
+  },
+  {
+    "label": "95%校准目标秩",
+    "displayed": 14.0,
+    "source_value": 14,
+    "rounding_tolerance": 0.0
+  },
+  {
+    "label": "悲观增益为零的候选",
+    "displayed": 15.0,
+    "source_value": 15,
+    "rounding_tolerance": 0.0
+  }
+]

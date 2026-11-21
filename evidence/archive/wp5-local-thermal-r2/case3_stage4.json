@@ -1,0 +1,98 @@
+{
+  "tag": "case3_stage4",
+  "case_id": "paper220_reca_009_r38_t190_p0874_v1164_t2p4_1c",
+  "stage": 4,
+  "effective_rate_per_s": 0.760752823632115,
+  "classical_rate_per_s": 0.7607697023615086,
+  "normalization": {
+    "initial_K": 284.38418979190743,
+    "temperature_scale_K": 5.353539881811287,
+    "duration_s": 2.4
+  },
+  "observed_indices": [
+    0,
+    5,
+    11,
+    17,
+    23,
+    29,
+    35,
+    39
+  ],
+  "epochs": 1200,
+  "lbfgs_max_iterations": 100,
+  "data_weight": 10.0,
+  "physics_weight": 1.0,
+  "seed": 20260910,
+  "history": [
+    {
+      "step": 1,
+      "data": 0.7297878571643768,
+      "physics": 4.392164561498532
+    },
+    {
+      "step": 101,
+      "data": 0.004026775505149899,
+      "physics": 0.07396643363212606
+    },
+    {
+      "step": 201,
+      "data": 0.001836417710210619,
+      "physics": 0.033572258786378956
+    },
+    {
+      "step": 301,
+      "data": 0.0005741066214263147,
+      "physics": 0.017237518176063765
+    },
+    {
+      "step": 401,
+      "data": 0.00015456607987838916,
+      "physics": 0.011915218750051432
+    },
+    {
+      "step": 501,
+      "data": 5.1934674521934856e-05,
+      "physics": 0.009612472409345417
+    },
+    {
+      "step": 601,
+      "data": 2.4781154542581374e-05,
+      "physics": 0.008061109106661113
+    },
+    {
+      "step": 701,
+      "data": 1.51661517305445e-05,
+      "physics": 0.006885910631409516
+    },
+    {
+      "step": 801,
+      "data": 1.0794877247239867e-05,
+      "physics": 0.005941152567588064
+    },
+    {
+      "step": 901,
+      "data": 8.368481681182281e-06,
+      "physics": 0.0051325990003484945
+    },
+    {
+      "step": 1001,
+      "data": 6.787735963402798e-06,
+      "physics": 0.004418307897259562
+    },
+    {
+      "step": 1101,
+      "data": 5.7022185691007395e-06,
+      "physics": 0.0037941142951543115
+    }
+  ],
+  "final_normalized_data_mse": 3.5744733578703054e-07,
+  "final_normalized_physics_mse": 1.7835723830010413e-05,
+  "physics_residual_rms_K_per_s": 0.009420526382766106,
+  "full_curve_rmse_K": 0.003600655539610214,
+  "held_tail_rmse_K": 0.0043709286059952345,
+  "classical_held_tail_rmse_K": 0.0054219103384897495,
+  "neural_vs_classical_rate_relative_difference": 2.2186384843147256e-05,
+  "identified_physical_h": null,
+  "checkpoint_sha256": "58faadb2dfd15943e0ae605bd07ea6fe3dbaa65c4617ae2d315d8aea334f16b7"
+}

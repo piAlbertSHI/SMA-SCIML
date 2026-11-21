@@ -1,0 +1,134 @@
+{
+  "status": "passed_wp6_uq_active_learning_audit",
+  "learning_only": true,
+  "uq_checkpoint_and_calibration_replayed": true,
+  "acquisition_replays": [
+    {
+      "seed": 701,
+      "strategy": "random",
+      "rounds_replayed": 2,
+      "budget": 22
+    },
+    {
+      "seed": 701,
+      "strategy": "uncertainty",
+      "rounds_replayed": 2,
+      "budget": 22
+    },
+    {
+      "seed": 701,
+      "strategy": "composite",
+      "rounds_replayed": 2,
+      "budget": 22
+    },
+    {
+      "seed": 702,
+      "strategy": "random",
+      "rounds_replayed": 2,
+      "budget": 22
+    },
+    {
+      "seed": 702,
+      "strategy": "uncertainty",
+      "rounds_replayed": 2,
+      "budget": 22
+    },
+    {
+      "seed": 702,
+      "strategy": "composite",
+      "rounds_replayed": 2,
+      "budget": 22
+    },
+    {
+      "seed": 703,
+      "strategy": "random",
+      "rounds_replayed": 2,
+      "budget": 22
+    },
+    {
+      "seed": 703,
+      "strategy": "uncertainty",
+      "rounds_replayed": 2,
+      "budget": 22
+    },
+    {
+      "seed": 703,
+      "strategy": "composite",
+      "rounds_replayed": 2,
+      "budget": 22
+    }
+  ],
+  "material_ood_unseen_category_rule_auroc": 1.0,
+  "material_ood_interpretation": "Ensemble AUROC=1 does not prove incremental detection skill: known unseen-category rule is also perfect here",
+  "risk_coverage": [
+    {
+      "retained_count": 1,
+      "coverage": 0.07692307692307693,
+      "normalized_mse": 0.0010547849808542568
+    },
+    {
+      "retained_count": 2,
+      "coverage": 0.15384615384615385,
+      "normalized_mse": 0.001099106966923698
+    },
+    {
+      "retained_count": 3,
+      "coverage": 0.23076923076923078,
+      "normalized_mse": 0.0009387177358325135
+    },
+    {
+      "retained_count": 4,
+      "coverage": 0.3076923076923077,
+      "normalized_mse": 0.0011298348036355285
+    },
+    {
+      "retained_count": 5,
+      "coverage": 0.38461538461538464,
+      "normalized_mse": 0.001293782329587434
+    },
+    {
+      "retained_count": 6,
+      "coverage": 0.46153846153846156,
+      "normalized_mse": 0.001471190170254098
+    },
+    {
+      "retained_count": 7,
+      "coverage": 0.5384615384615384,
+      "normalized_mse": 0.0018306033927645428
+    },
+    {
+      "retained_count": 8,
+      "coverage": 0.6153846153846154,
+      "normalized_mse": 0.0017910289318627517
+    },
+    {
+      "retained_count": 9,
+      "coverage": 0.6923076923076923,
+      "normalized_mse": 0.0017099567972794702
+    },
+    {
+      "retained_count": 10,
+      "coverage": 0.7692307692307693,
+      "normalized_mse": 0.001759140654396349
+    },
+    {
+      "retained_count": 11,
+      "coverage": 0.8461538461538461,
+      "normalized_mse": 0.0022755312465884284
+    },
+    {
+      "retained_count": 12,
+      "coverage": 0.9230769230769231,
+      "normalized_mse": 0.0031490950695321866
+    },
+    {
+      "retained_count": 13,
+      "coverage": 1.0,
+      "normalized_mse": 0.003821369665821533
+    }
+  ],
+  "active_summary_sha256": "009bebb90999cd7ee16be9f2044993cbc83763565ccc9d581377072e3731a37b",
+  "uq_summary_sha256": "fc0e0593269c2520ccf0c431c190d4216c971d9fab00330c995315ab01ce5f3b",
+  "no_new_solver_calls": true,
+  "no_claim_of_universal_active_learning_superiority": true
+}

@@ -1,0 +1,10 @@
+{
+  "status": "failed_exact_cross_batch_comparison",
+  "session_id": 96831,
+  "exit_code": 1,
+  "mismatched_elements": 1908,
+  "compared_elements": 636300,
+  "max_absolute_difference_K": 5.684341886080802e-14,
+  "cause_to_verify": "Old inference batches alternating stage2/stage4; new inference batches stage2 separately. Exact floating-point equality across different batch composition was incorrectly required.",
+  "scientific_gates_changed": false
+}

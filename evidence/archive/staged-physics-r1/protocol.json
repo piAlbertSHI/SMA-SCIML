@@ -1,0 +1,58 @@
+{
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "dataset": "manufactured staged heat equation, NOT SMA observations",
+  "equation": "T_t=alpha_stage*T_xx, zero excess-temperature end boundaries;4stages x2cycles",
+  "length_m": 0.02,
+  "area_m2": 0.0001,
+  "volumetric_capacity_J_per_m3K": 2000000.0,
+  "temperature_scale_K": 5.0,
+  "energy_scale_J": 20.0,
+  "duration_s": [
+    0.4,
+    0.5,
+    0.3,
+    0.6
+  ],
+  "Fourier_numbers": [
+    0.05,
+    0.08,
+    0.03,
+    0.06
+  ],
+  "diffusivity_m2_per_s": [
+    5e-05,
+    6.400000000000001e-05,
+    4e-05,
+    4e-05
+  ],
+  "seeds": [
+    810,
+    811,
+    812
+  ],
+  "steps": 600,
+  "observations": 48,
+  "variants": [
+    "data",
+    "pde",
+    "pde_interfaces",
+    "full"
+  ],
+  "weights": {
+    "data": 10,
+    "pde": 1,
+    "stage": 1,
+    "cycle": 1,
+    "energy": 1
+  },
+  "hard_conditions": "end Dirichlet every block; known analytic IC only very first block",
+  "training": "8input-24-24-1Tanh, Adam.003, float64, gradientclip10; eachvariant same seed/start/observations/steps",
+  "limitations": [
+    "fixed PDE coordinate surrogate, not parameterized operator",
+    "both cycles have sparse observed labels; not horizon extrapolation",
+    "energy is global integral consequence of same PDE, not independent new physical law",
+    "positive/negative comparisons retained; no test tuning"
+  ],
+  "implementation_sha256": "adaad82f886e7e6dade3f9efc852dfa480efaecbb7f925836678ef2bc45d6ed4"
+}

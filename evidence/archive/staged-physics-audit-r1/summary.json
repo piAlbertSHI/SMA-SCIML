@@ -1,0 +1,18 @@
+{
+  "status": "passed_manufactured_staged_physics_audit",
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "fresh_fits_exact": 12,
+  "dimensional_metrics_recomputed": 60,
+  "all_evaluation_coordinates_unobserved": true,
+  "finite_difference_models_checked": 12,
+  "max_pde_finite_difference_error": 4.391145225213222e-09,
+  "max_energy_finite_difference_error": 1.0063628097523036e-08,
+  "scope": "manufactured fixed PDE loss comparison; neither SMA validation nor autonomous multicycle rollout",
+  "source_summary_sha256": "330aa4d5c09795c1db8b748f133dfdef2e2b43e332323d0304325968838f2d7c",
+  "implementation_sha256": "8a4c1c29827cd811a92c381616f53685e6f4c379dc41a4355559e12036fb89e6",
+  "artifacts": {
+    "finite_difference_checks.json": "eea9e7d201f75afc768986c7e08c37a2e8b3eb414e798dc924c30aad34c306aa",
+    "staged_physics.png": "e6aea3264d0774f5f398f2ffa7906614dcfdefb8fc26335ae2ab2d8698b25fad"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "passed_portable_checkpoint_demo",
+  "sample_id": "paper220_reca_002_r32_t160_p0993_v0944_t2p0_1c:cycle_001:stage_4",
+  "field_input": "observed stage4 entry, not request-only cascade",
+  "field_replay_max_abs_K": 5.684341886080802e-14,
+  "field_case_rmse_K": [
+    0.6281038993409588,
+    0.4891424755860709
+  ],
+  "uq_test_rmse": [
+    0.23257043917805295,
+    3.548701228902531e-05,
+    0.02615855987378327,
+    11.479942192121817,
+    0.033093153963395405,
+    0.1325682518173669
+  ],
+  "fresh_training_calls": 0,
+  "fresh_solver_calls": 0,
+  "historical_aggregate_metrics": "from archived JSON, not refit in this demo",
+  "safety_certified": false
+}

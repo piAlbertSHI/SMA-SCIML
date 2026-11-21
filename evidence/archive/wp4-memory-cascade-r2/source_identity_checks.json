@@ -1,0 +1,317 @@
+[
+  {
+    "case_id": "paper220_reca_001_r42_t210_p0823_v1000_t2p4_1c",
+    "mirror_only_max_error_K": 1.3499920178059597,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_002_r32_t160_p0993_v0944_t2p0_1c",
+    "mirror_only_max_error_K": 2.740961401702691,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_003_r35_t175_p0965_v0986_t2p4_1c",
+    "mirror_only_max_error_K": 2.3823129608906584,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_004_r35_t175_p0912_v0853_t2p4_1c",
+    "mirror_only_max_error_K": 2.49275952304464,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_005_r42_t210_p0733_v1169_t2p4_1c",
+    "mirror_only_max_error_K": 0.999086775591195,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_006_r35_t175_p0916_v0959_t2p4_1c",
+    "mirror_only_max_error_K": 2.2709292546732627,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_007_r35_t175_p1034_v1063_t2p4_1c",
+    "mirror_only_max_error_K": 2.4429901493082298,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_008_r42_t210_p0938_v0890_t2p4_1c",
+    "mirror_only_max_error_K": 1.7774372085235655,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_009_r38_t190_p0874_v1164_t2p4_1c",
+    "mirror_only_max_error_K": 1.565684597093309,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_010_r42_t210_p1008_v1140_t2p4_1c",
+    "mirror_only_max_error_K": 1.6240611404882657,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_011_r42_t210_p0830_v0785_t2p0_1c",
+    "mirror_only_max_error_K": 1.3864898798146328,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_012_r38_t190_p0848_v0964_t2p4_1c",
+    "mirror_only_max_error_K": 1.7553152954326379,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_013_r38_t190_p1056_v1155_t2p0_1c",
+    "mirror_only_max_error_K": 1.8735721903839249,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_014_r42_t210_p0813_v0822_t2p4_1c",
+    "mirror_only_max_error_K": 1.5305677191972222,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_015_r42_t210_p0941_v1014_t2p4_1c",
+    "mirror_only_max_error_K": 1.6195532205782115,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_016_r42_t210_p0918_v1225_t2p4_1c",
+    "mirror_only_max_error_K": 1.3515587819213692,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_017_r38_t190_p0785_v1115_t2p4_1c",
+    "mirror_only_max_error_K": 1.3842380744674188,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_018_r42_t210_p0771_v0939_t2p4_1c",
+    "mirror_only_max_error_K": 1.280381154010854,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_019_r32_t160_p1006_v0813_t2p4_1c",
+    "mirror_only_max_error_K": 3.310382773333856,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_020_r32_t160_p0887_v1216_t2p4_1c",
+    "mirror_only_max_error_K": 1.9080613984802426,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_021_r38_t190_p0752_v0874_t2p8_1c",
+    "mirror_only_max_error_K": 1.689875928886238,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_022_r42_t210_p0724_v1067_t2p4_1c",
+    "mirror_only_max_error_K": 1.0513284061854051,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_023_r38_t190_p0761_v1187_t2p4_1c",
+    "mirror_only_max_error_K": 1.2502002903027574,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_024_r40_t200_p1052_v0865_t2p4_1c",
+    "mirror_only_max_error_K": 2.308935876449141,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_025_r32_t160_p0996_v0844_t2p4_1c",
+    "mirror_only_max_error_K": 3.166315750409183,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_026_r38_t190_p0840_v0980_t2p4_1c",
+    "mirror_only_max_error_K": 1.7067054728692028,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_027_r35_t175_p0972_v1221_t2p4_1c",
+    "mirror_only_max_error_K": 1.9791672005182477,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_028_r32_t160_p0879_v1201_t2p4_1c",
+    "mirror_only_max_error_K": 1.907494389211024,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_029_r32_t160_p0841_v0892_t2p4_1c",
+    "mirror_only_max_error_K": 2.383854630837959,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_030_r40_t200_p1001_v1098_t2p4_1c",
+    "mirror_only_max_error_K": 1.7906457756257055,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_031_r40_t200_p0832_v0804_t2p8_1c",
+    "mirror_only_max_error_K": 1.9152147358415164,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_032_r42_t210_p0793_v0917_t2p4_1c",
+    "mirror_only_max_error_K": 1.36144841751792,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_033_r32_t160_p0730_v0999_t2p0_1c",
+    "mirror_only_max_error_K": 1.6660664123756987,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_034_r35_t175_p0866_v1083_t2p4_1c",
+    "mirror_only_max_error_K": 1.882426747631314,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_035_r40_t200_p0837_v0993_t2p8_1c",
+    "mirror_only_max_error_K": 1.6288546819574776,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_036_r40_t200_p0958_v0838_t2p0_1c",
+    "mirror_only_max_error_K": 1.8569628845310717,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_037_r38_t190_p1004_v0814_t2p8_1c",
+    "mirror_only_max_error_K": 2.7227751640843962,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_038_r40_t200_p1049_v1071_t2p4_1c",
+    "mirror_only_max_error_K": 1.943712986698074,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_039_r38_t190_p0743_v1129_t2p4_1c",
+    "mirror_only_max_error_K": 1.256396028612187,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_040_r32_t160_p0737_v0872_t2p4_1c",
+    "mirror_only_max_error_K": 1.9885498335302145,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_041_r42_t210_p0766_v0879_t2p4_1c",
+    "mirror_only_max_error_K": 1.330660488347064,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_042_r42_t210_p0820_v0920_t2p4_1c",
+    "mirror_only_max_error_K": 1.429239653842103,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_043_r32_t160_p1023_v0931_t2p4_1c",
+    "mirror_only_max_error_K": 3.0076934945867606,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_044_r35_t175_p1029_v0984_t2p4_1c",
+    "mirror_only_max_error_K": 2.599806685925728,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_045_r32_t160_p0974_v1103_t2p4_1c",
+    "mirror_only_max_error_K": 2.397139583231251,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_046_r32_t160_p0746_v0781_t2p4_1c",
+    "mirror_only_max_error_K": 2.2235070210306844,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_047_r40_t200_p0967_v1245_t2p8_1c",
+    "mirror_only_max_error_K": 1.69766506285913,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_048_r40_t200_p0728_v0933_t2p4_1c",
+    "mirror_only_max_error_K": 1.276815391981529,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_049_r35_t175_p1017_v1030_t2p4_1c",
+    "mirror_only_max_error_K": 2.4597461952486697,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_050_r38_t190_p1039_v1113_t2p4_1c",
+    "mirror_only_max_error_K": 2.0623224553477826,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_051_r35_t175_p0796_v1023_t2p4_1c",
+    "mirror_only_max_error_K": 1.74888227938294,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_052_r40_t200_p1079_v0827_t2p8_1c",
+    "mirror_only_max_error_K": 2.678832568893881,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_057_r32_t160_p1070_v1183_t2p4_1c",
+    "mirror_only_max_error_K": 2.527206247317338,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_075_r42_t210_p0746_v1235_t2p8_1c",
+    "mirror_only_max_error_K": 1.0754583830378124,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_101_r40_t200_p0870_v0909_t2p4_1c",
+    "mirror_only_max_error_K": 1.7117871815928538,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_reca_105_r32_t160_p0803_v1159_t2p8_1c",
+    "mirror_only_max_error_K": 1.7637524448797421,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_recas_119_r32_t160_p1254_v1225_t2p4_1c",
+    "mirror_only_max_error_K": 2.0605861419279563,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_recas_127_r38_t190_p1289_v1196_t2p8_1c",
+    "mirror_only_max_error_K": 1.8686742944366301,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_recas_128_r32_t160_p1521_v1016_t2p8_1c",
+    "mirror_only_max_error_K": 3.3558528162654397,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_recas_130_r42_t210_p1167_v1250_t2p0_1c",
+    "mirror_only_max_error_K": 1.078748230882752,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_recas_139_r32_t160_p1251_v1135_t2p0_1c",
+    "mirror_only_max_error_K": 2.1642359506314506,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_recas_146_r32_t160_p1642_v1186_t2p4_1c",
+    "mirror_only_max_error_K": 3.1527044765915093,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  },
+  {
+    "case_id": "paper220_recas_184_r42_t210_p1240_v0979_t2p8_1c",
+    "mirror_only_max_error_K": 1.7984147831820678,
+    "memory_transport_max_error_K": 5.684341886080802e-14
+  }
+]

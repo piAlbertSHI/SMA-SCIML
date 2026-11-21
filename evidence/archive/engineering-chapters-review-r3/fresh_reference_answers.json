@@ -1,0 +1,71 @@
+{
+  "E01": {
+    "correct_rmse": [
+      0.0
+    ],
+    "wrong_broadcast_shape": [
+      3,
+      3
+    ],
+    "invalid_shape_rejected": true
+  },
+  "E02": {
+    "mean": [
+      2.0,
+      3.0
+    ],
+    "scale": [
+      1.632993161855452,
+      1.632993161855452
+    ],
+    "holdout_poison_train_statistics_unchanged": true,
+    "wrong_global_mean_change": 500000.0
+  },
+  "E03": {
+    "loss_before": 10.0,
+    "gradient": -10.0,
+    "weight_after": 1.0,
+    "loss_after": 2.5,
+    "scope": "one scalar instructional gradient update, not project model training"
+  },
+  "E04": {
+    "mirror_only_max_error_K": 2.0,
+    "odd_center_K": 0.0,
+    "odd_independent_degrees": 50,
+    "same_even_different_full_strip": true
+  },
+  "E05": {
+    "shape": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "initial_max_error_K": 0.0,
+    "scope": "untrained architecture test; no predictive-accuracy claim"
+  },
+  "E06": {
+    "normalized_pde_max": 5.551115123125783e-17,
+    "normalized_energy_max": 2.7755575615628914e-16,
+    "tolerance": 1e-12,
+    "scope": "manufactured dimensionless heat equation, not real SMA closure"
+  },
+  "E07": {
+    "rank90": 13,
+    "half_width90": 13.0,
+    "rank95": 14,
+    "half_width95": null
+  },
+  "E08": {
+    "chosen": [
+      "a"
+    ],
+    "revealed_ids": [
+      "a"
+    ],
+    "rejected_queries_do_not_mutate_history": true,
+    "hypervolume_before": 5.0,
+    "hypervolume_after": 6.0,
+    "gain": 1.0
+  }
+}

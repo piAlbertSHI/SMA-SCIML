@@ -1,0 +1,29 @@
+{
+  "status": "passed_physics_chapters_narrow_review",
+  "whole_report_complete": false,
+  "independent_stage_quadratures": 126,
+  "checked_metric_and_weight_cells": 44,
+  "source_and_dataset_hashes_verified": true,
+  "local_links_checked": 7,
+  "documented_commands": 5,
+  "command_scope": "AST module/option inventory; existing actual runs separately audited, user replay output directories not rerun",
+  "readability_scope": "author walkthrough; symbols/units precede loss formulas; data permissions and negative results explicit; independent human comprehension not tested",
+  "scientific_boundaries": [
+    "archivalCOPnotnetrecovery",
+    "internalfieldendpointsnotports",
+    "readoutdiagnosticusesobservedfutureinputs",
+    "manufacturedlossbenchmarknotSMA",
+    "bothcyclesobservednotrollout",
+    "energyintegralconsequenceofPDE",
+    "hardconditionsineveryvariant"
+  ],
+  "fresh_training_audit_fits": 12,
+  "chapter_sha256": {
+    "07A1_温度场到能量的读出契约.md": "f7247b001c358e098959218285fcbc3626ced74752bcbbfebb97ef8099d74c14",
+    "07A2_物理损失的实现与消融.md": "79b314624ec0cda15d0a2ababcdcd170b5cde4cf0a41d9306c0c997a7e250ca9"
+  },
+  "implementation_sha256": "6f6138c02542de48b1f2055e0ddb229d9171f43aaa0277e1dff807985a2330c0",
+  "artifacts": {
+    "independent_port_quadrature.json": "55393d6f8b9e7cb9ce9a33be24f9c467b95b55d70bf3ca8c6e25e18faf40abc9"
+  }
+}

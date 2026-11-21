@@ -1,0 +1,434 @@
+[
+  {
+    "kind": "deeponet",
+    "seed": 20260910,
+    "stage": 2,
+    "field": "sma",
+    "future_rmse_K": 0.5768288882859266,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 1.9084772075617025
+  },
+  {
+    "kind": "deeponet",
+    "seed": 20260910,
+    "stage": 2,
+    "field": "htf",
+    "future_rmse_K": 0.7909969145991943,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 4.271753669479494
+  },
+  {
+    "kind": "deeponet",
+    "seed": 20260910,
+    "stage": 4,
+    "field": "sma",
+    "future_rmse_K": 0.5711739615420748,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 2.1420859814346613
+  },
+  {
+    "kind": "deeponet",
+    "seed": 20260910,
+    "stage": 4,
+    "field": "htf",
+    "future_rmse_K": 0.5152661050451317,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 2.9318488973959234
+  },
+  {
+    "kind": "fourier",
+    "seed": 20260910,
+    "stage": 2,
+    "field": "sma",
+    "future_rmse_K": 0.4800593625180381,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 1.8959076008072202
+  },
+  {
+    "kind": "fourier",
+    "seed": 20260910,
+    "stage": 2,
+    "field": "htf",
+    "future_rmse_K": 1.2480119958737295,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 6.072330474531782
+  },
+  {
+    "kind": "fourier",
+    "seed": 20260910,
+    "stage": 4,
+    "field": "sma",
+    "future_rmse_K": 0.3297158532011488,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 1.6056678687772319
+  },
+  {
+    "kind": "fourier",
+    "seed": 20260910,
+    "stage": 4,
+    "field": "htf",
+    "future_rmse_K": 0.7442715700046005,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 3.722859710358705
+  },
+  {
+    "kind": "deeponet_no_stage",
+    "seed": 20260910,
+    "stage": 2,
+    "field": "sma",
+    "future_rmse_K": 0.6727507871663773,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 2.5075444110003673
+  },
+  {
+    "kind": "deeponet_no_stage",
+    "seed": 20260910,
+    "stage": 2,
+    "field": "htf",
+    "future_rmse_K": 0.953341129823641,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 4.258910823920701
+  },
+  {
+    "kind": "deeponet_no_stage",
+    "seed": 20260910,
+    "stage": 4,
+    "field": "sma",
+    "future_rmse_K": 0.7657349087176128,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 2.4501432724634924
+  },
+  {
+    "kind": "deeponet_no_stage",
+    "seed": 20260910,
+    "stage": 4,
+    "field": "htf",
+    "future_rmse_K": 0.6678520544175626,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 3.41376077845365
+  },
+  {
+    "kind": "deeponet_no_ic",
+    "seed": 20260910,
+    "stage": 2,
+    "field": "sma",
+    "future_rmse_K": 0.72153866948699,
+    "initial_max_abs_K": 1.341557920761204,
+    "future_max_abs_K": 2.6024936192876567
+  },
+  {
+    "kind": "deeponet_no_ic",
+    "seed": 20260910,
+    "stage": 2,
+    "field": "htf",
+    "future_rmse_K": 0.8437063903380643,
+    "initial_max_abs_K": 7.7384479682077085,
+    "future_max_abs_K": 6.680122305546206
+  },
+  {
+    "kind": "deeponet_no_ic",
+    "seed": 20260910,
+    "stage": 4,
+    "field": "sma",
+    "future_rmse_K": 0.6207963328186706,
+    "initial_max_abs_K": 0.8303908055949023,
+    "future_max_abs_K": 2.0520149276362076
+  },
+  {
+    "kind": "deeponet_no_ic",
+    "seed": 20260910,
+    "stage": 4,
+    "field": "htf",
+    "future_rmse_K": 0.40601882991567706,
+    "initial_max_abs_K": 5.342275218169561,
+    "future_max_abs_K": 3.6199192699287437
+  },
+  {
+    "kind": "deeponet",
+    "seed": 20260911,
+    "stage": 2,
+    "field": "sma",
+    "future_rmse_K": 0.6078037437213921,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 1.7902664786892615
+  },
+  {
+    "kind": "deeponet",
+    "seed": 20260911,
+    "stage": 2,
+    "field": "htf",
+    "future_rmse_K": 0.947849035028643,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 4.060936879552401
+  },
+  {
+    "kind": "deeponet",
+    "seed": 20260911,
+    "stage": 4,
+    "field": "sma",
+    "future_rmse_K": 0.6047192077089639,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 2.1621128166146377
+  },
+  {
+    "kind": "deeponet",
+    "seed": 20260911,
+    "stage": 4,
+    "field": "htf",
+    "future_rmse_K": 0.6463544537766854,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 2.9430260284086103
+  },
+  {
+    "kind": "fourier",
+    "seed": 20260911,
+    "stage": 2,
+    "field": "sma",
+    "future_rmse_K": 0.7839775413568851,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 2.312450906940967
+  },
+  {
+    "kind": "fourier",
+    "seed": 20260911,
+    "stage": 2,
+    "field": "htf",
+    "future_rmse_K": 1.8597388025272097,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 5.971521285469009
+  },
+  {
+    "kind": "fourier",
+    "seed": 20260911,
+    "stage": 4,
+    "field": "sma",
+    "future_rmse_K": 0.36360305236881146,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 1.5913950843350335
+  },
+  {
+    "kind": "fourier",
+    "seed": 20260911,
+    "stage": 4,
+    "field": "htf",
+    "future_rmse_K": 0.8694913408088908,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 4.435143620827432
+  },
+  {
+    "kind": "deeponet_no_stage",
+    "seed": 20260911,
+    "stage": 2,
+    "field": "sma",
+    "future_rmse_K": 0.9272635394547317,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 2.9117187888792273
+  },
+  {
+    "kind": "deeponet_no_stage",
+    "seed": 20260911,
+    "stage": 2,
+    "field": "htf",
+    "future_rmse_K": 0.9570870812390748,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 4.152802915864186
+  },
+  {
+    "kind": "deeponet_no_stage",
+    "seed": 20260911,
+    "stage": 4,
+    "field": "sma",
+    "future_rmse_K": 1.1881584814214057,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 3.6595207240435457
+  },
+  {
+    "kind": "deeponet_no_stage",
+    "seed": 20260911,
+    "stage": 4,
+    "field": "htf",
+    "future_rmse_K": 0.6613073567984856,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 2.9497040450817735
+  },
+  {
+    "kind": "deeponet_no_ic",
+    "seed": 20260911,
+    "stage": 2,
+    "field": "sma",
+    "future_rmse_K": 0.7008081093406796,
+    "initial_max_abs_K": 1.5993074146507524,
+    "future_max_abs_K": 2.5177875761578434
+  },
+  {
+    "kind": "deeponet_no_ic",
+    "seed": 20260911,
+    "stage": 2,
+    "field": "htf",
+    "future_rmse_K": 0.8319052791347172,
+    "initial_max_abs_K": 8.87353945037762,
+    "future_max_abs_K": 7.804487270593256
+  },
+  {
+    "kind": "deeponet_no_ic",
+    "seed": 20260911,
+    "stage": 4,
+    "field": "sma",
+    "future_rmse_K": 0.6956079540270861,
+    "initial_max_abs_K": 0.869798843337378,
+    "future_max_abs_K": 2.929214603364244
+  },
+  {
+    "kind": "deeponet_no_ic",
+    "seed": 20260911,
+    "stage": 4,
+    "field": "htf",
+    "future_rmse_K": 0.3799405435621674,
+    "initial_max_abs_K": 6.127834913051572,
+    "future_max_abs_K": 4.368688143971383
+  },
+  {
+    "kind": "deeponet",
+    "seed": 20260912,
+    "stage": 2,
+    "field": "sma",
+    "future_rmse_K": 0.5248026700313141,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 1.8251629870618444
+  },
+  {
+    "kind": "deeponet",
+    "seed": 20260912,
+    "stage": 2,
+    "field": "htf",
+    "future_rmse_K": 0.7385794568921751,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 3.584581146193784
+  },
+  {
+    "kind": "deeponet",
+    "seed": 20260912,
+    "stage": 4,
+    "field": "sma",
+    "future_rmse_K": 0.6344629616646259,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 2.047051304402146
+  },
+  {
+    "kind": "deeponet",
+    "seed": 20260912,
+    "stage": 4,
+    "field": "htf",
+    "future_rmse_K": 0.5556805967714207,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 2.590765963773265
+  },
+  {
+    "kind": "fourier",
+    "seed": 20260912,
+    "stage": 2,
+    "field": "sma",
+    "future_rmse_K": 0.9943151935242948,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 3.3665347318865315
+  },
+  {
+    "kind": "fourier",
+    "seed": 20260912,
+    "stage": 2,
+    "field": "htf",
+    "future_rmse_K": 1.6872765237017466,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 7.20401934356272
+  },
+  {
+    "kind": "fourier",
+    "seed": 20260912,
+    "stage": 4,
+    "field": "sma",
+    "future_rmse_K": 0.5504166029420232,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 1.6538096479465025
+  },
+  {
+    "kind": "fourier",
+    "seed": 20260912,
+    "stage": 4,
+    "field": "htf",
+    "future_rmse_K": 0.88553604161614,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 4.3553578641559625
+  },
+  {
+    "kind": "deeponet_no_stage",
+    "seed": 20260912,
+    "stage": 2,
+    "field": "sma",
+    "future_rmse_K": 0.7280016576139107,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 2.358890416421673
+  },
+  {
+    "kind": "deeponet_no_stage",
+    "seed": 20260912,
+    "stage": 2,
+    "field": "htf",
+    "future_rmse_K": 0.7981328270518669,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 3.8731651230917237
+  },
+  {
+    "kind": "deeponet_no_stage",
+    "seed": 20260912,
+    "stage": 4,
+    "field": "sma",
+    "future_rmse_K": 0.7542894003446171,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 2.399168707501019
+  },
+  {
+    "kind": "deeponet_no_stage",
+    "seed": 20260912,
+    "stage": 4,
+    "field": "htf",
+    "future_rmse_K": 0.5831155943254765,
+    "initial_max_abs_K": 0.0,
+    "future_max_abs_K": 2.7532006815646923
+  },
+  {
+    "kind": "deeponet_no_ic",
+    "seed": 20260912,
+    "stage": 2,
+    "field": "sma",
+    "future_rmse_K": 0.6397377620117686,
+    "initial_max_abs_K": 1.6605720956418963,
+    "future_max_abs_K": 2.418613377302563
+  },
+  {
+    "kind": "deeponet_no_ic",
+    "seed": 20260912,
+    "stage": 2,
+    "field": "htf",
+    "future_rmse_K": 0.8149312815460514,
+    "initial_max_abs_K": 8.684886774214988,
+    "future_max_abs_K": 7.646271776390677
+  },
+  {
+    "kind": "deeponet_no_ic",
+    "seed": 20260912,
+    "stage": 4,
+    "field": "sma",
+    "future_rmse_K": 0.7203081158872374,
+    "initial_max_abs_K": 1.042340405123639,
+    "future_max_abs_K": 2.2558316003780305
+  },
+  {
+    "kind": "deeponet_no_ic",
+    "seed": 20260912,
+    "stage": 4,
+    "field": "htf",
+    "future_rmse_K": 0.5103114226980178,
+    "initial_max_abs_K": 5.241135601360156,
+    "future_max_abs_K": 3.5523219453652928
+  }
+]

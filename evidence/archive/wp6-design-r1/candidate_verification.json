@@ -1,0 +1,133 @@
+{
+  "observations": [
+    {
+      "case_id": "paper220_reca_057_r32_t160_p1070_v1183_t2p4_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\streq_resume_20260907\\c057\\shard_057\\paper220_reca_057_r32_t160_p1070_v1183_t2p4_1c\\run_result.mat",
+      "source_sha256": "86fcc28d306171183a52705eb617dd03668b318646b3a395d38a348fbb5adfff",
+      "targets": [
+        12.285913806969944,
+        0.0017693836093901525,
+        2.74273206108817,
+        734.4365657978639,
+        1.599908289150676,
+        4.479443683644238
+      ],
+      "sigma_eq_peak_MPa": 321.2142529927522,
+      "center_deflection_peak_over_radius": 0.17595167074586843,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 1.0,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true,
+      "verdict": {
+        "numerical_gates_pass": true,
+        "engineering_constraint_checks": {
+          "sigma_eq_peak_MPa": null,
+          "center_deflection_peak_over_radius": null
+        },
+        "engineering_safety": "unknown",
+        "reason": "Missing approved limits and fatigue/equipment evidence prevent certification",
+        "within_revealed_reference_envelope": {
+          "sigma_eq_peak_MPa": true,
+          "center_deflection_peak_over_radius": true
+        },
+        "reference_envelope_is_safety_limit": false
+      },
+      "prediction_error": [
+        0.10903836043167381,
+        3.343083967420222e-05,
+        0.08964977479151592,
+        -2.1814617618252896,
+        0.03824610086461977,
+        -0.008239793238543847
+      ]
+    },
+    {
+      "case_id": "paper220_reca_045_r32_t160_p0974_v1103_t2p4_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\statepaper220_resume2_20260909\\c045\\shard_045\\paper220_reca_045_r32_t160_p0974_v1103_t2p4_1c\\run_result.mat",
+      "source_sha256": "0ef57f61a87e1209f566ddbfcc3f5c8f782cbe19bf2f19c5166b12b74bb8fc68",
+      "targets": [
+        11.26159316939366,
+        0.0016439636343580201,
+        2.857572127982021,
+        673.2039588337309,
+        1.4994855560700557,
+        3.9409654997392645
+      ],
+      "sigma_eq_peak_MPa": 306.7150023348074,
+      "center_deflection_peak_over_radius": 0.1670779454915436,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.9082334581946453,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true,
+      "verdict": {
+        "numerical_gates_pass": true,
+        "engineering_constraint_checks": {
+          "sigma_eq_peak_MPa": null,
+          "center_deflection_peak_over_radius": null
+        },
+        "engineering_safety": "unknown",
+        "reason": "Missing approved limits and fatigue/equipment evidence prevent certification",
+        "within_revealed_reference_envelope": {
+          "sigma_eq_peak_MPa": true,
+          "center_deflection_peak_over_radius": true
+        },
+        "reference_envelope_is_safety_limit": false
+      },
+      "prediction_error": [
+        -0.1022208135356717,
+        7.38475425093193e-06,
+        0.03580805739871096,
+        -6.665772990274718,
+        0.0026787443039639758,
+        -0.04915635156852671
+      ]
+    },
+    {
+      "case_id": "paper220_reca_040_r32_t160_p0737_v0872_t2p4_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\statepaper220_resume1_20260908\\c040\\shard_040\\paper220_reca_040_r32_t160_p0737_v0872_t2p4_1c\\run_result.mat",
+      "source_sha256": "7de7821f9c49d3d01d40bb0e581d83bd921a6d5cb47e7711da6082745a92f63f",
+      "targets": [
+        8.146944408961875,
+        0.001285879309667274,
+        3.0888299427254244,
+        487.0141503084293,
+        1.1678707612624066,
+        2.637550321651386
+      ],
+      "sigma_eq_peak_MPa": 269.51831619483806,
+      "center_deflection_peak_over_radius": 0.14225038199304837,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.6301468489319066,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true,
+      "verdict": {
+        "numerical_gates_pass": true,
+        "engineering_constraint_checks": {
+          "sigma_eq_peak_MPa": null,
+          "center_deflection_peak_over_radius": null
+        },
+        "engineering_safety": "unknown",
+        "reason": "Missing approved limits and fatigue/equipment evidence prevent certification",
+        "within_revealed_reference_envelope": {
+          "sigma_eq_peak_MPa": true,
+          "center_deflection_peak_over_radius": true
+        },
+        "reference_envelope_is_safety_limit": false
+      },
+      "prediction_error": [
+        -0.05920138893430149,
+        -2.773709688447517e-06,
+        -0.05495740803910909,
+        7.175858503561244,
+        -0.003964332265170123,
+        -0.1464872475372152
+      ]
+    }
+  ],
+  "reference": {
+    "sigma_eq_peak_MPa": 436.5489458956408,
+    "center_deflection_peak_over_radius": 0.2007111667418958
+  },
+  "normalized_actual_hypervolume_gain": 0.0072487765188036235,
+  "all_verified_numerical_not_certified_safe": true
+}

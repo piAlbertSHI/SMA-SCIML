@@ -1,0 +1,594 @@
+[
+  {
+    "row": "scale:Qcool",
+    "displayed": "4.08654443858658",
+    "source_value": 4.08654443858658,
+    "rounding_bound": 8.552713678800502e-15
+  },
+  {
+    "row": "scale:Wpump",
+    "displayed": "0.0007372757033463108",
+    "source_value": 0.0007372757033463108,
+    "rounding_bound": 4.836808689942018e-19
+  },
+  {
+    "row": "scale:COP",
+    "displayed": "0.4298753220462959",
+    "source_value": 0.4298753220462959,
+    "rounding_bound": 2.7204460492503133e-16
+  },
+  {
+    "row": "scale:SCP",
+    "displayed": "192.45963754954937",
+    "source_value": 192.45963754954937,
+    "rounding_bound": 1.1868683772161603e-13
+  },
+  {
+    "row": "scale:deltaT",
+    "displayed": "0.379391845926395",
+    "source_value": 0.379391845926395,
+    "rounding_bound": 7.220446049250313e-16
+  },
+  {
+    "row": "训练均值",
+    "column": 0,
+    "displayed": "2.616393",
+    "source_value": 2.616392505620819,
+    "rounding_bound": 5.000000017763568e-07
+  },
+  {
+    "row": "训练均值",
+    "column": 1,
+    "displayed": "7.1989e-4",
+    "source_value": 0.0007198894975702558,
+    "rounding_bound": 5.000000000433681e-09
+  },
+  {
+    "row": "训练均值",
+    "column": 2,
+    "displayed": "0.311394",
+    "source_value": 0.31139416478425774,
+    "rounding_bound": 5.000000002220446e-07
+  },
+  {
+    "row": "训练均值",
+    "column": 3,
+    "displayed": "121.729992",
+    "source_value": 121.72999160198653,
+    "rounding_bound": 5.000000568434188e-07
+  },
+  {
+    "row": "训练均值",
+    "column": 4,
+    "displayed": "0.143620",
+    "source_value": 0.1436197120316078,
+    "rounding_bound": 5.000000001110223e-07
+  },
+  {
+    "row": "Ridge",
+    "column": 0,
+    "displayed": "0.514191",
+    "source_value": 0.5141907185105599,
+    "rounding_bound": 5.000000004440892e-07
+  },
+  {
+    "row": "Ridge",
+    "column": 1,
+    "displayed": "9.5920e-5",
+    "source_value": 9.591955079329e-05,
+    "rounding_bound": 5.000000000542101e-10
+  },
+  {
+    "row": "Ridge",
+    "column": 2,
+    "displayed": "0.062735",
+    "source_value": 0.06273530874232111,
+    "rounding_bound": 5.000000000555111e-07
+  },
+  {
+    "row": "Ridge",
+    "column": 3,
+    "displayed": "23.593702",
+    "source_value": 23.59370173355299,
+    "rounding_bound": 5.000000142108547e-07
+  },
+  {
+    "row": "Ridge",
+    "column": 4,
+    "displayed": "0.062163",
+    "source_value": 0.06216326793018645,
+    "rounding_bound": 5.000000000277556e-07
+  },
+  {
+    "row": "Random Forest",
+    "column": 0,
+    "displayed": "0.929017",
+    "source_value": 0.929017470974351,
+    "rounding_bound": 5.000000004440892e-07
+  },
+  {
+    "row": "Random Forest",
+    "column": 1,
+    "displayed": "2.8299e-4",
+    "source_value": 0.0002829900004140291,
+    "rounding_bound": 5.0000000002168405e-09
+  },
+  {
+    "row": "Random Forest",
+    "column": 2,
+    "displayed": "0.207540",
+    "source_value": 0.20754021869596584,
+    "rounding_bound": 5.000000001110223e-07
+  },
+  {
+    "row": "Random Forest",
+    "column": 3,
+    "displayed": "38.896897",
+    "source_value": 38.89689711705843,
+    "rounding_bound": 5.000000284217094e-07
+  },
+  {
+    "row": "Random Forest",
+    "column": 4,
+    "displayed": "0.068458",
+    "source_value": 0.06845756625541034,
+    "rounding_bound": 5.000000000555111e-07
+  },
+  {
+    "row": "HistGB",
+    "column": 0,
+    "displayed": "1.257497",
+    "source_value": 1.2574965520645451,
+    "rounding_bound": 5.000000008881784e-07
+  },
+  {
+    "row": "HistGB",
+    "column": 1,
+    "displayed": "9.6723e-5",
+    "source_value": 9.672324540500048e-05,
+    "rounding_bound": 5.000000000542101e-10
+  },
+  {
+    "row": "HistGB",
+    "column": 2,
+    "displayed": "0.187375",
+    "source_value": 0.1873746312271197,
+    "rounding_bound": 5.000000001110223e-07
+  },
+  {
+    "row": "HistGB",
+    "column": 3,
+    "displayed": "31.628863",
+    "source_value": 31.628862789366433,
+    "rounding_bound": 5.000000142108547e-07
+  },
+  {
+    "row": "HistGB",
+    "column": 4,
+    "displayed": "0.064743",
+    "source_value": 0.06474343622537436,
+    "rounding_bound": 5.000000000555111e-07
+  },
+  {
+    "row": "单 MLP",
+    "column": 0,
+    "displayed": "0.223921",
+    "source_value": 0.22392081792835408,
+    "rounding_bound": 5.000000001110223e-07
+  },
+  {
+    "row": "单 MLP",
+    "column": 1,
+    "displayed": "4.1699e-5",
+    "source_value": 4.1698610313211765e-05,
+    "rounding_bound": 5.000000000271051e-10
+  },
+  {
+    "row": "单 MLP",
+    "column": 2,
+    "displayed": "0.038472",
+    "source_value": 0.038471881901410786,
+    "rounding_bound": 5.000000000277556e-07
+  },
+  {
+    "row": "单 MLP",
+    "column": 3,
+    "displayed": "15.195628",
+    "source_value": 15.195628354821347,
+    "rounding_bound": 5.000000071054273e-07
+  },
+  {
+    "row": "单 MLP",
+    "column": 4,
+    "displayed": "0.025283",
+    "source_value": 0.025282537461687016,
+    "rounding_bound": 5.000000000138778e-07
+  },
+  {
+    "row": "Ensemble5",
+    "column": 0,
+    "displayed": "0.222228",
+    "source_value": 0.22222835890527867,
+    "rounding_bound": 5.000000001110223e-07
+  },
+  {
+    "row": "Ensemble5",
+    "column": 1,
+    "displayed": "3.6833e-5",
+    "source_value": 3.683269516878174e-05,
+    "rounding_bound": 5.000000000271051e-10
+  },
+  {
+    "row": "Ensemble5",
+    "column": 2,
+    "displayed": "0.019239",
+    "source_value": 0.019239136202544086,
+    "rounding_bound": 5.000000000138778e-07
+  },
+  {
+    "row": "Ensemble5",
+    "column": 3,
+    "displayed": "7.497206",
+    "source_value": 7.497206356489507,
+    "rounding_bound": 5.000000035527137e-07
+  },
+  {
+    "row": "Ensemble5",
+    "column": 4,
+    "displayed": "0.025834",
+    "source_value": 0.025834486438025994,
+    "rounding_bound": 5.000000000138778e-07
+  },
+  {
+    "row": "原单位目标 MLP 消融",
+    "column": 0,
+    "displayed": "9.464135",
+    "source_value": 9.464134716923569,
+    "rounding_bound": 5.000000071054273e-07
+  },
+  {
+    "row": "原单位目标 MLP 消融",
+    "column": 1,
+    "displayed": "7.1893e-2",
+    "source_value": 0.07189328568753738,
+    "rounding_bound": 5.000000000555111e-07
+  },
+  {
+    "row": "原单位目标 MLP 消融",
+    "column": 2,
+    "displayed": "0.844217",
+    "source_value": 0.8442170898689861,
+    "rounding_bound": 5.000000004440892e-07
+  },
+  {
+    "row": "原单位目标 MLP 消融",
+    "column": 3,
+    "displayed": "350.583900",
+    "source_value": 350.5839003608798,
+    "rounding_bound": 5.000002273736754e-07
+  },
+  {
+    "row": "原单位目标 MLP 消融",
+    "column": 4,
+    "displayed": "0.653734",
+    "source_value": 0.6537336171854687,
+    "rounding_bound": 5.000000004440892e-07
+  },
+  {
+    "row": "0",
+    "column": 0,
+    "displayed": "0.977666",
+    "source_value": 0.9776656818455297,
+    "rounding_bound": 5.000000004440892e-07
+  },
+  {
+    "row": "0",
+    "column": 1,
+    "displayed": "0.676493",
+    "source_value": 0.6764933596025893,
+    "rounding_bound": 5.000000004440892e-07
+  },
+  {
+    "row": "50",
+    "column": 0,
+    "displayed": "0.154672",
+    "source_value": 0.15467243026548796,
+    "rounding_bound": 5.000000001110223e-07
+  },
+  {
+    "row": "50",
+    "column": 1,
+    "displayed": "0.181266",
+    "source_value": 0.18126598534194538,
+    "rounding_bound": 5.000000001110223e-07
+  },
+  {
+    "row": "100",
+    "column": 0,
+    "displayed": "0.019459",
+    "source_value": 0.019458840985906962,
+    "rounding_bound": 5.000000000138778e-07
+  },
+  {
+    "row": "100",
+    "column": 1,
+    "displayed": "0.027173",
+    "source_value": 0.02717326618633337,
+    "rounding_bound": 5.000000000138778e-07
+  },
+  {
+    "row": "150",
+    "column": 0,
+    "displayed": "0.004494",
+    "source_value": 0.004494182046179408,
+    "rounding_bound": 5.000000000034694e-07
+  },
+  {
+    "row": "150",
+    "column": 1,
+    "displayed": "0.018867",
+    "source_value": 0.018867048645932635,
+    "rounding_bound": 5.000000000138778e-07
+  },
+  {
+    "row": "200",
+    "column": 0,
+    "displayed": "0.002450",
+    "source_value": 0.0024498403140812055,
+    "rounding_bound": 5.000000000017347e-07
+  },
+  {
+    "row": "200",
+    "column": 1,
+    "displayed": "0.014070",
+    "source_value": 0.014070369179201734,
+    "rounding_bound": 5.000000000069389e-07
+  },
+  {
+    "row": "250",
+    "column": 0,
+    "displayed": "0.001677",
+    "source_value": 0.001676765552474694,
+    "rounding_bound": 5.000000000008673e-07
+  },
+  {
+    "row": "250",
+    "column": 1,
+    "displayed": "0.011238",
+    "source_value": 0.011238435550903097,
+    "rounding_bound": 5.000000000069389e-07
+  },
+  {
+    "row": "300",
+    "column": 0,
+    "displayed": "0.001231",
+    "source_value": 0.001230967126759253,
+    "rounding_bound": 5.000000000008673e-07
+  },
+  {
+    "row": "300",
+    "column": 1,
+    "displayed": "0.009293",
+    "source_value": 0.009292569619992712,
+    "rounding_bound": 5.000000000069389e-07
+  },
+  {
+    "row": "Linear(7,32)",
+    "column": 2,
+    "displayed": "256",
+    "source_value": 256.0,
+    "rounding_bound": 0.5000000000002274
+  },
+  {
+    "row": "Linear(32,32)",
+    "column": 2,
+    "displayed": "1056",
+    "source_value": 1056.0,
+    "rounding_bound": 0.5000000000009095
+  },
+  {
+    "row": "Linear(32,5)",
+    "column": 2,
+    "displayed": "165",
+    "source_value": 165.0,
+    "rounding_bound": 0.5000000000001137
+  },
+  {
+    "row": "合计",
+    "column": 2,
+    "displayed": "1477",
+    "source_value": 1477.0,
+    "rounding_bound": 0.5000000000009095
+  },
+  {
+    "row": "B1→B2",
+    "column": 0,
+    "displayed": "0.264274",
+    "source_value": 0.26427415981754393,
+    "rounding_bound": 5.000000002220446e-07
+  },
+  {
+    "row": "B1→B2",
+    "column": 1,
+    "displayed": "0.037417",
+    "source_value": 0.037416531590086066,
+    "rounding_bound": 5.000000000277556e-07
+  },
+  {
+    "row": "B1→B2",
+    "column": 2,
+    "displayed": "0.037417",
+    "source_value": 0.037416531590086066,
+    "rounding_bound": 5.000000000277556e-07
+  },
+  {
+    "row": "B2→B3",
+    "column": 0,
+    "displayed": "0.135257",
+    "source_value": 0.135257154865907,
+    "rounding_bound": 5.000000001110223e-07
+  },
+  {
+    "row": "B2→B3",
+    "column": 1,
+    "displayed": "0.065151",
+    "source_value": 0.0651513765645899,
+    "rounding_bound": 5.000000000555111e-07
+  },
+  {
+    "row": "B2→B3",
+    "column": 2,
+    "displayed": "0.062393",
+    "source_value": 0.06239307746657984,
+    "rounding_bound": 5.000000000277556e-07
+  },
+  {
+    "row": "B3→B4",
+    "column": 0,
+    "displayed": "0.273936",
+    "source_value": 0.27393574573505974,
+    "rounding_bound": 5.000000002220446e-07
+  },
+  {
+    "row": "B3→B4",
+    "column": 1,
+    "displayed": "0.141076",
+    "source_value": 0.14107628773708314,
+    "rounding_bound": 5.000000001110223e-07
+  },
+  {
+    "row": "B3→B4",
+    "column": 2,
+    "displayed": "0.109393",
+    "source_value": 0.10939250229448587,
+    "rounding_bound": 5.000000000555111e-07
+  },
+  {
+    "row": "B4→B5",
+    "column": 0,
+    "displayed": "0.125994",
+    "source_value": 0.12599426624390722,
+    "rounding_bound": 5.000000001110223e-07
+  },
+  {
+    "row": "B4→B5",
+    "column": 1,
+    "displayed": "0.080207",
+    "source_value": 0.08020721323136244,
+    "rounding_bound": 5.000000000555111e-07
+  },
+  {
+    "row": "B4→B5",
+    "column": 2,
+    "displayed": "0.077121",
+    "source_value": 0.07712135005496949,
+    "rounding_bound": 5.000000000555111e-07
+  },
+  {
+    "row": "B1→B2",
+    "column": 1,
+    "displayed": "204",
+    "source_value": 204.0,
+    "rounding_bound": 0.5000000000001137
+  },
+  {
+    "row": "B2→B3",
+    "column": 1,
+    "displayed": "313",
+    "source_value": 313.0,
+    "rounding_bound": 0.5000000000002274
+  },
+  {
+    "row": "B3→B4",
+    "column": 1,
+    "displayed": "313",
+    "source_value": 313.0,
+    "rounding_bound": 0.5000000000002274
+  },
+  {
+    "row": "B4→B5",
+    "column": 1,
+    "displayed": "160",
+    "source_value": 160.0,
+    "rounding_bound": 0.5000000000001137
+  },
+  {
+    "row": "0:51",
+    "column": 1,
+    "displayed": "51",
+    "source_value": 51.0,
+    "rounding_bound": 0.5000000000000284
+  },
+  {
+    "row": "51:102",
+    "column": 1,
+    "displayed": "51",
+    "source_value": 51.0,
+    "rounding_bound": 0.5000000000000284
+  },
+  {
+    "row": "102:153",
+    "column": 1,
+    "displayed": "51",
+    "source_value": 51.0,
+    "rounding_bound": 0.5000000000000284
+  },
+  {
+    "row": "153:204",
+    "column": 1,
+    "displayed": "51",
+    "source_value": 51.0,
+    "rounding_bound": 0.5000000000000284
+  },
+  {
+    "row": "204:305",
+    "column": 1,
+    "displayed": "101",
+    "source_value": 101.0,
+    "rounding_bound": 0.5000000000000568
+  },
+  {
+    "row": "305:406",
+    "column": 1,
+    "displayed": "101",
+    "source_value": 101.0,
+    "rounding_bound": 0.5000000000000568
+  },
+  {
+    "row": "406:414",
+    "column": 1,
+    "displayed": "8",
+    "source_value": 8.0,
+    "rounding_bound": 0.5000000000000071
+  },
+  {
+    "row": "进入阶段 3 的径向位移",
+    "displayed": "2.25750e-5",
+    "source_value": 2.2574959746643627e-05,
+    "rounding_bound": 5.000000001355253e-11
+  },
+  {
+    "row": "进入阶段 3 的挠度",
+    "displayed": "1.23877e-4",
+    "source_value": 0.00012387708904100514,
+    "rounding_bound": 5.000000001084202e-10
+  },
+  {
+    "row": "进入阶段 3 的相变量",
+    "displayed": "0.193589",
+    "source_value": 0.19358850705953212,
+    "rounding_bound": 5.000000001110223e-07
+  },
+  {
+    "row": "进入阶段 4 的 hot sink / hot buffer",
+    "displayed": "0.00965094",
+    "source_value": 0.009650944524196348,
+    "rounding_bound": 5.000000006938894e-09
+  },
+  {
+    "row": "进入阶段 4 的 cold sink pipe 辅助量",
+    "displayed": "0.00947466",
+    "source_value": 0.009474662545869705,
+    "rounding_bound": 5.000000006938894e-09
+  }
+]

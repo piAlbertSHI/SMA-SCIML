@@ -1,0 +1,380 @@
+[
+  {
+    "case_id": "paper220_reca_001_r42_t210_p0823_v1000_t2p4_1c",
+    "request_sha256": "0a273d7582d7e56a6368695219f3108e437465941c39cf5366104ad0ebe5c217",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_002_r32_t160_p0993_v0944_t2p0_1c",
+    "request_sha256": "452b29a71ea6e58f62758b7427ea302cae0b160435453c594d3fb641a853d579",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_003_r35_t175_p0965_v0986_t2p4_1c",
+    "request_sha256": "25d7d056e8adf278574c699bea4dffb880e3bb1e1c32b2aa3d40481caadcfdb6",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_004_r35_t175_p0912_v0853_t2p4_1c",
+    "request_sha256": "37644fdadf95d0e52eecf3ae2327feadb3aa3c6f25e6452e94854cc5f923ce12",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_005_r42_t210_p0733_v1169_t2p4_1c",
+    "request_sha256": "2ffec2a393aa9fe189b8ae9ee692b3608babc195cc0e39f5988ce422220c3ed4",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_006_r35_t175_p0916_v0959_t2p4_1c",
+    "request_sha256": "7f495fbe1456355d1ae0c2bb02e8c2dead1b2a5bc0e8b7ca54d2cd22a08ee50d",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_007_r35_t175_p1034_v1063_t2p4_1c",
+    "request_sha256": "bd6052f2ce683b41d8540f6b40801f65afff8a3cd143bc1e2f84d5226fac13d4",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_008_r42_t210_p0938_v0890_t2p4_1c",
+    "request_sha256": "cd815d6612c814b303444daee4741a2f182b976a089c59dfd8abf4995f2747b3",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_009_r38_t190_p0874_v1164_t2p4_1c",
+    "request_sha256": "9ff6247b175323d1ce94c8e3cc8b665ff3db679a6418e75df13859d3d4422d9d",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_010_r42_t210_p1008_v1140_t2p4_1c",
+    "request_sha256": "bc174f33f9217d8d3d6cf011333441d914600612c5ba90e882862f49829bc320",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_011_r42_t210_p0830_v0785_t2p0_1c",
+    "request_sha256": "5dfc8eca0ca73f21e38525b4212a46ba82cdfd20661d339c4c5b242fa173b4e4",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_012_r38_t190_p0848_v0964_t2p4_1c",
+    "request_sha256": "f4d8e6fd511d54daf20b88eb2ce74eca97549301f274dfada935fc66d65cb8da",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_013_r38_t190_p1056_v1155_t2p0_1c",
+    "request_sha256": "69803c085216786d925073989560af11c9be88c4354d02e84da5042e9b134960",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_014_r42_t210_p0813_v0822_t2p4_1c",
+    "request_sha256": "a85d43bbbcf7cc6a0af52430f322ef1a8ea6933065939802a4eb0c2de459522d",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_015_r42_t210_p0941_v1014_t2p4_1c",
+    "request_sha256": "fc79e5752a9e8b150388be1a414b3faa93199ed17a272cd6d624cbb1941dab03",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_016_r42_t210_p0918_v1225_t2p4_1c",
+    "request_sha256": "bb10d05435dd4f0d4e33ec3b36a3056cc4b1a723e0e6ccea123f3199dae8e5ae",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_017_r38_t190_p0785_v1115_t2p4_1c",
+    "request_sha256": "30f3fb824cf5a6faf780393e4de8db28f280b25d66bd8b3680c9fa832e3b96fd",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_018_r42_t210_p0771_v0939_t2p4_1c",
+    "request_sha256": "7ce3b33d8f03d9e2c8601a3d1340e70860667f6c115c9c5da8336245edebd124",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_019_r32_t160_p1006_v0813_t2p4_1c",
+    "request_sha256": "9bd4691f9bebe93e46d8cc740e3906f98371a4f649187c769c4bfe261e28d7b4",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_020_r32_t160_p0887_v1216_t2p4_1c",
+    "request_sha256": "6251adb3e0e1bcd29b29855ca9b310dd784a55652b825a103be67fcb3a9a8f0b",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_021_r38_t190_p0752_v0874_t2p8_1c",
+    "request_sha256": "1e5f25eb56501bea976142493fcbcea605ad4c6c305f0b28a096be195ae453d6",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_022_r42_t210_p0724_v1067_t2p4_1c",
+    "request_sha256": "bbb284b733c55e8cb81feaf9da611549fa3f1524ea0f381d32ddbfc51a1bf2cd",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_023_r38_t190_p0761_v1187_t2p4_1c",
+    "request_sha256": "aed6cc4ea5ed912023c3dc71fbd50d57b13c4ecc4f0fc947bb2e1c39c13ba260",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_024_r40_t200_p1052_v0865_t2p4_1c",
+    "request_sha256": "9df38b6b9b133b37236d8d4988efd1c3546580857d2827ca33eba2bae00c09ca",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_025_r32_t160_p0996_v0844_t2p4_1c",
+    "request_sha256": "bf7942baccc17f6a0bab71f3757bcec94000b38ca7cae16bdf3e57888081a2fa",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_026_r38_t190_p0840_v0980_t2p4_1c",
+    "request_sha256": "2ef9c26f014faccd730d00f2054a3d3b32ae383153ab18f4df32941a6eff0bb4",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_027_r35_t175_p0972_v1221_t2p4_1c",
+    "request_sha256": "23bb1254eee43ef4da114011e4ef01d14ecd572aaa400eddd7ef2e0af5c36b5b",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_028_r32_t160_p0879_v1201_t2p4_1c",
+    "request_sha256": "e15922a1caa0cb16fe879dd7e64b5f22a7b570434fa622405c906389593e07fa",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_029_r32_t160_p0841_v0892_t2p4_1c",
+    "request_sha256": "5018ce5dcb4a180362d6d3cf54a984023ade99ba5e7918e9a52d3cffbedbc719",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_030_r40_t200_p1001_v1098_t2p4_1c",
+    "request_sha256": "b26e87bcb58f8c008d2042dd2d5a5807a59f59566713dc285c1fa75377a66036",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_031_r40_t200_p0832_v0804_t2p8_1c",
+    "request_sha256": "bb224ff779818412d5476d298b43c3e43f07c0c52d59a7234ca0033fe25890d0",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_032_r42_t210_p0793_v0917_t2p4_1c",
+    "request_sha256": "461cd8cb2a9bacfe0e84b75be9a807f7e3b0824ce034dd80dba90cdcc28dbdba",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_033_r32_t160_p0730_v0999_t2p0_1c",
+    "request_sha256": "06f97fa561c4d150e10b8254217b247440a5fc433bae639695d33fa691fef8d5",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_034_r35_t175_p0866_v1083_t2p4_1c",
+    "request_sha256": "f37d7364c477d4d7a8165c510aa8c6b8987d018f1ee40903aa4aead665bae6b8",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_035_r40_t200_p0837_v0993_t2p8_1c",
+    "request_sha256": "726efec1afbfc888429072325c7c33081c328f2c6557c08fbad46ec6baa7a3ef",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_036_r40_t200_p0958_v0838_t2p0_1c",
+    "request_sha256": "cae137140dac56af03988892b562bd72e1f7f488e87018639d68eb7802022234",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_037_r38_t190_p1004_v0814_t2p8_1c",
+    "request_sha256": "a0f2c460c0d68fabc0f1c19f0151a5886464ffa721a73fbe1c5d468165b47e0f",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_038_r40_t200_p1049_v1071_t2p4_1c",
+    "request_sha256": "d1b938451134b68623673e670ff3d1e0fb23e2e56e3823c016f93c37c4658bd0",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_039_r38_t190_p0743_v1129_t2p4_1c",
+    "request_sha256": "396333f257a18e8e8b81c4b7d36819a689e1fa240304eed15bdf2dbb0ab625c7",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_040_r32_t160_p0737_v0872_t2p4_1c",
+    "request_sha256": "fceb403c5d7071ece95a2c59f323457a7e626223bc2327352c0a8cd1ab0bb1f7",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_041_r42_t210_p0766_v0879_t2p4_1c",
+    "request_sha256": "8a1a19163aaa056f39e15b37199a8bd67f783665f950e8ba61bcb09254194aeb",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_042_r42_t210_p0820_v0920_t2p4_1c",
+    "request_sha256": "44099bc16d7b050655836eaae300d8ef1b3c78a8096803f3b7da7d8bb3d33f23",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_043_r32_t160_p1023_v0931_t2p4_1c",
+    "request_sha256": "ad38bbe9f10f1df3d4a254b4ab17f9e971e13d6f6b641034fd2e61dc0711cb36",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_044_r35_t175_p1029_v0984_t2p4_1c",
+    "request_sha256": "63f0fd290e6175491a24017b314bc27a0db5ac09621e6d0084c6809934c03afd",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_045_r32_t160_p0974_v1103_t2p4_1c",
+    "request_sha256": "32f84aeb1baac956b510408a30a5845d1ebd8175e50d6fb33adf45ed72710388",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_046_r32_t160_p0746_v0781_t2p4_1c",
+    "request_sha256": "e66b6e5b945e6095030d50d30c24224c866e199e48e8db6260d5b40107e25846",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_047_r40_t200_p0967_v1245_t2p8_1c",
+    "request_sha256": "6af00342c2bedffa83f05b2674b88537a1a15f7cdd3ab72184b7c55ba034fee4",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_048_r40_t200_p0728_v0933_t2p4_1c",
+    "request_sha256": "ec24777ef498717b08433be95734062e192605c698d8ccf43d5dcbebf5685d8e",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_049_r35_t175_p1017_v1030_t2p4_1c",
+    "request_sha256": "1e77be9866bc3c9088151820505583ae0290cb1146136728c366afc62100f814",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_050_r38_t190_p1039_v1113_t2p4_1c",
+    "request_sha256": "56157b1a2d7f14f2817133461bebb8627cc476dde5915bb97a208cfee2cf04a0",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_051_r35_t175_p0796_v1023_t2p4_1c",
+    "request_sha256": "f46ac3e37a9fde465e79af8ad599090b5598ce1c252f09036d6367ec7448daf1",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_052_r40_t200_p1079_v0827_t2p8_1c",
+    "request_sha256": "13576fc2eb5390aa1e28b00826e915b30d7b5d338f7404461e08cd8aa1feecee",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_057_r32_t160_p1070_v1183_t2p4_1c",
+    "request_sha256": "b45a5bf1fde30ddee9cfa6c0d07bf64754b1547cebb76df3e36ceeae42de12a1",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_075_r42_t210_p0746_v1235_t2p8_1c",
+    "request_sha256": "2d80a04fc0698461d14a8b5c1f2962e6dbf82c8d0c2021eebe52eb045e58e731",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_101_r40_t200_p0870_v0909_t2p4_1c",
+    "request_sha256": "1686cf9bb9e9e2a3012e0a62d88477caf98fb78203792293a49258d2e871d1ea",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_reca_105_r32_t160_p0803_v1159_t2p8_1c",
+    "request_sha256": "78db2204fded0c47a9611952bab08785d9852c4ea5501680c8d183c65088bf0f",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_recas_119_r32_t160_p1254_v1225_t2p4_1c",
+    "request_sha256": "2161b67972b167cd5da8bf0723c125e8af03661a741f84950ae1c7ea0124281d",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_recas_127_r38_t190_p1289_v1196_t2p8_1c",
+    "request_sha256": "35803ee67d77ad13d92a20c28728d60b19ffe02462e3a65641e53e5aafdaf4d7",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_recas_128_r32_t160_p1521_v1016_t2p8_1c",
+    "request_sha256": "743485aa2d9463fdc76f381054b8d7dbf741ab2152e6a84330f920c188f3441a",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_recas_130_r42_t210_p1167_v1250_t2p0_1c",
+    "request_sha256": "bb7095b518f254058291f0b8593de3e7a5932b38efdf3b763db26b0632fc0834",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_recas_139_r32_t160_p1251_v1135_t2p0_1c",
+    "request_sha256": "64cbe307ee3066fb7bc906010091085937915e2aeb206dba1bdc08ded3c54abb",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_recas_146_r32_t160_p1642_v1186_t2p4_1c",
+    "request_sha256": "a8327eee1e3097b6ef2a92187716d7ead5d80553c7e5950b9e35d7a57b49eee0",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  },
+  {
+    "case_id": "paper220_recas_184_r42_t210_p1240_v0979_t2p8_1c",
+    "request_sha256": "624925514ca2660fcb6b292be4dcd4fcb1674687c97c2226d5be0d9f37168589",
+    "initial_mechanics_equal_declared_rest": true,
+    "boundary_masks_preserve_inactive_targets": true
+  }
+]

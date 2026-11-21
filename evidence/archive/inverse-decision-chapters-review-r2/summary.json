@@ -1,0 +1,59 @@
+{
+  "status": "passed_chapters08_11_content_review",
+  "whole_report_complete": false,
+  "numeric_cells_checked": 101,
+  "cold_pinn_models": 6,
+  "cold_local_inverse_models": 6,
+  "cold_uq_members": 10,
+  "cold_active_final_members": 27,
+  "learning_curves_recomputed": 9,
+  "raw_local_curves_checked": 6,
+  "raw_design_archives_checked": 3,
+  "fresh_training_calls": 0,
+  "fresh_solver_calls": 0,
+  "scope": "author full-text/source walkthrough plus array/checkpoint/table arithmetic; no independent reader mastery claim",
+  "readability_repairs": [
+    "L-BFGS iteration budget distinguished from actual closure count",
+    "Adam-only clipping explicit",
+    "local PINN exact input transform, scale, parameter counts and optimizer contract",
+    "acquisition tied-rank percentile formula and hand-worked example"
+  ],
+  "reviewed_limits": [
+    "manufactured vs effective physical parameter",
+    "known future forcing is conditional reconstruction",
+    "ensemble spread is not noise decomposition",
+    "95percent finite rank absent",
+    "OOD detection is not accurate prediction",
+    "archived reveal is not new solver sampling",
+    "test outcomes never determine acquisition",
+    "zero pessimistic improvement retained",
+    "postselection coverage not guaranteed",
+    "reference maximum not engineering limit"
+  ],
+  "chapter_sha256": {
+    "08_WP5_PINN逆问题.md": "fb6d2984f484699c7624786b754afe458128419ee612bcccb8e7e24dd4728417",
+    "09_WP6_不确定性与校准.md": "f99979b2221ba5428fe8eb0579ef2c4152e5c204617b2c20826976d5d52ff0f2",
+    "10_WP6_主动学习.md": "e4acd8c862e4e159eb5dd763a605707c34595f3e2dace56c361731eb14def6ac",
+    "11_WP6_设计候选与归档回查.md": "bb83d486f07e2884ee79712270baf783967a0c4b8e235016b8e20bb1214531d7"
+  },
+  "source_sha256": {
+    "SciML/models/v12/learning_pinn_inverse.py": "7e94eb2342786ab8647088a0b9f57ca88e63f2b5f93aeca7e40c6a4e6fa3771e",
+    "SciML/models/v12/learning_local_thermal_inverse.py": "af74893343a34bedbec5c814adbda43a00df2b3ce855cdd95d59fcf8bf9c896e",
+    "SciML/models/v12/learning_ensemble.py": "910893c2747507d27fb56160c0f18553eb088870374ce4fdf01f01951f3cd956",
+    "SciML/active_learning/learning_pool_loop.py": "8abb85bf368542745974c15259fd9459192486cfed013f39c184c9d8525f2b41",
+    "SciML/active_learning/learning_design_loop.py": "39e364b361824a132b4d0a0deb245dcc5efa513511707e15336ab7afcd807b23"
+  },
+  "upstream_summary_sha256": {
+    "wp5-pinn-r1": "def23f5c4007b1a7177658c9f5333bff245a2191f3878e1645d6eb01aa16e548",
+    "wp5-local-thermal-r1": "4cb7634102924eee75edc60fbd0b62c19f0d1e783a48c5091482c10114a26e17",
+    "wp5-local-thermal-r2": "79292d39f63d03fe29c0a27ac4bf7b1ffa160f3acc569ee26c6871f6bc2d49fa",
+    "wp6-uq-r1": "fc0e0593269c2520ccf0c431c190d4216c971d9fab00330c995315ab01ce5f3b",
+    "wp6-active-r1": "009bebb90999cd7ee16be9f2044993cbc83763565ccc9d581377072e3731a37b",
+    "wp6-design-r1": "62ad0698c1ef575a933b8411d07ddd09bd8768c0e9eea568ab72a175c1b7ff59"
+  },
+  "implementation_sha256": "42e12cdabeaafd07a08a38d9d932bc04da129b772e6db7a9e4c30069c998f3fa",
+  "artifacts": {
+    "independent_metrics.json": "86e680ca2b5d788740290ab0fb4fa3b2b6736182c8aa79e9d1d1818ffa31c30e",
+    "numeric_cells.json": "c0e5d16f09a05ff952890a5955a4f834d58fc393c4b6a0af67f3f457985bc6db"
+  }
+}

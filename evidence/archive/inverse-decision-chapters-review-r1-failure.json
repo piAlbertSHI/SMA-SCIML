@@ -1,0 +1,11 @@
+{
+  "status": "failed_review_implementation",
+  "exit_code": 1,
+  "terminal_chunk_id": "c09e6f",
+  "exception": "KeyError: case_id",
+  "location": "audit_learning_inverse_decision_chapters.py local inverse record lookup",
+  "diagnosis": "wp5-local-thermal-r2/summary.json deliberately contains compact results; case_id, stage and normalization belong to the hash-bound per-tag JSON files. The new reviewer incorrectly treated a compact summary as the full record.",
+  "repair": "Read each per-tag JSON and verify its compact fields against summary before raw HDF5 lookup. No scientific data, trained model or numeric tolerance changes.",
+  "new_training_or_solver_calls": 0,
+  "review_output_directory_created": false
+}

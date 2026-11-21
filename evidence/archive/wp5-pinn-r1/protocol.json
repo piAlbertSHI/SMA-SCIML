@@ -1,0 +1,36 @@
+{
+  "learning_only": true,
+  "dataset": "manufactured_heat_equation_NOT_SMA_data",
+  "equation": "u_t=a*u_xx",
+  "domain": "dimensionless x,t in [0,1]",
+  "initial_condition": "sin(pi*x)+0.3*sin(2*pi*x)",
+  "boundary": "u(0,t)=u(1,t)=0",
+  "true_diffusivity_for_evaluation_only": 0.12,
+  "sparse_observation_count": 12,
+  "initializations": [
+    [
+      410,
+      0.05,
+      0.0
+    ],
+    [
+      411,
+      0.25,
+      0.003
+    ],
+    [
+      412,
+      0.4,
+      0.003
+    ]
+  ],
+  "adam_epochs": 1800,
+  "lbfgs_max_iterations": 150,
+  "implementation_sha256": "7e94eb2342786ab8647088a0b9f57ca88e63f2b5f93aeca7e40c6a4e6fa3771e",
+  "evaluation_policy": "Fixed parameters and observations; no dense labels in neural fit; no test tuning",
+  "acceptance": {
+    "clean_relative_parameter_error_max": 0.1,
+    "clean_dense_field_rmse_max": 0.03
+  },
+  "scope": "Algorithm/identifiability teaching test, not inferred SMA material diffusivity"
+}

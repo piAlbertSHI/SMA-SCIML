@@ -1,0 +1,50 @@
+{
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "dataset": "SciML\\datasets\\v1.2-confirm-temporal12",
+  "fingerprints": {
+    "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+    "pipeline_implementation_fingerprint_sha256": "bb312566a093e41ec6249dcea33229ff236332a4c89ca5508cc6c7e666bfba73"
+  },
+  "groups": {
+    "train": [
+      "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+      "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+      "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+      "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+      "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+      "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+      "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+      "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c"
+    ],
+    "test": [
+      "confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c",
+      "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "confirm_temporal12_10_confirm50_recas_047_r40_t200_p1584_v1019_t2p4_1c_2c",
+      "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c"
+    ]
+  },
+  "state_dimension": 515,
+  "feature_dimension": 529,
+  "epochs": 300,
+  "seeds": [
+    20260910,
+    20260911,
+    20260912
+  ],
+  "initial_input": "observed very first mechanical frame + declared uniform thermal defaults; no future-stage temperatures",
+  "stages": [
+    "loading+hold setup",
+    "hold+mechanical re-equilibration",
+    "unloading+cooldown setup",
+    "cooldown end",
+    "next-cycle mechanical restart"
+  ],
+  "restart_side": "not directly observed; carried until next hold setup observation, not certified complete physical restart",
+  "memory": "101point antisymmetric strip temperature; mirror radial plus memory reconstructs observed exchange entries",
+  "constraints": "xi clipped[0,1],u center/edge andw edge zero,memory antisymmetric; NO temperature clipping",
+  "test_selection": "both3cyclecases+onehashed2cyclecasepermaterial; train8whole2cyclecases, test4wholecases",
+  "ablation": "skip learned restart or erase predicted memory at interfaces; inference interventions, NOT retrained ablations",
+  "scope": "historical separate-profile boundary rollout, not current63 validation, fullfield trajectory or physical energy closure",
+  "implementation_sha256": "44d0fccb57adcd24cac167cd33d5aafd834e724984018fc80731fe5e3fd714da"
+}

@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+demo-output*/
+run-output*/
+learning-exercises*/
+SciML/datasets/
+Output/
+*.mat
+*.h5
+*.zip
+*.pkl
+.DS_Store
+Thumbs.db

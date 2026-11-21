@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "scope": "learning modules only, not whole repository regression",
+  "command": "python -m unittest discover -s SciML/tests -p 'test_learning_*.py' -v",
+  "session_id": 16851,
+  "completion_chunk_id": "f8ca0e",
+  "exit_code": 0,
+  "tests_run": 53,
+  "test_runner_seconds": 4.930,
+  "terminal_summary": "Ran 53 tests in 4.930s; OK"
+}

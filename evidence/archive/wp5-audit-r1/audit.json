@@ -1,0 +1,61 @@
+{
+  "status": "passed_wp5_learning_audit",
+  "learning_only": true,
+  "manufactured_results": [
+    {
+      "tag": "s410_pinn",
+      "unobserved_interior_count": 2438,
+      "unobserved_interior_rmse": 0.00012757491268016106,
+      "common_true_diffusivity_pde_rms": 0.0034400762423714955,
+      "coefficient_used_for_fair_residual": 0.12
+    },
+    {
+      "tag": "s410_data_only",
+      "unobserved_interior_count": 2438,
+      "unobserved_interior_rmse": 0.015706253455652422,
+      "common_true_diffusivity_pde_rms": 0.5121917270589582,
+      "coefficient_used_for_fair_residual": 0.12
+    },
+    {
+      "tag": "s411_pinn",
+      "unobserved_interior_count": 2438,
+      "unobserved_interior_rmse": 0.0006059151080959114,
+      "common_true_diffusivity_pde_rms": 0.00784132687149404,
+      "coefficient_used_for_fair_residual": 0.12
+    },
+    {
+      "tag": "s411_data_only",
+      "unobserved_interior_count": 2438,
+      "unobserved_interior_rmse": 0.013264305362328246,
+      "common_true_diffusivity_pde_rms": 0.3537582310036066,
+      "coefficient_used_for_fair_residual": 0.12
+    },
+    {
+      "tag": "s412_pinn",
+      "unobserved_interior_count": 2438,
+      "unobserved_interior_rmse": 0.0006680358822879348,
+      "common_true_diffusivity_pde_rms": 0.01044075461294637,
+      "coefficient_used_for_fair_residual": 0.12
+    },
+    {
+      "tag": "s412_data_only",
+      "unobserved_interior_count": 2438,
+      "unobserved_interior_rmse": 0.017558294999003635,
+      "common_true_diffusivity_pde_rms": 0.47236829360226473,
+      "coefficient_used_for_fair_residual": 0.12
+    }
+  ],
+  "local_neural_checkpoints_unchanged": [
+    "case1_stage2.pt",
+    "case1_stage4.pt",
+    "case2_stage2.pt",
+    "case2_stage4.pt",
+    "case3_stage2.pt",
+    "case3_stage4.pt"
+  ],
+  "baseline_correction": "Exact recurrence replaces noisy adaptive integration inside finite-difference least squares; same forcing/model/observations",
+  "fairness_note": "Original data-only residuals use untrained initial coefficient; use common-coefficient residuals here for PDE comparisons",
+  "local_model_scope": "Effective rate under observed forcing, not physical h or autonomous forecasting",
+  "local_corrected_summary_sha256": "79292d39f63d03fe29c0a27ac4bf7b1ffa160f3acc569ee26c6871f6bc2d49fa",
+  "manufactured_summary_sha256": "def23f5c4007b1a7177658c9f5333bff245a2191f3878e1645d6eb01aa16e548"
+}

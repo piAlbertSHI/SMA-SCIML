@@ -1,0 +1,1514 @@
+[
+  {
+    "case_id": "paper220_reca_001_r42_t210_p0823_v1000_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -1.3552527156068805e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 7.231743962761781,
+      "load_plus_recovered_plus_pump_J": 7.231743962761781,
+      "load_minus_recovered_plus_pump_J": 3.34304168283845,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.888702279923331
+    }
+  },
+  {
+    "case_id": "paper220_reca_002_r32_t160_p0993_v0944_t2p0_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -1.3552527156068805e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 4.115521316330157,
+      "load_plus_recovered_plus_pump_J": 4.115521316330157,
+      "load_minus_recovered_plus_pump_J": 2.1910310829600066,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -1.9244902333701503
+    }
+  },
+  {
+    "case_id": "paper220_reca_003_r35_t175_p0965_v0986_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -2.710505431213761e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 5.157315723670495,
+      "load_plus_recovered_plus_pump_J": 5.157315723670495,
+      "load_minus_recovered_plus_pump_J": 2.7344606821832347,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -2.42285504148726
+    }
+  },
+  {
+    "case_id": "paper220_reca_004_r35_t175_p0912_v0853_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 0.0
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 4.801646700641126,
+      "load_plus_recovered_plus_pump_J": 4.801646700641126,
+      "load_minus_recovered_plus_pump_J": 2.417278082800909,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -2.3843686178402175
+    }
+  },
+  {
+    "case_id": "paper220_reca_005_r42_t210_p0733_v1169_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -2.168404344971009e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 6.046470131244836,
+      "load_plus_recovered_plus_pump_J": 6.046470131244836,
+      "load_minus_recovered_plus_pump_J": 2.6756193540748607,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.370850777169975
+    }
+  },
+  {
+    "case_id": "paper220_reca_006_r35_t175_p0916_v0959_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -7.453889935837843e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 4.794346886044792,
+      "load_plus_recovered_plus_pump_J": 4.794346886044792,
+      "load_minus_recovered_plus_pump_J": 2.475687136052134,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -2.318659749992658
+    }
+  },
+  {
+    "case_id": "paper220_reca_007_r35_t175_p1034_v1063_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -1.5585406229479126e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 5.680119206045731,
+      "load_plus_recovered_plus_pump_J": 5.680119206045731,
+      "load_minus_recovered_plus_pump_J": 3.1054977636124566,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -2.5746214424332745
+    }
+  },
+  {
+    "case_id": "paper220_reca_008_r42_t210_p0938_v0890_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 1.4907779871675686e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 8.819751780615661,
+      "load_plus_recovered_plus_pump_J": 8.819751780615661,
+      "load_minus_recovered_plus_pump_J": 4.2222362774205875,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -4.597515503195074
+    }
+  },
+  {
+    "case_id": "paper220_reca_009_r38_t190_p0874_v1164_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 0.0
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 5.749880824061323,
+      "load_plus_recovered_plus_pump_J": 5.749880824061323,
+      "load_minus_recovered_plus_pump_J": 2.8838535223639803,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -2.866027301697343
+    }
+  },
+  {
+    "case_id": "paper220_reca_010_r42_t210_p1008_v1140_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -8.131516293641283e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 9.73753109378574,
+      "load_plus_recovered_plus_pump_J": 9.73753109378574,
+      "load_minus_recovered_plus_pump_J": 4.858169706280011,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -4.87936138750573
+    }
+  },
+  {
+    "case_id": "paper220_reca_011_r42_t210_p0830_v0785_t2p0_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -1.0842021724855044e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 7.4333773565114765,
+      "load_plus_recovered_plus_pump_J": 7.4333773565114765,
+      "load_minus_recovered_plus_pump_J": 3.2875383889327137,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -4.145838967578763
+    }
+  },
+  {
+    "case_id": "paper220_reca_012_r38_t190_p0848_v0964_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -6.776263578034403e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 5.538231429296704,
+      "load_plus_recovered_plus_pump_J": 5.538231429296704,
+      "load_minus_recovered_plus_pump_J": 2.6841004687870793,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -2.8541309605096243
+    }
+  },
+  {
+    "case_id": "paper220_reca_013_r38_t190_p1056_v1155_t2p0_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -1.3552527156068805e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 7.6633326526260115,
+      "load_plus_recovered_plus_pump_J": 7.6633326526260115,
+      "load_minus_recovered_plus_pump_J": 3.9510004230523856,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.712332229573626
+    }
+  },
+  {
+    "case_id": "paper220_reca_014_r42_t210_p0813_v0822_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 1.7618285302889447e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 7.156958530177856,
+      "load_plus_recovered_plus_pump_J": 7.156958530177856,
+      "load_minus_recovered_plus_pump_J": 3.207286766769321,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.949671763408535
+    }
+  },
+  {
+    "case_id": "paper220_reca_015_r42_t210_p0941_v1014_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -2.168404344971009e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 8.838610303874136,
+      "load_plus_recovered_plus_pump_J": 8.838610303874136,
+      "load_minus_recovered_plus_pump_J": 4.269491001634174,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -4.569119302239962
+    }
+  },
+  {
+    "case_id": "paper220_reca_016_r42_t210_p0918_v1225_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 0.0
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 8.438568346472147,
+      "load_plus_recovered_plus_pump_J": 8.438568346472147,
+      "load_minus_recovered_plus_pump_J": 4.168080665980329,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -4.270487680491818
+    }
+  },
+  {
+    "case_id": "paper220_reca_017_r38_t190_p0785_v1115_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 1.8973538018496328e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 4.9005993173509035,
+      "load_plus_recovered_plus_pump_J": 4.9005993173509035,
+      "load_minus_recovered_plus_pump_J": 2.346347585724808,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -2.5542517316260955
+    }
+  },
+  {
+    "case_id": "paper220_reca_018_r42_t210_p0771_v0939_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 1.6263032587282567e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 6.570712094873418,
+      "load_plus_recovered_plus_pump_J": 6.570712094873418,
+      "load_minus_recovered_plus_pump_J": 2.9239590807610356,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.6467530141123823
+    }
+  },
+  {
+    "case_id": "paper220_reca_019_r32_t160_p1006_v0813_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 8.809142651444724e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 4.1969066017263215,
+      "load_plus_recovered_plus_pump_J": 4.1969066017263215,
+      "load_minus_recovered_plus_pump_J": 2.2377591496635056,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -1.9591474520628158
+    }
+  },
+  {
+    "case_id": "paper220_reca_020_r32_t160_p0887_v1216_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 8.809142651444724e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 3.4314179475032196,
+      "load_plus_recovered_plus_pump_J": 3.4314179475032196,
+      "load_minus_recovered_plus_pump_J": 1.8482356721837885,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -1.5831822753194311
+    }
+  },
+  {
+    "case_id": "paper220_reca_021_r38_t190_p0752_v0874_t2p8_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -8.131516293641283e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 4.608467687621871,
+      "load_plus_recovered_plus_pump_J": 4.608467687621871,
+      "load_minus_recovered_plus_pump_J": 2.1354807884944345,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -2.472986899127436
+    }
+  },
+  {
+    "case_id": "paper220_reca_022_r42_t210_p0724_v1067_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 1.6263032587282567e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 5.936697511906246,
+      "load_plus_recovered_plus_pump_J": 5.936697511906246,
+      "load_minus_recovered_plus_pump_J": 2.60323707113157,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.333460440774676
+    }
+  },
+  {
+    "case_id": "paper220_reca_023_r38_t190_p0761_v1187_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -1.3552527156068805e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 4.663495083215993,
+      "load_plus_recovered_plus_pump_J": 4.663495083215993,
+      "load_minus_recovered_plus_pump_J": 2.218224746806687,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -2.4452703364093065
+    }
+  },
+  {
+    "case_id": "paper220_reca_024_r40_t200_p1052_v0865_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 6.776263578034403e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 8.932399621488392,
+      "load_plus_recovered_plus_pump_J": 8.932399621488392,
+      "load_minus_recovered_plus_pump_J": 4.533559963245187,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -4.3988396582432046
+    }
+  },
+  {
+    "case_id": "paper220_reca_025_r32_t160_p0996_v0844_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -2.371692252312041e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 4.129090734976351,
+      "load_plus_recovered_plus_pump_J": 4.129090734976351,
+      "load_minus_recovered_plus_pump_J": 2.206688135298066,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -1.9224025996782848
+    }
+  },
+  {
+    "case_id": "paper220_reca_026_r38_t190_p0840_v0980_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -6.776263578034403e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 5.456736750658456,
+      "load_plus_recovered_plus_pump_J": 5.456736750658456,
+      "load_minus_recovered_plus_pump_J": 2.6408570746190327,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -2.815879676039423
+    }
+  },
+  {
+    "case_id": "paper220_reca_027_r35_t175_p0972_v1221_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -1.0842021724855044e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 5.159531052261802,
+      "load_plus_recovered_plus_pump_J": 5.159531052261802,
+      "load_minus_recovered_plus_pump_J": 2.8228664248555724,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -2.33666462740623
+    }
+  },
+  {
+    "case_id": "paper220_reca_028_r32_t160_p0879_v1201_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -5.421010862427522e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 3.3854083432817994,
+      "load_plus_recovered_plus_pump_J": 3.3854083432817994,
+      "load_minus_recovered_plus_pump_J": 1.8180953413271623,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -1.567313001954637
+    }
+  },
+  {
+    "case_id": "paper220_reca_029_r32_t160_p0841_v0892_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -2.371692252312041e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 3.220401876841677,
+      "load_plus_recovered_plus_pump_J": 3.220401876841677,
+      "load_minus_recovered_plus_pump_J": 1.624245814228833,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -1.596156062612844
+    }
+  },
+  {
+    "case_id": "paper220_reca_030_r40_t200_p1001_v1098_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 1.0842021724855044e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 8.243933073198566,
+      "load_plus_recovered_plus_pump_J": 8.243933073198566,
+      "load_minus_recovered_plus_pump_J": 4.229066839883186,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -4.01486623331538
+    }
+  },
+  {
+    "case_id": "paper220_reca_031_r40_t200_p0832_v0804_t2p8_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 3.3881317890172014e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 6.29311462966738,
+      "load_plus_recovered_plus_pump_J": 6.29311462966738,
+      "load_minus_recovered_plus_pump_J": 3.0039637325847406,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.289150897082639
+    }
+  },
+  {
+    "case_id": "paper220_reca_032_r42_t210_p0793_v0917_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 5.421010862427522e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 6.869427664267875,
+      "load_plus_recovered_plus_pump_J": 6.869427664267875,
+      "load_minus_recovered_plus_pump_J": 3.0787088345418576,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.7907188297260177
+    }
+  },
+  {
+    "case_id": "paper220_reca_033_r32_t160_p0730_v0999_t2p0_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -4.0657581468206416e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 2.61332119779617,
+      "load_plus_recovered_plus_pump_J": 2.61332119779617,
+      "load_minus_recovered_plus_pump_J": 1.2172771771285162,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -1.3960440206676539
+    }
+  },
+  {
+    "case_id": "paper220_reca_034_r35_t175_p0866_v1083_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 1.8973538018496328e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 4.395300327931481,
+      "load_plus_recovered_plus_pump_J": 4.395300327931481,
+      "load_minus_recovered_plus_pump_J": 2.251824195672528,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -2.143476132258953
+    }
+  },
+  {
+    "case_id": "paper220_reca_035_r40_t200_p0837_v0993_t2p8_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -1.8973538018496328e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 6.322274059147039,
+      "load_plus_recovered_plus_pump_J": 6.322274059147039,
+      "load_minus_recovered_plus_pump_J": 3.066918160033547,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.2553558991134923
+    }
+  },
+  {
+    "case_id": "paper220_reca_036_r40_t200_p0958_v0838_t2p0_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 2.710505431213761e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 7.886693397509252,
+      "load_plus_recovered_plus_pump_J": 7.886693397509252,
+      "load_minus_recovered_plus_pump_J": 3.7592168688707175,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -4.127476528638535
+    }
+  },
+  {
+    "case_id": "paper220_reca_037_r38_t190_p1004_v0814_t2p8_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -7.453889935837843e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 7.088727684740356,
+      "load_plus_recovered_plus_pump_J": 7.088727684740356,
+      "load_minus_recovered_plus_pump_J": 3.6532710715634322,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.435456613176924
+    }
+  },
+  {
+    "case_id": "paper220_reca_038_r40_t200_p1049_v1071_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 8.131516293641283e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 8.849453196547069,
+      "load_plus_recovered_plus_pump_J": 8.849453196547069,
+      "load_minus_recovered_plus_pump_J": 4.558599677771798,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -4.290853518775271
+    }
+  },
+  {
+    "case_id": "paper220_reca_039_r38_t190_p0743_v1129_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -1.0842021724855044e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 4.5178997037042965,
+      "load_plus_recovered_plus_pump_J": 4.5178997037042965,
+      "load_minus_recovered_plus_pump_J": 2.0919229437081825,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -2.425976759996114
+    }
+  },
+  {
+    "case_id": "paper220_reca_040_r32_t160_p0737_v0872_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 8.809142651444724e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 2.637550321651386,
+      "load_plus_recovered_plus_pump_J": 2.637550321651386,
+      "load_minus_recovered_plus_pump_J": 1.255240360991335,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -1.382309960660051
+    }
+  },
+  {
+    "case_id": "paper220_reca_041_r42_t210_p0766_v0879_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -1.0842021724855044e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 6.511106165662469,
+      "load_plus_recovered_plus_pump_J": 6.511106165662469,
+      "load_minus_recovered_plus_pump_J": 2.8805701883054584,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.630535977357011
+    }
+  },
+  {
+    "case_id": "paper220_reca_042_r42_t210_p0820_v0920_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 1.0842021724855044e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 7.201700078782725,
+      "load_plus_recovered_plus_pump_J": 7.201700078782725,
+      "load_minus_recovered_plus_pump_J": 3.309743455274244,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.891956623508481
+    }
+  },
+  {
+    "case_id": "paper220_reca_043_r32_t160_p1023_v0931_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 6.776263578034403e-21
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 4.262685147623777,
+      "load_plus_recovered_plus_pump_J": 4.262685147623777,
+      "load_minus_recovered_plus_pump_J": 2.341595797149185,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -1.9210893504745914
+    }
+  },
+  {
+    "case_id": "paper220_reca_044_r35_t175_p1029_v0984_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -8.809142651444724e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 5.680557836265765,
+      "load_plus_recovered_plus_pump_J": 5.680557836265765,
+      "load_minus_recovered_plus_pump_J": 3.0392702900199287,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -2.6412875462458367
+    }
+  },
+  {
+    "case_id": "paper220_reca_045_r32_t160_p0974_v1103_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -6.776263578034403e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 3.9409654997392645,
+      "load_plus_recovered_plus_pump_J": 3.9409654997392645,
+      "load_minus_recovered_plus_pump_J": 2.179023438104707,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -1.7619420616345574
+    }
+  },
+  {
+    "case_id": "paper220_reca_046_r32_t160_p0746_v0781_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 1.6940658945086007e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 2.7097303856021746,
+      "load_plus_recovered_plus_pump_J": 2.7097303856021746,
+      "load_minus_recovered_plus_pump_J": 1.2634367507234523,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -1.4462936348787223
+    }
+  },
+  {
+    "case_id": "paper220_reca_047_r40_t200_p0967_v1245_t2p8_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 5.421010862427522e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 7.729117982953322,
+      "load_plus_recovered_plus_pump_J": 7.729117982953322,
+      "load_minus_recovered_plus_pump_J": 4.090473900650536,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.638644082302786
+    }
+  },
+  {
+    "case_id": "paper220_reca_048_r40_t200_p0728_v0933_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -8.131516293641283e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 5.16353025312071,
+      "load_plus_recovered_plus_pump_J": 5.16353025312071,
+      "load_minus_recovered_plus_pump_J": 2.2828068164639324,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -2.8807234366567775
+    }
+  },
+  {
+    "case_id": "paper220_reca_049_r35_t175_p1017_v1030_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -1.3552527156068805e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 5.57403588309348,
+      "load_plus_recovered_plus_pump_J": 5.57403588309348,
+      "load_minus_recovered_plus_pump_J": 2.989156300090083,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -2.5848795830033975
+    }
+  },
+  {
+    "case_id": "paper220_reca_050_r38_t190_p1039_v1113_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -8.131516293641283e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 7.400087563937568,
+      "load_plus_recovered_plus_pump_J": 7.400087563937568,
+      "load_minus_recovered_plus_pump_J": 3.927846961893079,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.4722406020444887
+    }
+  },
+  {
+    "case_id": "paper220_reca_051_r35_t175_p0796_v1023_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -6.098637220230962e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 3.8781034070761122,
+      "load_plus_recovered_plus_pump_J": 3.8781034070761122,
+      "load_minus_recovered_plus_pump_J": 1.9157337754250707,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -1.9623696316510415
+    }
+  },
+  {
+    "case_id": "paper220_reca_052_r40_t200_p1079_v0827_t2p8_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 1.0842021724855044e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 9.194996383045435,
+      "load_plus_recovered_plus_pump_J": 9.194996383045435,
+      "load_minus_recovered_plus_pump_J": 4.803500303371092,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -4.391496079674343
+    }
+  },
+  {
+    "case_id": "paper220_reca_057_r32_t160_p1070_v1183_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -4.0657581468206416e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 4.479443683644238,
+      "load_plus_recovered_plus_pump_J": 4.479443683644238,
+      "load_minus_recovered_plus_pump_J": 2.5976827433227365,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -1.8817609403215014
+    }
+  },
+  {
+    "case_id": "paper220_reca_075_r42_t210_p0746_v1235_t2p8_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 1.3552527156068805e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 6.152890512811875,
+      "load_plus_recovered_plus_pump_J": 6.152890512811875,
+      "load_minus_recovered_plus_pump_J": 2.8326179217854603,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.3202725910264146
+    }
+  },
+  {
+    "case_id": "paper220_reca_101_r40_t200_p0870_v0909_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -9.486769009248164e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 6.755320498259088,
+      "load_plus_recovered_plus_pump_J": 6.755320498259088,
+      "load_minus_recovered_plus_pump_J": 3.2402784815179166,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.515042016741172
+    }
+  },
+  {
+    "case_id": "paper220_reca_105_r32_t160_p0803_v1159_t2p8_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 9.486769009248164e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 2.955928983827239,
+      "load_plus_recovered_plus_pump_J": 2.955928983827239,
+      "load_minus_recovered_plus_pump_J": 1.5369334449289906,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -1.4189955388982483
+    }
+  },
+  {
+    "case_id": "paper220_recas_119_r32_t160_p1254_v1225_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 6.776263578034403e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 5.966099931670951,
+      "load_plus_recovered_plus_pump_J": 5.966099931670951,
+      "load_minus_recovered_plus_pump_J": 2.0838172941335977,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.882282637537353
+    }
+  },
+  {
+    "case_id": "paper220_recas_127_r38_t190_p1289_v1196_t2p8_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -1.4907779871675686e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 10.565444404577303,
+      "load_plus_recovered_plus_pump_J": 10.565444404577303,
+      "load_minus_recovered_plus_pump_J": 3.561498965483436,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -7.003945439093867
+    }
+  },
+  {
+    "case_id": "paper220_recas_128_r32_t160_p1521_v1016_t2p8_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -9.486769009248164e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 8.009029524818775,
+      "load_plus_recovered_plus_pump_J": 8.009029524818775,
+      "load_minus_recovered_plus_pump_J": 3.0808028170604183,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -4.928226707758357
+    }
+  },
+  {
+    "case_id": "paper220_recas_130_r42_t210_p1167_v1250_t2p0_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 2.168404344971009e-19
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 12.478069432507032,
+      "load_plus_recovered_plus_pump_J": 12.478069432507032,
+      "load_minus_recovered_plus_pump_J": 3.5895193961788743,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -8.888550036328159
+    }
+  },
+  {
+    "case_id": "paper220_recas_139_r32_t160_p1251_v1135_t2p0_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 4.743384504624082e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 6.004854038676212,
+      "load_plus_recovered_plus_pump_J": 6.004854038676212,
+      "load_minus_recovered_plus_pump_J": 2.012018751425076,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -3.9928352872511366
+    }
+  },
+  {
+    "case_id": "paper220_recas_146_r32_t160_p1642_v1186_t2p4_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": 1.3552527156068805e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 9.015277279717218,
+      "load_plus_recovered_plus_pump_J": 9.015277279717218,
+      "load_minus_recovered_plus_pump_J": 3.5135354275472297,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -5.501741852169988
+    }
+  },
+  {
+    "case_id": "paper220_recas_184_r42_t210_p1240_v0979_t2p8_1c",
+    "source_hashes_match_request": {
+      "Build_Simulink_Exchange_Params.m": true,
+      "Run_Simulink_Exchange_Hook.m": true,
+      "Run_GlobalXi_Simulink_Cycles.m": true,
+      "SciML/builders/Export_SCIML_V11_Case.m": true
+    },
+    "constant_provenance": "explicit request or source-verified defaults",
+    "cp_J_per_kgK": 4180.0,
+    "rho_kg_per_m3": 998.0,
+    "export_identity_residuals": {
+      "Qcool_J": 0.0,
+      "COP": 0.0,
+      "Wpump_J": -8.131516293641283e-20
+    },
+    "work_convention": {
+      "stored_Wtotal_J": 13.666088095616615,
+      "load_plus_recovered_plus_pump_J": 13.666088095616615,
+      "load_minus_recovered_plus_pump_J": 4.185174971613061,
+      "plus_minus_stored_J": 0.0,
+      "minus_minus_stored_J": -9.480913124003553
+    }
+  }
+]

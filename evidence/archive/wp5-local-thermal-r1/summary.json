@@ -1,0 +1,68 @@
+{
+  "status": "completed_reduced_model_diagnostic",
+  "learning_only": true,
+  "physical_parameter_validation": false,
+  "case_count": 3,
+  "stage_count": 6,
+  "elapsed_seconds": 34.51599999999962,
+  "results": [
+    {
+      "tag": "case1_stage2",
+      "effective_rate_per_s": 0.5776908633916076,
+      "classical_rate_per_s": 0.5617782281135268,
+      "held_tail_rmse_K": 0.0006785167901590817,
+      "classical_held_tail_rmse_K": 0.08016655552771818
+    },
+    {
+      "tag": "case1_stage4",
+      "effective_rate_per_s": 0.5709552393679451,
+      "classical_rate_per_s": 0.570875552308382,
+      "held_tail_rmse_K": 0.0017956789570446215,
+      "classical_held_tail_rmse_K": 0.0036217735526921074
+    },
+    {
+      "tag": "case2_stage2",
+      "effective_rate_per_s": 1.2529555829048893,
+      "classical_rate_per_s": 0.49998499093853754,
+      "held_tail_rmse_K": 0.0030977189006069967,
+      "classical_held_tail_rmse_K": 2.8631030562889848
+    },
+    {
+      "tag": "case2_stage4",
+      "effective_rate_per_s": 1.2266222965311218,
+      "classical_rate_per_s": 0.5,
+      "held_tail_rmse_K": 0.01486067410235481,
+      "classical_held_tail_rmse_K": 3.4610094913270593
+    },
+    {
+      "tag": "case3_stage2",
+      "effective_rate_per_s": 0.7711365154313315,
+      "classical_rate_per_s": 0.5104430319543283,
+      "held_tail_rmse_K": 0.0007208350329137803,
+      "classical_held_tail_rmse_K": 1.2783527700484711
+    },
+    {
+      "tag": "case3_stage4",
+      "effective_rate_per_s": 0.760752823632115,
+      "classical_rate_per_s": 0.49999984550914445,
+      "held_tail_rmse_K": 0.0043709286059952345,
+      "classical_held_tail_rmse_K": 1.078754158661375
+    }
+  ],
+  "artifacts": {
+    "case1_stage2.json": "1c34020db1bc9648a04860a10b5f92b01092cd3b18685f9f503183fdedf99b7d",
+    "case1_stage2.pt": "a4bdc1df215d759f14a753baa8c377797e22ea7be294ceb8f2d00bf466e578b2",
+    "case1_stage4.json": "375a63a6e071003ccc25862c32d054221a57354d7b97f16970916b00e563a096",
+    "case1_stage4.pt": "cfe32a79e57917d29e14a9fa709092466a29dafdcd179d519d7f5c111060f7fc",
+    "case2_stage2.json": "c20405edc0ce7248524154b9caed7031ca04893a876d325e9df994a52939bc0e",
+    "case2_stage2.pt": "5a81158378f02791e7b8cd2f1faaf9637026e076a358a1847e23f07dbc90034f",
+    "case2_stage4.json": "554bf04fd687f7b79f4253c78954514fe2279e3707722308f736f151aaf9ac86",
+    "case2_stage4.pt": "8a6115b5b85c2513d35b5bfde8e4d256b077dedd535f30f99be9a62f95f229d3",
+    "case3_stage2.json": "a7edb3e2b7716c90efe9c9f42ba8c73e5615f5ebd1095e2fed73f2f270f2e234",
+    "case3_stage2.pt": "603a9e77e10f774c1c7b970555f74dc3316d892241414e3f6f9f68d71082e11c",
+    "case3_stage4.json": "a1ee42400755eb3af466737153259ce68a65f61d9c73c9a249fbe6ee45ccb244",
+    "case3_stage4.pt": "58faadb2dfd15943e0ae605bd07ea6fe3dbaa65c4617ae2d315d8aea334f16b7",
+    "curves.npz": "fdbe3d442b254a7bb89e1abef689942d43091baa6b76b342a0aa2e6077f6b67f",
+    "protocol.json": "4029f2b88640a893e9b67b0cd4d898aa34216072f8a97dfcadb163f6029dcba8"
+  }
+}

@@ -1,0 +1,10 @@
+numpy>=2.0,<3
+scipy>=1.14,<2
+pandas>=2.2,<4
+scikit-learn>=1.7,<2
+torch>=2.5,<3
+h5py>=3.12,<4
+pyarrow>=18,<26
+matplotlib>=3.9,<4
+pillow>=11,<13
+threadpoolctl>=3.5,<4

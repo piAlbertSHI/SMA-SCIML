@@ -1,0 +1,709 @@
+[
+  {
+    "dataset": "v1.0",
+    "status": "legacy_schema_without_cycle_index",
+    "eligible_for_current_fullfield_rollout": false
+  },
+  {
+    "dataset": "v1.1-engineering10-audit",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 14,
+    "observed_cycle_rows": 15,
+    "cycle_index_counts": {
+      "1": 14,
+      "2": 1
+    },
+    "multi_cycle_case_count": 1,
+    "strict_flag_case_count": 11,
+    "same_implementation_case_count": 0,
+    "strict_same_implementation_case_count": 0,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "29f501e0d57470b64005974a8208194904014919220d816ba284d13f9c01a0a0"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "6165a542930751b9a114006203a87ae9dbd23a71f8bfd5fefe0a1302bb4f8e60"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "61c6c933bd4ab59bfebac7cef32b8315fa516329dd6905e7251bf080bf484ac2"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "abe265cd3e18211e388d2af33e9d2db74ba461e17a72a142befd985f71bb02b9"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "b63844931f5b053b8b66036be81e88981b4cbf0f12f4bbcb5d760664949e1a3c"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "d49ca3b82f66d7758b4d960ce4b5cd939fb219945175a907c2b0a87c50d0159c"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "df16f0e57c1e714d7cc9513c7dec9285e4e30ca4db314fe26f275dfd78d46528",
+      "cycle_index.parquet": "9c70372e95eed3c9a7107c8352e54635131e12c4b208e9a78c8278760dc39959"
+    },
+    "manifest_sha256": "c9f70f43c617fe2b3c5e58fdd0ce804de654448af024f389628e0244b8779a43"
+  },
+  {
+    "dataset": "v1.1-engineering14-audit",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 18,
+    "observed_cycle_rows": 19,
+    "cycle_index_counts": {
+      "1": 18,
+      "2": 1
+    },
+    "multi_cycle_case_count": 1,
+    "strict_flag_case_count": 14,
+    "same_implementation_case_count": 0,
+    "strict_same_implementation_case_count": 0,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "29f501e0d57470b64005974a8208194904014919220d816ba284d13f9c01a0a0"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "6165a542930751b9a114006203a87ae9dbd23a71f8bfd5fefe0a1302bb4f8e60"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "61c6c933bd4ab59bfebac7cef32b8315fa516329dd6905e7251bf080bf484ac2"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "abe265cd3e18211e388d2af33e9d2db74ba461e17a72a142befd985f71bb02b9"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "b63844931f5b053b8b66036be81e88981b4cbf0f12f4bbcb5d760664949e1a3c"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "d49ca3b82f66d7758b4d960ce4b5cd939fb219945175a907c2b0a87c50d0159c"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "32a43e2212f55381c2ddcf18323211af62e31a67cd171abe67e531991f170d1f",
+      "cycle_index.parquet": "72f1839db2f42192f81a3b2fd878310ab9a7c2c093ef5d2e1da08aacba3b5152"
+    },
+    "manifest_sha256": "f78eaad6636a7147e261c7aea1520f357146be02f611f1574d312b0100baded9"
+  },
+  {
+    "dataset": "v1.1-engineering20",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 34,
+    "observed_cycle_rows": 35,
+    "cycle_index_counts": {
+      "1": 34,
+      "2": 1
+    },
+    "multi_cycle_case_count": 1,
+    "strict_flag_case_count": 22,
+    "same_implementation_case_count": 0,
+    "strict_same_implementation_case_count": 0,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "29f501e0d57470b64005974a8208194904014919220d816ba284d13f9c01a0a0"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "57dcb7e1b7b9e518c18b3ee15ba344d859224bf38582b6eed4cf3e024d23e60c"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "6165a542930751b9a114006203a87ae9dbd23a71f8bfd5fefe0a1302bb4f8e60"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "61c6c933bd4ab59bfebac7cef32b8315fa516329dd6905e7251bf080bf484ac2"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "abe265cd3e18211e388d2af33e9d2db74ba461e17a72a142befd985f71bb02b9"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "b63844931f5b053b8b66036be81e88981b4cbf0f12f4bbcb5d760664949e1a3c"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "d49ca3b82f66d7758b4d960ce4b5cd939fb219945175a907c2b0a87c50d0159c"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "c48c48f45ca7a1bcf9d2e2f4b36992be749a0e18c0f356f16a4118222d1e3399",
+      "cycle_index.parquet": "284783895404174e1da6b753f8c8fc48baf544163e31ababdddc12878a211ac4"
+    },
+    "manifest_sha256": "0e0da07d78a6bd94125c48711c7a39bd2083aea30583c8ef1b509c119ffbe559"
+  },
+  {
+    "dataset": "v1.1-engineering6-audit",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 10,
+    "observed_cycle_rows": 11,
+    "cycle_index_counts": {
+      "1": 10,
+      "2": 1
+    },
+    "multi_cycle_case_count": 1,
+    "strict_flag_case_count": 7,
+    "same_implementation_case_count": 0,
+    "strict_same_implementation_case_count": 0,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "29f501e0d57470b64005974a8208194904014919220d816ba284d13f9c01a0a0"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "6165a542930751b9a114006203a87ae9dbd23a71f8bfd5fefe0a1302bb4f8e60"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "61c6c933bd4ab59bfebac7cef32b8315fa516329dd6905e7251bf080bf484ac2"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "abe265cd3e18211e388d2af33e9d2db74ba461e17a72a142befd985f71bb02b9"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "d49ca3b82f66d7758b4d960ce4b5cd939fb219945175a907c2b0a87c50d0159c"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "f0304003ae28807f04c64e5534cdf5e7fb9395f41c06a7457a2681f44f3a052d",
+      "cycle_index.parquet": "4e7bea584dd043cc957cdc5d6f41528d6f0c70cf3c690ac32d0bf082e8e2eb81"
+    },
+    "manifest_sha256": "fd40d3dc2fe3e18ded31c1eb8138f458cab93a40decead9771702ba732d9c31a"
+  },
+  {
+    "dataset": "v1.1-engineering8-audit",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 12,
+    "observed_cycle_rows": 13,
+    "cycle_index_counts": {
+      "1": 12,
+      "2": 1
+    },
+    "multi_cycle_case_count": 1,
+    "strict_flag_case_count": 9,
+    "same_implementation_case_count": 0,
+    "strict_same_implementation_case_count": 0,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "29f501e0d57470b64005974a8208194904014919220d816ba284d13f9c01a0a0"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "6165a542930751b9a114006203a87ae9dbd23a71f8bfd5fefe0a1302bb4f8e60"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "61c6c933bd4ab59bfebac7cef32b8315fa516329dd6905e7251bf080bf484ac2"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "abe265cd3e18211e388d2af33e9d2db74ba461e17a72a142befd985f71bb02b9"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "b63844931f5b053b8b66036be81e88981b4cbf0f12f4bbcb5d760664949e1a3c"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "d49ca3b82f66d7758b4d960ce4b5cd939fb219945175a907c2b0a87c50d0159c"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "e2aa0816a32896a26b8fc7b30ad0478de2f0c3501543f712f082a99f4aa51b8d",
+      "cycle_index.parquet": "a19faf861ffd284338c28fdff91edead35ec0c20518fe6b11d25e35c0e2c5c97"
+    },
+    "manifest_sha256": "0a37abc377258dfeb59b99252eea7611f3bc8c0543779e9bec0a749ef87d0ec5"
+  },
+  {
+    "dataset": "v1.1-paper220",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 229,
+    "observed_cycle_rows": 243,
+    "cycle_index_counts": {
+      "1": 229,
+      "2": 12,
+      "3": 2
+    },
+    "multi_cycle_case_count": 12,
+    "strict_flag_case_count": 212,
+    "same_implementation_case_count": 0,
+    "strict_same_implementation_case_count": 0,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+        "pipeline_implementation_fingerprint_sha256": "05e56974ca604efdc253df6d2c5cc4b454e9ddc38372a878335ff82506a2d6c4"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+        "pipeline_implementation_fingerprint_sha256": "90a5bed4c056daf3d8f2382c23b2e62982c85cd1fedf1c25fcd5bf7a2a587d3e"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+        "pipeline_implementation_fingerprint_sha256": "cb950e1fda93cf3645e1093d981fc42bc2276bf327cb08f549d55a145684cd4d"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "17b07d4945d5447f2512e85e2c4e8f679ba8b3e438ae863bf47232a8a169f2e6",
+      "cycle_index.parquet": "153d09edeef070eee18787f30594f6b6d574492d2a7ccd278fdad1e01d731b49"
+    },
+    "manifest_sha256": "361eecb77e0c3b062c4925663497c2be9074c1c0914d7021240f17c394e8c2a6"
+  },
+  {
+    "dataset": "v1.1-pilot",
+    "status": "legacy_schema_without_cycle_index",
+    "eligible_for_current_fullfield_rollout": false
+  },
+  {
+    "dataset": "v1.1-pilot-r3",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 4,
+    "observed_cycle_rows": 5,
+    "cycle_index_counts": {
+      "1": 4,
+      "2": 1
+    },
+    "multi_cycle_case_count": 1,
+    "strict_flag_case_count": 4,
+    "same_implementation_case_count": 0,
+    "strict_same_implementation_case_count": 0,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "61c6c933bd4ab59bfebac7cef32b8315fa516329dd6905e7251bf080bf484ac2"
+      },
+      {
+        "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+        "pipeline_implementation_fingerprint_sha256": "abe265cd3e18211e388d2af33e9d2db74ba461e17a72a142befd985f71bb02b9"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "2008b9d971a44cdb60d89db23107c1bcac0cd3c319b223f29564c0a1e4018f7d",
+      "cycle_index.parquet": "5cf77b858b20446903a841d94a8870db35940fc172f8ee30a113e0f99c25114a"
+    },
+    "manifest_sha256": "90e3c7d24c2c9e854ff2f651c52efe69175ba4ff37cc9342426584e4a20bd25a"
+  },
+  {
+    "dataset": "v1.2-confirm-temporal12",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 12,
+    "observed_cycle_rows": 26,
+    "cycle_index_counts": {
+      "1": 12,
+      "2": 12,
+      "3": 2
+    },
+    "multi_cycle_case_count": 12,
+    "strict_flag_case_count": 12,
+    "same_implementation_case_count": 0,
+    "strict_same_implementation_case_count": 0,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+        "pipeline_implementation_fingerprint_sha256": "bb312566a093e41ec6249dcea33229ff236332a4c89ca5508cc6c7e666bfba73"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "c4b2e850912b733b0bd8115c0b6aa59325374e99196fac34bc0c1ccdb81fe2df",
+      "cycle_index.parquet": "89f8d93242101296f61372eedf2a1f7e1512c3bb37f8293bebae50d1c024fed1"
+    },
+    "manifest_sha256": "2c1a9e812e8f49c315e1bd84ed59daf7da827cfe285fe10e3cf6b977be730a1c"
+  },
+  {
+    "dataset": "v1.2-confirm50",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 50,
+    "observed_cycle_rows": 50,
+    "cycle_index_counts": {
+      "1": 50
+    },
+    "multi_cycle_case_count": 0,
+    "strict_flag_case_count": 50,
+    "same_implementation_case_count": 0,
+    "strict_same_implementation_case_count": 0,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+        "pipeline_implementation_fingerprint_sha256": "44b02f9ffe9d1d5c3ae82fdf3f6002fa31c0c58c11c61b68ef52d13702a39cd2"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "923e9b7df353507ab8d0aef505037081e7df073ab117a7aaedb824685b1335d9",
+      "cycle_index.parquet": "31bd2d8febd99cffaaed2b607098c0044f35ca1d95e58241b83af2fda66c6716"
+    },
+    "manifest_sha256": "28aa4128732bd034f48559d537e4acb5ff95b5ff7bce96b76a1887facf20e5ce"
+  },
+  {
+    "dataset": "v12-confirm50-smoke-20260831",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 10,
+    "observed_cycle_rows": 10,
+    "cycle_index_counts": {
+      "1": 10
+    },
+    "multi_cycle_case_count": 0,
+    "strict_flag_case_count": 9,
+    "same_implementation_case_count": 0,
+    "strict_same_implementation_case_count": 0,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+        "pipeline_implementation_fingerprint_sha256": "b2c3e2c556ffffd91f72662e9e7cb1c8dd5f3b8021c72751e8e7003085741f28"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "09675c0c050c403b4be61057c33305456aaab921a0e399e135593beb0dc06d3f",
+      "cycle_index.parquet": "3150642302d079272e199aa0d0bb00e64a4680b628e9ef44eef8ee657de52e47"
+    },
+    "manifest_sha256": "f0ae683a657c690e7328c9374286cdebcec126848b1c72bea90f8d0b762af7da"
+  },
+  {
+    "dataset": "v12-confirm50-smoke-fix-20260901",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 10,
+    "observed_cycle_rows": 10,
+    "cycle_index_counts": {
+      "1": 10
+    },
+    "multi_cycle_case_count": 0,
+    "strict_flag_case_count": 10,
+    "same_implementation_case_count": 0,
+    "strict_same_implementation_case_count": 0,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "91c4bb270f7086ac7aac556863158e27f061423d699d912e8eca0ea3039131e9",
+        "pipeline_implementation_fingerprint_sha256": "e3c2900964c2abc4e80a6201195ccda38f101a0f5c86749c321fb295cf745678"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "229b9615abdaa51eb96f3638a6fa3ba01536dea25195fe628944e1bd00aa5d00",
+      "cycle_index.parquet": "bd6d4684f0142c04831beca1c111b1ddfb0960ab8c1af643cbe7509e91c792ec"
+    },
+    "manifest_sha256": "48f251af44d25e361a1d28b29bd5ba5e24a0b1d9643de347095b072327c34fd0"
+  },
+  {
+    "dataset": "v12-confirm50-smoke-fix2-20260903",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 10,
+    "observed_cycle_rows": 10,
+    "cycle_index_counts": {
+      "1": 10
+    },
+    "multi_cycle_case_count": 0,
+    "strict_flag_case_count": 10,
+    "same_implementation_case_count": 0,
+    "strict_same_implementation_case_count": 0,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "bd8d71cc5c5be64480fab2656f39529ed2280e24d738d730c6443146b259a0fe",
+        "pipeline_implementation_fingerprint_sha256": "38976dcf8f27336969e4522de397e66f08ef0df96867b682bbf44bacc57d8e23"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "aa18f77fd32d427da85baac64c71894b5232bf31e770ce1d9b3e8cc4f0b82be9",
+      "cycle_index.parquet": "a4ce5c231ef068b09ad00411e5397854baec317c1556b7f0f0615a4c2af782d5"
+    },
+    "manifest_sha256": "57fc684105077a68fb21bb3d5add70ecafb29f6ea72bad9fed5cfdb72ff53fb0"
+  },
+  {
+    "dataset": "v12-development-qualification-20260906",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 14,
+    "observed_cycle_rows": 14,
+    "cycle_index_counts": {
+      "1": 14
+    },
+    "multi_cycle_case_count": 0,
+    "strict_flag_case_count": 14,
+    "same_implementation_case_count": 0,
+    "strict_same_implementation_case_count": 0,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "a0a608c045e0408fde84bcc6ae7be74ef05897ea81a71a6e18a4bc5920c3c89d",
+        "pipeline_implementation_fingerprint_sha256": "23ee9a22556adfbc1b6bb845149c45eae945af271a5b03ffdc69a946e52be7f6"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "543143b59a6241d04ed5a098a2ac49b9b3fc48094760b7cb01d774c09c73bf2f",
+      "cycle_index.parquet": "80f60c0882abf66c8d07997f5d7a223890b388aaeb4949c6d736dc970ca1ad91"
+    },
+    "manifest_sha256": "33b3d0b688952d5685f9a4fed337055f590ffb96c6b8dc30f38e1ccde2b5bbb3"
+  },
+  {
+    "dataset": "v12-initial-pressure-qualification-20260906",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 1,
+    "observed_cycle_rows": 1,
+    "cycle_index_counts": {
+      "1": 1
+    },
+    "multi_cycle_case_count": 0,
+    "strict_flag_case_count": 1,
+    "same_implementation_case_count": 0,
+    "strict_same_implementation_case_count": 0,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "d87006210397b328fd7aec56277bae1edc4217752ef5c14f286087e95f4473e6",
+        "pipeline_implementation_fingerprint_sha256": "e811354f2a4490da0ae3f0ec0ac82ba06d779a013d0fd8215ac9b9892112037d"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "28c3531cda4ffbc94a765154b5eb9d4eafc84efb7d3df2ff3e561ab4215e3496",
+      "cycle_index.parquet": "2bf518e18efc206cf8935a9ab53c8db7228e766294ebf752287dd0b67c025040"
+    },
+    "manifest_sha256": "644321a577b9bceeffdb256de8534dd8c70d2081e30a5f754c15979c1b982d8e"
+  },
+  {
+    "dataset": "v12-learning-existing63-20260910",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 63,
+    "observed_cycle_rows": 63,
+    "cycle_index_counts": {
+      "1": 63
+    },
+    "multi_cycle_case_count": 0,
+    "strict_flag_case_count": 63,
+    "same_implementation_case_count": 63,
+    "strict_same_implementation_case_count": 63,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "ffe15b88ce05a4adb452baa7548bdbf89061cdf55f43b4f10df2ead92bd481b7",
+        "pipeline_implementation_fingerprint_sha256": "ee7d97b03890ff32d7edcc2870a6a030492e1fb1a74c19dd62527183caaac6ec"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "550706e54c3cf47c46b71244ce467391f090eedaff2c0488c78fc69202191626",
+      "cycle_index.parquet": "b245b191ba0b9f02e054731a6437d75f604464d22b0f266ff1f2e974074c06c3"
+    },
+    "manifest_sha256": "368d0c2cbb3345debad966a164a9f0ec00da574b683e6cb9f599b9b9d5593447"
+  },
+  {
+    "dataset": "v12-learning55-20260910",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 55,
+    "observed_cycle_rows": 55,
+    "cycle_index_counts": {
+      "1": 55
+    },
+    "multi_cycle_case_count": 0,
+    "strict_flag_case_count": 55,
+    "same_implementation_case_count": 55,
+    "strict_same_implementation_case_count": 55,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "ffe15b88ce05a4adb452baa7548bdbf89061cdf55f43b4f10df2ead92bd481b7",
+        "pipeline_implementation_fingerprint_sha256": "ee7d97b03890ff32d7edcc2870a6a030492e1fb1a74c19dd62527183caaac6ec"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "ffb803b51129d70773e76dd96066d2af6cb0a9c4811bddc0bd4762f775821c10",
+      "cycle_index.parquet": "1850fb5957c332bf5b58556f0fbc1303c31b41daded6e52ae86ddd9326f8720e"
+    },
+    "manifest_sha256": "95b4de478d2be6ab791d47956c4145fc653ec370661a72e191ebd2c2450506fb"
+  },
+  {
+    "dataset": "v12-state-initialization-qualification-20260906",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 1,
+    "observed_cycle_rows": 1,
+    "cycle_index_counts": {
+      "1": 1
+    },
+    "multi_cycle_case_count": 0,
+    "strict_flag_case_count": 1,
+    "same_implementation_case_count": 1,
+    "strict_same_implementation_case_count": 1,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "ffe15b88ce05a4adb452baa7548bdbf89061cdf55f43b4f10df2ead92bd481b7",
+        "pipeline_implementation_fingerprint_sha256": "ee7d97b03890ff32d7edcc2870a6a030492e1fb1a74c19dd62527183caaac6ec"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "bfc40e4d08543148df1a65bb858efd56a0d5c2d85b657c6f1c030a22a2385b25",
+      "cycle_index.parquet": "4a4ce108ef65a003c7977cedb2dc62d7308084a59a4042f561f2ec0c365e0364"
+    },
+    "manifest_sha256": "c4039e7d6e3e449137ef299ed135fc50a1e1f28de6cee4c2d8cde0088a17970f"
+  },
+  {
+    "dataset": "v12-state-initialization-qualification-20260907",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 4,
+    "observed_cycle_rows": 4,
+    "cycle_index_counts": {
+      "1": 4
+    },
+    "multi_cycle_case_count": 0,
+    "strict_flag_case_count": 4,
+    "same_implementation_case_count": 4,
+    "strict_same_implementation_case_count": 4,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "ffe15b88ce05a4adb452baa7548bdbf89061cdf55f43b4f10df2ead92bd481b7",
+        "pipeline_implementation_fingerprint_sha256": "ee7d97b03890ff32d7edcc2870a6a030492e1fb1a74c19dd62527183caaac6ec"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "3a0616ebfa64affd141bbb6cc7d894708408a6b422b7b3665bea0b1e6ce535d6",
+      "cycle_index.parquet": "a2f5dd0442cebaf46f40ef6e0bc65c44aa211ac7bb172570df314a56f8090458"
+    },
+    "manifest_sha256": "deeceabb6c42b748c743cb4a4ffa794b6156bcbde71266ddae2631867c2960d8"
+  },
+  {
+    "dataset": "v12-state-initialization-qualification11-20260907",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 11,
+    "observed_cycle_rows": 11,
+    "cycle_index_counts": {
+      "1": 11
+    },
+    "multi_cycle_case_count": 0,
+    "strict_flag_case_count": 11,
+    "same_implementation_case_count": 11,
+    "strict_same_implementation_case_count": 11,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "ffe15b88ce05a4adb452baa7548bdbf89061cdf55f43b4f10df2ead92bd481b7",
+        "pipeline_implementation_fingerprint_sha256": "ee7d97b03890ff32d7edcc2870a6a030492e1fb1a74c19dd62527183caaac6ec"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "a34c87e4175e5eb37d71cc1bf9ff0c6f31e198bd354e201fd7fa47332f6ac1e8",
+      "cycle_index.parquet": "9541ef9f2599eebe24b5a4e00ac810cd7d18aa104ee28d2f5e10603c846141e8"
+    },
+    "manifest_sha256": "69cc2284a73be155e9418da4b36b47ecb6ca7c8bcad5e62395b02a3fa5a38192"
+  },
+  {
+    "dataset": "v12-state-initialization-qualification14-20260908",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 14,
+    "observed_cycle_rows": 14,
+    "cycle_index_counts": {
+      "1": 14
+    },
+    "multi_cycle_case_count": 0,
+    "strict_flag_case_count": 14,
+    "same_implementation_case_count": 14,
+    "strict_same_implementation_case_count": 14,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "ffe15b88ce05a4adb452baa7548bdbf89061cdf55f43b4f10df2ead92bd481b7",
+        "pipeline_implementation_fingerprint_sha256": "ee7d97b03890ff32d7edcc2870a6a030492e1fb1a74c19dd62527183caaac6ec"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "fd998973d8b432f4cdeb8b7a473d4e44814babb5e98937508472c44264428263",
+      "cycle_index.parquet": "884123e7c5a91a7d233ccf66e2958ee1ec65ec65a658bef27c362ea68a20faf3"
+    },
+    "manifest_sha256": "a0e06709647d340f02f7de9b559ca8749112cf4d6161493768495823760c8936"
+  },
+  {
+    "dataset": "v12-state-initialization-qualification17-20260908",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 17,
+    "observed_cycle_rows": 17,
+    "cycle_index_counts": {
+      "1": 17
+    },
+    "multi_cycle_case_count": 0,
+    "strict_flag_case_count": 17,
+    "same_implementation_case_count": 17,
+    "strict_same_implementation_case_count": 17,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "ffe15b88ce05a4adb452baa7548bdbf89061cdf55f43b4f10df2ead92bd481b7",
+        "pipeline_implementation_fingerprint_sha256": "ee7d97b03890ff32d7edcc2870a6a030492e1fb1a74c19dd62527183caaac6ec"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "e340d583f3bbb781fb04c48a1cb454eb93449a9f38e77acfe3d3be8f1302380b",
+      "cycle_index.parquet": "6b86afc2007604d4f4061a16c1eec9b6753e6332e7f17e1210fe0d83f624d283"
+    },
+    "manifest_sha256": "89d3227d59a54bf65c60237d04344e8197b3eae2e9724b08141b2ed1adfe4058"
+  },
+  {
+    "dataset": "v12-state-paper220-progress27-20260908",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 27,
+    "observed_cycle_rows": 27,
+    "cycle_index_counts": {
+      "1": 27
+    },
+    "multi_cycle_case_count": 0,
+    "strict_flag_case_count": 27,
+    "same_implementation_case_count": 27,
+    "strict_same_implementation_case_count": 27,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "ffe15b88ce05a4adb452baa7548bdbf89061cdf55f43b4f10df2ead92bd481b7",
+        "pipeline_implementation_fingerprint_sha256": "ee7d97b03890ff32d7edcc2870a6a030492e1fb1a74c19dd62527183caaac6ec"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "251ebd500947f50057b3c272d264d9e953a0f2a5f8544b383dce3c221facccaf",
+      "cycle_index.parquet": "4c61bc4195235579ad3db4c4200ad1ee16ac9448bf16b06109818f47040309d9"
+    },
+    "manifest_sha256": "a7879853eb67e12b2d4f05157ace54d067d0ddb9e765d4d378e043e27b786524"
+  },
+  {
+    "dataset": "v12-state-paper220-progress54-20260909",
+    "status": "artifact_integrity_passed",
+    "artifact_errors": [],
+    "case_count": 54,
+    "observed_cycle_rows": 54,
+    "cycle_index_counts": {
+      "1": 54
+    },
+    "multi_cycle_case_count": 0,
+    "strict_flag_case_count": 54,
+    "same_implementation_case_count": 54,
+    "strict_same_implementation_case_count": 54,
+    "implementation_pairs": [
+      {
+        "physics_implementation_fingerprint_sha256": "ffe15b88ce05a4adb452baa7548bdbf89061cdf55f43b4f10df2ead92bd481b7",
+        "pipeline_implementation_fingerprint_sha256": "ee7d97b03890ff32d7edcc2870a6a030492e1fb1a74c19dd62527183caaac6ec"
+      }
+    ],
+    "index_sha256": {
+      "case_index.parquet": "5b84f3b75e7a05a0814e2a9101ecd63e56c54363ee01c9d0e595d5a2df9d27e8",
+      "cycle_index.parquet": "c680a9864e2e2fbccc61b618418ea0dd5a77cbf71ee38861b7214221b73acb6c"
+    },
+    "manifest_sha256": "573af79f414745a019797a5ac2b609bf5fdba6cd3e083611ed23471e3edaa5b5"
+  }
+]

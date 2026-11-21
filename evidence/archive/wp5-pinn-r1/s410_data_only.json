@@ -1,0 +1,191 @@
+{
+  "tag": "s410_data_only",
+  "seed": 410,
+  "observation_noise_sd": 0.0,
+  "initial_diffusivity": 0.05,
+  "identified_diffusivity": null,
+  "relative_parameter_error": null,
+  "classical_known_solution_diffusivity": 0.12000000000001376,
+  "classical_baseline_caveat": "uses closed-form solution family unavailable in a general inverse PDE",
+  "dense_field_rmse": 0.015206150202880159,
+  "dense_field_max_abs": 0.05831915752315697,
+  "sparse_observation_rmse": 5.52448428050147e-07,
+  "pde_residual_rms": 0.4468025884616808,
+  "pde_evaluation_diffusivity": 0.05000000000000001,
+  "parameter_identifiable_from_data_only_network": false,
+  "analytic_observation_sensitivity_norm": 7.149220560073183,
+  "training": {
+    "seed": 410,
+    "physics_loss_enabled": false,
+    "adam_epochs": 1800,
+    "lbfgs_max_iterations": 150,
+    "lbfgs_closure_evaluations": 42,
+    "collocation_count": 128,
+    "data_weight": 10.0,
+    "pde_weight": 0.0,
+    "architecture": "2-24-24-1 Tanh, hard IC/BC, positive exp(log_a)",
+    "loss_history": [
+      {
+        "phase": "adam",
+        "step": 1,
+        "total": 1.754523138484556,
+        "data": 0.1754523138484556,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 101,
+        "total": 0.0605486660961163,
+        "data": 0.00605486660961163,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 201,
+        "total": 0.030138708596146507,
+        "data": 0.003013870859614651,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 301,
+        "total": 0.013206843083464655,
+        "data": 0.0013206843083464655,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 401,
+        "total": 0.007045234025467856,
+        "data": 0.0007045234025467856,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 501,
+        "total": 0.0035559835483842915,
+        "data": 0.00035559835483842914,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 601,
+        "total": 0.0018818853847469164,
+        "data": 0.00018818853847469164,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 701,
+        "total": 0.0011014464207296576,
+        "data": 0.00011014464207296577,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 801,
+        "total": 0.0006914404410142615,
+        "data": 6.914404410142615e-05,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 901,
+        "total": 0.00045027697318464685,
+        "data": 4.5027697318464684e-05,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 1001,
+        "total": 0.0002925445523764664,
+        "data": 2.925445523764664e-05,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 1101,
+        "total": 0.00018358280526034582,
+        "data": 1.835828052603458e-05,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 1201,
+        "total": 0.00010925669068470284,
+        "data": 1.0925669068470284e-05,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 1301,
+        "total": 6.126672493265951e-05,
+        "data": 6.126672493265951e-06,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 1401,
+        "total": 3.233076423692705e-05,
+        "data": 3.233076423692705e-06,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 1501,
+        "total": 1.6054113673405923e-05,
+        "data": 1.6054113673405923e-06,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 1601,
+        "total": 7.50169959341195e-06,
+        "data": 7.501699593411949e-07,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 1701,
+        "total": 3.2982800294572764e-06,
+        "data": 3.298280029457276e-07,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "adam",
+        "step": 1800,
+        "total": 1.376352512488205e-06,
+        "data": 1.376352512488205e-07,
+        "pde": 0.0,
+        "diffusivity": null
+      },
+      {
+        "phase": "final",
+        "total": 3.0519926565507847e-12,
+        "data": 3.051992656550785e-13,
+        "pde": 0.0,
+        "diffusivity": null
+      }
+    ]
+  },
+  "checkpoint_sha256": "8c6c11ac6ad77743d3cd9629ee31b610062068009c7e54c918965fff0ec2cfe2",
+  "roundtrip_exact": true
+}

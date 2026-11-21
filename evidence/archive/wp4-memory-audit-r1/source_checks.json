@@ -1,0 +1,317 @@
+[
+  {
+    "case_id": "paper220_reca_001_r42_t210_p0823_v1000_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.233766371042164
+  },
+  {
+    "case_id": "paper220_reca_002_r32_t160_p0993_v0944_t2p0_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.34392967007525194
+  },
+  {
+    "case_id": "paper220_reca_003_r35_t175_p0965_v0986_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.24158366044169927
+  },
+  {
+    "case_id": "paper220_reca_004_r35_t175_p0912_v0853_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.3225817740476382
+  },
+  {
+    "case_id": "paper220_reca_005_r42_t210_p0733_v1169_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.14677279420787578
+  },
+  {
+    "case_id": "paper220_reca_006_r35_t175_p0916_v0959_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.26616050965167026
+  },
+  {
+    "case_id": "paper220_reca_007_r35_t175_p1034_v1063_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.1920886827461203
+  },
+  {
+    "case_id": "paper220_reca_008_r42_t210_p0938_v0890_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.266925064767173
+  },
+  {
+    "case_id": "paper220_reca_009_r38_t190_p0874_v1164_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.24948605854568542
+  },
+  {
+    "case_id": "paper220_reca_010_r42_t210_p1008_v1140_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.20666348983092228
+  },
+  {
+    "case_id": "paper220_reca_011_r42_t210_p0830_v0785_t2p0_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.16567532816510583
+  },
+  {
+    "case_id": "paper220_reca_012_r38_t190_p0848_v0964_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.28227202208590624
+  },
+  {
+    "case_id": "paper220_reca_013_r38_t190_p1056_v1155_t2p0_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.17191212755042085
+  },
+  {
+    "case_id": "paper220_reca_014_r42_t210_p0813_v0822_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.24717683104661003
+  },
+  {
+    "case_id": "paper220_reca_015_r42_t210_p0941_v1014_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.25248647053639306
+  },
+  {
+    "case_id": "paper220_reca_016_r42_t210_p0918_v1225_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.19782111958214155
+  },
+  {
+    "case_id": "paper220_reca_017_r38_t190_p0785_v1115_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.24498511541739862
+  },
+  {
+    "case_id": "paper220_reca_018_r42_t210_p0771_v0939_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.21270288303700755
+  },
+  {
+    "case_id": "paper220_reca_019_r32_t160_p1006_v0813_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.5027739712853765
+  },
+  {
+    "case_id": "paper220_reca_020_r32_t160_p0887_v1216_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.1480414245242826
+  },
+  {
+    "case_id": "paper220_reca_021_r38_t190_p0752_v0874_t2p8_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.23596738137048995
+  },
+  {
+    "case_id": "paper220_reca_022_r42_t210_p0724_v1067_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.16309227358503942
+  },
+  {
+    "case_id": "paper220_reca_023_r38_t190_p0761_v1187_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.2123791361096774
+  },
+  {
+    "case_id": "paper220_reca_024_r40_t200_p1052_v0865_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.23086137401472528
+  },
+  {
+    "case_id": "paper220_reca_025_r32_t160_p0996_v0844_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.42813636809054256
+  },
+  {
+    "case_id": "paper220_reca_026_r38_t190_p0840_v0980_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.2795700442139528
+  },
+  {
+    "case_id": "paper220_reca_027_r35_t175_p0972_v1221_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.18702293217119584
+  },
+  {
+    "case_id": "paper220_reca_028_r32_t160_p0879_v1201_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.15356995283320943
+  },
+  {
+    "case_id": "paper220_reca_029_r32_t160_p0841_v0892_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.26051493248089375
+  },
+  {
+    "case_id": "paper220_reca_030_r40_t200_p1001_v1098_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.20441871334889172
+  },
+  {
+    "case_id": "paper220_reca_031_r40_t200_p0832_v0804_t2p8_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.2705761430450084
+  },
+  {
+    "case_id": "paper220_reca_032_r42_t210_p0793_v0917_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.22820555775539877
+  },
+  {
+    "case_id": "paper220_reca_033_r32_t160_p0730_v0999_t2p0_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.25737487316689384
+  },
+  {
+    "case_id": "paper220_reca_034_r35_t175_p0866_v1083_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.2642674076972849
+  },
+  {
+    "case_id": "paper220_reca_035_r40_t200_p0837_v0993_t2p8_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.24769954441740988
+  },
+  {
+    "case_id": "paper220_reca_036_r40_t200_p0958_v0838_t2p0_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.23823574571069375
+  },
+  {
+    "case_id": "paper220_reca_037_r38_t190_p1004_v0814_t2p8_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.307046171905698
+  },
+  {
+    "case_id": "paper220_reca_038_r40_t200_p1049_v1071_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.17724650543122256
+  },
+  {
+    "case_id": "paper220_reca_039_r38_t190_p0743_v1129_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.21865359149435865
+  },
+  {
+    "case_id": "paper220_reca_040_r32_t160_p0737_v0872_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.22856277313591164
+  },
+  {
+    "case_id": "paper220_reca_041_r42_t210_p0766_v0879_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.2152788792341842
+  },
+  {
+    "case_id": "paper220_reca_042_r42_t210_p0820_v0920_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.24173154111780087
+  },
+  {
+    "case_id": "paper220_reca_043_r32_t160_p1023_v0931_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.3099792605914929
+  },
+  {
+    "case_id": "paper220_reca_044_r35_t175_p1029_v0984_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.23079695083168894
+  },
+  {
+    "case_id": "paper220_reca_045_r32_t160_p0974_v1103_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.16157888596260248
+  },
+  {
+    "case_id": "paper220_reca_046_r32_t160_p0746_v0781_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.27975867038496954
+  },
+  {
+    "case_id": "paper220_reca_047_r40_t200_p0967_v1245_t2p8_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.18422513986725111
+  },
+  {
+    "case_id": "paper220_reca_048_r40_t200_p0728_v0933_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.2024287469874288
+  },
+  {
+    "case_id": "paper220_reca_049_r35_t175_p1017_v1030_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.20914245980074478
+  },
+  {
+    "case_id": "paper220_reca_050_r38_t190_p1039_v1113_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.18070289498597839
+  },
+  {
+    "case_id": "paper220_reca_051_r35_t175_p0796_v1023_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.2758083218347106
+  },
+  {
+    "case_id": "paper220_reca_052_r40_t200_p1079_v0827_t2p8_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.2712555902711622
+  },
+  {
+    "case_id": "paper220_reca_057_r32_t160_p1070_v1183_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.15288793123527256
+  },
+  {
+    "case_id": "paper220_reca_075_r42_t210_p0746_v1235_t2p8_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.15500203179549424
+  },
+  {
+    "case_id": "paper220_reca_101_r40_t200_p0870_v0909_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.2619241540111266
+  },
+  {
+    "case_id": "paper220_reca_105_r32_t160_p0803_v1159_t2p8_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.11329685453381319
+  },
+  {
+    "case_id": "paper220_recas_119_r32_t160_p1254_v1225_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.2672421300559484
+  },
+  {
+    "case_id": "paper220_recas_127_r38_t190_p1289_v1196_t2p8_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.20031400695861934
+  },
+  {
+    "case_id": "paper220_recas_128_r32_t160_p1521_v1016_t2p8_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.293212755864518
+  },
+  {
+    "case_id": "paper220_recas_130_r42_t210_p1167_v1250_t2p0_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.09263542022452978
+  },
+  {
+    "case_id": "paper220_recas_139_r32_t160_p1251_v1135_t2p0_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.19571154144976216
+  },
+  {
+    "case_id": "paper220_recas_146_r32_t160_p1642_v1186_t2p4_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.22486855096313213
+  },
+  {
+    "case_id": "paper220_recas_184_r42_t210_p1240_v0979_t2p8_1c",
+    "identity_max_error_K": 5.684341886080802e-14,
+    "predicted_memory_rmse_K": 0.18045654634578878
+  }
+]

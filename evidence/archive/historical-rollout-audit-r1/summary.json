@@ -1,0 +1,90 @@
+{
+  "status": "passed_historical_multicycle_learning_audit",
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "raw_mechanical_and_strip_owner_comparisons": 472,
+  "fresh_three_seed_refits_exact": true,
+  "cold_checkpoint_and_intervention_replays_exact": true,
+  "training_cases": 8,
+  "test_cases": 4,
+  "training_transitions": 72,
+  "test_transitions": 46,
+  "fixed_three_cycle_cohort": {
+    "autonomous_neural": {
+      "1": {
+        "same_case_count": 2,
+        "mean_sma_rmse_K": 0.3170695962345017,
+        "std_sma_rmse_K": 0.03406154038856836
+      },
+      "2": {
+        "same_case_count": 2,
+        "mean_sma_rmse_K": 0.6268369217272521,
+        "std_sma_rmse_K": 0.02886409848834145
+      },
+      "3": {
+        "same_case_count": 2,
+        "mean_sma_rmse_K": 1.5432343459395508,
+        "std_sma_rmse_K": 0.11560538124987467
+      }
+    },
+    "autonomous_affine": {
+      "1": {
+        "same_case_count": 2,
+        "mean_sma_rmse_K": 0.34025203789446046,
+        "std_sma_rmse_K": 0.0
+      },
+      "2": {
+        "same_case_count": 2,
+        "mean_sma_rmse_K": 0.5445558884313969,
+        "std_sma_rmse_K": 0.0
+      },
+      "3": {
+        "same_case_count": 2,
+        "mean_sma_rmse_K": 1.1760859224863784,
+        "std_sma_rmse_K": 0.0
+      }
+    },
+    "skip_restart": {
+      "1": {
+        "same_case_count": 2,
+        "mean_sma_rmse_K": 0.3170695962345017,
+        "std_sma_rmse_K": 0.03406154038856836
+      },
+      "2": {
+        "same_case_count": 2,
+        "mean_sma_rmse_K": 1.8061176971254795,
+        "std_sma_rmse_K": 0.057085407623011904
+      },
+      "3": {
+        "same_case_count": 2,
+        "mean_sma_rmse_K": 3.6013016860757214,
+        "std_sma_rmse_K": 0.16315389412627987
+      }
+    },
+    "erase_memory": {
+      "1": {
+        "same_case_count": 2,
+        "mean_sma_rmse_K": 3.3790519966911923,
+        "std_sma_rmse_K": 0.04934685308129168
+      },
+      "2": {
+        "same_case_count": 2,
+        "mean_sma_rmse_K": 3.8847601938635474,
+        "std_sma_rmse_K": 0.7115920044816966
+      },
+      "3": {
+        "same_case_count": 2,
+        "mean_sma_rmse_K": 4.949317586175529,
+        "std_sma_rmse_K": 0.6469249060229432
+      }
+    }
+  },
+  "scope": "historical composite boundary states; unobserved restart side state is carried, not full Markov or energy closure",
+  "implementation_sha256": "43c0629e80ccef51f6697169b94457ab61be4607c05d067b8aa28c600464da3d",
+  "upstream_summary_sha256": "e8d2e0ee59e45db00e2b0ed3c550e699a2116afbe5abc5271f3dcf3c0820a291",
+  "artifacts": {
+    "case_cycle_metrics.json": "3b9f0e24970e854db454e6ac3349c0727b420c4d3e79b385d6ab497ae943b90b",
+    "historical_rollout.png": "8e09bcfcddc96602d94c64b14e4783e3979787d591e5439206725a1be5e2b78b",
+    "temperature_ranges.json": "34de7d815d6b6aa87657ab9efe684d9f2694458acea80cc615e3a8d051de29dd"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "exercises": [
+    {
+      "name": "# exercise: group_leakage",
+      "output": "correctly rejected case leakage",
+      "passed": true
+    },
+    {
+      "name": "# exercise: scaler_permission",
+      "output": "train-only scaler and original data preserved",
+      "passed": true
+    },
+    {
+      "name": "# exercise: scalar_tensor",
+      "output": "scalar tensors: 37x7 inputs, 37x5 targets, float64",
+      "passed": true
+    },
+    {
+      "name": "# exercise: broadcasting",
+      "output": "broadcasting trap detected",
+      "passed": true
+    }
+  ],
+  "unit_tests": "test_case_leakage_even_when_row_masks_disjoint (SciML.tests.test_learning_data_tutorial.DataTutorialTests.test_case_leakage_even_when_row_masks_disjoint) ... ok\ntest_train_only_scaler_and_input_copy (SciML.tests.test_learning_data_tutorial.DataTutorialTests.test_train_only_scaler_and_input_copy) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.002s\n\nOK\n"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "passed_historical_multicycle_field_audit",
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "independent_boundary_indices_and_features_exact": true,
+  "fresh_three_seed_operator_refits_exact": true,
+  "training_field_samples": 32,
+  "test_field_samples": 20,
+  "fixed_three_cycle_case_count": 2,
+  "scope": "one-way boundary-to-field decoder; no field feedback to physical energy or mechanical state",
+  "implementation_sha256": "d1be6e20e662029e4c005a4ceb1ca2f3e4950276d68029239ee9bb5d89e7ca92",
+  "upstream_summary_sha256": "1d7fceadf2d0bf6667fd8fafa5e61cda591dbd09d2a50eace68713b825600b35",
+  "artifacts": {
+    "historical_fields.png": "d34b9ea610fd1cc85af75880c7b6fc0d00a89f963c54a1189d51d02a20ecc0c7"
+  }
+}

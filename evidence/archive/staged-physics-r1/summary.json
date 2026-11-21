@@ -1,0 +1,139 @@
+{
+  "status": "completed_manufactured_staged_physics_ablation",
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "model_fits": 12,
+  "elapsed_seconds": 59.17199999999866,
+  "all_cold_replays_exact": true,
+  "aggregate": {
+    "data": {
+      "unobserved_field_rmse_K": {
+        "mean": 0.02726561295956138,
+        "std": 0.00588531477687107
+      },
+      "pde_rms_K_per_s": {
+        "mean": 0.48233909616703047,
+        "std": 0.14946106566763762
+      },
+      "stage_jump_rms_K": {
+        "mean": 0.10700999768863173,
+        "std": 0.018291265637426415
+      },
+      "cycle_jump_rms_K": {
+        "mean": 0.0502957770207065,
+        "std": 0.008773776670568875
+      },
+      "energy_rate_residual_rms_W": {
+        "mean": 1.646444309930388,
+        "std": 0.48594670081261715
+      }
+    },
+    "pde": {
+      "unobserved_field_rmse_K": {
+        "mean": 0.005605536547112229,
+        "std": 0.000578276601746092
+      },
+      "pde_rms_K_per_s": {
+        "mean": 0.09725549523514783,
+        "std": 0.011788695741289192
+      },
+      "stage_jump_rms_K": {
+        "mean": 0.014571349697173256,
+        "std": 0.006136171905612195
+      },
+      "cycle_jump_rms_K": {
+        "mean": 0.014521808526242746,
+        "std": 0.006598746360192611
+      },
+      "energy_rate_residual_rms_W": {
+        "mean": 0.23279275368633642,
+        "std": 0.024822560229898667
+      }
+    },
+    "pde_interfaces": {
+      "unobserved_field_rmse_K": {
+        "mean": 0.005622815622010957,
+        "std": 0.0006971954951638265
+      },
+      "pde_rms_K_per_s": {
+        "mean": 0.09841054700989411,
+        "std": 0.011721160251698143
+      },
+      "stage_jump_rms_K": {
+        "mean": 0.010394701378134629,
+        "std": 0.0029014237489294443
+      },
+      "cycle_jump_rms_K": {
+        "mean": 0.003710047553703452,
+        "std": 0.0004444893115296405
+      },
+      "energy_rate_residual_rms_W": {
+        "mean": 0.21573772433500835,
+        "std": 0.030841648358491965
+      }
+    },
+    "full": {
+      "unobserved_field_rmse_K": {
+        "mean": 0.005185256879620428,
+        "std": 0.001048833149037108
+      },
+      "pde_rms_K_per_s": {
+        "mean": 0.08445712475300175,
+        "std": 0.008448339572021376
+      },
+      "stage_jump_rms_K": {
+        "mean": 0.009523758511957659,
+        "std": 0.002707824208783538
+      },
+      "cycle_jump_rms_K": {
+        "mean": 0.0047690930748000996,
+        "std": 0.001200819439475528
+      },
+      "energy_rate_residual_rms_W": {
+        "mean": 0.16264483091084533,
+        "std": 0.018165654506716998
+      }
+    }
+  },
+  "performance_gate": "no claim every added loss improves every metric",
+  "artifacts": {
+    "observations.npz": "846679881a7deade6bc8f72d767175ede3063a085ae0a6fd5df2f5a2bf6b9277",
+    "protocol.json": "6086d6c985f9f016c600cae6619812e718e213b40518ad3874410af673c2d734",
+    "s810-data\\evaluation.npz": "15967b2641a11f31d6c327e4ec0fdc20492a01cfaf21d8075ca6a5f33fff46d8",
+    "s810-data\\model.pt": "ea2b6dc8c9c014bf26565da94b27e8a6d2c8881774821651870bcebda35155ec",
+    "s810-data\\report.json": "d2d43e36dea4dd22827c82c08df1c3db321b9474a17ace6618d9d691ab9c4cb7",
+    "s810-full\\evaluation.npz": "c1b4a317c212e2c625759f575ca91cc6ba4ea58552b0b0de615694c4cb4fa8ec",
+    "s810-full\\model.pt": "a4e467e69b6e04e3e31ff910efc2f1fdea7b27f1b9a03bbd2d12d8692f0798da",
+    "s810-full\\report.json": "8ff97a025f8ddb3b3b804c095217417cf3d58af72eae2d9c58886f2adf81a6f0",
+    "s810-pde\\evaluation.npz": "d07fcfdf009d8212d06a454eb05b07376adbd7c61f50ba4a555e393aabb9d472",
+    "s810-pde\\model.pt": "3810bcbbfeea0753ae4fef4eb4f1ac264a925c6fd7df205e95863bd8324a1e3b",
+    "s810-pde\\report.json": "a94cc54811f696e008a85d6269cccaced64d65c77cecc6e86783836839c63dab",
+    "s810-pde_interfaces\\evaluation.npz": "565a8e32683a9c58d192e0a60a99488c9b85a2f1338e9100accf529882c4814a",
+    "s810-pde_interfaces\\model.pt": "fb6f0c6fce13b59ae28053d46b21ce6e38f9e22873001d9a802092066d5cc0fd",
+    "s810-pde_interfaces\\report.json": "efc56e2364caef7ce95bdd39235d71ca02baea9a0f975f6eee3bfc7c48af010a",
+    "s811-data\\evaluation.npz": "40c1b5c1dbab83d5a14f3563c85c8682d52c2b63fdd7228fe7ac886d81b91637",
+    "s811-data\\model.pt": "2510778b1d2c24e7f70f2919a257ab8af08b9227fb24590615fc95a6d0d94a52",
+    "s811-data\\report.json": "fac7235660de88dfb662db1c303397cafa4ffc90dd6ec3d705b6473ce4cc6bba",
+    "s811-full\\evaluation.npz": "36c73d5cccc03bae51e797b35ae45e4e285d4c3af0a07979e26a6d0036a5740b",
+    "s811-full\\model.pt": "abae31070fe3e737ce6b384457c7ed19cd0e07756572da232948cfba28e71a82",
+    "s811-full\\report.json": "a5d4872a24ee32ec77b6989df2fbea3115f9c6ea127b22322b7089bbd0e51257",
+    "s811-pde\\evaluation.npz": "357072a6d9b7a05bedaf108e9340c7380c90e9b06533ca562af6a57c760b72cb",
+    "s811-pde\\model.pt": "7624e47a9c1d56fa33afe1e2a179678e4af8a0bbe688912d98e5af0cd6ad043a",
+    "s811-pde\\report.json": "62f44f8e58133c7d799ffff13ff9a563578bfb5851b581a284ee33995d18d728",
+    "s811-pde_interfaces\\evaluation.npz": "37d5e789337cad351bac76383fd3e4380ee4f2176c8f60f76a6c45c154c464e7",
+    "s811-pde_interfaces\\model.pt": "0fc78b643202d5b313b75c0c4e2e7ec52aeb685521889103f184a7cef94f4b74",
+    "s811-pde_interfaces\\report.json": "93c9cf9cd60c9baf2def9eb85d05c62af954081006c985b2cc593f732605973a",
+    "s812-data\\evaluation.npz": "35942d67ad53f19a8fb3d4f39ddf623e4e16da750293929fa146cc4171cad253",
+    "s812-data\\model.pt": "3ad8c00b5facfa8a0f0611522f85b4aa4e8e6771d2b380367659dc638ca0fb32",
+    "s812-data\\report.json": "6678c14db126350e3bc0985a1e738cfbd0841b211bfa694ebe7496b614cc8b0c",
+    "s812-full\\evaluation.npz": "cdee4b060907c1c918a57388cc44bc985daf0f69ccd0fd5f0282141447e7caa9",
+    "s812-full\\model.pt": "6a0bd29eb196c4f2851dd55e810caa9e65174551f5a3d16c7ad83340f71ac8c1",
+    "s812-full\\report.json": "de5eb1922800983428ea9fefa09bc07a55ce145dee31a8c9ce7d6953e52fff56",
+    "s812-pde\\evaluation.npz": "8e682530a439ca11a610fe3745a0e8cc860356064cc4c267d705eb52d35a1afa",
+    "s812-pde\\model.pt": "a3217c852d5a6a9c9f3d9798bf8b03c69303323286dc62f172e62b5772f83dc0",
+    "s812-pde\\report.json": "e63a188cb34c521189d2f38a08dd20c318c9a992645627a9d7e5b5eaf4f3ca38",
+    "s812-pde_interfaces\\evaluation.npz": "27fa2665ec2ff06b4e4159cf1aa4682b3304df8f3a558fc5b8aa2269cfd2e366",
+    "s812-pde_interfaces\\model.pt": "bf10fa456696b155454ca0394ab68a28638433f94e25aabcc29b64e87db76541",
+    "s812-pde_interfaces\\report.json": "58434f130fd53817b63cdf58c9e13f790c47171ceb5210174495eebca54e609b"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "status": "completed_fixed_seed_operator_repeat",
+  "seed": 20260912,
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "runs": {
+    "deeponet": {
+      "test_scores": {
+        "2": {
+          "sma": {
+            "future_rmse_K": 0.5248026700313141,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 1.8251629870618444
+          },
+          "htf": {
+            "future_rmse_K": 0.7385794568921751,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 3.584581146193784
+          }
+        },
+        "4": {
+          "sma": {
+            "future_rmse_K": 0.6344629616646259,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 2.047051304402146
+          },
+          "htf": {
+            "future_rmse_K": 0.5556805967714207,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 2.590765963773265
+          }
+        }
+      },
+      "elapsed_seconds": 14.046000000002095,
+      "summary_sha256": "5b7dfde1d06146f0ab357d902332bf0f60aaa92db35eda52e0d26f52d8add420"
+    },
+    "fourier": {
+      "test_scores": {
+        "2": {
+          "sma": {
+            "future_rmse_K": 0.9943151935242948,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 3.3665347318865315
+          },
+          "htf": {
+            "future_rmse_K": 1.6872765237017466,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 7.20401934356272
+          }
+        },
+        "4": {
+          "sma": {
+            "future_rmse_K": 0.5504166029420232,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 1.6538096479465025
+          },
+          "htf": {
+            "future_rmse_K": 0.88553604161614,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 4.3553578641559625
+          }
+        }
+      },
+      "elapsed_seconds": 19.514999999999418,
+      "summary_sha256": "ddfca128b566367cf2dd5529d6e8f37dfa2f76f6fca9ff1c907b8fc98bf8481b"
+    },
+    "deeponet_no_stage": {
+      "test_scores": {
+        "2": {
+          "sma": {
+            "future_rmse_K": 0.7280016576139107,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 2.358890416421673
+          },
+          "htf": {
+            "future_rmse_K": 0.7981328270518669,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 3.8731651230917237
+          }
+        },
+        "4": {
+          "sma": {
+            "future_rmse_K": 0.7542894003446171,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 2.399168707501019
+          },
+          "htf": {
+            "future_rmse_K": 0.5831155943254765,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 2.7532006815646923
+          }
+        }
+      },
+      "elapsed_seconds": 7.625,
+      "summary_sha256": "8a79da1a37c2d61078221af9bbb76dd2535a0f04a87d66509b489acaeca5117f"
+    },
+    "deeponet_no_ic": {
+      "test_scores": {
+        "2": {
+          "sma": {
+            "future_rmse_K": 0.6397377620117686,
+            "initial_max_abs_K": 1.6605720956418963,
+            "future_max_abs_K": 2.418613377302563
+          },
+          "htf": {
+            "future_rmse_K": 0.8149312815460514,
+            "initial_max_abs_K": 8.684886774214988,
+            "future_max_abs_K": 7.646271776390677
+          }
+        },
+        "4": {
+          "sma": {
+            "future_rmse_K": 0.7203081158872374,
+            "initial_max_abs_K": 1.042340405123639,
+            "future_max_abs_K": 2.2558316003780305
+          },
+          "htf": {
+            "future_rmse_K": 0.5103114226980178,
+            "initial_max_abs_K": 5.241135601360156,
+            "future_max_abs_K": 3.5523219453652928
+          }
+        }
+      },
+      "elapsed_seconds": 7.688000000001921,
+      "summary_sha256": "f2030255cc824916fc9b0711c8105a2ddfa82745a071224db56a015be73b936d"
+    }
+  },
+  "artifacts": {
+    "protocol.json": "8bbf3268330c7cb72154c380161dbbd3435e82189d3493ecbd064544461661bc"
+  }
+}

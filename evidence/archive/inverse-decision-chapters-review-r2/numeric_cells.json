@@ -1,0 +1,789 @@
+[
+  {
+    "chapter": 8,
+    "row": "s410",
+    "column": 0,
+    "displayed": "0.1198813",
+    "source_value": 0.11988128492522786,
+    "rounding_bound": 5.000000005551115e-08
+  },
+  {
+    "chapter": 8,
+    "row": "s410",
+    "column": 1,
+    "displayed": "0.09893",
+    "source_value": 0.0989292289767819,
+    "rounding_bound": 5.0000000000555116e-06
+  },
+  {
+    "chapter": 8,
+    "row": "s410",
+    "column": 2,
+    "displayed": "0.0001276",
+    "source_value": 0.00012757491268016106,
+    "rounding_bound": 5.000000000010842e-08
+  },
+  {
+    "chapter": 8,
+    "row": "s410",
+    "column": 3,
+    "displayed": "0.0157063",
+    "source_value": 0.015706253455652422,
+    "rounding_bound": 5.0000000013877786e-08
+  },
+  {
+    "chapter": 8,
+    "row": "s411",
+    "column": 0,
+    "displayed": "0.1200549",
+    "source_value": 0.12005490052866975,
+    "rounding_bound": 5.000000005551115e-08
+  },
+  {
+    "chapter": 8,
+    "row": "s411",
+    "column": 1,
+    "displayed": "0.04575",
+    "source_value": 0.04575044055813114,
+    "rounding_bound": 5.000000000027756e-06
+  },
+  {
+    "chapter": 8,
+    "row": "s411",
+    "column": 2,
+    "displayed": "0.0006059",
+    "source_value": 0.0006059151080959114,
+    "rounding_bound": 5.000000000043368e-08
+  },
+  {
+    "chapter": 8,
+    "row": "s411",
+    "column": 3,
+    "displayed": "0.0132643",
+    "source_value": 0.013264305362328246,
+    "rounding_bound": 5.000000000693889e-08
+  },
+  {
+    "chapter": 8,
+    "row": "s412",
+    "column": 0,
+    "displayed": "0.1197713",
+    "source_value": 0.11977130491298747,
+    "rounding_bound": 5.000000005551115e-08
+  },
+  {
+    "chapter": 8,
+    "row": "s412",
+    "column": 1,
+    "displayed": "0.19058",
+    "source_value": 0.19057923917710265,
+    "rounding_bound": 5.000000000111023e-06
+  },
+  {
+    "chapter": 8,
+    "row": "s412",
+    "column": 2,
+    "displayed": "0.0006680",
+    "source_value": 0.0006680358822879348,
+    "rounding_bound": 5.000000000043368e-08
+  },
+  {
+    "chapter": 8,
+    "row": "s412",
+    "column": 3,
+    "displayed": "0.0175583",
+    "source_value": 0.017558294999003635,
+    "rounding_bound": 5.0000000013877786e-08
+  },
+  {
+    "chapter": 8,
+    "pattern": "PDE RMS 为 PINN ([\\d.]+)",
+    "displayed": "0.003440",
+    "source_value": 0.0034400762423714955,
+    "rounding_bound": 5.000000000017347e-07
+  },
+  {
+    "chapter": 8,
+    "pattern": "纯数据 ([\\d.]+)。",
+    "displayed": "0.512192",
+    "source_value": 0.5121917270589582,
+    "rounding_bound": 5.000000004440892e-07
+  },
+  {
+    "chapter": 8,
+    "row": "网络权重及偏置数",
+    "column": 0,
+    "displayed": "697",
+    "source_value": 697.0,
+    "rounding_bound": 0.5000000000004547
+  },
+  {
+    "chapter": 8,
+    "row": "联合反演参数总数",
+    "displayed": "698",
+    "source_value": 698.0,
+    "rounding_bound": 0.5000000000004547
+  },
+  {
+    "chapter": 8,
+    "row": "网络权重及偏置数",
+    "column": 1,
+    "displayed": "673",
+    "source_value": 673.0,
+    "rounding_bound": 0.5000000000004547
+  },
+  {
+    "chapter": 8,
+    "row": "联合反演参数总数",
+    "displayed": "674",
+    "source_value": 674.0,
+    "rounding_bound": 0.5000000000004547
+  },
+  {
+    "chapter": 8,
+    "row": "case1 stage2",
+    "column": 0,
+    "displayed": "0.57769",
+    "source_value": 0.5776908633916076,
+    "rounding_bound": 5.00000000044409e-06
+  },
+  {
+    "chapter": 8,
+    "row": "case1 stage2",
+    "column": 1,
+    "displayed": "0.57773",
+    "source_value": 0.5777343790788656,
+    "rounding_bound": 5.00000000044409e-06
+  },
+  {
+    "chapter": 8,
+    "row": "case1 stage2",
+    "column": 2,
+    "displayed": "0.000679",
+    "source_value": 0.0006785167901590817,
+    "rounding_bound": 5.000000000004337e-07
+  },
+  {
+    "chapter": 8,
+    "row": "case1 stage2",
+    "column": 3,
+    "displayed": "0.000536",
+    "source_value": 0.0005355021293827392,
+    "rounding_bound": 5.000000000004337e-07
+  },
+  {
+    "chapter": 8,
+    "row": "case1 stage4",
+    "column": 0,
+    "displayed": "0.57096",
+    "source_value": 0.5709552393679451,
+    "rounding_bound": 5.00000000044409e-06
+  },
+  {
+    "chapter": 8,
+    "row": "case1 stage4",
+    "column": 1,
+    "displayed": "0.57090",
+    "source_value": 0.5708963539238948,
+    "rounding_bound": 5.00000000044409e-06
+  },
+  {
+    "chapter": 8,
+    "row": "case1 stage4",
+    "column": 2,
+    "displayed": "0.001796",
+    "source_value": 0.0017956789570446215,
+    "rounding_bound": 5.000000000008673e-07
+  },
+  {
+    "chapter": 8,
+    "row": "case1 stage4",
+    "column": 3,
+    "displayed": "0.003581",
+    "source_value": 0.0035807973772448627,
+    "rounding_bound": 5.000000000017347e-07
+  },
+  {
+    "chapter": 8,
+    "row": "case2 stage2",
+    "column": 0,
+    "displayed": "1.25296",
+    "source_value": 1.2529555829048893,
+    "rounding_bound": 5.000000000888179e-06
+  },
+  {
+    "chapter": 8,
+    "row": "case2 stage2",
+    "column": 1,
+    "displayed": "1.25343",
+    "source_value": 1.2534289295264878,
+    "rounding_bound": 5.000000000888179e-06
+  },
+  {
+    "chapter": 8,
+    "row": "case2 stage2",
+    "column": 2,
+    "displayed": "0.003098",
+    "source_value": 0.0030977189006069967,
+    "rounding_bound": 5.000000000017347e-07
+  },
+  {
+    "chapter": 8,
+    "row": "case2 stage2",
+    "column": 3,
+    "displayed": "0.004070",
+    "source_value": 0.0040696004362629585,
+    "rounding_bound": 5.000000000034694e-07
+  },
+  {
+    "chapter": 8,
+    "row": "case2 stage4",
+    "column": 0,
+    "displayed": "1.22662",
+    "source_value": 1.2266222965311218,
+    "rounding_bound": 5.000000000888179e-06
+  },
+  {
+    "chapter": 8,
+    "row": "case2 stage4",
+    "column": 1,
+    "displayed": "1.22707",
+    "source_value": 1.2270713652216458,
+    "rounding_bound": 5.000000000888179e-06
+  },
+  {
+    "chapter": 8,
+    "row": "case2 stage4",
+    "column": 2,
+    "displayed": "0.014861",
+    "source_value": 0.01486067410235481,
+    "rounding_bound": 5.000000000069389e-07
+  },
+  {
+    "chapter": 8,
+    "row": "case2 stage4",
+    "column": 3,
+    "displayed": "0.017241",
+    "source_value": 0.01724085158821817,
+    "rounding_bound": 5.000000000138778e-07
+  },
+  {
+    "chapter": 8,
+    "row": "case3 stage2",
+    "column": 0,
+    "displayed": "0.77114",
+    "source_value": 0.7711365154313315,
+    "rounding_bound": 5.00000000044409e-06
+  },
+  {
+    "chapter": 8,
+    "row": "case3 stage2",
+    "column": 1,
+    "displayed": "0.77121",
+    "source_value": 0.771213311216861,
+    "rounding_bound": 5.00000000044409e-06
+  },
+  {
+    "chapter": 8,
+    "row": "case3 stage2",
+    "column": 2,
+    "displayed": "0.000721",
+    "source_value": 0.0007208350329137803,
+    "rounding_bound": 5.000000000004337e-07
+  },
+  {
+    "chapter": 8,
+    "row": "case3 stage2",
+    "column": 3,
+    "displayed": "0.000486",
+    "source_value": 0.0004855308912592599,
+    "rounding_bound": 5.000000000002168e-07
+  },
+  {
+    "chapter": 8,
+    "row": "case3 stage4",
+    "column": 0,
+    "displayed": "0.76075",
+    "source_value": 0.760752823632115,
+    "rounding_bound": 5.00000000044409e-06
+  },
+  {
+    "chapter": 8,
+    "row": "case3 stage4",
+    "column": 1,
+    "displayed": "0.76077",
+    "source_value": 0.7607697023615086,
+    "rounding_bound": 5.00000000044409e-06
+  },
+  {
+    "chapter": 8,
+    "row": "case3 stage4",
+    "column": 2,
+    "displayed": "0.004371",
+    "source_value": 0.0043709286059952345,
+    "rounding_bound": 5.000000000034694e-07
+  },
+  {
+    "chapter": 8,
+    "row": "case3 stage4",
+    "column": 3,
+    "displayed": "0.005422",
+    "source_value": 0.0054219103384897495,
+    "rounding_bound": 5.000000000034694e-07
+  },
+  {
+    "chapter": 9,
+    "row": "冷量 / J",
+    "column": 0,
+    "displayed": "0.23257",
+    "source_value": 0.23257043917805295,
+    "rounding_bound": 5.000000000111023e-06
+  },
+  {
+    "chapter": 9,
+    "row": "冷量 / J",
+    "column": 1,
+    "displayed": "0.2582",
+    "source_value": 0.2582417582417582,
+    "rounding_bound": 5.000000000022205e-05
+  },
+  {
+    "chapter": 9,
+    "row": "泵功 / J",
+    "column": 0,
+    "displayed": "0.00003549",
+    "source_value": 3.548701228902531e-05,
+    "rounding_bound": 5.000000000027105e-09
+  },
+  {
+    "chapter": 9,
+    "row": "泵功 / J",
+    "column": 1,
+    "displayed": "0.2857",
+    "source_value": 0.2857142857142857,
+    "rounding_bound": 5.000000000022205e-05
+  },
+  {
+    "chapter": 9,
+    "row": "COP",
+    "column": 0,
+    "displayed": "0.02616",
+    "source_value": 0.02615855987378327,
+    "rounding_bound": 5.000000000013878e-06
+  },
+  {
+    "chapter": 9,
+    "row": "COP",
+    "column": 1,
+    "displayed": "0.1978",
+    "source_value": 0.19780219780219782,
+    "rounding_bound": 5.0000000000111025e-05
+  },
+  {
+    "chapter": 9,
+    "row": "SCP / W·kg⁻¹",
+    "column": 0,
+    "displayed": "11.47994",
+    "source_value": 11.479942192121817,
+    "rounding_bound": 5.000000007105428e-06
+  },
+  {
+    "chapter": 9,
+    "row": "SCP / W·kg⁻¹",
+    "column": 1,
+    "displayed": "0.4890",
+    "source_value": 0.48901098901098894,
+    "rounding_bound": 5.000000000022205e-05
+  },
+  {
+    "chapter": 9,
+    "row": "温差 / K",
+    "column": 0,
+    "displayed": "0.03309",
+    "source_value": 0.033093153963395405,
+    "rounding_bound": 5.000000000027756e-06
+  },
+  {
+    "chapter": 9,
+    "row": "温差 / K",
+    "column": 1,
+    "displayed": "0.4670",
+    "source_value": 0.46703296703296704,
+    "rounding_bound": 5.000000000022205e-05
+  },
+  {
+    "chapter": 9,
+    "row": "COP 分母功 / J",
+    "column": 0,
+    "displayed": "0.13257",
+    "source_value": 0.1325682518173669,
+    "rounding_bound": 5.000000000111023e-06
+  },
+  {
+    "chapter": 9,
+    "row": "COP 分母功 / J",
+    "column": 1,
+    "displayed": "0.4121",
+    "source_value": 0.41208791208791207,
+    "rounding_bound": 5.000000000022205e-05
+  },
+  {
+    "chapter": 9,
+    "pattern": "k=13，q=([\\d.]+)",
+    "displayed": "5.222639",
+    "source_value": 5.2226388532310795,
+    "rounding_bound": 5.000000035527137e-07
+  },
+  {
+    "chapter": 9,
+    "pattern": "COP 平均区间全宽为 ([\\d.]+)",
+    "displayed": "0.202973",
+    "source_value": 0.2029732779520272,
+    "rounding_bound": 5.000000001110223e-07
+  },
+  {
+    "chapter": 9,
+    "pattern": "冷量为 ([\\d.]+) J",
+    "displayed": "1.678703",
+    "source_value": 1.678703111524628,
+    "rounding_bound": 5.000000008881784e-07
+  },
+  {
+    "chapter": 9,
+    "pattern": "最好单成员 RMSE 约 ([\\d.]+) J",
+    "displayed": "0.16264",
+    "source_value": 0.16264185607379483,
+    "rounding_bound": 5.000000000111023e-06
+  },
+  {
+    "chapter": 9,
+    "pattern": "诊断误差约 ([\\d.]+)",
+    "displayed": "0.000939",
+    "source_value": 0.0009387177358325135,
+    "rounding_bound": 5.000000000004337e-07
+  },
+  {
+    "chapter": 9,
+    "pattern": "全保留时约 ([\\d.]+)",
+    "displayed": "0.003821",
+    "source_value": 0.003821369665821533,
+    "rounding_bound": 5.000000000017347e-07
+  },
+  {
+    "chapter": 9,
+    "pattern": "冷量 RMSE 约 ([\\d.]+)/[\\d.]+ J",
+    "displayed": "0.4028",
+    "source_value": 0.402797647680943,
+    "rounding_bound": 5.000000000022205e-05
+  },
+  {
+    "chapter": 9,
+    "pattern": "冷量 RMSE 约 [\\d.]+/([\\d.]+) J",
+    "displayed": "3.4841",
+    "source_value": 3.4840633013643485,
+    "rounding_bound": 5.000000000177636e-05
+  },
+  {
+    "chapter": 9,
+    "pattern": "COP 约 ([\\d.]+)/[\\d.]+",
+    "displayed": "0.02951",
+    "source_value": 0.029513111664300033,
+    "rounding_bound": 5.000000000013878e-06
+  },
+  {
+    "chapter": 9,
+    "pattern": "COP 约 [\\d.]+/([\\d.]+)",
+    "displayed": "0.41108",
+    "source_value": 0.41108471439979144,
+    "rounding_bound": 5.000000000222045e-06
+  },
+  {
+    "chapter": 9,
+    "pattern": "SCP 约 ([\\d.]+)/[\\d.]+ W/kg",
+    "displayed": "3.09",
+    "source_value": 3.088544483004919,
+    "rounding_bound": 0.0050000000000017765
+  },
+  {
+    "chapter": 9,
+    "pattern": "SCP 约 [\\d.]+/([\\d.]+) W/kg",
+    "displayed": "186.39",
+    "source_value": 186.38927606681847,
+    "rounding_bound": 0.005000000000113687
+  },
+  {
+    "chapter": 10,
+    "row": "冷量 / J",
+    "column": 0,
+    "displayed": "0.20920",
+    "source_value": 0.2092005383292382,
+    "rounding_bound": 5.000000000111023e-06
+  },
+  {
+    "chapter": 10,
+    "row": "泵功 / J",
+    "column": 0,
+    "displayed": "0.00006609",
+    "source_value": 6.608700339881883e-05,
+    "rounding_bound": 5.00000000005421e-09
+  },
+  {
+    "chapter": 10,
+    "row": "COP",
+    "column": 0,
+    "displayed": "0.04583",
+    "source_value": 0.04583253161343972,
+    "rounding_bound": 5.000000000027756e-06
+  },
+  {
+    "chapter": 10,
+    "row": "SCP / W·kg⁻¹",
+    "column": 0,
+    "displayed": "10.3702",
+    "source_value": 10.370200686077048,
+    "rounding_bound": 5.000000000710543e-05
+  },
+  {
+    "chapter": 10,
+    "row": "温差 / K",
+    "column": 0,
+    "displayed": "0.034805",
+    "source_value": 0.03480547281520336,
+    "rounding_bound": 5.000000000277556e-07
+  },
+  {
+    "chapter": 10,
+    "row": "分母功 / J",
+    "column": 0,
+    "displayed": "0.17716",
+    "source_value": 0.17716059215042415,
+    "rounding_bound": 5.000000000111023e-06
+  },
+  {
+    "chapter": 10,
+    "row": "冷量 / J",
+    "column": 1,
+    "displayed": "0.32984",
+    "source_value": 0.3298426257781868,
+    "rounding_bound": 5.000000000222045e-06
+  },
+  {
+    "chapter": 10,
+    "row": "泵功 / J",
+    "column": 1,
+    "displayed": "0.00004373",
+    "source_value": 4.372839987066537e-05,
+    "rounding_bound": 5.000000000027105e-09
+  },
+  {
+    "chapter": 10,
+    "row": "COP",
+    "column": 1,
+    "displayed": "0.05201",
+    "source_value": 0.05200586039936103,
+    "rounding_bound": 5.000000000027756e-06
+  },
+  {
+    "chapter": 10,
+    "row": "SCP / W·kg⁻¹",
+    "column": 1,
+    "displayed": "9.7297",
+    "source_value": 9.729725924862471,
+    "rounding_bound": 5.000000000710543e-05
+  },
+  {
+    "chapter": 10,
+    "row": "温差 / K",
+    "column": 1,
+    "displayed": "0.029770",
+    "source_value": 0.029769692307873543,
+    "rounding_bound": 5.000000000138778e-07
+  },
+  {
+    "chapter": 10,
+    "row": "分母功 / J",
+    "column": 1,
+    "displayed": "0.18536",
+    "source_value": 0.18536227154203544,
+    "rounding_bound": 5.000000000111023e-06
+  },
+  {
+    "chapter": 10,
+    "row": "冷量 / J",
+    "column": 2,
+    "displayed": "0.27804",
+    "source_value": 0.27804144212832776,
+    "rounding_bound": 5.000000000222045e-06
+  },
+  {
+    "chapter": 10,
+    "row": "泵功 / J",
+    "column": 2,
+    "displayed": "0.00005851",
+    "source_value": 5.8511679061692134e-05,
+    "rounding_bound": 5.000000000027105e-09
+  },
+  {
+    "chapter": 10,
+    "row": "COP",
+    "column": 2,
+    "displayed": "0.03751",
+    "source_value": 0.037511993403123174,
+    "rounding_bound": 5.000000000027756e-06
+  },
+  {
+    "chapter": 10,
+    "row": "SCP / W·kg⁻¹",
+    "column": 2,
+    "displayed": "8.0451",
+    "source_value": 8.045123984882924,
+    "rounding_bound": 5.000000000710543e-05
+  },
+  {
+    "chapter": 10,
+    "row": "温差 / K",
+    "column": 2,
+    "displayed": "0.034800",
+    "source_value": 0.034799602145812535,
+    "rounding_bound": 5.000000000277556e-07
+  },
+  {
+    "chapter": 10,
+    "row": "分母功 / J",
+    "column": 2,
+    "displayed": "0.19224",
+    "source_value": 0.19224276320880476,
+    "rounding_bound": 5.000000000111023e-06
+  },
+  {
+    "chapter": 11,
+    "pattern": "本次 q=([\\d.]+)",
+    "displayed": "7.165978672658813",
+    "source_value": 7.165978672658813,
+    "rounding_bound": 4.052713678800501e-15
+  },
+  {
+    "chapter": 11,
+    "pattern": "分歧阈值为 ([\\d.]+)",
+    "displayed": "0.07930133396240825",
+    "source_value": 0.07930133396240825,
+    "rounding_bound": 6.051115123125782e-17
+  },
+  {
+    "chapter": 11,
+    "row": "057",
+    "column": 0,
+    "displayed": "2.742732",
+    "source_value": 2.74273206108817,
+    "rounding_bound": 5.000000017763568e-07
+  },
+  {
+    "chapter": 11,
+    "row": "057",
+    "column": 1,
+    "displayed": "734.436566",
+    "source_value": 734.4365657978639,
+    "rounding_bound": 5.000004547473509e-07
+  },
+  {
+    "chapter": 11,
+    "row": "057",
+    "column": 2,
+    "displayed": "321.214253",
+    "source_value": 321.2142529927522,
+    "rounding_bound": 5.000002273736754e-07
+  },
+  {
+    "chapter": 11,
+    "row": "057",
+    "column": 3,
+    "displayed": "0.175952",
+    "source_value": 0.17595167074586843,
+    "rounding_bound": 5.000000001110223e-07
+  },
+  {
+    "chapter": 11,
+    "row": "045",
+    "column": 0,
+    "displayed": "2.857572",
+    "source_value": 2.857572127982021,
+    "rounding_bound": 5.000000017763568e-07
+  },
+  {
+    "chapter": 11,
+    "row": "045",
+    "column": 1,
+    "displayed": "673.203959",
+    "source_value": 673.2039588337309,
+    "rounding_bound": 5.000004547473509e-07
+  },
+  {
+    "chapter": 11,
+    "row": "045",
+    "column": 2,
+    "displayed": "306.715002",
+    "source_value": 306.7150023348074,
+    "rounding_bound": 5.000002273736754e-07
+  },
+  {
+    "chapter": 11,
+    "row": "045",
+    "column": 3,
+    "displayed": "0.167078",
+    "source_value": 0.1670779454915436,
+    "rounding_bound": 5.000000001110223e-07
+  },
+  {
+    "chapter": 11,
+    "row": "040",
+    "column": 0,
+    "displayed": "3.088830",
+    "source_value": 3.0888299427254244,
+    "rounding_bound": 5.000000017763568e-07
+  },
+  {
+    "chapter": 11,
+    "row": "040",
+    "column": 1,
+    "displayed": "487.014150",
+    "source_value": 487.0141503084293,
+    "rounding_bound": 5.000002273736754e-07
+  },
+  {
+    "chapter": 11,
+    "row": "040",
+    "column": 2,
+    "displayed": "269.518316",
+    "source_value": 269.51831619483806,
+    "rounding_bound": 5.000002273736754e-07
+  },
+  {
+    "chapter": 11,
+    "row": "040",
+    "column": 3,
+    "displayed": "0.142250",
+    "source_value": 0.14225038199304837,
+    "rounding_bound": 5.000000001110223e-07
+  },
+  {
+    "chapter": 11,
+    "pattern": "归一化超体积改善为 \\*\\*([\\d.]+)\\*\\*",
+    "displayed": "0.0072487765188036235",
+    "source_value": 0.0072487765188036235,
+    "rounding_bound": 3.519446951953614e-18
+  },
+  {
+    "chapter": 11,
+    "pattern": "参考最大应力为 ([\\d.]+) MPa",
+    "displayed": "436.5489458956408",
+    "source_value": 436.5489458956408,
+    "rounding_bound": 2.7737367544323205e-13
+  },
+  {
+    "chapter": 11,
+    "pattern": "参考最大挠度比为\\s+([\\d.]+)",
+    "displayed": "0.2007111667418958",
+    "source_value": 0.2007111667418958,
+    "rounding_bound": 1.6102230246251565e-16
+  }
+]

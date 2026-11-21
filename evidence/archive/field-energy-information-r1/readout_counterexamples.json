@@ -1,0 +1,38 @@
+{
+  "type": "manufactured readout-contract examples, not physical solver trajectories",
+  "same_port_temperatures_K": {
+    "inlet": 300.0,
+    "outlet": 299.0
+  },
+  "mass_flow_kgps": [
+    0.001,
+    0.002
+  ],
+  "heat_J": [
+    4.18,
+    8.36
+  ],
+  "same_heat_different_work_COP": {
+    "heat_J": 4.18,
+    "work_J": [
+      1.0,
+      2.0
+    ],
+    "COP": [
+      4.18,
+      2.09
+    ]
+  },
+  "same_temperature_change_different_capacity_storage": {
+    "delta_T_K": 1.0,
+    "capacity_J_per_K": [
+      1.0,
+      2.0
+    ],
+    "delta_U_J": [
+      1.0,
+      2.0
+    ]
+  },
+  "inference": "temperature values alone do not specify boundary heat, work, or storage; physical constitutive/control models can supply additional information"
+}

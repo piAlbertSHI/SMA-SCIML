@@ -1,0 +1,72 @@
+{
+  "status": "completed",
+  "learning_only": true,
+  "manufactured_not_SMA": true,
+  "clean_acceptance_passed": true,
+  "boundary_only_identifiability": {
+    "sensitivity_norm": 0.0,
+    "identifiable": false
+  },
+  "runs": [
+    {
+      "tag": "s410_pinn",
+      "identified_diffusivity": 0.11988128492522786,
+      "relative_parameter_error": 0.000989292289767819,
+      "dense_field_rmse": 0.00012389464293980515,
+      "pde_residual_rms": 0.0053943991649749255
+    },
+    {
+      "tag": "s410_data_only",
+      "identified_diffusivity": null,
+      "relative_parameter_error": null,
+      "dense_field_rmse": 0.015206150202880159,
+      "pde_residual_rms": 0.4468025884616808
+    },
+    {
+      "tag": "s411_pinn",
+      "identified_diffusivity": 0.12005490052866975,
+      "relative_parameter_error": 0.0004575044055813114,
+      "dense_field_rmse": 0.0005884756808914565,
+      "pde_residual_rms": 0.009035240166341146
+    },
+    {
+      "tag": "s411_data_only",
+      "identified_diffusivity": null,
+      "relative_parameter_error": null,
+      "dense_field_rmse": 0.012843520717946508,
+      "pde_residual_rms": 1.0987615444025784
+    },
+    {
+      "tag": "s412_pinn",
+      "identified_diffusivity": 0.11977130491298747,
+      "relative_parameter_error": 0.0019057923917710265,
+      "dense_field_rmse": 0.0006488010159927213,
+      "pde_residual_rms": 0.013791419928371974
+    },
+    {
+      "tag": "s412_data_only",
+      "identified_diffusivity": null,
+      "relative_parameter_error": null,
+      "dense_field_rmse": 0.017000457468953428,
+      "pde_residual_rms": 2.248598159392084
+    }
+  ],
+  "elapsed_seconds": 59.21900000000096,
+  "finished_utc": "2026-09-10T03:22:22.326197+00:00",
+  "artifacts": {
+    "predictions.npz": "50f7e4744f818a2400ccbc6696725cd5c08c2e19602fe55cca4476f5e1e1251b",
+    "protocol.json": "87d34de86f0caa40239d413ff950a1a7b52fb17d533dce8d2566a2f928b89ff5",
+    "s410_data_only.json": "a6732270526e9c651751353915d30886dc56653701995913aa50ec87e21063cf",
+    "s410_data_only.pt": "8c6c11ac6ad77743d3cd9629ee31b610062068009c7e54c918965fff0ec2cfe2",
+    "s410_pinn.json": "75438b8739bc309f943da88fa9f20202d775b6432b6de97d0052717ade11fbdd",
+    "s410_pinn.pt": "a1d4ca89ac1915d160f69160ecfc283b2538fff2e047ab2b8c4ca460daa0762a",
+    "s411_data_only.json": "dcc4711d74c7aabc9b5f316057c186c853ea110542bb21fecef2c7efae92594f",
+    "s411_data_only.pt": "cfb2ee84a6f1c9f5e5572ef986463110a6f130c68a12dc19ea912a3e1c447d17",
+    "s411_pinn.json": "150cf0e59a85c352451d8d716c686beee5ac912322d3d972a54bb90fea5e4004",
+    "s411_pinn.pt": "caad78bcfab2365783298597d5c631262ec47a40193f55fe4e69ef05321970c4",
+    "s412_data_only.json": "fb8433585ae33785b93526e91d9c58ede35bdd25acbe8ac6f8f9041b2acdb488",
+    "s412_data_only.pt": "155cb6d2606cb566549bf1065dd2ca0795ad8577b5b52ffdd8149618c008c1b5",
+    "s412_pinn.json": "eb7860f76441e4e489314ba734934ef0427e9d2f80a8914851ad20146ff5ac9f",
+    "s412_pinn.pt": "7863645aa2c874bfd0b75bcf89f1f010f174678e452e3d8ebcafb79c15c4b1af"
+  }
+}

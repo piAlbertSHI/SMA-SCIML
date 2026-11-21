@@ -1,0 +1,194 @@
+[
+  {
+    "case_id": "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+    "first_mechanics_vs_declared_rest_max": 0.0,
+    "source_sha256": "58b9a27a693fb3f370f6a7a3ef5a76e032d3f9d0476c14804b7edd15ba2f106e",
+    "request_sha256": "29e688a1ef0a8a9512c8e62dc87610156d45e47e39bf87b8e960374509672cf5",
+    "field_reconstruction_max_K": 5.684341886080802e-14,
+    "restart_mechanics_max_changes": [
+      {
+        "sma_K": 0.0,
+        "xi": 0.21586203965711867,
+        "u_m": 3.1307508383635194e-05,
+        "w_m": 0.0017056541107925737
+      }
+    ]
+  },
+  {
+    "case_id": "confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c",
+    "first_mechanics_vs_declared_rest_max": 0.0,
+    "source_sha256": "2482782b7c3d1827073d5a094877bee18b9228f23f0572ee5226dcc57bdef1be",
+    "request_sha256": "ea80c764e7a10ca20e502a7f3c3a6ff7e27244f0c2655872d29bac0769ffcb74",
+    "field_reconstruction_max_K": 5.684341886080802e-14,
+    "restart_mechanics_max_changes": [
+      {
+        "sma_K": 0.0,
+        "xi": 0.19669219026865234,
+        "u_m": 2.9807330468931345e-05,
+        "w_m": 0.001737788163602687
+      }
+    ]
+  },
+  {
+    "case_id": "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+    "first_mechanics_vs_declared_rest_max": 0.0,
+    "source_sha256": "0dd1fd286549923175948a41ab6e8ee7c340371c6fe9383d00302aa06f75f708",
+    "request_sha256": "de2af675f9f1560d9d1fb8eb79661186ec363b956436ddddcd8108b9d375f789",
+    "field_reconstruction_max_K": 5.684341886080802e-14,
+    "restart_mechanics_max_changes": [
+      {
+        "sma_K": 0.0,
+        "xi": 0.26962411300953526,
+        "u_m": 5.077002271421336e-05,
+        "w_m": 0.0023629116106980387
+      }
+    ]
+  },
+  {
+    "case_id": "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+    "first_mechanics_vs_declared_rest_max": 0.0,
+    "source_sha256": "5eafb4a24a7b4113df1147939a9e711df195696b156fb487123a96041d1a8ade",
+    "request_sha256": "2ddc3b8f25a787668ac6075cdcf1f3ba0f6084d06c4e8d168ed86cd7f3179bf2",
+    "field_reconstruction_max_K": 5.684341886080802e-14,
+    "restart_mechanics_max_changes": [
+      {
+        "sma_K": 0.0,
+        "xi": 0.2520961694648266,
+        "u_m": 4.805714284996284e-05,
+        "w_m": 0.0023650561080251716
+      }
+    ]
+  },
+  {
+    "case_id": "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+    "first_mechanics_vs_declared_rest_max": 0.0,
+    "source_sha256": "6f3d7da3a93f5575621675e8be346fe2d75e1f9501f34c949d4427bb8638a7af",
+    "request_sha256": "338071e3b8a2cb414a05693940ccede5f5087b37f3d9ccaddfee2eeeabe0f29d",
+    "field_reconstruction_max_K": 0.0,
+    "restart_mechanics_max_changes": [
+      {
+        "sma_K": 0.0,
+        "xi": 0.24007641970388666,
+        "u_m": 4.698610234943687e-05,
+        "w_m": 0.002392410733272366
+      }
+    ]
+  },
+  {
+    "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+    "first_mechanics_vs_declared_rest_max": 0.0,
+    "source_sha256": "7cd93beb18d98c166532b8797cccd50debecbd403a54f1515f1c477ed9663913",
+    "request_sha256": "511615e4a19ccf8c948f65b1e795cb1ac681fc69a57a26e611388ad3ca3c8e09",
+    "field_reconstruction_max_K": 5.684341886080802e-14,
+    "restart_mechanics_max_changes": [
+      {
+        "sma_K": 0.0,
+        "xi": 0.332639761308769,
+        "u_m": 6.760212506280929e-05,
+        "w_m": 0.0027297555326980033
+      },
+      {
+        "sma_K": 0.0,
+        "xi": 0.3620309771395802,
+        "u_m": 7.64903126250985e-05,
+        "w_m": 0.002896301228009822
+      }
+    ]
+  },
+  {
+    "case_id": "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+    "first_mechanics_vs_declared_rest_max": 0.0,
+    "source_sha256": "02cb2b04d7f34655a66b453377cc1402a3678fa5c791f499ce3ba5c33bbe3da5",
+    "request_sha256": "44ce9368cd94d139d71875ffbe4006c5ad8d70fa7821e1f97b0943527b2847ec",
+    "field_reconstruction_max_K": 5.684341886080802e-14,
+    "restart_mechanics_max_changes": [
+      {
+        "sma_K": 0.0,
+        "xi": 0.006753031576840477,
+        "u_m": 3.5157238481076674e-07,
+        "w_m": 4.443689449865433e-12
+      }
+    ]
+  },
+  {
+    "case_id": "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+    "first_mechanics_vs_declared_rest_max": 0.0,
+    "source_sha256": "4c99c8c243b49f1ffae291723b9cf56e8aef5f0348ac75efd46fc49710cc9995",
+    "request_sha256": "b4f628607cbc79757b71e8593691e1b2b171310a1f932f369e4f8630c2c3955a",
+    "field_reconstruction_max_K": 0.0,
+    "restart_mechanics_max_changes": [
+      {
+        "sma_K": 0.0,
+        "xi": 0.0,
+        "u_m": 7.211238487596658e-07,
+        "w_m": 4.552358250720917e-08
+      }
+    ]
+  },
+  {
+    "case_id": "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+    "first_mechanics_vs_declared_rest_max": 0.0,
+    "source_sha256": "5a5f7a7a6447da1922693cd4e4ff100d54475f2ab6fa1bac7ef63eb788193aef",
+    "request_sha256": "b7d25ce7fce9ee04cdf70525567762dc2537b494b514134375b0986d8559ffbf",
+    "field_reconstruction_max_K": 5.684341886080802e-14,
+    "restart_mechanics_max_changes": [
+      {
+        "sma_K": 0.0,
+        "xi": 0.0,
+        "u_m": 7.501634255905914e-07,
+        "w_m": 1.9844380682367017e-08
+      }
+    ]
+  },
+  {
+    "case_id": "confirm_temporal12_10_confirm50_recas_047_r40_t200_p1584_v1019_t2p4_1c_2c",
+    "first_mechanics_vs_declared_rest_max": 0.0,
+    "source_sha256": "028cbc28634f42754c59330f30b1345fe1015a13c8476084d27b646feaf2f013",
+    "request_sha256": "e11c4c1b796aafc3df95d884ab0fbdd78d13759e349a23f10a5e54c7a3ad1fdd",
+    "field_reconstruction_max_K": 0.0,
+    "restart_mechanics_max_changes": [
+      {
+        "sma_K": 0.0,
+        "xi": 0.0,
+        "u_m": 8.771533961792113e-07,
+        "w_m": 2.7272350063645076e-08
+      }
+    ]
+  },
+  {
+    "case_id": "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c",
+    "first_mechanics_vs_declared_rest_max": 0.0,
+    "source_sha256": "b66c910174b76c2749ffb64a9704248668b9a169f6bbb78320c3852b5c6e50b7",
+    "request_sha256": "40799e2612f404bde7364aa759e28262b7b28589b2e1c4fafad52378bcfe6d51",
+    "field_reconstruction_max_K": 5.684341886080802e-14,
+    "restart_mechanics_max_changes": [
+      {
+        "sma_K": 0.0,
+        "xi": 0.0,
+        "u_m": 8.736599445988984e-07,
+        "w_m": 2.3500788733597926e-08
+      }
+    ]
+  },
+  {
+    "case_id": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c",
+    "first_mechanics_vs_declared_rest_max": 0.0,
+    "source_sha256": "8d44f6ee632c9d2e991c0ff046cead4f1154192de2d5ef4039b7fab52c3ed993",
+    "request_sha256": "9f4dda37f4d38d4e3db286940b31b06e968d38d50002935b8229b19338bee173",
+    "field_reconstruction_max_K": 5.684341886080802e-14,
+    "restart_mechanics_max_changes": [
+      {
+        "sma_K": 0.0,
+        "xi": 0.0,
+        "u_m": 7.817144954622035e-07,
+        "w_m": 3.4791928448261564e-12
+      },
+      {
+        "sma_K": 0.0,
+        "xi": 0.0,
+        "u_m": 7.725430659126657e-07,
+        "w_m": 3.259449100171181e-12
+      }
+    ]
+  }
+]

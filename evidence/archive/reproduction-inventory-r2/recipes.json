@@ -1,0 +1,1150 @@
+[
+  {
+    "chapter": "02_数值数据与可追溯契约.md",
+    "command": "python -u -m SciML.evaluation.inspect_learning_data_tutorial --dataset-root SciML/datasets/v12-learning-existing63-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/learning-closed-loop-20260910/data-tutorial-user-replay1",
+    "module": "SciML.evaluation.inspect_learning_data_tutorial",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/data-tutorial-user-replay1"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/data-tutorial-user-replay1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "03_从文件到训练张量.md",
+    "command": "python -m unittest SciML.tests.test_learning_data_tutorial -v",
+    "module": "unittest",
+    "options": {},
+    "paths": {}
+  },
+  {
+    "chapter": "04_WP2_标量基线与神经训练.md",
+    "command": "python -m unittest SciML.tests.test_learning_scalar_benchmarks -v",
+    "module": "unittest",
+    "options": {},
+    "paths": {}
+  },
+  {
+    "chapter": "04_WP2_标量基线与神经训练.md",
+    "command": "python -u -m SciML.models.v12.learning_scalar_benchmarks --dataset-root SciML/datasets/v12-learning-existing63-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/learning-closed-loop-20260910/wp2-strong-replay",
+    "module": "SciML.models.v12.learning_scalar_benchmarks",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/wp2-strong-replay"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/wp2-strong-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "04_WP2_标量基线与神经训练.md",
+    "command": "python -u -m SciML.evaluation.audit_learning_scalar --dataset-root SciML/datasets/v12-learning-existing63-20260910 --benchmark-root SciML/results/learning-closed-loop-20260910/wp2-strong-replay --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/learning-closed-loop-20260910/wp2-strong-audit-replay",
+    "module": "SciML.evaluation.audit_learning_scalar",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--benchmark-root": "SciML/results/learning-closed-loop-20260910/wp2-strong-replay",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/wp2-strong-audit-replay"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--benchmark-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/wp2-strong-replay",
+        "exists": false,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/wp2-strong-audit-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "05_WP3_状态接口与自主推演.md",
+    "command": "python -m unittest SciML.tests.test_learning_boundary_state -v",
+    "module": "unittest",
+    "options": {},
+    "paths": {}
+  },
+  {
+    "chapter": "05_WP3_状态接口与自主推演.md",
+    "command": "python -u -m SciML.evaluation.inspect_learning_state_contract --dataset-root SciML/datasets/v12-learning-existing63-20260910 --original-result SciML/results/learning-existing63-20260910-r1 --output-root SciML/results/learning-closed-loop-20260910/wp3-input-contract-replay",
+    "module": "SciML.evaluation.inspect_learning_state_contract",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--original-result": "SciML/results/learning-existing63-20260910-r1",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/wp3-input-contract-replay"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-result": {
+        "path": "SciML/results/learning-existing63-20260910-r1",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/wp3-input-contract-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "05_WP3_状态接口与自主推演.md",
+    "command": "python -u -m SciML.models.v12.learning_boundary_state --dataset-root SciML/datasets/v12-learning-existing63-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/learning-closed-loop-20260910/wp3-boundary-replay",
+    "module": "SciML.models.v12.learning_boundary_state",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/wp3-boundary-replay"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/wp3-boundary-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "05_WP3_状态接口与自主推演.md",
+    "command": "python -u -m SciML.evaluation.audit_learning_boundary --dataset-root SciML/datasets/v12-learning-existing63-20260910 --campaign-root SciML/results/learning-closed-loop-20260910 --output-root SciML/results/learning-closed-loop-20260910/wp3-boundary-audit-replay",
+    "module": "SciML.evaluation.audit_learning_boundary",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--campaign-root": "SciML/results/learning-closed-loop-20260910",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/wp3-boundary-audit-replay"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--campaign-root": {
+        "path": "SciML/results/learning-closed-loop-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/wp3-boundary-audit-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "06_WP4_坐标算子与空间记忆.md",
+    "command": "python -m unittest SciML.tests.test_learning_operator_cascade SciML.tests.test_learning_coordinate_operator -v",
+    "module": "unittest",
+    "options": {},
+    "paths": {}
+  },
+  {
+    "chapter": "06_WP4_坐标算子与空间记忆.md",
+    "command": "python -u -m SciML.models.v12.learning_coordinate_operator --dataset-root SciML/datasets/v12-learning-existing63-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/learning-closed-loop-20260910/wp4-deeponet-user-replay --kind deeponet --seed 20260910",
+    "module": "SciML.models.v12.learning_coordinate_operator",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/wp4-deeponet-user-replay",
+      "--kind": "deeponet",
+      "--seed": "20260910"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/wp4-deeponet-user-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "06_WP4_坐标算子与空间记忆.md",
+    "command": "python -u -m SciML.models.v12.learning_operator_repeats --dataset-root SciML/datasets/v12-learning-existing63-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/learning-closed-loop-20260910/wp4-repeat-user-s20260911 --seed 20260911",
+    "module": "SciML.models.v12.learning_operator_repeats",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/wp4-repeat-user-s20260911",
+      "--seed": "20260911"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/wp4-repeat-user-s20260911",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "06_WP4_坐标算子与空间记忆.md",
+    "command": "python -u -m SciML.models.v12.learning_operator_cascade --dataset-root SciML/datasets/v12-learning-existing63-20260910 --campaign-root SciML/results/learning-closed-loop-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/learning-closed-loop-20260910/wp4-memory-user-replay",
+    "module": "SciML.models.v12.learning_operator_cascade",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--campaign-root": "SciML/results/learning-closed-loop-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/wp4-memory-user-replay"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--campaign-root": {
+        "path": "SciML/results/learning-closed-loop-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/wp4-memory-user-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "06_WP4_坐标算子与空间记忆.md",
+    "command": "python -u -m SciML.evaluation.audit_learning_operator_repeats --dataset-root SciML/datasets/v12-learning-existing63-20260910 --campaign-root SciML/results/learning-closed-loop-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/learning-closed-loop-20260910/wp4-repeat-audit-user-replay",
+    "module": "SciML.evaluation.audit_learning_operator_repeats",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--campaign-root": "SciML/results/learning-closed-loop-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/wp4-repeat-audit-user-replay"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--campaign-root": {
+        "path": "SciML/results/learning-closed-loop-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/wp4-repeat-audit-user-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "06_WP4_坐标算子与空间记忆.md",
+    "command": "python -u -m SciML.evaluation.audit_learning_memory_cascade --dataset-root SciML/datasets/v12-learning-existing63-20260910 --campaign-root SciML/results/learning-closed-loop-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/learning-closed-loop-20260910/wp4-memory-audit-user-replay",
+    "module": "SciML.evaluation.audit_learning_memory_cascade",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--campaign-root": "SciML/results/learning-closed-loop-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/wp4-memory-audit-user-replay"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--campaign-root": {
+        "path": "SciML/results/learning-closed-loop-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/wp4-memory-audit-user-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "07A1_温度场到能量的读出契约.md",
+    "command": "python -m unittest SciML.tests.test_learning_field_energy -v",
+    "module": "unittest",
+    "options": {},
+    "paths": {}
+  },
+  {
+    "chapter": "07A1_温度场到能量的读出契约.md",
+    "command": "python -u -m SciML.evaluation.audit_learning_field_energy --dataset-root SciML/datasets/v12-learning-existing63-20260910 --repo . --output-root SciML/results/learning-closed-loop-20260910/field-energy-information-user-replay1",
+    "module": "SciML.evaluation.audit_learning_field_energy",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--repo": ".",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/field-energy-information-user-replay1"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--repo": {
+        "path": ".",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/field-energy-information-user-replay1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "07A2_物理损失的实现与消融.md",
+    "command": "python -m unittest SciML.tests.test_learning_staged_physics -v",
+    "module": "unittest",
+    "options": {},
+    "paths": {}
+  },
+  {
+    "chapter": "07A2_物理损失的实现与消融.md",
+    "command": "python -u -m SciML.models.v12.learning_staged_physics --output-root SciML/results/learning-closed-loop-20260910/staged-physics-user-replay1 --steps 600",
+    "module": "SciML.models.v12.learning_staged_physics",
+    "options": {
+      "--output-root": "SciML/results/learning-closed-loop-20260910/staged-physics-user-replay1",
+      "--steps": "600"
+    },
+    "paths": {
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/staged-physics-user-replay1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "07A2_物理损失的实现与消融.md",
+    "command": "python -u -m SciML.evaluation.audit_learning_staged_physics --experiment-root SciML/results/learning-closed-loop-20260910/staged-physics-user-replay1 --output-root SciML/results/learning-closed-loop-20260910/staged-physics-user-audit1",
+    "module": "SciML.evaluation.audit_learning_staged_physics",
+    "options": {
+      "--experiment-root": "SciML/results/learning-closed-loop-20260910/staged-physics-user-replay1",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/staged-physics-user-audit1"
+    },
+    "paths": {
+      "--experiment-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/staged-physics-user-replay1",
+        "exists": false,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/staged-physics-user-audit1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "07B_结构化外推与可信边界.md",
+    "command": "python -m unittest SciML.tests.test_learning_structured_ood -v",
+    "module": "unittest",
+    "options": {},
+    "paths": {}
+  },
+  {
+    "chapter": "07B_结构化外推与可信边界.md",
+    "command": "python -u -m SciML.models.v12.learning_structured_ood --dataset-root SciML/datasets/v12-learning-existing63-20260910 --output-root SciML/results/learning-closed-loop-20260910/ood-geometry-user-replay --scheme geometry",
+    "module": "SciML.models.v12.learning_structured_ood",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/ood-geometry-user-replay",
+      "--scheme": "geometry"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/ood-geometry-user-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "07B_结构化外推与可信边界.md",
+    "command": "python -u -m SciML.models.v12.learning_structured_ood --dataset-root SciML/datasets/v12-learning-existing63-20260910 --output-root SciML/results/learning-closed-loop-20260910/ood-material-user-replay --scheme material",
+    "module": "SciML.models.v12.learning_structured_ood",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/ood-material-user-replay",
+      "--scheme": "material"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/ood-material-user-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "07B_结构化外推与可信边界.md",
+    "command": "python -u -m SciML.models.v12.learning_structured_ood --dataset-root SciML/datasets/v12-learning-existing63-20260910 --output-root SciML/results/learning-closed-loop-20260910/ood-protocol-user-replay --scheme protocol",
+    "module": "SciML.models.v12.learning_structured_ood",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/ood-protocol-user-replay",
+      "--scheme": "protocol"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/ood-protocol-user-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "07B_结构化外推与可信边界.md",
+    "command": "python -u -m SciML.models.v12.learning_structured_ood --dataset-root SciML/datasets/v12-learning-existing63-20260910 --output-root SciML/results/learning-closed-loop-20260910/ood-combined-user-replay --scheme combined",
+    "module": "SciML.models.v12.learning_structured_ood",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/ood-combined-user-replay",
+      "--scheme": "combined"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/ood-combined-user-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "07B_结构化外推与可信边界.md",
+    "command": "python -u -m SciML.evaluation.audit_learning_structured_ood --dataset-root SciML/datasets/v12-learning-existing63-20260910 --campaign-root SciML/results/learning-closed-loop-20260910 --output-root SciML/results/learning-closed-loop-20260910/ood-audit-user-replay",
+    "module": "SciML.evaluation.audit_learning_structured_ood",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--campaign-root": "SciML/results/learning-closed-loop-20260910",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/ood-audit-user-replay"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--campaign-root": {
+        "path": "SciML/results/learning-closed-loop-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/ood-audit-user-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "07B_结构化外推与可信边界.md",
+    "command": "python -u -m SciML.evaluation.diagnose_learning_material_ood --dataset-root SciML/datasets/v12-learning-existing63-20260910 --campaign-root SciML/results/learning-closed-loop-20260910 --output-root SciML/results/learning-closed-loop-20260910/material-ood-diagnostic-user-replay",
+    "module": "SciML.evaluation.diagnose_learning_material_ood",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--campaign-root": "SciML/results/learning-closed-loop-20260910",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/material-ood-diagnostic-user-replay"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--campaign-root": {
+        "path": "SciML/results/learning-closed-loop-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/material-ood-diagnostic-user-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "07C_历史多循环与重启接口.md",
+    "command": "python -u -m SciML.models.v12.learning_historical_rollout --dataset-root SciML/datasets/v1.2-confirm-temporal12 --output-root SciML/results/learning-historical-user-replay1/historical-rollout-r1",
+    "module": "SciML.models.v12.learning_historical_rollout",
+    "options": {
+      "--dataset-root": "SciML/datasets/v1.2-confirm-temporal12",
+      "--output-root": "SciML/results/learning-historical-user-replay1/historical-rollout-r1"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v1.2-confirm-temporal12",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-historical-user-replay1/historical-rollout-r1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "07C_历史多循环与重启接口.md",
+    "command": "python -u -m SciML.evaluation.audit_learning_historical_rollout --dataset-root SciML/datasets/v1.2-confirm-temporal12 --campaign-root SciML/results/learning-historical-user-replay1 --output-root SciML/results/learning-historical-user-replay1/historical-rollout-audit-r1",
+    "module": "SciML.evaluation.audit_learning_historical_rollout",
+    "options": {
+      "--dataset-root": "SciML/datasets/v1.2-confirm-temporal12",
+      "--campaign-root": "SciML/results/learning-historical-user-replay1",
+      "--output-root": "SciML/results/learning-historical-user-replay1/historical-rollout-audit-r1"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v1.2-confirm-temporal12",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--campaign-root": {
+        "path": "SciML/results/learning-historical-user-replay1",
+        "exists": false,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-historical-user-replay1/historical-rollout-audit-r1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "07C_历史多循环与重启接口.md",
+    "command": "python -u -m SciML.models.v12.learning_historical_fields --dataset-root SciML/datasets/v1.2-confirm-temporal12 --campaign-root SciML/results/learning-historical-user-replay1 --output-root SciML/results/learning-historical-user-replay1/historical-fields-r1",
+    "module": "SciML.models.v12.learning_historical_fields",
+    "options": {
+      "--dataset-root": "SciML/datasets/v1.2-confirm-temporal12",
+      "--campaign-root": "SciML/results/learning-historical-user-replay1",
+      "--output-root": "SciML/results/learning-historical-user-replay1/historical-fields-r1"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v1.2-confirm-temporal12",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--campaign-root": {
+        "path": "SciML/results/learning-historical-user-replay1",
+        "exists": false,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-historical-user-replay1/historical-fields-r1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "07C_历史多循环与重启接口.md",
+    "command": "python -u -m SciML.evaluation.audit_learning_historical_fields --dataset-root SciML/datasets/v1.2-confirm-temporal12 --campaign-root SciML/results/learning-historical-user-replay1 --output-root SciML/results/learning-historical-user-replay1/historical-fields-audit-r1",
+    "module": "SciML.evaluation.audit_learning_historical_fields",
+    "options": {
+      "--dataset-root": "SciML/datasets/v1.2-confirm-temporal12",
+      "--campaign-root": "SciML/results/learning-historical-user-replay1",
+      "--output-root": "SciML/results/learning-historical-user-replay1/historical-fields-audit-r1"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v1.2-confirm-temporal12",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--campaign-root": {
+        "path": "SciML/results/learning-historical-user-replay1",
+        "exists": false,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-historical-user-replay1/historical-fields-audit-r1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "07C_历史多循环与重启接口.md",
+    "command": "python -m unittest SciML.tests.test_learning_historical_rollout -v",
+    "module": "unittest",
+    "options": {},
+    "paths": {}
+  },
+  {
+    "chapter": "08_WP5_PINN逆问题.md",
+    "command": "python -m unittest SciML.tests.test_learning_pinn_inverse SciML.tests.test_learning_local_thermal -q",
+    "module": "unittest",
+    "options": {},
+    "paths": {}
+  },
+  {
+    "chapter": "08_WP5_PINN逆问题.md",
+    "command": "python -u -m SciML.models.v12.learning_pinn_inverse --output-root SciML/results/my-pinn-run --epochs 1800",
+    "module": "SciML.models.v12.learning_pinn_inverse",
+    "options": {
+      "--output-root": "SciML/results/my-pinn-run",
+      "--epochs": "1800"
+    },
+    "paths": {
+      "--output-root": {
+        "path": "SciML/results/my-pinn-run",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "08_WP5_PINN逆问题.md",
+    "command": "python -u -m SciML.models.v12.learning_local_thermal_inverse --dataset-root SciML/datasets/v12-learning-existing63-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/my-local-inverse",
+    "module": "SciML.models.v12.learning_local_thermal_inverse",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/my-local-inverse"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/my-local-inverse",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "09_WP6_不确定性与校准.md",
+    "command": "python -m unittest SciML.tests.test_learning_ensemble -q",
+    "module": "unittest",
+    "options": {},
+    "paths": {}
+  },
+  {
+    "chapter": "09_WP6_不确定性与校准.md",
+    "command": "python -u -m SciML.models.v12.learning_ensemble --dataset-root SciML/datasets/v12-learning-existing63-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/my-uq-run",
+    "module": "SciML.models.v12.learning_ensemble",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/my-uq-run"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/my-uq-run",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "10_WP6_主动学习.md",
+    "command": "python -m unittest SciML.tests.test_learning_pool_loop -q",
+    "module": "unittest",
+    "options": {},
+    "paths": {}
+  },
+  {
+    "chapter": "10_WP6_主动学习.md",
+    "command": "python -u -m SciML.active_learning.learning_pool_loop --dataset-root SciML/datasets/v12-learning-existing63-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/my-active-learning",
+    "module": "SciML.active_learning.learning_pool_loop",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/my-active-learning"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/my-active-learning",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "11_WP6_设计候选与归档回查.md",
+    "command": "python -m unittest SciML.tests.test_learning_design_loop -v",
+    "module": "unittest",
+    "options": {},
+    "paths": {}
+  },
+  {
+    "chapter": "11_WP6_设计候选与归档回查.md",
+    "command": "python -u -m SciML.active_learning.learning_design_loop --dataset-root SciML/datasets/v12-learning-existing63-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --active-root SciML/results/learning-closed-loop-20260910/wp6-active-r1 --output-root SciML/results/learning-closed-loop-20260910/wp6-design-replay",
+    "module": "SciML.active_learning.learning_design_loop",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--active-root": "SciML/results/learning-closed-loop-20260910/wp6-active-r1",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/wp6-design-replay"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--active-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/wp6-active-r1",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/wp6-design-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "11_WP6_设计候选与归档回查.md",
+    "command": "python -u -m SciML.evaluation.audit_learning_design --dataset-root SciML/datasets/v12-learning-existing63-20260910 --design-root SciML/results/learning-closed-loop-20260910/wp6-design-replay --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/learning-closed-loop-20260910/wp6-design-audit-replay",
+    "module": "SciML.evaluation.audit_learning_design",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--design-root": "SciML/results/learning-closed-loop-20260910/wp6-design-replay",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/wp6-design-audit-replay"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--design-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/wp6-design-replay",
+        "exists": false,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/wp6-design-audit-replay",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "12_统一复现手册与代码索引.md",
+    "command": "python -u -m SciML.evaluation.learning_reproduction_inventory --dataset-root SciML/datasets/v12-learning-existing63-20260910 --campaign-root SciML/results/learning-closed-loop-20260910 --report-root SciML/docs/learning_closed_loop_report --output-root SciML/results/learning-closed-loop-20260910/reproduction-user-preflight1 --check-help",
+    "module": "SciML.evaluation.learning_reproduction_inventory",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--campaign-root": "SciML/results/learning-closed-loop-20260910",
+      "--report-root": "SciML/docs/learning_closed_loop_report",
+      "--output-root": "SciML/results/learning-closed-loop-20260910/reproduction-user-preflight1",
+      "--check-help": null
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--campaign-root": {
+        "path": "SciML/results/learning-closed-loop-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--report-root": {
+        "path": "SciML/docs/learning_closed_loop_report",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/reproduction-user-preflight1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "12_统一复现手册与代码索引.md",
+    "command": "python -m unittest discover -s SciML/tests -p 'test_learning_*.py' -v",
+    "module": "unittest",
+    "options": {},
+    "paths": {}
+  },
+  {
+    "chapter": "12_统一复现手册与代码索引.md",
+    "command": "python -u -m SciML.models.v12.learning_scalar_benchmarks --dataset-root SciML/datasets/v12-learning-existing63-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/learning-user-run1/wp2-strong-r1",
+    "module": "SciML.models.v12.learning_scalar_benchmarks",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/learning-user-run1/wp2-strong-r1"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-user-run1/wp2-strong-r1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "12_统一复现手册与代码索引.md",
+    "command": "python -u -m SciML.evaluation.audit_learning_scalar --dataset-root SciML/datasets/v12-learning-existing63-20260910 --benchmark-root SciML/results/learning-user-run1/wp2-strong-r1 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/learning-user-run1/wp2-audit-r1",
+    "module": "SciML.evaluation.audit_learning_scalar",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--benchmark-root": "SciML/results/learning-user-run1/wp2-strong-r1",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/learning-user-run1/wp2-audit-r1"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--benchmark-root": {
+        "path": "SciML/results/learning-user-run1/wp2-strong-r1",
+        "exists": false,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-user-run1/wp2-audit-r1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "12_统一复现手册与代码索引.md",
+    "command": "python -u -m SciML.models.v12.learning_ensemble --dataset-root SciML/datasets/v12-learning-existing63-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/learning-user-loop1/wp6-uq-r1",
+    "module": "SciML.models.v12.learning_ensemble",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/learning-user-loop1/wp6-uq-r1"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-user-loop1/wp6-uq-r1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "12_统一复现手册与代码索引.md",
+    "command": "python -u -m SciML.active_learning.learning_pool_loop --dataset-root SciML/datasets/v12-learning-existing63-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --output-root SciML/results/learning-user-loop1/wp6-active-r1",
+    "module": "SciML.active_learning.learning_pool_loop",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--output-root": "SciML/results/learning-user-loop1/wp6-active-r1"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-user-loop1/wp6-active-r1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "12_统一复现手册与代码索引.md",
+    "command": "python -u -m SciML.evaluation.audit_learning_wp6 --dataset-root SciML/datasets/v12-learning-existing63-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --campaign-root SciML/results/learning-user-loop1 --output-root SciML/results/learning-user-loop1/wp6-audit-r1",
+    "module": "SciML.evaluation.audit_learning_wp6",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--campaign-root": "SciML/results/learning-user-loop1",
+      "--output-root": "SciML/results/learning-user-loop1/wp6-audit-r1"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--campaign-root": {
+        "path": "SciML/results/learning-user-loop1",
+        "exists": false,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-user-loop1/wp6-audit-r1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "12_统一复现手册与代码索引.md",
+    "command": "python -u -m SciML.active_learning.learning_design_loop --dataset-root SciML/datasets/v12-learning-existing63-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --active-root SciML/results/learning-user-loop1/wp6-active-r1 --output-root SciML/results/learning-user-loop1/wp6-design-r1",
+    "module": "SciML.active_learning.learning_design_loop",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--active-root": "SciML/results/learning-user-loop1/wp6-active-r1",
+      "--output-root": "SciML/results/learning-user-loop1/wp6-design-r1"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--active-root": {
+        "path": "SciML/results/learning-user-loop1/wp6-active-r1",
+        "exists": false,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-user-loop1/wp6-design-r1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "12_统一复现手册与代码索引.md",
+    "command": "python -u -m SciML.evaluation.audit_learning_design --dataset-root SciML/datasets/v12-learning-existing63-20260910 --original-protocol SciML/results/learning-existing63-20260910-r1/protocol.json --design-root SciML/results/learning-user-loop1/wp6-design-r1 --output-root SciML/results/learning-user-loop1/wp6-design-audit-r1",
+    "module": "SciML.evaluation.audit_learning_design",
+    "options": {
+      "--dataset-root": "SciML/datasets/v12-learning-existing63-20260910",
+      "--original-protocol": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+      "--design-root": "SciML/results/learning-user-loop1/wp6-design-r1",
+      "--output-root": "SciML/results/learning-user-loop1/wp6-design-audit-r1"
+    },
+    "paths": {
+      "--dataset-root": {
+        "path": "SciML/datasets/v12-learning-existing63-20260910",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--original-protocol": {
+        "path": "SciML/results/learning-existing63-20260910-r1/protocol.json",
+        "exists": true,
+        "role": "input dependency"
+      },
+      "--design-root": {
+        "path": "SciML/results/learning-user-loop1/wp6-design-r1",
+        "exists": false,
+        "role": "input dependency"
+      },
+      "--output-root": {
+        "path": "SciML/results/learning-user-loop1/wp6-design-audit-r1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  },
+  {
+    "chapter": "14_分级练习与独立扩展.md",
+    "command": "python -u -m SciML.evaluation.learning_exercises --output-root SciML/results/learning-closed-loop-20260910/learning-exercises-user1",
+    "module": "SciML.evaluation.learning_exercises",
+    "options": {
+      "--output-root": "SciML/results/learning-closed-loop-20260910/learning-exercises-user1"
+    },
+    "paths": {
+      "--output-root": {
+        "path": "SciML/results/learning-closed-loop-20260910/learning-exercises-user1",
+        "exists": false,
+        "role": "new output, existence means rerun refused"
+      }
+    }
+  }
+]

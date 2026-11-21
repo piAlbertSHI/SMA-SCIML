@@ -1,0 +1,50 @@
+{
+  "status": "passed_chapters04_05_content_review",
+  "whole_report_complete": false,
+  "numeric_cells_checked": 86,
+  "scalar_prediction_families": 7,
+  "scalar_seeds": 3,
+  "cold_ensemble_members_checked": 15,
+  "state_test_transitions_per_seed": 52,
+  "fresh_training_calls": 0,
+  "fresh_solver_calls": 0,
+  "review_scope": "author full-text/code walkthrough; displayed tables recomputed/bound to saved arrays, training curves/scales/configuration; not independent human mastery certification",
+  "readability_fixes": [
+    "calibration exceeds training only from recorded update50, not initialpoint",
+    "single-cycle statement scoped to this chapter, historicalmulticycle pointed to07C",
+    "inactive channels carried before projection; out-of-range intervention may be projected",
+    "structured materialOOD distinguished from ensemble detection chapter"
+  ],
+  "walkthrough": [
+    "physicalquestion before X/Y",
+    "units/shape/scaler before loss",
+    "each network layer and parametercount",
+    "optimizer pseudocode linked toactualfit",
+    "five-versus-six-output confound explicit",
+    "curves not stopping criterion",
+    "newboundary semantics separate oldcanonicalforecast",
+    "Ridge not physicalsolver",
+    "permission versus Markovclosure distinct",
+    "failuremechanism units andsource preserved",
+    "teacherforcing versus ownprediction explicit",
+    "negativecomparisons retained",
+    "guided-to-independent exercises provide answers andcriteria"
+  ],
+  "chapter_sha256": {
+    "04_WP2_标量基线与神经训练.md": "81a72b6833bfc090abb4451948e7c8797d9cab5b71a3a783247fa21034876710",
+    "05_WP3_状态接口与自主推演.md": "b488f0d20e76a7a8b4283eae2051a272f663a6820ffa85ddb3855d17b1248163"
+  },
+  "implementation_sha256": "37723c35f753e485336b5acb6aaa1669837f71193114ff5f6cb1f59b36af795c",
+  "source_sha256": {
+    "SciML\\models\\v12\\learning_scalar_benchmarks.py": "9532f3eaa87302088a761f1f9d1f53971747cb57c343516317d00c7d1e40f480",
+    "SciML\\models\\v12\\learning_boundary_state.py": "213f8bc6aff1b2735a4e04025bbdf63c37cbca7f13d3e550a65fe172e2514401"
+  },
+  "upstream_summary_sha256": {
+    "wp2-strong-r1": "98fa9f442d402b4399614e4bceebbc1f2116d0b9585f97f9f855d5771357f512",
+    "wp3-boundary-r2": "b9aa7ff06735443f6e491e661cdb0a167d57a9e07d9872238e18726cd2875c8b"
+  },
+  "artifacts": {
+    "independent_metrics.json": "79d726eef9299601ee372767ea5ea93a19c30827578a7abc3f1bee4ea132a88e",
+    "numeric_cells.json": "2211e85dc2dea144228918a65aee9fd795422e5ba37ecc13fe5f922c7c969c5d"
+  }
+}

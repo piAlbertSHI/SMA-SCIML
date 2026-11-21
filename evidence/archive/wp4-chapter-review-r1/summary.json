@@ -1,0 +1,35 @@
+{
+  "status": "passed_chapter06_tables_links_and_reference_snippet",
+  "whole_report_complete": false,
+  "checked_metric_cells": 36,
+  "local_link_count": 5,
+  "numpy_reference_snippets_executed": 1,
+  "command_count": 6,
+  "command_check_scope": "module/option static inventory; equivalent experiment commands already run; these new output-directory recipes not rerun here",
+  "readability_review": [
+    "Separate observed-start and request-only tasks before mathematics",
+    "Define branch/trunk/IC/FFT/POD, units, slices and shapes before recipes",
+    "Separate three-seed variability from predictive confidence intervals",
+    "Explain actual failure, preserved evidence and roundoff-only comparison",
+    "Fix ambiguous solid-subscript versus stage symbol and Fourier typo",
+    "Provide guided answers and explicit independent-exercise acceptance criteria"
+  ],
+  "limitations_retained": [
+    "Temperature-only outputs",
+    "finite-dimensional control parameters",
+    "No new solver mesh truth",
+    "Not full energy closure",
+    "Not multicycle validation",
+    "Test previously inspected",
+    "Single-seed spatial-memory repair",
+    "Final whole-report dual review still pending"
+  ],
+  "chapter_sha256": "2052c45f7a3d70874d814e181679864d4f92f1380a206e7c75726cb0c93a294e",
+  "implementation_sha256": "b70789563ec2eae5f7c1e2102c2c7802b00b33474e7829ff8186a2ebd0bbca79",
+  "source_summary_hashes": {
+    "wp4-repeat-audit-r1": "b99e1017a3abaf622df8e73859233db3c891217a319b7514667c3b4a311c40c9",
+    "wp4-memory-cascade-r2": "a1d8416ebcba097b5a8823887d69f68e96127a994e3f0e9e047f937d0f983941",
+    "wp4-operator-audit-r1": "5fd2b712e467879e0ca3b11d0316ae86ecf75db455c01b70cf6c662fbabae2cd",
+    "wp4-deeponet-r1": "7c0fe2f70045c22ce98b998a0f45bbc2acdfa24030adcd0104309ced83969cb7"
+  }
+}

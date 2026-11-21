@@ -1,0 +1,16 @@
+{
+  "status": "passed_independent_design_audit",
+  "selection_replayed": true,
+  "archive_hashes_and_mechanical_values_checked": 25,
+  "chosen_ids": [
+    "paper220_reca_057_r32_t160_p1070_v1183_t2p4_1c",
+    "paper220_reca_045_r32_t160_p0974_v1103_t2p4_1c",
+    "paper220_reca_040_r32_t160_p0737_v0872_t2p4_1c"
+  ],
+  "actual_normalized_hypervolume_gain": 0.0072487765188036235,
+  "fresh_solver_calls": 0,
+  "engineering_safety_certified": false,
+  "source_design_summary_sha256": "62ad0698c1ef575a933b8411d07ddd09bd8768c0e9eea568ab72a175c1b7ff59",
+  "implementation_sha256": "5de9b97caf3da55cb325e69c8132fecd2f348cab8978e81b9fee35511cee3dfc",
+  "figure_sha256": "fabca1649f72f37bd16e1ba41bae65d9cf3386df20595a8bc14922cf559a84ab"
+}

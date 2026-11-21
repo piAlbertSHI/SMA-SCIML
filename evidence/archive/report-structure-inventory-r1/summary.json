@@ -1,0 +1,39 @@
+{
+  "status": "report_structure_inventory_requires_semantic_review",
+  "whole_report_complete": false,
+  "chapter_files": 19,
+  "characters": 155935,
+  "local_links": 78,
+  "remote_links_not_fetched": 6,
+  "fenced_code_blocks": 43,
+  "python_blocks_parsed": 13,
+  "broken_local_links": [
+    {
+      "chapter": "06_WP4_坐标算子与空间记忆.md",
+      "label": "\n\\widehat T_f(q,\\tau)=I[T_{f,0}",
+      "target": "q",
+      "local": true,
+      "exists": false,
+      "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\q",
+      "sha256": null,
+      "line": 134
+    },
+    {
+      "chapter": "06_WP4_坐标算子与空间记忆.md",
+      "label": "T_{f,0}",
+      "target": "q",
+      "local": true,
+      "exists": false,
+      "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\q",
+      "sha256": null,
+      "line": 141
+    }
+  ],
+  "python_syntax_errors": [],
+  "odd_fence_chapters": [],
+  "semantic_scope": "links and syntax cannot prove formulas, scientific assertions, numerical tables, readability or learner mastery",
+  "implementation_sha256": "5e8c9bc7797b9303e674edc7a8d16a32f3f1ca61be067a01244a3697bd0d47ce",
+  "artifacts": {
+    "chapter_inventory.json": "814262a3cb1fc430e5560561eabf5399e71395bac33cbfe8e640b4270b28e41c"
+  }
+}

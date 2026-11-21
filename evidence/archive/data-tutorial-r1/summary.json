@@ -1,0 +1,233 @@
+{
+  "status": "completed_file_to_tensor_tutorial_audit",
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "case_count": 63,
+  "material_counts": {
+    "recA": 56,
+    "recAs": 7
+  },
+  "split_counts": {
+    "train": 37,
+    "calibration": 13,
+    "test": 13
+  },
+  "split_material_counts": {
+    "train": {
+      "recA": 31,
+      "recAs": 6
+    },
+    "calibration": {
+      "recA": 12,
+      "recAs": 1
+    },
+    "test": {
+      "recA": 13
+    }
+  },
+  "state_rows_by_split": {
+    "train": 148,
+    "calibration": 52,
+    "test": 52
+  },
+  "field_rows_by_split": {
+    "train": 74,
+    "calibration": 26,
+    "test": 26
+  },
+  "shapes": {
+    "scalar_input": [
+      63,
+      7
+    ],
+    "scalar_target": [
+      63,
+      5
+    ],
+    "boundary_features": [
+      252,
+      426
+    ],
+    "operator_branch": [
+      126,
+      221
+    ],
+    "operator_fields": [
+      126,
+      2,
+      50,
+      101
+    ]
+  },
+  "feature_order": [
+    "radius_m",
+    "thickness_m",
+    "pressure_Pa",
+    "flush_volume_target_ratio",
+    "exchange_duration_s",
+    "material_recA",
+    "material_recAs"
+  ],
+  "target_order": [
+    "Qcool_J",
+    "Wpump_J",
+    "COP",
+    "SCP_W_per_kg",
+    "deltaT_hot_cold_max_K"
+  ],
+  "feature_ranges": {
+    "radius_m": [
+      0.032,
+      0.042
+    ],
+    "thickness_m": [
+      0.00016,
+      0.00021
+    ],
+    "pressure_Pa": [
+      724000.0,
+      1642000.0
+    ],
+    "flush_volume_target_ratio": [
+      0.781,
+      1.25
+    ],
+    "exchange_duration_s": [
+      2.0,
+      2.8
+    ]
+  },
+  "radius_thickness_ratio_range": [
+    199.99999999999997,
+    200.00000000000003
+  ],
+  "strict_flags_true_counts": {
+    "run_ok": 63,
+    "physics_ok": 63,
+    "paper_grade_valid": 63,
+    "observation_contract_ok": 63,
+    "pump_work_available": 63,
+    "htf_internal_full_field_available": 63,
+    "request_config_matches_current": 63,
+    "request_self_contained": 63,
+    "export_provenance_available": 63,
+    "export_artifact_hash_matches": 63
+  },
+  "raw_to_hdf5_field_comparisons": 756,
+  "allowed_inactive_side_missing": {
+    "2:stage4_path_pipe_T_state_in_K": 63,
+    "2:stage4_path_pipe_T_state_out_K": 63,
+    "4:stage2_path_pipe_T_state_in_K": 63,
+    "4:stage2_path_pipe_T_state_out_K": 63
+  },
+  "scaling_demonstration": {
+    "train_only_mean_unchanged_exact": true,
+    "train_only_scale_unchanged_exact": true,
+    "wrong_global_mean_max_change": 412698.4637494638,
+    "experiment": "copied holdout features+1e6, illustrative preprocessing leak; source arrays untouched"
+  },
+  "first_case": {
+    "case_id": "paper220_reca_001_r42_t210_p0823_v1000_t2p4_1c",
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\statepaper220_20260908\\c001\\shard_001\\paper220_reca_001_r42_t210_p0823_v1000_t2p4_1c\\sciml_case_v11.mat",
+    "hdf5_group": "/cases/fd6ef7b12f3783a63e4d",
+    "X": [
+      0.042,
+      0.00021,
+      823000.0,
+      1.0,
+      2.4,
+      1.0,
+      0.0
+    ],
+    "Y": [
+      15.621731394282545,
+      0.0030655896275561547,
+      2.1601610171382024,
+      413.02663295273186,
+      1.6284712564792017
+    ],
+    "normalized_X": [
+      1.2588846657814772,
+      1.2588846657814774,
+      -0.6276748377040292,
+      -0.24215741011772612,
+      0.0,
+      0.4399413450640599,
+      -0.4399413450640599
+    ],
+    "normalized_Y": [
+      0.3077129923309707,
+      0.9761652632935885,
+      -0.7026133140247536,
+      -0.8392409547350708,
+      -0.1700475331735284
+    ]
+  },
+  "normalization": {
+    "X_mean": [
+      0.03691891891891894,
+      0.0001845945945945947,
+      947540.5405405406,
+      1.0366756756756754,
+      2.4,
+      0.8378378378378378,
+      0.16216216216216217
+    ],
+    "X_scale": [
+      0.0040361767993471265,
+      2.0180883996735638e-05,
+      198415.69720414034,
+      0.15145386489657842,
+      0.20795009796401448,
+      0.36859950532394203,
+      0.36859950532394203
+    ],
+    "Y_mean": [
+      14.364248576791582,
+      0.0023458866964791375,
+      2.4621971417786086,
+      574.5466429177814,
+      1.6929859039851365
+    ],
+    "Y_scale": [
+      4.08654443858658,
+      0.0007372757033463108,
+      0.4298753220462959,
+      192.45963754954937,
+      0.379391845926395
+    ]
+  },
+  "old_paper_matrix": {
+    "expected_case_count": 220,
+    "expected_matrix_complete": false,
+    "confirmation_quality_gate": {
+      "applicable": false,
+      "blocking_reasons": [
+        "dataset target is not a v1.2 confirmation matrix",
+        "registered confirmation cases are missing",
+        "observed case count differs from the registered matrix"
+      ],
+      "contract": "exact_registered_matrix_and_every_case_strict_validity",
+      "passed": false
+    },
+    "interpretation": "unchanged old matrix status, not a learning-size requirement"
+  },
+  "dataset_source_content_sha256": "ff28bf6eee81ed41d3a12d41c20ea4370eaf6fcdfa770e3127ae1af96db18f5c",
+  "protocol_sha256": "32cc4e2e3357c4d77bf81c30fa92619d16f85771514a3c93105e6daab1c3ff21",
+  "environment": {
+    "python": "3.12.4",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pandas": "3.0.3",
+    "h5py": "3.16.0",
+    "scikit-learn": "1.9.0",
+    "torch": "2.13.0+cpu",
+    "pyarrow": "25.0.1"
+  },
+  "implementation_sha256": "3e2811d04035119f76b137f410fc2c1c9545327789fe5b1db86e53abf3eb5d14",
+  "artifacts": {
+    "example_hdf5_tree.json": "f56bbf0f467165c4250b286876f5a5ba2d2067176d47b9f39a61ce2d323751e1",
+    "raw_to_hdf5_checks.json": "08eccf5eaff8351394e7b25836d4aa18545496a9e1ea63fb10e1de53563e25d8",
+    "tutorial_arrays.npz": "4656c675f340b3f145aeaed33c031570253e08780db9448c3249eff72dbf8cb0"
+  }
+}

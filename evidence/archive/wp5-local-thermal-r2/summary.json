@@ -1,0 +1,68 @@
+{
+  "status": "completed_reduced_model_diagnostic",
+  "learning_only": true,
+  "physical_parameter_validation": false,
+  "case_count": 3,
+  "stage_count": 6,
+  "elapsed_seconds": 36.53099999999904,
+  "results": [
+    {
+      "tag": "case1_stage2",
+      "effective_rate_per_s": 0.5776908633916076,
+      "classical_rate_per_s": 0.5777343790788656,
+      "held_tail_rmse_K": 0.0006785167901590817,
+      "classical_held_tail_rmse_K": 0.0005355021293827392
+    },
+    {
+      "tag": "case1_stage4",
+      "effective_rate_per_s": 0.5709552393679451,
+      "classical_rate_per_s": 0.5708963539238948,
+      "held_tail_rmse_K": 0.0017956789570446215,
+      "classical_held_tail_rmse_K": 0.0035807973772448627
+    },
+    {
+      "tag": "case2_stage2",
+      "effective_rate_per_s": 1.2529555829048893,
+      "classical_rate_per_s": 1.2534289295264878,
+      "held_tail_rmse_K": 0.0030977189006069967,
+      "classical_held_tail_rmse_K": 0.0040696004362629585
+    },
+    {
+      "tag": "case2_stage4",
+      "effective_rate_per_s": 1.2266222965311218,
+      "classical_rate_per_s": 1.2270713652216458,
+      "held_tail_rmse_K": 0.01486067410235481,
+      "classical_held_tail_rmse_K": 0.01724085158821817
+    },
+    {
+      "tag": "case3_stage2",
+      "effective_rate_per_s": 0.7711365154313315,
+      "classical_rate_per_s": 0.771213311216861,
+      "held_tail_rmse_K": 0.0007208350329137803,
+      "classical_held_tail_rmse_K": 0.0004855308912592599
+    },
+    {
+      "tag": "case3_stage4",
+      "effective_rate_per_s": 0.760752823632115,
+      "classical_rate_per_s": 0.7607697023615086,
+      "held_tail_rmse_K": 0.0043709286059952345,
+      "classical_held_tail_rmse_K": 0.0054219103384897495
+    }
+  ],
+  "artifacts": {
+    "case1_stage2.json": "82554db976a6836128ea212aab77647bc5c1a5b3abb4be01e4c46bc7633431ef",
+    "case1_stage2.pt": "a4bdc1df215d759f14a753baa8c377797e22ea7be294ceb8f2d00bf466e578b2",
+    "case1_stage4.json": "8a94f88304bd2acfab9be5bae246f6821d20c6abdde6b6c17ef0868fe9e30733",
+    "case1_stage4.pt": "cfe32a79e57917d29e14a9fa709092466a29dafdcd179d519d7f5c111060f7fc",
+    "case2_stage2.json": "81ad1d363c29e80aafb8135b8b61d87d7006a7a9a57f1c2ae3b4877e38135225",
+    "case2_stage2.pt": "5a81158378f02791e7b8cd2f1faaf9637026e076a358a1847e23f07dbc90034f",
+    "case2_stage4.json": "020efceab74f87e5aa5bb19106ac7f5f40246752419f40910bdcd1bb409eca00",
+    "case2_stage4.pt": "8a6115b5b85c2513d35b5bfde8e4d256b077dedd535f30f99be9a62f95f229d3",
+    "case3_stage2.json": "44f63d1e08e7893ddec69283a91f979ab1c531e6c2aa179ea3cbc4e74f7e04af",
+    "case3_stage2.pt": "603a9e77e10f774c1c7b970555f74dc3316d892241414e3f6f9f68d71082e11c",
+    "case3_stage4.json": "cdd29f418a8fa1e9fd8ccb18db3ecf7040cf16cef0f0780d7a9607fcbd00d51a",
+    "case3_stage4.pt": "58faadb2dfd15943e0ae605bd07ea6fe3dbaa65c4617ae2d315d8aea334f16b7",
+    "curves.npz": "eeae48a68f472fb37182937a01b03dd8320aa903bf1abf1760881aca0eeb8cfb",
+    "protocol.json": "dba799f92299dea6035c78bbc712bf04428811301d5f75a421bb3bbff0966466"
+  }
+}

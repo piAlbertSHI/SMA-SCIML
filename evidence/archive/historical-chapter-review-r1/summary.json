@@ -1,0 +1,35 @@
+{
+  "status": "passed_chapter07C_narrow_evidence_review",
+  "whole_report_complete": false,
+  "checked_metric_and_count_cells": 54,
+  "local_links_and_images_checked": 7,
+  "fingerprints_and_entry_reconstruction_checked": true,
+  "restart_worked_example_checked": true,
+  "reference_exercise_executed": true,
+  "interface_tests_passed": 5,
+  "documented_cli_recipes": 5,
+  "command_scope": "AST module/flag inventory only; corresponding original runs are audited separately; new output paths not rerun",
+  "readability_scope": "author walkthrough plus executable worked example; no independent human comprehension test or whole-report review",
+  "walkthrough": [
+    "Rollout introduced before formulas",
+    "State table gives slices and units",
+    "Five interfaces map targets to source owners",
+    "Training versus inference permissions explicit",
+    "Fixed two-case cohort avoids4/4/2 composition confound",
+    "Boundary versus field RMSE separated",
+    "Observed and predicted starts distinguish information budgets",
+    "Negative comparisons retained",
+    "Guided and independent exercises include expected answers and acceptance criteria"
+  ],
+  "chapter_sha256": "5173542cd9fe7889e1a329d27b8d27d58f2ae29d55c1beb30a324722a7698309",
+  "implementation_sha256": "f63513fb413fea9646281d2043907b5f195c28ea86187cd809978aef191ec9bf",
+  "source_summary_hashes": {
+    "historical-rollout-r1": "e8d2e0ee59e45db00e2b0ed3c550e699a2116afbe5abc5271f3dcf3c0820a291",
+    "historical-rollout-audit-r1": "2cf63e6d75878b460d743e09e489f1bcd13f96fbe0b36eaabebff23a9942c620",
+    "historical-fields-r1": "1d7fceadf2d0bf6667fd8fafa5e61cda591dbd09d2a50eace68713b825600b35",
+    "historical-fields-audit-r1": "27ddc08241fb2b558d20fde8324e5ce02b174c407ef069bbbcd1f31a46fbc381"
+  },
+  "artifacts": {
+    "interface_tests.json": "38ebc41529820e0e8705c9af688e8c29b4a22f179101bbfaaa0b28ad730baf08"
+  }
+}

@@ -1,0 +1,783 @@
+{
+  "performance/COP": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "performance/Qcool_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "performance/SCP_W_per_kg": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "performance/W1_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "performance/Wpump_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "performance/Wpump_stage2_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "performance/Wpump_stage4_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "performance/Wtotal_for_COP_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "performance/Wunload_recovered_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "performance/complete_cycle_fields_finite": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "performance/cycle_duration_s": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "performance/deltaT_hot_cold_max_K": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "performance/formal_reporting_enabled": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "performance/paper_grade_valid": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "performance/pump_work_available": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage1_loading/T_K_t": {
+    "shape": [
+      50,
+      51
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage1_loading/pressure_Pa_t": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage1_loading/radial_coordinate_m": {
+    "shape": [
+      51
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage1_loading/time_local_s": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage1_loading/u_m_t": {
+    "shape": [
+      50,
+      51
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage1_loading/w_m_t": {
+    "shape": [
+      50,
+      51
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage1_loading/xi_t": {
+    "shape": [
+      50,
+      51
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/cold_hx_inlet_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/cold_hx_outlet_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/cold_sink_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/energy/Q_cold_end_official_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/energy/Q_hot_end_official_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/energy/Q_internal_pipe_fluid_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/energy/Q_sma_htf_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/energy/Q_sma_state_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/energy/Q_stage4_CHEX_energy_residual_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 1
+  },
+  "stage2_hold_exchange/energy/energy_residual_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/energy/official_system_energy_residual_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/energy/simscape_cold_sink_pipe_first_law_residual_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 1
+  },
+  "stage2_hold_exchange/energy/system_energy_residual_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/hot_hx_inlet_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/hot_hx_outlet_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/hot_sink_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/htf_T_in_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/htf_T_out_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/htf_directional_T_in_101_K": {
+    "shape": [
+      101
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/htf_directional_T_out_101_K": {
+    "shape": [
+      101
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/htf_internal_T_K_t": {
+    "shape": [
+      50,
+      101
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/htf_internal_pipe_index_101": {
+    "shape": [
+      101
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/htf_internal_time_local_s": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/mass_flow_t_kgps": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/pressure_pi_command_MPa_t": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/side_state/chip_temp_in": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/side_state/chip_temp_out": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/side_state/cold_buffer_temp_in": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/side_state/cold_buffer_temp_out": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/side_state/cold_sink_temp_in": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/side_state/cold_sink_temp_out": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/side_state/hot_buffer_temp_in": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/side_state/hot_buffer_temp_out": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/side_state/hot_sink_temp_in": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/side_state/hot_sink_temp_out": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/side_state/simscape_cold_sink_pipe_T_state_in_K": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/side_state/simscape_cold_sink_pipe_T_state_out_K": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/side_state/stage2_path_pipe_T_state_in_K": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/side_state/stage2_path_pipe_T_state_out_K": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/side_state/stage4_path_pipe_T_state_in_K": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 1
+  },
+  "stage2_hold_exchange/side_state/stage4_path_pipe_T_state_out_K": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 1
+  },
+  "stage2_hold_exchange/sma_T_center_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/sma_T_edge_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/sma_T_in_51_K": {
+    "shape": [
+      51
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/sma_T_mean_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/sma_T_out_51_K": {
+    "shape": [
+      51
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/sma_strip_T_K_t": {
+    "shape": [
+      50,
+      101
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/sma_strip_coordinate_m": {
+    "shape": [
+      101
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/time_global_s": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage2_hold_exchange/time_local_s": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage3_unloading/T_K_t": {
+    "shape": [
+      50,
+      51
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage3_unloading/pressure_Pa_t": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage3_unloading/radial_coordinate_m": {
+    "shape": [
+      51
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage3_unloading/time_local_s": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage3_unloading/u_m_t": {
+    "shape": [
+      50,
+      51
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage3_unloading/w_m_t": {
+    "shape": [
+      50,
+      51
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage3_unloading/xi_t": {
+    "shape": [
+      50,
+      51
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/cold_hx_inlet_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/cold_hx_outlet_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/cold_sink_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/energy/Q_cold_end_official_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/energy/Q_hot_end_official_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/energy/Q_internal_pipe_fluid_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/energy/Q_sma_htf_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/energy/Q_sma_state_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/energy/Q_stage4_CHEX_energy_residual_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/energy/energy_residual_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/energy/official_system_energy_residual_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/energy/simscape_cold_sink_pipe_first_law_residual_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/energy/system_energy_residual_J": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/hot_hx_inlet_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/hot_hx_outlet_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/hot_sink_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/htf_T_in_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/htf_T_out_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/htf_directional_T_in_101_K": {
+    "shape": [
+      101
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/htf_directional_T_out_101_K": {
+    "shape": [
+      101
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/htf_internal_T_K_t": {
+    "shape": [
+      50,
+      101
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/htf_internal_pipe_index_101": {
+    "shape": [
+      101
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/htf_internal_time_local_s": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/mass_flow_t_kgps": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/pressure_pi_command_MPa_t": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/side_state/chip_temp_in": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/side_state/chip_temp_out": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/side_state/cold_buffer_temp_in": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/side_state/cold_buffer_temp_out": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/side_state/cold_sink_temp_in": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/side_state/cold_sink_temp_out": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/side_state/hot_buffer_temp_in": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/side_state/hot_buffer_temp_out": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/side_state/hot_sink_temp_in": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/side_state/hot_sink_temp_out": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/side_state/simscape_cold_sink_pipe_T_state_in_K": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/side_state/simscape_cold_sink_pipe_T_state_out_K": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/side_state/stage2_path_pipe_T_state_in_K": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 1
+  },
+  "stage4_cooldown_exchange/side_state/stage2_path_pipe_T_state_out_K": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 1
+  },
+  "stage4_cooldown_exchange/side_state/stage4_path_pipe_T_state_in_K": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/side_state/stage4_path_pipe_T_state_out_K": {
+    "shape": [],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/sma_T_center_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/sma_T_edge_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/sma_T_in_51_K": {
+    "shape": [
+      51
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/sma_T_mean_t_K": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/sma_T_out_51_K": {
+    "shape": [
+      51
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/sma_strip_T_K_t": {
+    "shape": [
+      50,
+      101
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/sma_strip_coordinate_m": {
+    "shape": [
+      101
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/time_global_s": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  },
+  "stage4_cooldown_exchange/time_local_s": {
+    "shape": [
+      50
+    ],
+    "dtype": "float64",
+    "nonfinite_count": 0
+  }
+}

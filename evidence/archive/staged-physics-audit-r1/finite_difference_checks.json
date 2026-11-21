@@ -1,0 +1,98 @@
+[
+  {
+    "seed": 810,
+    "variant": "data",
+    "pde_max_difference_normalized": 3.0509602066963737e-09,
+    "energy_max_difference_normalized": 9.962576874578133e-09,
+    "space_step": 0.0001,
+    "time_step": 1e-05
+  },
+  {
+    "seed": 810,
+    "variant": "pde",
+    "pde_max_difference_normalized": 3.3284537348521326e-09,
+    "energy_max_difference_normalized": 9.865280425902512e-09,
+    "space_step": 0.0001,
+    "time_step": 1e-05
+  },
+  {
+    "seed": 810,
+    "variant": "pde_interfaces",
+    "pde_max_difference_normalized": 3.685178662227173e-09,
+    "energy_max_difference_normalized": 9.855010807413578e-09,
+    "space_step": 0.0001,
+    "time_step": 1e-05
+  },
+  {
+    "seed": 810,
+    "variant": "full",
+    "pde_max_difference_normalized": 2.848584867987114e-09,
+    "energy_max_difference_normalized": 9.904817299677404e-09,
+    "space_step": 0.0001,
+    "time_step": 1e-05
+  },
+  {
+    "seed": 811,
+    "variant": "data",
+    "pde_max_difference_normalized": 3.826681305163504e-09,
+    "energy_max_difference_normalized": 9.861922223297626e-09,
+    "space_step": 0.0001,
+    "time_step": 1e-05
+  },
+  {
+    "seed": 811,
+    "variant": "pde",
+    "pde_max_difference_normalized": 2.2267502841621933e-09,
+    "energy_max_difference_normalized": 9.674324230601883e-09,
+    "space_step": 0.0001,
+    "time_step": 1e-05
+  },
+  {
+    "seed": 811,
+    "variant": "pde_interfaces",
+    "pde_max_difference_normalized": 2.9673957180342825e-09,
+    "energy_max_difference_normalized": 9.572864723139674e-09,
+    "space_step": 0.0001,
+    "time_step": 1e-05
+  },
+  {
+    "seed": 811,
+    "variant": "full",
+    "pde_max_difference_normalized": 3.650091950913037e-09,
+    "energy_max_difference_normalized": 9.816015056340888e-09,
+    "space_step": 0.0001,
+    "time_step": 1e-05
+  },
+  {
+    "seed": 812,
+    "variant": "data",
+    "pde_max_difference_normalized": 4.391145225213222e-09,
+    "energy_max_difference_normalized": 9.95918186807998e-09,
+    "space_step": 0.0001,
+    "time_step": 1e-05
+  },
+  {
+    "seed": 812,
+    "variant": "pde",
+    "pde_max_difference_normalized": 3.4149607586186903e-09,
+    "energy_max_difference_normalized": 9.998169236968835e-09,
+    "space_step": 0.0001,
+    "time_step": 1e-05
+  },
+  {
+    "seed": 812,
+    "variant": "pde_interfaces",
+    "pde_max_difference_normalized": 3.197070552740655e-09,
+    "energy_max_difference_normalized": 1.0044901133099415e-08,
+    "space_step": 0.0001,
+    "time_step": 1e-05
+  },
+  {
+    "seed": 812,
+    "variant": "full",
+    "pde_max_difference_normalized": 3.424604988477853e-09,
+    "energy_max_difference_normalized": 1.0063628097523036e-08,
+    "space_step": 0.0001,
+    "time_step": 1e-05
+  }
+]

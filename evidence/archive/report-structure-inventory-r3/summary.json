@@ -1,0 +1,18 @@
+{
+  "status": "report_structure_inventory_requires_semantic_review",
+  "whole_report_complete": false,
+  "chapter_files": 19,
+  "characters": 158381,
+  "local_links": 76,
+  "remote_links_not_fetched": 6,
+  "fenced_code_blocks": 44,
+  "python_blocks_parsed": 13,
+  "broken_local_links": [],
+  "python_syntax_errors": [],
+  "odd_fence_chapters": [],
+  "semantic_scope": "links and syntax cannot prove formulas, scientific assertions, numerical tables, readability or learner mastery",
+  "implementation_sha256": "81c45baac968935ef9ea0d2cfa4e1d495a11e03b7addaa14a52e03876c1b02e8",
+  "artifacts": {
+    "chapter_inventory.json": "79e0e83b397b1e4f58b5e87060e807cee698753873817e8d2d4f95729d3e3ab7"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "completed_archived_design_experiment",
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "candidate_count": 15,
+  "selected_ids": [
+    "paper220_reca_057_r32_t160_p1070_v1183_t2p4_1c",
+    "paper220_reca_045_r32_t160_p0974_v1103_t2p4_1c",
+    "paper220_reca_040_r32_t160_p0737_v0872_t2p4_1c"
+  ],
+  "newly_revealed_archive_count": 3,
+  "engineering_safety_certified": false,
+  "actual_normalized_hypervolume_gain": 0.0072487765188036235,
+  "elapsed_seconds": 0.5940000000009604,
+  "artifacts": {
+    "candidate_verification.json": "4f3f678813bb01404e6029bc2d75d119d64b91c4f9f8efa81609d69c3b28e590",
+    "proposal_before_reveal.json": "dee47a3b60bea3928ef6f96f0d471ea03c17a06963dacf58f05b5ce031d25cfc",
+    "protocol.json": "0b87848af67535aff86d23bcce5d3d87599011a0088fa8eea6877ea1cbbdf3f1",
+    "revealed22_mechanical_reference.json": "3ef08e29b8205423f648ee5645c3e5414c732f049e551866e6d9068f54f5710d"
+  }
+}

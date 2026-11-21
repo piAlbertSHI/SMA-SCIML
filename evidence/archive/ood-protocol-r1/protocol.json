@@ -1,0 +1,109 @@
+{
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "scheme": "protocol",
+  "condition_groups": {
+    "calibration": [
+      "condition:04c5187a25de77554a90",
+      "condition:186aa947e61eb26179ce",
+      "condition:3bcc8a0a95374e8a3235",
+      "condition:3dcc87d4c198296e5c96",
+      "condition:56832a36b17589e19cb0",
+      "condition:5894eb409922a42b16d4",
+      "condition:7ec274a37b817678feea",
+      "condition:9fc042c1cb4ace04a1aa",
+      "condition:ab2765719ff3326f7223",
+      "condition:b24a31473a33c4b112de",
+      "condition:bdc6877f343ad0470d9c",
+      "condition:dd189f69c51176b4b7f4",
+      "condition:fb286013576fc77afa52"
+    ],
+    "id_test": [
+      "condition:10381e36a3e7692bc194",
+      "condition:3959893af155f27c4304",
+      "condition:6a45f42b93a914f52337",
+      "condition:72c9fa3444b45059ee9d",
+      "condition:82e5c257a11cd3937a54",
+      "condition:a0a00c342648ca47593c",
+      "condition:a3adde8fa6d74b257301",
+      "condition:b2b8c67789df65a71ecc",
+      "condition:bf7003ba637f6aa9708f",
+      "condition:cba92d995353caca5072"
+    ],
+    "train": [
+      "condition:21e3cf5f9a9f9f0ec3a5",
+      "condition:231e2150eaea457ca60d",
+      "condition:2488a30be406d97f22a2",
+      "condition:2693dd7e0914d447c066",
+      "condition:2d7fab68f7444d841ffa",
+      "condition:46c509e8cd177b7774bf",
+      "condition:4758b3dfba688e635dd6",
+      "condition:476206bc940e9a808f47",
+      "condition:58dec464750688fa8ca3",
+      "condition:5eb4cd22394872b8e78d",
+      "condition:6ce31a953e6d7a06b369",
+      "condition:6df3a76c7a5167275310",
+      "condition:6e48c6eba3c6466da316",
+      "condition:74edb9a560d9f2c6d0fb",
+      "condition:86cf60dc5eb18f0a8284",
+      "condition:89cfcbb1b4e5fa65d392",
+      "condition:941ae546e16653e58d46",
+      "condition:96363d5515c7ad9d95f7",
+      "condition:9ac17f091b04e6f0b4f3",
+      "condition:a88170e4fb001c9be6cd",
+      "condition:ad971c672750d855d161",
+      "condition:bb4075722285b5c81b27",
+      "condition:c58b5715e6e9cd28b510",
+      "condition:d970cffe6a018b1ade62",
+      "condition:da73710318bb4f309e2b",
+      "condition:f05ec4c140874e6dbd2e",
+      "condition:f0ae52f357d4b10f2aad",
+      "condition:f11e5b2ce39f16e526e4",
+      "condition:fc548775d1bb67ca89b0"
+    ],
+    "ood_protocol": [
+      "condition:124d1b39f020c0e5a7cb",
+      "condition:1d9d2326c71b29696a25",
+      "condition:4919a42fc1c23dedc971",
+      "condition:695c49e852b67dbb60e6",
+      "condition:89adda454837dd1b389f",
+      "condition:9dae72ebb762454af577",
+      "condition:b5ad4228c0a10b3db0c7",
+      "condition:d90c53d9308eba861548",
+      "condition:d9c9975deafc126fdddc",
+      "condition:e4abf759e669b510a5d7",
+      "condition:f586697f81a0391e4c61"
+    ]
+  },
+  "group_sizes": {
+    "calibration": 13,
+    "id_test": 10,
+    "train": 29,
+    "ood_protocol": 11
+  },
+  "dataset_source_content_sha256": "ff28bf6eee81ed41d3a12d41c20ea4370eaf6fcdfa770e3127ae1af96db18f5c",
+  "seeds": [
+    20260910,
+    20260911,
+    20260912
+  ],
+  "selection": "input-only largest radius, recAs, longest duration; combined removes union from training/calibration/ID",
+  "geometry_note": "R/t=200 across all63; held size pair, not independent R/t variation",
+  "calibration": "13 in-domain conditions; 90% simultaneous intervals measured out-of-domain WITHOUT coverage guarantee",
+  "scalar": "same fixed Ridge/RF/HistGB as chapter04; five-target 3-member MLP ensemble,300updates; first member is singleMLP",
+  "operator": "observed-start DeepONet400updates and matched26x51rank4POD/Ridge; not autonomous whole-cycle forecast",
+  "test_history": "all existing63 outputs previously used in development; newly grouped evaluations remain exploratory",
+  "target_names": [
+    "Qcool_J",
+    "Wpump_J",
+    "COP",
+    "SCP_W_per_kg",
+    "deltaT_hot_cold_max_K"
+  ],
+  "implementation_sha256": "ee797369d96fd27a5bd6b2c22f18aae65233404e3e9c95fd6418738a91e76f3f",
+  "upstream_implementation_sha256": {
+    "learning_coordinate_operator": "ca25e4c97c90f0e853879b3d8e76f394658f13d709e6494b88aff5e4456e69e3",
+    "learning_ensemble": "910893c2747507d27fb56160c0f18553eb088870374ce4fdf01f01951f3cd956",
+    "learning_scalar_benchmarks": "9532f3eaa87302088a761f1f9d1f53971747cb57c343516317d00c7d1e40f480"
+  }
+}

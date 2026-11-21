@@ -1,0 +1,996 @@
+[
+  {
+    "dataset": "v1.1-engineering10-audit",
+    "case_id": "pilot_recas_r40_t200_p1500_v1_t2p4_2c",
+    "source_semantic_sha256": "745c0c06be12c229d88e6d1560b727af76bea54aec39a77b6965aedd9568d8b3",
+    "condition_id": "condition:7d78125d41e6ae8702fb",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\sciml_v11_multicycle_r3\\pilot_recas_r40_t200_p1500_v1_t2p4_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+      "pipeline_implementation_fingerprint_sha256": "61c6c933bd4ab59bfebac7cef32b8315fa516329dd6905e7251bf080bf484ac2"
+    }
+  },
+  {
+    "dataset": "v1.1-engineering14-audit",
+    "case_id": "pilot_recas_r40_t200_p1500_v1_t2p4_2c",
+    "source_semantic_sha256": "745c0c06be12c229d88e6d1560b727af76bea54aec39a77b6965aedd9568d8b3",
+    "condition_id": "condition:7d78125d41e6ae8702fb",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\sciml_v11_multicycle_r3\\pilot_recas_r40_t200_p1500_v1_t2p4_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+      "pipeline_implementation_fingerprint_sha256": "61c6c933bd4ab59bfebac7cef32b8315fa516329dd6905e7251bf080bf484ac2"
+    }
+  },
+  {
+    "dataset": "v1.1-engineering20",
+    "case_id": "pilot_recas_r40_t200_p1500_v1_t2p4_2c",
+    "source_semantic_sha256": "745c0c06be12c229d88e6d1560b727af76bea54aec39a77b6965aedd9568d8b3",
+    "condition_id": "condition:7d78125d41e6ae8702fb",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\sciml_v11_multicycle_r3\\pilot_recas_r40_t200_p1500_v1_t2p4_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+      "pipeline_implementation_fingerprint_sha256": "61c6c933bd4ab59bfebac7cef32b8315fa516329dd6905e7251bf080bf484ac2"
+    }
+  },
+  {
+    "dataset": "v1.1-engineering6-audit",
+    "case_id": "pilot_recas_r40_t200_p1500_v1_t2p4_2c",
+    "source_semantic_sha256": "745c0c06be12c229d88e6d1560b727af76bea54aec39a77b6965aedd9568d8b3",
+    "condition_id": "condition:7d78125d41e6ae8702fb",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\sciml_v11_multicycle_r3\\pilot_recas_r40_t200_p1500_v1_t2p4_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+      "pipeline_implementation_fingerprint_sha256": "61c6c933bd4ab59bfebac7cef32b8315fa516329dd6905e7251bf080bf484ac2"
+    }
+  },
+  {
+    "dataset": "v1.1-engineering8-audit",
+    "case_id": "pilot_recas_r40_t200_p1500_v1_t2p4_2c",
+    "source_semantic_sha256": "745c0c06be12c229d88e6d1560b727af76bea54aec39a77b6965aedd9568d8b3",
+    "condition_id": "condition:7d78125d41e6ae8702fb",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\sciml_v11_multicycle_r3\\pilot_recas_r40_t200_p1500_v1_t2p4_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+      "pipeline_implementation_fingerprint_sha256": "61c6c933bd4ab59bfebac7cef32b8315fa516329dd6905e7251bf080bf484ac2"
+    }
+  },
+  {
+    "dataset": "v1.1-paper220",
+    "case_id": "temporal12_01_paper220_reca_056_r42_t210_p0906_v1021_t2p4_1c_2c",
+    "source_semantic_sha256": "272420ffb52d1fbc67e92669524e0f4e215156d4dbbedd92ca54e0a6bb832fc6",
+    "condition_id": "condition:4add0cec93431b3a70df",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\t\\shard_001\\temporal12_01_paper220_reca_056_r42_t210_p0906_v1021_t2p4_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "90a5bed4c056daf3d8f2382c23b2e62982c85cd1fedf1c25fcd5bf7a2a587d3e"
+    }
+  },
+  {
+    "dataset": "v1.1-paper220",
+    "case_id": "temporal12_02_paper220_reca_096_r35_t175_p0897_v1213_t2p4_1c_2c",
+    "source_semantic_sha256": "d221fbc3750a87a6187ecc22ddac9c24a2fd76d103e613208e12f1778d834f7d",
+    "condition_id": "condition:c2bdeb443bed146afda5",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\t\\shard_002\\temporal12_02_paper220_reca_096_r35_t175_p0897_v1213_t2p4_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "90a5bed4c056daf3d8f2382c23b2e62982c85cd1fedf1c25fcd5bf7a2a587d3e"
+    }
+  },
+  {
+    "dataset": "v1.1-paper220",
+    "case_id": "temporal12_03_paper220_reca_009_r38_t190_p0874_v1164_t2p4_1c_2c",
+    "source_semantic_sha256": "309ad3cd721c9900dd2384cde780b7fa528c48f58d339c09596d0429649587e1",
+    "condition_id": "condition:7ec274a37b817678feea",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\t\\shard_003\\temporal12_03_paper220_reca_009_r38_t190_p0874_v1164_t2p4_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "90a5bed4c056daf3d8f2382c23b2e62982c85cd1fedf1c25fcd5bf7a2a587d3e"
+    }
+  },
+  {
+    "dataset": "v1.1-paper220",
+    "case_id": "temporal12_04_paper220_reca_099_r32_t160_p0882_v0961_t2p4_1c_2c",
+    "source_semantic_sha256": "ef8f7b7fb3b12c0776fa4746ebc23859aa5c25d3911bae0fe8b3e90428f14ce3",
+    "condition_id": "condition:435f26c0cc7770365447",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\t\\shard_004\\temporal12_04_paper220_reca_099_r32_t160_p0882_v0961_t2p4_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "90a5bed4c056daf3d8f2382c23b2e62982c85cd1fedf1c25fcd5bf7a2a587d3e"
+    }
+  },
+  {
+    "dataset": "v1.1-paper220",
+    "case_id": "temporal12_05_paper220_reca_107_r40_t200_p0897_v0971_t2p4_1c_2c",
+    "source_semantic_sha256": "d90ccc452a0941f2497d387c0faf6bd07a008fcb9a2af303ca9c5a1b8fc6278b",
+    "condition_id": "condition:5a84478f1fcea15542f5",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\t\\shard_005\\temporal12_05_paper220_reca_107_r40_t200_p0897_v0971_t2p4_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "90a5bed4c056daf3d8f2382c23b2e62982c85cd1fedf1c25fcd5bf7a2a587d3e"
+    }
+  },
+  {
+    "dataset": "v1.1-paper220",
+    "case_id": "temporal12_06_paper220_reca_100_r40_t200_p0827_v1230_t2p4_1c_3c",
+    "source_semantic_sha256": "8be134178b8679b835c98c4f185378beca6f7a69ac9a053911db5c3447732c9b",
+    "condition_id": "condition:a729a4a17c55ee7659da",
+    "observed_cycles": [
+      1,
+      2,
+      3
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\t\\shard_006\\temporal12_06_paper220_reca_100_r40_t200_p0827_v1230_t2p4_1c_3c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "90a5bed4c056daf3d8f2382c23b2e62982c85cd1fedf1c25fcd5bf7a2a587d3e"
+    }
+  },
+  {
+    "dataset": "v1.1-paper220",
+    "case_id": "temporal12_07_paper220_recas_131_r40_t200_p1526_v1171_t2p4_1c_2c",
+    "source_semantic_sha256": "8fa557676a3b30e5af7bbf77bef72067a0c13637f757f77d63c1bc1f371e783b",
+    "condition_id": "condition:04024cf917bb0c73ed38",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\t\\shard_007\\temporal12_07_paper220_recas_131_r40_t200_p1526_v1171_t2p4_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "90a5bed4c056daf3d8f2382c23b2e62982c85cd1fedf1c25fcd5bf7a2a587d3e"
+    }
+  },
+  {
+    "dataset": "v1.1-paper220",
+    "case_id": "temporal12_08_paper220_recas_177_r35_t175_p1421_v0759_t2p4_1c_2c",
+    "source_semantic_sha256": "124495ba6c50127544bc24b397b2d3856f3328eb7d66bb4977c375169501a60f",
+    "condition_id": "condition:47a41e758c03888b25af",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\t\\shard_008\\temporal12_08_paper220_recas_177_r35_t175_p1421_v0759_t2p4_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "90a5bed4c056daf3d8f2382c23b2e62982c85cd1fedf1c25fcd5bf7a2a587d3e"
+    }
+  },
+  {
+    "dataset": "v1.1-paper220",
+    "case_id": "temporal12_09_paper220_recas_217_r32_t160_p1439_v0906_t2p4_1c_2c",
+    "source_semantic_sha256": "4808a9707311043f4922ddb843f4a0104ffd2cc53edca564ce26157b78c39db2",
+    "condition_id": "condition:813c1845f3cdade900db",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\t\\shard_009\\temporal12_09_paper220_recas_217_r32_t160_p1439_v0906_t2p4_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "90a5bed4c056daf3d8f2382c23b2e62982c85cd1fedf1c25fcd5bf7a2a587d3e"
+    }
+  },
+  {
+    "dataset": "v1.1-paper220",
+    "case_id": "temporal12_10_paper220_recas_125_r42_t210_p1616_v0766_t2p4_1c_2c",
+    "source_semantic_sha256": "a864b33e5d67bc48d7126a8433c6d0695d14e9ae4b4aa04a8962cfd71b357e23",
+    "condition_id": "condition:30c08ee3a249ce23b4b9",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\t\\shard_010\\temporal12_10_paper220_recas_125_r42_t210_p1616_v0766_t2p4_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "90a5bed4c056daf3d8f2382c23b2e62982c85cd1fedf1c25fcd5bf7a2a587d3e"
+    }
+  },
+  {
+    "dataset": "v1.1-paper220",
+    "case_id": "temporal12_11_paper220_recas_173_r38_t190_p1560_v0853_t2p4_1c_2c",
+    "source_semantic_sha256": "f7bd1458d8f82da6a574b7bb5d78b1e7a76611f80f710fcbbec971b04b2c7a67",
+    "condition_id": "condition:2af9254d30e849be7684",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\t\\shard_011\\temporal12_11_paper220_recas_173_r38_t190_p1560_v0853_t2p4_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "90a5bed4c056daf3d8f2382c23b2e62982c85cd1fedf1c25fcd5bf7a2a587d3e"
+    }
+  },
+  {
+    "dataset": "v1.1-paper220",
+    "case_id": "temporal12_12_paper220_recas_151_r40_t200_p1485_v0753_t2p4_1c_3c",
+    "source_semantic_sha256": "e91b0ed64b076b25ec11a28679f02929f4820336a10eeff089dc16213c481c43",
+    "condition_id": "condition:415606fa2f088495144a",
+    "observed_cycles": [
+      1,
+      2,
+      3
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\t\\shard_012\\temporal12_12_paper220_recas_151_r40_t200_p1485_v0753_t2p4_1c_3c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "90a5bed4c056daf3d8f2382c23b2e62982c85cd1fedf1c25fcd5bf7a2a587d3e"
+    }
+  },
+  {
+    "dataset": "v1.1-pilot-r3",
+    "case_id": "pilot_recas_r40_t200_p1500_v1_t2p4_2c",
+    "source_semantic_sha256": "745c0c06be12c229d88e6d1560b727af76bea54aec39a77b6965aedd9568d8b3",
+    "condition_id": "condition:7d78125d41e6ae8702fb",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\sciml_v11_multicycle_r3\\pilot_recas_r40_t200_p1500_v1_t2p4_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "7ddcf83709f6bb719de3ff1fad36068d8edda219733dbcb32ad4dafe4043ba51",
+      "pipeline_implementation_fingerprint_sha256": "61c6c933bd4ab59bfebac7cef32b8315fa516329dd6905e7251bf080bf484ac2"
+    }
+  },
+  {
+    "dataset": "v1.2-confirm-temporal12",
+    "case_id": "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+    "source_semantic_sha256": "fdf25d40f07f94bd4c72cc831c0d3ea11ed1e95ad8cb41b20206f8a2bdc27495",
+    "condition_id": "condition:7d1a382e9c3f38f2142c",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\ct_confirm_20260829\\shard_001\\confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "bb312566a093e41ec6249dcea33229ff236332a4c89ca5508cc6c7e666bfba73"
+    }
+  },
+  {
+    "dataset": "v1.2-confirm-temporal12",
+    "case_id": "confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c",
+    "source_semantic_sha256": "4f73a994957ea300b60a89a4ff9d9ef8afb325323cd12088ab0ca8243875dd70",
+    "condition_id": "condition:14206c6afe05288451d4",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\ct_confirm_20260829\\shard_002\\confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "bb312566a093e41ec6249dcea33229ff236332a4c89ca5508cc6c7e666bfba73"
+    }
+  },
+  {
+    "dataset": "v1.2-confirm-temporal12",
+    "case_id": "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+    "source_semantic_sha256": "4633c5aeb25a04fa455c061cb2c045fcb2b80fbbcce7e17764c461fd7b21bfe1",
+    "condition_id": "condition:c8472975c2c49f070db8",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\ct_confirm_20260829\\shard_003\\confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "bb312566a093e41ec6249dcea33229ff236332a4c89ca5508cc6c7e666bfba73"
+    }
+  },
+  {
+    "dataset": "v1.2-confirm-temporal12",
+    "case_id": "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+    "source_semantic_sha256": "53f79c801f23dfc63f3379edc83411a4e1cebf79418c4b6eb673f54f6b896c1a",
+    "condition_id": "condition:9305d9ef9da18cfa1470",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\ct_confirm_20260829\\shard_004\\confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "bb312566a093e41ec6249dcea33229ff236332a4c89ca5508cc6c7e666bfba73"
+    }
+  },
+  {
+    "dataset": "v1.2-confirm-temporal12",
+    "case_id": "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+    "source_semantic_sha256": "06505701422b290bdee9e7d171f9920553095c52ae3864caa6beb3bc3e9ffa13",
+    "condition_id": "condition:6f258beaa587d6acfb9e",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\ct_confirm_20260829\\shard_005\\confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "bb312566a093e41ec6249dcea33229ff236332a4c89ca5508cc6c7e666bfba73"
+    }
+  },
+  {
+    "dataset": "v1.2-confirm-temporal12",
+    "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+    "source_semantic_sha256": "147b6c892693b14ff520ea72229ea4bfaad46854706a4caac203885b1915393e",
+    "condition_id": "condition:96e7753e7a343786fb84",
+    "observed_cycles": [
+      1,
+      2,
+      3
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\ct_confirm_20260829\\shard_006\\confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "bb312566a093e41ec6249dcea33229ff236332a4c89ca5508cc6c7e666bfba73"
+    }
+  },
+  {
+    "dataset": "v1.2-confirm-temporal12",
+    "case_id": "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+    "source_semantic_sha256": "c16b2aba9a389c8e07c40dee903c15cd27b143b3fa8c59f82a4b597cb6160ca4",
+    "condition_id": "condition:48ec4dd69bfe666e8b92",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\ct_confirm_20260829\\shard_007\\confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "bb312566a093e41ec6249dcea33229ff236332a4c89ca5508cc6c7e666bfba73"
+    }
+  },
+  {
+    "dataset": "v1.2-confirm-temporal12",
+    "case_id": "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+    "source_semantic_sha256": "7ddd7ee8aa5ca9dbfd25550f5820f52d92bd8b6837ff1d7f28cd0034d1ca182c",
+    "condition_id": "condition:f7c41e4b2a70ba047469",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\ct_confirm_20260829\\shard_008\\confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "bb312566a093e41ec6249dcea33229ff236332a4c89ca5508cc6c7e666bfba73"
+    }
+  },
+  {
+    "dataset": "v1.2-confirm-temporal12",
+    "case_id": "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+    "source_semantic_sha256": "a89dbc2db37dccd0f410989c4f5f79bc3498df202316076a57ca0eb26ba70b79",
+    "condition_id": "condition:1e0dd6cef06f6b38447d",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\ct_confirm_20260829\\shard_009\\confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "bb312566a093e41ec6249dcea33229ff236332a4c89ca5508cc6c7e666bfba73"
+    }
+  },
+  {
+    "dataset": "v1.2-confirm-temporal12",
+    "case_id": "confirm_temporal12_10_confirm50_recas_047_r40_t200_p1584_v1019_t2p4_1c_2c",
+    "source_semantic_sha256": "a74143a73817e65398180ffc66b44aaa508a7d5f926ddf86e0857d2af87ee734",
+    "condition_id": "condition:425de5434086e040180d",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\ct_confirm_20260829\\shard_010\\confirm_temporal12_10_confirm50_recas_047_r40_t200_p1584_v1019_t2p4_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "bb312566a093e41ec6249dcea33229ff236332a4c89ca5508cc6c7e666bfba73"
+    }
+  },
+  {
+    "dataset": "v1.2-confirm-temporal12",
+    "case_id": "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c",
+    "source_semantic_sha256": "ed9c1921540a39fa8f1275f8dfcafe72e3d90484894f42d93a2163de708efe57",
+    "condition_id": "condition:067f4620b7edc9794161",
+    "observed_cycles": [
+      1,
+      2
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\ct_confirm_20260829\\shard_011\\confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "bb312566a093e41ec6249dcea33229ff236332a4c89ca5508cc6c7e666bfba73"
+    }
+  },
+  {
+    "dataset": "v1.2-confirm-temporal12",
+    "case_id": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c",
+    "source_semantic_sha256": "39efb71025239e85960a84bb5be6706f1eebed7d13d2e37ebfbf11ebe20efbad",
+    "condition_id": "condition:b0e5469b2ee4da01eaea",
+    "observed_cycles": [
+      1,
+      2,
+      3
+    ],
+    "source_artifact": "[local-path-omitted] project\\gx101r1\\Output\\ct_confirm_20260829\\shard_012\\confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c\\sciml_case_v11.mat",
+    "raw_source_hash_matches": true,
+    "raw_request_hash_matches": true,
+    "integrity_issues": [],
+    "declared_flags": {
+      "run_ok": true,
+      "physics_ok": true,
+      "paper_grade_valid": true,
+      "observation_contract_ok": true,
+      "pump_work_available": true,
+      "htf_internal_full_field_available": true,
+      "request_config_matches_current": true,
+      "request_self_contained": true,
+      "export_provenance_available": true,
+      "export_artifact_hash_matches": true
+    },
+    "same_implementation_as_existing63": false,
+    "candidate_for_separate_historical_evaluation": true,
+    "candidate_for_current_profile_multicycle_evaluation": false,
+    "fingerprints": {
+      "physics_implementation_fingerprint_sha256": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+      "pipeline_implementation_fingerprint_sha256": "bb312566a093e41ec6249dcea33229ff236332a4c89ca5508cc6c7e666bfba73"
+    }
+  }
+]

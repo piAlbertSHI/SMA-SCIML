@@ -1,0 +1,63 @@
+{
+  "status": "completed_field_energy_information_audit",
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "case_count": 63,
+  "exchange_stage_count": 126,
+  "all_recorded_sources_match_current": true,
+  "max_export_identity_abs_residuals": {
+    "Qcool_J": 0.0,
+    "COP": 0.0,
+    "Wpump_J": 2.168404344971009e-19
+  },
+  "max_abs_work_convention_residual_J": {
+    "plus_minus_stored_J": 0.0,
+    "minus_minus_stored_J": 9.480913124003553
+  },
+  "observed_quadrature_diagnostic": {
+    "heat_quadrature_minus_stored_J": {
+      "mae_J": 0.007929763796572044,
+      "max_abs_J": 0.021220608868461
+    },
+    "pump_quadrature_minus_stored_J": {
+      "mae_J": 1.553700434677888e-19,
+      "max_abs_J": 8.673617379884035e-19
+    }
+  },
+  "max_internal_endpoint_port_gaps_K": {
+    "first_vs_inlet": 12.999177231152316,
+    "last_vs_outlet": 12.93937223351088,
+    "last_vs_inlet": 12.928231328733432,
+    "first_vs_outlet": 12.898859531672542
+  },
+  "information_gaps": {
+    "temperature_only_operator_outputs": [
+      "realized signed mass flow",
+      "pressure-command trajectory",
+      "port temperature ownership",
+      "mechanical work",
+      "capacities and latent-energy/restart convention"
+    ],
+    "energy_export_not_present": [
+      "Q_environment_J",
+      "Q_internal_pipe_fluid_method",
+      "Q_internal_pipe_fluid_temperature_estimate_J"
+    ],
+    "independent_energy_closure": "not established by summing exported residual-derived terms; source/storage provenance must be inspected"
+  },
+  "physics_gate_changed": false,
+  "autonomous_field_to_COP_claim": false,
+  "dataset_source_content_sha256": "ff28bf6eee81ed41d3a12d41c20ea4370eaf6fcdfa770e3127ae1af96db18f5c",
+  "sources_sha256": {
+    "Build_Simulink_Exchange_Params.m": "7892bc09a5652cd47920169637cffff7b42bace1a42ed0d8f03cf73a667b618d",
+    "Run_Simulink_Exchange_Hook.m": "24fe55e48987aec452af38b1afe7ad4ad3d722e8b036ec124f1d26ee6904ea92",
+    "Run_GlobalXi_Simulink_Cycles.m": "8cf73c18909d0e5f84338192a1b2ee5fd9e3001a99b05683dfe52c593424e292",
+    "SciML/builders/Export_SCIML_V11_Case.m": "e585ca4b5cc3dad761a52613f1fd805aae89e8819f45f45e671e4d090b420f6d"
+  },
+  "implementation_sha256": "05bf3a2318e3f52936a6106c5e0163d9988fa01185755ce38f43cf93344eb35c",
+  "artifacts": {
+    "case_diagnostics.json": "bfcaba8c094676719915bc6956f6ab93d8c069b1e8ec607c26af0440f38bd099",
+    "readout_counterexamples.json": "e24b3c0b4af30c2908d48b46d7c9cb6431918be62b41b4986a701f717906d727",
+    "stage_quadrature_diagnostics.json": "aee0a237cc3216f7625ec79d8c028c86809caa36bd0646bf4c76599157331701"
+  }
+}

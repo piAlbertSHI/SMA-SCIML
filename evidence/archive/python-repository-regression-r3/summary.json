@@ -1,0 +1,19 @@
+{
+  "status": "passed_python_repository_regression",
+  "test_count": 292,
+  "discovered_test_count": 292,
+  "test_module_files": 54,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_and_physics_sources_unchanged": true,
+  "elapsed_seconds": 96.56646000000183,
+  "scope": "all test_*.py discovered in SciML/tests; not MATLAB integration, scientific campaign, model confirmation, or reader comprehension certification",
+  "other_test_files_outside_discovery": [],
+  "legacy_subprocess_safety_review": "fake MATLAB/worker and ValidateConfigurationOnly/ValidateAuthorizationOnly/SkipMatlabCheck/PlanOnly inspected before execution; no new solver campaign requested",
+  "implementation_sha256": "d1632e83e1bd9cd118d11fb8b2b900828c2bbc7804f2e5dc8927f4f336f9eedb",
+  "artifacts": {
+    "source_integrity.json": "6713bade61eee6767ce495b8e729a5f9c6e917ac282b790ffab39303ebd7b7c0",
+    "terminal_and_cases.json": "d57783256c4600d6dc86c48dcabc06a1ab65d7f905828a89d2208aaa754da6d6"
+  }
+}

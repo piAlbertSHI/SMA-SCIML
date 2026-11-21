@@ -1,0 +1,1651 @@
+[
+  {
+    "chapter": "01_项目全景与学习路线.md",
+    "sha256": "bd52439c66bbcc8c2c1a4cad88786cbf6c1aac4019cd668f52ba22fd692bb188",
+    "characters": 4680,
+    "line_count": 166,
+    "headings": [
+      "# 第 1 章：从一个物理项目走到可解释的 SciML 学习闭环",
+      "## 1.1 先用一句话理解我们在做什么",
+      "## 1.2 物理背景：为什么机械加载会与制冷有关",
+      "## 1.3 输入、状态、输出：用三个数学对象整理项目",
+      "## 1.4 为什么要先做简单模型",
+      "## 1.5 原计划怎样形成后续闭环",
+      "## 1.6 三种证据边界，从第一页就要记住",
+      "## 1.7 你需要掌握的最小机器学习词汇",
+      "## 1.8 阅读与练习路线",
+      "## 1.9 本章自测"
+    ],
+    "fence_markers": 0,
+    "links": [
+      {
+        "label": "正式规划",
+        "target": "/./Docs/AI_SciML_项目正式规划报告.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\Docs\\AI_SciML_项目正式规划报告.md",
+        "sha256": "1a76e61525b6825ab248ea999dfaf76fd03a232385437c8629cbb4ba91a3b1a6",
+        "line": 164
+      },
+      {
+        "label": "正式参考报告 v2.0",
+        "target": "/./Docs/AI_SciML_项目正式参考报告_v2.0.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\Docs\\AI_SciML_项目正式参考报告_v2.0.md",
+        "sha256": "a2593a4af5215b0b05118a861b90a82f54e07176ca439e80383e41865e32d92d",
+        "line": 165
+      }
+    ],
+    "snippets": [],
+    "python_module_command_count": 0,
+    "review_required": true
+  },
+  {
+    "chapter": "02_数值数据与可追溯契约.md",
+    "sha256": "0bbb9861cfd37ab374e0945a3fb2081c920b2589298587fbad99d6f24af56a2c",
+    "characters": 5622,
+    "line_count": 167,
+    "headings": [
+      "# 第 2 章：数值数据从哪里来，怎样证明没有读错",
+      "## 2.1 为什么第一步不是打开 PyTorch",
+      "## 2.2 整条链中每个程序负责什么",
+      "## 2.3 数据目录里的八个文件",
+      "## 2.4 标识符、路径与一个真实例子",
+      "## 2.5 每个数组必须有 owner",
+      "## 2.6 NaN、N/A 和零并不是同一个意思",
+      "## 2.7 三层摘要，不要只记一个 commit",
+      "## 2.8 单例有效、矩阵完整、学习可用：三个不同判断",
+      "## 2.9 本项目已经暴露的三个数据风险",
+      "## 2.10 可运行核查与本章练习"
+    ],
+    "fence_markers": 4,
+    "links": [
+      {
+        "label": "sciml_case_v11.mat",
+        "target": "/./Output/statepaper220_20260908/c001/shard_001/paper220_reca_001_r42_t210_p0823_v1000_t2p4_1c/sciml_case_v11.mat",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\Output\\statepaper220_20260908\\c001\\shard_001\\paper220_reca_001_r42_t210_p0823_v1000_t2p4_1c\\sciml_case_v11.mat",
+        "sha256": "f1fe9bf46f275ca3cbc0859d0e15f0baa0086278ee86b414e86f8d2634e374e1",
+        "line": 64
+      },
+      {
+        "label": "检查程序",
+        "target": "/./SciML/evaluation/inspect_learning_data_tutorial.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\evaluation\\inspect_learning_data_tutorial.py",
+        "sha256": "3e2811d04035119f76b137f410fc2c1c9545327789fe5b1db86e53abf3eb5d14",
+        "line": 151
+      },
+      {
+        "label": "data-tutorial-r1 摘要",
+        "target": "/./SciML/results/learning-closed-loop-20260910/data-tutorial-r1/summary.json",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\results\\learning-closed-loop-20260910\\data-tutorial-r1\\summary.json",
+        "sha256": "4265b816f4b9f805013f435e4c25a277fe0eec2959ea9211467b51dd9ad580b7",
+        "line": 153
+      }
+    ],
+    "snippets": [
+      {
+        "language": "text",
+        "line": 16,
+        "line_count": 8,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "powershell",
+        "line": 147,
+        "line_count": 1,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      }
+    ],
+    "python_module_command_count": 1,
+    "review_required": true
+  },
+  {
+    "chapter": "03_从文件到训练张量.md",
+    "sha256": "643ad7f3a71009cded1a4cb79bdfbded2e6c0510525152c9974d711ff459a5ed",
+    "characters": 9499,
+    "line_count": 302,
+    "headings": [
+      "# 第 3 章：从文件到训练张量——每一维、每一个切分都要有含义",
+      "## 3.1 本章结束时你应该能做什么",
+      "## 3.2 一份物理数据，三种不同的学习样本",
+      "## 3.3 标量 X 的列顺序与单位",
+      "## 3.4 标签 Y 的含义与一个完整实数例子",
+      "## 3.5 先划分工况，再生成派生样本",
+      "# exercise: group_leakage",
+      "## 3.6 归一化必须只看训练行",
+      "# exercise: scaler_permission",
+      "## 3.7 从读取到 Tensor 的完整最小代码",
+      "# exercise: scalar_tensor",
+      "## 3.8 状态模型的 414→426：不要让未来帧成为初态",
+      "## 3.9 场模型的 221 维条件与 50×101 标签",
+      "## 3.10 缺失、索引、广播：最常见的三个软件陷阱",
+      "# exercise: broadcasting",
+      "## 3.11 训练和评价权限检查清单",
+      "## 3.12 工具入口、结果和进阶任务"
+    ],
+    "fence_markers": 12,
+    "links": [
+      {
+        "label": "检查器",
+        "target": "/./SciML/evaluation/inspect_learning_data_tutorial.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\evaluation\\inspect_learning_data_tutorial.py",
+        "sha256": "3e2811d04035119f76b137f410fc2c1c9545327789fe5b1db86e53abf3eb5d14",
+        "line": 278
+      },
+      {
+        "label": "测试",
+        "target": "/./SciML/tests/test_learning_data_tutorial.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\tests\\test_learning_data_tutorial.py",
+        "sha256": "dda035af80ba1dc6755d5b83fbdbc490d6803079d4dad524a76f0674ec6b4f34",
+        "line": 280
+      }
+    ],
+    "snippets": [
+      {
+        "language": "text",
+        "line": 59,
+        "line_count": 2,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "python",
+        "line": 91,
+        "line_count": 12,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context",
+        "syntax_valid": true
+      },
+      {
+        "language": "python",
+        "line": 140,
+        "line_count": 11,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context",
+        "syntax_valid": true
+      },
+      {
+        "language": "python",
+        "line": 159,
+        "line_count": 28,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context",
+        "syntax_valid": true
+      },
+      {
+        "language": "python",
+        "line": 250,
+        "line_count": 9,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context",
+        "syntax_valid": true
+      },
+      {
+        "language": "powershell",
+        "line": 283,
+        "line_count": 1,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      }
+    ],
+    "python_module_command_count": 1,
+    "review_required": true
+  },
+  {
+    "chapter": "04_WP2_标量基线与神经训练.md",
+    "sha256": "81a72b6833bfc090abb4451948e7c8797d9cab5b71a3a783247fa21034876710",
+    "characters": 11391,
+    "line_count": 382,
+    "headings": [
+      "# 第 4 章：WP2——从强基线到可审计的神经网络训练",
+      "## 4.1 为什么先预测几个数，而不是直接预测整张温度场",
+      "## 4.2 把物理问题翻译成 X 和 Y",
+      "### 输入：7 个数",
+      "### 输出：5 个数",
+      "## 4.3 归一化为什么是数学问题，而不是美化数据",
+      "## 4.4 七种报告行到底对应什么模型",
+      "### 小样本默认参数陷阱",
+      "## 4.5 神经网络的每一步计算",
+      "## 4.6 曲线记录与标签泄漏的边界",
+      "## 4.7 为什么去掉目标归一化会失败",
+      "## 4.8 指标如何算，为什么不能只看 R²",
+      "## 4.9 三颗种子的真实结果",
+      "## 4.10 检查点、重训、审计为什么各做一次",
+      "## 4.11 分级练习：从读懂到能独立实现",
+      "### 练习 A：形状、参数数和一步梯度",
+      "### 练习 B：手算一个指标",
+      "### 练习 C：复现信息隔离测试",
+      "### 练习 D：半指导添加二次 Ridge",
+      "### 练习 E：独立实现一个陌生回归任务"
+    ],
+    "fence_markers": 6,
+    "links": [
+      {
+        "label": "learning_scalar_benchmarks.py",
+        "target": "../../models/v12/learning_scalar_benchmarks.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\models\\v12\\learning_scalar_benchmarks.py",
+        "sha256": "9532f3eaa87302088a761f1f9d1f53971747cb57c343516317d00c7d1e40f480",
+        "line": 14
+      },
+      {
+        "label": "run_learning_existing.py",
+        "target": "../../models/v12/run_learning_existing.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\models\\v12\\run_learning_existing.py",
+        "sha256": "8179b60ec703b4a09145b4f60460e7fbb0003444d0edad4f89a197249628d1ad",
+        "line": 15
+      },
+      {
+        "label": "audit_learning_scalar.py",
+        "target": "../../evaluation/audit_learning_scalar.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\evaluation\\audit_learning_scalar.py",
+        "sha256": "f908270617ff0eb53a7efa5e1ab1a6d08bdf4a94284f30d8a762ca9073c65da3",
+        "line": 17
+      },
+      {
+        "label": "test_learning_scalar_benchmarks.py",
+        "target": "../../tests/test_learning_scalar_benchmarks.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\tests\\test_learning_scalar_benchmarks.py",
+        "sha256": "5637115bf816f38c7d55eb568657323d7b4d608fc6d4285c9b3abf3fd2602e9e",
+        "line": 18
+      },
+      {
+        "label": "Export_SCIML_V11_Case.m",
+        "target": "../../builders/Export_SCIML_V11_Case.m",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\builders\\Export_SCIML_V11_Case.m",
+        "sha256": "e585ca4b5cc3dad761a52613f1fd805aae89e8819f45f45e671e4d090b420f6d",
+        "line": 57
+      },
+      {
+        "label": "能量读出与标签口径",
+        "target": "07A1_温度场到能量的读出契约.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\07A1_温度场到能量的读出契约.md",
+        "sha256": "d1c79888129818f4370bf1103c6ac8081f50e2ae2d55973c88a16a724f2a6a2c",
+        "line": 61
+      },
+      {
+        "label": "HistGB 官方参数说明",
+        "target": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html",
+        "local": false,
+        "exists": null,
+        "resolved": null,
+        "sha256": null,
+        "line": 128
+      },
+      {
+        "label": "强基线、训练曲线与目标尺度消融",
+        "target": "../../results/learning-closed-loop-20260910/wp2-strong-audit-r1/scalar_benchmarks.png",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\results\\learning-closed-loop-20260910\\wp2-strong-audit-r1\\scalar_benchmarks.png",
+        "sha256": "1eeec65e9559c587f4f493ad7fb1398b7ee7f9ad95970e5679d95c1eebcf44a7",
+        "line": 299
+      }
+    ],
+    "snippets": [
+      {
+        "language": "text",
+        "line": 87,
+        "line_count": 5,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "python",
+        "line": 176,
+        "line_count": 10,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context",
+        "syntax_valid": true
+      },
+      {
+        "language": "powershell",
+        "line": 328,
+        "line_count": 3,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      }
+    ],
+    "python_module_command_count": 3,
+    "review_required": true
+  },
+  {
+    "chapter": "05_WP3_状态接口与自主推演.md",
+    "sha256": "b488f0d20e76a7a8b4283eae2051a272f663a6820ffa85ddb3855d17b1248163",
+    "characters": 9894,
+    "line_count": 329,
+    "headings": [
+      "# 第 5 章：WP3——状态、阶段接口与不借用未来信息的推演",
+      "## 5.1 从一次输出五个数，变成连续推进一个状态",
+      "## 5.2 414 维状态如何排列",
+      "## 5.3 第一处问题：初始状态为什么不能从后面的阶段借来",
+      "## 5.4 第二个接口问题：连续数组不等于物理上没有跳变",
+      "## 5.5 新方案：预测“阶段计算＋可观测接口”的复合过渡",
+      "### 谁能在每个复合过渡中改变",
+      "## 5.6 Ridge 基线与神经残差怎样组合",
+      "## 5.7 真实故障：把近零残差的尺度设成 1",
+      "# 推理中 correction = network_output * scale",
+      "# 近零通道自动没有神经修正，而不是放大为一个物理单位",
+      "## 5.8 Teacher forcing 与 autonomous rollout 的区别",
+      "## 5.9 修复后结果及不能遗漏的负结果",
+      "## 5.10 审计覆盖了什么",
+      "## 5.11 复现入口",
+      "## 5.12 分级练习与参考答案",
+      "### A. 判别标签是否泄漏",
+      "### B. 手算缩放 bug",
+      "### C. 半指导实现：新的扰动测试",
+      "### D. 独立任务：为真正多循环写接口规范",
+      "### E. 自测掌握标准"
+    ],
+    "fence_markers": 10,
+    "links": [
+      {
+        "label": "state_space.py",
+        "target": "../../models/v11/state_space.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\models\\v11\\state_space.py",
+        "sha256": "55705e9d85b52e38806bbd48bbcad22b0f7fd0906f8d37fdfdb413ecd6497d68",
+        "line": 19
+      },
+      {
+        "label": "inspect_learning_state_contract.py",
+        "target": "../../evaluation/inspect_learning_state_contract.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\evaluation\\inspect_learning_state_contract.py",
+        "sha256": "31991fcac12da19596ee3bb85e8459a0dda130805cc50e1d810ab3a80213dfdd",
+        "line": 20
+      },
+      {
+        "label": "learning_boundary_state.py",
+        "target": "../../models/v12/learning_boundary_state.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\models\\v12\\learning_boundary_state.py",
+        "sha256": "213f8bc6aff1b2735a4e04025bbdf63c37cbca7f13d3e550a65fe172e2514401",
+        "line": 21
+      },
+      {
+        "label": "audit_learning_boundary.py",
+        "target": "../../evaluation/audit_learning_boundary.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\evaluation\\audit_learning_boundary.py",
+        "sha256": "354e17acbe2fc2b75446f66b49d9757d0fb2ca2c4dfe093dfe1e24670e11a2cf",
+        "line": 22
+      },
+      {
+        "label": "test_learning_boundary_state.py",
+        "target": "../../tests/test_learning_boundary_state.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\tests\\test_learning_boundary_state.py",
+        "sha256": "0fca311e4436d1a1bb5af2df3b2c947cad346e6df2897ba687167213fbfad456",
+        "line": 23
+      },
+      {
+        "label": "自主边界预测与残差缩放排错",
+        "target": "../../results/learning-closed-loop-20260910/wp3-boundary-audit-r1/boundary_forecast.png",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\results\\learning-closed-loop-20260910\\wp3-boundary-audit-r1\\boundary_forecast.png",
+        "sha256": "b2ad40c3471506f45e01f247ec43dcad405bef9eb2299441846de7ea7564b917",
+        "line": 249
+      }
+    ],
+    "snippets": [
+      {
+        "language": "python",
+        "line": 172,
+        "line_count": 1,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context",
+        "syntax_valid": true
+      },
+      {
+        "language": "python",
+        "line": 182,
+        "line_count": 6,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context",
+        "syntax_valid": true
+      },
+      {
+        "language": "python",
+        "line": 208,
+        "line_count": 6,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context",
+        "syntax_valid": true
+      },
+      {
+        "language": "powershell",
+        "line": 272,
+        "line_count": 3,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "powershell",
+        "line": 281,
+        "line_count": 1,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      }
+    ],
+    "python_module_command_count": 4,
+    "review_required": true
+  },
+  {
+    "chapter": "06_WP4_坐标算子与空间记忆.md",
+    "sha256": "4bedeaadedcc108ec8616df9628403fba7244dfe2cfe8b0f6817f9be7760c22b",
+    "characters": 16073,
+    "line_count": 485,
+    "headings": [
+      "# 第6章 WP4：从场压缩到坐标神经算子，再到空间记忆传递",
+      "## 6.1 为什么标量网络和阶段末状态仍不够",
+      "## 6.2 从63个工况得到什么张量",
+      "## 6.3 两种空间坐标不能混为同一个物理轴",
+      "## 6.4 多分支 DeepONet：怎样在任意查询点给出温度",
+      "## 6.5 硬初始条件：不靠惩罚权重去“尽量接近”首帧",
+      "## 6.6 Fourier 对照到底实现了什么",
+      "## 6.7 训练循环：400次更新，不是400次遍历数据集",
+      "## 6.8 为什么要重新做“相同粗网格”的 POD/Ridge",
+      "## 6.9 三种子比较与负结果",
+      "## 6.10 接到 WP3 后，为什么突然变差",
+      "## 6.11 修复不是读取真实未来，而是携带自己预测的空间记忆",
+      "## 6.12 一次验证失败：逐位相等与浮点舍入",
+      "## 6.13 我们验证了什么，还没有验证什么",
+      "## 6.14 文件、复现命令和输出检查",
+      "## 6.15 分级练习、答案与掌握标准",
+      "### A. 手算张量与硬 IC",
+      "### B. 手算空间记忆",
+      "### C. 半指导：证明你的监督掩码没有泄漏",
+      "### D. 半指导：定位级联接口错误",
+      "### E. 独立：把输入函数改为不同传感节点",
+      "### F. 是否真正掌握"
+    ],
+    "fence_markers": 8,
+    "links": [
+      {
+        "label": "learning_coordinate_operator.py",
+        "target": "/./SciML/models/v12/learning_coordinate_operator.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\models\\v12\\learning_coordinate_operator.py",
+        "sha256": "ca25e4c97c90f0e853879b3d8e76f394658f13d709e6494b88aff5e4456e69e3",
+        "line": 41
+      },
+      {
+        "label": "三个种子的匹配监督比较",
+        "target": "/./SciML/results/learning-closed-loop-20260910/wp4-repeat-audit-r1/operator_three_seeds.png",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\results\\learning-closed-loop-20260910\\wp4-repeat-audit-r1\\operator_three_seeds.png",
+        "sha256": "0fafa0a12ade3a13b296042cd207971688672b546d0aed65aff45863716ad086",
+        "line": 253
+      },
+      {
+        "label": "固定首个测试阶段4的真实场、预测场及误差",
+        "target": "/./SciML/results/learning-closed-loop-20260910/wp4-operator-audit-r1/operator_fields.png",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\results\\learning-closed-loop-20260910\\wp4-operator-audit-r1\\operator_fields.png",
+        "sha256": "8871d1a0b5e394d0a7de802022727d123b4bb3df5d423c1cf5fd59197b70f50f",
+        "line": 259
+      },
+      {
+        "label": "AER_OperatorSplit_Bed.m",
+        "target": "/./AER_OperatorSplit_Bed.m:120",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\AER_OperatorSplit_Bed.m",
+        "sha256": "345c3c248b10602443fb030f6afaa7c12e3b99eece31e2ad83f3541ba4f7b5ff",
+        "line": 293
+      },
+      {
+        "label": "空间记忆修复前后",
+        "target": "/./SciML/results/learning-closed-loop-20260910/wp4-memory-audit-r1/memory_repair.png",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\results\\learning-closed-loop-20260910\\wp4-memory-audit-r1\\memory_repair.png",
+        "sha256": "352da2e303c60999cdee151040292cc6593e7d548d337d862fa4991dcac71996",
+        "line": 333
+      },
+      {
+        "label": "DeepONet原始论文",
+        "target": "https://arxiv.org/abs/1910.03193",
+        "local": false,
+        "exists": null,
+        "resolved": null,
+        "sha256": null,
+        "line": 483
+      },
+      {
+        "label": "FNO原始论文",
+        "target": "https://arxiv.org/abs/2010.08895",
+        "local": false,
+        "exists": null,
+        "resolved": null,
+        "sha256": null,
+        "line": 484
+      }
+    ],
+    "snippets": [
+      {
+        "language": "text",
+        "line": 306,
+        "line_count": 4,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "powershell",
+        "line": 380,
+        "line_count": 4,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "powershell",
+        "line": 397,
+        "line_count": 2,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "python",
+        "line": 435,
+        "line_count": 8,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context",
+        "syntax_valid": true
+      }
+    ],
+    "python_module_command_count": 6,
+    "review_required": true
+  },
+  {
+    "chapter": "07A1_温度场到能量的读出契约.md",
+    "sha256": "d1c79888129818f4370bf1103c6ac8081f50e2ae2d55973c88a16a724f2a6a2c",
+    "characters": 7037,
+    "line_count": 225,
+    "headings": [
+      "# 07A1 温度场到能量：先确定读出契约，再写物理损失",
+      "## 1. 为什么温度场误差小，不等于 COP 已经算对",
+      "## 2. 三种温度对象必须分开",
+      "## 3. 制冷量的归档口径与 50 点积分",
+      "## 4. 泵功并不是“目标压力乘目标流量”",
+      "## 5. 重要发现：当前 COP 分母不是净回收功公式",
+      "## 6. 能量残差为何可能是“代数上闭合”，而非独立证据",
+      "## 7. 一个可手算的信息不足例子",
+      "## 8. 对后续物理损失实现的直接影响",
+      "## 9. 复现和代码定位",
+      "## 10. 学习练习与参考答案"
+    ],
+    "fence_markers": 4,
+    "links": [
+      {
+        "label": "07A2 物理损失实现与消融",
+        "target": "07A2_物理损失的实现与消融.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\07A2_物理损失的实现与消融.md",
+        "sha256": "79b314624ec0cda15d0a2ababcdcd170b5cde4cf0a41d9306c0c997a7e250ca9",
+        "line": 16
+      },
+      {
+        "label": "审计源码",
+        "target": "/./SciML/evaluation/audit_learning_field_energy.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\evaluation\\audit_learning_field_energy.py",
+        "sha256": "05bf3a2318e3f52936a6106c5e0163d9988fa01185755ce38f43cf93344eb35c",
+        "line": 190
+      },
+      {
+        "label": "单元测试",
+        "target": "/./SciML/tests/test_learning_field_energy.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\tests\\test_learning_field_energy.py",
+        "sha256": "79af69b37a0b78cab1c8b571899f166124b3acb57cd6b1e425843f4f25b83b44",
+        "line": 193
+      },
+      {
+        "label": "结果摘要",
+        "target": "/./SciML/results/learning-closed-loop-20260910/field-energy-information-r1/summary.json",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\results\\learning-closed-loop-20260910\\field-energy-information-r1\\summary.json",
+        "sha256": "b645fa74901ff50467001a6b9963e61e4f6af9778230a7918e8cd1e7cd6772bc",
+        "line": 195
+      }
+    ],
+    "snippets": [
+      {
+        "language": "python",
+        "line": 163,
+        "line_count": 4,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context",
+        "syntax_valid": true
+      },
+      {
+        "language": "powershell",
+        "line": 200,
+        "line_count": 2,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      }
+    ],
+    "python_module_command_count": 2,
+    "review_required": true
+  },
+  {
+    "chapter": "07A2_物理损失的实现与消融.md",
+    "sha256": "79b314624ec0cda15d0a2ababcdcd170b5cde4cf0a41d9306c0c997a7e250ca9",
+    "characters": 9347,
+    "line_count": 313,
+    "headings": [
+      "# 07A2 物理损失：从量纲、自动微分到真实消融",
+      "## 1. 这次究竟演示什么",
+      "## 2. 一个有明确答案的四阶段、两循环问题",
+      "## 3. 观测、配点和测试坐标是三种数据",
+      "## 4. 网络结构与硬条件",
+      "## 5. 自动微分的实现细节",
+      "## 6. 阶段与循环接口损失",
+      "## 7. 能量损失：从全局储能到边界梯度",
+      "## 8. 四组损失的公平对照",
+      "## 9. 实际结果及不能忽略的负结果",
+      "## 10. 怎样证明不是自动微分或单位写错",
+      "## 11. 与真实项目的对应关系和移植限制",
+      "## 12. 代码、命令和输出",
+      "## 13. 练习、答案与独立任务"
+    ],
+    "fence_markers": 4,
+    "links": [
+      {
+        "label": "物理损失消融的三个关键指标",
+        "target": "/./SciML/results/learning-closed-loop-20260910/staged-physics-audit-r1/staged_physics.png",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\results\\learning-closed-loop-20260910\\staged-physics-audit-r1\\staged_physics.png",
+        "sha256": "e6aea3264d0774f5f398f2ffa7906614dcfdefb8fc26335ae2ab2d8698b25fad",
+        "line": 218
+      },
+      {
+        "label": "训练源码",
+        "target": "/./SciML/models/v12/learning_staged_physics.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\models\\v12\\learning_staged_physics.py",
+        "sha256": "adaad82f886e7e6dade3f9efc852dfa480efaecbb7f925836678ef2bc45d6ed4",
+        "line": 259
+      },
+      {
+        "label": "独立审计",
+        "target": "/./SciML/evaluation/audit_learning_staged_physics.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\evaluation\\audit_learning_staged_physics.py",
+        "sha256": "8a4c1c29827cd811a92c381616f53685e6f4c379dc41a4355559e12036fb89e6",
+        "line": 261
+      },
+      {
+        "label": "四项单元测试",
+        "target": "/./SciML/tests/test_learning_staged_physics.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\tests\\test_learning_staged_physics.py",
+        "sha256": "34e930e5710110c0585ada92940f8b77b488c1b5aecbbfd2de9748e794ed6853",
+        "line": 263
+      }
+    ],
+    "snippets": [
+      {
+        "language": "python",
+        "line": 110,
+        "line_count": 6,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context",
+        "syntax_valid": true
+      },
+      {
+        "language": "powershell",
+        "line": 268,
+        "line_count": 3,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      }
+    ],
+    "python_module_command_count": 3,
+    "review_required": true
+  },
+  {
+    "chapter": "07B_结构化外推与可信边界.md",
+    "sha256": "084e069ddfebb0757904bac2879137abdff871142864d5546c18a41c5ae2a619",
+    "characters": 10277,
+    "line_count": 311,
+    "headings": [
+      "# 第7章专题B：结构化外推、失败诊断与可信使用边界",
+      "## B.1 IID、ID与OOD分别指什么",
+      "## B.2 63例的覆盖范围与不能检验的事情",
+      "## B.3 四类留出怎么构造，为什么必须先固定",
+      "## B.4 模型预算、张量和公平比较",
+      "## B.5 误差指标怎样避免“分母很大所以看起来很好”",
+      "## B.6 真实结果：随机测试表现不能迁移成外推保证",
+      "## B.7 90%的校准区间为什么在OOD上不再保证90%",
+      "## B.8 材料外推失败的可验证机制：未见one-hot没有学习信号",
+      "## B.9 可信行为修复：拒绝未见材料，不伪装成准确预测",
+      "## B.10 审计与复现",
+      "## B.11 练习、答案与独立掌握标准",
+      "### A. 为什么行随机划分可能造成泄漏",
+      "### B. 推导恒定类别的梯度",
+      "### C. 手算校准序位与覆盖",
+      "### D. 半指导：新增最小尺寸留出",
+      "### E. 独立：设计连续材料参数条件模型",
+      "### F. 掌握标准"
+    ],
+    "fence_markers": 2,
+    "links": [
+      {
+        "label": "learning_structured_ood.py",
+        "target": "/./SciML/models/v12/learning_structured_ood.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\models\\v12\\learning_structured_ood.py",
+        "sha256": "ee797369d96fd27a5bd6b2c22f18aae65233404e3e9c95fd6418738a91e76f3f",
+        "line": 41
+      },
+      {
+        "label": "标量与场模型的结构化外推",
+        "target": "/./SciML/results/learning-closed-loop-20260910/ood-audit-r1/structured_ood.png",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\results\\learning-closed-loop-20260910\\ood-audit-r1\\structured_ood.png",
+        "sha256": "db30cd0bd5fcc3130bcf78219b54de40b71396407f193f3d51f103bf471d3bf1",
+        "line": 152
+      },
+      {
+        "label": "diagnose_learning_material_ood.py",
+        "target": "/./SciML/evaluation/diagnose_learning_material_ood.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\evaluation\\diagnose_learning_material_ood.py",
+        "sha256": "5d1d13e4238a95109c377859ef71adc6f0212e250fd8d9d3cd15990078c95f2c",
+        "line": 204
+      },
+      {
+        "label": "audit_learning_structured_ood.py",
+        "target": "/./SciML/evaluation/audit_learning_structured_ood.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\evaluation\\audit_learning_structured_ood.py",
+        "sha256": "f72e9a2289abffcc061d9d7bb26a838e07be5ed59d154b84973713775dd53abc",
+        "line": 235
+      }
+    ],
+    "snippets": [
+      {
+        "language": "powershell",
+        "line": 243,
+        "line_count": 7,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      }
+    ],
+    "python_module_command_count": 7,
+    "review_required": true
+  },
+  {
+    "chapter": "07C_历史多循环与重启接口.md",
+    "sha256": "5001f806adb62c488768d13f5d8dc1cb5dc616e7f368b6b3d2193292b1840029",
+    "characters": 13195,
+    "line_count": 373,
+    "headings": [
+      "# 07C 历史多循环：重启接口、方向性记忆与状态到场的连接",
+      "## 1. 本章要解决的具体问题",
+      "## 2. 先找真实的后续循环，不能把单循环复制三次",
+      "### 按整个工况划分，而不是按循环或时间片划分",
+      "## 3. 515 维状态到底存了什么",
+      "### 方向性记忆不是再存一份径向温度",
+      "## 4. 四个物理阶段为什么对应五种可学习转移",
+      "## 5. 初态权限：训练标签可见，不代表推演时可见",
+      "## 6. 训练映射：先拟合线性变化，再学习神经残差",
+      "## 7. 固定同一组工况，再谈误差随循环增长",
+      "## 8. 把预测边界接入 DeepONet：不再索取真实阶段初场",
+      "## 9. 温度场结果：把输入权限一致的模型放在一起比较",
+      "## 10. 源码与证据入口",
+      "## 11. 复现命令与证据保护",
+      "## 12. 带答案的最小可执行练习",
+      "# exercise: historical_interfaces",
+      "# 每个工况节点数相同：先合并平方误差，不能直接平均 RMSE。",
+      "## 13. 半开放排错练习",
+      "## 14. 独立进阶任务与验收标准"
+    ],
+    "fence_markers": 4,
+    "links": [
+      {
+        "label": "同一组工况的循环末态误差",
+        "target": "/./SciML/results/learning-closed-loop-20260910/historical-rollout-audit-r1/historical_rollout.png",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\results\\learning-closed-loop-20260910\\historical-rollout-audit-r1\\historical_rollout.png",
+        "sha256": "8e09bcfcddc96602d94c64b14e4783e3979787d591e5439206725a1be5e2b78b",
+        "line": 208
+      },
+      {
+        "label": "多循环场预测与真实入口对照",
+        "target": "/./SciML/results/learning-closed-loop-20260910/historical-fields-audit-r1/historical_fields.png",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\results\\learning-closed-loop-20260910\\historical-fields-audit-r1\\historical_fields.png",
+        "sha256": "d34b9ea610fd1cc85af75880c7b6fc0d00a89f963c54a1189d51d02a20ecc0c7",
+        "line": 265
+      },
+      {
+        "label": "边界数据构造、模型、推演与保存",
+        "target": "/./SciML/models/v12/learning_historical_rollout.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\models\\v12\\learning_historical_rollout.py",
+        "sha256": "44d0fccb57adcd24cac167cd33d5aafd834e724984018fc80731fe5e3fd714da",
+        "line": 269
+      },
+      {
+        "label": "边界到场连接",
+        "target": "/./SciML/models/v12/learning_historical_fields.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\models\\v12\\learning_historical_fields.py",
+        "sha256": "78769aec2f0a49e5af733f6c3ddeb796dd0e7af85b0bfff5f3b9c343f9f7750c",
+        "line": 270
+      },
+      {
+        "label": "边界独立审计",
+        "target": "/./SciML/evaluation/audit_learning_historical_rollout.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\evaluation\\audit_learning_historical_rollout.py",
+        "sha256": "43c0629e80ccef51f6697169b94457ab61be4607c05d067b8aa28c600464da3d",
+        "line": 271
+      },
+      {
+        "label": "场独立审计",
+        "target": "/./SciML/evaluation/audit_learning_historical_fields.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\evaluation\\audit_learning_historical_fields.py",
+        "sha256": "d1be6e20e662029e4c005a4ceb1ca2f3e4950276d68029239ee9bb5d89e7ca92",
+        "line": 272
+      },
+      {
+        "label": "接口单元测试",
+        "target": "/./SciML/tests/test_learning_historical_rollout.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\tests\\test_learning_historical_rollout.py",
+        "sha256": "43204b077af671b5dec097bb6854bbc139a0fbbb171df472731b8290341d3a3c",
+        "line": 273
+      }
+    ],
+    "snippets": [
+      {
+        "language": "powershell",
+        "line": 291,
+        "line_count": 6,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "python",
+        "line": 309,
+        "line_count": 24,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context",
+        "syntax_valid": true
+      }
+    ],
+    "python_module_command_count": 5,
+    "review_required": true
+  },
+  {
+    "chapter": "08_WP5_PINN逆问题.md",
+    "sha256": "c1df6be864779a201b9a3bfde8b54af23576a31cfc1ca1bde3aca4016422f230",
+    "characters": 10422,
+    "line_count": 365,
+    "headings": [
+      "# 第 8 章：PINN 逆问题——从 12 个温度测点识别方程参数",
+      "## 8.1 先分清三个不同任务",
+      "## 8.2 一个足够小、但包含关键困难的逆 PDE",
+      "## 8.3 训练究竟看到了哪些数据",
+      "## 8.4 网络结构：输出温度，不是直接输出参数",
+      "## 8.5 自动微分：最容易写错的核心步骤",
+      "## 8.6 损失和优化过程",
+      "## 8.7 为什么还要纯数据和传统方法对照",
+      "## 8.8 实际结果与公平评估",
+      "## 8.9 可辨识性：优化再久也补不回的信息",
+      "## 8.10 回到 SMA 项目：辨识局部有效热响应",
+      "## 8.11 实际遇到的错误：传统基线假收敛",
+      "## 8.12 文件和一键复现",
+      "## 8.13 分级练习与参考答案"
+    ],
+    "fence_markers": 4,
+    "links": [
+      {
+        "label": "PINN 原始方法入口",
+        "target": "https://arxiv.org/abs/1711.10561",
+        "local": false,
+        "exists": null,
+        "resolved": null,
+        "sha256": null,
+        "line": 16
+      },
+      {
+        "label": "稀疏测点与重构误差，两个热图使用相同色标",
+        "target": "../../results/learning-closed-loop-20260910/wp5-audit-r1/pinn_inverse.png",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\results\\learning-closed-loop-20260910\\wp5-audit-r1\\pinn_inverse.png",
+        "sha256": "700afbcb4889321027153d487219ae847fb7bd97ddd62b8c90c73b9f6cf58fa5",
+        "line": 197
+      },
+      {
+        "label": "项目曲线反演；阴影区域的 SMA 温度未用于拟合",
+        "target": "../../results/learning-closed-loop-20260910/wp5-audit-r1/local_thermal_inverse.png",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\results\\learning-closed-loop-20260910\\wp5-audit-r1\\local_thermal_inverse.png",
+        "sha256": "460d55cec0bb3ab7643ab87d8cf8fec87cc7f1fc64a894cdc761cd59db69c8b4",
+        "line": 309
+      }
+    ],
+    "snippets": [
+      {
+        "language": "python",
+        "line": 116,
+        "line_count": 9,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context",
+        "syntax_valid": true
+      },
+      {
+        "language": "powershell",
+        "line": 315,
+        "line_count": 3,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      }
+    ],
+    "python_module_command_count": 3,
+    "review_required": true
+  },
+  {
+    "chapter": "09_WP6_不确定性与校准.md",
+    "sha256": "f99979b2221ba5428fe8eb0579ef2c4152e5c204617b2c20826976d5d52ff0f2",
+    "characters": 4965,
+    "line_count": 159,
+    "headings": [
+      "# 第 9 章：模型说“不确定”时，究竟是什么意思",
+      "## 9.1 点预测、分歧和概率是三个层次",
+      "## 9.2 本次模型和数据可见性",
+      "## 9.3 真实点预测与误差—不确定性关系",
+      "## 9.4 为什么要校准，而不是直接取均值 ± 两倍标准差",
+      "## 9.5 13 例为什么不能给出有限的 95% 区间",
+      "## 9.6 材料 OOD：完美 AUC 也可能没那么神奇",
+      "## 9.7 拒绝预测与风险—覆盖率",
+      "## 9.8 复现与自测"
+    ],
+    "fence_markers": 2,
+    "links": [
+      {
+        "label": "Deep ensembles 方法入口",
+        "target": "https://arxiv.org/abs/1612.01474",
+        "local": false,
+        "exists": null,
+        "resolved": null,
+        "sha256": null,
+        "line": 12
+      },
+      {
+        "label": "能量读出审计",
+        "target": "07A1_温度场到能量的读出契约.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\07A1_温度场到能量的读出契约.md",
+        "sha256": "d1c79888129818f4370bf1103c6ac8081f50e2ae2d55973c88a16a724f2a6a2c",
+        "line": 38
+      },
+      {
+        "label": "Conformal 方法入口",
+        "target": "https://arxiv.org/abs/2107.07511",
+        "local": false,
+        "exists": null,
+        "resolved": null,
+        "sha256": null,
+        "line": 78
+      }
+    ],
+    "snippets": [
+      {
+        "language": "powershell",
+        "line": 136,
+        "line_count": 2,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      }
+    ],
+    "python_module_command_count": 2,
+    "review_required": true
+  },
+  {
+    "chapter": "10_WP6_主动学习.md",
+    "sha256": "e4acd8c862e4e159eb5dd763a605707c34595f3e2dace56c361731eb14def6ac",
+    "characters": 4780,
+    "line_count": 174,
+    "headings": [
+      "# 第 10 章：主动学习——让模型决定下一例最值得看什么",
+      "## 10.1 把“已有全部数据”变成一个可检查的学习实验",
+      "## 10.2 怎样才算公平比较",
+      "## 10.3 策略一：随机采样不是稻草人",
+      "## 10.4 策略二：只看网络分歧",
+      "## 10.5 策略三：复合选样",
+      "## 10.6 选择日志如何证明没有偷看标签",
+      "## 10.7 实际学习曲线：没有全面赢家",
+      "## 10.8 怎样接入真正的昂贵求解器",
+      "## 10.9 复现与练习"
+    ],
+    "fence_markers": 4,
+    "links": [
+      {
+        "label": "同标签预算的学习曲线；阴影为三个种子的一个标准差，不是置信区间",
+        "target": "../../results/learning-closed-loop-20260910/wp6-uq-active-audit-r1/active_learning_curves.png",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\results\\learning-closed-loop-20260910\\wp6-uq-active-audit-r1\\active_learning_curves.png",
+        "sha256": "7fd6533a2af2005758868acfbc7e7f2d25eba238cdfac51d0021912abc63973e",
+        "line": 134
+      }
+    ],
+    "snippets": [
+      {
+        "language": "text",
+        "line": 13,
+        "line_count": 7,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "powershell",
+        "line": 153,
+        "line_count": 2,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      }
+    ],
+    "python_module_command_count": 2,
+    "review_required": true
+  },
+  {
+    "chapter": "11_WP6_设计候选与归档回查.md",
+    "sha256": "bb83d486f07e2884ee79712270baf783967a0c4b8e235016b8e20bb1214531d7",
+    "characters": 7458,
+    "line_count": 251,
+    "headings": [
+      "# 第 11 章：从预测到决策——Pareto 候选与归档回查",
+      "## 11.1 本章要学会什么",
+      "## 11.2 接续哪个模型，为什么",
+      "## 11.3 输入输出与函数地图",
+      "## 11.4 不确定性如何进入设计",
+      "### 为什么不能称作优化后仍有 90% 置信保证",
+      "## 11.5 超体积排序与一个必须保留的负结果",
+      "## 11.6 为什么先保存，再打开答案",
+      "## 11.7 应力数据从哪里来，如何避免“伪安全”",
+      "## 11.8 实际结果",
+      "## 11.9 复现和审计",
+      "## 11.10 练习与参考答案",
+      "### A. 手算：掌握支配方向和面积",
+      "### B. 排错：为什么这次预测改善全部为零，仍然选择了三点",
+      "### C. 半指导实现：增加温差最低要求",
+      "### D. 独立扩展：从有限池到连续设计"
+    ],
+    "fence_markers": 6,
+    "links": [
+      {
+        "label": "learning_design_loop.py",
+        "target": "../../active_learning/learning_design_loop.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\active_learning\\learning_design_loop.py",
+        "sha256": "39e364b361824a132b4d0a0deb245dcc5efa513511707e15336ab7afcd807b23",
+        "line": 40
+      },
+      {
+        "label": "audit_learning_design.py",
+        "target": "../../evaluation/audit_learning_design.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\evaluation\\audit_learning_design.py",
+        "sha256": "5de9b97caf3da55cb325e69c8132fecd2f348cab8978e81b9fee35511cee3dfc",
+        "line": 41
+      },
+      {
+        "label": "test_learning_design_loop.py",
+        "target": "../../tests/test_learning_design_loop.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\tests\\test_learning_design_loop.py",
+        "sha256": "50e07dc58af899b4e0d2d9fb395b393bed52da221cb33200403cee9998b32fdf",
+        "line": 42
+      },
+      {
+        "label": "温度场到能量的读出契约",
+        "target": "07A1_温度场到能量的读出契约.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\07A1_温度场到能量的读出契约.md",
+        "sha256": "d1c79888129818f4370bf1103c6ac8081f50e2ae2d55973c88a16a724f2a6a2c",
+        "line": 58
+      },
+      {
+        "label": "设计候选与归档回查",
+        "target": "../../results/learning-closed-loop-20260910/wp6-design-audit-r1/design_verification.png",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\results\\learning-closed-loop-20260910\\wp6-design-audit-r1\\design_verification.png",
+        "sha256": "fabca1649f72f37bd16e1ba41bae65d9cf3386df20595a8bc14922cf559a84ab",
+        "line": 197
+      }
+    ],
+    "snippets": [
+      {
+        "language": "text",
+        "line": 127,
+        "line_count": 7,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "text",
+        "line": 148,
+        "line_count": 5,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "powershell",
+        "line": 204,
+        "line_count": 3,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      }
+    ],
+    "python_module_command_count": 3,
+    "review_required": true
+  },
+  {
+    "chapter": "12_统一复现手册与代码索引.md",
+    "sha256": "801c69881b1ed05a5647efa8daae86cb066c1e55af038d0af6e7b944a2cae7fc",
+    "characters": 8859,
+    "line_count": 202,
+    "headings": [
+      "# 第 12 章：统一复现手册、依赖关系与代码索引",
+      "## 12.1 “复现”要先说清复现哪一层",
+      "## 12.2 工作目录和实际运行环境",
+      "## 12.3 三个根目录以及不可丢的原始文件",
+      "## 12.4 第一次执行：先跑不训练的预检",
+      "## 12.5 单独重训一个模型的最短完整路径",
+      "## 12.6 训练入口与依赖索引",
+      "## 12.7 把 UQ、主动学习和设计串起来",
+      "## 12.8 三类依赖历史失败证据的审计",
+      "## 12.9 如何读取一个结果目录",
+      "## 12.10 时间、种子与成本怎么记录"
+    ],
+    "fence_markers": 10,
+    "links": [
+      {
+        "label": "复现预检器",
+        "target": "/./SciML/evaluation/learning_reproduction_inventory.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\evaluation\\learning_reproduction_inventory.py",
+        "sha256": "287f209894328c7ccef144e1d9252887bf26d6154480c75db59f88504a50a904",
+        "line": 201
+      }
+    ],
+    "snippets": [
+      {
+        "language": "powershell",
+        "line": 28,
+        "line_count": 1,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "powershell",
+        "line": 72,
+        "line_count": 1,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "powershell",
+        "line": 87,
+        "line_count": 1,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "powershell",
+        "line": 98,
+        "line_count": 2,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "powershell",
+        "line": 142,
+        "line_count": 5,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      }
+    ],
+    "python_module_command_count": 9,
+    "review_required": true
+  },
+  {
+    "chapter": "13_故障定位与失败证据.md",
+    "sha256": "b05c5db92a8107e825bba33b0d2556aa8c3af11b2e6cec8449a4f24ca515713a",
+    "characters": 5945,
+    "line_count": 193,
+    "headings": [
+      "# 第 13 章：故障定位——不要把“跑不通”和“结果不好”混为一谈",
+      "## 13.1 先给失败分类，再决定改哪里",
+      "## 13.2 通用定位流程",
+      "## 13.3 路径与 Python 包导入",
+      "## 13.4 初态偷偷用了未来数据",
+      "## 13.5 接近零的残差尺度，为什么会制造巨大位移",
+      "## 13.6 51 点镜像丢掉的不是几个插值点，而是信息",
+      "## 13.7 浮点差异为什么不能按物理门禁处理",
+      "## 13.8 优化器说 success，但参数并不是最优",
+      "## 13.9 材料 OOD 失败：为什么不能继续调直到分数好看",
+      "## 13.10 95% 区间无限宽，不是需要夹紧分位数的 bug",
+      "## 13.11 学习模型没有胜出，怎么继续",
+      "## 13.12 零 Pareto 改进与工程安全未知",
+      "## 13.13 长任务的执行与证据纪律",
+      "## 13.14 故障记录模板与验收题",
+      "## 13.15 失败证据的快速索引"
+    ],
+    "fence_markers": 0,
+    "links": [],
+    "snippets": [],
+    "python_module_command_count": 0,
+    "review_required": true
+  },
+  {
+    "chapter": "14_分级练习与独立扩展.md",
+    "sha256": "b36420fd68f859e7e3c45503a2a9a0bdf0c5841ad327625f2e85eef3f57d9eec",
+    "characters": 8862,
+    "line_count": 302,
+    "headings": [
+      "# 第 14 章：分级练习、参考答案与独立扩展",
+      "## 14.1 从“看懂演示”到“自己实现”差在哪里",
+      "## 14.2 A 层：八个可以手算或明确核对的参考练习",
+      "### E01：广播让正确标签变成错误损失",
+      "### E02：归一化能不能看到测试集",
+      "### E03：亲手完成一次反向传播",
+      "### E04：为什么 51 点不能恢复 101 点方向记忆",
+      "### E05：不训练也能检查硬初始条件",
+      "### E06：用解析解审查 PDE 与能量残差",
+      "### E07：有限样本校准的秩",
+      "### E08：选点权限、并列排序和二维 Pareto",
+      "## 14.3 B 层：少提示实现三个完整小任务",
+      "### B1：从原始表到一个可信标量模型",
+      "### B2：最小 stage-conditioned DeepONet",
+      "### B3：自己写两轮主动学习",
+      "## 14.4 C 层：高阶任务应该怎样独立启动",
+      "### C1：多步训练能否降低历史第三循环漂移",
+      "### C2：Fourier 算子跨分辨率测试",
+      "### C3：主动学习中的“多样性”是否值得加入",
+      "### C4：从现有材料 OOD 失败设计迁移实验",
+      "### C5：真正的场到能量读出与实验标定",
+      "## 14.5 掌握程度量表：如何知道自己可以独立做下一步"
+    ],
+    "fence_markers": 2,
+    "links": [
+      {
+        "label": "learning_exercises.py",
+        "target": "/./SciML/evaluation/learning_exercises.py",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\evaluation\\learning_exercises.py",
+        "sha256": "3cac4df3fa96916594ee8e5bc250834958b50b6de4f8b610ecf137d01c49f11b",
+        "line": 26
+      }
+    ],
+    "snippets": [
+      {
+        "language": "powershell",
+        "line": 29,
+        "line_count": 1,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      }
+    ],
+    "python_module_command_count": 1,
+    "review_required": true
+  },
+  {
+    "chapter": "15_结果总览与闭环审查.md",
+    "sha256": "8c7c034ad75a1edbed362629172c8d527e75a59095e8933f600d5aa07e3c8740",
+    "characters": 9605,
+    "line_count": 229,
+    "headings": [
+      "# 第 15 章：结果总览、原计划对照与闭环审查",
+      "## 15.1 先说清这份交付是什么",
+      "## 15.2 整条链如何接起来",
+      "## 15.3 结果应该如何一起阅读",
+      "## 15.4 原始规划与学习完成边界逐项对照",
+      "## 15.5 16项交付需求的证据索引",
+      "## 15.6 软件回归究竟证明了什么",
+      "## 15.7 两种审查不能互相代替",
+      "## 15.8 面试或下一项研究怎样真实介绍"
+    ],
+    "fence_markers": 8,
+    "links": [
+      {
+        "label": "双重终审记录",
+        "target": "../learning_closed_loop_final_review_20260910.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_final_review_20260910.md",
+        "sha256": "5c12faa2818ba8d7f7dd12a99032e452c9943cf9d013bd4d2b289075af7c1159",
+        "line": 10
+      },
+      {
+        "label": "需求矩阵",
+        "target": "../learning_closed_loop_requirements_20260910.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_requirements_20260910.md",
+        "sha256": "d8dda002a101eb038cc8a2938b284808679f40cc1c1643e24f5d1b4400148cd9",
+        "line": 125
+      },
+      {
+        "label": "双重终审记录",
+        "target": "../learning_closed_loop_final_review_20260910.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_final_review_20260910.md",
+        "sha256": "5c12faa2818ba8d7f7dd12a99032e452c9943cf9d013bd4d2b289075af7c1159",
+        "line": 198
+      }
+    ],
+    "snippets": [
+      {
+        "language": "text",
+        "line": 19,
+        "line_count": 22,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "powershell",
+        "line": 154,
+        "line_count": 1,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "powershell",
+        "line": 187,
+        "line_count": 2,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      },
+      {
+        "language": "powershell",
+        "line": 212,
+        "line_count": 1,
+        "executed": false,
+        "scope": "syntax/structure inventory only; pedagogical fragments may need chapter context"
+      }
+    ],
+    "python_module_command_count": 4,
+    "review_required": true
+  },
+  {
+    "chapter": "README.md",
+    "sha256": "785b9c57b2a07c09bfeae9665cf071629afe0bb879e710d4a5758aa5fc6b7470",
+    "characters": 1994,
+    "line_count": 57,
+    "headings": [
+      "# SMA–SciML 项目闭环学习报告（学习交付版）",
+      "## 读者起点与阅读方式",
+      "## 完整报告的章节覆盖清单",
+      "## 三种证据不可混在一起",
+      "## 报告的验收方式"
+    ],
+    "fence_markers": 0,
+    "links": [
+      {
+        "label": "双重终审记录",
+        "target": "../learning_closed_loop_final_review_20260910.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_final_review_20260910.md",
+        "sha256": "5c12faa2818ba8d7f7dd12a99032e452c9943cf9d013bd4d2b289075af7c1159",
+        "line": 5
+      },
+      {
+        "label": "项目全景、物理问题、原计划和当前证据边界",
+        "target": "01_项目全景与学习路线.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\01_项目全景与学习路线.md",
+        "sha256": "bd52439c66bbcc8c2c1a4cad88786cbf6c1aac4019cd668f52ba22fd692bb188",
+        "line": 18
+      },
+      {
+        "label": "数值数据如何生成：状态/能量契约、失败、导出、版本与可追溯性",
+        "target": "02_数值数据与可追溯契约.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\02_数值数据与可追溯契约.md",
+        "sha256": "0bbb9861cfd37ab374e0945a3fb2081c920b2589298587fbad99d6f24af56a2c",
+        "line": 19
+      },
+      {
+        "label": "从文件到张量：数据检查、工况隔离、归一化、坐标和缺失通道",
+        "target": "03_从文件到训练张量.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\03_从文件到训练张量.md",
+        "sha256": "643ad7f3a71009cded1a4cb79bdfbded2e6c0510525152c9974d711ff459a5ed",
+        "line": 20
+      },
+      {
+        "label": "WP2：强标量基线、神经网络、训练循环和误差分析",
+        "target": "04_WP2_标量基线与神经训练.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\04_WP2_标量基线与神经训练.md",
+        "sha256": "81a72b6833bfc090abb4451948e7c8797d9cab5b71a3a783247fa21034876710",
+        "line": 21
+      },
+      {
+        "label": "WP3：残差状态模型、阶段约束、初始化和递推误差",
+        "target": "05_WP3_状态接口与自主推演.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\05_WP3_状态接口与自主推演.md",
+        "sha256": "b488f0d20e76a7a8b4283eae2051a272f663a6820ffa85ddb3855d17b1248163",
+        "line": 22
+      },
+      {
+        "label": "WP4：POD、坐标型 DeepONet、Fourier 对照及空间记忆修复",
+        "target": "06_WP4_坐标算子与空间记忆.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\06_WP4_坐标算子与空间记忆.md",
+        "sha256": "4bedeaadedcc108ec8616df9628403fba7244dfe2cfe8b0f6817f9be7760c22b",
+        "line": 23
+      },
+      {
+        "label": "专题A1：温度场到能量的读出契约",
+        "target": "07A1_温度场到能量的读出契约.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\07A1_温度场到能量的读出契约.md",
+        "sha256": "d1c79888129818f4370bf1103c6ac8081f50e2ae2d55973c88a16a724f2a6a2c",
+        "line": 24
+      },
+      {
+        "label": "专题A2：物理损失的实现与消融",
+        "target": "07A2_物理损失的实现与消融.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\07A2_物理损失的实现与消融.md",
+        "sha256": "79b314624ec0cda15d0a2ababcdcd170b5cde4cf0a41d9306c0c997a7e250ca9",
+        "line": 24
+      },
+      {
+        "label": "专题B：结构化外推与可信边界",
+        "target": "07B_结构化外推与可信边界.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\07B_结构化外推与可信边界.md",
+        "sha256": "084e069ddfebb0757904bac2879137abdff871142864d5546c18a41c5ae2a619",
+        "line": 24
+      },
+      {
+        "label": "专题C：历史多循环与重启接口",
+        "target": "07C_历史多循环与重启接口.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\07C_历史多循环与重启接口.md",
+        "sha256": "5001f806adb62c488768d13f5d8dc1cb5dc616e7f368b6b3d2193292b1840029",
+        "line": 24
+      },
+      {
+        "label": "WP5：PINN 逆问题、稀疏重构和真实排错过程",
+        "target": "08_WP5_PINN逆问题.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\08_WP5_PINN逆问题.md",
+        "sha256": "c1df6be864779a201b9a3bfde8b54af23576a31cfc1ca1bde3aca4016422f230",
+        "line": 25
+      },
+      {
+        "label": "WP6-A：ensemble、不确定性、校准、OOD 与拒绝预测",
+        "target": "09_WP6_不确定性与校准.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\09_WP6_不确定性与校准.md",
+        "sha256": "f99979b2221ba5428fe8eb0579ef2c4152e5c204617b2c20826976d5d52ff0f2",
+        "line": 26
+      },
+      {
+        "label": "WP6-B：主动学习与随机采样的公平对比",
+        "target": "10_WP6_主动学习.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\10_WP6_主动学习.md",
+        "sha256": "e4acd8c862e4e159eb5dd763a605707c34595f3e2dace56c361731eb14def6ac",
+        "line": 27
+      },
+      {
+        "label": "WP6-C：Pareto 搜索、约束筛选和已有数值标签回查",
+        "target": "11_WP6_设计候选与归档回查.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\11_WP6_设计候选与归档回查.md",
+        "sha256": "bb83d486f07e2884ee79712270baf783967a0c4b8e235016b8e20bb1214531d7",
+        "line": 28
+      },
+      {
+        "label": "统一复现手册、依赖关系与代码索引",
+        "target": "12_统一复现手册与代码索引.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\12_统一复现手册与代码索引.md",
+        "sha256": "801c69881b1ed05a5647efa8daae86cb066c1e55af038d0af6e7b944a2cae7fc",
+        "line": 29
+      },
+      {
+        "label": "常见故障、失败案例和定位流程",
+        "target": "13_故障定位与失败证据.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\13_故障定位与失败证据.md",
+        "sha256": "b05c5db92a8107e825bba33b0d2556aa8c3af11b2e6cec8449a4f24ca515713a",
+        "line": 30
+      },
+      {
+        "label": "分级练习、参考实现、项目扩展及掌握程度自测",
+        "target": "14_分级练习与独立扩展.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\14_分级练习与独立扩展.md",
+        "sha256": "b36420fd68f859e7e3c45503a2a9a0bdf0c5841ad327625f2e85eef3f57d9eec",
+        "line": 31
+      },
+      {
+        "label": "结果汇总、能力/证据边界、原计划逐项对照和双重审查记录",
+        "target": "15_结果总览与闭环审查.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_report\\15_结果总览与闭环审查.md",
+        "sha256": "8c7c034ad75a1edbed362629172c8d527e75a59095e8933f600d5aa07e3c8740",
+        "line": 32
+      },
+      {
+        "label": "需求矩阵",
+        "target": "../learning_closed_loop_requirements_20260910.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\learning_closed_loop_requirements_20260910.md",
+        "sha256": "d8dda002a101eb038cc8a2938b284808679f40cc1c1643e24f5d1b4400148cd9",
+        "line": 35
+      },
+      {
+        "label": "WP2–WP4 简短指南",
+        "target": "../WP2_WP4_现有数据学习指南_20260910.md",
+        "local": true,
+        "exists": true,
+        "resolved": "[local-path-omitted] project\\gx101r1\\SciML\\docs\\WP2_WP4_现有数据学习指南_20260910.md",
+        "sha256": "78e110b0f7a878fc6782ce05cfbf8d8a92b48c1212a94a7397ee3a98c775555d",
+        "line": 36
+      }
+    ],
+    "snippets": [],
+    "python_module_command_count": 0,
+    "review_required": true
+  }
+]

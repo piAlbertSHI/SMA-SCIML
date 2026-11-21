@@ -1,0 +1,75 @@
+{
+  "status": "completed_material_representation_diagnostic",
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "training_materials": [
+    "recA"
+  ],
+  "unseen_material_cases_rejected": 7,
+  "target_names": [
+    "Qcool_J",
+    "Wpump_J",
+    "COP",
+    "SCP_W_per_kg",
+    "deltaT_hot_cold_max_K"
+  ],
+  "diagnostics": [
+    {
+      "seed": 20260910,
+      "max_data_gradient_material_weight_by_member": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_absolute_prediction_shift_if_unseen_material_recoded_as_seen": [
+        0.650787138024342,
+        0.00012583653518402472,
+        0.08401752593020795,
+        18.46886605963177,
+        0.07133285969797291
+      ],
+      "no_optimizer_update_performed": true
+    },
+    {
+      "seed": 20260911,
+      "max_data_gradient_material_weight_by_member": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_absolute_prediction_shift_if_unseen_material_recoded_as_seen": [
+        0.623394871855896,
+        9.19101596468167e-05,
+        0.09581564834952419,
+        13.53757057437752,
+        0.05445119127916435
+      ],
+      "no_optimizer_update_performed": true
+    },
+    {
+      "seed": 20260912,
+      "max_data_gradient_material_weight_by_member": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_absolute_prediction_shift_if_unseen_material_recoded_as_seen": [
+        0.4851042077136077,
+        0.00014735125437992963,
+        0.08766838809860271,
+        27.147532226357114,
+        0.025485514014155282
+      ],
+      "no_optimizer_update_performed": true
+    }
+  ],
+  "scope": "zero data gradient in two standardized one-hot columns; weight decay may still alter weights, no learned material contrast",
+  "abstention_scope": "known-category rule only; does not certify predictions on seen categories or solve material transfer",
+  "counterfactual_scope": "recoding test category is diagnostic ONLY, not a repaired deployed prediction",
+  "source_content_sha256": "ff28bf6eee81ed41d3a12d41c20ea4370eaf6fcdfa770e3127ae1af96db18f5c",
+  "upstream_summary_sha256": "9a92640cd157a8d61c4d2be7d09ffbea606c8984d0f55767078b766a9d8974a2",
+  "implementation_sha256": "5d1d13e4238a95109c377859ef71adc6f0212e250fd8d9d3cd15990078c95f2c",
+  "artifacts": {
+    "material_support_decisions.json": "f3303bbffa7e0e0bf12d144cf829c5c1e8c2e1d7e1a714f6516a78a4d68c0cc5"
+  }
+}

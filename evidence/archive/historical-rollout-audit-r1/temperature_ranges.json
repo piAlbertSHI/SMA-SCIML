@@ -1,0 +1,86 @@
+[
+  {
+    "seed": 20260910,
+    "variant": "autonomous_neural",
+    "temperature_min_K": 269.77172681829944,
+    "temperature_max_K": 318.61318773270654,
+    "outside_200_400K_count": 0
+  },
+  {
+    "seed": 20260910,
+    "variant": "autonomous_affine",
+    "temperature_min_K": 270.9228050132652,
+    "temperature_max_K": 318.2031563101435,
+    "outside_200_400K_count": 0
+  },
+  {
+    "seed": 20260910,
+    "variant": "skip_restart",
+    "temperature_min_K": 269.8192694101914,
+    "temperature_max_K": 318.61318773270654,
+    "outside_200_400K_count": 0
+  },
+  {
+    "seed": 20260910,
+    "variant": "erase_memory",
+    "temperature_min_K": 264.56033937936974,
+    "temperature_max_K": 323.6596121155407,
+    "outside_200_400K_count": 0
+  },
+  {
+    "seed": 20260911,
+    "variant": "autonomous_neural",
+    "temperature_min_K": 269.9875953902868,
+    "temperature_max_K": 318.5878719106032,
+    "outside_200_400K_count": 0
+  },
+  {
+    "seed": 20260911,
+    "variant": "autonomous_affine",
+    "temperature_min_K": 270.9228050132652,
+    "temperature_max_K": 318.2031563101435,
+    "outside_200_400K_count": 0
+  },
+  {
+    "seed": 20260911,
+    "variant": "skip_restart",
+    "temperature_min_K": 270.03536444754604,
+    "temperature_max_K": 318.5878719106032,
+    "outside_200_400K_count": 0
+  },
+  {
+    "seed": 20260911,
+    "variant": "erase_memory",
+    "temperature_min_K": 267.993699638705,
+    "temperature_max_K": 323.6365097161951,
+    "outside_200_400K_count": 0
+  },
+  {
+    "seed": 20260912,
+    "variant": "autonomous_neural",
+    "temperature_min_K": 270.8842114500725,
+    "temperature_max_K": 318.63816104715875,
+    "outside_200_400K_count": 0
+  },
+  {
+    "seed": 20260912,
+    "variant": "autonomous_affine",
+    "temperature_min_K": 270.9228050132652,
+    "temperature_max_K": 318.2031563101435,
+    "outside_200_400K_count": 0
+  },
+  {
+    "seed": 20260912,
+    "variant": "skip_restart",
+    "temperature_min_K": 270.9070845106482,
+    "temperature_max_K": 318.63816104715875,
+    "outside_200_400K_count": 0
+  },
+  {
+    "seed": 20260912,
+    "variant": "erase_memory",
+    "temperature_min_K": 268.95444867022303,
+    "temperature_max_K": 318.63816104715875,
+    "outside_200_400K_count": 0
+  }
+]

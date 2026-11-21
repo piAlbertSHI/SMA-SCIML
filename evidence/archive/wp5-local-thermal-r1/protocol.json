@@ -1,0 +1,14 @@
+{
+  "learning_only": true,
+  "selected_training_case_ids": [
+    "paper220_reca_001_r42_t210_p0823_v1000_t2p4_1c",
+    "paper220_recas_119_r32_t160_p1254_v1225_t2p4_1c",
+    "paper220_reca_009_r38_t190_p0874_v1164_t2p4_1c"
+  ],
+  "dataset_source_content_sha256": "ff28bf6eee81ed41d3a12d41c20ea4370eaf6fcdfa770e3127ae1af96db18f5c",
+  "implementation_sha256": "4a6dcc67026908090848c91aaf3a6cdd2d2b1507bf31e4d4a4b76e8e423a79cc",
+  "interpretation": "Effective positive relaxation rate in a reduced node equation, NOT true SMA h or diffusivity",
+  "forcing": "Observed spatial-mean HTF temperature over whole interval, including evaluation interval",
+  "split": "8 SMA sensors at indices0,5,11,17,23,29,35,39; last10 SMA values held out",
+  "forecast_boundary": "Conditional reconstruction with observed forcing; not autonomous unknown-input forecasting"
+}

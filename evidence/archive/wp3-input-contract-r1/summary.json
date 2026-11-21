@@ -1,0 +1,255 @@
+{
+  "status": "completed_state_input_contract_inspection",
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "case_count": 63,
+  "observed_cycle_count": 63,
+  "initial_record_vs_request_max_abs": {
+    "u_m": 0.0,
+    "w_m": 0.0,
+    "sma_K": 0.0,
+    "xi": 0.0,
+    "htf2_K": 0.0,
+    "htf4_K": 0.016588283706596485,
+    "side_K": 0.0
+  },
+  "stage_start_interface_gap_maxima": {
+    "1": {
+      "T_K_t": 0.0,
+      "w_m_t": 0.0,
+      "u_m_t": 0.0,
+      "xi_t": 0.0
+    },
+    "2": {
+      "cold_buffer_temp_in": 0.0,
+      "hot_sink_temp_in": 0.0,
+      "cold_sink_temp_in": 0.0,
+      "chip_temp_in": 0.0,
+      "simscape_cold_sink_pipe_T_state_in_K": 0.0,
+      "sma_T_in_51_K": 0.0,
+      "stage2_path_pipe_T_state_in_K": 0.0,
+      "htf_internal_start_K": 0.0,
+      "hot_buffer_temp_in": 0.0
+    },
+    "3": {
+      "T_K_t": 0.0,
+      "w_m_t": 0.00012387708904100514,
+      "u_m_t": 2.2574959746643627e-05,
+      "xi_t": 0.19358850705953212
+    },
+    "4": {
+      "cold_buffer_temp_in": 0.0,
+      "hot_sink_temp_in": 0.009650944524196348,
+      "cold_sink_temp_in": 0.0,
+      "chip_temp_in": 0.0,
+      "simscape_cold_sink_pipe_T_state_in_K": 0.009474662545869705,
+      "sma_T_in_51_K": 0.0,
+      "stage4_path_pipe_T_state_in_K": 0.016588283706596485,
+      "htf_internal_start_K": 0.0,
+      "hot_buffer_temp_in": 0.009650944524196348
+    }
+  },
+  "cases_with_stage4_future_initial_difference": 63,
+  "requested_vs_observed_controls_max_abs": 0.0,
+  "initialization_sensitivity": {
+    "train": {
+      "1": {
+        "sma_K": {
+          "record_initial_rmse": 0.05398334790450461,
+          "request_initial_rmse": 2.969737943318251
+        },
+        "side_K": {
+          "record_initial_rmse": 0.0,
+          "request_initial_rmse": 0.0
+        },
+        "xi": {
+          "record_initial_rmse": 0.0023148413858411062,
+          "request_initial_rmse": 0.12764057675682106
+        }
+      },
+      "2": {
+        "sma_K": {
+          "record_initial_rmse": 0.026394463176884764,
+          "request_initial_rmse": 1.2538790336321812
+        },
+        "side_K": {
+          "record_initial_rmse": 0.01213680329803317,
+          "request_initial_rmse": 0.5095797636016156
+        },
+        "xi": {
+          "record_initial_rmse": 0.0023148413858411062,
+          "request_initial_rmse": 0.12764057675682106
+        }
+      },
+      "3": {
+        "sma_K": {
+          "record_initial_rmse": 0.0550075001268499,
+          "request_initial_rmse": 1.6417888551419546
+        },
+        "side_K": {
+          "record_initial_rmse": 0.01213680329803317,
+          "request_initial_rmse": 0.5095797636016156
+        },
+        "xi": {
+          "record_initial_rmse": 0.0029917285977316627,
+          "request_initial_rmse": 0.16060290773112143
+        }
+      },
+      "4": {
+        "sma_K": {
+          "record_initial_rmse": 0.034133562540811374,
+          "request_initial_rmse": 1.1051918916630301
+        },
+        "side_K": {
+          "record_initial_rmse": 0.017361799833252263,
+          "request_initial_rmse": 0.6866603373824242
+        },
+        "xi": {
+          "record_initial_rmse": 0.0029917285977316627,
+          "request_initial_rmse": 0.16060290773112143
+        }
+      }
+    },
+    "calibration": {
+      "1": {
+        "sma_K": {
+          "record_initial_rmse": 0.16239985757051367,
+          "request_initial_rmse": 2.8747592137890514
+        },
+        "side_K": {
+          "record_initial_rmse": 0.0,
+          "request_initial_rmse": 0.0
+        },
+        "xi": {
+          "record_initial_rmse": 0.006970978829622708,
+          "request_initial_rmse": 0.12364116774922322
+        }
+      },
+      "2": {
+        "sma_K": {
+          "record_initial_rmse": 0.155237205674737,
+          "request_initial_rmse": 1.0698939955091382
+        },
+        "side_K": {
+          "record_initial_rmse": 0.04324004198950764,
+          "request_initial_rmse": 0.47293545075479665
+        },
+        "xi": {
+          "record_initial_rmse": 0.006970978829622708,
+          "request_initial_rmse": 0.12364116774922322
+        }
+      },
+      "3": {
+        "sma_K": {
+          "record_initial_rmse": 0.37968912142571015,
+          "request_initial_rmse": 1.4832000520798707
+        },
+        "side_K": {
+          "record_initial_rmse": 0.04324004198950764,
+          "request_initial_rmse": 0.47293545075479665
+        },
+        "xi": {
+          "record_initial_rmse": 0.022335339695873667,
+          "request_initial_rmse": 0.1627583399326032
+        }
+      },
+      "4": {
+        "sma_K": {
+          "record_initial_rmse": 0.19462118868605585,
+          "request_initial_rmse": 1.0170807070602421
+        },
+        "side_K": {
+          "record_initial_rmse": 0.08684704988727565,
+          "request_initial_rmse": 0.6205267331132454
+        },
+        "xi": {
+          "record_initial_rmse": 0.022335339695873667,
+          "request_initial_rmse": 0.1627583399326032
+        }
+      }
+    },
+    "test": {
+      "1": {
+        "sma_K": {
+          "record_initial_rmse": 0.10886621495748597,
+          "request_initial_rmse": 3.2538108284346903
+        },
+        "side_K": {
+          "record_initial_rmse": 0.0,
+          "request_initial_rmse": 0.0
+        },
+        "xi": {
+          "record_initial_rmse": 0.004555063473438597,
+          "request_initial_rmse": 0.1400074992193536
+        }
+      },
+      "2": {
+        "sma_K": {
+          "record_initial_rmse": 0.11559080840921913,
+          "request_initial_rmse": 1.3487048577561602
+        },
+        "side_K": {
+          "record_initial_rmse": 0.03802473300075805,
+          "request_initial_rmse": 0.5447451540283188
+        },
+        "xi": {
+          "record_initial_rmse": 0.004555063473438597,
+          "request_initial_rmse": 0.1400074992193536
+        }
+      },
+      "3": {
+        "sma_K": {
+          "record_initial_rmse": 0.28790473560560165,
+          "request_initial_rmse": 1.6742187017585743
+        },
+        "side_K": {
+          "record_initial_rmse": 0.03802473300075805,
+          "request_initial_rmse": 0.5447451540283188
+        },
+        "xi": {
+          "record_initial_rmse": 0.011951331577418732,
+          "request_initial_rmse": 0.19789336156639445
+        }
+      },
+      "4": {
+        "sma_K": {
+          "record_initial_rmse": 0.16006063848946542,
+          "request_initial_rmse": 1.0878445128899914
+        },
+        "side_K": {
+          "record_initial_rmse": 0.09429554438361136,
+          "request_initial_rmse": 0.6732622874445018
+        },
+        "xi": {
+          "record_initial_rmse": 0.011951331577418732,
+          "request_initial_rmse": 0.19789336156639445
+        }
+      }
+    }
+  },
+  "known_inactive_missing_fields": {
+    "2:stage4_path_pipe_T_state_in_K": 63,
+    "2:stage4_path_pipe_T_state_out_K": 63,
+    "4:stage2_path_pipe_T_state_in_K": 63,
+    "4:stage2_path_pipe_T_state_out_K": 63
+  },
+  "limitations": [
+    "Existing model trained with record-derived state; request-only rerun is sensitivity, NOT a retrained causal model",
+    "Canonical continuity may hide observed stage-start jumps; explicit transition/restart maps still needed",
+    "Changing initialization alone does not repair stage ownership, hidden storage or restart-latent coupling",
+    "Uniform inactive fluids are declared initialization placeholders, not independent complete-state observations"
+  ],
+  "dataset_source_content_sha256": "ff28bf6eee81ed41d3a12d41c20ea4370eaf6fcdfa770e3127ae1af96db18f5c",
+  "original_summary_sha256": "766028f4f2d9bd73eab560af59e5253492fb75536c46e9759d800a1393a10399",
+  "implementation_sha256": "31991fcac12da19596ee3bb85e8459a0dda130805cc50e1d810ab3a80213dfdd",
+  "source_map": {
+    "SciML/models/v11/state_space.py": "55705e9d85b52e38806bbd48bbcad22b0f7fd0906f8d37fdfdb413ecd6497d68",
+    "SciML/models/v12/state_space_candidate.py": "b7b74d7919249d73a7e3e86609d3637271db75654d28974334b5cd196996c50f",
+    "Build_Simulink_Exchange_Params.m": "7892bc09a5652cd47920169637cffff7b42bace1a42ed0d8f03cf73a667b618d",
+    "Run_GlobalXi_Simulink_Cycles.m": "8cf73c18909d0e5f84338192a1b2ee5fd9e3001a99b05683dfe52c593424e292"
+  },
+  "artifacts": {
+    "case_contracts.json": "068d9cc714a9f82895a8b4c22cdc4f2e96c87e123dfbc1864a998204e51ec193",
+    "initialization_sensitivity.npz": "365ec18d9f07f5f3959aea96cc0d3231f36fd35bd942c83dea3b06e921c8936f"
+  }
+}

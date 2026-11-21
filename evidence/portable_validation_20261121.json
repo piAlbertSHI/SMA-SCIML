@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-21",
+  "scope": "Current Windows portable distribution; not the historical 292-test scientific audit",
+  "unit_tests": {
+    "command": "python -m unittest SciML.tests.test_learning_coordinate_operator SciML.tests.test_learning_ensemble SciML.tests.test_learning_pinn_inverse SciML.tests.test_learning_pool_loop SciML.tests.test_learning_design_loop SciML.tests.test_learning_exercises -v",
+    "exit_code": 0,
+    "tests_run": 21,
+    "failures": 0,
+    "errors": 0
+  },
+  "checkpoint_demo": {
+    "command": "python -u -m examples.showcase --output assets",
+    "exit_code": 0,
+    "summary": "assets/demo_summary.json",
+    "png_count": 6,
+    "gif_count": 1,
+    "png_visual_review": "All six PNG files inspected; no clipped labels or missing panels observed"
+  },
+  "fresh_training_example": {
+    "command": "python -u -m examples.train_scalar --output run-output-validation --epochs 200 --seed 701",
+    "exit_code": 0,
+    "status": "completed_portable_training_example",
+    "members": 3,
+    "train_cases": 37,
+    "test_cases": 13,
+    "test_rmse_in_data_target_order": [0.2283847218233047, 0.00004606286233102439, 0.04633424622554457, 6.912989476875295, 0.02526227738184617, 0.1567973712068671],
+    "scope": "A new six-output training smoke test, not the archived five-output benchmark; output checkpoint stays local"
+  },
+  "reference_exercises": {
+    "command": "python -m SciML.evaluation.learning_exercises --output-root learning-exercises-validation",
+    "exit_code": 0,
+    "exercise_count": 8,
+    "status": "passed_learning_reference_exercises",
+    "reader_mastery_verified": false
+  },
+  "new_physics_solver_calls": 0,
+  "fresh_install_verified_by_this_record": false,
+  "github_ci": "See the repository Actions tab for the current Linux run; not asserted by this local record"
+}

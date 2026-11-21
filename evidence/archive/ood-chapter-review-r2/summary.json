@@ -1,0 +1,26 @@
+{
+  "status": "passed_chapter07B_narrow_evidence_review",
+  "whole_report_complete": false,
+  "checked_metric_and_split_cells": 66,
+  "local_links_checked": 4,
+  "nine_zero_gradient_networks_verified": true,
+  "documented_commands": 7,
+  "command_scope": "static module/flag check; equivalent training/audit runs completed, new output-directory recipes not rerun here",
+  "readability_checks": [
+    "ID/OOD defined before splits",
+    "R/t constant limitation stated before results",
+    "Tensor/model budgets and ensemble3 versus ensemble5 distinction explicit",
+    "Both error denominators explained",
+    "Observed-start versus autonomous task separated",
+    "Zero-gradient proof paired with actual diagnostic",
+    "Abstention does not claim accuracy repair",
+    "Two-case combined group limitation explicit",
+    "Exercises include answers and independent-task acceptance criteria"
+  ],
+  "chapter_sha256": "084e069ddfebb0757904bac2879137abdff871142864d5546c18a41c5ae2a619",
+  "implementation_sha256": "2cac4d0163ef7743b70a01500a72b78aae6f3bd73d5876c9949f2ae568d712a5",
+  "source_summary_hashes": {
+    "ood-audit-r1": "ea2b042d5e5c6efe7039821140c4979f224fe1e95528013bf48b4666d1185a88",
+    "material-ood-diagnostic-r1": "589b36c258277ae5ed1452b63ef67ee52e93e857f8d8c2471a7fb6660f3142b5"
+  }
+}

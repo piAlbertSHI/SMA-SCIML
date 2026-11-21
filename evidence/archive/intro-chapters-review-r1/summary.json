@@ -1,0 +1,33 @@
+{
+  "status": "passed_chapters01_03_narrow_review",
+  "whole_report_complete": false,
+  "independent_request_and_raw_label_values_checked": 630,
+  "shape_and_split_cells_checked": 20,
+  "local_links_checked": 7,
+  "chapter_exercises_executed": 4,
+  "new_unit_tests_passed": 2,
+  "readability_scope": "author walkthrough and runnable exercises; no independent human comprehension assessment",
+  "walkthrough": [
+    "physical problem before ML equations",
+    "X/state/output tasks distinguished",
+    "historical plan versus learning scope explicit",
+    "sourcehashes do not prove physics",
+    "756arrays comparison scope not exaggerated",
+    "ID grouping before normalization",
+    "unseen material absent from original test disclosed",
+    "shape and physical owner distinguished",
+    "rawCOP boundary disclosed before fitting",
+    "oldfutureinitialization entry warned against",
+    "exercises demonstrate actual leakage rejection, scaling isolation and broadcasting failure"
+  ],
+  "chapter_sha256": {
+    "01_项目全景与学习路线.md": "bd52439c66bbcc8c2c1a4cad88786cbf6c1aac4019cd668f52ba22fd692bb188",
+    "02_数值数据与可追溯契约.md": "0bbb9861cfd37ab374e0945a3fb2081c920b2589298587fbad99d6f24af56a2c",
+    "03_从文件到训练张量.md": "643ad7f3a71009cded1a4cb79bdfbded2e6c0510525152c9974d711ff459a5ed"
+  },
+  "tutorial_summary_sha256": "4265b816f4b9f805013f435e4c25a277fe0eec2959ea9211467b51dd9ad580b7",
+  "implementation_sha256": "0c1e77cbbe62d82a158e71836d95a9ef3e47c6dac8825bf9b09af023cb980c4b",
+  "artifacts": {
+    "exercises_and_tests.json": "435c99aa5c7e03de84d1252440ff2e397f4ec4bf49d8b605f17165278eb4834d"
+  }
+}

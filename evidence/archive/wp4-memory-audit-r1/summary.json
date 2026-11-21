@@ -1,0 +1,48 @@
+{
+  "status": "passed_independent_memory_cascade_audit",
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "independent_input_assembly_predictions_exact": true,
+  "predicted_endpoint_memory_exact": true,
+  "source_identity_cases": 63,
+  "source_identity_max_error_K": 5.684341886080802e-14,
+  "failed_source_snapshot_verified": true,
+  "test_scores": {
+    "2": {
+      "sma": {
+        "future_rmse_K": 0.5803777521316862,
+        "initial_max_abs_K": 0.12171977204684481,
+        "future_max_abs_K": 1.918919869395097
+      },
+      "htf": {
+        "future_rmse_K": 0.7910778801346836,
+        "initial_max_abs_K": 0.0,
+        "future_max_abs_K": 4.270134148299917
+      }
+    },
+    "4": {
+      "sma": {
+        "future_rmse_K": 0.5927147694802074,
+        "initial_max_abs_K": 0.8619005057535674,
+        "future_max_abs_K": 2.3147545753035956
+      },
+      "htf": {
+        "future_rmse_K": 0.6104524185744381,
+        "initial_max_abs_K": 0.0019909118201439924,
+        "future_max_abs_K": 3.072531965098676
+      }
+    }
+  },
+  "scope": "one-cycle request-only boundary-plus-field cascade, not full closed-loop energy or multicycle evidence",
+  "implementation_sha256": "218ac7b86196a9e8984357fd484412f7f4494a96c47ed3198ac7ff8c1229d05a",
+  "upstream_summary_hashes": {
+    "wp3-boundary-r2": "b9aa7ff06735443f6e491e661cdb0a167d57a9e07d9872238e18726cd2875c8b",
+    "wp4-deeponet-r1": "7c0fe2f70045c22ce98b998a0f45bbc2acdfa24030adcd0104309ced83969cb7",
+    "wp4-operator-audit-r1": "5fd2b712e467879e0ca3b11d0316ae86ecf75db455c01b70cf6c662fbabae2cd",
+    "wp4-memory-cascade-r2": "a1d8416ebcba097b5a8823887d69f68e96127a994e3f0e9e047f937d0f983941"
+  },
+  "artifacts": {
+    "memory_repair.png": "352da2e303c60999cdee151040292cc6593e7d548d337d862fa4991dcac71996",
+    "source_checks.json": "420b23bb7a06592d5b4b0577fefac7fbb6b32e312b94dc90ee3c1efa4028a424"
+  }
+}

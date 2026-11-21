@@ -1,0 +1,13 @@
+{
+  "status": "failed_test_contract_diagnosed",
+  "exit_code": 1,
+  "terminal_chunk_id": "368a0f",
+  "tests_run": 5,
+  "failures": 2,
+  "causes": [
+    "Unique config filename introduced for fixture isolation but relocation request still hardcoded config.json; logical source names no longer agreed.",
+    "Fake executable captures parent-shell current directory, while launcher deliberately changes MATLAB working directory inside its -batch expression. Existing test incorrectly asserted parent cwd and Windows separators inside a slash-normalized MATLAB expression."
+  ],
+  "repair": "Preserve unique logical config leaf; parse and verify the actual leading MATLAB cd expression and its bounded runtime paths. Do not change production MATLAB/physics source.",
+  "scope": "Temporary fake-executable contract tests only; zero real MATLAB runs."
+}

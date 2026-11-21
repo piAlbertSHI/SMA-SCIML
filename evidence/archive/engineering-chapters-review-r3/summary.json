@@ -1,0 +1,49 @@
+{
+  "status": "passed_chapters12_14_narrow_review",
+  "whole_report_complete": false,
+  "environment_cells_checked": 9,
+  "failure_table_cells_checked": 11,
+  "fresh_reference_exercises": 8,
+  "independent_tasks": 3,
+  "advanced_task_specs": 5,
+  "local_links_checked": 2,
+  "fresh_solver_calls": 0,
+  "project_training_calls": 0,
+  "readability_scope": "author walkthrough: questions before hints/answers, explicit inputs and expected outputs, executable examples and independent submission requirements; no human comprehension certification",
+  "technical_scope": "evidence-to-text consistency and fresh tiny exercise checks; no new full model refits or full scientific review",
+  "walkthrough": [
+    "five reproducibility layers distinguished",
+    "environment is observed not an install-lock guarantee",
+    "fixed-name upstream dependencies and historical failure audits explicit",
+    "numerical tolerance differs from physical gate",
+    "OOD information support distinguished from software failure",
+    "eight small questions have hand-checkable answers",
+    "three independent coding tasks and five advanced specifications have acceptance criteria",
+    "learner mastery not inferred from reference success"
+  ],
+  "chapter_sha256": {
+    "12_统一复现手册与代码索引.md": "801c69881b1ed05a5647efa8daae86cb066c1e55af038d0af6e7b944a2cae7fc",
+    "13_故障定位与失败证据.md": "b05c5db92a8107e825bba33b0d2556aa8c3af11b2e6cec8449a4f24ca515713a",
+    "14_分级练习与独立扩展.md": "b36420fd68f859e7e3c45503a2a9a0bdf0c5841ad327625f2e85eef3f57d9eec"
+  },
+  "inventory_summary_sha256": "e5375d66d3a7e49e163c019fbd2807d94fa721015715c62da79ca277c4e53835",
+  "source_evidence_sha256": {
+    "SciML\\results\\learning-closed-loop-20260910\\wp3-input-contract-r1\\summary.json": "9218c28efa797bbee5b5a6b7886be10c91e9d9f218b8d65a281f08916fca968b",
+    "SciML\\results\\learning-closed-loop-20260910\\wp4-memory-cascade-r2\\summary.json": "a1d8416ebcba097b5a8823887d69f68e96127a994e3f0e9e047f937d0f983941",
+    "SciML\\results\\learning-closed-loop-20260910\\material-ood-diagnostic-r1\\summary.json": "589b36c258277ae5ed1452b63ef67ee52e93e857f8d8c2471a7fb6660f3142b5",
+    "SciML\\results\\learning-closed-loop-20260910\\wp6-uq-r1\\summary.json": "fc0e0593269c2520ccf0c431c190d4216c971d9fab00330c995315ab01ce5f3b",
+    "SciML\\results\\learning-closed-loop-20260910\\wp6-design-r1\\summary.json": "62ad0698c1ef575a933b8411d07ddd09bd8768c0e9eea568ab72a175c1b7ff59",
+    "SciML\\results\\learning-closed-loop-20260910\\wp5-local-thermal-r1\\summary.json": "4cb7634102924eee75edc60fbd0b62c19f0d1e783a48c5091482c10114a26e17",
+    "SciML\\results\\learning-closed-loop-20260910\\wp5-audit-r1\\audit.json": "b3101fec0d47927c17c310ca1153af1bdf1241b66b94a264dc547dd9c1ade3a5",
+    "SciML\\results\\learning-closed-loop-20260910\\learning-exercises-r1\\summary.json": "dfad3e2a1f634a3da986126b31beb208b39875743a36901961c5e4d42a8a2144"
+  },
+  "residual_fix_source_sha256": {
+    "SciML\\results\\learning-closed-loop-20260910\\source_snapshots\\learning_boundary_state_r1.py": "3c7821ab8ba01f132b221997c4c47f07ba6cda487dc62b89b3c6c9db6ec6f9cd",
+    "SciML\\models\\v12\\learning_boundary_state.py": "213f8bc6aff1b2735a4e04025bbdf63c37cbca7f13d3e550a65fe172e2514401"
+  },
+  "implementation_sha256": "544800613d3a6eb01a2fef7f25ea623228a894fdd3f082b1447b64ea9c97fa52",
+  "artifacts": {
+    "evidence_checks.json": "3284529ca15f913129e3ec4289204ac41434e14a670de05f191dd316f49d1d4f",
+    "fresh_reference_answers.json": "eb9f4cadc2bc2303f0854e136d5d3a74741a99e1b130a4bfbac64d10a86c657b"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "status": "completed_fixed_seed_operator_repeat",
+  "seed": 20260911,
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "runs": {
+    "deeponet": {
+      "test_scores": {
+        "2": {
+          "sma": {
+            "future_rmse_K": 0.6078037437213921,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 1.7902664786892615
+          },
+          "htf": {
+            "future_rmse_K": 0.947849035028643,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 4.060936879552401
+          }
+        },
+        "4": {
+          "sma": {
+            "future_rmse_K": 0.6047192077089639,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 2.1621128166146377
+          },
+          "htf": {
+            "future_rmse_K": 0.6463544537766854,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 2.9430260284086103
+          }
+        }
+      },
+      "elapsed_seconds": 13.593999999997322,
+      "summary_sha256": "db01da88b62a7790b64f1891b83c90835add6cfd6ec8d34929d385fc1120549f"
+    },
+    "fourier": {
+      "test_scores": {
+        "2": {
+          "sma": {
+            "future_rmse_K": 0.7839775413568851,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 2.312450906940967
+          },
+          "htf": {
+            "future_rmse_K": 1.8597388025272097,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 5.971521285469009
+          }
+        },
+        "4": {
+          "sma": {
+            "future_rmse_K": 0.36360305236881146,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 1.5913950843350335
+          },
+          "htf": {
+            "future_rmse_K": 0.8694913408088908,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 4.435143620827432
+          }
+        }
+      },
+      "elapsed_seconds": 19.781000000002678,
+      "summary_sha256": "d292f088d9fe779e48db77488f9b877d42fea261f902c74bb01b53c07f21d12d"
+    },
+    "deeponet_no_stage": {
+      "test_scores": {
+        "2": {
+          "sma": {
+            "future_rmse_K": 0.9272635394547317,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 2.9117187888792273
+          },
+          "htf": {
+            "future_rmse_K": 0.9570870812390748,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 4.152802915864186
+          }
+        },
+        "4": {
+          "sma": {
+            "future_rmse_K": 1.1881584814214057,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 3.6595207240435457
+          },
+          "htf": {
+            "future_rmse_K": 0.6613073567984856,
+            "initial_max_abs_K": 0.0,
+            "future_max_abs_K": 2.9497040450817735
+          }
+        }
+      },
+      "elapsed_seconds": 7.64100000000326,
+      "summary_sha256": "4d8ab10f37ba48bb8f7f9b9717c9e1e8cd1dc33c09a2ff6ef6e60ec4fea0e7cc"
+    },
+    "deeponet_no_ic": {
+      "test_scores": {
+        "2": {
+          "sma": {
+            "future_rmse_K": 0.7008081093406796,
+            "initial_max_abs_K": 1.5993074146507524,
+            "future_max_abs_K": 2.5177875761578434
+          },
+          "htf": {
+            "future_rmse_K": 0.8319052791347172,
+            "initial_max_abs_K": 8.87353945037762,
+            "future_max_abs_K": 7.804487270593256
+          }
+        },
+        "4": {
+          "sma": {
+            "future_rmse_K": 0.6956079540270861,
+            "initial_max_abs_K": 0.869798843337378,
+            "future_max_abs_K": 2.929214603364244
+          },
+          "htf": {
+            "future_rmse_K": 0.3799405435621674,
+            "initial_max_abs_K": 6.127834913051572,
+            "future_max_abs_K": 4.368688143971383
+          }
+        }
+      },
+      "elapsed_seconds": 7.5,
+      "summary_sha256": "a832efd7834b77e7e409f531075622223f0ac67fff7b4f7db70f5892d20a7c9a"
+    }
+  },
+  "artifacts": {
+    "protocol.json": "142e697981145ff8ca3e5ada6f888acac7f6d07dce142f5759c6754807e4f061"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "seed": 20260911,
+  "variants": [
+    "deeponet",
+    "fourier",
+    "deeponet_no_stage",
+    "deeponet_no_ic"
+  ],
+  "optimizer_updates_per_variant": 400,
+  "hyperparameter_selection": false,
+  "source_protocol_sha256": "32cc4e2e3357c4d77bf81c30fa92619d16f85771514a3c93105e6daab1c3ff21",
+  "fresh_solver_calls": 0,
+  "implementation_sha256": "bc9a3eacdcd582b74ffe0eda08f0c83e956324ab0ccb47ad13e1f941bbfdd376"
+}

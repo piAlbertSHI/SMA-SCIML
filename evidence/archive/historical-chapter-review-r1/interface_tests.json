@@ -1,0 +1,5 @@
+{
+  "tests_run": 5,
+  "passed": true,
+  "output": "test_case_split_holds_all_longer_horizons_without_label_selection (SciML.tests.test_learning_historical_rollout.HistoricalRolloutTests.test_case_split_holds_all_longer_horizons_without_label_selection) ... ok\ntest_field_decoder_uses_predicted_memory_and_correct_inactive_path (SciML.tests.test_learning_historical_rollout.HistoricalRolloutTests.test_field_decoder_uses_predicted_memory_and_correct_inactive_path) ... ok\ntest_projection_does_not_hide_temperature_drift (SciML.tests.test_learning_historical_rollout.HistoricalRolloutTests.test_projection_does_not_hide_temperature_drift) ... ok\ntest_rollout_uses_previous_prediction_and_explicit_restart (SciML.tests.test_learning_historical_rollout.HistoricalRolloutTests.test_rollout_uses_previous_prediction_and_explicit_restart) ... ok\ntest_skip_restart_and_erase_memory_are_explicit_interventions (SciML.tests.test_learning_historical_rollout.HistoricalRolloutTests.test_skip_restart_and_erase_memory_are_explicit_interventions) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.019s\n\nOK\n"
+}

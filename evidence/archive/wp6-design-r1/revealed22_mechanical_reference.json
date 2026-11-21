@@ -1,0 +1,426 @@
+{
+  "observations": [
+    {
+      "case_id": "paper220_reca_046_r32_t160_p0746_v0781_t2p4_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\statepaper220_resume2_20260909\\c046\\shard_046\\paper220_reca_046_r32_t160_p0746_v0781_t2p4_1c\\run_result.mat",
+      "source_sha256": "499b6f38b936a364002189304c142f28b1f7c2a7139f5dcb65ac69a7f6edbb00",
+      "targets": [
+        7.8011736613936495,
+        0.0011465793844075555,
+        2.878948290517848,
+        466.34440735017245,
+        1.1515900498458223,
+        2.7097303856021746
+      ],
+      "sigma_eq_peak_MPa": 271.03558884859547,
+      "center_deflection_peak_over_radius": 0.14328202682067118,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.6514628521949505,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_recas_127_r38_t190_p1289_v1196_t2p8_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\streq_recovery3_20260908\\c127\\shard_127\\paper220_recas_127_r38_t190_p1289_v1196_t2p8_1c\\run_result.mat",
+      "source_sha256": "1ac1aee83aa2715f1fc0cd5c70de87642e9e29d5d3c61b232b268d3dddcd77bb",
+      "targets": [
+        25.260631298304766,
+        0.0028754414753778728,
+        2.390872577717698,
+        777.3778873556988,
+        2.7056947116442416,
+        10.565444404577303
+      ],
+      "sigma_eq_peak_MPa": 386.39167193159375,
+      "center_deflection_peak_over_radius": 0.17423602560892565,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.9244605509364754,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_reca_011_r42_t210_p0830_v0785_t2p0_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\streq_resume_20260907\\c011\\shard_011\\paper220_reca_011_r42_t210_p0830_v0785_t2p0_1c\\run_result.mat",
+      "source_sha256": "7cbf94413e8a04e21589eb0713ec97ba86dff7a0e0163837f5500a07df5921e9",
+      "targets": [
+        12.73542706687407,
+        0.0025188308829203407,
+        1.7132760057873442,
+        400.8511351671145,
+        1.5396392795962015,
+        7.4333773565114765
+      ],
+      "sigma_eq_peak_MPa": 284.46772120727485,
+      "center_deflection_peak_over_radius": 0.15257264477599095,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.7035071876796869,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_reca_019_r32_t160_p1006_v0813_t2p4_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\statepaper220_resume1_20260908\\c019\\shard_019\\paper220_reca_019_r32_t160_p1006_v0813_t2p4_1c\\run_result.mat",
+      "source_sha256": "e175339648cf209ab0b8630020edf03a53d2c0e7abe26fcb601f35e19aec5848",
+      "targets": [
+        9.967485848014258,
+        0.0011954761622209283,
+        2.374960129900035,
+        595.8438412372226,
+        1.4539473423879485,
+        4.1969066017263215
+      ],
+      "sigma_eq_peak_MPa": 312.0092689407317,
+      "center_deflection_peak_over_radius": 0.1700926053321515,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.9416628721116196,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_reca_052_r40_t200_p1079_v0827_t2p8_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\statepaper220_resume2_20260909\\c052\\shard_052\\paper220_reca_052_r40_t200_p1079_v0827_t2p8_1c\\run_result.mat",
+      "source_sha256": "097a57efff5d9d9d7925add7022d42cacb21df3fb7ccb54eadd8c9c4a815129c",
+      "targets": [
+        17.294420286307766,
+        0.0022171058959934826,
+        1.88085123319861,
+        456.3150657285531,
+        2.066979009436693,
+        9.194996383045435
+      ],
+      "sigma_eq_peak_MPa": 322.36232968408444,
+      "center_deflection_peak_over_radius": 0.17676292200979965,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.9799910911941071,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_reca_010_r42_t210_p1008_v1140_t2p4_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\statepaper220_20260908\\c010\\shard_010\\paper220_reca_010_r42_t210_p1008_v1140_t2p4_1c\\run_result.mat",
+      "source_sha256": "949471ee2a8e1af8dc070be45daf291582ecca3b430ad6729eb921aa58ca8037",
+      "targets": [
+        18.87811240753453,
+        0.003528254563976332,
+        1.9386959821450112,
+        499.1228569607137,
+        1.8730806986591801,
+        9.73753109378574
+      ],
+      "sigma_eq_peak_MPa": 311.9226795860841,
+      "center_deflection_peak_over_radius": 0.17029567293933423,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.9184341715254808,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_reca_028_r32_t160_p0879_v1201_t2p4_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\statepaper220_resume1_20260908\\c028\\shard_028\\paper220_reca_028_r32_t160_p0879_v1201_t2p4_1c\\run_result.mat",
+      "source_sha256": "5e0a8cb6ad851797a38e7573e1f7e9c935bfebd6ac563426e4735c5848a7aaf6",
+      "targets": [
+        10.80619328109455,
+        0.0017976560134903507,
+        3.191991093936714,
+        645.9807229164006,
+        1.3987901620556045,
+        3.3854083432817994
+      ],
+      "sigma_eq_peak_MPa": 292.1353515388591,
+      "center_deflection_peak_over_radius": 0.15769279686461124,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.8031199467467816,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_reca_026_r38_t190_p0840_v0980_t2p4_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\statepaper220_resume1_20260908\\c026\\shard_026\\paper220_reca_026_r38_t190_p0840_v0980_t2p4_1c\\run_result.mat",
+      "source_sha256": "9caa8047c612a80855618a41bab58b7a0e2d11951425790b88d04f97c5e325c0",
+      "targets": [
+        13.410740416387842,
+        0.0023683656814910653,
+        2.4576484131783687,
+        478.7389118822855,
+        1.6147248946950867,
+        5.456736750658456
+      ],
+      "sigma_eq_peak_MPa": 285.85936469969704,
+      "center_deflection_peak_over_radius": 0.15364396276281694,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.7419909113368358,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_reca_009_r38_t190_p0874_v1164_t2p4_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\statepaper220_20260908\\c009\\shard_009\\paper220_reca_009_r38_t190_p0874_v1164_t2p4_1c\\run_result.mat",
+      "source_sha256": "e0c4e30f35657d4cba3c9c49a7cca311a622b4707d45695b23374402444d3365",
+      "targets": [
+        14.874433689336973,
+        0.0028610182781216562,
+        2.5869116499062823,
+        530.9900854241135,
+        1.6374986571244676,
+        5.749880824061323
+      ],
+      "sigma_eq_peak_MPa": 291.2517493007152,
+      "center_deflection_peak_over_radius": 0.15717553406186693,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.7821093166232406,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_recas_130_r42_t210_p1167_v1250_t2p0_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\streq_recovery2_20260907\\c130\\shard_130\\paper220_recas_130_r42_t210_p1167_v1250_t2p0_1c\\run_result.mat",
+      "source_sha256": "f6283a00dfd1100c66be57db881a3e27b471b75c7366e8c5c3b0a63c8954b823",
+      "targets": [
+        19.912769258357194,
+        0.004064262214031917,
+        1.595821322045362,
+        626.7599916060379,
+        1.9210517702883863,
+        12.478069432507032
+      ],
+      "sigma_eq_peak_MPa": 370.2820178409125,
+      "center_deflection_peak_over_radius": 0.16393008945663273,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.777441611984746,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_reca_030_r40_t200_p1001_v1098_t2p4_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\statepaper220_resume1_20260908\\c030\\shard_030\\paper220_reca_030_r40_t200_p1001_v1098_t2p4_1c\\run_result.mat",
+      "source_sha256": "ca52101c3f52dd1d44fb5c4ac2e43f09f9e30e7b6196a73ffb9f01815870210d",
+      "targets": [
+        17.369208373935773,
+        0.0031023872043482517,
+        2.106907979445385,
+        531.614494289427,
+        1.84293367301035,
+        8.243933073198566
+      ],
+      "sigma_eq_peak_MPa": 310.8546476713169,
+      "center_deflection_peak_over_radius": 0.1696424476562761,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.9081686512384873,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_reca_027_r35_t175_p0972_v1221_t2p4_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\statepaper220_resume1_20260908\\c027\\shard_027\\paper220_reca_027_r35_t175_p0972_v1221_t2p4_1c\\run_result.mat",
+      "source_sha256": "d7bf384347bfd8d1a9d344745e31b877d603934638fbcae26b583a9c2deeef25",
+      "targets": [
+        13.868320174468916,
+        0.002365125463933842,
+        2.6879032288001077,
+        633.6019256400905,
+        1.6616367081948624,
+        5.159531052261802
+      ],
+      "sigma_eq_peak_MPa": 306.8243217283716,
+      "center_deflection_peak_over_radius": 0.16688625211024455,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.8900566416169908,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_recas_139_r32_t160_p1251_v1135_t2p0_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\streq_recovery2_20260907\\c139\\shard_139\\paper220_recas_139_r32_t160_p1251_v1135_t2p0_1c\\run_result.mat",
+      "source_sha256": "e0ac97ddb9fd0b041659884fe651484cd26453833cb3a7e3e22daecf05098ac5",
+      "targets": [
+        14.905923798601952,
+        0.0017215692991876747,
+        2.482312426346337,
+        1060.7827228470114,
+        2.0460304665005538,
+        6.004854038676212
+      ],
+      "sigma_eq_peak_MPa": 381.33318394548974,
+      "center_deflection_peak_over_radius": 0.17109833691500984,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.8883114628380893,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_recas_119_r32_t160_p1254_v1225_t2p4_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\state119_20260906\\shard_119\\paper220_recas_119_r32_t160_p1254_v1225_t2p4_1c\\run_result.mat",
+      "source_sha256": "801774607f32853f184cc8b9ab16a770bd833f0f3be70b8e44ac79af814da1f7",
+      "targets": [
+        16.80661818361707,
+        0.0018361271818761542,
+        2.8170192212838057,
+        1004.6786210114137,
+        2.1616495585614075,
+        5.966099931670951
+      ],
+      "sigma_eq_peak_MPa": 381.78949984707947,
+      "center_deflection_peak_over_radius": 0.1713499856304048,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.8940072813649256,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_reca_033_r32_t160_p0730_v0999_t2p0_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\streq_resume_20260907\\c033\\shard_033\\paper220_reca_033_r32_t160_p0730_v0999_t2p0_1c\\run_result.mat",
+      "source_sha256": "b6c00afee2297bcacd2cde41a1e7ef579032adcdf62a8278dbf63510dbf8bffb",
+      "targets": [
+        8.201630900630501,
+        0.0015059213488488386,
+        3.138393744920061,
+        583.6705242900148,
+        1.1652896499294911,
+        2.61332119779617
+      ],
+      "sigma_eq_peak_MPa": 268.3042350301873,
+      "center_deflection_peak_over_radius": 0.14143109537701615,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.6316884358742795,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_recas_146_r32_t160_p1642_v1186_t2p4_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\streq_20260906\\c146\\shard_146\\paper220_recas_146_r32_t160_p1642_v1186_t2p4_1c\\run_result.mat",
+      "source_sha256": "b50d20bab10c789a5ac310d274fad837ff85da9043059c846ba0572c622c783d",
+      "targets": [
+        21.374806449648005,
+        0.0017750400855933964,
+        2.3709538582620797,
+        1277.75920376127,
+        2.7814106872483535,
+        9.015277279717218
+      ],
+      "sigma_eq_peak_MPa": 436.5489458956408,
+      "center_deflection_peak_over_radius": 0.2007111667418958,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 1.0,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_reca_013_r38_t190_p1056_v1155_t2p0_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\streq_recovery3_20260908\\c013\\shard_013\\paper220_reca_013_r38_t190_p1056_v1155_t2p0_1c\\run_result.mat",
+      "source_sha256": "6c76857bd454e89f1c78ffb89cf7ddff792795ac80e0185fbdc759c75aac71c3",
+      "targets": [
+        15.4924547910855,
+        0.00291301954650277,
+        2.0216341236050437,
+        658.3956056316407,
+        1.7563386529334934,
+        7.6633326526260115
+      ],
+      "sigma_eq_peak_MPa": 319.4944023595994,
+      "center_deflection_peak_over_radius": 0.1746851758141226,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.9802550653202214,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_recas_184_r42_t210_p1240_v0979_t2p8_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\streq_recovery3_20260908\\c184\\shard_184\\paper220_recas_184_r42_t210_p1240_v0979_t2p8_1c\\run_result.mat",
+      "source_sha256": "fef33e83112f9602bc4484209e0d38cf6fa48f3b9881944c60bb3938e91fbfc9",
+      "targets": [
+        25.185227132343464,
+        0.002896269520132554,
+        1.8428995156574177,
+        574.0328858340345,
+        2.6074128060405997,
+        13.666088095616615
+      ],
+      "sigma_eq_peak_MPa": 379.97390784752315,
+      "center_deflection_peak_over_radius": 0.17017702905996815,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.8641311585940674,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_reca_021_r38_t190_p0752_v0874_t2p8_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\statepaper220_resume1_20260908\\c021\\shard_021\\paper220_reca_021_r38_t190_p0752_v0874_t2p8_1c\\run_result.mat",
+      "source_sha256": "694b2e3ba2ac66a46948ae9402e564bba35c48c8e771c2abbcf141132d279c30",
+      "targets": [
+        12.498003873907155,
+        0.0020438696662021666,
+        2.7119651739071995,
+        384.61714329021146,
+        1.538612502078422,
+        4.608467687621871
+      ],
+      "sigma_eq_peak_MPa": 271.9420716389887,
+      "center_deflection_peak_over_radius": 0.1439763763241172,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.6466650765787398,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_reca_020_r32_t160_p0887_v1216_t2p4_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\streq_20260906\\c020\\shard_020\\paper220_reca_020_r32_t160_p0887_v1216_t2p4_1c\\run_result.mat",
+      "source_sha256": "506f41af018a9ec352c71b32807d2f4a2cd710435eb22154cace8ed984277603",
+      "targets": [
+        10.951098464946577,
+        0.0018212813875408314,
+        3.191420757391228,
+        654.6429736261699,
+        1.4118784065398131,
+        3.4314179475032196
+      ],
+      "sigma_eq_peak_MPa": 293.5734302824384,
+      "center_deflection_peak_over_radius": 0.15850769632684486,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.8174476758094446,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_reca_024_r40_t200_p1052_v0865_t2p4_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\statepaper220_resume1_20260908\\c024\\shard_024\\paper220_reca_024_r40_t200_p1052_v0865_t2p4_1c\\run_result.mat",
+      "source_sha256": "6a61044f9be27537f076db551a7592cc1950b5c80702e74a186a2ef8bed9940a",
+      "targets": [
+        16.137697499264814,
+        0.002386384480508106,
+        1.806647506056812,
+        493.92198598648326,
+        1.9417295717996126,
+        8.932399621488392
+      ],
+      "sigma_eq_peak_MPa": 318.67420178449,
+      "center_deflection_peak_over_radius": 0.17433433284759448,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.9527739791934886,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    },
+    {
+      "case_id": "paper220_reca_016_r42_t210_p0918_v1225_t2p4_1c",
+      "run_result_path": "[local-path-omitted] project\\gx101r1\\Output\\statepaper220_resume1_20260908\\c016\\shard_016\\paper220_reca_016_r42_t210_p0918_v1225_t2p4_1c\\run_result.mat",
+      "source_sha256": "c3be47d66dbb12067da7faa1d01eb2d03ef73d6eb88bfc02ee630c195007cb05",
+      "targets": [
+        17.960081151628778,
+        0.0038191556514854397,
+        2.1283327235403884,
+        474.850812524532,
+        1.7172078667240385,
+        8.438568346472147
+      ],
+      "sigma_eq_peak_MPa": 298.4339091904906,
+      "center_deflection_peak_over_radius": 0.16161171863900964,
+      "mechanical_phase_min": 0.0,
+      "mechanical_phase_max": 0.8097993396531458,
+      "exchange_system_energy_audits_ok": true,
+      "existing_physics_gate_ok": true
+    }
+  ],
+  "reference": {
+    "sigma_eq_peak_MPa": 436.5489458956408,
+    "center_deflection_peak_over_radius": 0.2007111667418958
+  }
+}

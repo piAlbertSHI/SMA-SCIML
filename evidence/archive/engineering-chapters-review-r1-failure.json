@@ -1,0 +1,12 @@
+{
+  "status": "failed_before_output_directory_creation",
+  "exit_code": 1,
+  "terminal_chunk_id": "806acb",
+  "command": "python -u -m SciML.evaluation.audit_learning_engineering_chapters --campaign-root SciML/results/learning-closed-loop-20260910 --report-root SciML/docs/learning_closed_loop_report --inventory-root SciML/results/learning-closed-loop-20260910/reproduction-inventory-r3 --output-root SciML/results/learning-closed-loop-20260910/engineering-chapters-review-r1",
+  "exception": "UnicodeDecodeError: 'gbk' codec can't decode byte 0xad in position 4734: illegal multibyte sequence",
+  "location": "SciML/evaluation/audit_learning_wp5.py:15 verify_artifacts",
+  "failed_source_statement": "summary=json.loads((root/\"summary.json\").read_text())",
+  "diagnosis": "write_json explicitly writes UTF-8; read_text without encoding uses this Windows interpreter's GBK default. Inventory summary includes non-ASCII chapter names.",
+  "repair_scope": "explicit UTF-8 decoding in shared artifact reader; no model, artifact hashes, scientific thresholds or prior experimental results changed",
+  "fresh_solver_calls": 0
+}

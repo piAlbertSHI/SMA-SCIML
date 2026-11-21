@@ -1,0 +1,356 @@
+{
+  "per_target": {
+    "Qcool_J": {
+      "ensemble_test_rmse": 0.23257043917805295,
+      "member_test_rmse": [
+        0.24300365780563152,
+        0.5916970218486567,
+        0.195243929436098,
+        0.18988094006833128,
+        0.16264185607379483
+      ],
+      "error_uncertainty_spearman": 0.2582417582417582,
+      "mean_ensemble_std": 0.16071407182272118
+    },
+    "Wpump_J": {
+      "ensemble_test_rmse": 3.548701228902531e-05,
+      "member_test_rmse": [
+        3.908259805886265e-05,
+        4.3754952673944156e-05,
+        4.250470759853663e-05,
+        8.039646111935572e-05,
+        4.119893890206034e-05
+      ],
+      "error_uncertainty_spearman": 0.2857142857142857,
+      "mean_ensemble_std": 3.0635326992432664e-05
+    },
+    "COP": {
+      "ensemble_test_rmse": 0.02615855987378327,
+      "member_test_rmse": [
+        0.027633172507974615,
+        0.04668400809050615,
+        0.023544513004671967,
+        0.03434129189114824,
+        0.03598304806325635
+      ],
+      "error_uncertainty_spearman": 0.19780219780219782,
+      "mean_ensemble_std": 0.01943130421809112
+    },
+    "SCP_W_per_kg": {
+      "ensemble_test_rmse": 11.479942192121817,
+      "member_test_rmse": [
+        17.679346040035853,
+        12.511048909347496,
+        10.724823984570452,
+        12.176515688218066,
+        10.121776619564208
+      ],
+      "error_uncertainty_spearman": 0.48901098901098894,
+      "mean_ensemble_std": 6.3919261220813235
+    },
+    "deltaT_hot_cold_max_K": {
+      "ensemble_test_rmse": 0.033093153963395405,
+      "member_test_rmse": [
+        0.03441923274372622,
+        0.06157493914080789,
+        0.024340604479849183,
+        0.032068278690769364,
+        0.023684937620537357
+      ],
+      "error_uncertainty_spearman": 0.46703296703296704,
+      "mean_ensemble_std": 0.01562627633918007
+    },
+    "Wtotal_for_COP_J": {
+      "ensemble_test_rmse": 0.1325682518173669,
+      "member_test_rmse": [
+        0.1904157412499929,
+        0.13093590696992524,
+        0.1292956347797858,
+        0.23405565888308963,
+        0.15113980157153314
+      ],
+      "error_uncertainty_spearman": 0.41208791208791207,
+      "mean_ensemble_std": 0.10547115967129111
+    }
+  },
+  "checkpoint_sha256": "4d646cd8da2b40a24fa267436bf00c24c243000ea86a99e1fd99c0d8b3f7bccb",
+  "checkpoint_roundtrip_exact": true,
+  "history": [
+    {
+      "member": 0,
+      "seed": 20260910,
+      "losses": [
+        {
+          "epoch": 1,
+          "normalized_mse": 0.9781859858582685
+        },
+        {
+          "epoch": 51,
+          "normalized_mse": 0.15839386246195852
+        },
+        {
+          "epoch": 101,
+          "normalized_mse": 0.024711747045486492
+        },
+        {
+          "epoch": 151,
+          "normalized_mse": 0.004988234673963739
+        },
+        {
+          "epoch": 201,
+          "normalized_mse": 0.0026242556688766752
+        },
+        {
+          "epoch": 251,
+          "normalized_mse": 0.0017353446332022573
+        },
+        {
+          "epoch": 300,
+          "normalized_mse": 0.0013198663477299903
+        }
+      ]
+    },
+    {
+      "member": 1,
+      "seed": 20261919,
+      "losses": [
+        {
+          "epoch": 1,
+          "normalized_mse": 1.0419675658840735
+        },
+        {
+          "epoch": 51,
+          "normalized_mse": 0.10900249475707251
+        },
+        {
+          "epoch": 101,
+          "normalized_mse": 0.014230808954916496
+        },
+        {
+          "epoch": 151,
+          "normalized_mse": 0.006088893681745198
+        },
+        {
+          "epoch": 201,
+          "normalized_mse": 0.003680860518414406
+        },
+        {
+          "epoch": 251,
+          "normalized_mse": 0.0023542076945298933
+        },
+        {
+          "epoch": 300,
+          "normalized_mse": 0.0015938893146300024
+        }
+      ]
+    },
+    {
+      "member": 2,
+      "seed": 20262928,
+      "losses": [
+        {
+          "epoch": 1,
+          "normalized_mse": 1.0220221891034347
+        },
+        {
+          "epoch": 51,
+          "normalized_mse": 0.11825718664784424
+        },
+        {
+          "epoch": 101,
+          "normalized_mse": 0.020719961571033375
+        },
+        {
+          "epoch": 151,
+          "normalized_mse": 0.006500277490833557
+        },
+        {
+          "epoch": 201,
+          "normalized_mse": 0.0033828340241640028
+        },
+        {
+          "epoch": 251,
+          "normalized_mse": 0.002181490235210303
+        },
+        {
+          "epoch": 300,
+          "normalized_mse": 0.0015318967518057759
+        }
+      ]
+    },
+    {
+      "member": 3,
+      "seed": 20263937,
+      "losses": [
+        {
+          "epoch": 1,
+          "normalized_mse": 1.014484950876239
+        },
+        {
+          "epoch": 51,
+          "normalized_mse": 0.12166518568330856
+        },
+        {
+          "epoch": 101,
+          "normalized_mse": 0.021935005054984254
+        },
+        {
+          "epoch": 151,
+          "normalized_mse": 0.0074104075930493795
+        },
+        {
+          "epoch": 201,
+          "normalized_mse": 0.004312492969665115
+        },
+        {
+          "epoch": 251,
+          "normalized_mse": 0.002724728952112682
+        },
+        {
+          "epoch": 300,
+          "normalized_mse": 0.0018888832303984458
+        }
+      ]
+    },
+    {
+      "member": 4,
+      "seed": 20264946,
+      "losses": [
+        {
+          "epoch": 1,
+          "normalized_mse": 1.0290719493182034
+        },
+        {
+          "epoch": 51,
+          "normalized_mse": 0.10779504309711528
+        },
+        {
+          "epoch": 101,
+          "normalized_mse": 0.012130897614884055
+        },
+        {
+          "epoch": 151,
+          "normalized_mse": 0.005902384686181558
+        },
+        {
+          "epoch": 201,
+          "normalized_mse": 0.0033760586336113343
+        },
+        {
+          "epoch": 251,
+          "normalized_mse": 0.002112990714384031
+        },
+        {
+          "epoch": 300,
+          "normalized_mse": 0.001469882581165698
+        }
+      ]
+    }
+  ],
+  "intervals": [
+    {
+      "nominal_coverage": 0.9,
+      "calibration_count": 13,
+      "order_statistic_rank": 13,
+      "status": "finite_calibrated_interval",
+      "finite_interval_available": true,
+      "quantile": 5.2226388532310795,
+      "test_simultaneous_coverage": 1.0,
+      "per_target_coverage": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean_full_width": [
+        1.678703111524628,
+        0.0003199944980642353,
+        0.2029732779520272,
+        66.76544342432916,
+        0.1632207958806547,
+        1.101675552789248
+      ]
+    },
+    {
+      "nominal_coverage": 0.95,
+      "calibration_count": 13,
+      "order_statistic_rank": 14,
+      "status": "unbounded_interval_required",
+      "finite_interval_available": false,
+      "quantile": null,
+      "reason": "Finite-sample rank exceeds available calibration examples; do not replace with a smaller quantile"
+    }
+  ],
+  "material_ood": {
+    "training_count": 43,
+    "id_test_count": 13,
+    "ood_test_count": 7,
+    "ood_definition": "recAs, absent from this detector's fit",
+    "uncertainty_auroc": 1.0,
+    "uncertainty_auprc": 0.9999999999999998,
+    "not_a_failure_classifier": true,
+    "id_target_rmse": [
+      0.402797647680943,
+      3.0870234569486435e-05,
+      0.029513111664300033,
+      3.088544483004919,
+      0.0258620096840317,
+      0.0845568573807649
+    ],
+    "ood_target_rmse": [
+      3.4840633013643485,
+      0.0002238927288062653,
+      0.41108471439979144,
+      186.38927606681847,
+      0.43652538390141643,
+      0.5311215735858991
+    ],
+    "training_ids": [
+      "paper220_reca_001_r42_t210_p0823_v1000_t2p4_1c",
+      "paper220_reca_003_r35_t175_p0965_v0986_t2p4_1c",
+      "paper220_reca_004_r35_t175_p0912_v0853_t2p4_1c",
+      "paper220_reca_005_r42_t210_p0733_v1169_t2p4_1c",
+      "paper220_reca_006_r35_t175_p0916_v0959_t2p4_1c",
+      "paper220_reca_009_r38_t190_p0874_v1164_t2p4_1c",
+      "paper220_reca_010_r42_t210_p1008_v1140_t2p4_1c",
+      "paper220_reca_011_r42_t210_p0830_v0785_t2p0_1c",
+      "paper220_reca_012_r38_t190_p0848_v0964_t2p4_1c",
+      "paper220_reca_013_r38_t190_p1056_v1155_t2p0_1c",
+      "paper220_reca_014_r42_t210_p0813_v0822_t2p4_1c",
+      "paper220_reca_016_r42_t210_p0918_v1225_t2p4_1c",
+      "paper220_reca_017_r38_t190_p0785_v1115_t2p4_1c",
+      "paper220_reca_018_r42_t210_p0771_v0939_t2p4_1c",
+      "paper220_reca_019_r32_t160_p1006_v0813_t2p4_1c",
+      "paper220_reca_020_r32_t160_p0887_v1216_t2p4_1c",
+      "paper220_reca_021_r38_t190_p0752_v0874_t2p8_1c",
+      "paper220_reca_022_r42_t210_p0724_v1067_t2p4_1c",
+      "paper220_reca_023_r38_t190_p0761_v1187_t2p4_1c",
+      "paper220_reca_024_r40_t200_p1052_v0865_t2p4_1c",
+      "paper220_reca_025_r32_t160_p0996_v0844_t2p4_1c",
+      "paper220_reca_026_r38_t190_p0840_v0980_t2p4_1c",
+      "paper220_reca_027_r35_t175_p0972_v1221_t2p4_1c",
+      "paper220_reca_028_r32_t160_p0879_v1201_t2p4_1c",
+      "paper220_reca_029_r32_t160_p0841_v0892_t2p4_1c",
+      "paper220_reca_030_r40_t200_p1001_v1098_t2p4_1c",
+      "paper220_reca_031_r40_t200_p0832_v0804_t2p8_1c",
+      "paper220_reca_033_r32_t160_p0730_v0999_t2p0_1c",
+      "paper220_reca_034_r35_t175_p0866_v1083_t2p4_1c",
+      "paper220_reca_036_r40_t200_p0958_v0838_t2p0_1c",
+      "paper220_reca_039_r38_t190_p0743_v1129_t2p4_1c",
+      "paper220_reca_040_r32_t160_p0737_v0872_t2p4_1c",
+      "paper220_reca_041_r42_t210_p0766_v0879_t2p4_1c",
+      "paper220_reca_042_r42_t210_p0820_v0920_t2p4_1c",
+      "paper220_reca_045_r32_t160_p0974_v1103_t2p4_1c",
+      "paper220_reca_046_r32_t160_p0746_v0781_t2p4_1c",
+      "paper220_reca_048_r40_t200_p0728_v0933_t2p4_1c",
+      "paper220_reca_049_r35_t175_p1017_v1030_t2p4_1c",
+      "paper220_reca_050_r38_t190_p1039_v1113_t2p4_1c",
+      "paper220_reca_051_r35_t175_p0796_v1023_t2p4_1c",
+      "paper220_reca_052_r40_t200_p1079_v0827_t2p8_1c",
+      "paper220_reca_057_r32_t160_p1070_v1183_t2p4_1c",
+      "paper220_reca_105_r32_t160_p0803_v1159_t2p8_1c"
+    ]
+  }
+}

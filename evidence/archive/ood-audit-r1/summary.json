@@ -1,0 +1,25 @@
+{
+  "status": "passed_structured_ood_integrity_audit",
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "scalar_ensemble_checkpoints": 12,
+  "operator_checkpoints": 12,
+  "classical_model_replays": 36,
+  "all_cold_predictions_exact": true,
+  "input_only_groups_independently_reconstructed": true,
+  "fresh_pod_refits_exact": 4,
+  "metric_and_conformal_reconstruction": true,
+  "ood_coverage_guarantee": false,
+  "combined_group_count": 2,
+  "implementation_sha256": "f72e9a2289abffcc061d9d7bb26a838e07be5ed59d154b84973713775dd53abc",
+  "upstream_summary_hashes": {
+    "geometry": "20517da1956cac61fee80679eb43cc3ab05ef2d0041bce3be7f318b699b93be5",
+    "material": "9a92640cd157a8d61c4d2be7d09ffbea606c8984d0f55767078b766a9d8974a2",
+    "protocol": "e1e4d699c29fc791ad4fdfd5633ff6bd0ebdb07edb4a6a25dc9ebba233149e89",
+    "combined": "74842360f82eaafff53fabafb680bf60ce1e28ab4fb82506ed3c0962bfde92ee"
+  },
+  "artifacts": {
+    "aggregate.json": "18c9e6b348a6783daceb13797d3047380d8f85e31085f1b9dd2a0774958076f3",
+    "structured_ood.png": "db30cd0bd5fcc3130bcf78219b54de40b71396407f193f3d51f103bf471d3bf1"
+  }
+}

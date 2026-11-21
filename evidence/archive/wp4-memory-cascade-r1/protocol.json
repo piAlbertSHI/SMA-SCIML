@@ -1,0 +1,14 @@
+{
+  "learning_only": true,
+  "fresh_solver_calls": 0,
+  "dataset_source_content_sha256": "ff28bf6eee81ed41d3a12d41c20ea4370eaf6fcdfa770e3127ae1af96db18f5c",
+  "rule": "Tstrip_stage4_in=mirror(T51_stage4_in)+antisymmetric(Tstrip_stage2_end)",
+  "source_rule_verified_cases": 63,
+  "inference": "Predicted stage2 endpoint memory only; stage4 observed initial never read by predict_cascade",
+  "boundary_seed": 20260910,
+  "operator_seed": 20260910,
+  "new_model_training": false,
+  "scope": "Directional-temperature carry added to boundary/field cascade; not full AER energy or multicycle closure",
+  "implementation_sha256": "8bf02558858a3662b7f38930564c3b54d5d5a0881a1a544e77995bf5cb5340f9",
+  "physical_source_sha256": "345c3c248b10602443fb030f6afaa7c12e3b99eece31e2ad83f3541ba4f7b5ff"
+}

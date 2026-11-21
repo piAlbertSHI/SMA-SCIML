@@ -1,0 +1,186 @@
+[
+  {
+    "name": "wp2-strong-r1",
+    "status": "completed_matched_scalar_benchmarks",
+    "summary_sha256": "98fa9f442d402b4399614e4bceebbc1f2116d0b9585f97f9f855d5771357f512",
+    "artifact_count": 16,
+    "recorded_elapsed_seconds": 21.0,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "wp3-boundary-r2",
+    "status": "completed_request_only_boundary_learning",
+    "summary_sha256": "b9aa7ff06735443f6e491e661cdb0a167d57a9e07d9872238e18726cd2875c8b",
+    "artifact_count": 11,
+    "recorded_elapsed_seconds": 19.9529999999977,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "wp4-deeponet-r1",
+    "status": "completed_coarse_label_operator_learning",
+    "summary_sha256": "7c0fe2f70045c22ce98b998a0f45bbc2acdfa24030adcd0104309ced83969cb7",
+    "artifact_count": 3,
+    "recorded_elapsed_seconds": 13.514999999999418,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "wp4-fourier-r1",
+    "status": "completed_coarse_label_operator_learning",
+    "summary_sha256": "ddc92c9f8aecb588726566eb44cdfa486c9d274a0adbd638c874d3586bf98c27",
+    "artifact_count": 3,
+    "recorded_elapsed_seconds": 25.203999999997905,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "wp4-no-stage-r1",
+    "status": "completed_coarse_label_operator_learning",
+    "summary_sha256": "482220b6fde0f37c36d1a09eec8a1f718ccf3fccc5766a2bb12d219ba8d18480",
+    "artifact_count": 3,
+    "recorded_elapsed_seconds": 13.5,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "wp4-no-ic-r1",
+    "status": "completed_coarse_label_operator_learning",
+    "summary_sha256": "70afe14b391ceb4fc773dd44523e8d88fc21dd9282b640de8fdb7c6bff5b991a",
+    "artifact_count": 3,
+    "recorded_elapsed_seconds": 7.687999999994645,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "wp4-repeat-s20260911",
+    "status": "completed_fixed_seed_operator_repeat",
+    "summary_sha256": "8bb092fa84bd234cfc61441e460d5fcb752ac8e9588b00ba7cf687e9382a77f2",
+    "artifact_count": 1,
+    "recorded_elapsed_seconds": null,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "wp4-repeat-s20260912",
+    "status": "completed_fixed_seed_operator_repeat",
+    "summary_sha256": "13392d7f406a43d5a2b7056a5cc979ba2f2aa66a9e6ccb4e22ffcd939fc5f951",
+    "artifact_count": 1,
+    "recorded_elapsed_seconds": null,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "wp4-memory-cascade-r2",
+    "status": "completed_spatial_memory_cascade_repair",
+    "summary_sha256": "a1d8416ebcba097b5a8823887d69f68e96127a994e3f0e9e047f937d0f983941",
+    "artifact_count": 3,
+    "recorded_elapsed_seconds": null,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "wp5-pinn-r1",
+    "status": "completed",
+    "summary_sha256": "def23f5c4007b1a7177658c9f5333bff245a2191f3878e1645d6eb01aa16e548",
+    "artifact_count": 14,
+    "recorded_elapsed_seconds": 59.21900000000096,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "wp5-local-thermal-r2",
+    "status": "completed_reduced_model_diagnostic",
+    "summary_sha256": "79292d39f63d03fe29c0a27ac4bf7b1ffa160f3acc569ee26c6871f6bc2d49fa",
+    "artifact_count": 14,
+    "recorded_elapsed_seconds": 36.53099999999904,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "wp6-uq-r1",
+    "status": "completed_uq_learning_experiment",
+    "summary_sha256": "fc0e0593269c2520ccf0c431c190d4216c971d9fab00330c995315ab01ce5f3b",
+    "artifact_count": 5,
+    "recorded_elapsed_seconds": 9.342999999997119,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "wp6-active-r1",
+    "status": "completed_two_round_offline_active_learning",
+    "summary_sha256": "009bebb90999cd7ee16be9f2044993cbc83763565ccc9d581377072e3731a37b",
+    "artifact_count": 46,
+    "recorded_elapsed_seconds": 33.46900000000096,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "wp6-design-r1",
+    "status": "completed_archived_design_experiment",
+    "summary_sha256": "62ad0698c1ef575a933b8411d07ddd09bd8768c0e9eea568ab72a175c1b7ff59",
+    "artifact_count": 4,
+    "recorded_elapsed_seconds": 0.5940000000009604,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "ood-geometry-r1",
+    "status": "completed_structured_ood_learning",
+    "summary_sha256": "20517da1956cac61fee80679eb43cc3ab05ef2d0041bce3be7f318b699b93be5",
+    "artifact_count": 18,
+    "recorded_elapsed_seconds": 35.11000000000058,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "ood-material-r1",
+    "status": "completed_structured_ood_learning",
+    "summary_sha256": "9a92640cd157a8d61c4d2be7d09ffbea606c8984d0f55767078b766a9d8974a2",
+    "artifact_count": 18,
+    "recorded_elapsed_seconds": 36.03199999999924,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "ood-protocol-r1",
+    "status": "completed_structured_ood_learning",
+    "summary_sha256": "e1e4d699c29fc791ad4fdfd5633ff6bd0ebdb07edb4a6a25dc9ebba233149e89",
+    "artifact_count": 18,
+    "recorded_elapsed_seconds": 34.98399999999674,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "ood-combined-r1",
+    "status": "completed_structured_ood_learning",
+    "summary_sha256": "74842360f82eaafff53fabafb680bf60ce1e28ab4fb82506ed3c0962bfde92ee",
+    "artifact_count": 18,
+    "recorded_elapsed_seconds": 27.406000000002678,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "historical-rollout-r1",
+    "status": "completed_historical_multicycle_boundary_learning",
+    "summary_sha256": "e8d2e0ee59e45db00e2b0ed3c550e699a2116afbe5abc5271f3dcf3c0820a291",
+    "artifact_count": 11,
+    "recorded_elapsed_seconds": null,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "historical-fields-r1",
+    "status": "completed_historical_multicycle_field_cascade",
+    "summary_sha256": "1d7fceadf2d0bf6667fd8fafa5e61cda591dbd09d2a50eace68713b825600b35",
+    "artifact_count": 12,
+    "recorded_elapsed_seconds": null,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "staged-physics-r1",
+    "status": "completed_manufactured_staged_physics_ablation",
+    "summary_sha256": "330aa4d5c09795c1db8b748f133dfdef2e2b43e332323d0304325968838f2d7c",
+    "artifact_count": 38,
+    "recorded_elapsed_seconds": 59.17199999999866,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "field-energy-information-r1",
+    "status": "completed_field_energy_information_audit",
+    "summary_sha256": "b645fa74901ff50467001a6b9963e61e4f6af9778230a7918e8cd1e7cd6772bc",
+    "artifact_count": 3,
+    "recorded_elapsed_seconds": null,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  },
+  {
+    "name": "data-tutorial-r1",
+    "status": "completed_file_to_tensor_tutorial_audit",
+    "summary_sha256": "4265b816f4b9f805013f435e4c25a277fe0eec2959ea9211467b51dd9ad580b7",
+    "artifact_count": 3,
+    "recorded_elapsed_seconds": null,
+    "scope": "artifact integrity only; no fresh fitting in this preflight"
+  }
+]
