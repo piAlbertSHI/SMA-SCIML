@@ -1,0 +1,17 @@
+{
+  "showcase_selection": {
+    "largest_paired_cooling_htf_rms": "paper220_recas_128_r32_t160_p1521_v1016_t2p8_1c",
+    "first_sorted_loading_test": "paper220_recas_171_r42_t210_p1682_v1012_t2p4_1c"
+  },
+  "source_sha256": {
+    "evidence/local_studies/solver_version_pairs_20261121/summary.json": "a33050f277f21b9cf523641eb7e292b00a2cf55916c68510d459590b4dfc4490",
+    "evidence/local_studies/solver_version_pairs_20261121/pairs.json": "a6e6e4b98ce7fe45de0781a05ead32da43333b9fad141a0851e6af07146ffb2d",
+    "evidence/local_studies/loading_field_benchmark_20261121/loading_data.npz": "f0b9554de0b5a44202fc84badf5576f83fb914b88b23660d90e47d80010bdfe7",
+    "evidence/local_studies/loading_field_benchmark_20261121/test_predictions.npz": "5a1365a7e62851a50899f9335b710b57fdfd329264685237638db2e073e87d15",
+    "examples/loading_field_report.py": "9c6703d709037c181e4f13a2b9dfd63569a7effbdd055bd7545112535d797f6e"
+  },
+  "artifact_sha256": {
+    "cooling_version_difference.png": "189f8fe77f73cfe03d67ba8e3f68ff2b8e48ff832f456af0e726412800ae5602",
+    "loading_benchmark_fields.png": "1f912a7ec83cc7b5a09efee34b9763971ffe976ef12fb62a69f27b449f1b80ae"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "status": "verified_paired_data_and_loading_benchmark",
+  "paired_diagnostics": {
+    "pairs": 54,
+    "loading_fields_and_work_exact": true,
+    "archived_COP_and_heat_identity_checked": true
+  },
+  "matches_source_HDF5": true,
+  "checkpoints_replayed": 10,
+  "neural_updates_verified": 2160,
+  "all_initial_fields_exact": true,
+  "pod_train_only_refit_verified": true,
+  "validation_selected_baseline": "pod_ridge",
+  "replay_by_run": {
+    "persistence": {
+      "prediction_replay_max_difference": 0.0,
+      "bounds_diagnostic": {
+        "raw_normalized_test_rmse": 0.8598102290274492,
+        "projected_normalized_test_rmse": 0.8598102290274492,
+        "minimum_raw_phase": 0.0,
+        "maximum_raw_phase": 0.0,
+        "raw_edge_radial_displacement_max_abs_mm": 0.0
+      }
+    },
+    "pod_ridge": {
+      "prediction_replay_max_difference": 0.0,
+      "bounds_diagnostic": {
+        "raw_normalized_test_rmse": 0.021382553478952654,
+        "projected_normalized_test_rmse": 0.021220094552087444,
+        "minimum_raw_phase": -0.027564509550905846,
+        "maximum_raw_phase": 1.058538767562223,
+        "raw_edge_radial_displacement_max_abs_mm": 2.6126035161430162e-18
+      }
+    },
+    "mlp_20261121": {
+      "prediction_replay_max_difference": 0.0,
+      "bounds_diagnostic": {
+        "raw_normalized_test_rmse": 0.08193858482820678,
+        "projected_normalized_test_rmse": 0.07899176803155906,
+        "minimum_raw_phase": -0.02831810899078846,
+        "maximum_raw_phase": 1.0634515285491943,
+        "raw_edge_radial_displacement_max_abs_mm": 0.12230938673019409
+      }
+    },
+    "mlp_20261122": {
+      "prediction_replay_max_difference": 0.0,
+      "bounds_diagnostic": {
+        "raw_normalized_test_rmse": 0.07872104484276943,
+        "projected_normalized_test_rmse": 0.07582035249000556,
+        "minimum_raw_phase": -0.03414059430360794,
+        "maximum_raw_phase": 1.0567846298217773,
+        "raw_edge_radial_displacement_max_abs_mm": 0.14631587266921997
+      }
+    },
+    "mlp_20261123": {
+      "prediction_replay_max_difference": 0.0,
+      "bounds_diagnostic": {
+        "raw_normalized_test_rmse": 0.07233443587182321,
+        "projected_normalized_test_rmse": 0.07013070860203909,
+        "minimum_raw_phase": -0.022618388757109642,
+        "maximum_raw_phase": 1.0343791246414185,
+        "raw_edge_radial_displacement_max_abs_mm": 0.13052722811698914
+      }
+    },
+    "deeponet_20261121": {
+      "prediction_replay_max_difference": 0.0,
+      "bounds_diagnostic": {
+        "raw_normalized_test_rmse": 0.09102411307873422,
+        "projected_normalized_test_rmse": 0.08629502127090112,
+        "minimum_raw_phase": -0.04343945160508156,
+        "maximum_raw_phase": 1.1236529350280762,
+        "raw_edge_radial_displacement_max_abs_mm": 0.05813358724117279
+      }
+    },
+    "deeponet_20261122": {
+      "prediction_replay_max_difference": 0.0,
+      "bounds_diagnostic": {
+        "raw_normalized_test_rmse": 0.08419273221118705,
+        "projected_normalized_test_rmse": 0.08139104287731684,
+        "minimum_raw_phase": -0.0325976125895977,
+        "maximum_raw_phase": 1.1406325101852417,
+        "raw_edge_radial_displacement_max_abs_mm": 0.09721483290195465
+      }
+    },
+    "deeponet_20261123": {
+      "prediction_replay_max_difference": 0.0,
+      "bounds_diagnostic": {
+        "raw_normalized_test_rmse": 0.09997260055745022,
+        "projected_normalized_test_rmse": 0.095088786655756,
+        "minimum_raw_phase": -0.04802025109529495,
+        "maximum_raw_phase": 1.1707078218460083,
+        "raw_edge_radial_displacement_max_abs_mm": 0.05587442219257355
+      }
+    },
+    "fourier_20261121": {
+      "prediction_replay_max_difference": 0.0,
+      "bounds_diagnostic": {
+        "raw_normalized_test_rmse": 0.0662130630294363,
+        "projected_normalized_test_rmse": 0.0652343807362393,
+        "minimum_raw_phase": -0.023419028148055077,
+        "maximum_raw_phase": 0.9988627433776855,
+        "raw_edge_radial_displacement_max_abs_mm": 0.037489425390958786
+      }
+    },
+    "fourier_20261122": {
+      "prediction_replay_max_difference": 0.0,
+      "bounds_diagnostic": {
+        "raw_normalized_test_rmse": 0.06215192183907586,
+        "projected_normalized_test_rmse": 0.06097772855781569,
+        "minimum_raw_phase": -0.027682388201355934,
+        "maximum_raw_phase": 1.0971460342407227,
+        "raw_edge_radial_displacement_max_abs_mm": 0.01975523866713047
+      }
+    },
+    "fourier_20261123": {
+      "prediction_replay_max_difference": 0.0,
+      "bounds_diagnostic": {
+        "raw_normalized_test_rmse": 0.07260189029131775,
+        "projected_normalized_test_rmse": 0.07186394497249995,
+        "minimum_raw_phase": -0.035507932305336,
+        "maximum_raw_phase": 1.0611704587936401,
+        "raw_edge_radial_displacement_max_abs_mm": 0.028036898002028465
+      }
+    }
+  },
+  "bound_projection_used_only_as_diagnostic": true,
+  "fresh_solver_calls": 0
+}

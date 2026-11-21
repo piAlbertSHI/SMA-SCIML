@@ -35,6 +35,8 @@ Figures are generated from recorded numerical arrays. The operator comparison in
 | 15 | Multi-step horizon comparison / 多步训练逐循环对照 | [PNG](../assets/multicycle_v1/multicycle_horizons.png) | [SVG](../assets/multicycle_v1/multicycle_horizons.svg) | [three-seed summary](../evidence/experiments/multicycle_multistep_v1/summary.json) |
 | 16 | Training fit and all third-cycle blocks / 训练拟合与第三循环全状态 | [PNG](../assets/multicycle_v1/multicycle_diagnosis.png) | [SVG](../assets/multicycle_v1/multicycle_diagnosis.svg) | [derived metrics](../assets/multicycle_v1/derived_metrics.json) |
 | 17 | Both third-cycle cases and all seeds / 两个工况与全部种子 | [PNG](../assets/multicycle_v1/multicycle_cases.png) | [SVG](../assets/multicycle_v1/multicycle_cases.svg) | [protocol and individual reports](MULTICYCLE_MULTISTEP.md) |
+| 18 | Paired solver-version temperature fields / 同工况跨版本温度场 | [PNG](../assets/loading_field_study/cooling_version_difference.png) | — | [54-pair audit / 54 对核验](../evidence/local_studies/solver_version_pairs_20261121/summary.json) |
+| 19 | Loading fields and operator error maps / 加载场与算子误差分布 | [PNG](../assets/loading_field_study/loading_benchmark_fields.png) | — | [Fixed loading benchmark / 固定加载基准](LOADING_FIELD_STUDY.md) |
 | Animation / 动画 | Stage-4 temperature evolution / 第四阶段温度演化 | [GIF](../assets/temperature_evolution.gif) | — | [replay summary](../assets/demo_summary.json) |
 
 The original three-strategy acquisition plot remains available as [historical comparison](../assets/active_learning.png). The six-target plot includes all four strategies, so results are not selected only for favorable targets.

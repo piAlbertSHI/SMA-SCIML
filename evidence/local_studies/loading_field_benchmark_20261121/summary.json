@@ -1,0 +1,304 @@
+{
+  "status": "completed_loading_field_benchmark",
+  "case_counts": {
+    "train": 140,
+    "validation": 30,
+    "test": 30
+  },
+  "model_runs": 11,
+  "neural_updates_total": 2160,
+  "scores": {
+    "persistence": {
+      "validation": {
+        "rmse": {
+          "u_mm": {
+            "mean": 0.08181144156959216,
+            "seed_sd": null
+          },
+          "w_mm": {
+            "mean": 1.974007754693287,
+            "seed_sd": null
+          },
+          "temperature_K": {
+            "mean": 3.929734416074556,
+            "seed_sd": null
+          },
+          "phase_fraction": {
+            "mean": 0.16831937701565838,
+            "seed_sd": null
+          }
+        },
+        "normalized_pooled_rmse": {
+          "mean": 0.8941982126840409,
+          "seed_sd": null
+        },
+        "phase_outside_bounds_fraction_tol_1e-6": {
+          "mean": 0.0,
+          "seed_sd": null
+        }
+      },
+      "test": {
+        "rmse": {
+          "u_mm": {
+            "mean": 0.07854665757576632,
+            "seed_sd": null
+          },
+          "w_mm": {
+            "mean": 1.9519909034459328,
+            "seed_sd": null
+          },
+          "temperature_K": {
+            "mean": 3.7176175032403886,
+            "seed_sd": null
+          },
+          "phase_fraction": {
+            "mean": 0.15954210351047118,
+            "seed_sd": null
+          }
+        },
+        "normalized_pooled_rmse": {
+          "mean": 0.8598102290274492,
+          "seed_sd": null
+        },
+        "phase_outside_bounds_fraction_tol_1e-6": {
+          "mean": 0.0,
+          "seed_sd": null
+        }
+      }
+    },
+    "pod_ridge": {
+      "validation": {
+        "rmse": {
+          "u_mm": {
+            "mean": 0.0028444197107673906,
+            "seed_sd": null
+          },
+          "w_mm": {
+            "mean": 0.0392931390384084,
+            "seed_sd": null
+          },
+          "temperature_K": {
+            "mean": 0.12720888024765034,
+            "seed_sd": null
+          },
+          "phase_fraction": {
+            "mean": 0.005562899851937512,
+            "seed_sd": null
+          }
+        },
+        "normalized_pooled_rmse": {
+          "mean": 0.02721602712611862,
+          "seed_sd": null
+        },
+        "phase_outside_bounds_fraction_tol_1e-6": {
+          "mean": 0.016926770708283315,
+          "seed_sd": null
+        }
+      },
+      "test": {
+        "rmse": {
+          "u_mm": {
+            "mean": 0.002084737459698747,
+            "seed_sd": null
+          },
+          "w_mm": {
+            "mean": 0.02546219002775766,
+            "seed_sd": null
+          },
+          "temperature_K": {
+            "mean": 0.10685643497040787,
+            "seed_sd": null
+          },
+          "phase_fraction": {
+            "mean": 0.004669119824988597,
+            "seed_sd": null
+          }
+        },
+        "normalized_pooled_rmse": {
+          "mean": 0.021382553478952654,
+          "seed_sd": null
+        },
+        "phase_outside_bounds_fraction_tol_1e-6": {
+          "mean": 0.011991463251967453,
+          "seed_sd": null
+        }
+      }
+    },
+    "mlp": {
+      "validation": {
+        "rmse": {
+          "u_mm": {
+            "mean": 0.010743361934559043,
+            "seed_sd": 0.00017891218150631067
+          },
+          "w_mm": {
+            "mean": 0.10971427655558363,
+            "seed_sd": 0.0044050928476404875
+          },
+          "temperature_K": {
+            "mean": 0.3242225824050288,
+            "seed_sd": 0.02370137187327047
+          },
+          "phase_fraction": {
+            "mean": 0.013961194055541448,
+            "seed_sd": 0.0021717205414838537
+          }
+        },
+        "normalized_pooled_rmse": {
+          "mean": 0.0824227349070278,
+          "seed_sd": 0.004447645581923344
+        },
+        "phase_outside_bounds_fraction_tol_1e-6": {
+          "mean": 0.30162287137077054,
+          "seed_sd": 0.03459263423946868
+        }
+      },
+      "test": {
+        "rmse": {
+          "u_mm": {
+            "mean": 0.009978568106375532,
+            "seed_sd": 0.00039586119712808204
+          },
+          "w_mm": {
+            "mean": 0.1073842134112034,
+            "seed_sd": 0.003963963204512737
+          },
+          "temperature_K": {
+            "mean": 0.3070281443167857,
+            "seed_sd": 0.021481410211135452
+          },
+          "phase_fraction": {
+            "mean": 0.013344200033354773,
+            "seed_sd": 0.0019500561806774098
+          }
+        },
+        "normalized_pooled_rmse": {
+          "mean": 0.07766468851426646,
+          "seed_sd": 0.004888438995597373
+        },
+        "phase_outside_bounds_fraction_tol_1e-6": {
+          "mean": 0.31625539104530703,
+          "seed_sd": 0.03864950657967
+        }
+      }
+    },
+    "deeponet": {
+      "validation": {
+        "rmse": {
+          "u_mm": {
+            "mean": 0.00938433657988846,
+            "seed_sd": 0.00033299843004133846
+          },
+          "w_mm": {
+            "mean": 0.11644878223000367,
+            "seed_sd": 0.0032020167290187722
+          },
+          "temperature_K": {
+            "mean": 0.4979612007348795,
+            "seed_sd": 0.05051167691897435
+          },
+          "phase_fraction": {
+            "mean": 0.021767523461936885,
+            "seed_sd": 0.0014394706697341813
+          }
+        },
+        "normalized_pooled_rmse": {
+          "mean": 0.09859321540071227,
+          "seed_sd": 0.006142071764082574
+        },
+        "phase_outside_bounds_fraction_tol_1e-6": {
+          "mean": 0.3651549508692366,
+          "seed_sd": 0.052219873607247634
+        }
+      },
+      "test": {
+        "rmse": {
+          "u_mm": {
+            "mean": 0.00880106091153648,
+            "seed_sd": 0.0004263165706342916
+          },
+          "w_mm": {
+            "mean": 0.11108493849266532,
+            "seed_sd": 0.002211149823860083
+          },
+          "temperature_K": {
+            "mean": 0.46005924707810725,
+            "seed_sd": 0.060790308065149824
+          },
+          "phase_fraction": {
+            "mean": 0.02011609995913896,
+            "seed_sd": 0.002043819577942504
+          }
+        },
+        "normalized_pooled_rmse": {
+          "mean": 0.09172981528245716,
+          "seed_sd": 0.00791356891399855
+        },
+        "phase_outside_bounds_fraction_tol_1e-6": {
+          "mean": 0.3644035391934552,
+          "seed_sd": 0.04922978000753859
+        }
+      }
+    },
+    "fourier": {
+      "validation": {
+        "rmse": {
+          "u_mm": {
+            "mean": 0.00778373516019908,
+            "seed_sd": 0.0014711624154160115
+          },
+          "w_mm": {
+            "mean": 0.13981776214159977,
+            "seed_sd": 0.024476221559246513
+          },
+          "temperature_K": {
+            "mean": 0.3468350976617005,
+            "seed_sd": 0.052010901450908684
+          },
+          "phase_fraction": {
+            "mean": 0.01535368172915759,
+            "seed_sd": 0.0024061001936755712
+          }
+        },
+        "normalized_pooled_rmse": {
+          "mean": 0.0780665072324389,
+          "seed_sd": 0.0051244604824842045
+        },
+        "phase_outside_bounds_fraction_tol_1e-6": {
+          "mean": 0.3135876572851363,
+          "seed_sd": 0.05287092681379453
+        }
+      },
+      "test": {
+        "rmse": {
+          "u_mm": {
+            "mean": 0.006848278057199276,
+            "seed_sd": 0.0015511749885404008
+          },
+          "w_mm": {
+            "mean": 0.12535825051666502,
+            "seed_sd": 0.01932440763996807
+          },
+          "temperature_K": {
+            "mean": 0.2899008558831568,
+            "seed_sd": 0.03259622799110059
+          },
+          "phase_fraction": {
+            "mean": 0.01273655245937147,
+            "seed_sd": 0.0015948164624442279
+          }
+        },
+        "normalized_pooled_rmse": {
+          "mean": 0.06698895838660997,
+          "seed_sd": 0.005268013892082614
+        },
+        "phase_outside_bounds_fraction_tol_1e-6": {
+          "mean": 0.3191054199457561,
+          "seed_sd": 0.06604883233792581
+        }
+      }
+    }
+  },
+  "fresh_solver_calls": 0,
+  "runtime_seconds": 18.329279500001576
+}

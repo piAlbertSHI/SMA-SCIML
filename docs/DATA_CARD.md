@@ -6,10 +6,11 @@
 |---|---|---|
 | Single-cycle numerical corpus / 单循环数值数据 | 63 cases; 37 train, 13 calibration, 13 test; radius32–42 mm, thickness160–210 µm; R/t=200 | Performance surrogates, state/field comparisons, calibration and offline acquisition / 性能代理、状态与场对照、校准及离线选样 |
 | Historical multi-cycle corpus / 历史多循环数据 | 12 cases; 8 two-cycle train, 4 test including 2 three-cycle cases; 72/46 training/test transitions | Residual-cascade and HRO benchmarks / 残差级联与分层循环算子基准 |
+| Historical loading fields / 历史加载场 | 200 distinct single-cycle conditions with a fixed 140/30/30 split and 54 matched conditions in the revised single-cycle archive / 200 个独立单循环工况，固定 140/30/30 划分，54 个工况在修订单循环归档中有配对 | First-loading displacement, deflection, temperature and martensite-fraction benchmarks / 首循环加载位移、挠度、温度和马氏体相分数基准 |
 
-The corpora have separate configuration histories and should not be pooled as a single validation set. Configuration A/B in the field demonstrations maps to the archived material indicators recA/recAS. The 63-case test partition contains only recA; it does not establish cross-material generalization. Radius and thickness co-vary at fixed R/t, limiting geometric extrapolation claims.
+Each corpus has its own configuration history and validation scope. Configuration A/B in the field demonstrations maps to the archived material indicators recA/recAS. The 63-case test partition contains only recA; it does not establish cross-material generalization. Radius and thickness co-vary at fixed R/t, limiting geometric extrapolation claims.
 
-两组数据具有不同配置历史，不合并为同一验证集。场演示中的配置 A/B 对应归档材料标识 recA/recAS。63工况测试分区仅含 recA，不能证明跨材料泛化；半径与厚度按固定 R/t 联动，几何外推结论因此受限。
+各组数据具有各自的配置历史和验证范围。场演示中的配置 A/B 对应归档材料标识 recA/recAS。63 工况测试分区仅含 recA，不能证明跨材料泛化；半径与厚度按固定 R/t 联动，几何外推结论因此受限。
 
 ## Distributed snapshots / 分发快照
 
@@ -20,6 +21,7 @@ The corpora have separate configuration histories and should not be pooled as a 
 | `data/uq_predictions.npz` | Five-member predictions and calibrated intervals / 五成员预测与校准区间 |
 | `data/historical12_state.npz` | 118 transitions of515 states, 12 initial states, nine controls per case; 20 test exchange fields / 118个515维状态转移、12个初态、九维控制及20段测试换热场 |
 | `data/historical12_training_fields.npz` | 32 exchange fields from the eight training cases; shape32×2×50×101 / 八个训练工况的32段双通道换热场 |
+| [Loading-field snapshot / 加载场快照](../evidence/local_studies/loading_field_benchmark_20261121/loading_data.npz) | Controls, fixed case splits and 200×4×50×51 loading fields from one archive / 单一来源的控制量、固定工况划分及 200×4×50×51 加载场 |
 | `checkpoints/` and experiment directories / 权重及实验目录 | Saved models, protocols, metrics and training records / 模型、协议、指标及训练记录 |
 
 The residual-cascade fine-tuning study freezes its field decoder. HRO jointly trains the state and field branches using the 32 training exchange fields. The 20 test fields are used only for evaluation. Initial model inputs contain the first mechanical observation and declared thermal defaults; autonomous rollout never consumes later observed states.
@@ -48,3 +50,5 @@ Original MAT files, full HDF5 archives, solver run directories and unrelated man
 - Data and weight redistribution rights require an explicit release license. / 数据及权重再分发须有明确发布许可。
 
 See the project status for the additional solver archives, exact condition overlap and version-specific evidence. / 其余求解器归档、条件重叠及版本范围见项目进度。[Cross-archive inventory / 跨档案核验](PROJECT_STATUS.md#两项现有数据核验)
+
+The loading snapshot matches its source HDF5. Registered pairs agree pointwise during loading and differ during exchange. / 加载快照与来源 HDF5 完全一致。配对工况在加载阶段逐点一致，在换热阶段有差异。 [Study and provenance / 基准与溯源](LOADING_FIELD_STUDY.md)

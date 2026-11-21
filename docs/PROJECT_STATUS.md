@@ -1,8 +1,8 @@
 # 项目进度与研究路线 / Project status and research roadmap
 
-**审查日期：2026-11-21。** 原计划从数据契约和强基线出发，逐步建立可自主推演的状态模型、神经算子、逆问题与设计闭环。现有数值数据上的实现已覆盖这条链，成熟度因任务而异。当前优先事项是用同一数据和预算比较模型、扩展到加载力热场，并核实跨版本数据能否复用。独立泛化、预测能量闭合和新设计回验仍有实质缺口。
+**审查日期：2026-11-21。** 原计划从数据契约和强基线出发，逐步建立可自主推演的状态模型、神经算子、逆问题与设计闭环。已完成 54 对同工况的跨版本对照和 200 工况的加载力热场基准。两版首循环加载数据逐点一致，冷却换热差异最大。POD/Ridge 在固定预算下领跑四个加载场。独立泛化、预测能量闭合和新设计回验仍有实质缺口。 [配对审查与加载基准](LOADING_FIELD_STUDY.md)
 
-The existing implementation covers scalar surrogates, state rollout, temperature operators, inverse problems and offline design. The next priority is to reconcile paired solver versions and establish a common benchmark with case-level splits for loading-field prediction. Independent generalization, predictive energy closure and verification of new designs remain open.
+The 54-condition solver-version audit and the 200-condition loading-field benchmark are complete. First loading agrees pointwise across the paired archives. Cooling exchange shows the largest differences. POD/Ridge has the lowest loading-field errors under the fixed protocol. Independent generalization, predictive energy closure and verification of new designs remain open. [Paired audit and loading benchmark](LOADING_FIELD_STUDY.md)
 
 ## 最早的方案与正式编号
 
@@ -20,10 +20,10 @@ The existing implementation covers scalar surrogates, state rollout, temperature
 | 工作包 | 已有实现和结果 | 尚需完善 |
 |---|---|---|
 | **WP0 求解器基线** | 历史冻结提交 `67ee636` 有指定配置下的 1–3 循环、严格分段和精确重启记录。已恢复 HRO 历史参数及关键实现的哈希。 | 任何后续数据要绑定选定物理版本、配置与输出契约。未受哈希记录的依赖和实际运行环境仍需兼容性核对。长循环、亚循环滞回、独立 FE 或实验属于后续研究。[历史实现审查](HRO_RESEARCH_DESIGN.md) |
-| **WP1 数据与切分** | 最早的加载档案有 3,840 条标量记录、20 条算子检查点及 270 条失败事件。当前单循环 63 个独立工况，按工况分为 37/13/13。历史多循环 12 例，8 例两循环拟合，4 例开发评价，其中 2 例三循环。此次核验还确认旧版全场开发档案有 200 个不同工况可供进一步检查。 | 建立跨档案工况对照，明确阶段、输入权限、通道单位和物理版本。加载档案、失败事件、完整单循环和多循环分别评价。留出工况从预训练和后处理拟合中同时排除。已核验的四个完整循环归档均为固定 $R/t=200$，只能在固定厚径比内比较尺寸。[档案核验](../evidence/project_corpus_audit_20261121.json) · [数据说明](DATA_CARD.md) |
+| **WP1 数据与切分** | 最早的加载档案有 3,840 条标量记录、20 条算子检查点及 270 条失败事件。当前单循环 63 个独立工况，按工况分为 37/13/13。历史多循环 12 例，8 例两循环拟合，4 例开发评价，其中 2 例三循环。加载基准已从历史全场档案提取 200 个不同的单循环工况，并锁定 140/30/30 划分。 | 扩展工作沿用工况级隔离和版本来源记录，分别评价加载、失败事件、完整单循环和多循环。留出工况从预训练和后处理拟合中同时排除。已核验的四个完整循环归档均为固定 $R/t=200$。 [档案核验](../evidence/project_corpus_audit_20261121.json) · [数据说明](DATA_CARD.md) |
 | **WP2 标量代理与可靠性** | 在 63 例归档上比较均值、Ridge、随机森林、梯度提升、MLP 和集成。以 COP 为例，Ridge 与五成员集成的 RMSE 为 **0.0627 / 0.0192**。移到材料留出时，集成的 COP RMSE 为 **0.354**；这是不同切分上的结果。旧加载档案另有设计可行性分类。 | 分别报告材料、尺寸和运行协议留出，核对热量、加载功、回收功量和泵功的派生指标一致性。先衡量分类标签覆盖，再完善完整循环失败预测。63 例全通过，缺少反类，完整循环分类不能沿用加载设计分类分数。[标量指标](../evidence/archive/wp2-strong-r1/summary.json) · [外推对照](<../SciML/docs/learning_closed_loop_report/07B_结构化外推与可信边界.md>) |
 | **WP3 混合状态空间** | 四复合阶段从允许的初态自主推进。历史支线加入方向记忆和重启接口，状态维度扩至 515。已做同预算单步/多步续训，发现把训练损失压得更低并未稳定改善第三循环。HRO 进一步采用显式状态、潜变量与循环记忆。 | 扩大可用于第三循环开发的独立历史工况，分状态块分析相分数、流体、重启以及误差传播。要在进入物理闭合训练之前区分换热终点与复合边界的再平衡状态。真实 SMA 的完整物理闭合项仍缺独立验证。[多步对照](MULTICYCLE_MULTISTEP.md) · [状态与场语义](HRO_RESEARCH_DESIGN.md) |
-| **WP4 时空算子与降阶** | 已实现 DeepONet、时间条件的**一维空间 Fourier 算子**、训练集 SVD 的四模态 POD/Ridge、方向记忆级联，以及与 HRO 状态推进相连的温度场读出。HRO 在四个已分析历史工况的总体 SMA 场 RMSE 为 **0.857 K**，仍有两个单种子段退步。 | 补齐原始方案的**加载阶段力热场**对照，预测 $u,w,T,\xi$，先用 PCA/POD 加线性或 MLP 做基线。换热算子对比应统一初态来源、监督网格、切分和预算。独立网格测试、二维时空 FNO 或图神经算子，以及跨材料或拓扑迁移仍需证据。[换热算子对照](<../SciML/docs/learning_closed_loop_report/06_WP4_坐标算子与空间记忆.md>) · [HRO 报告](HRO_ERROR_SCALED_RESPONSE.md) |
+| **WP4 时空算子与降阶** | 加载阶段已对照八模态 POD/Ridge、坐标 MLP、DeepONet 和径向 Fourier，预测 $u,w,T,\xi$。POD/Ridge 的测试温度 RMSE 为 **0.107 K**。换热支线已有四模态 POD/Ridge、坐标算子、方向记忆级联和 HRO，HRO 在四个已分析历史工况的总体 SMA 场 RMSE 为 **0.857 K**。 | 加载基准仍有相分数越界，需在训练中检验边界和相变约束。换热对照应统一初态来源、监督网格、切分和预算，并单独评价使用预测初态的表现。独立网格真值、二维时空 Fourier 或图算子、跨材料或拓扑迁移仍需证据。 [加载对照](LOADING_FIELD_STUDY.md) · [换热算子对照](<../SciML/docs/learning_closed_loop_report/06_WP4_坐标算子与空间记忆.md>) · [HRO 报告](HRO_ERROR_SCALED_RESPONSE.md) |
 | **WP5 PINN 与参数反演** | 制造热方程可恢复已知扩散系数，三组参数相对误差约 0.046%–0.191%。项目数据另在 3 工况 6 换热段进行单个有效热响应速率辨识，并比较经典 ODE 拟合。 | 在不同噪声和观测位置下评估参数可辨识性，报告参数敏感性、末段预测与稳定区间。完整 SMA 材料参数校准仍需要独立观测和适用的物理模型。[反演证据](<../SciML/docs/learning_closed_loop_report/08_WP5_PINN逆问题.md>) |
 | **WP6 不确定性** | 五成员集成与 13 工况校准已有结果。名义 90% 的六目标同时区间在记录的 13 个测试工况全覆盖，95% 的同一方法所需秩为 14，当前校准数无法给出有限区间。已有材料外推和拒绝预测诊断。 | 增加独立案例校准覆盖，分别报告区间宽度、覆盖率和接受预测后的风险。HRO 的经验误差收缩尺度保持为读出参数，与正式区间校准分开。无独立重复观测时保留噪声来源不可辨识的边界。[校准记录](../evidence/archive/wp6-uq-r1/uq_report.json) |
 | **WP6 主动学习与逆设计** | 归档池两轮揭示标签，预算 12→17→22，比较随机、不确定性、复合与多样性策略。多样性策略改善温差，其他目标有取舍。已有 Pareto 候选回查，从 15 个归档候选中揭示 3 点。保守下界下 15 点均无可证明的超体积增益。 | 先固定用途、主目标及支持域，做随机/主动同预算对照。工程约束的适用限值、未见候选的冻结求解器回验和安全判断需要后续证据。原稿的安全 Bayesian 优化与 MPC 尚属研究扩展。[多样性实验](ACQUISITION_DIVERSITY.md) · [候选回查](<../SciML/docs/learning_closed_loop_report/11_WP6_设计候选与归档回查.md>) |
@@ -34,7 +34,7 @@ The existing implementation covers scalar surrogates, state rollout, temperature
 
 **可复用的归档规模。** 旧全场开发档案的 229 条运行记录中，212 条符合各自归档逐例门限，对应 200 个不同的注册工况、226 条循环记录。对这 226 条循环核验了 452 个加载/卸载段的 50×51 力热通道，以及 452 个换热段的 50×101 SMA/HTF 温度。当前 63 例也含相同形状的字段。核验覆盖四套归档的 28 个已登记产物哈希和 HDF5 字段形状。旧版工程门限通过，原 WP2–WP4 的联合科研门限仍未通过。逐例标签、档案门限和模型科学门限应分别引用。[可复查清单](../evidence/project_corpus_audit_20261121.json)
 
-旧版开发档案和当前 63 例有 **54 个完全相同的注册条件 ID**，物理实现指纹不同。可将其作为配对版本差异实验，在全体配对样本上分变量比较，进一步回到配置与能量日志查因。旧版开发与用于 HRO 的历史多循环归档采用相同物理指纹、不同导出指纹，且无共同条件 ID。前者包含 10 个两循环和 2 个三循环记录，可以先核验状态接口和使用历史，再决定是否纳入探索性多循环开发。历史 Confirm50 的 12 个条件在其 Temporal12 中重复，跨表留出须按条件锁定。[归档核验](../evidence/project_corpus_audit_20261121.json) · [HRO 数据来源](../data/historical12_state.json)
+历史开发档案和当前 63 例有 **54 个完全相同的注册条件 ID**，物理实现指纹不同。已核验性能、时空场、能量和运行配置。两版首循环加载压力、位移、挠度、温度、相分数和加载功逐点一致。冷却阶段流体场的配对 RMS 差异最大为 1.044 K，完整循环标签应保留版本来源。历史开发与 HRO 多循环归档采用相同物理指纹、不同导出指纹，且无共同条件 ID。历史开发归档另含 10 个两循环和 2 个三循环记录，可以先核验状态接口和使用历史，再决定是否纳入探索性多循环开发。历史 Confirm50 的 12 个条件在其 Temporal12 中重复，跨表留出须按条件锁定。 [配对证据](LOADING_FIELD_STUDY.md#matched-solver-archives--同工况版本对照) · [归档核验](../evidence/project_corpus_audit_20261121.json) · [HRO 数据来源](../data/historical12_state.json)
 
 **Fourier 网格敏感性。** 用三个原始种子回放 DeepONet 和 Fourier，并重建训练集四模态 POD/Ridge。在相同 13 个历史工况的 26 个换热段上，对 26、50、51、101、201 个空间查询点做比较。所有结果映回原生 101 点后与真值计算未来场误差，另用“原生预测插值往返”区分网格算子效应与插值效应。查询点首帧逐元素匹配，常量和正弦谱重建也通过数值检查。[跨网格结果](../evidence/operator_resolution_audit_20261121.json)
 
@@ -58,12 +58,12 @@ The existing implementation covers scalar surrogates, state rollout, temperature
 | C4 材料迁移 | 已审计类别留出的退化。仍需比较仅类别、物性输入及少量适配，真正未见材料需要独立覆盖。 |
 | C5 场到能量与实验标定 | 已查明输出信息缺口，并在制造问题及局部热节点上验证部分算法。全系统积分与实验标定未完成。 |
 
-1. **先固定数据契约与分组。** 核对 54 对版本配对的性能、温度场与能量字段，记录差异的阶段和尺度。对能跨归档重复的物理条件执行同组隔离。把形状检查、逐例质量标志、物理指纹和可用目标汇入同一基准登记表。
-2. **优先补加载算子与统一基准。** 先用归档加载随时间的 $u,w,T,\xi$ 比较持久性、PCA/POD 系数的 Ridge/MLP、DeepONet、空间 Fourier。基底、尺度和秩在训练工况上选定，比较未来场 RMSE、最大误差、相分数越界和推理成本。换热结果同时报告观测入口和预测入口，按阶段、材料、尺寸、协议出表。保留最强简单方法作为默认对照。
+1. **固定数据契约与分组。** 54 对跨版本差异已记录。首循环加载基准采用单一来源，跨归档重复工况按条件 ID 归组。未来增加训练范围时登记阶段、可用输入、物理指纹与每例质量标志。
+2. **以固定基准推进加载和换热算子。** 加载基准已覆盖持久性、POD/Ridge、坐标 MLP、DeepONet 和径向 Fourier。以 POD/Ridge 为基线，下一步检验外缘条件和相分数约束能否降低原始预测的越界与前沿误差。换热结果同时报告观测入口和预测入口，按阶段、材料、尺寸、协议出表。
 3. **再提升自主循环和物理耦合。** 先验证额外历史轨迹的状态对齐，再用固定预算拆分 HRO 的记忆、模态解码与读出贡献。以每循环稳定性和逐状态块指标判断收益。明确边界归属并能独立核算能量之后，再训练真实物理一致性项。局部反演和可靠性评估可使用既有数据单独推进。
 4. **具备可信预测后再扩展设计。** 先确定一个主要性能目标和容许风险，复用归档验证选样。若历史数据无法支持独立材料/厚径比、长循环或新设计回验，针对缺失的维度提出最小数据增量与预算，由项目负责人批准后再计算。
 
-近期可以直接使用现有数据推进前两项。向公开发布推进时，还需在干净环境检查安装和推理、验收场浏览器并核实代码、数据、图像和权重的授权。[发布规范](PUBLIC_RELEASE_CHECKLIST.md)
+可用现有档案继续核验加载约束和预测初态下的换热误差。向公开发布推进时，还需在干净环境检查安装和推理、验收场浏览器并核实代码、数据、图像和权重的授权。 [发布规范](PUBLIC_RELEASE_CHECKLIST.md)
 
 ## 核验入口
 
