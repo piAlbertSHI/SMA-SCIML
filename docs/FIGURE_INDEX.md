@@ -1,8 +1,8 @@
 # Figure index / 图表索引
 
-The README contains 14 static figures plus a temperature animation. Nine figures were added in this update, each with PNG and editable SVG exports. All numbers come from committed result files; the diversity study is a new experiment and the other additions visualize existing branches.
+The README contains 17 static figures plus a temperature animation. The latest three multi-cycle figures have PNG and editable SVG exports. All numbers come from committed result files; the diversity and multi-step studies include new training on existing data, with no new physical simulations.
 
-README 展示 14 组静态图和温度动画。本次新增九组图，均提供 PNG 与可编辑 SVG；多样性支线为本次新增实验，其余新增图来自已有研究结果。
+README 展示 17 组静态图和温度动画。最新三组多循环图均提供 PNG 与可编辑 SVG；所有数字来自已提交结果，多样性和多步实验使用现有数据新训模型，没有新增物理仿真。
 
 | # | Question / 展示问题 | Figure / 图片 | Editable / 可编辑 | Numerical source / 数值来源 |
 |---|---|---|---|---|
@@ -20,6 +20,9 @@ README 展示 14 组静态图和温度动画。本次新增九组图，均提供
 | 12 | Historical multicycle rollouts / 历史多循环推演 | [PNG](../assets/research_v1/historical_rollout.png) | [SVG](../assets/research_v1/historical_rollout.svg) | [historical fields](../evidence/archive/historical-fields-r1/summary.json) |
 | 13 | New diversity acquisition / 新增多样性选样 | [PNG](../assets/research_v1/diversity_acquisition.png) | [SVG](../assets/research_v1/diversity_acquisition.svg) | [new experiment](../evidence/experiments/acquisition_diversity_v1/summary.json) |
 | 14 | Design candidate trade-offs / 设计权衡 | [PNG](../assets/design_tradeoff.png) | — | [candidate verification](../evidence/archive/wp6-design-r1/candidate_verification.json) |
+| 15 | Multi-step horizon comparison / 多步训练逐循环对照 | [PNG](../assets/multicycle_v1/multicycle_horizons.png) | [SVG](../assets/multicycle_v1/multicycle_horizons.svg) | [three-seed summary](../evidence/experiments/multicycle_multistep_v1/summary.json) |
+| 16 | Training fit and all third-cycle blocks / 训练拟合与第三循环全状态 | [PNG](../assets/multicycle_v1/multicycle_diagnosis.png) | [SVG](../assets/multicycle_v1/multicycle_diagnosis.svg) | [derived metrics](../assets/multicycle_v1/derived_metrics.json) |
+| 17 | Both third-cycle cases and all seeds / 两个工况与全部种子 | [PNG](../assets/multicycle_v1/multicycle_cases.png) | [SVG](../assets/multicycle_v1/multicycle_cases.svg) | [protocol and individual reports](MULTICYCLE_MULTISTEP.md) |
 | Animation / 动画 | Stage-4 temperature evolution / 第四阶段温度演化 | [GIF](../assets/temperature_evolution.gif) | — | [replay summary](../assets/demo_summary.json) |
 
 The original three-strategy acquisition plot remains available as [historical comparison](../assets/active_learning.png). The new six-target plot includes all four strategies, so results are not selected only for favorable targets.
@@ -31,3 +34,5 @@ For slides, use the SVG exports when possible and retain the dataset, baseline a
 制作幻灯片时优先使用 SVG，保留数据范围、基线与不确定性含义。制造问题、当前 63 例和独立历史版本属于不同证据来源。
 
 [Figure generator / 绘图代码](../examples/research_gallery.py) · [Input/output hashes and scopes / 输入输出哈希与范围](../assets/research_v1/gallery_manifest.json)
+
+[Multi-cycle figure generator / 多循环绘图代码](../examples/multicycle_gallery.py) · [Multi-cycle input/output hashes / 多循环输入输出哈希](../assets/multicycle_v1/gallery_manifest.json)

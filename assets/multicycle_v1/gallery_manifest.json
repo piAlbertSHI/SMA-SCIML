@@ -1,0 +1,37 @@
+{
+  "status": "completed_multicycle_gallery",
+  "figure_count": 3,
+  "figures": [
+    {
+      "name": "multicycle_horizons",
+      "scope": "Fixed two-case cohort at all horizons; future fields exclude initial frame; SD over seeds, not confidence intervals"
+    },
+    {
+      "name": "multicycle_diagnosis",
+      "scope": "Training loss pooled over eight cases/nine transitions; test heatmap ratios of seed-mean RMSE on fixed two cases; all eight state blocks plus both fields"
+    },
+    {
+      "name": "multicycle_cases",
+      "scope": "Both third-cycle test cases and all seeds; boundary RMSE and future-field RMSE are distinct metrics; each panel has its own y scale"
+    }
+  ],
+  "input_sha256": {
+    "evidence/experiments/multicycle_multistep_v1/summary.json": "f9c9bdcff7891d2c86ded855f8cdd873ce208ad4306724efcc6f91a46cfb93f2",
+    "evidence/experiments/multicycle_multistep_v1/protocol.json": "48c224a960d6c0c24a27b8b03ce00c7884847360f46325fc3f9ce7922127a23d",
+    "evidence/experiments/multicycle_multistep_v1/s20260910/report.json": "d450de026c3b6faff190a95ded675fbc14403c9bf06e43d0df30b5e150f1e886",
+    "evidence/experiments/multicycle_multistep_v1/s20260911/report.json": "23b859355708eaf472b89d7b8c5520f41ef6ccb87d14e63a6bd03ec6d528862e",
+    "evidence/experiments/multicycle_multistep_v1/s20260912/report.json": "187fc930d5a373d3c31fe02fdc72f2721e950499c15e27aa1dc2c045ae2e1fc4"
+  },
+  "generator_sha256": "1c97811395993a1e7969bf4fd99f5f714f4e99330b6825fbae3d9e4297de8e0c",
+  "artifacts": {
+    "derived_metrics.json": "81f1f99175dab6400dd27f4f085bb494b7c842cc07c6f1c713c8223ece317940",
+    "multicycle_cases.png": "d5d70abd6a08da09718d1f1c987f029e0cdce4f3ab47c5d71becefc9a6e1c47e",
+    "multicycle_cases.svg": "5c30a4a02dfd7ddb614f8c6e91fbbf592a4e50504e2efdc734b8b1ecac769bf7",
+    "multicycle_diagnosis.png": "018bb71b53462a62f135f270b4c7b4716ac53635d1d31caddd46716c19b55552",
+    "multicycle_diagnosis.svg": "aa6b982bcb4c879bfcd47a6e5a4874b299074fca0200468e8ea81a7ae9c6fbba",
+    "multicycle_horizons.png": "39bd277b076846851d470cc4afe878da19434a9bd23656165250931381d7c472",
+    "multicycle_horizons.svg": "440cd7f6604afb73b16c4e5d4e233766333406f0c35413b5a3984254f4cd2162"
+  },
+  "fresh_solver_calls": 0,
+  "fresh_training_calls": 0
+}

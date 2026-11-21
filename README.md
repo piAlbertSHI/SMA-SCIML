@@ -31,6 +31,7 @@ The main benchmark contains **63 simulated operating conditions**, split by comp
 | Autonomous state propagation | **36.3% lower final-stage SMA-state RMSE:** 0.1260 → 0.0802 K | Affine → Ridge + neural residual; three-seed mean; no future stage-state input |
 | Directional memory transfer | **65.1% lower stage-4 SMA-field RMSE:** 1.6966 → 0.5927 K | Fixed-seed cascade comparison; transfer of predicted stage-2 spatial memory |
 | Field-model comparison | POD/Ridge leads in **3 of 4** stage/field metrics; Fourier leads in stage-4 SMA temperature | Matched supervision; neural-model means over three seeds |
+| Multi-cycle training | Third-cycle SMA-state RMSE **1.5432 → 1.5334 K** with multi-step training; matched one-step continuation reaches **1.5163 K** | Three seeds; fixed two-case cohort; no new simulations; [full comparison](docs/MULTICYCLE_MULTISTEP.md) |
 
 These are reductions in prediction error, not gains in physical cooling efficiency. [Results and evaluation context →](docs/SHOWCASE.md)
 
@@ -54,6 +55,7 @@ The scalar/design and state/field paths share the simulation dataset. They are s
 |---|---|---|
 | Performance surrogate | `7 → 32 → 32 → 5` SiLU MLP; five-member ensemble; Ridge/RF/HistGB baselines | Predict cooling energy, pumping work, COP, specific cooling power and temperature span |
 | Hybrid state model | Four stage-specific Ridge + residual MLPs: `426 → 32 → 32 → d`, `d = 204 / 313 / 313 / 160` | Advance 414 state variables using 12 control features |
+| Historical multi-cycle model | Five Ridge + residual MLPs: `529 → 32 → 32 → d`, `d = 414 / 414 / 414 / 261 / 204`; **146,411 neural parameters** | Advance 515 states, including directional memory and restart; full gradients through nine transitions |
 | DeepONet | Three branches `204 / 9 / 8 → 32 → 32 → 32`; fusion `96 → 48`; coordinate trunk `2 → 32 → 32 → 48`; **20,898 parameters** | Query two temperature fields with an exact initial-condition construction |
 | Fourier / POD baselines | Spatial Fourier: width 12, two layers, eight modes, **7,886 parameters**; POD: four modes per field + Ridge | Compare spectral and low-rank representations under matched supervision |
 | Inverse models | Diffusion PINN `2 → 24 → 24 → 1` + `log(a)`; local ODE network `1 → 24 → 24 → 1` + `log(k)` | Identify a diffusion coefficient or a local effective thermal-response rate |
@@ -63,7 +65,7 @@ The scalar/design and state/field paths share the simulation dataset. They are s
 
 The strongest finding is that **state representation and interfaces can matter as much as network architecture**. A radial state representation discarded directional temperature information needed by a later stage; transferring the predicted antisymmetric component substantially improved the cascade without retraining the field network. The strong POD baseline also identifies where added neural complexity has yet to pay off.
 
-The next research priorities are multi-step training for long-horizon stability, material-property inputs for transfer, objective-specific acquisition following the first diversity comparison, and energy-consistent field-to-performance readout. Each extends an implemented component and has a concrete comparison or validation target. [Research questions and milestones →](docs/SHOWCASE.md#potential)
+The first multi-step experiment is complete: two-cycle training fit improves, but third-cycle prediction does not beat the matched one-step continuation. The next priorities are diagnosing memory/restart errors with training-only validation, material-property inputs for transfer, objective-specific acquisition, and energy-consistent field-to-performance readout. [Research questions and milestones →](docs/SHOWCASE.md#potential)
 
 ### Evaluation scope
 
@@ -87,6 +89,7 @@ SMA SciML 是一个将多物理仿真与机器学习结合的计算研究项目�
 | 自主状态推进 | **末阶段 SMA 状态 RMSE 降低 36.3%：**0.1260 → 0.0802 K | 仿射基线 → Ridge + 神经残差，三个种子均值，不读取未来阶段状态 |
 | 方向记忆传递 | **第四阶段 SMA 场 RMSE 降低 65.1%：**1.6966 → 0.5927 K | 固定种子级联对照，传递预测的第二阶段空间记忆 |
 | 场模型对照 | POD/Ridge 在 **4 项指标中的 3 项**领先；Fourier 在第四阶段 SMA 温度上领先 | 相同监督数据，神经模型取三个种子均值 |
+| 多循环训练 | 多步训练使第三循环 SMA 状态 RMSE **1.5432 → 1.5334 K**；同预算单步续训为 **1.5163 K** | 三个种子、固定两个测试工况，无新增仿真；[完整对照](docs/MULTICYCLE_MULTISTEP.md) |
 
 以上百分比指预测误差下降，不代表实体制冷效率提高。[查看图表与评价条件 →](docs/SHOWCASE.md)
 
@@ -98,6 +101,7 @@ SMA SciML 是一个将多物理仿真与机器学习结合的计算研究项目�
 |---|---|---|
 | 性能代理 | `7 → 32 → 32 → 5` SiLU MLP、五成员集成，配套 Ridge/RF/HistGB 基线 | 预测冷量、泵功、COP、比制冷功率与温差 |
 | 混合状态模型 | 四个阶段专属 Ridge + 残差 MLP：`426 → 32 → 32 → d`，`d = 204 / 313 / 313 / 160` | 由 414 维状态和 12 维控制推进循环状态 |
+| 历史多循环模型 | 五个 Ridge + 残差 MLP：`529 → 32 → 32 → d`，`d = 414 / 414 / 414 / 261 / 204`；**146,411 神经参数** | 推进含方向记忆和重启的 515 维状态，梯度穿过完整九步链 |
 | DeepONet | 三个 branch：`204 / 9 / 8 → 32 → 32 → 32`；融合 `96 → 48`；trunk：`2 → 32 → 32 → 48`；**20,898 参数** | 查询 SMA/流体温度场，通过输出构造严格满足初值 |
 | Fourier / POD 对照 | 一维空间 Fourier：宽度 12、两层、8 个模式、**7,886 参数**；POD：每场 4 模态 + Ridge | 在相同监督下比较频域表示与低秩表示 |
 | 反演模型 | 扩散 PINN：`2 → 24 → 24 → 1` + `log(a)`；局部 ODE：`1 → 24 → 24 → 1` + `log(k)` | 识别扩散系数或局部有效热响应率 |
@@ -107,7 +111,7 @@ SMA SciML 是一个将多物理仿真与机器学习结合的计算研究项目�
 
 一个核心发现是：**状态表示和模块接口，与网络架构同样重要。** 原径向状态丢失了后续阶段需要的方向温度信息；传递预测场的反对称分量后，无需重训场网络即可明显改善级联误差。POD 的强基线表现也明确了神经模型在哪些任务上尚未体现优势。
 
-下一阶段将围绕长期稳定性开展多步训练，引入物性特征研究迁移，在首轮多样性实验基础上研究目标相关选样，并建立满足能量核算要求的场到性能读出。这些方向均对应已有模块和可检验的研究问题。[查看研究问题与验收目标 →](docs/SHOWCASE.md#potential)
+首轮多步训练已完成：两循环训练拟合改善，但第三循环预测尚未超过同预算单步续训。下一阶段将结合训练集内部验证定位记忆/重启误差，引入物性特征研究迁移，研究目标相关选样，并建立满足能量核算要求的场到性能读出。[查看研究问题与验收目标 →](docs/SHOWCASE.md#potential)
 
 ### 评价范围
 
@@ -117,8 +121,9 @@ SMA SciML 是一个将多物理仿真与机器学习结合的计算研究项目�
 
 ## Results gallery / 图文成果汇报
 
-**Fourteen result figures across the modeling pipeline, plus the temperature animation above.** The gallery combines the existing simulation studies with a newly completed diversity-aware acquisition experiment. The new experiment uses the same archived labels and adds no physics simulations.  
-**14 组结果图覆盖模型全流程，另有上方温度动画。** 本页汇集已有支线研究，并补充本次完成的多样性选样实验；新实验继续使用已有标签，没有新增物理仿真。
+**Seventeen result figures across the modeling pipeline, plus the temperature animation above.** The gallery includes completed diversity-acquisition and multi-step training experiments using existing data, without new physics simulations. Figures 15–17 show the latest multi-cycle comparison.
+
+**17 组结果图覆盖模型全流程，另有上方温度动画。** 本页汇集各支线研究，以及使用现有数据完成的多样性选样和多步训练实验，没有新增物理仿真。最新多循环对照见图 15–17。
 
 [Figure index & editable SVG / 图表索引与可编辑 SVG](docs/FIGURE_INDEX.md) · [Architecture and detailed results / 架构及详细结果](docs/SHOWCASE.md)
 
@@ -222,6 +227,30 @@ A fixed **50:50 composite-score / distance-rank** rule was evaluated over **four
 Three candidates from a 15-case pool were checked against archived numerical results after prediction. The study connects calibrated surrogates to candidate review; it does not establish a continuous global optimum or engineering safety certification.  
 对 15 个候选中的三个方案先预测、后进行归档数值回查，将校准代理模型连接到候选设计评价。当前结果限定于有限候选池，尚未验证连续全局最优或工程安全。
 
+### 15 · New: multi-step training / 新增：多步训练对照
+
+![Multi-cycle horizon comparison](assets/multicycle_v1/multicycle_horizons.png)
+
+Eight two-cycle training cases supervise a differentiable nine-transition chain. Three seeds compare archived weights with **300-update one-step and multi-step continuations**, keeping the field decoders frozen. Third-cycle SMA-state RMSE is **1.5432 → 1.5334 K** with multi-step training; the matched one-step continuation reaches **1.5163 K**. Shading denotes seed SD, with the same two test cases at every horizon.
+
+八个两循环训练工况监督完整可微九步链，三个种子比较原模型、**300 次单步续训和多步续训**，场解码器始终冻结。多步训练将第三循环 SMA 状态 RMSE 从 **1.5432 降至 1.5334 K**，同预算单步续训为 **1.5163 K**。各循环均使用相同两个测试工况，阴影为种子标准差。
+
+### 16 · Training fit versus long-horizon error / 训练拟合与长时误差
+
+![Training loss and third-cycle state diagnostics](assets/multicycle_v1/multicycle_diagnosis.png)
+
+Multi-step training lowers the common autonomous training loss by **87.3%**, while third-cycle SMA-field RMSE falls only **0.37%** and directional-memory error increases **3.34%**. All eight state blocks and both fields are reported. The experiment establishes a working cross-step training path and identifies a remaining generalization problem; it does not establish multi-step superiority.
+
+多步训练使统一评价的自主推进训练损失下降 **87.3%**，但第三循环 SMA 场 RMSE 只降低 **0.37%**，方向记忆误差反而增加 **3.34%**。图中完整展示八个状态块和两类温度场。跨步训练链已实现并验证，长期泛化问题仍待解决，当前结果不支持宣称多步训练更优。
+
+### 17 · Every case and seed / 逐工况、逐种子结果
+
+![Third-cycle comparison for both test cases](assets/multicycle_v1/multicycle_cases.png)
+
+Both three-cycle cases are shown, without selecting the best seed. Multi-step SMA-state error improves for recA but worsens slightly for recAs; these are two specific cases, not material-transfer evidence. All new weights, predictions, protocols and bilingual model details are included in the [multi-cycle study](docs/MULTICYCLE_MULTISTEP.md).
+
+展示两个三循环工况及全部种子，不挑选最优结果。多步训练改善 recA 工况的 SMA 状态误差，但使 recAs 工况略有退化；这不构成材料迁移结论。新增权重、预测数组、协议和中英文模型说明均已保存，见[多循环研究报告](docs/MULTICYCLE_MULTISTEP.md)。
+
 <a id="run"></a>
 
 ## Run the project / 运行项目
@@ -237,6 +266,8 @@ python -m pip install -r requirements.txt
 python -m examples.showcase --output demo-output
 python -m examples.train_scalar --output run-output --epochs 200
 python -m examples.research_gallery --output demo-output-research
+python -m examples.multicycle_multistep --verify-only
+python -m examples.multicycle_gallery --output demo-output-multicycle
 ```
 
 `showcase` loads saved weights and produces six figures, a temperature animation and numerical summaries. `train_scalar` fits a new three-member, six-output ensemble on the bundled training cases. Use new output directories for each run.  
@@ -245,6 +276,10 @@ python -m examples.research_gallery --output demo-output-research
 `research_gallery` generates the nine additional figures in PNG and editable SVG from archived results and the completed diversity experiment. To rerun that experiment, see the [protocol and command](docs/ACQUISITION_DIVERSITY.md).
 `research_gallery` 根据归档结果及本次多样性实验生成九组新增 PNG 与可编辑 SVG；重新运行新实验的方法见协议说明。
 
+`multicycle_multistep --verify-only` replays the nine model/decoder combinations and recomputes saved metrics. `multicycle_gallery` generates three additional PNG/SVG figures. Six continuation fits can be rerun with `python -m examples.multicycle_multistep --output run-output-multicycle`, using only bundled data.
+
+`multicycle_multistep --verify-only` 回放九组模型/解码组合并重算指标；`multicycle_gallery` 生成三组多循环 PNG/SVG。使用 `python -m examples.multicycle_multistep --output run-output-multicycle` 可仅依靠仓库数据重新完成六次续训。
+
 | Resource / 资源 | Contents / 内容 |
 |---|---|
 | [Results / 成果展示](docs/SHOWCASE.md) | Architectures, comparisons and research questions / 架构、对照结果与研究问题 |
@@ -252,7 +287,7 @@ python -m examples.research_gallery --output demo-output-research
 | [Quickstart / 使用说明](docs/QUICKSTART.md) | Commands and verification / 运行命令与验证 |
 | [Interview brief / 中文面试汇报](docs/INTERVIEW_ZH.md) | Technical narrative and detailed discussion / 项目主线与技术问答 |
 | [Roadmap / 后续路线](docs/ROADMAP.md) | Experimental priorities and working conventions / 实验优先级与开发约定 |
-| [Evidence / 验证记录](evidence/portable_validation_20261121.json) | Local checks; current CI in the repository Actions tab / 本地检查，最新 CI 见 Actions |
+| [Latest evidence / 最新验证记录](evidence/portable_multicycle_validation_20261121.json) | 28 local tests and nine model/decoder replays; current CI in Actions / 28 项本地测试、九组模型回放，最新 CI 见 Actions |
 
 Code is organized under `SciML/`; `checkpoints/`, `data/`, `assets/` and `evidence/` hold weights, compact data, figures and experiment records. Full raw MAT/HDF5 archives and the complete MATLAB/Simulink project remain outside this distribution.  
 代码位于 `SciML/`，权重、轻量数据、展示图和实验记录分别位于 `checkpoints/`、`data/`、`assets/` 和 `evidence/`。完整原始 MAT/HDF5 与 MATLAB/Simulink 工程未包含在本分发中。

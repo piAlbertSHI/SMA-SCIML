@@ -5,7 +5,7 @@
 
 [Project home / 项目首页](../README.md) · [Architecture / 架构](#architecture) · [Results / 结果](#results) · [Research potential / 研究潜力](#potential) · [Interview summary / 汇报摘要](#pitch)
 
-[Expanded visual report: 14 figures / 完整图文汇报：14 组图](../README.md#gallery) · [Figure downloads and SVG / 图表下载与 SVG](FIGURE_INDEX.md)
+[Expanded visual report: 17 figures / 完整图文汇报：17 组图](../README.md#gallery) · [Figure downloads and SVG / 图表下载与 SVG](FIGURE_INDEX.md)
 
 The project studies pressure-driven NiTi elastocaloric cooling through a connected set of performance surrogates, stage-transition models, temperature-field operators and decision methods. Its contribution is the combination of explicit physical state representations, controlled model comparisons and diagnosis of errors across module interfaces.
 
@@ -127,13 +127,27 @@ A diffusion PINN jointly fits the temperature field and a positive coefficient u
 
 扩散 PINN 用 12 个观测和 PDE 残差联合拟合温度场与正值系数，在制造热方程问题中，三个种子的**系数相对误差为 0.0458%–0.1906%**。另一条局部 ODE 支线从归档 SMA/流体温度曲线辨识有效热响应率，分别对应反演方法验证和局部动力学分析，尚不构成通用 SMA 材料参数标定。
 
+## Multi-cycle extension: completed comparison / 多循环扩展：已完成对照
+
+The historical 515-state model now supports full backpropagation through a nine-transition, two-cycle chain, including the learned mechanical restart. Five residual MLPs (`529 → 32 → 32 → d`, 146,411 neural parameters) are continued from the archived checkpoints; affine maps, scalers, residual scales and field decoders stay frozen. Eight two-cycle training cases and the original four-case test split are preserved.
+
+历史 515 维状态模型已支持完整两循环九步反向传播，包含已学习的力学重启。五个残差 MLP（`529 → 32 → 32 → d`，146,411 神经参数）从原检查点继续训练，仿射映射、标准化、残差尺度与场解码器冻结，保留原八个两循环训练工况及四个测试工况。
+
+![Multi-cycle continuation comparison](../assets/multicycle_v1/multicycle_horizons.png)
+
+Three seeds compare archived one-step, 300-update one-step continuation and 300-update multi-step continuation. Third-cycle SMA-state RMSE is **1.5432 / 1.5163 / 1.5334 K** respectively; SMA-field RMSE is **2.0764 / 2.0602 / 2.0686 K**. Multi-step training reduces the autonomous training loss by 87.3%, but does not beat the matched one-step continuation on the three primary third-cycle metrics. Directional-memory error grows 3.34%. The study separates successful optimization from unresolved horizon extrapolation, using existing data with no new physical simulations.
+
+三个种子比较原单步、300 次单步续训、300 次多步续训，第三循环 SMA 状态 RMSE 分别为 **1.5432 / 1.5163 / 1.5334 K**，SMA 场 RMSE 为 **2.0764 / 2.0602 / 2.0686 K**。多步训练使自主推进训练损失下降 87.3%，但第三循环三项主要指标未超过同预算单步续训，方向记忆误差增加 3.34%。本次使用现有数据、没有新物理仿真，明确区分了优化成功与循环长度外推尚未解决。
+
+[Architecture, loss, every case/seed and commands / 架构、损失、逐工况种子结果与运行方式](MULTICYCLE_MULTISTEP.md)
+
 <a id="potential"></a>
 
 ## 7. Research potential and next milestones / 研究潜力与下一阶段目标
 
 | Research question / 研究问题 | Existing foundation / 已有基础 | Planned evaluation / 后续验证 |
 |---|---|---|
-| Can multi-step training stabilize long rollouts? / 多步训练能否稳定长期推演？ | Stage models, directional memory, independent historical two-/three-cycle cases / 阶段模型、方向记忆和独立历史多循环数据 | Compare one-step and differentiable multi-step losses on the fixed historical split; quantify third-cycle drift / 固定历史切分，比较单步与可微多步损失，量化第三循环漂移 |
+| What limits third-cycle generalization? / 什么限制第三循环泛化？ | First differentiable multi-step comparison complete; better training fit, little test improvement / 可微多步对照已完成，训练拟合改善、测试收益有限 | Diagnose memory/restart errors and use case-level validation within the eight training cases before further model selection / 先定位记忆和重启误差，在八个训练工况内部验证后再选择新模型 |
 | Can physical descriptors improve material transfer? / 物性描述能否改善材料迁移？ | Two material configurations, explicit control features and OOD diagnostics / 两类材料配置、控制特征与分布外诊断 | Compare category labels, physical properties and limited adaptation; seek additional independent material data / 比较类别、物性与少量适配，并补充独立材料数据 |
 | Which acquisition objective should guide diversity? / 多样性应服务于哪个选样目标？ | Four-strategy comparison completed; diversity improves temperature span but not COP/SCP / 四策略对照已完成，多样性改善温差但未改善 COP/SCP | Define the primary objective before comparing alternative input metrics or acquisition rules, then seek independent validation / 先定义主要目标，再比较输入度量和选样规则，并开展独立验证 |
 | Can fields support energy-consistent design? / 温度场能否支持能量一致的设计？ | State/field predictions and a separate performance surrogate / 已有状态、温度场和独立性能代理 | Establish independent port, work and stored-energy accounting before validating field-derived performance / 先建立独立端口、功与储能核算，再验证场到性能读出 |
@@ -151,8 +165,9 @@ These are the next research milestones, not completed results. The broader objec
 
 ## Evidence and presentation assets / 证据与展示材料
 
-The original six PNG figures and animation are generated using `python -m examples.showcase`. Nine additional PNG/SVG figures use `python -m examples.research_gallery`, covering archived branches and the completed diversity experiment. The README displays 14 static figures and the animation; the original three-strategy acquisition image remains in the archive. See the [figure index](FIGURE_INDEX.md) for sources and editable files.  
-原六张 PNG 与动画由 `python -m examples.showcase` 生成；九组新增 PNG/SVG 由 `python -m examples.research_gallery` 根据各支线归档和新多样性实验生成。README 展示 14 组静态图与动画，原三策略选样图保留。图表索引提供数据来源与可编辑文件，复用时保留评价条件。
+The original six PNG figures and animation use `python -m examples.showcase`. Nine PNG/SVG figures use `python -m examples.research_gallery`, and three multi-cycle comparisons use `python -m examples.multicycle_gallery`. The README displays **17 static figures and the animation**; the original three-strategy acquisition image remains available separately. See the [figure index](FIGURE_INDEX.md) for sources and editable files.
+
+原六张 PNG 与动画由 `python -m examples.showcase` 生成，九组 PNG/SVG 由 `python -m examples.research_gallery` 生成，三组多循环图由 `python -m examples.multicycle_gallery` 生成。README 展示 **17 组静态图与动画**，原三策略选样图另行保留。图表索引提供数据来源与可编辑文件，复用时保留评价条件。
 
 | Evidence / 证据 | Location / 位置 |
 |---|---|
@@ -160,6 +175,7 @@ The original six PNG figures and animation are generated using `python -m exampl
 | Fixed-case checkpoint replay / 固定案例权重重放 | [demo summary](../assets/demo_summary.json) |
 | Diffusion inverse results / 扩散反演结果 | [PINN summary](../evidence/archive/wp5-pinn-r1/summary.json) |
 | Local effective-rate study / 局部有效速率研究 | [local ODE summary](../evidence/archive/wp5-local-thermal-r2/summary.json) |
+| Multi-step continuation / 多步续训 | [protocol and results](MULTICYCLE_MULTISTEP.md) |
 | Data coverage and COP definition / 数据范围与 COP 定义 | [data card](DATA_CARD.md) |
 | Dimensions, losses and training / 维度、损失与训练设置 | [model details](MODELS.md) |
 | Reproduction commands / 运行命令 | [quickstart](QUICKSTART.md) |

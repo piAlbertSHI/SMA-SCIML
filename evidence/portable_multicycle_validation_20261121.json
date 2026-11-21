@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-21",
+  "scope": "Multi-cycle continuation extension of the portable distribution; separate historical solver profile",
+  "unit_tests": {
+    "modules": ["test_learning_coordinate_operator", "test_learning_ensemble", "test_learning_pinn_inverse", "test_learning_pool_loop", "test_learning_design_loop", "test_learning_exercises", "test_acquisition_diversity", "test_multistep_historical"],
+    "tests_run": 28,
+    "failures": 0,
+    "errors": 0,
+    "exit_code": 0
+  },
+  "new_training": {
+    "command": "python -u -m examples.multicycle_multistep",
+    "exit_code": 0,
+    "seeds": [20260910, 20260911, 20260912],
+    "continuation_fits": 6,
+    "additional_updates_per_fit": 300,
+    "archived_controls": 3,
+    "protocol": "evidence/experiments/multicycle_multistep_v1/protocol.json",
+    "summary": "evidence/experiments/multicycle_multistep_v1/summary.json",
+    "scientific_outcome": "Small third-cycle improvements relative to archived neural model; no advantage over matched one-step continuation on the three primary metrics"
+  },
+  "replay_audit": {
+    "command": "python -u -m examples.multicycle_multistep --verify-only",
+    "exit_code": 0,
+    "model_decoder_combinations": 9,
+    "saved_test_and_per_case_scores_recomputed": true,
+    "replay_absolute_tolerance": 1e-8,
+    "new_checkpoint_replays_exact_in_training_environment": true,
+    "original_checkpoints_and_frozen_buffers_unchanged": true,
+    "baseline_scores_recovered": true
+  },
+  "data": {
+    "train_cases": 8,
+    "test_cases": 4,
+    "three_cycle_test_cases": 2,
+    "state_transitions": 118,
+    "test_field_samples": 20,
+    "all_targets_equal_archived_arrays": true,
+    "sealed_hdf5_and_requests_reverified": true,
+    "fresh_raw_mat_audit": false,
+    "raw_mat_available": false,
+    "provenance": "data/historical12_state.json"
+  },
+  "figures": {
+    "command": "python -u -m examples.multicycle_gallery --output assets/multicycle_v1",
+    "exit_code": 0,
+    "png_count": 3,
+    "svg_count": 3,
+    "visual_review": "All three PNG files inspected; labels, panels and captions legible",
+    "readme_static_figures": 17,
+    "readme_animations": 1,
+    "manifest": "assets/multicycle_v1/gallery_manifest.json"
+  },
+  "fresh_physics_solver_calls": 0,
+  "github_ci": "See Actions for the current Linux result; not asserted by this local record"
+}
