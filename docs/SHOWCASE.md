@@ -5,6 +5,8 @@
 
 [Project home / 项目首页](../README.md) · [Architecture / 架构](#architecture) · [Results / 结果](#results) · [Research potential / 研究潜力](#potential) · [Interview summary / 汇报摘要](#pitch)
 
+[Expanded visual report: 14 figures / 完整图文汇报：14 组图](../README.md#gallery) · [Figure downloads and SVG / 图表下载与 SVG](FIGURE_INDEX.md)
+
 The project studies pressure-driven NiTi elastocaloric cooling through a connected set of performance surrogates, stage-transition models, temperature-field operators and decision methods. Its contribution is the combination of explicit physical state representations, controlled model comparisons and diagnosis of errors across module interfaces.
 
 本项目面向压力驱动 NiTi 弹热制冷，构建性能代理、阶段状态推进、温度场算子与设计决策模块。项目的技术价值在于将明确的物理状态表示、公平的模型对照和跨模块误差诊断结合起来，回答模型为什么有效、误差从哪里产生，以及如何继续改进。
@@ -103,6 +105,14 @@ Three strategies are compared over three seeds at the same **12 → 17 → 22** 
 
 三种策略在相同 **12 → 17 → 22** 标签预算下分别运行三个种子。复合策略在 COP 和比制冷功率上更好，随机策略在冷量上更好。这是逐步揭示已有仿真标签的离线实验，用于评价选样行为，尚未测量实际新增仿真的成本节省。
 
+### Completed extension: input diversity / 已完成扩展：输入多样性
+
+![Four-strategy, six-target comparison](../assets/research_v1/diversity_acquisition.png)
+
+The new experiment adds a fixed 50:50 mixture of the composite score and greedy input-distance rank, using the same three seeds and label budgets. All three historical baselines and their query sequences were reproduced. At 22 labels, temperature-span RMSE improves from 0.03480 to 0.02534 K versus composite, while COP RMSE worsens from 0.03751 to 0.05794. The complete six-target comparison is retained in the figure and [experiment report](ACQUISITION_DIVERSITY.md).
+
+新增实验将复合分数与贪心输入距离排名按固定 50:50 混合，使用相同三个种子和标签预算，三个历史基线及其查询序列均得到重现。22 标签时，相比原复合策略，温差 RMSE 从 0.03480 改善到 0.02534 K，但 COP RMSE 从 0.03751 上升到 0.05794。图中和实验报告完整保留六目标对比。
+
 ![Candidate trade-offs / 候选方案权衡](../assets/design_tradeoff.png)
 
 The design module ranks a finite pool of 15 candidates and checks three against archived numerical results after recording its predictions. Conservative predicted hypervolume gains are all zero; the verified gain is **0.0072488 in the shared normalized objective space**, not a percentage. Mechanical outputs are recorded, but approved stress/deflection limits and fatigue evidence are absent, so engineering safety is unresolved.
@@ -110,6 +120,8 @@ The design module ranks a finite pool of 15 candidates and checks three against 
 设计模块对 15 个有限池候选排序，先记录预测，再对三个候选进行归档数值回查。保守预测超体积增益均为零；回查后的增益为**共同归一化目标空间中的 0.0072488**，不是百分比。虽然记录了力学输出，但尚缺批准的应力/挠度限值和疲劳证据，工程安全仍待验证。
 
 ## 6. Inverse modeling / 参数反演
+
+![PINN inverse field and coefficient errors](../assets/research_v1/pinn_inverse.png)
 
 A diffusion PINN jointly fits the temperature field and a positive coefficient using 12 observations and a PDE residual, achieving **0.0458%–0.1906% coefficient error across three seeds** on a manufactured heat-equation problem. A separate local ODE model fits effective thermal-response rates from archived SMA/fluid curves. The former tests the inversion method; the latter studies local dynamics. Neither establishes a general SMA material-parameter calibration.
 
@@ -123,7 +135,7 @@ A diffusion PINN jointly fits the temperature field and a positive coefficient u
 |---|---|---|
 | Can multi-step training stabilize long rollouts? / 多步训练能否稳定长期推演？ | Stage models, directional memory, independent historical two-/three-cycle cases / 阶段模型、方向记忆和独立历史多循环数据 | Compare one-step and differentiable multi-step losses on the fixed historical split; quantify third-cycle drift / 固定历史切分，比较单步与可微多步损失，量化第三循环漂移 |
 | Can physical descriptors improve material transfer? / 物性描述能否改善材料迁移？ | Two material configurations, explicit control features and OOD diagnostics / 两类材料配置、控制特征与分布外诊断 | Compare category labels, physical properties and limited adaptation; seek additional independent material data / 比较类别、物性与少量适配，并补充独立材料数据 |
-| Can diversity improve batch acquisition? / 多样性能否改善批量选样？ | Budget-matched random, uncertainty and composite baselines / 相同预算的三类选样基线 | Add input-space diversity under the same label budgets; report all targets and seed variation / 同预算加入输入空间多样性，报告全部目标和种子差异 |
+| Which acquisition objective should guide diversity? / 多样性应服务于哪个选样目标？ | Four-strategy comparison completed; diversity improves temperature span but not COP/SCP / 四策略对照已完成，多样性改善温差但未改善 COP/SCP | Define the primary objective before comparing alternative input metrics or acquisition rules, then seek independent validation / 先定义主要目标，再比较输入度量和选样规则，并开展独立验证 |
 | Can fields support energy-consistent design? / 温度场能否支持能量一致的设计？ | State/field predictions and a separate performance surrogate / 已有状态、温度场和独立性能代理 | Establish independent port, work and stored-energy accounting before validating field-derived performance / 先建立独立端口、功与储能核算，再验证场到性能读出 |
 
 These are the next research milestones, not completed results. The broader objective is a model that retains the state information needed for reliable multi-stage prediction and uses uncertainty to allocate simulation effort.  
@@ -139,8 +151,8 @@ These are the next research milestones, not completed results. The broader objec
 
 ## Evidence and presentation assets / 证据与展示材料
 
-All six PNG figures and the animation are generated from saved numerical outputs using `python -m examples.showcase`. The architecture and result tables describe implemented models; future work is listed separately above. Figures can be reused with their evaluation captions.  
-六张 PNG 与动画均由已有数值结果通过 `python -m examples.showcase` 生成。架构和结果表对应已实现模型，未来任务单独列出；汇报复用图片时保留评价条件。
+The original six PNG figures and animation are generated using `python -m examples.showcase`. Nine additional PNG/SVG figures use `python -m examples.research_gallery`, covering archived branches and the completed diversity experiment. The README displays 14 static figures and the animation; the original three-strategy acquisition image remains in the archive. See the [figure index](FIGURE_INDEX.md) for sources and editable files.  
+原六张 PNG 与动画由 `python -m examples.showcase` 生成；九组新增 PNG/SVG 由 `python -m examples.research_gallery` 根据各支线归档和新多样性实验生成。README 展示 14 组静态图与动画，原三策略选样图保留。图表索引提供数据来源与可编辑文件，复用时保留评价条件。
 
 | Evidence / 证据 | Location / 位置 |
 |---|---|

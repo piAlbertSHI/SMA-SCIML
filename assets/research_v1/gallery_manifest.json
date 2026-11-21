@@ -1,0 +1,81 @@
+{
+  "status": "completed_research_gallery",
+  "figure_count": 9,
+  "formats": [
+    "png",
+    "svg"
+  ],
+  "figures": [
+    {
+      "name": "state_dynamics",
+      "scope": "Current63 autonomous state errors; state temperature is distinct from field RMSE"
+    },
+    {
+      "name": "operator_ablations",
+      "scope": "Current63; future RMSE versus initial-condition maximum; metric scales differ"
+    },
+    {
+      "name": "pinn_inverse",
+      "scope": "Manufactured diffusion problem; seed410 field plots and all3 coefficient errors"
+    },
+    {
+      "name": "local_thermal",
+      "scope": "Six local fits; classical comparison and withheld time-tail error"
+    },
+    {
+      "name": "uncertainty_intervals",
+      "scope": "Five-member six-output ensemble; half-widths from saved90% simultaneous calibration; not seed SD"
+    },
+    {
+      "name": "ood_generalization",
+      "scope": "Geometry/material/protocol experiments use separate splits and retrained models; no cross-task pooling"
+    },
+    {
+      "name": "physics_ablation",
+      "scope": "Manufactured heat-equation ablation; not actual SMA energy closure or horizon extrapolation"
+    },
+    {
+      "name": "historical_rollout",
+      "scope": "Independent historical profile; same two3cycle test cases at all horizons; observed and autonomous entry are distinct input privileges"
+    },
+    {
+      "name": "diversity_acquisition",
+      "scope": "New fixed0.5 composite/diversity strategy; all6 outputs and3seed SD; archived-label reveals, not fresh simulations"
+    }
+  ],
+  "input_sha256": {
+    "data/metrics.json": "84290c3cbcd125fc08700a7eaef6b6b3af4e84227dc0e6b7b4dcc7f448ab2a21",
+    "data/pinn_predictions.npz": "50f7e4744f818a2400ccbc6696725cd5c08c2e19602fe55cca4476f5e1e1251b",
+    "evidence/archive/wp5-pinn-r1/summary.json": "b2f1c1a4807f60dbf57742effc4786ecf2cf16925b04b94634cb9ed5993c50a5",
+    "evidence/archive/wp5-local-thermal-r2/summary.json": "55dbc7a1b38161ad5f25f5e35582da44ef4d5d0fb97a1416a7a644d373a7dbd3",
+    "data/scalar63.npz": "63f5bc0b9c19580c1354edde558b1b05f4bf89cb92484fec8d3f21d9bdd8ac5f",
+    "data/uq_predictions.npz": "311ea9fa71d0bdb45e49f7c08ad1f29b6e61db45bf9885dc2fb380757082be2d",
+    "evidence/archive/ood-audit-r1/aggregate.json": "1a325d573b497541c1735936fd1dddcd56054c0dd36d1eb068484529a5e5022a",
+    "evidence/archive/staged-physics-r1/summary.json": "89435fb1fd216c489741660b49f4258f6bf736f98360ce7e30d49e90a612580d",
+    "evidence/archive/historical-fields-r1/summary.json": "fb90f195ff99bcce9e1756d839e902992e32448ab58e5fea6efc03b35806ba5b",
+    "evidence/experiments/acquisition_diversity_v1/summary.json": "4d3b40eea7ff74aeff82d28314356bb786dc53c34475bd2511f090ec099fcdb9"
+  },
+  "generator_sha256": "4ef46a0f72a244b35f2d3a915fddc2272b6fb05a67b663fc649a9c6b4fb7d700",
+  "artifacts": {
+    "diversity_acquisition.png": "b9fa02215892193f26a9acafdf3d2fa17cf57f5a7477b5c599ec2f652d999f7c",
+    "diversity_acquisition.svg": "0613ab1abfeac60ed6a18a60981d5f2699461b8bafd1dae5098fb35faefbbfcb",
+    "historical_rollout.png": "1dd746b01095daebef1baab19f14164b5323ebacf51c3832565b2d4961175ed6",
+    "historical_rollout.svg": "517a494d2721a329108e9f86a8ec4f57ddeb0c46abbdfd1bc01969bde8f56f9f",
+    "local_thermal.png": "73fbcebe24711b77a1e139a0c6133c6c6cfa3f5ac72b497082708304749b82a4",
+    "local_thermal.svg": "86909802cc72d7fd630feded14060955e47af9157be21089f82b49041e86354a",
+    "ood_generalization.png": "c3c17bf4c95ba1eb6a172f7487dc387ed7f2f738746378214f6ce9274b2db78f",
+    "ood_generalization.svg": "3f0e422c8004ce23b867eb4d2f3eff331115063d5d0c3dc1b49278775d10dea9",
+    "operator_ablations.png": "f924be053f9d7038f8e3faf407557ac5b5b71d69095ee322ecb8e2a5d1d56d1d",
+    "operator_ablations.svg": "da743aa0819d69c53fcd1fd349a4d0296521b1afbeab99861fac36ecae57c8aa",
+    "physics_ablation.png": "7a9ef7eecf044c95a2ae6f71ee71007d67db2a8330f39b3df8162356bf626b70",
+    "physics_ablation.svg": "54f73fb487d7fb4dfe2e4261ed54990eb5389acdd038efc60cd7ad213c71f62f",
+    "pinn_inverse.png": "e86cfd13746ae06814648f2596e16a641518462ae967bceb49ad2ad92d18a3e0",
+    "pinn_inverse.svg": "8b3fdeb861cbb9efed073b370769a7946383c7b92bce12345136e23bf3707c85",
+    "state_dynamics.png": "9f0a2eda68e3ae7757fdc6407067d4e1a3ec89b200f32b90f663e418f4667640",
+    "state_dynamics.svg": "19be151385f35dce03ffbd870270219f6ffab600035cded3d7c67bc752ddd766",
+    "uncertainty_intervals.png": "be063594d2b2f9ab3421f860c9610bce00682f0cf509fccd42eb061a0908026e",
+    "uncertainty_intervals.svg": "8c2fcb21417462e53e5efa6513b416881ca6621159b5ed59bf9adf545cc9812e"
+  },
+  "fresh_solver_calls": 0,
+  "fresh_training_calls_in_plotting": 0
+}

@@ -12,6 +12,7 @@
 python -m pip install -r requirements.txt
 python -m examples.showcase --output demo-output
 python -m examples.train_scalar --output run-output --epochs 200 --seed 701
+python -m examples.research_gallery --output demo-output-research
 python -m SciML.evaluation.learning_exercises --output-root learning-exercises
 ```
 
@@ -20,6 +21,8 @@ python -m SciML.evaluation.learning_exercises --output-root learning-exercises
 - learning_exercises：八个微型参考题；运行通过不证明读者本人熟练掌握。
 
 所有输出目录必须是新的；旧结果不覆盖。训练失败先看完整 traceback 和输入来源，不自动重启昂贵程序。
+
+`research_gallery` 从已提交的支线结果生成九组 PNG/SVG，不重新训练。新增多样性选样实验可用 `python -m examples.active_diversity --output run-output-diversity` 完整运行，配置、输入权限与结果见 [实验说明](ACQUISITION_DIVERSITY.md)。
 
 ## 验证当前分发
 

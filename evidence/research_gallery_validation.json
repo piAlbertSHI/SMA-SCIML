@@ -1,0 +1,35 @@
+{
+  "scope": "Expanded bilingual research gallery and fixed-budget diversity extension",
+  "new_physics_solver_calls": 0,
+  "new_experiment": {
+    "directory": "evidence/experiments/acquisition_diversity_v1",
+    "seed_strategy_experiments": 12,
+    "small_network_fits": 108,
+    "seeds": [701, 702, 703],
+    "label_budgets": [12, 17, 22],
+    "old_baseline_curves_and_queries_reproduced": true,
+    "checkpoint_reload_checks": 12,
+    "independently_replayed_prequery_decisions": 24,
+    "protected_test_and_calibration_cases_never_queried": 26,
+    "reported_rmse_and_seed_sd_recomputed_from_saved_predictions": true,
+    "selection_coefficient_changed_after_results": false,
+    "result_scope": "Diversity improves temperature span and pumping work versus composite; other four objectives worsen; no universal improvement claimed"
+  },
+  "local_unit_tests": {
+    "command": "python -m unittest SciML.tests.test_acquisition_diversity SciML.tests.test_learning_pool_loop -v",
+    "tests": 6,
+    "exit_code": 0
+  },
+  "figures": {
+    "new_png": 9,
+    "new_editable_svg": 9,
+    "readme_static_figures": 14,
+    "readme_animations": 1,
+    "all_nine_new_png_visually_reviewed": true,
+    "visual_review": "No clipped labels or missing panels observed; metric units, seed variation and dataset scopes shown",
+    "input_and_output_hashes_independently_verified": true,
+    "manifest": "assets/research_v1/gallery_manifest.json"
+  },
+  "historical_reports_and_experiment_results_modified": false,
+  "github_ci": "See Actions for the exact committed revision; local record does not predict future CI status"
+}
