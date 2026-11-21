@@ -1,0 +1,41 @@
+{
+  "status": "verified_conditional_thermal_readout",
+  "checkpoints_replayed": 3,
+  "cases_per_checkpoint": 4,
+  "max_replay_difference": 0.0,
+  "max_training_only_refit_difference": 0.0,
+  "state_fluid_initial_fields_exactly_preserved": true,
+  "both_inner_folds": [
+    {
+      "runtime_refit": "passed",
+      "baseline": {
+        "sma_rmse_K": 0.9697281085080796,
+        "fluid_rmse_K": 0.4833978554040659,
+        "c2s4_sma_rmse_K": 0.7084804378832853,
+        "sma_gradient_rmse_K_per_x": 5.987711251359002
+      },
+      "corrected": {
+        "sma_rmse_K": 0.9340260411773496,
+        "fluid_rmse_K": 0.4833978554040659,
+        "c2s4_sma_rmse_K": 0.6719086693523479,
+        "sma_gradient_rmse_K_per_x": 5.2587809815946915
+      }
+    },
+    {
+      "runtime_refit": "passed",
+      "baseline": {
+        "sma_rmse_K": 0.7865266140647562,
+        "fluid_rmse_K": 0.36095744723792567,
+        "c2s4_sma_rmse_K": 0.6415999946385681,
+        "sma_gradient_rmse_K_per_x": 4.04770346620607
+      },
+      "corrected": {
+        "sma_rmse_K": 0.7591188361477049,
+        "fluid_rmse_K": 0.36095744723792567,
+        "c2s4_sma_rmse_K": 0.5678444835795673,
+        "sma_gradient_rmse_K_per_x": 3.7019635183665276
+      }
+    }
+  ],
+  "fresh_solver_calls": 0
+}

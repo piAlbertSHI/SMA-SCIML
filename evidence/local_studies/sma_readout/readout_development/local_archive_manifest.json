@@ -1,0 +1,19 @@
+{
+  "source_run": "run-output-sma-physical-development",
+  "copied_files": {
+    "autonomous/fit.json": "89d0e5a9cdbd898c764b46b8c0a108154e0d2d7fae34bc398f35b231176a232d",
+    "observed/fit.json": "7c2352da807a4075294d1075c9e6e2e9bddd52411f5593de8bd4d55c1ae97b78",
+    "protocol.json": "14b518a7783986db2d88fb6e1fd711e60d5a9061d9bb16b772bf52f07d6379e1",
+    "residual/fit.json": "47187c8192f304763f18ee86aafb9c2e1a6eb96df0a81fbb7c941913292539e6",
+    "source/examples/adapt_sma.py": "efe1588243411515fd0503b64183eb81f9d2034c55e2b2a9aa3ad3329ee4fc18",
+    "source/examples/fit_thermal_readout.py": "2b208b197463f685180b852b0d9b4c9b1e02d69965141511ab13184f04df73db",
+    "source/SciML/models/v13/selective_sma.py": "e69e292da371c9a510d4bbdcbd0fa009985d058be2a7ad199048dc348e7b85bb",
+    "source/SciML/models/v13/thermal_readout.py": "7f46b62f69637c4f7941328e62774f363846280d39917e35cbf98aa446d9151a",
+    "summary.json": "e76eb65a8515fd5e97295d6a2966ebd22f0df784cdc8c6120815e8aa53389d6a"
+  },
+  "omitted_intermediate_checkpoints_retained_locally": {
+    "autonomous/model.pt": "97c6c9d5e9831583d48bc922f6ceb417ed76ef8fe1fdae1dcd9109ee6e6301f6",
+    "observed/model.pt": "42539fe7c7109266a75894e6c5314738e2170da2d7ba25277743d856751e1883",
+    "residual/model.pt": "5e52c5a34bf56b7921fd7bf65833a7164d02ee962dd7fef5df9b5a01e6f8713f"
+  }
+}

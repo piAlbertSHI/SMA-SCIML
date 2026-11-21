@@ -1,0 +1,46 @@
+{
+  "purpose": "SMA-only adaptation",
+  "formal": false,
+  "data_sha256": {
+    "state": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "fields": "15f5cf30948efea558ba514cafea99f146dcdc13435b66b906e58d582a721096"
+  },
+  "fresh_solver_calls": 0,
+  "updates": 240,
+  "lr": 0.0003,
+  "batch_segments": 8,
+  "time_queries": 16,
+  "space_points": 101,
+  "fit_case_ids": [
+    "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+    "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+    "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+    "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+    "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+    "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c"
+  ],
+  "validation_case_ids": [
+    "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+    "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c"
+  ],
+  "source_sha256": {
+    "examples/adapt_sma.py": "efe1588243411515fd0503b64183eb81f9d2034c55e2b2a9aa3ad3329ee4fc18",
+    "SciML/models/v13/selective_sma.py": "e69e292da371c9a510d4bbdcbd0fa009985d058be2a7ad199048dc348e7b85bb",
+    "examples/refine_modal.py": "837087298f05f961f738a6e898aa0df201d04ce56d2cdcd6db78d066d0a64f72",
+    "SciML/models/v13/modal_operator.py": "79e0de23591713fb673ea70ef1fbb5abfe023d3384fd37e3d8b81bb91b43411b",
+    "SciML/models/v13/hierarchical_operator.py": "959b2ecacb7fdc56e052809793d59739986acd68f861d2c103c7bc6f116d0c8f"
+  },
+  "gate": "SMA mean and cycle-2/stage-4 mean both improve baseline; each validation case SMA <= 1.05*baseline; fluid exact; choose lowest SMA mean",
+  "selection_scope": "six-fit/two-validation original training partition only; historical test used for failure diagnosis, not candidate scores",
+  "reference": "absolute-only continuation has the identical update budget; report it even if another objective is selected",
+  "no_temperature_or_error_clipping": true,
+  "checkpoint_sha256": {
+    "run-output-hro-modal-refinement/refined/model.pt": "c276a2bd8f9975c6726398ce2546c498597d5c78eccbc8aab81c5f4aa6909c60"
+  },
+  "variants": [
+    "absolute",
+    "increment",
+    "paired",
+    "paired_increment"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "artifacts": {
+    "analysis.json": "8e178cee1d2e2e08290f475b6fb5bacb276bcc499a54847e408ca228f7e11252",
+    "third_cycle_fields.png": "7b4a566dcea1f1b9de246025c178a3c39499e4260d9c29170cc505811578090e",
+    "third_cycle_fields.svg": "a09c3abb597bcb1e1bb6059c218e99030d103e5303e5b5a0acb7d70a8b2f7e28"
+  },
+  "generator_sha256": "7a39415df8ed792e6cc980cae175bffe79228c150cb8fe15c537c6b980c562e7",
+  "input_sha256": {
+    "data/historical12_state.npz": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "evidence/experiments/v13_formal_v1/s20261121/test_predictions.npz": "862e31b289c38e773723de0ab3b4deca3725e7aad145b00d699821ed62eb52c9",
+    "evidence/experiments/hro_modal/formal/s20261121/test_predictions.npz": "d8eea5fb38a9faabd2bca4e74a609a9f354b4b3f3368b1e9d0d53ddb7f139c38",
+    "evidence/local_studies/sma_readout/formal/s20261121/test_predictions.npz": "9a1f053ad6b954bc27d1caa928b8d47e355283e2cb76f1ed38c0d309f4114917",
+    "evidence/experiments/v13_formal_v1/s20261122/test_predictions.npz": "2b80205d5da6efba5f4b8a0c319a46d7738d285a23b3abda46e012903ce66229",
+    "evidence/experiments/hro_modal/formal/s20261122/test_predictions.npz": "7a26485e4336731e131acf99dcce335fe715b855187ce23808efdd19ed7a8138",
+    "evidence/local_studies/sma_readout/formal/s20261122/test_predictions.npz": "3292a68c0df0b8e24627a9a9b0fcc0b0ea14d702855c03b56c3db2dff7c1fad7",
+    "evidence/experiments/v13_formal_v1/s20261123/test_predictions.npz": "cb0b6121583a4228f9e4f88f4a46bb00a8b4ea8a5f3bf9a02ef3b42eeee1df19",
+    "evidence/experiments/hro_modal/formal/s20261123/test_predictions.npz": "40be309b7a26f534e881cbc96b9ba8090e4da6ccbe8d05a236f959993d5b6d74",
+    "evidence/local_studies/sma_readout/formal/s20261123/test_predictions.npz": "cd5cddbe58394256b478f34e3a23f4b4e23f88de29c012d89323d39dd48c9d70"
+  }
+}

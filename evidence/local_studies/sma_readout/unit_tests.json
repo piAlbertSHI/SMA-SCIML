@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "tests_run": 51,
+  "reported_test_seconds": 5.301,
+  "exit_code": 0,
+  "command": "python -m unittest SciML.tests.test_learning_coordinate_operator SciML.tests.test_learning_ensemble SciML.tests.test_learning_pinn_inverse SciML.tests.test_learning_pool_loop SciML.tests.test_learning_design_loop SciML.tests.test_learning_exercises SciML.tests.test_acquisition_diversity SciML.tests.test_multistep_historical SciML.tests.test_hierarchical_operator SciML.tests.test_formal_hierarchical SciML.tests.test_modal_operator SciML.tests.test_selective_sma SciML.tests.test_thermal_readout -v",
+  "execution_environment": "local Windows workspace",
+  "remote_ci_executed_for_this_change": false,
+  "fresh_solver_calls": 0
+}

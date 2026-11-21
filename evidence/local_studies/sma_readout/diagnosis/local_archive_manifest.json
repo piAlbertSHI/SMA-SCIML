@@ -1,0 +1,9 @@
+{
+  "source_run": "run-output-sma-diagnosis",
+  "copied_files": {
+    "autonomous_fields.npz": "713f7771619799dd81442f166fb03f9dba8692bd045df9be0fc971edcdb82f66",
+    "diagnostics.json": "9d9d7020cd595ba4871655d1591fe1541e93f02e521117bc4c8d3034d3d5b5de",
+    "protocol.json": "3723b80fffe14b5099ec9b480868dd5c6524fe559cb8032ad772718d89d385c1"
+  },
+  "omitted_intermediate_checkpoints_retained_locally": {}
+}

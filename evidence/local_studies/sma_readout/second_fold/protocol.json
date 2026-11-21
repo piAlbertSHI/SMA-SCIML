@@ -1,0 +1,35 @@
+{
+  "purpose": "second-fold check of preselected residual correction; no method selection",
+  "training_case_ids": [
+    "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+    "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+    "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+    "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+    "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+    "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c"
+  ],
+  "validation_case_ids": [
+    "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+    "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c"
+  ],
+  "data_sha256": {
+    "state": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "fields": "15f5cf30948efea558ba514cafea99f146dcdc13435b66b906e58d582a721096"
+  },
+  "mode": "residual",
+  "rank": 12,
+  "alpha": 1.0,
+  "seed": 20261124,
+  "joint_updates": 160,
+  "decoder_updates": 320,
+  "gate": "same: SMA mean and c2s4 mean improve; per-case SMA <=1.05*baseline; fluid exact",
+  "historical_test_scored": false,
+  "fresh_solver_calls": 0,
+  "source_sha256": {
+    "examples/check_thermal_readout_fold.py": "284607e3489e47da50de2e7cc6d8e6de769c9a284fcd813c9f41d7142d3ed394",
+    "examples/fit_thermal_readout.py": "2b208b197463f685180b852b0d9b4c9b1e02d69965141511ab13184f04df73db",
+    "SciML/models/v13/thermal_readout.py": "7f46b62f69637c4f7941328e62774f363846280d39917e35cbf98aa446d9151a",
+    "examples/modal_hierarchical.py": "f0cf19efe7a917bd0d5319193532008b5e515b4d17faf254c68d335f426de4d6",
+    "examples/refine_modal.py": "837087298f05f961f738a6e898aa0df201d04ce56d2cdcd6db78d066d0a64f72"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "status": "completed_physical_readout_development",
+  "baseline": {
+    "per_case": [
+      {
+        "case_index": 3,
+        "sma_rmse_K": 0.9171901237719658,
+        "fluid_rmse_K": 0.38481503728864425,
+        "c2s4_sma_rmse_K": 0.6928852178522376,
+        "sma_gradient_rmse_K_per_x": 4.835142540368531
+      },
+      {
+        "case_index": 7,
+        "sma_rmse_K": 1.0222660932441932,
+        "fluid_rmse_K": 0.5819806735194875,
+        "c2s4_sma_rmse_K": 0.724075657914333,
+        "sma_gradient_rmse_K_per_x": 7.140279962349474
+      }
+    ],
+    "mean": {
+      "sma_rmse_K": 0.9697281085080796,
+      "fluid_rmse_K": 0.4833978554040659,
+      "c2s4_sma_rmse_K": 0.7084804378832853,
+      "sma_gradient_rmse_K_per_x": 5.987711251359002
+    }
+  },
+  "results": {
+    "observed": {
+      "per_case": [
+        {
+          "case_index": 3,
+          "sma_rmse_K": 1.3280802615643879,
+          "fluid_rmse_K": 0.38481503728864425,
+          "c2s4_sma_rmse_K": 1.156239862845038,
+          "sma_gradient_rmse_K_per_x": 6.204119036899065
+        },
+        {
+          "case_index": 7,
+          "sma_rmse_K": 1.8256374701069076,
+          "fluid_rmse_K": 0.5819806735194875,
+          "c2s4_sma_rmse_K": 1.89784963841973,
+          "sma_gradient_rmse_K_per_x": 9.821116239633357
+        }
+      ],
+      "mean": {
+        "sma_rmse_K": 1.5768588658356477,
+        "fluid_rmse_K": 0.4833978554040659,
+        "c2s4_sma_rmse_K": 1.527044750632384,
+        "sma_gradient_rmse_K_per_x": 8.01261763826621
+      }
+    },
+    "autonomous": {
+      "per_case": [
+        {
+          "case_index": 3,
+          "sma_rmse_K": 1.2768485243051328,
+          "fluid_rmse_K": 0.38481503728864425,
+          "c2s4_sma_rmse_K": 1.1199794472833982,
+          "sma_gradient_rmse_K_per_x": 5.074393081361078
+        },
+        {
+          "case_index": 7,
+          "sma_rmse_K": 1.509322525465643,
+          "fluid_rmse_K": 0.5819806735194875,
+          "c2s4_sma_rmse_K": 1.5805903164687722,
+          "sma_gradient_rmse_K_per_x": 9.207384581015878
+        }
+      ],
+      "mean": {
+        "sma_rmse_K": 1.393085524885388,
+        "fluid_rmse_K": 0.4833978554040659,
+        "c2s4_sma_rmse_K": 1.3502848818760853,
+        "sma_gradient_rmse_K_per_x": 7.140888831188478
+      }
+    },
+    "residual": {
+      "per_case": [
+        {
+          "case_index": 3,
+          "sma_rmse_K": 0.8725160157057459,
+          "fluid_rmse_K": 0.38481503728864425,
+          "c2s4_sma_rmse_K": 0.6105645692427976,
+          "sma_gradient_rmse_K_per_x": 4.276854457001511
+        },
+        {
+          "case_index": 7,
+          "sma_rmse_K": 0.9955360666489533,
+          "fluid_rmse_K": 0.5819806735194875,
+          "c2s4_sma_rmse_K": 0.7332527694618984,
+          "sma_gradient_rmse_K_per_x": 6.240707506187872
+        }
+      ],
+      "mean": {
+        "sma_rmse_K": 0.9340260411773496,
+        "fluid_rmse_K": 0.4833978554040659,
+        "c2s4_sma_rmse_K": 0.6719086693523479,
+        "sma_gradient_rmse_K_per_x": 5.2587809815946915
+      }
+    }
+  },
+  "eligible": [
+    "residual"
+  ],
+  "selected_mode": "residual",
+  "historical_test_scored": false,
+  "artifacts": {
+    "protocol.json": "14b518a7783986db2d88fb6e1fd711e60d5a9061d9bb16b772bf52f07d6379e1",
+    "autonomous/fit.json": "89d0e5a9cdbd898c764b46b8c0a108154e0d2d7fae34bc398f35b231176a232d",
+    "autonomous/model.pt": "97c6c9d5e9831583d48bc922f6ceb417ed76ef8fe1fdae1dcd9109ee6e6301f6",
+    "observed/fit.json": "7c2352da807a4075294d1075c9e6e2e9bddd52411f5593de8bd4d55c1ae97b78",
+    "observed/model.pt": "42539fe7c7109266a75894e6c5314738e2170da2d7ba25277743d856751e1883",
+    "residual/fit.json": "47187c8192f304763f18ee86aafb9c2e1a6eb96df0a81fbb7c941913292539e6",
+    "residual/model.pt": "5e52c5a34bf56b7921fd7bf65833a7164d02ee962dd7fef5df9b5a01e6f8713f",
+    "source/examples/adapt_sma.py": "efe1588243411515fd0503b64183eb81f9d2034c55e2b2a9aa3ad3329ee4fc18",
+    "source/examples/fit_thermal_readout.py": "2b208b197463f685180b852b0d9b4c9b1e02d69965141511ab13184f04df73db",
+    "source/SciML/models/v13/selective_sma.py": "e69e292da371c9a510d4bbdcbd0fa009985d058be2a7ad199048dc348e7b85bb",
+    "source/SciML/models/v13/thermal_readout.py": "7f46b62f69637c4f7941328e62774f363846280d39917e35cbf98aa446d9151a"
+  }
+}

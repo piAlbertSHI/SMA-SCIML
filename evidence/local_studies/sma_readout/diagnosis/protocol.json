@@ -1,0 +1,26 @@
+{
+  "purpose": "failure diagnosis, not model selection or independent confirmation",
+  "models": [
+    "coordinate",
+    "modal_joint",
+    "modal_refined"
+  ],
+  "seeds": [
+    20261121,
+    20261122,
+    20261123
+  ],
+  "case_ids": [
+    "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+    "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c"
+  ],
+  "field_order": [
+    "SMA",
+    "fluid"
+  ],
+  "oracle_scope": "true entry state substituted at an exchange; predicted preceding memory retained; no oracle result is a forecast",
+  "decomposition": "exact entry MSE + evolution MSE + signed cross term; initial-value substitution is diagnostic only",
+  "data_sha256": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+  "source_sha256": "854af58ed6c9d2c5df1b62611fe8bb37cb4ef172deb406c497b0292eacf832b0",
+  "fresh_solver_calls": 0
+}

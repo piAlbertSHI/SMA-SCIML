@@ -1,0 +1,44 @@
+{
+  "purpose": "physical-input low-rank SMA correction",
+  "formal": true,
+  "modes": [
+    "observed",
+    "autonomous",
+    "residual"
+  ],
+  "rank": 12,
+  "alpha": 1.0,
+  "fit_case_ids": [
+    "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+    "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+    "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+    "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+    "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+    "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+    "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+    "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c"
+  ],
+  "validation_case_ids": [],
+  "data_sha256": {
+    "state": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "fields": "15f5cf30948efea558ba514cafea99f146dcdc13435b66b906e58d582a721096"
+  },
+  "checkpoint_sha256": {
+    "evidence/experiments/hro_modal/formal/s20261121/refined/model.pt": "fc30079bb3ee734ec2510453ebddcc60d3c1ed21dc414b6817c529b9e51a235e",
+    "evidence/experiments/hro_modal/formal/s20261122/refined/model.pt": "095b7f574a561583483f540f182b27705883a460259119e4a28e70ca4761f17b",
+    "evidence/experiments/hro_modal/formal/s20261123/refined/model.pt": "187cefe6c0d9deeabac4f2ad623171ef8a19f43b2f4913173d6e80e72ff8af66"
+  },
+  "features": "initial SMA101, fluid101, radius, thickness, flush ratio, duration, stage2/stage4; no material/cycle ID",
+  "gate": "same as preceding decoder study: lower SMA mean and c2s4 mean, per-case SMA <=1.05*baseline, fluid exact",
+  "historical_test_scope": "failure diagnosis already performed; no historical test candidate selection",
+  "source_sha256": {
+    "examples/fit_thermal_readout.py": "90848fc97e65c832c58970e4feae2abe96de99b5a7b6a13c5d0db3a59e5f8d4b",
+    "SciML/models/v13/thermal_readout.py": "090ac9057c34112041628f45f69351034dbe34ad24b2e0f8150916505d0b86cf",
+    "examples/adapt_sma.py": "efe1588243411515fd0503b64183eb81f9d2034c55e2b2a9aa3ad3329ee4fc18",
+    "SciML/models/v13/selective_sma.py": "e69e292da371c9a510d4bbdcbd0fa009985d058be2a7ad199048dc348e7b85bb"
+  },
+  "fresh_solver_calls": 0,
+  "cross_check_sha256": "79c4049fad530fdd56ab8d8dbb51067b26293392443e264d1f828a0c405e733b",
+  "selected_mode": "residual",
+  "development_sha256": "e76eb65a8515fd5e97295d6a2966ebd22f0df784cdc8c6120815e8aa53389d6a"
+}
