@@ -7,6 +7,7 @@ SMA-SCIML 提供面向弹热制冷科学机器学习的方法、基准与软件�
 | Topic / 主题 | Reference / 文档 |
 |---|---|
 | Project and research questions / 项目与研究问题 | [Research overview / 研究概览](SHOWCASE.md) |
+| Work packages and open work / 工作包与研究缺口 | [Project status and priorities / 项目进度与优先级](PROJECT_STATUS.md) |
 | Hierarchical Recurrent Operator / 分层循环算子 | [Architecture and equations / 架构与公式](HIERARCHICAL_OPERATOR.md) |
 | Modal fields and two-phase optimization / 模态场与双阶段优化 | [Architecture, training and benchmark / 架构、训练与基准](HRO_MODAL.md) |
 | SMA field error diagnosis / SMA 场误差诊断 | [Conditional residual readout and local validation / 条件残差读出与本地验证](HRO_SMA_DIAGNOSIS.md) |

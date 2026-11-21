@@ -1,0 +1,336 @@
+{
+  "status": "completed_local_corpus_inventory",
+  "audit_source_sha256": "e8d7b876277b6b2fe6f5c9105d24c5fb61faae847bcf11906462f04ae08f9ac1",
+  "loading_archive": {
+    "directory": "v1.0",
+    "loading_scalar_rows": 3840,
+    "recorded_design_valid": 3584,
+    "operator_checkpoint_rows": 20,
+    "failure_event_rows": 270,
+    "index_sha256": {
+      "scalar_cases.csv": "fb160cd8a4684690381df85b856156db354c6a2c91ed4789967e0f3044cba9e1",
+      "operator_samples.csv": "9341149142453a576246e6096ef2022580d06312ccdb75fed775975bbd40d66f",
+      "failure_events.csv": "0727d513c50320b8b3ec74da5031e7b396953e62470c09d404f7882578fd5694"
+    }
+  },
+  "cycle_corpora": {
+    "historical_development": {
+      "directory": "v1.1-paper220",
+      "artifact_manifest_sha256": "361eecb77e0c3b062c4925663497c2be9074c1c0914d7021240f17c394e8c2a6",
+      "source_content_sha256": "fdafdce79c4a6f808eeff63253bdef593ddb221bf1b12d7b484627a6a369bb20",
+      "manifest_artifacts_checked": 7,
+      "case_rows": 229,
+      "cycle_rows": 243,
+      "passing_case_rows": 212,
+      "passing_distinct_condition_ids": 200,
+      "cycle_rows_of_passing_cases": 226,
+      "passing_case_horizons": {
+        "1": 200,
+        "2": 10,
+        "3": 2
+      },
+      "passing_case_materials": {
+        "recA": 105,
+        "recAs": 107
+      },
+      "geometries_m": [
+        [
+          0.032,
+          0.00016
+        ],
+        [
+          0.035,
+          0.000175
+        ],
+        [
+          0.038,
+          0.00019
+        ],
+        [
+          0.04,
+          0.0002
+        ],
+        [
+          0.042,
+          0.00021
+        ]
+      ],
+      "radius_thickness_ratios": [
+        200.0
+      ],
+      "mechanical_u_w_temperature_phase_50x51": {
+        "segments_checked": 452,
+        "matching_shape": 452
+      },
+      "exchange_sma_fluid_50x101": {
+        "segments_checked": 452,
+        "matching_shape": 452
+      },
+      "physics_fingerprints": {
+        "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279": 229
+      },
+      "pipeline_fingerprints": {
+        "05e56974ca604efdc253df6d2c5cc4b454e9ddc38372a878335ff82506a2d6c4": 214,
+        "90a5bed4c056daf3d8f2382c23b2e62982c85cd1fedf1c25fcd5bf7a2a587d3e": 12,
+        "cb950e1fda93cf3645e1093d981fc42bc2276bf327cb08f549d55a145684cd4d": 3
+      },
+      "recorded_matrix_complete": false,
+      "recorded_dataset_paper_grade_gate": true
+    },
+    "historical_confirmation": {
+      "directory": "v1.2-confirm50",
+      "artifact_manifest_sha256": "28aa4128732bd034f48559d537e4acb5ff95b5ff7bce96b76a1887facf20e5ce",
+      "source_content_sha256": "7624855ee749d2802fb6f5da379b7a39f64f0a028813629595e81831e32eb8a7",
+      "manifest_artifacts_checked": 7,
+      "case_rows": 50,
+      "cycle_rows": 50,
+      "passing_case_rows": 50,
+      "passing_distinct_condition_ids": 50,
+      "cycle_rows_of_passing_cases": 50,
+      "passing_case_horizons": {
+        "1": 50
+      },
+      "passing_case_materials": {
+        "recA": 25,
+        "recAs": 25
+      },
+      "geometries_m": [
+        [
+          0.032,
+          0.00016
+        ],
+        [
+          0.035,
+          0.000175
+        ],
+        [
+          0.038,
+          0.00019
+        ],
+        [
+          0.04,
+          0.0002
+        ],
+        [
+          0.042,
+          0.00021
+        ]
+      ],
+      "radius_thickness_ratios": [
+        200.0
+      ],
+      "mechanical_u_w_temperature_phase_50x51": {
+        "segments_checked": 100,
+        "matching_shape": 100
+      },
+      "exchange_sma_fluid_50x101": {
+        "segments_checked": 100,
+        "matching_shape": 100
+      },
+      "physics_fingerprints": {
+        "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279": 50
+      },
+      "pipeline_fingerprints": {
+        "44b02f9ffe9d1d5c3ae82fdf3f6002fa31c0c58c11c61b68ef52d13702a39cd2": 50
+      },
+      "recorded_matrix_complete": true,
+      "recorded_dataset_paper_grade_gate": false
+    },
+    "historical_temporal": {
+      "directory": "v1.2-confirm-temporal12",
+      "artifact_manifest_sha256": "2c1a9e812e8f49c315e1bd84ed59daf7da827cfe285fe10e3cf6b977be730a1c",
+      "source_content_sha256": "8bd9ddc6e390992c3fe7cb6e5f28a1644ef0529c195fdddd642ba92741b2f070",
+      "manifest_artifacts_checked": 7,
+      "case_rows": 12,
+      "cycle_rows": 26,
+      "passing_case_rows": 12,
+      "passing_distinct_condition_ids": 12,
+      "cycle_rows_of_passing_cases": 26,
+      "passing_case_horizons": {
+        "2": 10,
+        "3": 2
+      },
+      "passing_case_materials": {
+        "recA": 6,
+        "recAs": 6
+      },
+      "geometries_m": [
+        [
+          0.032,
+          0.00016
+        ],
+        [
+          0.035,
+          0.000175
+        ],
+        [
+          0.038,
+          0.00019
+        ],
+        [
+          0.04,
+          0.0002
+        ],
+        [
+          0.042,
+          0.00021
+        ]
+      ],
+      "radius_thickness_ratios": [
+        200.0
+      ],
+      "mechanical_u_w_temperature_phase_50x51": {
+        "segments_checked": 52,
+        "matching_shape": 52
+      },
+      "exchange_sma_fluid_50x101": {
+        "segments_checked": 52,
+        "matching_shape": 52
+      },
+      "physics_fingerprints": {
+        "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279": 12
+      },
+      "pipeline_fingerprints": {
+        "bb312566a093e41ec6249dcea33229ff236332a4c89ca5508cc6c7e666bfba73": 12
+      },
+      "recorded_matrix_complete": true,
+      "recorded_dataset_paper_grade_gate": false
+    },
+    "single_cycle_learning": {
+      "directory": "v12-learning-existing63-20260910",
+      "artifact_manifest_sha256": "368d0c2cbb3345debad966a164a9f0ec00da574b683e6cb9f599b9b9d5593447",
+      "source_content_sha256": "ff28bf6eee81ed41d3a12d41c20ea4370eaf6fcdfa770e3127ae1af96db18f5c",
+      "manifest_artifacts_checked": 7,
+      "case_rows": 63,
+      "cycle_rows": 63,
+      "passing_case_rows": 63,
+      "passing_distinct_condition_ids": 63,
+      "cycle_rows_of_passing_cases": 63,
+      "passing_case_horizons": {
+        "1": 63
+      },
+      "passing_case_materials": {
+        "recA": 56,
+        "recAs": 7
+      },
+      "geometries_m": [
+        [
+          0.032,
+          0.00016
+        ],
+        [
+          0.035,
+          0.000175
+        ],
+        [
+          0.038,
+          0.00019
+        ],
+        [
+          0.04,
+          0.0002
+        ],
+        [
+          0.042,
+          0.00021
+        ]
+      ],
+      "radius_thickness_ratios": [
+        200.0
+      ],
+      "mechanical_u_w_temperature_phase_50x51": {
+        "segments_checked": 126,
+        "matching_shape": 126
+      },
+      "exchange_sma_fluid_50x101": {
+        "segments_checked": 126,
+        "matching_shape": 126
+      },
+      "physics_fingerprints": {
+        "ffe15b88ce05a4adb452baa7548bdbf89061cdf55f43b4f10df2ead92bd481b7": 63
+      },
+      "pipeline_fingerprints": {
+        "ee7d97b03890ff32d7edcc2870a6a030492e1fb1a74c19dd62527183caaac6ec": 63
+      },
+      "recorded_matrix_complete": false,
+      "recorded_dataset_paper_grade_gate": false
+    }
+  },
+  "exact_overlap_of_passing_cases": [
+    {
+      "corpora": [
+        "historical_development",
+        "historical_confirmation"
+      ],
+      "same_case_ids": 0,
+      "same_condition_ids": 0,
+      "same_export_semantic_sha256": 0
+    },
+    {
+      "corpora": [
+        "historical_development",
+        "historical_temporal"
+      ],
+      "same_case_ids": 0,
+      "same_condition_ids": 0,
+      "same_export_semantic_sha256": 0
+    },
+    {
+      "corpora": [
+        "historical_development",
+        "single_cycle_learning"
+      ],
+      "same_case_ids": 54,
+      "same_condition_ids": 54,
+      "same_export_semantic_sha256": 0
+    },
+    {
+      "corpora": [
+        "historical_confirmation",
+        "historical_temporal"
+      ],
+      "same_case_ids": 0,
+      "same_condition_ids": 12,
+      "same_export_semantic_sha256": 0
+    },
+    {
+      "corpora": [
+        "historical_confirmation",
+        "single_cycle_learning"
+      ],
+      "same_case_ids": 0,
+      "same_condition_ids": 0,
+      "same_export_semantic_sha256": 0
+    },
+    {
+      "corpora": [
+        "historical_temporal",
+        "single_cycle_learning"
+      ],
+      "same_case_ids": 0,
+      "same_condition_ids": 0,
+      "same_export_semantic_sha256": 0
+    }
+  ],
+  "recorded_reports": {
+    "historical_development": {
+      "sha256": "aad13fd65859e012759dbe1f17ae983a338950091fba78dcb54b8e655d663955",
+      "engineering_passed": true,
+      "project_paper_grade_passed": false,
+      "blocking_reasons": [
+        "WP2 model report has not passed its registered OOD/temporal paper-grade gate.",
+        "WP3 model report has not passed its registered OOD/temporal paper-grade gate.",
+        "WP4 model report has not passed its registered OOD/temporal paper-grade gate."
+      ]
+    },
+    "subsequent_confirmation_attempt": {
+      "sha256": "674c57bbb28e471bca00d4b6b0c1b8869c882c47705bc6e70d131043bb449345",
+      "passed_at_report_time": false,
+      "physics_fingerprint_consistent_at_report_time": false
+    }
+  },
+  "scope": "Byte-integrity checks and field shapes, with eligibility inherited from archive flags",
+  "overlap_scope": "Exact registered condition IDs, excluding partial or near matches",
+  "fresh_solver_calls": 0,
+  "training_runs": 0
+}

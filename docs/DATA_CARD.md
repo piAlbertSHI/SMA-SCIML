@@ -41,8 +41,10 @@ Original MAT files, full HDF5 archives, solver run directories and unrelated man
 ## Interpretation and limitations / 解释与限制
 
 - All labels are numerical. No physical experiment is represented as validation. / 标签均来自数值结果，不作为实体实验验证。
-- The historical test cohort has informed development; two three-cycle cases offer limited independent evidence. / 历史测试工况参与过开发分析，两个三循环工况的独立证据有限。
+- The historical test cohort has informed development and covers two three-cycle cases. Independent horizon validation remains open. / 历史测试工况参与过开发分析，仅覆盖两个三循环工况。独立的循环长度验证仍待完成。
 - All63 cases satisfy the recorded reading/quality criteria; the corpus does not provide both success/failure classes for failure detection. / 63工况符合记录的读取与质量条件，但不同时提供成功、失败两类标签。
 - COP uses the archived loading-work, recovered-work quantity and pumping-work convention; it is not net electrical efficiency. / COP 沿用归档加载功、回收功量及泵功口径，不等于净电效率。
 - Complete SMA energy accounting needs independent port and storage information. / 完整 SMA 能量核算仍需独立端口与储能信息。
 - Data and weight redistribution rights require an explicit release license. / 数据及权重再分发须有明确发布许可。
+
+See the project status for the additional solver archives, exact condition overlap and version-specific evidence. / 其余求解器归档、条件重叠及版本范围见项目进度。[Cross-archive inventory / 跨档案核验](PROJECT_STATUS.md#两项现有数据核验)

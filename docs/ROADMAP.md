@@ -1,8 +1,8 @@
 # Research roadmap / 研究路线图
 
-The [modal-decoder study](HRO_MODAL.md) now provides the sampling comparison and a two-phase refinement result: lower spatial oscillation and whole-test field error, with mixed third-cycle SMA-field results. The directions below remain open for matched-budget tests. The [physics audit](HRO_RESEARCH_DESIGN.md) establishes the historical source/parameter recovery and explains why SMA endpoint consistency cannot yet be imposed.
+The project status maps the original work packages to current model evidence and orders the next experiments. The modal decoder improves spatial regularity, and the thermal response improves the pooled third-cycle SMA field RMSE on the historical benchmark. The directions below describe further HRO studies. [Project status and priorities](PROJECT_STATUS.md) · [Thermal response](HRO_ERROR_SCALED_RESPONSE.md)
 
-[模态解码研究](HRO_MODAL.md)已提供采样对照和双阶段训练结果：空间振荡及全测试场误差减小，但第三循环 SMA 场改善不一致。下列方向仍需匹配预算的检验；[物理审查](HRO_RESEARCH_DESIGN.md)记录了历史源码及参数恢复，并解释 SMA 末态一致性为何尚不能直接施加。
+项目进度表对照原始工作包与当前证据，给出后续任务顺序。模态解码缓解空间振荡，误差收缩热响应在历史基准上降低了第三循环合并 SMA 场误差。下表集中列出 HRO 的后续研究。[项目进度与优先级](PROJECT_STATUS.md) · [物理接口审查](HRO_RESEARCH_DESIGN.md)
 
 | Direction / 方向 | Evidence / 依据 | Evaluation / 评价设计 |
 |---|---|---|
