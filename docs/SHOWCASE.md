@@ -1,15 +1,15 @@
-# SMA SciML — Project Showcase / 项目成果展示
+# SMA-SCIML — Project Showcase / 项目成果展示
 
 **From coupled physical states to predictive models and design decisions.**  
 **从耦合物理状态到预测模型与设计决策。**
 
-[Project home / 项目首页](../README.md) · [Architecture / 架构](#architecture) · [Results / 结果](#results) · [Research potential / 研究潜力](#potential) · [Interview summary / 汇报摘要](#pitch)
+[Project home / 项目首页](../README.md) · [Architecture / 架构](#architecture) · [Results / 结果](#results) · [Research potential / 研究潜力](#potential)
 
 [Detailed results: 17 figures / 详细结果：17 组图](RESULTS_GALLERY.md) · [Figure downloads and SVG / 图表下载与 SVG](FIGURE_INDEX.md)
 
-**Current architecture / 当前架构:** the [3.11M-parameter hierarchical recurrent operator](HIERARCHICAL_OPERATOR.md) adds dual spatial encoders, latent attention, persistent GRU memory and joint state/field decoding. [Formal training and comparison](V13_FORMAL_BENCHMARK.md) are complete: three seeds ×200 updates, 6.7 CPU training minutes; third-cycle state/field gains with early-cycle and state-component regressions. The sections below retain the reference-model results.
+**Hierarchical Recurrent Operator / 分层循环算子：** the [3.11M-parameter HRO](HIERARCHICAL_OPERATOR.md) combines dual spatial encoders, latent attention, persistent GRU memory and joint state/field decoding. The [multi-cycle benchmark](MULTICYCLE_BENCHMARK.md) uses three seeds ×200 updates and 6.7 CPU training minutes. Third-cycle state/field gains coexist with early-cycle and state-component regressions. The sections below describe the reference studies.
 
-**当前主模型**整合双路空间编码、潜变量注意力、GRU 持续记忆及联合状态/场解码，约311万参数，已完成三种子各200次正式训练，训练6.7 CPU分钟；第三循环状态/场改善，早期循环和部分状态分量退步。下文继续保留旧参考模型结果。
+**HRO**整合双路空间编码、潜变量注意力、GRU 持续记忆及联合状态/场解码，约311万参数。多循环基准采用三种子各200次更新，训练6.7 CPU分钟；第三循环状态/场改善与早期循环、部分状态分量退步并存。下文介绍各参考方法研究。
 
 The project studies pressure-driven NiTi elastocaloric cooling through a connected set of performance surrogates, stage-transition models, temperature-field operators and decision methods. Its contribution is the combination of explicit physical state representations, controlled model comparisons and diagnosis of errors across module interfaces.
 
@@ -109,13 +109,13 @@ Three strategies are compared over three seeds at the same **12 → 17 → 22** 
 
 三种策略在相同 **12 → 17 → 22** 标签预算下分别运行三个种子。复合策略在 COP 和比制冷功率上更好，随机策略在冷量上更好。这是逐步揭示已有仿真标签的离线实验，用于评价选样行为，尚未测量实际新增仿真的成本节省。
 
-### Completed extension: input diversity / 已完成扩展：输入多样性
+### input diversity / 输入多样性
 
 ![Four-strategy, six-target comparison](../assets/research_v1/diversity_acquisition.png)
 
-The new experiment adds a fixed 50:50 mixture of the composite score and greedy input-distance rank, using the same three seeds and label budgets. All three historical baselines and their query sequences were reproduced. At 22 labels, temperature-span RMSE improves from 0.03480 to 0.02534 K versus composite, while COP RMSE worsens from 0.03751 to 0.05794. The complete six-target comparison is retained in the figure and [experiment report](ACQUISITION_DIVERSITY.md).
+The experiment adds a fixed 50:50 mixture of the composite score and greedy input-distance rank, using the same three seeds and label budgets. All three historical baselines and their query sequences were reproduced. At 22 labels, temperature-span RMSE improves from 0.03480 to 0.02534 K versus composite, while COP RMSE worsens from 0.03751 to 0.05794. The complete six-target comparison is retained in the figure and [experiment report](ACQUISITION_DIVERSITY.md).
 
-新增实验将复合分数与贪心输入距离排名按固定 50:50 混合，使用相同三个种子和标签预算，三个历史基线及其查询序列均得到重现。22 标签时，相比原复合策略，温差 RMSE 从 0.03480 改善到 0.02534 K，但 COP RMSE 从 0.03751 上升到 0.05794。图中和实验报告完整保留六目标对比。
+选样实验将复合分数与贪心输入距离排名按固定 50:50 混合，使用相同三个种子和标签预算，三个历史基线及其查询序列均得到重现。22 标签时，相比原复合策略，温差 RMSE 从 0.03480 改善到 0.02534 K，但 COP RMSE 从 0.03751 上升到 0.05794。图中和实验报告完整保留六目标对比。
 
 ![Candidate trade-offs / 候选方案权衡](../assets/design_tradeoff.png)
 
@@ -131,7 +131,7 @@ A diffusion PINN jointly fits the temperature field and a positive coefficient u
 
 扩散 PINN 用 12 个观测和 PDE 残差联合拟合温度场与正值系数，在制造热方程问题中，三个种子的**系数相对误差为 0.0458%–0.1906%**。另一条局部 ODE 支线从归档 SMA/流体温度曲线辨识有效热响应率，分别对应反演方法验证和局部动力学分析，尚不构成通用 SMA 材料参数标定。
 
-## Multi-cycle extension: completed comparison / 多循环扩展：已完成对照
+## Residual-cascade training / 残差级联系统训练
 
 The historical 515-state model now supports full backpropagation through a nine-transition, two-cycle chain, including the learned mechanical restart. Five residual MLPs (`529 → 32 → 32 → d`, 146,411 neural parameters) are continued from the archived checkpoints; affine maps, scalers, residual scales and field decoders stay frozen. Eight two-cycle training cases and the original four-case test split are preserved.
 
@@ -141,17 +141,17 @@ The historical 515-state model now supports full backpropagation through a nine-
 
 Three seeds compare archived one-step, 300-update one-step continuation and 300-update multi-step continuation. Third-cycle SMA-state RMSE is **1.5432 / 1.5163 / 1.5334 K** respectively; SMA-field RMSE is **2.0764 / 2.0602 / 2.0686 K**. Multi-step training reduces the autonomous training loss by 87.3%, but does not beat the matched one-step continuation on the three primary third-cycle metrics. Directional-memory error grows 3.34%. The study separates successful optimization from unresolved horizon extrapolation, using existing data with no new physical simulations.
 
-三个种子比较原单步、300 次单步续训、300 次多步续训，第三循环 SMA 状态 RMSE 分别为 **1.5432 / 1.5163 / 1.5334 K**，SMA 场 RMSE 为 **2.0764 / 2.0602 / 2.0686 K**。多步训练使自主推进训练损失下降 87.3%，但第三循环三项主要指标未超过同预算单步续训，方向记忆误差增加 3.34%。本次使用现有数据、没有新物理仿真，明确区分了优化成功与循环长度外推尚未解决。
+三个种子比较原单步、300 次单步续训、300 次多步续训，第三循环 SMA 状态 RMSE 分别为 **1.5432 / 1.5163 / 1.5334 K**，SMA 场 RMSE 为 **2.0764 / 2.0602 / 2.0686 K**。多步训练使自主推进训练损失下降 87.3%，但第三循环三项主要指标未超过同预算单步续训，方向记忆误差增加 3.34%。该实验使用现有数据、没有新物理仿真，明确区分了优化成功与循环长度外推尚未解决。
 
 [Architecture, loss, every case/seed and commands / 架构、损失、逐工况种子结果与运行方式](MULTICYCLE_MULTISTEP.md)
 
 <a id="potential"></a>
 
-## 7. Research potential and next milestones / 研究潜力与下一阶段目标
+## 7. Research directions / 研究方向
 
 | Research question / 研究问题 | Existing foundation / 已有基础 | Planned evaluation / 后续验证 |
 |---|---|---|
-| What limits third-cycle generalization? / 什么限制第三循环泛化？ | First differentiable multi-step comparison complete; better training fit, little test improvement / 可微多步对照已完成，训练拟合改善、测试收益有限 | Diagnose memory/restart errors and use case-level validation within the eight training cases before further model selection / 先定位记忆和重启误差，在八个训练工况内部验证后再选择新模型 |
+| What limits third-cycle generalization? / 什么限制第三循环泛化？ | First differentiable multi-step comparison complete; better training fit, little test improvement / 可微多步对照已完成，训练拟合改善、测试收益有限 | Diagnose memory/restart errors and use case-level validation within the eight training cases before further model selection / 先定位记忆和重启误差，在八个训练工况内部验证后再选择HRO |
 | Can physical descriptors improve material transfer? / 物性描述能否改善材料迁移？ | Two material configurations, explicit control features and OOD diagnostics / 两类材料配置、控制特征与分布外诊断 | Compare category labels, physical properties and limited adaptation; seek additional independent material data / 比较类别、物性与少量适配，并补充独立材料数据 |
 | Which acquisition objective should guide diversity? / 多样性应服务于哪个选样目标？ | Four-strategy comparison completed; diversity improves temperature span but not COP/SCP / 四策略对照已完成，多样性改善温差但未改善 COP/SCP | Define the primary objective before comparing alternative input metrics or acquisition rules, then seek independent validation / 先定义主要目标，再比较输入度量和选样规则，并开展独立验证 |
 | Can fields support energy-consistent design? / 温度场能否支持能量一致的设计？ | State/field predictions and a separate performance surrogate / 已有状态、温度场和独立性能代理 | Establish independent port, work and stored-energy accounting before validating field-derived performance / 先建立独立端口、功与储能核算，再验证场到性能读出 |
@@ -159,19 +159,11 @@ Three seeds compare archived one-step, 300-update one-step continuation and 300-
 These are the next research milestones, not completed results. The broader objective is a model that retains the state information needed for reliable multi-stage prediction and uses uncertainty to allocate simulation effort.  
 以上为待开展的研究目标。长期方向是建立保留必要状态信息、支持可靠多阶段预测，并能利用不确定性分配仿真预算的模型体系。
 
-<a id="pitch"></a>
-
-## Project summary for discussion / 面试与研究交流摘要
-
-> I developed a SciML workflow for pressure-driven SMA elastocaloric cooling, connecting performance surrogates, hybrid stage dynamics, neural operators and uncertainty-based decisions. On a 63-case simulation benchmark, a five-member ensemble reduced COP prediction error by 69.3% relative to Ridge. A central technical contribution was diagnosing directional information lost at a state–field interface: transferring predicted spatial memory reduced stage-4 field error by 65.1% in a controlled cascade comparison. I also compared neural operators against a strong POD baseline and extended the workflow to PINN inversion and offline active sampling. The next research questions concern multi-step stability, physical representations for transfer and energy-consistent design.
-
-> 我围绕压力驱动 SMA 弹热制冷建立了 SciML 工作流程，连接性能代理、混合阶段动力学、神经算子与不确定性决策。在 63 工况仿真基准中，五成员集成使 COP 预测误差相比 Ridge 降低 69.3%。一个核心技术贡献是定位状态—场接口中的方向信息损失，通过传递预测空间记忆，在固定条件级联对照中使第四阶段场误差降低 65.1%。此外，我比较了神经算子和强 POD 基线，并拓展到 PINN 反演与离线主动选样。下一阶段研究问题是多步稳定性、面向迁移的物理表示，以及满足能量核算要求的设计方法。
-
 ## Evidence and presentation assets / 证据与展示材料
 
-The original six PNG figures and animation use `python -m examples.showcase`. Nine PNG/SVG figures use `python -m examples.research_gallery`, and three multi-cycle comparisons use `python -m examples.multicycle_gallery`. The **17-figure statistical gallery** is preserved in [detailed results](RESULTS_GALLERY.md). The README now focuses on architecture, field animations and an offline explorer. New assets use `python -m examples.operator_showcase`. See the [figure index](FIGURE_INDEX.md) for sources and editable files.
+The original six PNG figures and animation use `python -m examples.showcase`. Nine PNG/SVG figures use `python -m examples.research_gallery`, and three multi-cycle comparisons use `python -m examples.multicycle_gallery`. The **17-figure statistical gallery** is preserved in [detailed results](RESULTS_GALLERY.md). The README now focuses on architecture, field animations and an offline explorer. The operator comparison uses `python -m examples.field_showcase`. See the [figure index](FIGURE_INDEX.md) for sources and editable files.
 
-原六张 PNG 与动画由 `python -m examples.showcase` 生成，九组 PNG/SVG 由 `python -m examples.research_gallery` 生成，三组多循环图由 `python -m examples.multicycle_gallery` 生成。**17 组统计图**保留于详细图集。README 当前架构、新旧场对照动画与交互演示由 `python -m examples.formal_gallery` 生成；原 `operator_showcase` 参考演示保留，图表索引提供来源与可编辑文件。
+原六张 PNG 与动画由 `python -m examples.showcase` 生成，九组 PNG/SVG 由 `python -m examples.research_gallery` 生成，三组多循环图由 `python -m examples.multicycle_gallery` 生成。**17 组统计图**保留于详细图集。README 当前架构、新旧场对照动画与交互演示由 `python -m examples.field_showcase` 生成；原 `operator_showcase` 参考演示保留，图表索引提供来源与可编辑文件。
 
 | Evidence / 证据 | Location / 位置 |
 |---|---|
@@ -180,10 +172,9 @@ The original six PNG figures and animation use `python -m examples.showcase`. Ni
 | Diffusion inverse results / 扩散反演结果 | [PINN summary](../evidence/archive/wp5-pinn-r1/summary.json) |
 | Local effective-rate study / 局部有效速率研究 | [local ODE summary](../evidence/archive/wp5-local-thermal-r2/summary.json) |
 | Multi-step continuation / 多步续训 | [protocol and results](MULTICYCLE_MULTISTEP.md) |
-| Formal v13 comparison / v13 正式对照 | [protocol, results and regressions](V13_FORMAL_BENCHMARK.md) |
+| Hierarchical Recurrent Operator comparison / HRO 正式对照 | [protocol, results and regressions](MULTICYCLE_BENCHMARK.md) |
 | Data coverage and COP definition / 数据范围与 COP 定义 | [data card](DATA_CARD.md) |
 | Dimensions, losses and training / 维度、损失与训练设置 | [model details](MODELS.md) |
 | Reproduction commands / 运行命令 | [quickstart](QUICKSTART.md) |
 
-The current repository remains **private**. Public release will follow owner approval and the [release checklist](PUBLIC_RELEASE_CHECKLIST.md).  
-当前仓库继续保持 **private**；公开发布需所有者批准并完成检查清单。
+Licensing and distribution terms are documented in the [release policy](PUBLIC_RELEASE_CHECKLIST.md). / 许可与分发条件见发布规范。

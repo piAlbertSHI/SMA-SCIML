@@ -1,0 +1,39 @@
+{
+  "scope": "External-facing naming, documentation, repository metadata and numerical demonstrations",
+  "project": "SMA-SCIML",
+  "github_owner": "piAlbertSHI",
+  "repository_url": "https://github.com/piAlbertSHI/SMA-SCIML",
+  "repository_private_verified": true,
+  "github_pages_enabled": false,
+  "profile_name_field": null,
+  "numerical_evidence": {
+    "baseline_commit": "3022d68aae766042b2274569a57f8f6e71db587f",
+    "unchanged_artifacts_checked": 215,
+    "scope": "data, checkpoints, experiment and architecture evidence",
+    "fresh_training_calls": 0,
+    "fresh_solver_calls": 0
+  },
+  "terminology": {
+    "primary_method": "Hierarchical Recurrent Operator (HRO)",
+    "reference_method": "Residual MLP + DeepONet",
+    "reference_figure_label": "Residual cascade",
+    "maintained_markdown_files_checked": 19,
+    "ci_guard": "python -m tools.audit_presentation"
+  },
+  "visual_checks": {
+    "architecture_png": "visually inspected",
+    "configuration_b_atlas": "visually inspected",
+    "animation_final_frame": "visually inspected",
+    "gif_frames": 60,
+    "gif_dimensions": [1575, 630],
+    "explorer_logic": "passed mock DOM/canvas interaction checks",
+    "actual_browser_qa": "pending"
+  },
+  "github_surface_inventory": {
+    "releases": 0,
+    "open_issues_or_pull_requests": 0,
+    "description_updated": true
+  },
+  "archives": "Personal presentation notes and prior wording are retained separately; immutable technical IDs and source-era records remain intact.",
+  "release_status": "Private; naming review does not replace licensing, full-history security review or browser acceptance."
+}

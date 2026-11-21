@@ -19,10 +19,10 @@ def architecture(g, evaluation_label=None):
     fig,ax=plt.subplots(figsize=(18,10.7));fig.subplots_adjust(0,0,1,1)
     ax.set(xlim=(0,18),ylim=(0,10.7));ax.axis('off')
     ink='#132c46';blue='#176da0';teal='#087c78';orange='#bc641c';muted='#56687b'
-    ax.text(.55,10.1,'SMA Neural State-Space Operator',fontsize=25,weight='bold',color=ink)
+    ax.text(.55,10.1,'SMA-SCIML | Hierarchical Recurrent Operator',fontsize=25,weight='bold',color=ink)
     ax.text(.55,9.65,'Spatial representation  /  latent temporal memory  /  continuous field queries',fontsize=13,color=muted)
-    label=evaluation_label or 'Accuracy evaluation pending'
-    ax.text(.55,9.15,f"IMPLEMENTED  ·  {summary['parameter_report']['trainable']:,} trainable parameters  ·  {label}",fontsize=11,color=teal)
+    label=evaluation_label or 'Spatial encoding · recurrent dynamics · coordinate queries'
+    ax.text(.55,9.15,f"{summary['parameter_report']['trainable']:,} trainable parameters  ·  {label}",fontsize=11,color=teal)
     for x,label in [(.55,'01  PHYSICAL INPUTS'),(4.3,'02  SPATIAL ENCODING'),(8.5,'03  RECURRENT FUSION'),(13.,'04  JOINT OUTPUTS')]:
         ax.text(x,8.65,label,fontsize=11,weight='bold',color=muted)
     def box(x,y,w,h,title,body,color=blue):
@@ -53,8 +53,8 @@ def architecture(g, evaluation_label=None):
     ax.text(10.35,1.25,'hⱼ → hⱼ₊₁',ha='center',fontsize=12,color=teal)
     ax.text(.55,1.55,'JOINT TRAINING',fontsize=10,weight='bold',color=muted)
     ax.text(.55,1.08,'Multi-step state loss + field loss + supervised spatial-gradient loss',fontsize=12,color=ink)
-    ax.text(.55,.48,'Causal rollout: predicted states and hidden memory only  •  Full backpropagation through the restart  •  No new physical simulations',fontsize=10.5,color=muted)
-    g.save(fig,'architecture','Implemented v13 architecture; '+label+'; parameters read from preserved execution summary')
+    ax.text(.55,.48,'Causal rollout: predicted states and hidden memory  •  Full backpropagation through the restart  •  Joint state and field supervision',fontsize=10.5,color=muted)
+    g.save(fig,'architecture','Hierarchical Recurrent Operator architecture; '+label+'; parameters read from preserved execution summary')
 
 
 def archived_fields(g):

@@ -1,3 +1,5 @@
+> Archived personal presentation notes. Maintained project documentation is indexed in [Documentation](../../docs/README.md).
+
 # 压力驱动 SMA 弹热制冷的 SciML 学习项目
 
 ## 面试汇报版：模型架构、参数设置、结果与边界

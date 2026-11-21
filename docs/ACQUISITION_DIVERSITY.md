@@ -1,8 +1,8 @@
 # Diversity-aware acquisition / 多样性选样实验
 
-This extension completes the first diversity experiment on the existing 63-case dataset. It compares four acquisition strategies using fixed budgets, without running the physics solver or changing the historical experiments.
+This study compares four acquisition strategies on a 63-case numerical dataset at a matched label budget. Selection operates by revealing archived simulation labels, so the experiment measures offline acquisition behavior.
 
-本次完成了已有 63 工况上的首组多样性选样扩展。在固定预算下比较四种策略，不调用物理求解器，也不修改历史实验。
+该研究在63工况数值数据集上，以相同标签预算比较四种选样策略。选样通过逐步揭示归档仿真标签进行，评价的是离线选样行为。
 
 ![All six acquisition targets](../assets/research_v1/diversity_acquisition.png)
 
@@ -10,7 +10,7 @@ This extension completes the first diversity experiment on the existing 63-case 
 
 - **Data / 数据：**37 training-pool cases, 13 protected calibration cases, 13 test cases. Test cases have previously informed project development; this remains exploratory evaluation. / 37 例训练池、13 例受保护校准集、13 例测试集；该测试集已有开发使用历史。
 - **Matched budget / 相同预算：**12 initial labels, two batches of five, total 22. Seeds 701/702/703; each fit uses three independently initialized `7→32→32→6` SiLU networks, 200 AdamW updates per member, lr .002, weight decay 1e-4. / 12 个初始标签、两批各 5 个、总计 22；三个种子，每次拟合三个独立网络。
-- **New score / 新分数：**0.5 × original composite score + 0.5 × percentile rank of minimum input distance to revealed cases and the selected batch. Distances use the scaler fitted on revealed training cases. Greedy selection updates distances after each chosen point; ties use case ID. / 复合分数与最近距离排名各占 0.5；只用已揭示训练样本拟合归一化器，每选一个点后更新距离。
+- **Diversity score / 多样性分数：**0.5 × original composite score + 0.5 × percentile rank of minimum input distance to revealed cases and the selected batch. Distances use the scaler fitted on revealed training cases. Greedy selection updates distances after each chosen point; ties use case ID. / 复合分数与最近距离排名各占 0.5；只用已揭示训练样本拟合归一化器，每选一个点后更新距离。
 - **Input permissions / 输入权限：**the selector receives candidate inputs, predictions and already revealed targets through the existing composite score; it never receives unrevealed targets or test/calibration observations. Each decision is written before label queries and test evaluation. / 选样器不读取未揭示标签或测试、校准观测，决策先落盘，再查询标签与评价测试集。
 - **Fixed analysis / 固定分析：**the 0.5 coefficient, budgets and seeds were fixed before execution. No post-result coefficient search, selective seed removal or early stopping. / 权重、预算和种子运行前固定，没有事后搜索权重、删除种子或提前停止。
 
@@ -31,9 +31,9 @@ Three-seed mean test RMSE; lower is better. The figure shows between-seed standa
 
 ## Verification and rerun / 验证与复跑
 
-All three original strategy curves and their queried case sequences matched the archived runs. Twelve final checkpoints passed reload checks. Total execution: 12 seed/strategy experiments, 108 small-network fits, zero new physics simulations. The new selector tests cover input-only geometric selection, permutation-invariant tie handling and rejection of malformed data.
+All three original strategy curves and their queried case sequences matched the archived runs. Twelve final checkpoints passed reload checks. Total execution: 12 seed/strategy experiments, 108 small-network fits, zero new physics simulations. The selector tests cover input-only geometric selection, permutation-invariant tie handling and rejection of malformed data.
 
-三个原策略的曲线和查询工况序列均与归档一致，12 个最终检查点均通过重载核对。本次共 12 组种子/策略实验、108 次小网络拟合，新增物理仿真为零。新选样器测试覆盖输入几何选点、排列无关的平局处理和非法数据拒绝。
+三个原策略的曲线和查询工况序列均与归档一致，12 个最终检查点均通过重载核对。该实验共 12 组种子/策略实验、108 次小网络拟合，新增物理仿真为零。多样性选样器测试覆盖输入几何选点、排列无关的平局处理和非法数据拒绝。
 
 ```bash
 python -m examples.active_diversity --output run-output-diversity

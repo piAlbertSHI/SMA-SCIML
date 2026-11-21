@@ -1,0 +1,48 @@
+{
+  "status": "completed_operator_showcase",
+  "selection": {
+    "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+    "new_seed": 20261121,
+    "old_seed": 20260910,
+    "old_mode": "archived_one_step",
+    "rule": "first sorted case and first listed seeds; no best-seed selection"
+  },
+  "figures": [
+    {
+      "name": "architecture",
+      "scope": "Hierarchical Recurrent Operator architecture; 04  JOINT OUTPUTS; parameters read from preserved execution summary"
+    },
+    {
+      "name": "field_atlas_1",
+      "scope": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c; six exchange segments with local time; first preset seeds, not selected by error; shared limits for both model errors"
+    },
+    {
+      "name": "field_atlas_2",
+      "scope": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c; six exchange segments with local time; first preset seeds, not selected by error; shared limits for both model errors"
+    }
+  ],
+  "input_sha256": {
+    "evidence/experiments/v13_formal_v1/protocol.json": "69d2f6396e1eb2d4cfc2943e16d38d560d91b9fb31ee41ce1fbceef697e49cf6",
+    "evidence/experiments/v13_formal_v1/summary.json": "dd4c092cbd051406e004c27fc5cd03e822eb60756e19159449af8bd710c54180",
+    "data/historical12_state.npz": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "evidence/experiments/v13_formal_v1/s20261121/test_predictions.npz": "862e31b289c38e773723de0ab3b4deca3725e7aad145b00d699821ed62eb52c9",
+    "evidence/experiments/multicycle_multistep_v1/s20260910/archived_one_step.npz": "507147d8cfb1b1aaffa6d24f7c389446ee7cbb507e86671ef69b042e2f4097d1",
+    "examples/operator_showcase.py": "4ea092600ea0b35d197ea02ba344313a32219a5daf31d18488989e66a6fecaaf",
+    "examples/research_gallery.py": "4ef46a0f72a244b35f2d3a915fddc2272b6fb05a67b663fc649a9c6b4fb7d700",
+    "evidence/architecture/v13_execution_v1/summary.json": "d7930822efef341ca76e3d1705794c1a4c4c9fa9f2d38db06bb1d545e467b97b",
+    "examples/templates/operator_explorer.html": "6ff112dff6de1f59201e57ad8ab9050ca02b8ec751f8cb9c4515424f3b4f294c"
+  },
+  "generator_sha256": "f0abb0d0e2172c7d72020476008cb619790ff1446aa400a3322ee556b358e9a9",
+  "artifacts": {
+    "architecture.png": "d703a5f3e5402c5106b97cc9fa6002cf2d6f5abb36633f7d614d6a326dadadc1",
+    "architecture.svg": "52168a531c85e4042612db959a54942f0571621eccd46209f0d6c620116b0b35",
+    "explorer.html": "cf8033454f8720cfd343e504faa2cdec592e901dfc19bc11a74be05e2412bb32",
+    "field_atlas_1.png": "712a30551e65f56680c8d644faf29110a4c151792903165b243041417a284771",
+    "field_atlas_1.svg": "43f191bb9f24e52243f89da72c6d36587d156520fe69d8afb352e5f8ec648c1a",
+    "field_atlas_2.png": "f296f359c166a5d251cafebdf0a4e0ad98a819ebbfcc6499fdaec3e6a775c05f",
+    "field_atlas_2.svg": "35662b002e054bf38ee1146bb5781a79b72bcd252a04641212e0863cedb0d0a4",
+    "multicycle_comparison.gif": "04a0e48ee04e9f5c4653b7d2f2a1485241c63e780fcb9f3fd99de2b5c41f68fd"
+  },
+  "fresh_training_calls": 0,
+  "fresh_solver_calls": 0
+}

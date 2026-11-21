@@ -1,126 +1,107 @@
-# SMA SciML
-### Neural state-space operators for elastocaloric cooling
-### 面向弹热制冷的神经状态空间算子
+# SMA-SCIML
+### Scientific machine learning for elastocaloric cooling
+### 面向弹热制冷的科学机器学习
 
-**Spatial encoding · Latent attention · Recurrent dynamics · Continuous temperature fields**
+**Structured physical states · Recurrent latent memory · Continuous temperature fields**
 
-[Architecture / 架构](docs/HIERARCHICAL_OPERATOR.md) · [New benchmark / 新模型结果](docs/V13_FORMAL_BENCHMARK.md) · [Demos / 演示](#demos) · [Run / 运行](#run)
+[Architecture / 架构](docs/HIERARCHICAL_OPERATOR.md) · [Benchmarks / 基准](docs/MULTICYCLE_BENCHMARK.md) · [Documentation / 文档](docs/README.md) · [Quickstart / 使用](docs/QUICKSTART.md)
 
-SMA SciML models the coupled mechanical, phase-transformation and thermal dynamics of pressure-driven shape-memory-alloy cooling. The current development centers on a **hierarchical recurrent operator** that advances physical states and decodes temperature fields within one differentiable model.
+SMA-SCIML studies the coupled mechanical, phase-transformation and thermal dynamics of pressure-driven shape-memory-alloy cooling. Its **Hierarchical Recurrent Operator (HRO)** combines spatial encoders, latent attention and persistent memory to predict physical states and temperature fields across repeated cycles.
 
-SMA SciML 面向压力驱动形状记忆合金制冷中的力学、相变与传热耦合。当前核心为**分层循环神经算子**，在同一个可微模型中推进物理状态、保留历史记忆并解码温度场。
+SMA-SCIML 研究压力驱动形状记忆合金制冷中的力学、相变与传热耦合。**分层循环算子（Hierarchical Recurrent Operator，HRO）**融合空间编码、潜变量注意力和持续记忆，预测多循环物理状态与温度场。
 
-![Autonomous three-cycle prediction: numerical reference, v12, trained v13 and errors / 三循环自主预测：数值参考、旧模型、新模型与误差](assets/v13_formal_v1/v13_comparison.gif)
+![Autonomous thermal fields: Residual MLP + DeepONet and HRO / 自主温度场预测与误差对照](assets/showcase/multicycle_comparison.gif)
 
-*Actual predictions from the first formal v13 training run. Six exchange segments, fixed recA test case, v12 seed 20260910 and v13 seed 20261121. Temperature and error limits are shared across models. Case and seeds were fixed before training.*
+*Autonomous three-cycle forecasts from the same initial conditions and controls. The residual cascade combines a Residual MLP state predictor with DeepONet; HRO predicts states and fields jointly. Panels share temperature and error scales. The illustrated case and checkpoints are fixed by the benchmark protocol.*
 
-*新模型首次正式训练后的真实预测。六段换热、固定 recA 测试工况，旧模型种子 20260910、新模型种子 20261121；模型间共用温度及误差色标。工况与种子在训练前固定。*
+*两类模型从相同初态与控制条件自主预测三循环。残差级联系统由 Residual MLP 状态预测器和 DeepONet 组成；HRO 联合预测状态与场。图中共用温度及误差色标，展示工况和检查点由基准协议固定。*
 
 ## Architecture / 模型架构
 
-![Trained hierarchical recurrent operator / 已训练分层循环算子](assets/v13_formal_v1/architecture.png)
+![Hierarchical Recurrent Operator architecture / 分层循环算子架构](assets/showcase/architecture.png)
 
-**3.11 million trainable parameters · 515 explicit state variables · 256 recurrent memory variables · two temperature fields**
+**3.11M trainable parameters · 515 physical-state variables · 256 recurrent-memory variables · SMA and fluid temperature fields**
 
-**311 万可训练参数 · 515 维显式状态 · 256 维循环记忆 · SMA/流体双温度场**
+**311 万可训练参数 · 515 维物理状态 · 256 维循环记忆 · SMA 与流体双温度场**
 
-| Layer / 层级 | Implemented design / 已实现设计 | Purpose / 作用 |
+| Component / 模块 | Structure / 结构 | Role / 作用 |
 |---|---|---|
-| Spatial representation / 空间表示 | Separate radial and axial residual CNN encoders, width 128, dilations 1/2/4 / 独立径向与轴向残差编码器 | Preserve mechanical, phase and transport structure / 保留力学、相变及输运结构 |
-| Information fusion / 信息融合 | 152 spatial tokens → 16 latent tokens; three Transformer blocks, eight heads / 152 空间 token 压缩至 16 潜 token | Combine spatial information without flattening everything into a small MLP / 融合结构化空间信息 |
-| Cycle dynamics / 循环动力学 | GRU memory + FiLM-conditioned stage heads + frozen affine prior / GRU 记忆、FiLM 阶段头与冻结仿射先验 | Carry history through exchange and mechanical restart / 跨换热与力学重启传递历史 |
-| Field prediction / 场预测 | Fourier coordinate features + query-to-latent attention; exact initial values / 傅里叶坐标特征、交叉注意力与硬初值 | Query two continuous-coordinate temperature fields / 查询两类连续坐标温度场 |
-| Joint training / 联合训练 | Multi-step state + field + supervised spatial-gradient losses / 多步状态、场值与空间梯度监督 | Backpropagate field errors through the state and memory chain / 将场误差回传至状态与记忆链 |
+| Spatial encoders / 空间编码器 | Separate radial and axial residual CNNs; width 128, dilations 1/2/4 | Preserve displacement, phase and transport neighborhoods / 保留位移、相变与输运的空间邻域 |
+| Latent attention / 潜变量注意力 | 152 spatial tokens → 16 latent tokens; three Transformer blocks, eight heads | Fuse mechanical and thermal representations / 融合力学与热学表示 |
+| Recurrent dynamics / 循环动力学 | GRU256; five FiLM-conditioned transition heads; frozen affine prior | Carry state and memory across stages and restarts / 跨阶段和重启传递状态与记忆 |
+| Coordinate decoder / 坐标解码器 | Fourier features and query-to-latent attention; exact stage-entry temperatures | Predict SMA and fluid temperatures at space–time coordinates / 在时空坐标上预测温度 |
+| Joint objective / 联合目标 | Multi-step state, field and supervised spatial-gradient losses | Train the state and field branches through complete trajectories / 沿完整轨迹联合训练状态与场分支 |
 
-**Formal training and historical comparison are complete: three seeds × 200 updates.** The model learns complete two-cycle sequences, then predicts up to three cycles using its own states and recurrent memory. Training took **6.7 CPU minutes**; training plus evaluation took **7.1 minutes**, with zero new physical simulations. All three saved checkpoints replay exactly in the recorded environment.
+The model uses its own predicted states during autonomous rollout. Training spans two cycles; evaluation extends to three. The coordinate decoder shares latent memory with the state predictor, while decoded fields do not directly update the explicit state.
 
-**已完成正式训练与历史基准对照：三个种子，每个 200 次更新。** 模型学习完整两循环序列，再使用自身状态与循环记忆预测至第三循环。训练合计 **6.7 CPU 分钟**，含评价 **7.1 分钟**，未新增物理仿真；三个保存的检查点均在记录环境中精确回放。
+自主推进使用模型自身的预测状态；训练覆盖两循环，评价延伸至三循环。坐标解码器与状态预测器共享潜变量记忆，解码温度场不直接回写显式状态。
 
-[Architecture: dimensions, equations and losses / 架构、维度、公式与损失](docs/HIERARCHICAL_OPERATOR.md) · [Editable SVG / 可编辑架构图](assets/v13_formal_v1/architecture.svg)
+[Equations, dimensions and training settings / 公式、维度与训练设置](docs/HIERARCHICAL_OPERATOR.md) · [Editable architecture figure / 可编辑架构图](assets/showcase/architecture.svg)
 
-## Third-cycle results / 第三循环结果
+## Multi-cycle benchmark / 多循环基准
 
-Eight whole two-cycle training cases; four held-out test cases, including **two three-cycle cases**. Values below are cycle-3/stage-4 RMSE in K, pooled over those two cases per seed, then reported as **mean ± sample SD over three seeds**. Field errors exclude the initial frame.
+The historical multi-cycle dataset contains **eight two-cycle training cases and four test cases**, including two three-cycle cases. The table reports cycle-3/stage-4 RMSE: pooled over those two cases per seed, then **mean ± sample SD across three seeds**. Field RMSE excludes the initial frame.
 
-八个完整两循环训练工况，四个留出测试工况，其中 **两个为三循环工况**。下表为第三循环第四阶段 RMSE（K）：每个种子先汇总两工况，再计算三种子的**均值 ± 样本标准差**；场误差排除初始帧。
+历史多循环数据集包含 **八个两循环训练工况和四个测试工况**，其中两个为三循环工况。下表为第三循环第四阶段 RMSE：每个种子汇总两个工况，再计算**三种子的均值 ± 样本标准差**。场误差排除初始帧。
 
-| Model / 模型 | SMA state / 状态 | SMA field / 场 | Fluid field / 流体场 |
+| Method / 方法 | SMA state / 状态 K | SMA field / 场 K | Fluid field / 流体场 K |
 |---|---:|---:|---:|
-| v12 original one-step / 原单步 | 1.543 ± 0.116 | 2.076 ± 0.032 | 0.989 ± 0.252 |
-| v12 one-step continuation / 单步续训 | 1.516 ± 0.097 | 2.060 ± 0.050 | 0.984 ± 0.251 |
-| v12 multi-step continuation / 多步续训 | 1.533 ± 0.113 | 2.069 ± 0.048 | 0.985 ± 0.249 |
-| **v13 joint operator / 联合算子** | **1.120 ± 0.061** | **1.600 ± 0.118** | **0.775 ± 0.020** |
-| Frozen affine state baseline / 冻结仿射状态基线 | 1.176 | — | — |
+| Residual cascade · one-step training / 残差级联·单步训练 | 1.543 ± 0.116 | 2.076 ± 0.032 | 0.989 ± 0.252 |
+| Residual cascade · one-step fine-tuning / 残差级联·单步微调 | 1.516 ± 0.097 | 2.060 ± 0.050 | 0.984 ± 0.251 |
+| Residual cascade · multi-step fine-tuning / 残差级联·多步微调 | 1.533 ± 0.113 | 2.069 ± 0.048 | 0.985 ± 0.249 |
+| **Hierarchical Recurrent Operator (HRO)** | **1.120 ± 0.061** | **1.600 ± 0.118** | **0.775 ± 0.020** |
+| Affine state baseline / 仿射状态基线 | 1.176 | — | — |
 
-Relative to the original v12, v13 reduces these errors by **27.4%, 22.9% and 21.7%**. Improvements come with tradeoffs: first/second-cycle SMA state errors and some fluid/phase state errors increase; visible spatial oscillations remain. The SMA-state gain over the strong affine baseline is **4.8%**. This is a system comparison with different training recipes, not an isolated architecture ablation or independent confirmation.
+HRO reduces these third-cycle errors by **27.4%, 22.9% and 21.7%** relative to the one-step residual cascade. Its SMA-state improvement over the affine baseline is **4.8%**. Earlier-cycle SMA state errors and some fluid/phase state errors increase, and spatial oscillations remain visible. Training recipes differ, so these results compare complete systems rather than isolate individual architectural contributions. The two historical test cases do not establish independent generalization.
 
-相比原 v12，三项误差分别下降 **27.4%、22.9%、21.7%**。同时存在取舍：前两循环 SMA 状态及部分流体/相分数状态误差上升，场预测仍有可见空间振荡。相对强仿射基线，SMA 状态改善为 **4.8%**。这里比较的是不同训练方案下的完整系统，不将其视为架构单因素消融或独立确认。
+相比单步残差级联，HRO 的第三循环三项误差分别降低 **27.4%、22.9%、21.7%**；相比仿射基线，SMA 状态误差降低 **4.8%**。早期循环的 SMA 状态及部分流体/相分数误差有所上升，场中仍存在空间振荡。由于训练方案不同，这里评价的是完整系统，各模块贡献需要消融分析；两个历史测试工况不足以证明独立泛化能力。
 
-[Protocol, per-case results, regressions and saved weights / 协议、逐工况结果、退步项与权重](docs/V13_FORMAL_BENCHMARK.md)
+[Per-case results, full diagnostics and protocol / 逐工况结果、完整诊断与协议](docs/MULTICYCLE_BENCHMARK.md)
 
-<a id="demos"></a>
-<a id="gallery"></a>
-
-## Numerical demonstrations / 数值演示
+## Field demonstrations / 场演示
 
 <details>
-<summary><strong>Inspect both three-cycle test cases / 展开两个三循环测试工况</strong></summary>
+<summary><strong>Space–time fields for both three-cycle cases / 两个三循环工况的时空场</strong></summary>
 
-![recA: reference, old/new predictions and errors / recA 工况](assets/v13_formal_v1/field_atlas_1.png)
+![Configuration A: numerical reference, residual cascade, HRO and absolute errors / 配置 A 对照](assets/showcase/field_atlas_1.png)
 
-![recAS: reference, old/new predictions and errors / recAS 工况](assets/v13_formal_v1/field_atlas_2.png)
+![Configuration B: numerical reference, residual cascade, HRO and absolute errors / 配置 B 对照](assets/showcase/field_atlas_2.png)
 
-Each band is one exchange segment with normalized local time. The bands omit mechanical-stage durations and are not a continuous wall-clock axis. These are 1-D space × time fields, not 2-D plate measurements. / 每条带为一个换热阶段的局部时间，未包含力学阶段时长，不能作为连续实际时间轴；图中为一维空间 × 时间，并非二维板面测量。
+Each band represents local time within one exchange stage; mechanical-stage durations are omitted. These are one-dimensional space × time fields, not two-dimensional plate measurements.
+
+每条带对应单个换热阶段的局部时间，不包含力学阶段时长。图中为一维空间 × 时间场，并非二维板面测量。
 
 </details>
 
-### Offline field explorer / 离线交互场演示
+[Interactive field explorer / 交互场浏览器](assets/showcase/explorer.html) — download the repository and open the HTML locally to select stages, inspect errors and play stored temperature fields. No server is required. / 下载仓库后在本地打开 HTML，即可选择换热阶段、检查误差并播放保存的温度场，无需服务器。
 
-[Open the trained-v13 demo file / 查看已训练 v13 演示文件](assets/v13_formal_v1/explorer.html)
+## Research scope / 研究范围
 
-After cloning, open `assets/v13_formal_v1/explorer.html` locally. Switch reference/prediction/error, select an exchange segment and play the saved fields. It needs no server, MATLAB, network connection or API key. GitHub renders the GIF directly; the interactive HTML runs locally.
+The project also provides performance surrogates, DeepONet/Fourier/POD comparisons, inverse PINNs, conformal uncertainty calibration and offline acquisition/design studies. On a **separate 63-case single-cycle dataset**, the performance ensemble reduces COP prediction RMSE from **0.0627 to 0.0192** relative to Ridge. A directional-memory interface reduces stage-4 SMA-field RMSE from **1.6966 to 0.5927 K** in a fixed-checkpoint cascade comparison.
 
-克隆后在浏览器打开上述 HTML，可切换参考/预测/误差、选择六个换热段并播放场演化。文件自包含，不需要服务器、MATLAB、联网或 API 密钥。GitHub 直接显示上方 GIF，交互 HTML 在本地运行。
+项目还包含性能代理、DeepONet/Fourier/POD 对照、逆问题 PINN、保形不确定性校准及离线选样/设计研究。在**独立配置的 63 工况单循环数据集**中，性能集成相对 Ridge 将 COP 预测 RMSE 从 **0.0627 降至 0.0192**；固定检查点级联对照中，方向记忆接口将第四阶段 SMA 场误差从 **1.6966 降至 0.5927 K**。
 
-Logic checks use a mock DOM/canvas; actual browser QA remains pending because this environment blocks local-file previews. / 已校验模拟 DOM/canvas 下的交互逻辑；本环境禁止本地文件预览，真实浏览器验收待完成。
+Module ablations, smoother coordinate decoding, state/field consistency and energy accounting define the research directions. The evidence is numerical; experimental validation and complete coupled energy closure remain open.
 
-## Established results and evaluation scope / 已有结果与评价范围
+模块消融、更平滑的坐标解码、状态/场一致性与能量核算构成后续研究方向。现有证据来自数值数据，实验验证及完整耦合能量闭合仍待完成。
 
-The project also includes performance ensembles, DeepONet/Fourier/POD comparisons, inverse PINNs, calibrated uncertainty and offline acquisition/design studies. On the main **63-case numerical benchmark**, the five-member performance ensemble reduces COP prediction RMSE **0.0627 → 0.0192** relative to Ridge. Transferring predicted directional memory reduces stage-4 field error **1.6966 → 0.5927 K** in a fixed-seed cascade comparison.
+[Research overview / 研究概览](docs/SHOWCASE.md) · [Result gallery / 结果图集](docs/RESULTS_GALLERY.md) · [Data card / 数据说明](docs/DATA_CARD.md)
 
-项目还包含性能集成、DeepONet/Fourier/POD 对照、逆问题 PINN、区间校准和离线选样/设计支线。在主 **63 工况数值基准**上，五成员性能集成将 COP 预测 RMSE 相比 Ridge 从 **0.0627 降至 0.0192**；固定种子级联对照中，传递预测方向记忆使第四阶段场误差从 **1.6966 降至 0.5927 K**。
+## Quickstart / 快速开始
 
-These 63-case results belong to a separate profile from the historical multi-cycle comparison above. The joint operator creates a basis for studying temporal extrapolation and coupled state/field learning; module ablations, full physical energy closure, independent confirmation and experimental validation remain open.
+Python 3.12 · PyTorch · CPU. Verification and demonstrations use the bundled data and checkpoints.
 
-这组 63 工况结果与上方历史多循环比较属于不同配置。联合算子为时间外推及状态/场耦合学习提供了可运行基础；模块消融、完整物理能量闭合、独立确认与实物验证仍待完成。
-
-[Complete result gallery / 完整结果图集](docs/RESULTS_GALLERY.md) · [Multi-step comparison / 多步对照](docs/MULTICYCLE_MULTISTEP.md) · [Data and provenance / 数据来源](docs/DATA_CARD.md)
-
-<a id="run"></a>
-
-## Run / 运行
-
-Python 3.12 · CPU · PyTorch. No new physical simulations are needed.
+验证及演示使用仓库内的数据与检查点，支持 CPU 运行。
 
 ```bash
+git clone https://github.com/piAlbertSHI/SMA-SCIML.git
+cd SMA-SCIML
 python -m pip install -r requirements.txt
 python -m examples.validate_bundle
-# Replay the three trained checkpoints and recompute scores / 回放三个权重并重算指标
 python -m examples.formal_hierarchical --verify-only
-# Optional: repeat the fixed training protocol in a NEW directory / 可选：新目录重做固定预算训练
-python -m examples.formal_hierarchical --output run-output-v13-formal
-# Generate figures, animation and offline explorer from saved predictions / 从保存预测生成演示
-python -m examples.formal_gallery --output demo-output-v13
+python -m examples.field_showcase --output demo-output-fields
 ```
 
-| Resource / 资源 | Contents / 内容 |
-|---|---|
-| [Architecture report / 新架构报告](docs/HIERARCHICAL_OPERATOR.md) | Implemented modules, parameter counts, equations and training contract / 模块、参数、公式与训练合同 |
-| [Model source / 模型代码](SciML/models/v13/hierarchical_operator.py) | Spatial encoding, latent attention, recurrence and coordinate decoder / 空间编码、注意力、递推与场解码 |
-| [Formal result / 正式训练结果](evidence/experiments/v13_formal_v1/summary.json) | Three seeds, all test metrics, runtime and artifact hashes / 三种子、全部测试指标、用时与文件哈希 |
-| [Research portfolio / 项目支线](docs/SHOWCASE.md) | Prior models, experiments and research questions / 已有模型、实验与研究问题 |
-| [Quickstart / 使用说明](docs/QUICKSTART.md) | Environment, commands and validation / 环境、命令与验证 |
+[Training and inference guide / 训练与推理指南](docs/QUICKSTART.md) · [Model catalogue / 模型目录](docs/MODELS.md) · [Contribution guidelines / 开发规范](CONTRIBUTING.md)
 
-**Private repository.** GitHub Pages remains disabled. Public release requires owner approval. Historical reports, comparisons and failed evidence are preserved.
-
-**仓库继续保持 private，未启用 GitHub Pages。** 公开发布需所有者批准，历史报告、对照与失败证据均保留。
+**Availability / 获取与许可:** repository access is restricted during release preparation. No open-source or data-redistribution license has been granted. / 仓库在发布准备期间限制访问，目前尚未授予开源或数据再分发许可。 [Distribution policy / 分发规范](docs/PUBLIC_RELEASE_CHECKLIST.md)

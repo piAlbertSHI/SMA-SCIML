@@ -1,20 +1,18 @@
 # Figure index / 图表索引
 
-The README presents the trained architecture, a v12/v13 comparison animation, both three-cycle field atlases and a v13 offline explorer. The previous17 statistical figures and reference animations are preserved. All numerical displays use committed source arrays; see the [formal benchmark](V13_FORMAL_BENCHMARK.md) for accuracy and tradeoffs.
+Figures are generated from recorded numerical arrays. The operator comparison includes the architecture, autonomous field animation and both three-cycle test cases; the statistical gallery covers the reference studies.
 
-README 展示已训练架构、v12/v13对照动画、两个三循环图谱及v13离线演示。原17组统计图及参考动画保留；全部数值来自已提交数组，精度与取舍见正式训练报告。
+图表由记录的数值数组生成。算子对照包含架构、自主场动画及两个三循环工况，统计图集覆盖各参考方法研究。
 
 | Homepage asset / 首页素材 | Files / 文件 | Source and scope / 来源与范围 |
 |---|---|---|
-| Hierarchical architecture / 分层架构 | [PNG](../assets/v13_formal_v1/architecture.png), [SVG](../assets/v13_formal_v1/architecture.svg) | Implemented v13 code, actual parameters and formal training status / 代码、实际参数及正式训练状态 |
-| Three-cycle comparison / 三循环对照 | [GIF](../assets/v13_formal_v1/v13_comparison.gif) | Reference, old v12, trained v13 and absolute errors; fixed recA case, first preset seeds / 固定recA工况及预定首种子 |
-| recA atlas / recA图谱 | [PNG](../assets/v13_formal_v1/field_atlas_1.png), [SVG](../assets/v13_formal_v1/field_atlas_1.svg) | All six exchange segments with shared scales / 六段换热，新旧模型共用色标 |
-| recAS atlas / recAS图谱 | [PNG](../assets/v13_formal_v1/field_atlas_2.png), [SVG](../assets/v13_formal_v1/field_atlas_2.svg) | Second three-cycle test case, same seed rule / 第二三循环测试工况，同一种子规则 |
-| Offline explorer / 离线交互 | [HTML](../assets/v13_formal_v1/explorer.html) | Trained v13 fields rounded to4decimals; mock-DOM checked, real-browser QA pending / v13四位小数场，模拟逻辑已检查、真实浏览器待验收 |
+| Hierarchical architecture / 分层架构 | [PNG](../assets/showcase/architecture.png), [SVG](../assets/showcase/architecture.svg) | Implemented HRO code, actual parameters and formal training status / 代码、实际参数及正式训练状态 |
+| Three-cycle comparison / 三循环对照 | [GIF](../assets/showcase/multicycle_comparison.gif) | Reference, Residual MLP + DeepONet, trained HRO and absolute errors; fixed recA case, first preset seeds / 固定recA工况及预定首种子 |
+| Configuration A / 配置 A | [PNG](../assets/showcase/field_atlas_1.png), [SVG](../assets/showcase/field_atlas_1.svg) | All six exchange segments with shared scales / 六段换热，两类模型共用色标 |
+| Configuration B / 配置 B | [PNG](../assets/showcase/field_atlas_2.png), [SVG](../assets/showcase/field_atlas_2.svg) | Second three-cycle test case, same seed rule / 第二三循环测试工况，同一种子规则 |
+| Offline explorer / 离线交互 | [HTML](../assets/showcase/explorer.html) | Trained HRO fields rounded to4decimals; mock-DOM checked, real-browser QA pending / HRO四位小数场，模拟逻辑已检查、真实浏览器待验收 |
 
-[Formal gallery generator / 正式结果展示生成器](../examples/formal_gallery.py) · [Source manifest / 素材清单](../assets/v13_formal_v1/manifest.json)
-
-Preserved reference-only displays / 保留原参考模型展示：[animation / 动画](../assets/operator_animation_v2/multicycle_fields.gif), [atlas / 图谱](../assets/operator_showcase_v2/multicycle_field_atlas.png), [explorer / 交互](../assets/operator_showcase_v2/explorer.html).
+[Formal gallery generator / 正式结果展示生成器](../examples/field_showcase.py) · [Source manifest / 素材清单](../assets/showcase/manifest.json)
 
 | # | Question / 展示问题 | Figure / 图片 | Editable / 可编辑 | Numerical source / 数值来源 |
 |---|---|---|---|---|
@@ -30,16 +28,16 @@ Preserved reference-only displays / 保留原参考模型展示：[animation / �
 | 10 | Geometry/material/protocol shifts / 几何、材料与协议变化 | [PNG](../assets/research_v1/ood_generalization.png) | [SVG](../assets/research_v1/ood_generalization.svg) | [OOD aggregate](../evidence/archive/ood-audit-r1/aggregate.json) |
 | 11 | Physics-loss contributions / 物理损失贡献 | [PNG](../assets/research_v1/physics_ablation.png) | [SVG](../assets/research_v1/physics_ablation.svg) | [physics ablation](../evidence/archive/staged-physics-r1/summary.json) |
 | 12 | Historical multicycle rollouts / 历史多循环推演 | [PNG](../assets/research_v1/historical_rollout.png) | [SVG](../assets/research_v1/historical_rollout.svg) | [historical fields](../evidence/archive/historical-fields-r1/summary.json) |
-| 13 | New diversity acquisition / 新增多样性选样 | [PNG](../assets/research_v1/diversity_acquisition.png) | [SVG](../assets/research_v1/diversity_acquisition.svg) | [new experiment](../evidence/experiments/acquisition_diversity_v1/summary.json) |
+| 13 | Diversity-aware acquisition / 多样性选样 | [PNG](../assets/research_v1/diversity_acquisition.png) | [SVG](../assets/research_v1/diversity_acquisition.svg) | [experiment](../evidence/experiments/acquisition_diversity_v1/summary.json) |
 | 14 | Design candidate trade-offs / 设计权衡 | [PNG](../assets/design_tradeoff.png) | — | [candidate verification](../evidence/archive/wp6-design-r1/candidate_verification.json) |
 | 15 | Multi-step horizon comparison / 多步训练逐循环对照 | [PNG](../assets/multicycle_v1/multicycle_horizons.png) | [SVG](../assets/multicycle_v1/multicycle_horizons.svg) | [three-seed summary](../evidence/experiments/multicycle_multistep_v1/summary.json) |
 | 16 | Training fit and all third-cycle blocks / 训练拟合与第三循环全状态 | [PNG](../assets/multicycle_v1/multicycle_diagnosis.png) | [SVG](../assets/multicycle_v1/multicycle_diagnosis.svg) | [derived metrics](../assets/multicycle_v1/derived_metrics.json) |
 | 17 | Both third-cycle cases and all seeds / 两个工况与全部种子 | [PNG](../assets/multicycle_v1/multicycle_cases.png) | [SVG](../assets/multicycle_v1/multicycle_cases.svg) | [protocol and individual reports](MULTICYCLE_MULTISTEP.md) |
 | Animation / 动画 | Stage-4 temperature evolution / 第四阶段温度演化 | [GIF](../assets/temperature_evolution.gif) | — | [replay summary](../assets/demo_summary.json) |
 
-The original three-strategy acquisition plot remains available as [historical comparison](../assets/active_learning.png). The new six-target plot includes all four strategies, so results are not selected only for favorable targets.
+The original three-strategy acquisition plot remains available as [historical comparison](../assets/active_learning.png). The six-target plot includes all four strategies, so results are not selected only for favorable targets.
 
-原三策略主动选样图保留为[历史对照](../assets/active_learning.png)；新增六目标图包含四种策略，完整展示各目标的得失。
+原三策略主动选样图保留为[历史对照](../assets/active_learning.png)；六目标图包含四种策略，完整展示各目标的得失。
 
 For slides, use the SVG exports when possible and retain the dataset, baseline and uncertainty definitions in the caption. Manufacturing problems, current63 simulations and the independent historical profile are separate evidence sources.
 

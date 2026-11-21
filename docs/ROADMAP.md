@@ -1,29 +1,18 @@
-# 当前进展与后续工作
+# Research roadmap / 研究路线图
 
-## 已实现
+| Direction / 方向 | Evidence / 依据 | Evaluation / 评价设计 |
+|---|---|---|
+| Spatial regularity / 空间平滑性 | HRO improves third-cycle temperature RMSE but exhibits spatial oscillations / HRO 第三循环温度误差改善，仍有空间振荡 | Compare query density/jitter and decoder regularization using validation cases drawn only from the training partition / 仅用训练分区划分验证工况，对照查询密度、抖动及解码正则 |
+| State–field consistency / 状态与场一致性 | Field gains coexist with fluid/phase state regressions / 场收益与流体、相分数状态退步并存 | Evaluate loss balancing and endpoint consistency while retaining all state-block metrics / 评价损失权重及端点一致性，保留全部状态块指标 |
+| Representation and memory / 表示与记忆 | Spatial encoding, latent attention and GRU memory are trained jointly / 空间编码、注意力与 GRU 联合训练 | Isolate module contributions with matched training budgets and case-level validation / 用同预算及工况级验证隔离模块贡献 |
+| Material transfer / 材料迁移 | Two material configurations and structured distribution-shift diagnostics / 两类材料配置及结构化分布变化诊断 | Compare categorical and physical descriptors; establish independent material coverage / 对照类别与物性输入，建立独立材料覆盖 |
+| Objective-aware acquisition / 面向目标的选样 | Diversity improves temperature-span prediction but not every performance target / 多样性改善温差预测，未改善全部性能目标 | Specify the primary objective before comparing acquisition rules / 比较选样规则前固定主要目标 |
+| Energy accounting / 能量核算 | State/field predictions and scalar performance surrogates are separate / 状态与场预测、标量性能代理分别训练 | Define independent ports, work and storage terms before validating field-derived cycle performance / 先定义独立端口、功及储能项，再评价场到性能读出 |
 
-- 数据来源与工况隔离、强标量基线、三种子评价。
-- 请求初态的四阶段残差模型，近零残差尺度修复。
-- DeepONet/Fourier/POD同监督比较、方向记忆修复。
-- 制造PDE物理损失与PINN逆问题、局部有效速率反演。
-- 结构化OOD诊断、独立历史版本的两/三循环推演。
-- 集成校准、两轮离线主动学习、有限池候选归档回查。
-- 多样性选样首轮扩展：四策略 × 三种子，同 12→17→22 预算；原基线重现，新策略改善温差但未改善 COP/SCP，见 [实验记录](ACQUISITION_DIVERSITY.md)。
-- 多步训练首轮：三个种子、原单步/同预算单步续训/可微九步续训对照；训练损失明显下降，但第三循环三项主要指标未超过单步续训。没有新增仿真，见 [多循环实验](MULTICYCLE_MULTISTEP.md)。
-- 分层循环算子：3,106,989 参数，双路空间编码、潜变量注意力、GRU 记忆、FiLM 转移头和联合场解码；已完成三种子各200次正式训练，第三循环 SMA 状态/场及流体场误差均下降，早期循环与部分状态分量退步，见 [正式报告](V13_FORMAL_BENCHMARK.md)。训练6.7 CPU分钟、零新仿真。
-- README 聚焦架构、新旧模型对照动画、两个三循环工况图谱及新模型离线演示；原动画与17组统计图保留于历史素材目录和 [详细图集](RESULTS_GALLERY.md)。
-- 详细学习报告、面试摘要、便携训练/重放、结果图与动画。
+The multi-cycle historical test cohort has already been examined. Further development should use training-only validation and distinguish subsequent exploratory evaluation from independent confirmation. Numerical accuracy, engineering suitability and experimental validation are separate claims.
 
-## 优先推进
+历史多循环测试工况已经分析过。后续开发应使用训练集内部验证，并区分探索性评价与独立确认。数值精度、工程适用性及实验验证属于不同结论。
 
-1. **空间平滑性、状态/场取舍及模块消融**：正式训练已完成，下一步在八个训练工况内部按工况验证空间采样密度/抖动、解码正则及损失权重，再对照空间编码、GRU 隐记忆、残差幅值与联合监督。保留仿射、单步和多步基线；不按已查看测试分数反复调参后称独立确认。
-2. **物性输入**：核对已有请求的物性单位/覆盖，比较类别输入、物性输入和少量适配；两种材料不能证明对第三种泛化。
-3. **选样目标与多样性**：首轮固定 0.5 权重的输入多样性实验已完成；下一步先明确主要优化目标及度量，再比较物理特征距离或目标相关选样，并在独立数据上确认，不按当前测试结果反复调权重。
-4. **数据迁移**：为同版本全量HDF5和原始请求设计外部数据清单/下载方案，不把大文件和个人绝对路径塞入代码。
-5. **真实场到能量**：先补端口、功与独立储能合同，再训练/验证性能读出。需要新仿真时另行确认成本。
+Experimental provenance, adverse results and checkpoint compatibility remain part of the research record. Computational budgets and data requirements belong in each experiment protocol.
 
-## 工作约定
-
-每项新实验用新目录，保存协议、seed、split、scaler、权重和全部结果。先写验收与对照，再运行；不用已看过的测试分数反复选超参后称独立确认。不修改历史失败记录或降低科学门禁。
-
-原研究计划尚未完成的论文级验证不作为已完成成果。仓库的当前验证记录与历史292项回归分别存档。
+实验来源、不利结果及检查点兼容性均应保留，计算预算及数据需求记录于各实验协议。

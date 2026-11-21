@@ -4,15 +4,15 @@ The complete statistical gallery is preserved here. The [project homepage](../RE
 
 完整统计图集保留于此；项目首页聚焦当前架构与场演示。本页继续保留基线、不确定性定义与负结果，避免只展示有利指标。
 
-**New formal v13 results / 新增 v13 正式结果:** [three-seed training report](V13_FORMAL_BENCHMARK.md), [comparison animation](../assets/v13_formal_v1/v13_comparison.gif), [recA atlas](../assets/v13_formal_v1/field_atlas_1.png), [recAS atlas](../assets/v13_formal_v1/field_atlas_2.png). Third-cycle gains and early-cycle/state-component regressions are reported together. / 第三循环改善与早期循环、部分状态分量退步一并报告。
+**Hierarchical Recurrent Operator benchmark / HRO 多循环基准:** [three-seed training report](MULTICYCLE_BENCHMARK.md), [comparison animation](../assets/showcase/multicycle_comparison.gif), [recA atlas](../assets/showcase/field_atlas_1.png), [recAS atlas](../assets/showcase/field_atlas_2.png). Third-cycle gains and early-cycle/state-component regressions are reported together. / 第三循环改善与早期循环、部分状态分量退步一并报告。
 
 <a id="gallery"></a>
 
-## Results gallery / 图文成果汇报
+## Results gallery / 方法与结果图集
 
-**Seventeen result figures across the reference modeling pipeline.** The gallery includes completed diversity-acquisition and multi-step training experiments using existing data, without new physics simulations. Figures 15–17 show the v12 multi-cycle continuation comparison.
+**Seventeen result figures across the reference modeling pipeline.** The gallery includes completed diversity-acquisition and multi-step training experiments using existing data, without new physics simulations. Figures 15–17 show the Residual MLP + DeepONet multi-cycle continuation comparison.
 
-**17 组结果图覆盖参考模型全流程。** 本页汇集各支线研究，以及使用现有数据完成的多样性选样和多步训练实验，没有新增物理仿真。v12 多步续训对照见图 15–17。
+**17 组结果图覆盖参考模型全流程。** 本页汇集各支线研究，以及使用现有数据完成的多样性选样和多步训练实验，没有新增物理仿真。Residual MLP + DeepONet 多步续训对照见图 15–17。
 
 [Figure index & editable SVG / 图表索引与可编辑 SVG](FIGURE_INDEX.md) · [Architecture and detailed results / 架构及详细结果](SHOWCASE.md)
 
@@ -112,13 +112,13 @@ An independent historical profile uses eight training and four test cases. The p
 
 独立历史版本使用八个训练、四个测试工况。图中各预测长度始终对应**相同的两个三循环测试工况**，训练仅使用第一、第二循环。自主第三循环末阶段误差为 **2.076 K（SMA）**和 **0.989 K（流体）**，为多步训练提供明确目标。
 
-### 13 · New: diversity-aware acquisition / 本次新增：多样性选样
+### 13 · diversity-aware acquisition / 多样性选样
 
 ![Four acquisition strategies across all six targets](../assets/research_v1/diversity_acquisition.png)
 
 A fixed **50:50 composite-score / distance-rank** rule was evaluated over **four strategies × three seeds**, with identical 12→17→22 budgets and 200 updates per member. All three original baselines were reproduced. At 22 labels, diversity lowers temperature-span RMSE from **0.03480 to 0.02534 K**, but increases COP RMSE from **0.03751 to 0.05794** versus composite. Shading is seed standard deviation; all six targets are shown.
 
-本次以固定 **50:50 复合分数/距离排名**构建新策略，完成**四策略 × 三种子**实验，各策略采用相同的 12→17→22 预算和每成员 200 次更新，三个原基线均得到重现。22 标签时，多样性策略使温差 RMSE 从 **0.03480 降至 0.02534 K**，但 COP RMSE 相比原复合策略由 **0.03751 升至 0.05794**。阴影为种子标准差，全部六个目标均予展示。
+该实验以固定 **50:50 复合分数/距离排名**构建新策略，完成**四策略 × 三种子**实验，各策略采用相同的 12→17→22 预算和每成员 200 次更新，三个原基线均得到重现。22 标签时，多样性策略使温差 RMSE 从 **0.03480 降至 0.02534 K**，但 COP RMSE 相比原复合策略由 **0.03751 升至 0.05794**。阴影为种子标准差，全部六个目标均予展示。
 
 [Protocol, decisions, weights and results / 协议、决策记录、权重与结果](ACQUISITION_DIVERSITY.md)
 
@@ -130,13 +130,13 @@ Three candidates from a 15-case pool were checked against archived numerical res
 
 对 15 个候选中的三个方案先预测、后进行归档数值回查，将校准代理模型连接到候选设计评价。当前结果限定于有限候选池，尚未验证连续全局最优或工程安全。
 
-### 15 · New: multi-step training / 新增：多步训练对照
+### 15 · multi-step training / 多步训练对照
 
 ![Multi-cycle horizon comparison](../assets/multicycle_v1/multicycle_horizons.png)
 
 Eight two-cycle training cases supervise a differentiable nine-transition chain. Three seeds compare archived weights with **300-update one-step and multi-step continuations**, keeping the field decoders frozen. Third-cycle SMA-state RMSE is **1.5432 → 1.5334 K** with multi-step training; the matched one-step continuation reaches **1.5163 K**. Shading denotes seed SD, with the same two test cases at every horizon.
 
-八个两循环训练工况监督完整可微九步链，三个种子比较原模型、**300 次单步续训和多步续训**，场解码器始终冻结。多步训练将第三循环 SMA 状态 RMSE 从 **1.5432 降至 1.5334 K**，同预算单步续训为 **1.5163 K**。各循环均使用相同两个测试工况，阴影为种子标准差。
+八个两循环训练工况监督完整可微九步链，三个种子比较残差基线、**300 次单步续训和多步续训**，场解码器始终冻结。多步训练将第三循环 SMA 状态 RMSE 从 **1.5432 降至 1.5334 K**，同预算单步续训为 **1.5163 K**。各循环均使用相同两个测试工况，阴影为种子标准差。
 
 ### 16 · Training fit versus long-horizon error / 训练拟合与长时误差
 

@@ -1,14 +1,21 @@
-# 从 Private 到 Public 的检查清单
+# Release policy / 发布规范
 
-当前仓库保持private；只有所有者明确批准后才能更改可见性。没有设置公开Pages。
+SMA-SCIML remains private during release preparation. Presentation quality, scientific evidence, licensing and publication authorization are separate requirements. This policy does not authorize a visibility change.
 
-- [ ] 核实代码、数值数据、图像和权重的所有权及合作者/机构公开许可。
-- [ ] 所有者选择许可证；当前未授予开源许可，不擅自加MIT/Apache。
-- [ ] 再审Git完整历史中的凭据、个人路径和未发表信息；必要时在公开前做一次受控新仓库发布，而非只删工作树文件。
-- [ ] 为数据和权重单独说明许可、下载来源、摘要与版本。
-- [ ] 在新机器验证Python安装与CPU示例；固定可安装依赖版本并保留环境记录。
-- [ ] 检查CI通过、README图像和链接、模型卡与数据卡；历史测试数不能冒充当前CI。
-- [ ] 完成未见材料/多循环等科学结论的措辞核对；保留负结果和安全未知。
-- [ ] 写中英文项目贡献说明，区分个人完成、协作与AI辅助，不能将演示自动当作独立熟练掌握。
-- [ ] 发布前审核release资产、issues和附件；确认无论文审稿材料。
-- [ ] 经明确批准再切public；之后才能决定是否启用公开网站。
+SMA-SCIML 在发布准备期间保持私有。展示质量、科学证据、许可及发布授权是独立要求，本规范不授予可见性变更权限。
+
+## Release requirements / 发布要求
+
+- [ ] Confirm ownership and institutional/collaborator permission for code, data, figures and checkpoints. / 核实代码、数据、图像及权重的所有权和机构、合作者许可。
+- [ ] Select explicit code, data and weight licenses; no license is implied by repository access. / 明确代码、数据及权重许可，仓库访问不代表再分发许可。
+- [ ] Review complete Git history, attachments and release assets for credentials, personal information and unpublished material. / 审查完整 Git 历史、附件及发布资产中的凭据、个人信息和未发表资料。
+- [ ] Verify installation, CPU inference and documented examples in a clean environment. / 在干净环境验证安装、CPU 推理与文档示例。
+- [ ] Complete browser rendering and interaction acceptance for the offline explorer; mock DOM tests alone are insufficient. / 完成离线浏览器的真实渲染与交互验收，模拟 DOM 测试不能替代。
+- [ ] Verify model/data cards, all method names, figure provenance and scientific limitations. / 核验模型与数据说明、方法命名、图表来源及科学限制。
+- [ ] Document contributions and assistance accurately without inferring individual expertise from generated artifacts. / 准确记录贡献与辅助方式，不从生成的产物推断个人能力。
+- [ ] Decide which historical development notes belong in the public distribution. / 确定哪些历史开发笔记纳入公开分发。
+- [ ] Obtain explicit owner approval before changing visibility or enabling public hosting. / 获得所有者明确批准后方可公开或启用公共托管。
+
+Current checks cover distribution hashes, known sensitive-text patterns, model contracts, checkpoint replay and presentation terminology. These checks do not replace ownership review, an exhaustive historical security audit or independent experimental validation.
+
+现有检查覆盖分发哈希、已知敏感文本模式、模型接口、权重回放及展示术语，不替代权属审查、完整历史安全审计或独立实验验证。

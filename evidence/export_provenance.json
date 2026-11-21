@@ -862,8 +862,8 @@
     {
       "source_relative": "SciML/docs/学习项目面试汇报版_20261116.md",
       "source_sha256": "db12a30367e26ed4a92034d35c3e823c4833dc2edbb7d74306c84c78be65a46c",
-      "export_relative": "docs/INTERVIEW_ZH.md",
-      "export_sha256": "1652eb74370486943eb30c118cf12d44c201da85faa90c23312932eedff1a1d7"
+      "export_relative": "archive/presentation/interview-notes.md",
+      "export_sha256": "7aeda67ba31b27b1549de1ba1c1b67f843013aa0a413f7820c5a8492192d484a"
     },
     {
       "source_relative": "SciML/results/learning-closed-loop-20260910/data-tutorial-r1/example_hdf5_tree.json",

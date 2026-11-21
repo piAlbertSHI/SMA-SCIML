@@ -1,18 +1,18 @@
-# SMA Neural State-Space Operator
+# Hierarchical Recurrent Operator (HRO) / 分层循环算子
 
-## Implemented architecture / 已实现架构
+## Architecture / 架构
 
-**A 3,106,989-parameter model combines spatial encoding, latent attention, recurrent memory, five stage-specific transition heads and a continuous-coordinate temperature decoder.** The first formal run is complete: three seeds × 200 updates, 6.7 CPU training minutes, zero new simulations. Third-cycle SMA state RMSE is **1.120 K**, versus **1.543 K** for the original neural reference. Early-cycle and some state-component errors increase; see the [full benchmark](V13_FORMAL_BENCHMARK.md) for the fixed protocol, all comparisons and limitations.
+**A 3,106,989-parameter model combines spatial encoding, latent attention, recurrent memory, five stage-specific transition heads and a continuous-coordinate temperature decoder.** The fixed-budget benchmark uses three seeds × 200 updates and 6.7 minutes of CPU training. Third-cycle SMA state RMSE is **1.120 K**, versus **1.543 K** for the original neural reference. Early-cycle and some state-component errors increase; see the [full benchmark](MULTICYCLE_BENCHMARK.md) for the fixed protocol, all comparisons and limitations.
 
-**3,106,989 参数的模型整合空间编码、潜变量注意力、循环记忆、五个阶段转移头和连续坐标温度场解码器。** 首轮正式训练已完成：三种子各200次更新，训练6.7 CPU分钟，未新增仿真。第三循环 SMA 状态 RMSE 为 **1.120 K**，原神经参考为 **1.543 K**；早期循环及部分状态分量退步，完整协议、对照与限制见正式报告。
+**3,106,989 参数的模型整合空间编码、潜变量注意力、循环记忆、五个阶段转移头和连续坐标温度场解码器。** 固定预算基准采用三种子各200次更新，CPU训练用时6.7分钟。第三循环 SMA 状态 RMSE 为 **1.120 K**，原神经参考为 **1.543 K**；早期循环及部分状态分量退步，完整协议、对照与限制见正式报告。
 
-![Trained architecture / 已训练模型架构](../assets/v13_formal_v1/architecture.png)
+![Trained architecture / 已训练模型架构](../assets/showcase/architecture.png)
 
 ## Why this structure / 为什么采用这套结构
 
-The previous historical model used five independent `529 → 32 → 32 → d` residual MLPs and a separately trained field decoder. The new model changes how information is represented and propagated, rather than only widening those MLPs.
+The residual-cascade baseline uses five independent `529 → 32 → 32 → d` residual MLPs and a separately trained field decoder. The HRO uses spatial encoders and recurrent latent memory to represent and propagate these variables.
 
-此前历史模型采用五个独立的 `529 → 32 → 32 → d` 残差 MLP，场解码器单独训练。新模型改变了信息表示与传递方式，同时保留原状态合同和仿射先验。
+残差级联基线采用五个独立的 `529 → 32 → 32 → d` 残差 MLP，场解码器单独训练。HRO改变了信息表示与传递方式，同时保留原状态合同和仿射先验。
 
 | Component / 模块 | Implemented structure / 实现 | Intended role / 设计目的 |
 |---|---|---|
@@ -33,7 +33,7 @@ These are design motivations, not demonstrated accuracy benefits. With only eigh
 
 The explicit state stays at **515 dimensions**: 51 radial displacements, 51 transverse displacements, 51 SMA temperatures, 51 phase fractions, two 101-point fluid fields, eight side temperatures and 101 odd temperature-memory values. The learned **256-dimensional hidden state is additional**, not a replacement for the physical state. The two coordinate systems are encoded separately before attention fusion.
 
-显式状态仍为 **515 维**：径向位移 51、横向位移 51、SMA 温度 51、相分数 51、两条 101 点流体温度、侧温度 8，以及反对称温度记忆 101。新增的 **256 维学习隐状态**独立存在，不替代物理状态。径向和轴向坐标分别编码后再融合。
+显式状态仍为 **515 维**：径向位移 51、横向位移 51、SMA 温度 51、相分数 51、两条 101 点流体温度、侧温度 8，以及反对称温度记忆 101。**256 维学习隐状态**独立存在，不替代物理状态。径向和轴向坐标分别编码后再融合。
 
 For transition j at stage k, with known control u and normalized state/control features z:
 
@@ -43,9 +43,9 @@ $$\widetilde Z_j=(1+\gamma(h_{j+1}))\odot Z_j+\beta(h_{j+1}).$$
 
 $$x_{j+1}=P\!\left(x_j+S_k\!\left[A_kz_j+b_k+0.1\,\sigma_k\odot R_k(\widetilde Z_j,h_{j+1},c_j)\right]\right).$$
 
-Here c is the encoded condition, S inserts active increments, and σ is the frozen train-only input scale for the active channels. **The new residual uses input scales rather than the old residual-RMS amplitude**, allowing a different correction range; this is an architectural change, not a claim of improvement. The scale multiplier is fixed at 0.1. A and b remain unchanged. P enforces phase fraction in [0,1], the three zero displacement endpoints and antisymmetric memory; temperatures are not clipped.
+Here c is the encoded condition, S inserts active increments, and σ is the frozen train-only input scale for the active channels. **The HRO residual uses input scales instead of the baseline's residual-RMS amplitude**, allowing a different correction range; this is an architectural change, not a claim of improvement. The scale multiplier is fixed at 0.1. A and b remain unchanged. P enforces phase fraction in [0,1], the three zero displacement endpoints and antisymmetric memory; temperatures are not clipped.
 
-c 为条件编码，S 写入活动增量，σ 为活动通道的原训练输入尺度。**新残差采用输入尺度，不沿用旧模型的残差 RMS 幅值**，因此修正范围发生变化；这是结构变化，尚未证明带来收益。倍率固定为 0.1，A、b 不更新。P 保留相分数 [0,1]、三个位移零端点和反对称记忆，不裁剪温度。
+c 为条件编码，S 写入活动增量，σ 为活动通道的原训练输入尺度。**HRO 残差采用输入尺度，不沿用残差基线的残差 RMS 幅值**，因此修正范围发生变化；这是结构变化，尚未证明带来收益。倍率固定为 0.1，A、b 不更新。P 保留相分数 [0,1]、三个位移零端点和反对称记忆，不裁剪温度。
 
 The first allowed state combines the very first observed mechanical frame with declared thermal conditions. Autonomous rollout subsequently consumes only predicted states, known controls and persistent hidden memory. At every new cycle, the learned fifth transition performs the mechanical restart. Two cycles contain nine transitions; three cycles contain fourteen. No future observations enter inference.
 
@@ -63,9 +63,9 @@ The field and state branches share encoders and recurrent context and are jointl
 
 ## Training system / 训练系统
 
-The runnable trainer uses complete two-cycle sequences from the original eight training cases. The new field snapshot contains **32 training exchange segments**, taken from the same sealed HDF5 and checked against the existing state-entry reconstruction. Test labels are not exported into this training snapshot or used in the objective. The raw MAT availability limitation remains unchanged; see the [data card](DATA_CARD.md).
+The runnable trainer uses complete two-cycle sequences from the original eight training cases. The training-field snapshot contains **32 training exchange segments**, taken from the same sealed HDF5 and checked against the existing state-entry reconstruction. Test labels are not exported into this training snapshot or used in the objective. The raw MAT availability limitation remains unchanged; see the [data card](DATA_CARD.md).
 
-训练入口使用原八个训练工况的完整两循环序列。新快照包含同一封存 HDF5 中的 **32 段训练换热场**，并核对其初场与原状态入口重构一致。测试标签没有进入这份训练快照或训练目标。原始 MAT 可用性限制保持不变，详见数据说明。
+训练入口使用原八个训练工况的完整两循环序列。训练场快照包含同一封存 HDF5 中的 **32 段训练换热场**，并核对其初场与原状态入口重构一致。测试标签没有进入这份训练快照或训练目标。原始 MAT 可用性限制保持不变，详见数据说明。
 
 $$L=L_{\mathrm{state}}+L_{\mathrm{field}}+0.01L_{\nabla_x\mathrm{field}}.$$
 
@@ -73,22 +73,18 @@ State loss equally weights the eight state blocks after train-only normalization
 
 状态损失按训练尺度归一化后对八个状态块等权。场损失用训练场时间变化 RMS 归一化，排除零时刻。梯度项比较采样网格上的预测/真值空间差分，是**有监督梯度匹配，不是控制方程残差**。梯度贯穿状态、记忆和场解码器，不截断、不读取中间真值推进。
 
-The original execution check below is preserved as engineering evidence. The subsequent formal run uses batch2, 200 updates per seed and lr3e-4; its separate evaluation is documented in the [formal report](V13_FORMAL_BENCHMARK.md).
+| Setting / 设置 | Benchmark configuration / 基准配置 |
+|---|---|
+| Precision / 精度 | CPU float64, one compute thread / 单计算线程 |
+| Optimizer / 优化器 | AdamW, lr=3e-4, weight decay=1e-4, gradient clip=1 |
+| Budget / 预算 | Three seeds ×200 updates; two complete cases per batch / 三种子各200次、每批两个完整工况 |
+| Schedule / 调度 | 20-update linear warmup, cosine decay to10% / 20次线性预热，余弦衰减至10% |
+| Supervision / 监督 | Eight times including0/1 and26 spatial positions per exchange / 每段8个时间及26个空间点 |
+| Selection / 选择 | Fixed final update; no test-based stopping / 固定末次更新，不依测试分数停止 |
 
-下表保留最初运行检查。后续正式训练使用批次2、每种子200次更新及学习率3e-4，其独立评价记录见正式报告。
+Training records include optimizer/scheduler/RNG state, query indices, source/data hashes and every loss component. All nine major modules receive finite nonzero gradients. Self-contained checkpoints reproduce saved predictions exactly in the recorded environment; cross-platform replay uses an absolute tolerance of1e-8. The complete benchmark evaluates fields on50×101 grids.
 
-| Setting / 设置 | Trainer default / 默认 | Original execution check / 最初运行检查 |
-|---|---|---|
-| Precision / 精度 | CPU float64 | CPU float64 |
-| Optimizer / 优化器 | AdamW, lr=3e-4, wd=1e-4, clip=1 | AdamW, lr=1e-4, wd=1e-4, clip=1 |
-| Budget / 预算 | 200 updates, 8 cases per batch | **3 updates, 2 cases per batch** |
-| Schedule / 调度 | Linear warmup, then cosine to 10% | One warmup update; same rule |
-| Field queries / 场监督查询 | Eight times including 0/1; 26 spatial positions per stage | Same / 相同 |
-| Model selection / 模型选择 | No test-based selection | No test scores computed / 未计算测试分数 |
-
-The execution experiment records model weights, optimizer/scheduler state, RNG state, queried indices, source/data hashes and all loss components. It completed one three-cycle inference at 10 × 51 query points per exchange segment, with outputs **[1,14,515]** for states and **[1,6,2,10,51]** for fields. All nine major modules received finite nonzero gradients. Checkpoint reload reproduced state, field and final memory exactly in the recorded environment. Saving a checkpoint over an existing file is refused. The trainer does not yet expose automatic resume orchestration; saved optimizer/RNG state is retained for a future explicit resume workflow.
-
-本次保存了模型、优化器/调度器状态、随机数状态、查询索引、源码/数据哈希与各项损失。三循环推理每段换热采用 10×51 查询，状态输出 **[1,14,515]**，场输出 **[1,6,2,10,51]**。九个主要模块均有有限非零梯度；重载后状态、场和末隐状态在记录环境中精确一致。禁止覆盖旧检查点。训练器尚未提供自动续跑编排，已保存的优化器/随机数状态为后续显式续跑保留。
+训练记录包含优化器、调度器、随机数状态、查询索引、源码与数据哈希及全部损失分量。九个主要模块均收到有限非零梯度。自包含检查点在记录环境中精确重现保存预测，跨平台回放使用1e-8绝对容差；完整基准在50×101网格上评价温度场。
 
 ## Code and usage / 代码与运行
 
@@ -98,11 +94,11 @@ python -m examples.verify_hierarchical
 # Formal trained weights + all test scores / 正式训练权重与全部测试指标
 python -m examples.formal_hierarchical --verify-only
 # Short joint-training execution check, new directory / 新目录联合训练检查
-python -m examples.train_hierarchical --output run-output-v13 --updates 3 --batch-cases 2 --lr 0.0001
+python -m examples.train_hierarchical --output run-output-hro-check --updates 3 --batch-cases 2 --lr 0.0001
 # Full default training recipe; no accuracy claim until evaluated / 完整默认训练配置
-python -m examples.train_hierarchical --output run-output-v13-training
+python -m examples.train_hierarchical --output run-output-hro-training
 # Figures + offline interactive page / 绘图与离线交互页面
-python -m examples.operator_showcase --output demo-output-operator
+python -m examples.field_showcase --output demo-output-fields
 ```
 
 ```python
@@ -114,15 +110,11 @@ prediction = model(initial, control, cycles=3, times=times, positions=positions)
 
 [Model implementation / 模型实现](../SciML/models/v13/hierarchical_operator.py) · [Trainer / 训练器](../examples/train_hierarchical.py) · [Execution protocol / 实际运行协议](../evidence/architecture/v13_execution_v1/protocol.json) · [Execution summary / 运行验证结果](../evidence/architecture/v13_execution_v1/summary.json) · [Contract tests / 接口验证](../SciML/tests/test_hierarchical_operator.py)
 
-## What the demonstrations show / 演示材料的含义
+## Demonstrations / 演示
 
-The README now compares **formally trained v13 predictions with the archived v12 reference**, using the first preset seeds and both three-cycle cases. These are final200-update outputs, not the original three-update checkpoint. The [interactive explorer](../assets/v13_formal_v1/explorer.html) plays saved v13 fields in a single offline file. GitHub renders GIFs/PNGs directly but does not execute the HTML inside README. The original reference-only displays remain in their historical asset directories.
+The [field explorer](../assets/showcase/explorer.html) displays stored HRO temperature fields. The comparison animation and atlases show the residual cascade and HRO against the same numerical references, with fixed cases/checkpoints and shared color limits. Grid coordinates are normalized within each exchange stage.
 
-README 现在对照**正式训练 v13 与归档 v12**，采用预定首个种子并展示两个三循环工况。这些是200次更新的末次结果，不是原三次更新权重。离线 HTML 播放保存的 v13 场；GitHub 可直接显示 GIF/PNG，但不会在 README 内执行 HTML。原参考模型演示保留在历史素材目录中。
-
-The offline page's logic is checked with a mock DOM/canvas. Real-browser preview was blocked by this environment's local-file URL policy, so browser rendering/interaction QA is not claimed. No hosting or public sharing was enabled for the preview.
-
-离线页面逻辑采用模拟 DOM/canvas 校验。本环境的本地文件 URL 策略阻止了真实浏览器预览，因此不宣称完成浏览器渲染/交互验收；没有为预览启用托管或公开分享。
+场浏览器展示保存的 HRO 温度场。对照动画和图谱将残差级联与 HRO 对照同一数值参考，工况与检查点固定，色标共用；坐标在各换热阶段内归一化。
 
 ## Research basis and next evaluation / 方法依据与后续评价
 
