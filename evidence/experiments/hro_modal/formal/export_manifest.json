@@ -1,0 +1,60 @@
+{
+  "status": "portable_evidence_export",
+  "original_summary_sha256": "bb83c27ad7fd21400dfd5a3d967800ed0cd73d4fbedca7e588d5caeaa446e08b",
+  "omitted_local_artifacts": {
+    "s20261121/joint/model.pt": {
+      "sha256": "1a2d6323b53c0679eabb427a838352b9246867e1fe8abf42b2925dccdad6e547",
+      "reason": "retained in complete local experiment bundle"
+    },
+    "s20261121/joint/training_state.pt": {
+      "sha256": "80a7330a77cf1ae3b2eff3f9254652ca51a13b2c4cd3bc379f7387d0ed691509",
+      "reason": "retained in complete local experiment bundle"
+    },
+    "s20261121/refined/training_state.pt": {
+      "sha256": "bc1e0980a2249b1bf64f6372a0e553682cd50f10ec2e464bb240e1de4b332515",
+      "reason": "retained in complete local experiment bundle"
+    },
+    "s20261122/joint/model.pt": {
+      "sha256": "9e65a407afc5a3221204d9b4210132481bdd6847d1dfa6d99c88d19d543ac389",
+      "reason": "retained in complete local experiment bundle"
+    },
+    "s20261122/joint/training_state.pt": {
+      "sha256": "8686c93480050010b7f4de0cc673555fc3caf1a746af17cb6cf908460a7eabf2",
+      "reason": "retained in complete local experiment bundle"
+    },
+    "s20261122/refined/training_state.pt": {
+      "sha256": "20d278b42e07cae5f812394cc014ecc17832f7479e355cc86afaa0e365edc778",
+      "reason": "retained in complete local experiment bundle"
+    },
+    "s20261123/joint/model.pt": {
+      "sha256": "e20ec0382fc6b12dff467dcd746413f55fc7c297e67e201e8adbde4a32619ab2",
+      "reason": "retained in complete local experiment bundle"
+    },
+    "s20261123/joint/training_state.pt": {
+      "sha256": "473adcd7ff48a088f283f5521a127f70d75145a3900a5b057f76a5501d5f2196",
+      "reason": "retained in complete local experiment bundle"
+    },
+    "s20261123/refined/training_state.pt": {
+      "sha256": "7b3444abc8ae35bc6e4eb6d57cdde9e58484297d20c086b90482de4c85589220",
+      "reason": "retained in complete local experiment bundle"
+    }
+  },
+  "frozen_backbone_audit": {
+    "20261121": {
+      "joint_backbone_sha256": "443bbd9206092fe5ff0078a9cfcaab328e63097294526ad3168b33c92eb523bb",
+      "refined_backbone_sha256": "443bbd9206092fe5ff0078a9cfcaab328e63097294526ad3168b33c92eb523bb",
+      "joint_checkpoint_sha256": "1a2d6323b53c0679eabb427a838352b9246867e1fe8abf42b2925dccdad6e547"
+    },
+    "20261122": {
+      "joint_backbone_sha256": "9c396a04bbca8a562291625eab7982ed66a01f96484aba957b70c0384cec7a10",
+      "refined_backbone_sha256": "9c396a04bbca8a562291625eab7982ed66a01f96484aba957b70c0384cec7a10",
+      "joint_checkpoint_sha256": "9e65a407afc5a3221204d9b4210132481bdd6847d1dfa6d99c88d19d543ac389"
+    },
+    "20261123": {
+      "joint_backbone_sha256": "d8d6227e325ba6219aa35abcaef4c3c217f3fa1eacc4f3841c86ddef78d24217",
+      "refined_backbone_sha256": "d8d6227e325ba6219aa35abcaef4c3c217f3fa1eacc4f3841c86ddef78d24217",
+      "joint_checkpoint_sha256": "e20ec0382fc6b12dff467dcd746413f55fc7c297e67e201e8adbde4a32619ab2"
+    }
+  },
+  "scope": "Final checkpoints, logs, predictions and source snapshots are portable. Intermediate checkpoints and optimizer/RNG bundles remain local; this export alone is not a training-resume bundle."
+}

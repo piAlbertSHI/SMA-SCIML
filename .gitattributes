@@ -6,3 +6,10 @@
 *.gif binary
 *.pt binary
 *.npz binary
+
+# Generated demonstrations remain visible; Python is the implementation language.
+assets/** linguist-generated=true
+evidence/** linguist-generated=true
+archive/** linguist-documentation=true
+docs/** linguist-documentation=true
+examples/templates/*.html linguist-documentation=true

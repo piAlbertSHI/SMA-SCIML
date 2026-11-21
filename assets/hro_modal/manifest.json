@@ -1,0 +1,37 @@
+{
+  "status": "completed_modal_showcase",
+  "first_seed": 20261121,
+  "selection": "both three-cycle cases; animation first sorted case",
+  "input_sha256": {
+    "evidence/experiments/hro_modal/formal/protocol.json": "696565a210e6a39cdb89d84e9a764aa382b07e56385268e309dea422df207425",
+    "evidence/experiments/hro_modal/formal/summary.json": "bb83c27ad7fd21400dfd5a3d967800ed0cd73d4fbedca7e588d5caeaa446e08b",
+    "data/historical12_state.npz": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "evidence/experiments/v13_formal_v1/s20261121/test_predictions.npz": "862e31b289c38e773723de0ab3b4deca3725e7aad145b00d699821ed62eb52c9",
+    "evidence/experiments/hro_modal/formal/s20261121/test_predictions.npz": "d8eea5fb38a9faabd2bca4e74a609a9f354b4b3f3368b1e9d0d53ddb7f139c38"
+  },
+  "figures": [
+    {
+      "name": "field_atlas_1",
+      "scope": "Stored predictions on both three-cycle cases; no smoothing; local exchange time"
+    },
+    {
+      "name": "field_atlas_2",
+      "scope": "Stored predictions on both three-cycle cases; no smoothing; local exchange time"
+    },
+    {
+      "name": "architecture",
+      "scope": "HRO modal decoder and two-phase training; implemented modules, no claim of PDE conservation"
+    }
+  ],
+  "generator_sha256": "8da6ba79ad1d804deb558351be649d7231c0d8b2ef1dc1f1ec24c23662931414",
+  "artifacts": {
+    "architecture.png": "3d42173569c90f0e57ce4c30cf448bbcca4c379a4a5c8988814a585fdb1adc71",
+    "architecture.svg": "bd6a68acee3f63a07271898fc61728f0dd77e066435770abd29d3d335e65a3da",
+    "field_atlas_1.png": "5f7ae5452772d480a894c8d549787b1c7f5038715fe787a88007f80655a87078",
+    "field_atlas_1.svg": "e87f8b010e5fdf56dca8b4f3c72959288e946ebaab1c73af112f1ba1ba550735",
+    "field_atlas_2.png": "a985ec2379e5c5869db473ceb06431d573c2a652c08be7d8eaf82bccb1251edb",
+    "field_atlas_2.svg": "179f65d14d71c27f887d4a67ce23904e46bce8fbf7e9a7bb9e30ec98d2adfe25",
+    "multicycle_comparison.gif": "cec8d5e4189e321051fc7c80ca33f104102ca61b63f0878c2e5d2b9a38885f17"
+  },
+  "fresh_solver_calls": 0
+}

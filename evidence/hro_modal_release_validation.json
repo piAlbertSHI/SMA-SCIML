@@ -1,0 +1,22 @@
+{
+  "status": "local_release_checks_passed",
+  "unit_tests_passed": 43,
+  "final_checkpoints_replayed": 3,
+  "replay_max_absolute_difference": 0.0,
+  "decoder_backbone_audit": "direct equality on complete local pairs; tensor hashes in portable export",
+  "visual_review": [
+    "architecture PNG",
+    "configuration A field atlas",
+    "animation final frame"
+  ],
+  "animation_frames": 48,
+  "scientific_limits": [
+    "historical test already examined",
+    "third-cycle SMA field RMSE increases 1.7 percent",
+    "configuration A SMA state and field errors increase",
+    "no new physical simulations or experimental validation"
+  ],
+  "source_physics_recovery": "12 request hashes and 9 instrumented files matched",
+  "fresh_solver_calls": 0,
+  "language_statistics": "generated demo assets excluded with Linguist attributes; implementation remains Python/PyTorch"
+}

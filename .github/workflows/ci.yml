@@ -22,6 +22,9 @@ jobs:
       - run: python -m examples.verify_hierarchical
       - run: python -m unittest SciML.tests.test_formal_hierarchical -v
       - run: python -m examples.formal_hierarchical --verify-only
+      - run: python -m unittest SciML.tests.test_modal_operator -v
+      - run: python -m examples.verify_modal_evidence
+      - run: python -m examples.modal_showcase --output demo-output-ci-modal --no-animation
       - run: node examples/test_field_explorer.cjs
       - run: node examples/test_field_explorer.cjs assets/showcase/explorer.html
       - run: python -m examples.showcase --output demo-output-ci --no-animation

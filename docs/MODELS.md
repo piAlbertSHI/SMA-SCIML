@@ -1,5 +1,11 @@
 # Model catalogue / 模型目录
 
+**[Modal HRO / 模态 HRO](HRO_MODAL.md):** 3,111,771 parameters; time-query attention, 24 spatial modes per field, dense spatial supervision and cached decoder refinement. Third-cycle SMA-state / SMA-field / fluid-field RMSE: **1.040 / 1.627 / 0.619 K**. See the linked report for per-case regressions and exploratory evaluation scope.
+
+**模态 HRO** 包含 3,111,771 个参数，采用时间查询注意力、每场 24 个空间模态、全空间监督及缓存解码器专项训练。第三循环 SMA 状态／SMA 场／流体场 RMSE 为 **1.040／1.627／0.619 K**，逐工况退步及探索性评价边界见报告。
+
+The coordinate-decoder reference is specified below. / 以下保留坐标解码参考方案。
+
 **[Hierarchical Recurrent Operator (HRO) / 分层循环算子](HIERARCHICAL_OPERATOR.md):** **3,106,989 trainable parameters**, dual spatial CNNs, latent cross-attention, GRU memory, five FiLM transition heads and a joint coordinate field decoder. The [benchmark](MULTICYCLE_BENCHMARK.md) uses three seeds ×200 updates; third-cycle SMA state/field RMSE is **1.120/1.600 K**, with early-cycle and some state-component regressions. The tables below specify the reference models.
 
 HRO 采用双路空间 CNN、潜变量交叉注意力、GRU 记忆、五个 FiLM 阶段头及联合坐标场解码，约 **311 万可训练参数**。固定训练配置为三种子各200次更新，第三循环 SMA 状态/场 RMSE 为 **1.120/1.600 K**；早期循环及部分状态量退步。下表继续保留已有参考模型记录。

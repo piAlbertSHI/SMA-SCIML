@@ -1,0 +1,161 @@
+{
+  "status": "derived_prediction_diagnostics",
+  "field_order": [
+    "SMA",
+    "fluid"
+  ],
+  "results": {
+    "coordinate": {
+      "per_seed": [
+        {
+          "seed": 20261121,
+          "all_test_field_rmse_K": [
+            1.331472888424301,
+            1.014558104237767
+          ],
+          "c3s4_spatial_gradient_rmse_K_per_normalized_x": [
+            112.48840630839472,
+            49.965457919899414
+          ]
+        },
+        {
+          "seed": 20261122,
+          "all_test_field_rmse_K": [
+            1.2351709225141625,
+            1.0153913640803849
+          ],
+          "c3s4_spatial_gradient_rmse_K_per_normalized_x": [
+            80.32395905281307,
+            48.66569159233142
+          ]
+        },
+        {
+          "seed": 20261123,
+          "all_test_field_rmse_K": [
+            1.4416600107073736,
+            0.9778882746346559
+          ],
+          "c3s4_spatial_gradient_rmse_K_per_normalized_x": [
+            98.54965840892363,
+            59.27867002982754
+          ]
+        }
+      ],
+      "mean": {
+        "all_test_field_rmse_K": [
+          1.3361012738819458,
+          1.0026125809842692
+        ],
+        "c3s4_spatial_gradient_rmse_K_per_normalized_x": [
+          97.1206745900438,
+          52.636606514019455
+        ]
+      }
+    },
+    "modal": {
+      "per_seed": [
+        {
+          "seed": 20261121,
+          "all_test_field_rmse_K": [
+            1.0586756516383093,
+            0.6785074792271685
+          ],
+          "c3s4_spatial_gradient_rmse_K_per_normalized_x": [
+            12.956393906007005,
+            1.8749529622714118
+          ]
+        },
+        {
+          "seed": 20261122,
+          "all_test_field_rmse_K": [
+            1.1799528447541754,
+            0.5665054721492945
+          ],
+          "c3s4_spatial_gradient_rmse_K_per_normalized_x": [
+            14.111266005084104,
+            2.1190421712568743
+          ]
+        },
+        {
+          "seed": 20261123,
+          "all_test_field_rmse_K": [
+            1.0224688680723895,
+            0.6682666547528856
+          ],
+          "c3s4_spatial_gradient_rmse_K_per_normalized_x": [
+            13.889402660596692,
+            2.067988210253602
+          ]
+        }
+      ],
+      "mean": {
+        "all_test_field_rmse_K": [
+          1.0870324548216248,
+          0.6377598687097829
+        ],
+        "c3s4_spatial_gradient_rmse_K_per_normalized_x": [
+          13.6523541905626,
+          2.020661114593963
+        ]
+      }
+    }
+  },
+  "per_case": {
+    "coordinate": {
+      "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c": {
+        "sma_state_sma_field_fluid_field_mean_K": [
+          1.0127981379911741,
+          1.440476401198711,
+          0.4744469388304488
+        ]
+      },
+      "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c": {
+        "sma_state_sma_field_fluid_field_mean_K": [
+          1.217597703085196,
+          1.738710822700768,
+          0.9878204527091716
+        ]
+      }
+    },
+    "modal": {
+      "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c": {
+        "sma_state_sma_field_fluid_field_mean_K": [
+          1.158512828752239,
+          1.6844318448820976,
+          0.4131406607508357
+        ]
+      },
+      "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c": {
+        "sma_state_sma_field_fluid_field_mean_K": [
+          0.9042692808902922,
+          1.567076399487368,
+          0.7712404774059635
+        ]
+      }
+    }
+  },
+  "formal_training_seconds": {
+    "20261121": {
+      "joint": 148.20388759998605,
+      "refined": 4.512125499997637
+    },
+    "20261122": {
+      "joint": 156.44940199999837,
+      "refined": 4.462940400000662
+    },
+    "20261123": {
+      "joint": 155.16421119999723,
+      "refined": 4.828156600007787
+    }
+  },
+  "formal_total_training_seconds": 473.62072329998773,
+  "input_sha256": {
+    "evidence/experiments/v13_formal_v1/s20261121/test_predictions.npz": "862e31b289c38e773723de0ab3b4deca3725e7aad145b00d699821ed62eb52c9",
+    "evidence/experiments/v13_formal_v1/s20261122/test_predictions.npz": "2b80205d5da6efba5f4b8a0c319a46d7738d285a23b3abda46e012903ce66229",
+    "evidence/experiments/v13_formal_v1/s20261123/test_predictions.npz": "cb0b6121583a4228f9e4f88f4a46bb00a8b4ea8a5f3bf9a02ef3b42eeee1df19",
+    "evidence/experiments/hro_modal/formal/s20261121/test_predictions.npz": "d8eea5fb38a9faabd2bca4e74a609a9f354b4b3f3368b1e9d0d53ddb7f139c38",
+    "evidence/experiments/hro_modal/formal/s20261122/test_predictions.npz": "7a26485e4336731e131acf99dcce335fe715b855187ce23808efdd19ed7a8138",
+    "evidence/experiments/hro_modal/formal/s20261123/test_predictions.npz": "40be309b7a26f534e881cbc96b9ba8090e4da6ccbe8d05a236f959993d5b6d74"
+  },
+  "fresh_solver_calls": 0
+}

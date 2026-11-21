@@ -1,0 +1,418 @@
+{
+  "status": "historical_instrumented_sources_and_parameters_recovered",
+  "fresh_solver_calls": 0,
+  "request_count": 12,
+  "matched_instrumented_files": 9,
+  "physics_fingerprint": "0836d35c15f5779549acf979ee4543117c93f4bc2ce76034f9810a8fe01ed279",
+  "pipeline_fingerprint": "bb312566a093e41ec6249dcea33229ff236332a4c89ca5508cc6c7e666bfba73",
+  "source_bindings": {
+    "SciML/builders/Run_SCIML_V11_Pilot.m": {
+      "sha256": "907221d08e4092257cdd14059160cf4d8a0ce8f458628735ed5ef87452dd3253",
+      "recovered_from": "Transfer/gx101r1_sciml_paper220_remote_20260822_final/SciML/builders/Run_SCIML_V11_Pilot.m"
+    },
+    "SciML/builders/Export_SCIML_V11_Case.m": {
+      "sha256": "e585ca4b5cc3dad761a52613f1fd805aae89e8819f45f45e671e4d090b420f6d",
+      "recovered_from": "Transfer/gx101r1_sciml_paper220_remote_20260822_final/SciML/builders/Export_SCIML_V11_Case.m"
+    },
+    "SciML/builders/Validate_SCIML_Observation_Contract.m": {
+      "sha256": "f44eb875506ac10f12e49f5b33cfe99cb61468442ac82ae0149b283d11d8e66d",
+      "recovered_from": "Transfer/gx101r1_sciml_paper220_remote_20260822_final/SciML/builders/Validate_SCIML_Observation_Contract.m"
+    },
+    "SciML/configs/wp1_v12_confirm_temporal12.json": {
+      "sha256": "db5f7a61d0fb9fe995934c09c536866365098fe0003843214070fa4245aefc11",
+      "recovered_from": "SciML/configs/wp1_v12_confirm_temporal12.json"
+    },
+    "GlobalXi_TimeStep_Core.m": {
+      "sha256": "dc280283e60e2804e3f2488a146ae9d53aa586a8aa9663b51066695669e9b940",
+      "recovered_from": "Transfer/gx101r1_sciml_paper220_remote_20260822_final/GlobalXi_TimeStep_Core.m"
+    },
+    "Run_GlobalXi_Simulink_Cycles.m": {
+      "sha256": "5fc18f15a2c048d2a4dd70e184e5c9691f9b9ef14fe1fa38e294d52d3454b88a",
+      "recovered_from": "Transfer/gx101r1_sciml_paper220_remote_20260822_final/Run_GlobalXi_Simulink_Cycles.m"
+    },
+    "Run_Simulink_Exchange_Hook.m": {
+      "sha256": "db07382e6f63f25baf606a8acec36e6c1989b0159dae8cb86fe5f883406c318b",
+      "recovered_from": "Transfer/gx101r1_sciml_paper220_remote_20260822_final/Run_Simulink_Exchange_Hook.m"
+    },
+    "Build_Simulink_Exchange_Params.m": {
+      "sha256": "1c4bcdd33237ebfd051b46cc60076a5afef8e30f59fe0b23ba9903f2201afbdc",
+      "recovered_from": "Transfer/gx101r1_sciml_paper220_remote_20260822_final/Build_Simulink_Exchange_Params.m"
+    },
+    "nixunhuan_solver101_internal.slx": {
+      "sha256": "17df6ba77ca6ee3521e4c406f6fea648273802aeaf970305806635f1fca133a6",
+      "recovered_from": "Transfer/gx101r1_sciml_paper220_remote_20260822_final/nixunhuan_solver101_internal.slx"
+    }
+  },
+  "material_parameters_SI": {
+    "recA": {
+      "E_A": 35000000000.0,
+      "E_M": 25000000000.0,
+      "nu": 0.3,
+      "H_max": 0.04,
+      "rho": 6500,
+      "c_A": 450,
+      "c_M": 450,
+      "k_A": 18,
+      "k_M": 18,
+      "alpha_A": 1e-05,
+      "alpha_M": 1e-05,
+      "ds0": -35,
+      "hc": 0,
+      "Hfor": 2275000.0,
+      "M_s": 260,
+      "M_f": 250,
+      "A_s": 275,
+      "A_f": 285
+    },
+    "recAs": {
+      "E_A": 35000000000.0,
+      "E_M": 25000000000.0,
+      "nu": 0.3,
+      "H_max": 0.04,
+      "rho": 6500,
+      "c_A": 450,
+      "c_M": 450,
+      "k_A": 18,
+      "k_M": 18,
+      "alpha_A": 1e-05,
+      "alpha_M": 1e-05,
+      "ds0": -35,
+      "hc": 0,
+      "Hfor": 2275000.0,
+      "M_s": 245,
+      "M_f": 235,
+      "A_s": 260,
+      "A_f": 270
+    }
+  },
+  "cases": [
+    {
+      "case_id": "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+      "request_sha256": "29e688a1ef0a8a9512c8e62dc87610156d45e47e39bf87b8e960374509672cf5",
+      "raw_mat_available": false,
+      "case_spec": {
+        "case_id": "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+        "material_id": "recA",
+        "radius_m": 0.032,
+        "thickness_m": 0.00016,
+        "pressure_Pa": 742000,
+        "flush_volume_target_ratio": 1.019,
+        "exchange_duration_s": 2.4,
+        "cycle_count": 2,
+        "cold_load_mode": "no_load",
+        "cold_load_heat_W": 0,
+        "expected_gate": "confirmatory_temporal_valid_intent",
+        "parent_confirm50_case_id": "confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c"
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c",
+      "request_sha256": "ea80c764e7a10ca20e502a7f3c3a6ff7e27244f0c2655872d29bac0769ffcb74",
+      "raw_mat_available": false,
+      "case_spec": {
+        "case_id": "confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c",
+        "material_id": "recA",
+        "radius_m": 0.035,
+        "thickness_m": 0.000175,
+        "pressure_Pa": 756000,
+        "flush_volume_target_ratio": 0.981,
+        "exchange_duration_s": 2.4,
+        "cycle_count": 2,
+        "cold_load_mode": "no_load",
+        "cold_load_heat_W": 0,
+        "expected_gate": "confirmatory_temporal_valid_intent",
+        "parent_confirm50_case_id": "confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c"
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+      "request_sha256": "de2af675f9f1560d9d1fb8eb79661186ec363b956436ddddcd8108b9d375f789",
+      "raw_mat_available": false,
+      "case_spec": {
+        "case_id": "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+        "material_id": "recA",
+        "radius_m": 0.038,
+        "thickness_m": 0.00019,
+        "pressure_Pa": 929000,
+        "flush_volume_target_ratio": 1.077,
+        "exchange_duration_s": 2,
+        "cycle_count": 2,
+        "cold_load_mode": "no_load",
+        "cold_load_heat_W": 0,
+        "expected_gate": "confirmatory_temporal_valid_intent",
+        "parent_confirm50_case_id": "confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c"
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+      "request_sha256": "2ddc3b8f25a787668ac6075cdcf1f3ba0f6084d06c4e8d168ed86cd7f3179bf2",
+      "raw_mat_available": false,
+      "case_spec": {
+        "case_id": "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+        "material_id": "recA",
+        "radius_m": 0.04,
+        "thickness_m": 0.0002,
+        "pressure_Pa": 871000,
+        "flush_volume_target_ratio": 0.962,
+        "exchange_duration_s": 2.8,
+        "cycle_count": 2,
+        "cold_load_mode": "no_load",
+        "cold_load_heat_W": 0,
+        "expected_gate": "confirmatory_temporal_valid_intent",
+        "parent_confirm50_case_id": "confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c"
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+      "request_sha256": "338071e3b8a2cb414a05693940ccede5f5087b37f3d9ccaddfee2eeeabe0f29d",
+      "raw_mat_available": false,
+      "case_spec": {
+        "case_id": "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+        "material_id": "recA",
+        "radius_m": 0.042,
+        "thickness_m": 0.00021,
+        "pressure_Pa": 943000,
+        "flush_volume_target_ratio": 1,
+        "exchange_duration_s": 2,
+        "cycle_count": 2,
+        "cold_load_mode": "no_load",
+        "cold_load_heat_W": 0,
+        "expected_gate": "confirmatory_temporal_valid_intent",
+        "parent_confirm50_case_id": "confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c"
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "request_sha256": "511615e4a19ccf8c948f65b1e795cb1ac681fc69a57a26e611388ad3ca3c8e09",
+      "raw_mat_available": false,
+      "case_spec": {
+        "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+        "material_id": "recA",
+        "radius_m": 0.038,
+        "thickness_m": 0.00019,
+        "pressure_Pa": 972000,
+        "flush_volume_target_ratio": 1.23,
+        "exchange_duration_s": 2.4,
+        "cycle_count": 3,
+        "cold_load_mode": "no_load",
+        "cold_load_heat_W": 0,
+        "expected_gate": "confirmatory_temporal_valid_intent",
+        "parent_confirm50_case_id": "confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c"
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+      "request_sha256": "44ce9368cd94d139d71875ffbe4006c5ad8d70fa7821e1f97b0943527b2847ec",
+      "raw_mat_available": false,
+      "case_spec": {
+        "case_id": "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+        "material_id": "recAs",
+        "radius_m": 0.032,
+        "thickness_m": 0.00016,
+        "pressure_Pa": 1724000.0,
+        "flush_volume_target_ratio": 1,
+        "exchange_duration_s": 2.8,
+        "cycle_count": 2,
+        "cold_load_mode": "no_load",
+        "cold_load_heat_W": 0,
+        "expected_gate": "confirmatory_temporal_valid_intent",
+        "parent_confirm50_case_id": "confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c"
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+      "request_sha256": "b4f628607cbc79757b71e8593691e1b2b171310a1f932f369e4f8630c2c3955a",
+      "raw_mat_available": false,
+      "case_spec": {
+        "case_id": "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+        "material_id": "recAs",
+        "radius_m": 0.035,
+        "thickness_m": 0.000175,
+        "pressure_Pa": 1192000.0,
+        "flush_volume_target_ratio": 1.038,
+        "exchange_duration_s": 2,
+        "cycle_count": 2,
+        "cold_load_mode": "no_load",
+        "cold_load_heat_W": 0,
+        "expected_gate": "confirmatory_temporal_valid_intent",
+        "parent_confirm50_case_id": "confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c"
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+      "request_sha256": "b7d25ce7fce9ee04cdf70525567762dc2537b494b514134375b0986d8559ffbf",
+      "raw_mat_available": false,
+      "case_spec": {
+        "case_id": "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+        "material_id": "recAs",
+        "radius_m": 0.038,
+        "thickness_m": 0.00019,
+        "pressure_Pa": 1276000.0,
+        "flush_volume_target_ratio": 0.923,
+        "exchange_duration_s": 2,
+        "cycle_count": 2,
+        "cold_load_mode": "no_load",
+        "cold_load_heat_W": 0,
+        "expected_gate": "confirmatory_temporal_valid_intent",
+        "parent_confirm50_case_id": "confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c"
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_10_confirm50_recas_047_r40_t200_p1584_v1019_t2p4_1c_2c",
+      "request_sha256": "e11c4c1b796aafc3df95d884ab0fbdd78d13759e349a23f10a5e54c7a3ad1fdd",
+      "raw_mat_available": false,
+      "case_spec": {
+        "case_id": "confirm_temporal12_10_confirm50_recas_047_r40_t200_p1584_v1019_t2p4_1c_2c",
+        "material_id": "recAs",
+        "radius_m": 0.04,
+        "thickness_m": 0.0002,
+        "pressure_Pa": 1584000.0,
+        "flush_volume_target_ratio": 1.019,
+        "exchange_duration_s": 2.4,
+        "cycle_count": 2,
+        "cold_load_mode": "no_load",
+        "cold_load_heat_W": 0,
+        "expected_gate": "confirmatory_temporal_valid_intent",
+        "parent_confirm50_case_id": "confirm50_recas_047_r40_t200_p1584_v1019_t2p4_1c"
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c",
+      "request_sha256": "40799e2612f404bde7364aa759e28262b7b28589b2e1c4fafad52378bcfe6d51",
+      "raw_mat_available": false,
+      "case_spec": {
+        "case_id": "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c",
+        "material_id": "recAs",
+        "radius_m": 0.042,
+        "thickness_m": 0.00021,
+        "pressure_Pa": 1612000.0,
+        "flush_volume_target_ratio": 0.981,
+        "exchange_duration_s": 2.4,
+        "cycle_count": 2,
+        "cold_load_mode": "no_load",
+        "cold_load_heat_W": 0,
+        "expected_gate": "confirmatory_temporal_valid_intent",
+        "parent_confirm50_case_id": "confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c"
+      }
+    },
+    {
+      "case_id": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c",
+      "request_sha256": "9f4dda37f4d38d4e3db286940b31b06e968d38d50002935b8229b19338bee173",
+      "raw_mat_available": false,
+      "case_spec": {
+        "case_id": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c",
+        "material_id": "recAs",
+        "radius_m": 0.038,
+        "thickness_m": 0.00019,
+        "pressure_Pa": 1752000.0,
+        "flush_volume_target_ratio": 1.23,
+        "exchange_duration_s": 2.4,
+        "cycle_count": 3,
+        "cold_load_mode": "no_load",
+        "cold_load_heat_W": 0,
+        "expected_gate": "confirmatory_temporal_valid_intent",
+        "parent_confirm50_case_id": "confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c"
+      }
+    }
+  ],
+  "dependency_package": "Transfer/gx101r1_sciml_paper220_remote_20260822_final",
+  "runtime_executed": false,
+  "limitations": [
+    "Nine instrumented sources match original request hashes; other packaged dependencies lack per-case historical hashes.",
+    "Original absolute output/cache paths require an isolated workspace override before any run.",
+    "A one-case runtime/dependency check and cost estimate are still required before data expansion.",
+    "No new simulation data may be merged merely because the material names match."
+  ],
+  "bundle_files": {
+    "requests/confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c.json": "29e688a1ef0a8a9512c8e62dc87610156d45e47e39bf87b8e960374509672cf5",
+    "requests/confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c.json": "ea80c764e7a10ca20e502a7f3c3a6ff7e27244f0c2655872d29bac0769ffcb74",
+    "requests/confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c.json": "de2af675f9f1560d9d1fb8eb79661186ec363b956436ddddcd8108b9d375f789",
+    "requests/confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c.json": "2ddc3b8f25a787668ac6075cdcf1f3ba0f6084d06c4e8d168ed86cd7f3179bf2",
+    "requests/confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c.json": "338071e3b8a2cb414a05693940ccede5f5087b37f3d9ccaddfee2eeeabe0f29d",
+    "requests/confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c.json": "511615e4a19ccf8c948f65b1e795cb1ac681fc69a57a26e611388ad3ca3c8e09",
+    "requests/confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c.json": "44ce9368cd94d139d71875ffbe4006c5ad8d70fa7821e1f97b0943527b2847ec",
+    "requests/confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c.json": "b4f628607cbc79757b71e8593691e1b2b171310a1f932f369e4f8630c2c3955a",
+    "requests/confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c.json": "b7d25ce7fce9ee04cdf70525567762dc2537b494b514134375b0986d8559ffbf",
+    "requests/confirm_temporal12_10_confirm50_recas_047_r40_t200_p1584_v1019_t2p4_1c_2c.json": "e11c4c1b796aafc3df95d884ab0fbdd78d13759e349a23f10a5e54c7a3ad1fdd",
+    "requests/confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c.json": "40799e2612f404bde7364aa759e28262b7b28589b2e1c4fafad52378bcfe6d51",
+    "requests/confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c.json": "9f4dda37f4d38d4e3db286940b31b06e968d38d50002935b8229b19338bee173",
+    "runtime/AER_Bridge_Check.m": "a141ca2f3daa4f159e33bd64e3912fc3d804b4d08a06b48521a85aa7f5687a19",
+    "runtime/AER_Dump_RootCause.m": "bfe907c96f13bf80d83ff6bbcabb29d76c0337acda9431908af48b6eb6bd0da3",
+    "runtime/AER_Inspect_Checkpoint.m": "6c701b9c05a1a8791c3b454c28b872778bf28c81a01513208a63181b3b980958",
+    "runtime/AER_OperatorSplit_Bed.m": "345c3c248b10602443fb030f6afaa7c12e3b99eece31e2ad83f3541ba4f7b5ff",
+    "runtime/AER_Trace_Handoff.m": "f40c9704cec9de903232bef3cd1dcfb760b2c0e14efd8b5dbbf8c8bd09dc57ac",
+    "runtime/Build_Diameter_Strip_Geometry.m": "d55cb8162f66258b9500f40ef638e8e7d59c1f922b8f9b55384d12cfe656d74c",
+    "runtime/Build_Directional_Strip_Contract.m": "89a01a538485ab12b47b0e2ad10793a822fd4bc5fabfc9d517ecc733de413ea9",
+    "runtime/Build_FourStage_Cycle_Schedule.m": "043d54d41203f03c8e92db4e77a078bd92c99ee8c65b6770d788c2f696bda98d",
+    "runtime/Build_GlobalXi_Checkpoint_From_Exchanged_T.m": "6430d3af19bdd12aea618c09d6e0de2113599198b0e8731a65487f95eba126d0",
+    "runtime/Build_GlobalXi_Restart_Balance_Checkpoint.m": "3d9fe5115942798908b10f5831e039f7fc26f4184c11d60aedf0a08bac7530f2",
+    "runtime/Build_GlobalXi_Run_Validation_Summary.m": "cef067d72f55c68e94e827a935134bad2d9960556169636f40fb4399e6965361",
+    "runtime/Build_GlobalXi_Stage_Report.m": "7572f5be42be2acd91398e563230bddbf43979c108086abfb27ae73cabee5a09",
+    "runtime/Build_GX101R1_Continuous_Probe_Timeline.m": "5a2c8462a1eccb07cfe90991e1fd1e2b9c9e45d08ef476124fc539ed421e5a72",
+    "runtime/Build_GX101R1_State_Sync_Trace_Table.m": "63cb3920e66fd7b1580027bcd795b9d5f0b90da3703682d7fa52e0ef2716e2bf",
+    "runtime/Build_nixunhuan_solver101_internal.m": "3ef51306b651ac1574115ccfee1a00fd019d31a8757492e6caa76feb89d60c20",
+    "runtime/Build_recA_ROM_Profiles.m": "dccae61cd01ad949f7965e919ed49940f5b515f8166340a7e6bdd6d8dbb8c6fa",
+    "runtime/Build_recAs_Plate_Compare.m": "5efb23cc793ecceaa8f07d63388b7356c6f98a728a3762803ce13aeb5c6c5ce2",
+    "runtime/Build_Simulink_Exchange_Model.m": "fc6b60f4b38e32c6d7218bb7d29529bdac885ab23929ec3d08dabb8424c48886",
+    "runtime/Build_Simulink_Exchange_Params.m": "1c4bcdd33237ebfd051b46cc60076a5afef8e30f59fe0b23ba9903f2201afbdc",
+    "runtime/bundle_manifest.json": "0e574b017549e277fb5e44af42f9f80c4ae06afbbc57f5b091bf44db17e0880a",
+    "runtime/bundle_metadata.json": "af105e019d9e6e4e314c4aae80687aee14031eca6ec8ec75929a40b3678983cd",
+    "runtime/Compare_Geom.m": "02a4942562c47c961bc0ee431df845db056af5d52a3f06f78ee32134152434c2",
+    "runtime/Compress_Diameter101_To_Radial51.m": "c935238b2291b4485302614aeae8f2a969316dc7b83f2265581f230ec302c5a7",
+    "runtime/Create_Simulink_Exchange_Runtime.m": "c7fdf2071b0445ed981d95cfd0d7c2cbd012929ca3a5c243c310fb3f5c20f8d2",
+    "runtime/Generate_GX101R1_Thermal_Object_Contract.m": "31ae380f6a25193086e76c839e35cb72daf8b48fd75a56fb053b10cf88381251",
+    "runtime/GlobalXi_Checkpoint_To_Simulink_State.m": "637971c77f510cec2348009b5f7173e11140766a577be9f7c83d33a04fc43cf5",
+    "runtime/GlobalXi_TimeStep_Core.m": "dc280283e60e2804e3f2488a146ae9d53aa586a8aa9663b51066695669e9b940",
+    "runtime/Initialize_Directional_Strip_State.m": "e0be8f45943ce876f3cc6c87569b0184cdbf4dfc034396d520c3e6e3abbc34cf",
+    "runtime/Map_Radial51_To_Diameter101.m": "af4437470a368378ecfc89ccaa65d146922a6382b03467aa3a45fc284b597736",
+    "runtime/nixunhuan_solver101_internal.slx": "17df6ba77ca6ee3521e4c406f6fea648273802aeaf970305806635f1fca133a6",
+    "runtime/Output/remote_preflight/preflight_summary.json": "e9bbf6391f4bc819b1a402be02a5d87c1442733165d6fd1e4273db9ef2594512",
+    "runtime/Plate_P_Sweep_recAs.m": "e7177f6cda77f3ac9e3ccd3f64ba3bf742276376ba47d317b002fdbd91e46142",
+    "runtime/Plot_GlobalXi_Simulink_Cycle_Results.m": "85b64649ff713a3bbc4b35657a4ba2f48b507e2bed67afb8f00228fc60a037f5",
+    "runtime/Plot_GX101R1_Fixed_Probe_Trajectories.m": "dfe526c1d14d3bb8a10e00909c36d0a7b31c3f0513702b1e5a6812161ea4f5e5",
+    "runtime/Plot_GX101R1_NoLoad_Literature_Style.m": "2573a97f48efe7b8387fb6edbe50541d8dd4a5334a92e5f48058af2cf957f31e",
+    "runtime/Plot_GX101R1_Probe_Timeseries_Individual.m": "b63d8f0a06eb52f51896af6c2524f7a68e5010612a5914b69823027bffe5783d",
+    "runtime/Postprocess_R76_AER10_Material_Compare.m": "1b973e66dd133bc800a6274fbface4b68ad56a70cef578be342b298510132086",
+    "runtime/Resolve_Exchange_Stage_Config.m": "4d87e6c7199cd4fe668640b604d07146b4d72005ddb5d05a4744099fe8bb5a8b",
+    "runtime/Run_A363_FlowMode_Test.m": "f1b0a3288fe0716d88bb651bce4b94eae64ccdaf1f9a41c43a85d5cf138775c2",
+    "runtime/Run_A364_Confirm.m": "de1e7e52ea0e1548418aa17c6df02bc363f67ad6bda59c19b9b7fadf259d54e1",
+    "runtime/Run_Design_Law_Chunk.m": "9dc57a9a63c9ca51025af1c285f811615b471c26669a80ae6fbb7f7e811bf5bf",
+    "runtime/Run_Design_Law_Sweep_recAs.m": "9768adc02fb4b1be18e8b8465db54d1ee7304c1f12798fa1b169a5bf55aeb909",
+    "runtime/Run_GlobalXi_Cooled_Unloading_Prototype.m": "87b2c1b85d12ec0537704199c228965849859c5fb0c3d2146088bf85f99c3953",
+    "runtime/Run_GlobalXi_Simulink_Cycle_Main.m": "413f69b45768a0cd38c6a6a4843362b1756f13d84a21ab661512df98e54e5d19",
+    "runtime/Run_GlobalXi_Simulink_Cycles.m": "5fc18f15a2c048d2a4dd70e184e5c9691f9b9ef14fe1fa38e294d52d3454b88a",
+    "runtime/Run_GlobalXi_Time_Loading_Prototype.m": "7d0ba0842b2a7e5b5cf9c2a1493fe442f7117ba6cf05209b2814dc1228b1a7a4",
+    "runtime/Run_GlobalXi_Unloading_Prototype.m": "25d8c01c4beb9a55dd2d5814e46e76f527df258830ad53030adb4239bfec061d",
+    "runtime/Run_R76_AER10_Material_Case.m": "65ca0b7f32de55ec78355cc098b152be67d94e19159d882332312ba13e6f654d",
+    "runtime/Run_recA_Validation_Plots.m": "e9f7c2afb31b02623231d509c84f9962e2b0c73698ffa50e4de5bccbb1333db4",
+    "runtime/Run_Simulink_Exchange_Hook.m": "db07382e6f63f25baf606a8acec36e6c1989b0159dae8cb86fe5f883406c318b",
+    "runtime/Save_Stage_Checkpoint.m": "67795c2e0828336470ba13b0d8645bed1da59e81ee3cb6483547e9c98f06850b",
+    "runtime/SciML/__init__.py": "5873b98123dd50ceea7e98f8f1e39e9cfc3a365bc675692d1602a5ab6f44ed2a",
+    "runtime/SciML/builders/Export_SCIML_V11_Case.m": "e585ca4b5cc3dad761a52613f1fd805aae89e8819f45f45e671e4d090b420f6d",
+    "runtime/SciML/builders/Run_SCIML_V11_Engineering20_Shards.ps1": "98ed7a99fde2a99c2af0553b97fb4354ba6bc5193c55fdd5459002e7164ad326",
+    "runtime/SciML/builders/Run_SCIML_V11_Paper220_Shards.ps1": "ff5de2340619f19dedce9fafffa279f97fc19fe8319159640f4fe6dbea800e6b",
+    "runtime/SciML/builders/Run_SCIML_V11_Pilot.m": "907221d08e4092257cdd14059160cf4d8a0ce8f458628735ed5ef87452dd3253",
+    "runtime/SciML/builders/Run_SCIML_V11_Temporal12_Shards.ps1": "aedd6e8739936c8745a4c21c08feaceff8f8d74f7c8ded4a1e372c62c165456c",
+    "runtime/SciML/builders/Validate_SCIML_Observation_Contract.m": "f44eb875506ac10f12e49f5b33cfe99cb61468442ac82ae0149b283d11d8e66d",
+    "runtime/SciML/configs/wp1_v11_paper220.json": "1acdddd504d06d6b7e811cddb0ddb3c135517bdad4615e03a837a6117a2634f6",
+    "runtime/SciML/configs/wp1_v11_paper220_attrition_ledger.json": "5b03a58c1801fe79e795b1311079f070b25c3ab08f74f7420323f901b6363cec",
+    "runtime/SciML/configs/wp1_v11_temporal12.json": "a2591dbbef3fdf9183e29e808ae2dba2423042cf91c2b4220a22c70172b31b08",
+    "runtime/SciML/configs/wp1_v12_confirm_temporal12.json": "db5f7a61d0fb9fe995934c09c536866365098fe0003843214070fa4245aefc11",
+    "runtime/SciML/remote/Build_SCIML_Remote_Package.ps1": "0d84eebf0e964887a920f2bd74fd900fa258823fae6467523a0c0e539949cc22",
+    "runtime/SciML/remote/Create_Temporal12_Authorization.py": "08ba2c98814ebedcf1a631ae522bed5426b75677eefcb3f14a687a0f3fbe0107",
+    "runtime/SciML/remote/Import_SCIML_Remote_Results.ps1": "81efffbfca5669d02e018101788f69d5fe1c80ac0e4699f05de60c0f8b35c4b6",
+    "runtime/SciML/remote/README_WP2_WP4_REMOTE_CN.md": "a247371c6158fde87389da4168c2e114770bf4c135b3fe2570bdc06abea7e68b",
+    "runtime/SciML/remote/Remote_Pack_Results.ps1": "54795a191f30562a19c0405077c10a65427263c91dfe56b1700d74ed97a00b22",
+    "runtime/SciML/remote/Remote_Preflight.ps1": "3f6c20101ac3e0cf0664ba12944eee2f1b10cb6854dfeb21f04e79895b304dc5",
+    "runtime/SciML/remote/Remote_Preflight_MATLAB.m": "763d1ee8797d5d4063c2a73a757d8528f4343e13aef15b304362b1e46fad9aad",
+    "runtime/SciML/remote/Remote_Run_Paper220.ps1": "7419d8dfc308e4b47ffef89befcd8d7c3e815ef6bab0bcea769c1185b6fbeaeb",
+    "runtime/SciML/remote/Remote_Run_Temporal12.ps1": "54bdaba6d8d41f3b28cf66e0fa1e621e119b3f06624bf1caf0289d75c0542585",
+    "runtime/SMA_LocalKinetics.m": "f0f5b81bb7ae12e677a0fb6ec346d086ac01ec6b6b99202064d249d79cacfd88",
+    "runtime/Solve_GlobalXi_Exchange_Restart_Balance.m": "ac6d1f02a505f5f51ab2d7a3efb408601c457a9395d907abcf7f8a727b56f8c3",
+    "runtime/Summarize_GX101R1_NoLoad_Energy_Table.m": "70f3059286935ceb604c56fc5a2ab05de936165684de8f3e461cd6ab001e5d6e",
+    "runtime/Validate_GX101R1_Exact_Resume.m": "ede0cf07393d7d6ff4453951fc7ec17b0168e4087cbe7e0f5a9532516f69e65a",
+    "runtime/Validate_GX101R1_Split_Exchange_Stage.m": "51ab1037ee1b750e2a45addf7c122df6d48c7beaa5b3af5ea07ec10e62a9523d",
+    "runtime/Validate_GX101R1_Split_Stage4.m": "e4fa80b26d8960915b7cd88c49aed7748b2b571f5b8459507001b3bef68e261a",
+    "runtime/Validate_GX101R1_Static_Contract.m": "a19a446fa1356ecf1075a66eececb7ec441cbf20994d521d4b6ddd97c540e694"
+  }
+}

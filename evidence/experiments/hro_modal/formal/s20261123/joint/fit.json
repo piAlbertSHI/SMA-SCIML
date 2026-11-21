@@ -1,0 +1,41 @@
+{
+  "seconds": 155.16421119999723,
+  "seed": 20261123,
+  "updates": 200,
+  "parameter_report": {
+    "trainable": 3111771,
+    "by_module": {
+      "mechanical": 200960,
+      "transport": 200832,
+      "condition": 19456,
+      "encoder": 663424,
+      "recurrence": 394752,
+      "memory_projection": 32896,
+      "memory_film": 65792,
+      "transitions": 1426859,
+      "decoder": 106800
+    },
+    "frozen_buffer_values": 907578
+  },
+  "fit_case_ids": [
+    "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+    "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+    "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+    "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+    "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+    "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+    "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+    "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c"
+  ],
+  "gradient_coverage": {
+    "mechanical": true,
+    "transport": true,
+    "condition": true,
+    "encoder": true,
+    "recurrence": true,
+    "memory_projection": true,
+    "memory_film": true,
+    "transitions": true,
+    "decoder": true
+  }
+}

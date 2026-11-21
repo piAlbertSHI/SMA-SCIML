@@ -51,6 +51,14 @@ def audit():
             violations.append({'file':'examples/field_showcase.py','line':node.lineno,'text':node.value})
     assert 'Hierarchical Recurrent Operator' in (ROOT/'README.md').read_text(encoding='utf-8')
     assert (ROOT/'README.md').read_text(encoding='utf-8').startswith('# SMA-SCIML\n')
+    modal_root=ROOT/'assets/hro_modal'
+    modal_manifest=json.loads((modal_root/'manifest.json').read_text())
+    for name,expected in modal_manifest['artifacts'].items():assert sha(modal_root/name)==expected,name
+    for name,expected in modal_manifest['input_sha256'].items():assert sha(ROOT/name)==expected,name
+    assert sha(ROOT/'examples/modal_showcase.py')==modal_manifest['generator_sha256']
+    for path in sorted(modal_root.glob('*.svg')):
+        label=' '.join(''.join(node.itertext()) for node in ET.parse(path).iter() if node.tag.endswith('}text'))
+        if FORBIDDEN.search(label):violations.append({'file':path.relative_to(ROOT).as_posix(),'text':'forbidden modal figure label'})
     inventory={}
     for path in sorted(ROOT.rglob('*')):
         if not included(path):continue
@@ -69,6 +77,7 @@ def audit():
         'baseline':'Residual MLP + DeepONet','maintained_markdown_files_checked':len(docs),
         'svg_labels_checked':labels,'html_labels_checked':True,'animation_generator_labels_checked':True,
         'showcase_input_and_output_hashes_checked':True,'fresh_training_calls':0,'fresh_solver_calls':0,
+        'modal_showcase_input_output_and_label_checks':True,
         'scope':'Maintained prose, generated showcase labels and repository inventory; technical paths and immutable historical evidence retain their identifiers.',
         'browser_rendering_acceptance':'pending; tracked separately from text/array/interaction-logic checks',
         'file_categories':{k:sum(v==k for v in inventory.values()) for k in sorted(set(inventory.values()))},

@@ -1,5 +1,9 @@
 # Research roadmap / 研究路线图
 
+The [modal-decoder study](HRO_MODAL.md) now provides the sampling comparison and a two-phase refinement result: lower spatial oscillation and whole-test field error, with mixed third-cycle SMA-field results. The directions below remain open for matched-budget tests. The [physics audit](HRO_RESEARCH_DESIGN.md) establishes the historical source/parameter recovery and explains why SMA endpoint consistency cannot yet be imposed.
+
+[模态解码研究](HRO_MODAL.md)已提供采样对照和双阶段训练结果：空间振荡及全测试场误差减小，但第三循环 SMA 场改善不一致。下列方向仍需匹配预算的检验；[物理审查](HRO_RESEARCH_DESIGN.md)记录了历史源码及参数恢复，并解释 SMA 末态一致性为何尚不能直接施加。
+
 | Direction / 方向 | Evidence / 依据 | Evaluation / 评价设计 |
 |---|---|---|
 | Spatial regularity / 空间平滑性 | HRO improves third-cycle temperature RMSE but exhibits spatial oscillations / HRO 第三循环温度误差改善，仍有空间振荡 | Compare query density/jitter and decoder regularization using validation cases drawn only from the training partition / 仅用训练分区划分验证工况，对照查询密度、抖动及解码正则 |

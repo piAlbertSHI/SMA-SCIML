@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="851.4pt" height="380.304pt" viewBox="0 0 851.4 380.304" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 380.304 
+L 851.4 380.304 
+L 851.4 0 
+L 0 0 
+z
+" style="fill: #f5f8fc"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 18.36 202.9032 
+L 169.02 202.9032 
+Q 176.274 202.9032 176.274 195.696 
+L 176.274 79.272 
+Q 176.274 72.0648 169.02 72.0648 
+L 18.36 72.0648 
+Q 11.106 72.0648 11.106 79.272 
+L 11.106 195.696 
+Q 11.106 202.9032 18.36 202.9032 
+z
+" clip-path="url(#p5e289bb179)" style="fill: #e8f0fa; stroke: #c0c9d4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 196.92 202.9032 
+L 364.32 202.9032 
+Q 371.574 202.9032 371.574 195.696 
+L 371.574 79.272 
+Q 371.574 72.0648 364.32 72.0648 
+L 196.92 72.0648 
+Q 189.666 72.0648 189.666 79.272 
+L 189.666 195.696 
+Q 189.666 202.9032 196.92 202.9032 
+z
+" clip-path="url(#p5e289bb179)" style="fill: #e8f0fa; stroke: #c0c9d4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 392.22 202.9032 
+L 565.2 202.9032 
+Q 572.454 202.9032 572.454 195.696 
+L 572.454 79.272 
+Q 572.454 72.0648 565.2 72.0648 
+L 392.22 72.0648 
+Q 384.966 72.0648 384.966 79.272 
+L 384.966 195.696 
+Q 384.966 202.9032 392.22 202.9032 
+z
+" clip-path="url(#p5e289bb179)" style="fill: #e8f0fa; stroke: #c0c9d4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 598.68 202.9032 
+L 821.88 202.9032 
+Q 829.134 202.9032 829.134 195.696 
+L 829.134 79.272 
+Q 829.134 72.0648 821.88 72.0648 
+L 598.68 72.0648 
+Q 591.426 72.0648 591.426 79.272 
+L 591.426 195.696 
+Q 591.426 202.9032 598.68 202.9032 
+z
+" clip-path="url(#p5e289bb179)" style="fill: #e8f0fa; stroke: #c0c9d4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 196.92 349.8192 
+L 565.2 349.8192 
+Q 572.454 349.8192 572.454 342.612 
+L 572.454 234.504 
+Q 572.454 227.2968 565.2 227.2968 
+L 196.92 227.2968 
+Q 189.666 227.2968 189.666 234.504 
+L 189.666 342.612 
+Q 189.666 349.8192 196.92 349.8192 
+z
+" clip-path="url(#p5e289bb179)" style="fill: #dff3ef; stroke: #c0c9d4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 598.68 349.8192 
+L 821.88 349.8192 
+Q 829.134 349.8192 829.134 342.612 
+L 829.134 234.504 
+Q 829.134 227.2968 821.88 227.2968 
+L 598.68 227.2968 
+Q 591.426 227.2968 591.426 234.504 
+L 591.426 342.612 
+Q 591.426 349.8192 598.68 349.8192 
+z
+" clip-path="url(#p5e289bb179)" style="fill: #fff0d7; stroke: #c0c9d4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #16324f" x="93.69" y="102.250125" transform="rotate(-0 93.69 102.250125)">Physical state + control</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(45.525937 124.015237)">515 state variables</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(51.015781 138.252425)">9 known controls</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(50.262656 152.489612)">5 stage identities</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #16324f" x="280.62" y="102.250125" transform="rotate(-0 280.62 102.250125)">Hierarchical encoders</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(209.379375 124.015237)">Radial + axial residual CNNs</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(211.784844 138.252425)">16 latent tokens, width 128</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(210.860625 152.489612)">3 attention blocks / 8 heads</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #16324f" x="478.71" y="102.250125" transform="rotate(-0 478.71 102.250125)">Recurrent transition</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(408.401406 124.015237)">GRU memory: 256 variables</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(419.008438 138.252425)">FiLM + five stage heads</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(400.70375 152.489612)">Frozen affine prior + correction</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #16324f" x="710.28" y="102.250125" transform="rotate(-0 710.28 102.250125)">State rollout</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(636.93 124.015237)">Explicit next state + memory</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(640.410469 138.252425)">Autonomous stage chaining</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(628.849531 152.489612)">Two-cycle train / three-cycle test</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 173.809182 134.712 
+Q 178.785286 134.712 181.860731 134.712 
+" style="fill: none; stroke: #527c9f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 177.860731 132.712 
+L 181.860731 134.712 
+L 177.860731 136.712 
+" style="fill: none; stroke: #527c9f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 371.899182 134.712 
+Q 376.875286 134.712 379.950731 134.712 
+" style="fill: none; stroke: #527c9f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 375.950731 132.712 
+L 379.950731 134.712 
+L 375.950731 136.712 
+" style="fill: none; stroke: #527c9f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 572.77782 134.712 
+Q 580.544456 134.712 586.410434 134.712 
+" style="fill: none; stroke: #527c9f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 582.410434 132.712 
+L 586.410434 134.712 
+L 582.410434 136.712 
+" style="fill: none; stroke: #527c9f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #16324f" x="381.06" y="257.482125" transform="rotate(-0 381.06 257.482125)">Modal field decoder</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(273.006875 279.247237)">Time-query attention -&gt; 2 x 24 coefficients</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(261.11 293.484425)">Spatial basis: constant + linear + cosine modes</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(252.507656 307.721612)">T(x,t) = T(entry,x) + [1 - exp(-4t)] x scaled residual</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #16324f" x="710.28" y="257.482125" transform="rotate(-0 710.28 257.482125)">Two-phase optimization</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(640.451094 279.247237)">200 joint trajectory updates</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(637.39875 293.484425)">320 cached decoder updates</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #263c50" transform="translate(628.896406 307.721612)">All 101 spatial points supervised</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 470.34 206.010195 
+Q 470.34 214.546089 470.34 221.181325 
+" style="fill: none; stroke: #527c9f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 472.34 217.181325 
+L 470.34 221.181325 
+L 468.34 217.181325 
+" style="fill: none; stroke: #527c9f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 572.77782 289.944 
+Q 580.544456 289.944 586.410434 289.944 
+" style="fill: none; stroke: #527c9f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 582.410434 287.944 
+L 586.410434 289.944 
+L 582.410434 291.944 
+" style="fill: none; stroke: #527c9f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #16324f" x="18.36" y="29.376" transform="rotate(-0 18.36 29.376)">HRO | Structured dynamics and modal temperature fields</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526578" x="18.36" y="57.096" transform="rotate(-0 18.36 57.096)">Causal inference from initial conditions and controls; exact field initial values</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526578" x="18.36" y="366.4512" transform="rotate(-0 18.36 366.4512)">Decoded fields do not overwrite the state. Stage-end identity and physical energy closure are not enforced.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p5e289bb179">
+   <rect x="7.2" y="7.2" width="837" height="365.904"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,5 +1,9 @@
 # Hierarchical Recurrent Operator (HRO) / 分层循环算子
 
+This document specifies the shared HRO backbone and the coordinate-decoder reference. The [modal extension and two-phase benchmark](HRO_MODAL.md) describe the spatial decoder and training improvements.
+
+本文说明 HRO 共享主干及坐标解码参考方案；空间解码与训练改进见[模态扩展及双阶段基准](HRO_MODAL.md)。
+
 ## Architecture / 架构
 
 **A 3,106,989-parameter model combines spatial encoding, latent attention, recurrent memory, five stage-specific transition heads and a continuous-coordinate temperature decoder.** The fixed-budget benchmark uses three seeds × 200 updates and 6.7 minutes of CPU training. Third-cycle SMA state RMSE is **1.120 K**, versus **1.543 K** for the original neural reference. Early-cycle and some state-component errors increase; see the [full benchmark](MULTICYCLE_BENCHMARK.md) for the fixed protocol, all comparisons and limitations.

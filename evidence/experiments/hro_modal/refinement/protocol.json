@@ -1,0 +1,68 @@
+{
+  "mode": "modal_decoder_diagnosis_and_refinement",
+  "written_before_training": true,
+  "data_sha256": {
+    "state": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "fields": "15f5cf30948efea558ba514cafea99f146dcdc13435b66b906e58d582a721096"
+  },
+  "training_pool": [
+    "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+    "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+    "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+    "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+    "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+    "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+    "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+    "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c"
+  ],
+  "source_sha256": {
+    "examples/modal_hierarchical.py": "f0cf19efe7a917bd0d5319193532008b5e515b4d17faf254c68d335f426de4d6",
+    "SciML/models/v13/modal_operator.py": "79e0de23591713fb673ea70ef1fbb5abfe023d3384fd37e3d8b81bb91b43411b",
+    "SciML/models/v13/hierarchical_operator.py": "959b2ecacb7fdc56e052809793d59739986acd68f861d2c103c7bc6f116d0c8f",
+    "examples/train_hierarchical.py": "54b757afdd43e1697c36e187f659bc53b1e44ac60d8b1650a22f1b2fe7ed325d",
+    "examples/formal_hierarchical.py": "36b85119ef85c9129f7240ed4cd600503e619d544ec0fd7b9a939a408fb23fb0",
+    "examples/multicycle_multistep.py": "cc17a04c5f61241c7ed0b529fd6e16440921101bb2748089ecc270616ef07235"
+  },
+  "fresh_solver_calls": 0,
+  "optimizer": "AdamW",
+  "lr": 0.0003,
+  "weight_decay": 0.0001,
+  "clip_norm": 1.0,
+  "warmup": 20,
+  "cosine_final_fraction": 0.1,
+  "batch_cases": 2,
+  "loss": "state + field + 0.01 spatial gradient, training-only scales",
+  "temporal_queries": "zero, endpoint and six random interior times",
+  "checkpoint_selection": "fixed final update",
+  "teacher_forcing": false,
+  "precision": "CPU float64; one BLAS and torch thread",
+  "source_development_summary_sha256": "c6b42b83efb8191904a120ba5cddf49e141d73416bc843d6814d1d32a3a2b86e",
+  "joint_updates": "existing 160-update inner-case model",
+  "decoder_updates": 320,
+  "decoder_lr": 0.0008,
+  "decoder_batch_exchange_segments": 8,
+  "decoder_temporal_queries": 16,
+  "selection": "fixed budgets, no early stopping",
+  "historical_test_evaluated": false,
+  "historical_test_scope": "not accessed for scores",
+  "seeds": [
+    20261124
+  ],
+  "fit_case_ids": [
+    "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+    "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+    "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+    "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+    "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+    "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c"
+  ],
+  "acceptance": "unchanged: modal validation total < dense coordinate AND state <= 1.25*dense coordinate",
+  "diagnosis": {
+    "modal_basis_training_oracle_rmse_K": [
+      0.0425296,
+      0.00440854
+    ],
+    "interpretation": "small spatial approximation floor, high training error: test decoder optimization before increasing basis size"
+  },
+  "decoder_source_sha256": "837087298f05f961f738a6e898aa0df201d04ce56d2cdcd6db78d066d0a64f72"
+}

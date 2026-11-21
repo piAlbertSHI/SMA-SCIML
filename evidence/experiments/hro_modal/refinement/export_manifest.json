@@ -1,0 +1,16 @@
+{
+  "status": "portable_evidence_export",
+  "original_summary_sha256": "296f2543f04c609128626af2faedb1208d7924d5ce207013df8ff525aab919b6",
+  "omitted_local_artifacts": {
+    "refined/model.pt": {
+      "sha256": "c276a2bd8f9975c6726398ce2546c498597d5c78eccbc8aab81c5f4aa6909c60",
+      "reason": "retained in complete local experiment bundle"
+    },
+    "refined/training_state.pt": {
+      "sha256": "b2eab799503cb6083d628ca8410c450e7645a0179e52dfd94916d13f24e4a52b",
+      "reason": "retained in complete local experiment bundle"
+    }
+  },
+  "frozen_backbone_audit": {},
+  "scope": "Final checkpoints, logs, predictions and source snapshots are portable. Intermediate checkpoints and optimizer/RNG bundles remain local; this export alone is not a training-resume bundle."
+}

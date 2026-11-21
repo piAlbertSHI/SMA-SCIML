@@ -21,6 +21,17 @@ The bundled benchmarks run on CPU without MATLAB or a physical solver. Raw simul
 
 ## Explore fields / 浏览温度场
 
+The [modal HRO report](HRO_MODAL.md) contains the architecture, training commands and stored field comparisons. Verify its three final checkpoints and generate its figures with:
+
+[模态 HRO 报告](HRO_MODAL.md)包含架构、训练命令及温度场对照。核验三组最终检查点并生成图形：
+
+```bash
+python -m examples.verify_modal_evidence
+python -m examples.modal_showcase --output demo-output-modal
+```
+
+The interactive HTML below is the coordinate-HRO reference. / 下方交互 HTML 对应坐标 HRO 参考方案。
+
 Open `assets/showcase/explorer.html` locally. It contains saved HRO predictions and numerical references, with exchange-stage, temperature/error and time controls. Display values are rounded to four decimals; full-precision arrays remain in the experiment record.
 
 在本地打开 HTML，可选择换热阶段、温度/误差及时间。页面包含 HRO 保存预测和数值参考，显示数据保留四位小数，完整精度数组保留于实验记录。
