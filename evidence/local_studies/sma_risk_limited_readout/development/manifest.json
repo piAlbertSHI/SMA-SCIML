@@ -1,0 +1,16 @@
+{
+  "artifacts": {
+    "protocol.json": "590d86256c96d4e3174ae5273ca57cda427a3e34d8673b0b0f6d4eac8c77557a",
+    "summary.json": "f482ab4afb7d0ab8b532f5eae34ba257263209d01b124f8a6d2a9128e9e8b0de",
+    "fold1/fit.json": "9cd010ce80fd452658a90e2e3d56157422cb95ebdf1b104d3782c85fe10b3f06",
+    "fold1/readout.pt": "1453ba05f7734a249628fbc7aa278e10a15df31152d109f3634abc441225ebfc",
+    "fold2/fit.json": "596a3b6d665403fa6867ccb93386f6c39693a27e409309214f8246cf98d40c74",
+    "fold2/readout.pt": "49d68953dbb6ed7c78f720a4d9d37ca4ee888681c08555e4eb84d0f5190fc3c1",
+    "source/examples/mean_readout_study.py": "de547549ddb340343ecaa11dbaed5d724fb4859a14e5dbb1973dd9389996da89",
+    "source/examples/relaxation_readout_study.py": "c259986c38d796d8eb2fdc892c156a4e67c115dba5a0deb5d474be08d9933aaa",
+    "source/examples/risk_limited_readout_study.py": "b0c8ecf5cfbf81f505125fe4a265cc1c1d7e8ecde78553413fac302e30ac9147",
+    "source/examples/stage_readout_study.py": "5966874e7706420480d5abaf40ea0d4038a191cb77996edbb8fe56130529cabe",
+    "source/SciML/models/v13/relaxation_readout.py": "1f6a3cfa50ef050c6c21cb4247b0260488367eb8ac131c4d27e4c1755ec0a9e3",
+    "source/SciML/models/v13/risk_limited_readout.py": "e5ddd4c9b93d8e3aac2493d70a9a5f28cfee282d75a3a23e1276fe6eba2ebcea"
+  }
+}

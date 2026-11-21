@@ -1,0 +1,64 @@
+{
+  "candidate": "volume-scaled response with training-case RMS shrinkage and fixed half blend",
+  "mean_scale": 0.5,
+  "error_scale_multiplier": 1.0,
+  "seeds": [
+    20261121,
+    20261122,
+    20261123
+  ],
+  "fit_ids": [
+    "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+    "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+    "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+    "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+    "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+    "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+    "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+    "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c"
+  ],
+  "data_sha256": {
+    "state": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "fields": "15f5cf30948efea558ba514cafea99f146dcdc13435b66b906e58d582a721096"
+  },
+  "development_sha256": "f482ab4afb7d0ab8b532f5eae34ba257263209d01b124f8a6d2a9128e9e8b0de",
+  "public_inference_checks": [
+    {
+      "fold": 1,
+      "public_inference_gate_passed": true,
+      "comparison_path": "per-case batch1 live reference and candidate",
+      "max_cached_live_reference_K": 2.2737367544323206e-13,
+      "max_cached_live_difference_K": 2.2737367544323206e-13
+    },
+    {
+      "fold": 2,
+      "public_inference_gate_passed": true,
+      "comparison_path": "per-case batch1 live reference and candidate",
+      "max_cached_live_reference_K": 2.2737367544323206e-13,
+      "max_cached_live_difference_K": 2.2737367544323206e-13
+    }
+  ],
+  "checkpoint_sha256": {
+    "evidence/local_studies/sma_stage_readout/formal/s20261121/model.pt": "2c0b3d32da2e8dc5aab8cf745fb7ac7837913da4563799179c0bb8668b09c944",
+    "evidence/local_studies/sma_stage_readout/formal/s20261122/model.pt": "9c7bcd761a00a937eabc778f9d0b37e60ede817982fe1edaccabd9b476032d40",
+    "evidence/local_studies/sma_stage_readout/formal/s20261123/model.pt": "13e129e12bd18e126b3ad5d7323b0a8536d8a141755843f8272c7751d353bf7b"
+  },
+  "source_sha256": {
+    "SciML/models/v13/risk_limited_readout.py": "e5ddd4c9b93d8e3aac2493d70a9a5f28cfee282d75a3a23e1276fe6eba2ebcea",
+    "SciML/models/v13/relaxation_readout.py": "1f6a3cfa50ef050c6c21cb4247b0260488367eb8ac131c4d27e4c1755ec0a9e3",
+    "examples/risk_limited_readout_study.py": "b0c8ecf5cfbf81f505125fe4a265cc1c1d7e8ecde78553413fac302e30ac9147",
+    "examples/formal_risk_limited_readout.py": "b4c417f2b796bcb099d57f27b4a668351e18d5518884715f8e3263447e3b74ca",
+    "examples/formal_relaxation_readout.py": "e4e1711f15a07dd75c4078dd8374d26f4eb72a88c645388cfbfcfa51bc072d0c"
+  },
+  "promotion_rules": [
+    "overall mean field RMSE decreases",
+    "every case/cycle/stage three-seed mean nonregresses",
+    "worst seed overall RMSE nonregresses",
+    "case A cycles 1 and 2 recover modal-only reference accuracy",
+    "state, fluid, initial field and stage4 exactly unchanged"
+  ],
+  "calibration_scope": "case deletion only for response rates; frozen backbone saw fit cases; no coverage guarantee",
+  "evaluation_scope": "historical development regression; no coefficient changes after historical scoring",
+  "fresh_solver_calls": 0,
+  "neural_training_updates": 0
+}

@@ -51,6 +51,7 @@ The historical multi-cycle dataset contains **eight two-cycle training cases and
 | Residual cascade · multi-step fine-tuning / 残差级联·多步微调 | 1.533 ± 0.113 | 2.069 ± 0.048 | 0.985 ± 0.249 |
 | HRO · coordinate decoder / 坐标解码 | 1.120 ± 0.061 | 1.600 ± 0.118 | 0.775 ± 0.020 |
 | **HRO · modal decoder, two-phase training / 模态解码、双阶段训练** | **1.040 ± 0.068** | **1.627 ± 0.148** | **0.619 ± 0.112** |
+| **HRO · error-scaled thermal response / 误差收缩热响应** | 1.040 ± 0.068 | **1.176 ± 0.165** | 0.619 ± 0.112 |
 | Affine state baseline / 仿射状态基线 | 1.176 | — | — |
 
 Compared with coordinate HRO, modal HRO reduces third-cycle SMA-state error by **7.2%** and fluid-field error by **20.1%**; SMA-field error increases **1.7%**. Across all four test cases and exchange stages, SMA/fluid field RMSE decreases **18.6% / 36.4%**, with substantially lower spatial-gradient error. Improvements vary by case. Training budgets and spatial supervision differ; this is a system comparison on an already examined historical test set, not independent confirmatory evidence.
@@ -60,6 +61,25 @@ Compared with coordinate HRO, modal HRO reduces third-cycle SMA-state error by *
 [Per-case results, diagnostics and protocol / 逐工况结果、诊断与协议](docs/HRO_MODAL.md) · [Residual-cascade comparison / 残差级联对照](docs/MULTICYCLE_BENCHMARK.md)
 
 ## Field demonstrations / 场演示
+
+### Error-scaled thermal response / 误差收缩热响应
+
+The error-scaled thermal response configuration extends the frozen modal HRO with a stage-specific spatial readout and a fluid-driven mean-temperature response. Training-case error scales shrink weak corrections. Relative to the spatial readout alone, overall SMA field RMSE improves from **0.8999 to 0.8565 K**, and the pooled third-cycle RMSE across both exchange stages improves from **0.9887 to 0.9726 K**. All ten stage-2 segment means improve across three fixed seeds. Two individual seed-segment comparisons regress. These results use the historical development benchmark.
+
+误差收缩热响应配置在冻结模态 HRO 上加入分阶段空间读出和流体驱动的均温响应，通过训练工况的经验误差尺度收缩较弱的修正。相比分阶段空间读出，总体 SMA 场 RMSE 从 **0.8999 降至 0.8565 K**，第三循环两个换热阶段合并后从 **0.9887 降至 0.9726 K**。十个第二阶段换热段的三种子均值全部改善，两个单种子段退步。结果来自历史开发回归基准。
+
+![Error-scaled thermal response / 误差收缩热响应架构](assets/sma_risk_limited_readout/architecture.png)
+
+[Architecture, native field comparisons and limitations / 架构、原生场对照与局限](docs/HRO_ERROR_SCALED_RESPONSE.md) · [Verified checkpoints / 已验证检查点](checkpoints/hro_recommended.json)
+
+<details>
+<summary><strong>Stage-2 temperature and error fields / 第二阶段温度场与误差场</strong></summary>
+
+![Four exchange segments with paired error maps / 四个换热段的配对误差场](assets/sma_risk_limited_readout/four_segments.png)
+
+The error maps use pointwise RMS across three seeds, with a common reference and candidate scale within each row. / 误差图为三种子逐点均方根，同一行的基线和响应配置共用误差色标。
+
+</details>
 
 <details>
 <summary><strong>Space–time fields for both three-cycle cases / 两个三循环工况的时空场</strong></summary>

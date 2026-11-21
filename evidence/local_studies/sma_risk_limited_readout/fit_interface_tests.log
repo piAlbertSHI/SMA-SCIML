@@ -1,0 +1,10 @@
+test_case_deletions_and_scale_contract (SciML.tests.test_risk_limited_readout.RiskLimitedTests.test_case_deletions_and_scale_contract) ... ok
+test_checkpoint_queries_and_frozen_outputs (SciML.tests.test_risk_limited_readout.RiskLimitedTests.test_checkpoint_queries_and_frozen_outputs) ... ok
+test_expansion_interface_and_unselected_label_isolation (SciML.tests.test_risk_limited_readout.RiskLimitedTests.test_expansion_interface_and_unselected_label_isolation) ... ok
+test_fit_ignores_stage4_and_inference_ignores_all_labels (SciML.tests.test_risk_limited_readout.RiskLimitedTests.test_fit_ignores_stage4_and_inference_ignores_all_labels) ... ok
+test_projection_never_amplifies_or_reverses (SciML.tests.test_risk_limited_readout.RiskLimitedTests.test_projection_never_amplifies_or_reverses) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.478s
+
+OK

@@ -46,6 +46,42 @@ This generates the architecture figure, both test-case atlases, the comparison a
 
 ## Verify or train HRO / 验证或训练分层循环算子
 
+Replay the recommended thermal-response configuration and recompute its paired metrics with the first command below. For inference, pass CPU float64 initial states of shape `[B, 515]`, controls of shape `[B, 9]`, and the desired cycle count. The example uses the first registered seed and first three-cycle configuration by dataset order. [Checkpoints and data contract](HRO_ERROR_SCALED_RESPONSE.md)
+
+下面的验证命令回放误差收缩热响应配置并复算配对指标。推理输入为 CPU float64 的初态 `[B, 515]`、控制量 `[B, 9]` 和循环数。示例采用登记的首个种子及数据集中首个三循环工况。
+
+```bash
+python -m examples.verify_risk_limited_readout
+```
+
+```python
+import json
+from pathlib import Path
+
+import numpy as np
+import torch
+
+from SciML.models.v13.risk_limited_readout import RiskLimitedRelaxationOperator
+
+index = json.loads(Path("checkpoints/hro_recommended.json").read_text(encoding="utf-8"))
+torch.set_num_threads(1)
+model = RiskLimitedRelaxationOperator.load(index["checkpoints"][0]["path"])
+with np.load("data/historical12_state.npz", allow_pickle=False) as data:
+    i = int(np.flatnonzero((data["split"] == "test") & (data["cycles"] == 3))[0])
+    initial = torch.from_numpy(data["initial"][i:i + 1])
+    control = torch.from_numpy(data["control"][i:i + 1])
+
+with torch.no_grad():
+    prediction = model(
+        initial, control, cycles=3,
+        times=torch.linspace(0, 1, 50, dtype=torch.float64),
+        positions=torch.linspace(0, 1, 101, dtype=torch.float64),
+    )
+print(prediction["states"].shape, prediction["fields"].shape)
+```
+
+The coordinate HRO reference has a separate training and replay entry point. / 坐标 HRO 基线保留独立的训练及回放入口。
+
 ```bash
 # Replay three checkpoints and recompute all test metrics.
 python -m examples.formal_hierarchical --verify-only

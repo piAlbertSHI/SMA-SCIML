@@ -1,0 +1,102 @@
+{
+  "status": "verified_risk_limited_readout",
+  "internal_public_inference": [
+    {
+      "fold": 1,
+      "public_inference_gate_passed": true,
+      "comparison_path": "per-case batch1 live reference and candidate",
+      "max_cached_live_reference_K": 2.2737367544323206e-13,
+      "max_cached_live_difference_K": 2.2737367544323206e-13
+    },
+    {
+      "fold": 2,
+      "public_inference_gate_passed": true,
+      "comparison_path": "per-case batch1 live reference and candidate",
+      "max_cached_live_reference_K": 2.2737367544323206e-13,
+      "max_cached_live_difference_K": 2.2737367544323206e-13
+    }
+  ],
+  "seeds": [
+    {
+      "seed": 20261121,
+      "prediction_max_difference_K": 0.0,
+      "rate_refit_difference": 0.0,
+      "error_scale_refit_max_difference_K": 0.0,
+      "deletion_members_verified": 8,
+      "baseline_weights_exact": true
+    },
+    {
+      "seed": 20261122,
+      "prediction_max_difference_K": 0.0,
+      "rate_refit_difference": 0.0,
+      "error_scale_refit_max_difference_K": 0.0,
+      "deletion_members_verified": 8,
+      "baseline_weights_exact": true
+    },
+    {
+      "seed": 20261123,
+      "prediction_max_difference_K": 0.0,
+      "rate_refit_difference": 0.0,
+      "error_scale_refit_max_difference_K": 0.0,
+      "deletion_members_verified": 8,
+      "baseline_weights_exact": true
+    }
+  ],
+  "promotion_gate": {
+    "all_test_mean_improves": true,
+    "every_segment_seed_mean_nonregressing": true,
+    "worst_seed_all_test_nonregressing": true,
+    "case_A_first_two_cycles_recover_modal_accuracy": true,
+    "state_fluid_initial_stage4_exact": true
+  },
+  "candidate_promoted": true,
+  "individual_seed_regressions": [
+    {
+      "seed": 20261121,
+      "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "cycle": 3,
+      "stage": 2,
+      "before_K": 0.28270547411839114,
+      "before_bias_K": 0.17422962742974046,
+      "after_K": 0.28275022584720805,
+      "after_bias_K": 0.1756261287339938
+    },
+    {
+      "seed": 20261121,
+      "case_id": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c",
+      "cycle": 3,
+      "stage": 2,
+      "before_K": 0.8916593549683005,
+      "before_bias_K": 0.6554312675222224,
+      "after_K": 0.9111670151315948,
+      "after_bias_K": 0.683611010606837
+    }
+  ],
+  "state_fluid_initial_stage4_exact": true,
+  "spatial_difference_tolerance_K": 1e-12,
+  "legacy_response_verification": {
+    "status": "verified_relaxation_candidate_with_disclosed_regression",
+    "checkpoints_replayed": 3,
+    "internal_scores_replayed": 7,
+    "local_inner_backbones_available": 2,
+    "legacy_thickness_fit_replayed_from_bound_source": true,
+    "max_prediction_replay_difference_K": 0.0,
+    "max_rate_refit_difference": 0.0,
+    "max_internal_metric_difference_K": 0.0,
+    "baseline_checkpoint_weights_unchanged": true,
+    "state_fluid_initial_stage4_exact": true,
+    "candidate_promoted": false,
+    "promotion_gate": {
+      "all_test_mean_improves": true,
+      "every_segment_seed_mean_nonregressing": false,
+      "worst_seed_all_test_nonregressing": true,
+      "case_A_first_two_cycles_recover_modal_accuracy": true,
+      "state_fluid_initial_stage4_exact": true
+    },
+    "individual_seed_regressions": 6,
+    "fresh_solver_calls": 0,
+    "neural_training_updates": 0
+  },
+  "fresh_solver_calls": 0,
+  "neural_training_updates": 0
+}

@@ -1,5 +1,9 @@
 # Model catalogue / 模型目录
 
+**HRO with error-scaled thermal response / 误差收缩热响应 HRO.** A stage-specific spatial readout and a fluid-conditioned temperature-mean correction extend the frozen modal backbone. The correction uses one shared positive response rate and 50 empirical error-scale values per checkpoint. Overall SMA field RMSE is **0.857 K** on the four historical development cases. [Architecture and evidence](HRO_ERROR_SCALED_RESPONSE.md) · [Checkpoints](../checkpoints/hro_recommended.json)
+
+该配置在冻结模态主干上增加分阶段空间读出和流体驱动的均温修正。每个检查点拟合一个共享正速率，并估计 50 个经验误差尺度。四个历史开发工况的总体 SMA 场 RMSE 为 **0.857 K**。
+
 **[Modal HRO / 模态 HRO](HRO_MODAL.md):** 3,111,771 parameters; time-query attention, 24 spatial modes per field, dense spatial supervision and cached decoder refinement. Third-cycle SMA-state / SMA-field / fluid-field RMSE: **1.040 / 1.627 / 0.619 K**. See the linked report for per-case regressions and exploratory evaluation scope.
 
 **模态 HRO** 包含 3,111,771 个参数，采用时间查询注意力、每场 24 个空间模态、全空间监督及缓存解码器专项训练。第三循环 SMA 状态／SMA 场／流体场 RMSE 为 **1.040／1.627／0.619 K**，逐工况退步及探索性评价边界见报告。

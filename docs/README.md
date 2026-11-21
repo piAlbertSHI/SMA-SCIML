@@ -13,6 +13,7 @@ SMA-SCIML 提供面向弹热制冷科学机器学习的方法、基准与软件�
 | Stage-specific spatial readout / 分阶段空间读出 | [Regularization, mean constraint and segment analysis / 正则、平均温度约束与逐段分析](HRO_STAGE_READOUT.md) |
 | Mean temperature and heat increments / 平均温度与热增量 | [Error sources, rejected candidates and physical consistency / 误差来源、未采用方案与物理一致性](HRO_MEAN_TEMPERATURE.md) |
 | Fluid-conditioned thermal response / 流体条件热响应 | [Architecture, fixed evaluation and remaining regression / 架构、固定评估与剩余退步](HRO_COUPLED_THERMAL_RESPONSE.md) |
+| Error-scaled thermal response / 误差收缩热响应 | [Current local model, segment results and extension interface / 当前本地模型、逐段结果与扩充接口](HRO_ERROR_SCALED_RESPONSE.md) |
 | Operator research and compatible physics / 算子研究与兼容物理模型 | [Design and data expansion / 设计与数据扩充](HRO_RESEARCH_DESIGN.md) |
 | Model families and settings / 模型家族与设置 | [Model catalogue / 模型目录](MODELS.md) |
 | Autonomous multi-cycle prediction / 自主多循环预测 | [Operator benchmark / 算子基准](MULTICYCLE_BENCHMARK.md) |

@@ -1,0 +1,33 @@
+{
+  "status": "accepted_local_configuration",
+  "recommendation_sha256": "d36291029c4c56a3beea569f3e224b1f697021e4ab662197f8062bad7697dfed",
+  "prior_models_preserved": true,
+  "fresh_solver_calls": 0,
+  "neural_training_updates": 0,
+  "github_pushes": 0,
+  "overall_before_K": {
+    "mean": 0.899921118989,
+    "sd": 0.07542009998763653,
+    "values": [
+      0.933040023391351,
+      0.9531151262757669,
+      0.8136082072998818
+    ]
+  },
+  "overall_after_K": {
+    "mean": 0.8565308820589747,
+    "sd": 0.061525341182559916,
+    "values": [
+      0.8920600481711901,
+      0.8920450600072142,
+      0.7854875379985197
+    ]
+  },
+  "promotion_gate": {
+    "all_test_mean_improves": true,
+    "every_segment_seed_mean_nonregressing": true,
+    "worst_seed_all_test_nonregressing": true,
+    "case_A_first_two_cycles_recover_modal_accuracy": true,
+    "state_fluid_initial_stage4_exact": true
+  }
+}

@@ -91,6 +91,14 @@ def audit():
     for path in sorted(response_root.glob('*.svg')):
         label=' '.join(''.join(node.itertext()) for node in ET.parse(path).iter() if node.tag.endswith('}text'))
         if FORBIDDEN.search(label):violations.append({'file':path.relative_to(ROOT).as_posix(),'text':'forbidden response figure label'})
+    risk_root=ROOT/'assets/sma_risk_limited_readout'
+    risk_manifest=json.loads((risk_root/'manifest.json').read_text())
+    for name,expected in risk_manifest['artifacts'].items():assert sha(risk_root/name)==expected,name
+    for name,expected in risk_manifest['input_sha256'].items():assert sha(ROOT/name)==expected,name
+    assert sha(ROOT/'examples/risk_limited_report.py')==risk_manifest['generator_sha256']
+    for path in sorted(risk_root.glob('*.svg')):
+        label=' '.join(''.join(node.itertext()) for node in ET.parse(path).iter() if node.tag.endswith('}text'))
+        if FORBIDDEN.search(label):violations.append({'file':path.relative_to(ROOT).as_posix(),'text':'forbidden error-scaled response figure label'})
     inventory={}
     for path in sorted(ROOT.rglob('*')):
         if not included(path):continue
@@ -114,6 +122,7 @@ def audit():
         'stage_readout_input_output_and_label_checks':True,
         'mean_readout_input_output_and_label_checks':True,
         'relaxation_readout_input_output_and_label_checks':True,
+        'error_scaled_response_input_output_and_label_checks':True,
         'scope':'Maintained prose, generated showcase labels and repository inventory; technical paths and immutable historical evidence retain their identifiers.',
         'browser_rendering_acceptance':'pending; tracked separately from text/array/interaction-logic checks',
         'file_categories':{k:sum(v==k for v in inventory.values()) for k in sorted(set(inventory.values()))},

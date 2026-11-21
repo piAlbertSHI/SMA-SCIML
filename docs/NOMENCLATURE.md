@@ -5,6 +5,7 @@
 | Project / 项目 | **SMA-SCIML** | 面向弹热制冷的科学机器学习 |
 | Joint state/field model / 联合状态与场模型 | **Hierarchical Recurrent Operator (HRO)** | **分层循环算子** |
 | Decoder variants / 解码器方案 | Coordinate HRO; modal HRO | 坐标 HRO；模态 HRO |
+| Stage-2 mean readout / 第二阶段均温读出 | HRO with error-scaled thermal response | 误差收缩热响应 HRO |
 | Modal training / 模态训练 | Two-phase training: joint trajectory optimization and cached decoder refinement | 双阶段训练：轨迹联合优化与缓存解码器专项训练 |
 | State baseline / 状态基线 | Residual MLP state model | 残差 MLP 状态模型 |
 | State/field baseline / 状态与场基线 | Residual MLP + DeepONet; shortened to **residual cascade** in figures | 残差级联系统 |

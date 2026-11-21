@@ -1,0 +1,23 @@
+{
+  "artifacts": {
+    "analysis.json": "9c5f35ebad17b75924d033451d1764f76b4a08289b3a8109c3ecc9ccd31e6905",
+    "architecture.png": "35acfdc9dd1a3e341b13f6b4cf8dc82fef7823031cd8e408860f1416eea9b4df",
+    "architecture.svg": "28a6e2d88165e0b51867435c9972c1fbe685dd08be79596a5a8f0195b1cc05a0",
+    "four_segments.png": "e0165915989a1b4b05c1c8b15b8d77e63d5de217fe80787c84a650d69e2e2700",
+    "four_segments.svg": "2e1b0b9565bd1580f54f1dbcc10e4b6164fb520d11623b3a531826a352505340"
+  },
+  "input_sha256": {
+    "evidence/local_studies/sma_risk_limited_readout/formal/summary.json": "853d9f895bf44faad81525429b6bab3d0efae752673e7e5adcb19f1ff6f9ac9e",
+    "data/historical12_state.npz": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "evidence/local_studies/sma_stage_readout/formal/s20261121/test_predictions.npz": "06627f7def118fd43d174efb8d9b91b69a862ce9fa09838b9a918195f52ad32e",
+    "evidence/local_studies/sma_risk_limited_readout/formal/s20261121/test_predictions.npz": "a43f82eb5a743a462073174768ffb465f18574ad306c9e2b19856c813f62f158",
+    "evidence/local_studies/sma_risk_limited_readout/formal/s20261121/model.pt": "6e06abfdb291d6843aea465c499a7536f6cf1110c330da756057647fb27d5a5d",
+    "evidence/local_studies/sma_stage_readout/formal/s20261122/test_predictions.npz": "4fac49f4f1814debde52756e8f7559ad58d3797f8bd77f7fc60f8d0d912f2d4f",
+    "evidence/local_studies/sma_risk_limited_readout/formal/s20261122/test_predictions.npz": "d742ecac60753259c70325817553ff1fad225274dee2dd62cae320090ce7b1f7",
+    "evidence/local_studies/sma_risk_limited_readout/formal/s20261122/model.pt": "4ba0e489d0f84ee81fa4419f6ab608e0b1d766793a4f14e401572b86d7c1781f",
+    "evidence/local_studies/sma_stage_readout/formal/s20261123/test_predictions.npz": "dc5754d554183d4b41ada23a1042616e3bdb9ee64badf61bd27107502df35ac2",
+    "evidence/local_studies/sma_risk_limited_readout/formal/s20261123/test_predictions.npz": "d6eb9361cb5734a053be431aaa817353b19dce200dfe450ba0cbf0630ea9bfca",
+    "evidence/local_studies/sma_risk_limited_readout/formal/s20261123/model.pt": "446c08a4d6874bcb1f3f2f78ae5bb4db3f27a84197f65ba927ff51b9fe5bcb32"
+  },
+  "generator_sha256": "83ada0de1a54cebb88df70a71802710d7f8d9879f0ea38ad2f084cd0b771df7d"
+}

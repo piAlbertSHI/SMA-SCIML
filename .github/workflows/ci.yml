@@ -33,6 +33,8 @@ jobs:
       - run: python -m examples.verify_increment_consistency
       - run: python -m unittest SciML.tests.test_relaxation_readout -v
       - run: python -m examples.verify_relaxation_readout
+      - run: python -m unittest SciML.tests.test_risk_limited_readout -v
+      - run: python -m examples.verify_risk_limited_readout
       - run: python -m examples.modal_showcase --output demo-output-ci-modal --no-animation
       - run: node examples/test_field_explorer.cjs
       - run: node examples/test_field_explorer.cjs assets/showcase/explorer.html

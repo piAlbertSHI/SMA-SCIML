@@ -98,6 +98,8 @@ class RelaxationReadoutOperator(nn.Module):
     to requested times. Its definition cannot depend on which positions are
     requested. The corrected output is not fed back into the state recurrence.
     """
+    SCHEMA='hro_relaxation_readout_v1'
+
     def __init__(self,reference,response,scale=.5):
         super().__init__()
         if not 0<=scale<=1:raise ValueError('Blend scale must lie in [0,1]')
@@ -108,6 +110,11 @@ class RelaxationReadoutOperator(nn.Module):
     @property
     def training_ids(self):return self.reference.training_ids
 
+    def native_correction(self,mean,fluid,control):
+        response=self.response(mean[:,0],fluid,control)
+        delta=response-mean;delta[:,0]=0.
+        return delta
+
     def step(self,state,control,stage,memory=None,*,times=None,positions=None):
         result=self.reference.step(state,control,stage,memory,times=times,positions=positions)
         if stage==2 and times is not None:
@@ -115,8 +122,7 @@ class RelaxationReadoutOperator(nn.Module):
             native=result if torch.equal(times,grid) and torch.equal(positions,space) else self.reference.step(
                 state,control,stage,memory,times=grid,positions=space)
             field=native['field'];mean=field[:,0].mean(-1)
-            response=self.response(mean[:,0],field[:,1].mean(-1),control)
-            delta=response-mean;delta[:,0]=0.
+            delta=self.native_correction(mean,field[:,1].mean(-1),control)
             query=interpolate(delta,grid,times)*self.mean_scale
             result['field']=torch.cat(((result['field'][:,0]+query[:,:,None])[:,None],result['field'][:,1:2]),dim=1)
         return result
@@ -126,7 +132,7 @@ class RelaxationReadoutOperator(nn.Module):
     def save(self,path,*,metadata=None):
         stage=self.reference;ref=stage.reference
         with Path(path).open('xb') as stream:
-            torch.save({'schema':'hro_relaxation_readout_v1','config':asdict(ref.backbone.config),
+            torch.save({'schema':self.SCHEMA,'config':asdict(ref.backbone.config),
                 'training_ids':self.training_ids,'reference_rank':ref.readout.rank,
                 'stage2_rank':stage.stage2_readout.rank,'preserve_spatial_mean':stage.preserve_spatial_mean,
                 'volume_scaling':isinstance(self.response,VolumeRelaxationMeanReadout),
@@ -135,7 +141,7 @@ class RelaxationReadoutOperator(nn.Module):
     @classmethod
     def load(cls,path):
         value=torch.load(path,weights_only=True)
-        if value['schema']!='hro_relaxation_readout_v1':raise ValueError('Unknown response checkpoint')
+        if value['schema']!=cls.SCHEMA:raise ValueError('Unknown response checkpoint')
         prefix='reference.reference.backbone.'
         base={k[len(prefix):]:w for k,w in value['weights'].items() if k.startswith(prefix)}
         with torch.random.fork_rng(devices=[]):

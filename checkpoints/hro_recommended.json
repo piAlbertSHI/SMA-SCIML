@@ -1,0 +1,41 @@
+{
+  "method": "HRO with error-scaled thermal response",
+  "loader": "SciML.models.v13.risk_limited_readout.RiskLimitedRelaxationOperator",
+  "selection": "all three fixed seeds retained; no best-test-seed selection",
+  "checkpoints": [
+    {
+      "seed": 20261121,
+      "path": "evidence/local_studies/sma_risk_limited_readout/formal/s20261121/model.pt",
+      "sha256": "6e06abfdb291d6843aea465c499a7536f6cf1110c330da756057647fb27d5a5d"
+    },
+    {
+      "seed": 20261122,
+      "path": "evidence/local_studies/sma_risk_limited_readout/formal/s20261122/model.pt",
+      "sha256": "4ba0e489d0f84ee81fa4419f6ab608e0b1d766793a4f14e401572b86d7c1781f"
+    },
+    {
+      "seed": 20261123,
+      "path": "evidence/local_studies/sma_risk_limited_readout/formal/s20261123/model.pt",
+      "sha256": "446c08a4d6874bcb1f3f2f78ae5bb4db3f27a84197f65ba927ff51b9fe5bcb32"
+    }
+  ],
+  "reference": "evidence/local_studies/sma_stage_readout/formal",
+  "evaluation_scope": "historical development regression, not independent confirmation",
+  "evidence": {
+    "evidence/local_studies/sma_risk_limited_readout/formal/summary.json": "853d9f895bf44faad81525429b6bab3d0efae752673e7e5adcb19f1ff6f9ac9e",
+    "evidence/local_studies/sma_risk_limited_readout/formal/protocol.json": "5824288de54b4776ccd08c2f503351b72a6772b4dcbd09f3e630b6a1259982d4",
+    "evidence/local_studies/sma_risk_limited_readout/verification.json": "ad7d90d0791efd01e71644cd5eb1093737f2b0d3727e8bb5713827d0ed249a4b",
+    "evidence/local_studies/sma_risk_limited_readout/unit_tests.json": "2b3a7f2a20d0000c9166fe906ece4c5b05d3898728dbfe58f1611241e248b7ba",
+    "evidence/local_studies/sma_risk_limited_readout/acceptance_verification.json": "377849dcf7170144ab27bdac47d91a276f39861cc35d987b80b8865d5925dbf6",
+    "evidence/local_studies/sma_risk_limited_readout/fit_interface_verification.json": "a629a071c1d8e73152107ab8be74d167a7ab0514e6389538d1f321aaad37a789"
+  },
+  "promotion_gate": {
+    "all_test_mean_improves": true,
+    "every_segment_seed_mean_nonregressing": true,
+    "worst_seed_all_test_nonregressing": true,
+    "case_A_first_two_cycles_recover_modal_accuracy": true,
+    "state_fluid_initial_stage4_exact": true
+  },
+  "individual_seed_regressions": 2,
+  "report": "docs/HRO_ERROR_SCALED_RESPONSE.md"
+}

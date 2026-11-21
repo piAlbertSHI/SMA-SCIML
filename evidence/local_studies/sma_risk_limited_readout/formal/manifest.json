@@ -1,0 +1,26 @@
+{
+  "artifacts": {
+    "protocol.json": "5824288de54b4776ccd08c2f503351b72a6772b4dcbd09f3e630b6a1259982d4",
+    "summary.json": "853d9f895bf44faad81525429b6bab3d0efae752673e7e5adcb19f1ff6f9ac9e",
+    "s20261121/calibration.pt": "f827593fee1443de8aa669bf66c38a936cca649eaeeb693347f4f7dbe0537466",
+    "s20261121/evaluation.json": "a32a653433e457f59ad31cefeb359149a54096f4edefbb897cda82ba0d53e21c",
+    "s20261121/fit.json": "d6d0d750a0aacd79406247eb1e9b65c1377ebaa4ce2f120e23b671fe2e0815a0",
+    "s20261121/model.pt": "6e06abfdb291d6843aea465c499a7536f6cf1110c330da756057647fb27d5a5d",
+    "s20261121/test_predictions.npz": "a43f82eb5a743a462073174768ffb465f18574ad306c9e2b19856c813f62f158",
+    "s20261122/calibration.pt": "0cff4e0d463f29d77b776911ef3a6463407725be88959754b0c053bf663c42e3",
+    "s20261122/evaluation.json": "b878d32a0922df11262ee52f3ea1fbdc9e156d6212b18872a4c0c7a1e5b04233",
+    "s20261122/fit.json": "225091f00d51667ae558efd99bd526b2a945348c51263e7363220e3086b2b447",
+    "s20261122/model.pt": "4ba0e489d0f84ee81fa4419f6ab608e0b1d766793a4f14e401572b86d7c1781f",
+    "s20261122/test_predictions.npz": "d742ecac60753259c70325817553ff1fad225274dee2dd62cae320090ce7b1f7",
+    "s20261123/calibration.pt": "9a49c90b333bacdc4ef252527e740ea82f642cd6fbc8a3f42be9d330b806d778",
+    "s20261123/evaluation.json": "4e8f625d6206423110267d09b55839d253439810e6213c30100693ea9956436b",
+    "s20261123/fit.json": "8348a31876fd602992b268d49d280d5d5d6893023797fbdbe054675b71262bf6",
+    "s20261123/model.pt": "446c08a4d6874bcb1f3f2f78ae5bb4db3f27a84197f65ba927ff51b9fe5bcb32",
+    "s20261123/test_predictions.npz": "d6eb9361cb5734a053be431aaa817353b19dce200dfe450ba0cbf0630ea9bfca",
+    "source/examples/formal_relaxation_readout.py": "e4e1711f15a07dd75c4078dd8374d26f4eb72a88c645388cfbfcfa51bc072d0c",
+    "source/examples/formal_risk_limited_readout.py": "b4c417f2b796bcb099d57f27b4a668351e18d5518884715f8e3263447e3b74ca",
+    "source/examples/risk_limited_readout_study.py": "b0c8ecf5cfbf81f505125fe4a265cc1c1d7e8ecde78553413fac302e30ac9147",
+    "source/SciML/models/v13/relaxation_readout.py": "1f6a3cfa50ef050c6c21cb4247b0260488367eb8ac131c4d27e4c1755ec0a9e3",
+    "source/SciML/models/v13/risk_limited_readout.py": "e5ddd4c9b93d8e3aac2493d70a9a5f28cfee282d75a3a23e1276fe6eba2ebcea"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "central": {
+    "rate": 1.578984067922626,
+    "fit_mean_rmse_K": 0.3460416075527934,
+    "objective_evaluations": 17,
+    "samples": 16,
+    "rate_at_numerical_bound": false,
+    "rate_interpretation": "effective normalized relaxation, not an identified physical heat-transfer coefficient"
+  },
+  "case_deletions": [
+    {
+      "deleted_case_index": 0,
+      "validation_cycles": [
+        1,
+        2
+      ],
+      "fit": {
+        "rate": 1.5746788599623336,
+        "fit_mean_rmse_K": 0.36223581563596835,
+        "objective_evaluations": 15,
+        "samples": 14,
+        "rate_at_numerical_bound": false,
+        "rate_interpretation": "effective normalized relaxation, not an identified physical heat-transfer coefficient"
+      },
+      "response_mean_rmse_K": 0.19975166709350056
+    },
+    {
+      "deleted_case_index": 1,
+      "validation_cycles": [
+        1,
+        2
+      ],
+      "fit": {
+        "rate": 1.5955332163241984,
+        "fit_mean_rmse_K": 0.3504333187350697,
+        "objective_evaluations": 15,
+        "samples": 14,
+        "rate_at_numerical_bound": false,
+        "rate_interpretation": "effective normalized relaxation, not an identified physical heat-transfer coefficient"
+      },
+      "response_mean_rmse_K": 0.3237813268275168
+    },
+    {
+      "deleted_case_index": 2,
+      "validation_cycles": [
+        1,
+        2
+      ],
+      "fit": {
+        "rate": 1.566046957325565,
+        "fit_mean_rmse_K": 0.3569666889855028,
+        "objective_evaluations": 14,
+        "samples": 14,
+        "rate_at_numerical_bound": false,
+        "rate_interpretation": "effective normalized relaxation, not an identified physical heat-transfer coefficient"
+      },
+      "response_mean_rmse_K": 0.26463297678505837
+    },
+    {
+      "deleted_case_index": 3,
+      "validation_cycles": [
+        1,
+        2
+      ],
+      "fit": {
+        "rate": 1.589352522844872,
+        "fit_mean_rmse_K": 0.3542400737480402,
+        "objective_evaluations": 13,
+        "samples": 14,
+        "rate_at_numerical_bound": false,
+        "rate_interpretation": "effective normalized relaxation, not an identified physical heat-transfer coefficient"
+      },
+      "response_mean_rmse_K": 0.2865623515095565
+    },
+    {
+      "deleted_case_index": 4,
+      "validation_cycles": [
+        1,
+        2
+      ],
+      "fit": {
+        "rate": 1.616227354782894,
+        "fit_mean_rmse_K": 0.29215682796325443,
+        "objective_evaluations": 14,
+        "samples": 14,
+        "rate_at_numerical_bound": false,
+        "rate_interpretation": "effective normalized relaxation, not an identified physical heat-transfer coefficient"
+      },
+      "response_mean_rmse_K": 0.6268643766020552
+    },
+    {
+      "deleted_case_index": 5,
+      "validation_cycles": [
+        1,
+        2
+      ],
+      "fit": {
+        "rate": 1.549282855771764,
+        "fit_mean_rmse_K": 0.3079193252485173,
+        "objective_evaluations": 15,
+        "samples": 14,
+        "rate_at_numerical_bound": false,
+        "rate_interpretation": "effective normalized relaxation, not an identified physical heat-transfer coefficient"
+      },
+      "response_mean_rmse_K": 0.561988944163424
+    },
+    {
+      "deleted_case_index": 6,
+      "validation_cycles": [
+        1,
+        2
+      ],
+      "fit": {
+        "rate": 1.5787260225522928,
+        "fit_mean_rmse_K": 0.3676492250248792,
+        "objective_evaluations": 17,
+        "samples": 14,
+        "rate_at_numerical_bound": false,
+        "rate_interpretation": "effective normalized relaxation, not an identified physical heat-transfer coefficient"
+      },
+      "response_mean_rmse_K": 0.10861989845253939
+    },
+    {
+      "deleted_case_index": 7,
+      "validation_cycles": [
+        1,
+        2
+      ],
+      "fit": {
+        "rate": 1.5618360597740255,
+        "fit_mean_rmse_K": 0.3556350523535241,
+        "objective_evaluations": 13,
+        "samples": 14,
+        "rate_at_numerical_bound": false,
+        "rate_interpretation": "effective normalized relaxation, not an identified physical heat-transfer coefficient"
+      },
+      "response_mean_rmse_K": 0.2824130416875714
+    }
+  ],
+  "scale_aggregation": "sqrt(mean_case(mean_cycle(response_error_squared))) at each native time",
+  "backbone_scope": "frozen backbone saw all fit cases; deletion applies only to response-rate fit",
+  "coverage_calibrated": false
+}

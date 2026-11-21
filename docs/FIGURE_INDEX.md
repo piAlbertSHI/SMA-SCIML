@@ -11,6 +11,8 @@ Figures are generated from recorded numerical arrays. The operator comparison in
 | Configuration A / 配置 A | [PNG](../assets/showcase/field_atlas_1.png), [SVG](../assets/showcase/field_atlas_1.svg) | All six exchange segments with shared scales / 六段换热，两类模型共用色标 |
 | Configuration B / 配置 B | [PNG](../assets/showcase/field_atlas_2.png), [SVG](../assets/showcase/field_atlas_2.svg) | Second three-cycle test case, same seed rule / 第二三循环测试工况，同一种子规则 |
 | Offline explorer / 离线交互 | [HTML](../assets/showcase/explorer.html) | Trained HRO fields rounded to4decimals; mock-DOM checked, real-browser QA pending / HRO四位小数场，模拟逻辑已检查、真实浏览器待验收 |
+| Error-scaled thermal response / 误差收缩热响应 | [PNG](../assets/sma_risk_limited_readout/architecture.png), [SVG](../assets/sma_risk_limited_readout/architecture.svg) | Frozen HRO and added mean readout / 冻结主干与新增均温读出 |
+| Stage-2 SMA fields / 第二阶段 SMA 场 | [PNG](../assets/sma_risk_limited_readout/four_segments.png), [SVG](../assets/sma_risk_limited_readout/four_segments.svg) | Four target segments, three fixed seeds, native grid / 四个目标换热段，三固定种子，原生网格 |
 
 [Formal gallery generator / 正式结果展示生成器](../examples/field_showcase.py) · [Source manifest / 素材清单](../assets/showcase/manifest.json)
 
