@@ -1,0 +1,23 @@
+{
+  "status": "verified_relaxation_candidate_with_disclosed_regression",
+  "checkpoints_replayed": 3,
+  "internal_scores_replayed": 7,
+  "local_inner_backbones_available": 2,
+  "legacy_thickness_fit_replayed_from_bound_source": true,
+  "max_prediction_replay_difference_K": 0.0,
+  "max_rate_refit_difference": 0.0,
+  "max_internal_metric_difference_K": 0.0,
+  "baseline_checkpoint_weights_unchanged": true,
+  "state_fluid_initial_stage4_exact": true,
+  "candidate_promoted": false,
+  "promotion_gate": {
+    "all_test_mean_improves": true,
+    "every_segment_seed_mean_nonregressing": false,
+    "worst_seed_all_test_nonregressing": true,
+    "case_A_first_two_cycles_recover_modal_accuracy": true,
+    "state_fluid_initial_stage4_exact": true
+  },
+  "individual_seed_regressions": 6,
+  "fresh_solver_calls": 0,
+  "neural_training_updates": 0
+}

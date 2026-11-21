@@ -1,0 +1,110 @@
+{
+  "candidate_promoted": false,
+  "overall_before_K": {
+    "mean": 0.899921118989,
+    "sd": 0.07542009998763653,
+    "values": [
+      0.933040023391351,
+      0.9531151262757669,
+      0.8136082072998818
+    ]
+  },
+  "overall_after_K": {
+    "mean": 0.816348491699009,
+    "sd": 0.05815503816790054,
+    "values": [
+      0.8579478565134047,
+      0.8412010611485277,
+      0.7498965574350945
+    ]
+  },
+  "failed_segment_means": [
+    {
+      "case_id": "confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c",
+      "cycle": 2,
+      "stage": 2,
+      "before": {
+        "mean": 0.14135862182667006,
+        "sd": 0.03715159770996673,
+        "values": [
+          0.18356857937229226,
+          0.11362183897044516,
+          0.1268854471372728
+        ]
+      },
+      "after": {
+        "mean": 0.1607622038505557,
+        "sd": 0.020700453656036365,
+        "values": [
+          0.17325776947116595,
+          0.1368677666425616,
+          0.17216107543793963
+        ]
+      }
+    }
+  ],
+  "individual_seed_regressions": [
+    {
+      "seed": 20261121,
+      "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "cycle": 3,
+      "stage": 2,
+      "before_K": 0.28270547411839114,
+      "before_bias_K": 0.17422962742974046,
+      "after_K": 0.29947426605645366,
+      "after_bias_K": 0.20661578674498754
+    },
+    {
+      "seed": 20261121,
+      "case_id": "confirm_temporal12_10_confirm50_recas_047_r40_t200_p1584_v1019_t2p4_1c_2c",
+      "cycle": 2,
+      "stage": 2,
+      "before_K": 0.19512427067854163,
+      "before_bias_K": 0.03179338800565491,
+      "after_K": 0.21307011645417834,
+      "after_bias_K": 0.09810146029926088
+    },
+    {
+      "seed": 20261121,
+      "case_id": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c",
+      "cycle": 3,
+      "stage": 2,
+      "before_K": 0.8916593549683005,
+      "before_bias_K": 0.6554312675222224,
+      "after_K": 1.0082144522828742,
+      "after_bias_K": 0.8209879635881331
+    },
+    {
+      "seed": 20261122,
+      "case_id": "confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c",
+      "cycle": 2,
+      "stage": 2,
+      "before_K": 0.11362183897044516,
+      "before_bias_K": 0.01844871874294917,
+      "after_K": 0.1368677666425616,
+      "after_bias_K": 0.07640094514829485
+    },
+    {
+      "seed": 20261123,
+      "case_id": "confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c",
+      "cycle": 2,
+      "stage": 2,
+      "before_K": 0.1268854471372728,
+      "before_bias_K": 0.04663764217982176,
+      "after_K": 0.17216107543793963,
+      "after_bias_K": 0.11718076450633558
+    },
+    {
+      "seed": 20261123,
+      "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "cycle": 3,
+      "stage": 2,
+      "before_K": 0.29192619514663853,
+      "before_bias_K": -0.0189039210868859,
+      "after_K": 0.30215829793274007,
+      "after_bias_K": 0.10472189255135951
+    }
+  ],
+  "display_selection": "target case A first two cycles plus the single failed segment, disclosed after scoring",
+  "data_sha256": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f"
+}

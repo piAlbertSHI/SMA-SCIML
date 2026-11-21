@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "tests_run": 81,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "modules": [
+    "SciML.tests.test_learning_coordinate_operator",
+    "SciML.tests.test_learning_ensemble",
+    "SciML.tests.test_learning_pinn_inverse",
+    "SciML.tests.test_learning_pool_loop",
+    "SciML.tests.test_learning_design_loop",
+    "SciML.tests.test_learning_exercises",
+    "SciML.tests.test_acquisition_diversity",
+    "SciML.tests.test_multistep_historical",
+    "SciML.tests.test_hierarchical_operator",
+    "SciML.tests.test_formal_hierarchical",
+    "SciML.tests.test_modal_operator",
+    "SciML.tests.test_selective_sma",
+    "SciML.tests.test_thermal_readout",
+    "SciML.tests.test_stage_thermal_readout",
+    "SciML.tests.test_mean_thermal_readout",
+    "SciML.tests.test_thermal_geometry",
+    "SciML.tests.test_relaxation_readout"
+  ],
+  "seconds": 11.199881799999275,
+  "log_sha256": "6c8e596eb85832183ad213a50680ff4eb970c87426e505d8ce297ed5a5bf6106"
+}

@@ -1,0 +1,16 @@
+{
+  "artifacts": {
+    "protocol.json": "0867a53013b77bbfa26d0aa001cd32a05f8e6715ee5498e42ac9fafc99b96d0d",
+    "summary.json": "20b42234f57b446a553d7abbad05a149ad6d12ab463b9b34bc1839131cb896a4",
+    "fold1/autonomous_thermal_response/readout.pt": "8ce9526f062ddfd6bf54560869701355666526e937e9771ec0178c433e5795e4",
+    "fold1/autonomous_thermal_response/validation.pt": "85f4c2429839cb4887345f385503f237f7f3e4871cb1cf433d4e5507dd37db7e",
+    "fold1/observed_thermal_response/readout.pt": "2cc7c655f3c675de16b9eb9c10135d757970321e7c13c671cea1c85a6fd266fb",
+    "fold1/observed_thermal_response/validation.pt": "08b3dd765dfeb91f9ae23004388de35b84f03bade2f33f70297a755db69bfe9d",
+    "fold2/autonomous_thermal_response/readout.pt": "b6e7aecbff19890af76853db431747663b15d1fac6b996ca72752eb729b8327d",
+    "fold2/autonomous_thermal_response/validation.pt": "3ef9b6cf37ed9ebe9542151e5e60afcb0704197904509244405dafc9a6253f43",
+    "source/examples/mean_readout_study.py": "de547549ddb340343ecaa11dbaed5d724fb4859a14e5dbb1973dd9389996da89",
+    "source/examples/relaxation_readout_study.py": "b9001b9761615e73e72786ee544d039ffb1247076e74ceb271d7601efbecb422",
+    "source/examples/stage_readout_study.py": "5966874e7706420480d5abaf40ea0d4038a191cb77996edbb8fe56130529cabe",
+    "source/SciML/models/v13/relaxation_readout.py": "e5d53d7d38965a1dddd0082a442f7c9729a4f20028bdb47e841ced07dc6cf7b1"
+  }
+}

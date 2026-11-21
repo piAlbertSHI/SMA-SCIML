@@ -1,0 +1,18 @@
+{
+  "artifacts": {
+    "analysis.json": "ce7b98e063e4c7e6a4fdb122cfed3b2ffef33f97f45c5260dbc3e143cf7cc8cf",
+    "response_fields.png": "fbc776dc357e135cde357b17222123574b027d357f40398c0e3ef36ca315d463",
+    "response_fields.svg": "a0c36c39248309b1dee3de6fb5b18b75d86e5bd362b3991cb2263dec48b80db5"
+  },
+  "input_sha256": {
+    "evidence/local_studies/sma_relaxation_readout/formal/summary.json": "fd346912b20a7089fd2e234e0515814e5e96a512854a3066e54df2722277b0fa",
+    "data/historical12_state.npz": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "evidence/local_studies/sma_stage_readout/formal/s20261121/test_predictions.npz": "06627f7def118fd43d174efb8d9b91b69a862ce9fa09838b9a918195f52ad32e",
+    "evidence/local_studies/sma_relaxation_readout/formal/s20261121/test_predictions.npz": "8a4fb49f319abf9199b6dfa7ee04fea5567884f4d4204135a967a8407a6b33c6",
+    "evidence/local_studies/sma_stage_readout/formal/s20261122/test_predictions.npz": "4fac49f4f1814debde52756e8f7559ad58d3797f8bd77f7fc60f8d0d912f2d4f",
+    "evidence/local_studies/sma_relaxation_readout/formal/s20261122/test_predictions.npz": "18c92113049c969b763f500542aeccf0391da1fc4f456ab3ade843eed3bae5fa",
+    "evidence/local_studies/sma_stage_readout/formal/s20261123/test_predictions.npz": "dc5754d554183d4b41ada23a1042616e3bdb9ee64badf61bd27107502df35ac2",
+    "evidence/local_studies/sma_relaxation_readout/formal/s20261123/test_predictions.npz": "8dc5cb1babddbe7cfe821d71aae484bc6676809c8fff7cda0a601a495a23e2e9"
+  },
+  "generator_sha256": "42d76bfc82cfc17db9d097810b290888714218dd5c5d58f0fe2322238c64ba9b"
+}

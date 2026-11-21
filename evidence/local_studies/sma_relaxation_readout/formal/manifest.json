@@ -1,0 +1,22 @@
+{
+  "artifacts": {
+    "protocol.json": "ea2b972d88b3e827ca1ee83b93b70a45773227124ee1824aea4c36ae90efe21b",
+    "summary.json": "fd346912b20a7089fd2e234e0515814e5e96a512854a3066e54df2722277b0fa",
+    "s20261121/evaluation.json": "4545afde2a5d5c61e86ea271bc013cd793faff32f48bf5ba572a1950d541285a",
+    "s20261121/fit.json": "5dd7a9ea5766be9c0796a4acb68817f18d8b93ffb91f3bbef06275c55fa27f74",
+    "s20261121/model.pt": "ee7a26705e6fc0722005585cd5cfe9afc93df458fa35bc3ea412510a3390d1cf",
+    "s20261121/test_predictions.npz": "8a4fb49f319abf9199b6dfa7ee04fea5567884f4d4204135a967a8407a6b33c6",
+    "s20261122/evaluation.json": "cf7cf1261aa6d7673717fd640dc94aa5d2f70a086bb2ccf964a8347862bca0e3",
+    "s20261122/fit.json": "f40dddd164eecaea47f9962972c4bc96b1185223f3b81bc19b0c9edfa6c4f5c5",
+    "s20261122/model.pt": "7273690e884c6e7f3b535e813de314c11ee861ac1f655a84eefc9f0a3a4f2a47",
+    "s20261122/test_predictions.npz": "18c92113049c969b763f500542aeccf0391da1fc4f456ab3ade843eed3bae5fa",
+    "s20261123/evaluation.json": "dc73fd2f01eb05b7b10e9133bcb4bc2de1f3643a4e94facc228e9b538e0169ca",
+    "s20261123/fit.json": "4e7295db09a7fc660ddfbb31a36fbd4645d1321ffad2e692caa1d9f64af4ffd5",
+    "s20261123/model.pt": "8c2d5933e8d7e8c5f35f607b1d4ea8293249b12146bf3c97b3c8ec83767ac04a",
+    "s20261123/test_predictions.npz": "8dc5cb1babddbe7cfe821d71aae484bc6676809c8fff7cda0a601a495a23e2e9",
+    "source/examples/formal_relaxation_readout.py": "ad90ba60604bb325a4484eea8918a0ba56f7500f40f919ff7ff8d2aa8320e65c",
+    "source/examples/relaxation_readout_study.py": "c259986c38d796d8eb2fdc892c156a4e67c115dba5a0deb5d474be08d9933aaa",
+    "source/examples/stage_readout_study.py": "5966874e7706420480d5abaf40ea0d4038a191cb77996edbb8fe56130529cabe",
+    "source/SciML/models/v13/relaxation_readout.py": "565a63ffdc942992464493f35adf856083f03ad481119a9062754d1a1fd9c423"
+  }
+}

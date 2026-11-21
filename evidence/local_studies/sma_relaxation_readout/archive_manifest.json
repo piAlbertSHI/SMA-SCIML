@@ -1,0 +1,93 @@
+{
+  "runs": {
+    "thickness_development": {
+      "source": "run-output-sma-relaxation-development",
+      "copied_files": {
+        "manifest.json": "8de9ad0c55a01890f3c81bd2b1588dc7780ac6dedea47e7ae34256e09f5e614d",
+        "protocol.json": "771c5d145431cdedd48bd2a13020ee30ccfc0fc9792737ff10de993a047083af",
+        "summary.json": "65e22dd46e7d58937c8293c889815a11639643f50ba7115641486a44d51490d0",
+        "fold1/autonomous_thermal_response/readout.pt": "8cb84a4efd4e68aff0d11e63c7507dfe53524308e6cde6d36cbe3506fca062ff",
+        "fold1/autonomous_thermal_response/validation.pt": "b2c2492f5ce87e9f1f995735ac2b4c06147ff1ca62c6d8c2a93d13064ba94778",
+        "fold1/observed_thermal_response/readout.pt": "b27e1f0625968606b3b5b5fcef5e249fd37bbe39b915440641d6939acbe6c15e",
+        "fold1/observed_thermal_response/validation.pt": "abdbeb60f6dea3763770919e9fabe208d9e5d74e953db0f3c7baad6fcc89612c",
+        "source/examples/mean_readout_study.py": "de547549ddb340343ecaa11dbaed5d724fb4859a14e5dbb1973dd9389996da89",
+        "source/examples/relaxation_readout_study.py": "efb5a4be591d646763c9f30b8c5e3485d02b07f9aa6b1b2621d03c21e51ea6d0",
+        "source/examples/stage_readout_study.py": "5966874e7706420480d5abaf40ea0d4038a191cb77996edbb8fe56130529cabe",
+        "source/SciML/models/v13/relaxation_readout.py": "48f3cf81c9ad3ab88cb18271d08dc15e92470c771062cc4ebdf12e06f9b67133"
+      }
+    },
+    "failure_diagnosis": {
+      "source": "run-output-sma-relaxation-diagnosis",
+      "copied_files": {
+        "analysis.json": "41e41be76f75bb2a62b6f96d21e49c8f2554357d2cc2256e872c53054071b234",
+        "manifest.json": "e7723c26481720e3bbbdf924db4729fb3fbc2a4e57864e3afc54e149e0103856"
+      }
+    },
+    "volume_development": {
+      "source": "run-output-sma-volume-relaxation-development",
+      "copied_files": {
+        "manifest.json": "435a8805e14e421a0208ef6ba2f40a13654c743596097dd62fe355bfb24c3650",
+        "protocol.json": "0867a53013b77bbfa26d0aa001cd32a05f8e6715ee5498e42ac9fafc99b96d0d",
+        "summary.json": "20b42234f57b446a553d7abbad05a149ad6d12ab463b9b34bc1839131cb896a4",
+        "fold1/autonomous_thermal_response/readout.pt": "8ce9526f062ddfd6bf54560869701355666526e937e9771ec0178c433e5795e4",
+        "fold1/autonomous_thermal_response/validation.pt": "85f4c2429839cb4887345f385503f237f7f3e4871cb1cf433d4e5507dd37db7e",
+        "fold1/observed_thermal_response/readout.pt": "2cc7c655f3c675de16b9eb9c10135d757970321e7c13c671cea1c85a6fd266fb",
+        "fold1/observed_thermal_response/validation.pt": "08b3dd765dfeb91f9ae23004388de35b84f03bade2f33f70297a755db69bfe9d",
+        "fold2/autonomous_thermal_response/readout.pt": "b6e7aecbff19890af76853db431747663b15d1fac6b996ca72752eb729b8327d",
+        "fold2/autonomous_thermal_response/validation.pt": "3ef9b6cf37ed9ebe9542151e5e60afcb0704197904509244405dafc9a6253f43",
+        "source/examples/mean_readout_study.py": "de547549ddb340343ecaa11dbaed5d724fb4859a14e5dbb1973dd9389996da89",
+        "source/examples/relaxation_readout_study.py": "b9001b9761615e73e72786ee544d039ffb1247076e74ceb271d7601efbecb422",
+        "source/examples/stage_readout_study.py": "5966874e7706420480d5abaf40ea0d4038a191cb77996edbb8fe56130529cabe",
+        "source/SciML/models/v13/relaxation_readout.py": "e5d53d7d38965a1dddd0082a442f7c9729a4f20028bdb47e841ced07dc6cf7b1"
+      }
+    },
+    "damped_development": {
+      "source": "run-output-sma-damped-relaxation-development",
+      "copied_files": {
+        "manifest.json": "6274232bd68039476ec248aebbd05e2f9bd92af682153c197fc3e74176fdf243",
+        "protocol.json": "ccdf912d7cdeb6cbff17e290a5e427c278331c86c06df7d3fd3a77c08f2b2eef",
+        "summary.json": "315cf762c80574374f08282344d1fcc74bf27d722f06bdeb0e68ff0bf3e2b320",
+        "fold1/autonomous_thermal_response/readout.pt": "218a3244699d0d47d499c6c5d9f5bf9eae6ade509fd87e4ca82d794c553e67be",
+        "fold1/autonomous_thermal_response/validation.pt": "bb4e8789fdfeaf3508a2180d02907abaad686a1b607b94ac8047450b0994be5a",
+        "fold2/autonomous_thermal_response/readout.pt": "4870c308551d39de83e113f752414687fd143ee26520e65d4de8d4b49fa8f0a6",
+        "fold2/autonomous_thermal_response/validation.pt": "8450fbe046b1f1135506a219abd40dd7cb7452effd3d6d7b560a6577bc13500b",
+        "source/examples/mean_readout_study.py": "de547549ddb340343ecaa11dbaed5d724fb4859a14e5dbb1973dd9389996da89",
+        "source/examples/relaxation_readout_study.py": "c259986c38d796d8eb2fdc892c156a4e67c115dba5a0deb5d474be08d9933aaa",
+        "source/examples/stage_readout_study.py": "5966874e7706420480d5abaf40ea0d4038a191cb77996edbb8fe56130529cabe",
+        "source/SciML/models/v13/relaxation_readout.py": "e5d53d7d38965a1dddd0082a442f7c9729a4f20028bdb47e841ced07dc6cf7b1"
+      }
+    },
+    "formal": {
+      "source": "run-output-sma-relaxation-formal",
+      "copied_files": {
+        "manifest.json": "e47ba99989374b1c8811087d56bf344b28952dd035b6feb5a981ee5d1bb184ee",
+        "protocol.json": "ea2b972d88b3e827ca1ee83b93b70a45773227124ee1824aea4c36ae90efe21b",
+        "summary.json": "fd346912b20a7089fd2e234e0515814e5e96a512854a3066e54df2722277b0fa",
+        "s20261121/evaluation.json": "4545afde2a5d5c61e86ea271bc013cd793faff32f48bf5ba572a1950d541285a",
+        "s20261121/fit.json": "5dd7a9ea5766be9c0796a4acb68817f18d8b93ffb91f3bbef06275c55fa27f74",
+        "s20261121/model.pt": "ee7a26705e6fc0722005585cd5cfe9afc93df458fa35bc3ea412510a3390d1cf",
+        "s20261121/test_predictions.npz": "8a4fb49f319abf9199b6dfa7ee04fea5567884f4d4204135a967a8407a6b33c6",
+        "s20261122/evaluation.json": "cf7cf1261aa6d7673717fd640dc94aa5d2f70a086bb2ccf964a8347862bca0e3",
+        "s20261122/fit.json": "f40dddd164eecaea47f9962972c4bc96b1185223f3b81bc19b0c9edfa6c4f5c5",
+        "s20261122/model.pt": "7273690e884c6e7f3b535e813de314c11ee861ac1f655a84eefc9f0a3a4f2a47",
+        "s20261122/test_predictions.npz": "18c92113049c969b763f500542aeccf0391da1fc4f456ab3ade843eed3bae5fa",
+        "s20261123/evaluation.json": "dc73fd2f01eb05b7b10e9133bcb4bc2de1f3643a4e94facc228e9b538e0169ca",
+        "s20261123/fit.json": "4e7295db09a7fc660ddfbb31a36fbd4645d1321ffad2e692caa1d9f64af4ffd5",
+        "s20261123/model.pt": "8c2d5933e8d7e8c5f35f607b1d4ea8293249b12146bf3c97b3c8ec83767ac04a",
+        "s20261123/test_predictions.npz": "8dc5cb1babddbe7cfe821d71aae484bc6676809c8fff7cda0a601a495a23e2e9",
+        "source/examples/formal_relaxation_readout.py": "ad90ba60604bb325a4484eea8918a0ba56f7500f40f919ff7ff8d2aa8320e65c",
+        "source/examples/relaxation_readout_study.py": "c259986c38d796d8eb2fdc892c156a4e67c115dba5a0deb5d474be08d9933aaa",
+        "source/examples/stage_readout_study.py": "5966874e7706420480d5abaf40ea0d4038a191cb77996edbb8fe56130529cabe",
+        "source/SciML/models/v13/relaxation_readout.py": "565a63ffdc942992464493f35adf856083f03ad481119a9062754d1a1fd9c423"
+      }
+    },
+    "capacity_audit": {
+      "source": "run-output-sma-exchange-capacity-audit",
+      "copied_files": {
+        "analysis.json": "032262ead8017fd2b10b550b941ba79817e9e9b2f7ee1b5e1dd36b952f567e0c"
+      }
+    }
+  },
+  "complete_run_copies": true,
+  "sources_retained": true
+}

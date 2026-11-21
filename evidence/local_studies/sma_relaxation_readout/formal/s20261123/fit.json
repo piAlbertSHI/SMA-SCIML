@@ -1,0 +1,8 @@
+{
+  "rate": 1.578984067922626,
+  "fit_mean_rmse_K": 0.3460416075527934,
+  "objective_evaluations": 17,
+  "samples": 16,
+  "rate_at_numerical_bound": false,
+  "rate_interpretation": "effective normalized relaxation, not an identified physical heat-transfer coefficient"
+}

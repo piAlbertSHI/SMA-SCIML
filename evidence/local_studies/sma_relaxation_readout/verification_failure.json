@@ -1,0 +1,17 @@
+{
+  "command": "python -m examples.verify_relaxation_readout --output evidence/local_studies/sma_relaxation_readout/verification.json",
+  "exit_code": 1,
+  "exception": "KeyError: geometry_scaling",
+  "cause": "The first immutable thickness-only development protocol predates the explicit geometry_scaling field.",
+  "repair": "Interpret that single legacy folder through its archived constructor source; retain all original protocols and numerical outputs.",
+  "scientific_gate_changed": false,
+  "experiment_restarted": false,
+  "subsequent_verifier_failure": {
+    "exit_code": 1,
+    "cause": "Current tensor geometry evaluation versus the original NumPy division order shifts the scalar optimizer result by 3.2644256187097653e-9, above the 1e-10 exact-refit check.",
+    "repair": "Refit the first immutable thickness experiment with its hash-bound archived class. Current volume-scaled checkpoints continue to refit with the current implementation.",
+    "verification_tolerance_changed": false,
+    "scientific_gate_changed": false,
+    "experiment_restarted": false
+  }
+}

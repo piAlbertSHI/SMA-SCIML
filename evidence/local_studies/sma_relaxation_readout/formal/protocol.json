@@ -1,0 +1,58 @@
+{
+  "candidate": "volume-scaled autonomous thermal response, fixed half blend",
+  "seeds": [
+    20261121,
+    20261122,
+    20261123
+  ],
+  "mean_scale": 0.5,
+  "fit_ids": [
+    "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+    "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+    "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+    "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+    "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+    "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c",
+    "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+    "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c"
+  ],
+  "data_sha256": {
+    "state": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "fields": "15f5cf30948efea558ba514cafea99f146dcdc13435b66b906e58d582a721096"
+  },
+  "development_sha256": "315cf762c80574374f08282344d1fcc74bf27d722f06bdeb0e68ff0bf3e2b320",
+  "internal_public_inference_checks": [
+    {
+      "fold": 1,
+      "public_inference_gate_passed": true,
+      "max_cached_live_difference_K": 2.2737367544323206e-13
+    },
+    {
+      "fold": 2,
+      "public_inference_gate_passed": true,
+      "max_cached_live_difference_K": 2.2737367544323206e-13
+    }
+  ],
+  "checkpoint_sha256": {
+    "evidence/local_studies/sma_stage_readout/formal/s20261121/model.pt": "2c0b3d32da2e8dc5aab8cf745fb7ac7837913da4563799179c0bb8668b09c944",
+    "evidence/local_studies/sma_stage_readout/formal/s20261122/model.pt": "9c7bcd761a00a937eabc778f9d0b37e60ede817982fe1edaccabd9b476032d40",
+    "evidence/local_studies/sma_stage_readout/formal/s20261123/model.pt": "13e129e12bd18e126b3ad5d7323b0a8536d8a141755843f8272c7751d353bf7b"
+  },
+  "source_sha256": {
+    "SciML/models/v13/relaxation_readout.py": "565a63ffdc942992464493f35adf856083f03ad481119a9062754d1a1fd9c423",
+    "examples/formal_relaxation_readout.py": "ad90ba60604bb325a4484eea8918a0ba56f7500f40f919ff7ff8d2aa8320e65c",
+    "examples/relaxation_readout_study.py": "c259986c38d796d8eb2fdc892c156a4e67c115dba5a0deb5d474be08d9933aaa",
+    "examples/stage_readout_study.py": "5966874e7706420480d5abaf40ea0d4038a191cb77996edbb8fe56130529cabe"
+  },
+  "promotion_rules": [
+    "overall mean field RMSE decreases",
+    "every case/cycle/stage three-seed mean nonregresses",
+    "worst seed overall RMSE nonregresses",
+    "case A cycles 1 and 2 recover modal-only reference accuracy",
+    "state, fluid, initial field and stage4 exactly unchanged"
+  ],
+  "individual_seed_segment_errors": "all reported; no post-evaluation parameter changes",
+  "evaluation_status": "historical development regression, not untouched independent confirmation",
+  "fresh_solver_calls": 0,
+  "neural_training_updates": 0
+}

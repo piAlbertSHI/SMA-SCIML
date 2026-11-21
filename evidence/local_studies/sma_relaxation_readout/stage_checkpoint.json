@@ -1,0 +1,41 @@
+{
+  "goal_status": "active",
+  "candidate_promoted": false,
+  "numerical_objective_achieved": false,
+  "retained_baseline_commit": "3f4f4b6",
+  "candidate_before_K": {
+    "mean": 0.899921118989,
+    "sd": 0.07542009998763653,
+    "values": [
+      0.933040023391351,
+      0.9531151262757669,
+      0.8136082072998818
+    ]
+  },
+  "candidate_after_K": {
+    "mean": 0.816348491699009,
+    "sd": 0.05815503816790054,
+    "values": [
+      0.8579478565134047,
+      0.8412010611485277,
+      0.7498965574350945
+    ]
+  },
+  "promotion_gate": {
+    "all_test_mean_improves": true,
+    "every_segment_seed_mean_nonregressing": false,
+    "worst_seed_all_test_nonregressing": true,
+    "case_A_first_two_cycles_recover_modal_accuracy": true,
+    "state_fluid_initial_stage4_exact": true
+  },
+  "formal_summary_sha256": "fd346912b20a7089fd2e234e0515814e5e96a512854a3066e54df2722277b0fa",
+  "remaining_issue": "One stage2 segment three-seed mean regresses; six individual seed-segments regress. Keep this fixed candidate as evidence; do not retune it on historical scores.",
+  "fresh_solver_calls": 0,
+  "neural_training_updates": 0,
+  "github_pushes": 0,
+  "tests_passed": 81,
+  "verification_record": "verification.json",
+  "test_record": "unit_tests.json",
+  "fixed_regression_diagnosis": "fixed_regression_diagnosis/analysis.json",
+  "next_action": "Investigate training-only correction reliability and entry-error propagation under a new fixed protocol; retain the evaluated half-blend candidate unchanged."
+}

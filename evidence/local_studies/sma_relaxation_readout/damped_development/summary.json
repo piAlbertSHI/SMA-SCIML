@@ -1,0 +1,289 @@
+{
+  "status": "completed_relaxation_mean_development",
+  "selected_candidate": "autonomous_thermal_response",
+  "passed_both_folds": true,
+  "folds": [
+    {
+      "fold": 1,
+      "reference": {
+        "stage2_mean_rmse_K": 1.0223198183259465,
+        "segments": [
+          {
+            "case_index": 3,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 1.1731734223174901,
+            "bias_K": -1.133192430699749
+          },
+          {
+            "case_index": 7,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 0.6372750001338934,
+            "bias_K": 0.3636113241046255
+          },
+          {
+            "case_index": 3,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.7554283813918716,
+            "bias_K": 0.5972069991392426
+          },
+          {
+            "case_index": 7,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.859430858971666,
+            "bias_K": -0.5602709656079167
+          },
+          {
+            "case_index": 3,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 0.7863193038288809,
+            "bias_K": -0.7519527851879728
+          },
+          {
+            "case_index": 7,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 1.4925115470235215,
+            "bias_K": 1.379577378117524
+          },
+          {
+            "case_index": 3,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.6105645692427978,
+            "bias_K": 0.5185856856099758
+          },
+          {
+            "case_index": 7,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.7332527694619051,
+            "bias_K": -0.34811526286406885
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "candidate": "autonomous_thermal_response",
+          "metrics": {
+            "stage2_mean_rmse_K": 0.7152518459416226,
+            "segments": [
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.9593535577024614,
+                "bias_K": -0.8938504417767176
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.36386623763752174,
+                "bias_K": -0.09254770272755704
+              },
+              {
+                "case_index": 3,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.7554283813918716,
+                "bias_K": 0.5972069991392426
+              },
+              {
+                "case_index": 7,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.859430858971666,
+                "bias_K": -0.5602709656079167
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.5118946982071818,
+                "bias_K": -0.4467964960530616
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 1.0258928902193254,
+                "bias_K": 0.9163861069293586
+              },
+              {
+                "case_index": 3,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.6105645692427978,
+                "bias_K": 0.5185856856099758
+              },
+              {
+                "case_index": 7,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.7332527694619051,
+                "bias_K": -0.34811526286406885
+              }
+            ]
+          },
+          "fit": {
+            "rate": 1.5440989502952793,
+            "fit_mean_rmse_K": 0.38317020829878673,
+            "objective_evaluations": 15,
+            "samples": 12,
+            "rate_at_numerical_bound": false,
+            "rate_interpretation": "effective normalized relaxation, not an identified physical heat-transfer coefficient"
+          },
+          "passed": true
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "reference": {
+        "stage2_mean_rmse_K": 0.8773481092605074,
+        "segments": [
+          {
+            "case_index": 1,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 0.4252653469492752,
+            "bias_K": 0.1400645622710285
+          },
+          {
+            "case_index": 5,
+            "cycle": 1,
+            "stage": 2,
+            "rmse_K": 1.596811083352503,
+            "bias_K": 1.5081093379399346
+          },
+          {
+            "case_index": 1,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.4314443944641615,
+            "bias_K": 0.00022742792612512555
+          },
+          {
+            "case_index": 5,
+            "cycle": 1,
+            "stage": 4,
+            "rmse_K": 0.5520916451589454,
+            "bias_K": -0.3521168919425075
+          },
+          {
+            "case_index": 1,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 0.5694140177568713,
+            "bias_K": 0.491021972109076
+          },
+          {
+            "case_index": 5,
+            "cycle": 2,
+            "stage": 2,
+            "rmse_K": 0.9179019889833802,
+            "bias_K": 0.8522226578141551
+          },
+          {
+            "case_index": 1,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.5555050612370604,
+            "bias_K": -0.293967370678665
+          },
+          {
+            "case_index": 5,
+            "cycle": 2,
+            "stage": 4,
+            "rmse_K": 0.5801839059220675,
+            "bias_K": -0.4223737186959452
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "candidate": "autonomous_thermal_response",
+          "metrics": {
+            "stage2_mean_rmse_K": 0.7524347195594734,
+            "segments": [
+              {
+                "case_index": 1,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 0.3402271763075368,
+                "bias_K": -0.1579499825280123
+              },
+              {
+                "case_index": 5,
+                "cycle": 1,
+                "stage": 2,
+                "rmse_K": 1.4895440751756042,
+                "bias_K": 1.3931963297822707
+              },
+              {
+                "case_index": 1,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.4314443944641615,
+                "bias_K": 0.00022742792612512555
+              },
+              {
+                "case_index": 5,
+                "cycle": 1,
+                "stage": 4,
+                "rmse_K": 0.5520916451589454,
+                "bias_K": -0.3521168919425075
+              },
+              {
+                "case_index": 1,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.2891529679527253,
+                "bias_K": 0.21901752858267218
+              },
+              {
+                "case_index": 5,
+                "cycle": 2,
+                "stage": 2,
+                "rmse_K": 0.8908146588020271,
+                "bias_K": 0.8042564001847775
+              },
+              {
+                "case_index": 1,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.5555050612370604,
+                "bias_K": -0.293967370678665
+              },
+              {
+                "case_index": 5,
+                "cycle": 2,
+                "stage": 4,
+                "rmse_K": 0.5801839059220675,
+                "bias_K": -0.4223737186959452
+              }
+            ]
+          },
+          "fit": {
+            "rate": 1.5714409608566486,
+            "fit_mean_rmse_K": 0.3808210811668448,
+            "objective_evaluations": 15,
+            "samples": 12,
+            "rate_at_numerical_bound": false,
+            "rate_interpretation": "effective normalized relaxation, not an identified physical heat-transfer coefficient"
+          },
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "seconds": 2.927011100007803,
+  "historical_test_scored": false,
+  "fresh_solver_calls": 0,
+  "neural_training_updates": 0
+}
