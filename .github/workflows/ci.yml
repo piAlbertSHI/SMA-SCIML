@@ -37,6 +37,8 @@ jobs:
       - run: python -m examples.verify_risk_limited_readout
       - run: python -m unittest SciML.tests.test_loading_phase_weighted -v
       - run: python -m examples.loading_phase_weighted_study --verify evidence/local_studies/loading_phase_weighted_20261121
+      - run: python -m unittest SciML.tests.test_loading_phase_central -v
+      - run: python -m examples.loading_phase_central_study --verify evidence/local_studies/loading_phase_central_20261121
       - run: python -m examples.modal_showcase --output demo-output-ci-modal --no-animation
       - run: node examples/test_field_explorer.cjs
       - run: node examples/test_field_explorer.cjs assets/showcase/explorer.html

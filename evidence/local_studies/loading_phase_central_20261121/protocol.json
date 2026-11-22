@@ -1,0 +1,115 @@
+{
+  "study": "Central-radial correction for recAs near-saturation arrival",
+  "base_file_sha256": {
+    "loading_data.npz": "f0b9554de0b5a44202fc84badf5576f83fb914b88b23660d90e47d80010bdfe7",
+    "pod_ridge.npz": "bf72d6bd3e0a3aee9fd737ee8cc3fafce95e09bec372737ccb3bc917c3ef8a59",
+    "test_predictions.npz": "5a1365a7e62851a50899f9335b710b57fdfd329264685237638db2e073e87d15",
+    "protocol.json": "e77b5cfaca1825ca8201796e979fecbdf2f598aa57c3f4d300a907604193bc46",
+    "summary.json": "1d6a4e9c2f9a41db3123a8cfa4be7b9da5016dc8aee90dff5806646e1066d221"
+  },
+  "source_sha256": {
+    "examples/loading_phase_central_study.py": "63cea82a43f050f0fa0cabba27816a2d24f61ccec9848235c05b48ee17008507",
+    "examples/loading_phase_central_report.py": "9140bd82d120f8079a9e683d419425e1a909052f64ef6b0214e11121bde0e0e0",
+    "examples/loading_phase_weighted_study.py": "ed450f0ea2c3d367aace831c013bdc05dfd533834268adfde483cc52553f4846",
+    "SciML/models/v13/loading_phase_central.py": "c2558086a0215c878228ba5362168ed8fc7363dafe0dfd07bd9b84706f41f5ba",
+    "SciML/models/v13/loading_phase_weighted.py": "bff14bf101999840b4d8745d5a2c28926583095d8434567ed5896dfbfd61fe17",
+    "SciML/models/v13/loading_phase_reconstruction.py": "ec5a08e81d0ed35a371af1ee0c7aa4c5be5390b2ed882d72f373d33f1eca93e2",
+    "SciML/models/v13/loading_field_operator.py": "05477d4d26009eaed07f85718521f59550d4d19234f3e92c16254d0afd514b54"
+  },
+  "source_loading_protocol_sha256": "e77b5cfaca1825ca8201796e979fecbdf2f598aa57c3f4d300a907604193bc46",
+  "weighted_base_manifest_sha256": "b0cee485a0d17b1706b4bc30dd24d2a109c81dc7c1f93925fc9a6d05a74400c5",
+  "weighted_base_summary_sha256": "a2999b2a6f6c69eea003fd145b7a6cd5ba2adbbd2d053104183bbfec521c0c5f",
+  "case_counts": {
+    "train": 140,
+    "validation": 30,
+    "test": 30
+  },
+  "split_key": "sma-loading-stage-one/20261121",
+  "native_grid": [
+    50,
+    51
+  ],
+  "fit_time_indices": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38,
+    40,
+    42,
+    44,
+    46,
+    48,
+    49
+  ],
+  "fit_radius_indices": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38,
+    40,
+    42,
+    44,
+    46,
+    48,
+    50
+  ],
+  "frozen_pod_rank": 8,
+  "base_readout": "Selected saturation-weighted phase head, frozen before central correction.",
+  "central_threshold": 0.8,
+  "base_weight_strength": 100.0,
+  "central_radius_grid": [
+    0.32,
+    0.4
+  ],
+  "central_strength_grid": [
+    120.0,
+    200.0,
+    400.0
+  ],
+  "blend_grid": [
+    [
+      0.8,
+      0.95
+    ],
+    [
+      0.85,
+      0.95
+    ]
+  ],
+  "radial_smoothing": 0.04,
+  "selection": "Validation transition-band RMSE, then common-arrival MAE, then recAs 0.9 missed radial nodes.",
+  "arrival_threshold": 0.9,
+  "fresh_solver_calls": 0
+}

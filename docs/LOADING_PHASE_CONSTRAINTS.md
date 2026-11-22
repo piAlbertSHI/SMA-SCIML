@@ -60,6 +60,24 @@ On the test grid, phase RMSE falls from 0.003374 to 0.003314. The recAs transiti
 
 ![recAs 0.9-arrival errors and missed radial locations before and after near-saturation weighting](../evidence/local_studies/loading_phase_weighted_20261121/phase_saturation_arrival.png)
 
+## Central-side residual correction / 中心侧残余修正
+
+After near-saturation weighting, four recAs test trajectories still missed $\xi=0.9$. Their predicted final phase values were only slightly below the threshold. The $R=40$ mm, 1.590 MPa and $R=38$ mm, 1.588 MPa cases missed at $r/R=0.32$, while the $R=40$ mm, 1.496 MPa case missed at $r/R=0.10$ and $0.12$. / 近饱和加权后，recAs 测试仍有 4 条径向轨迹漏判 $\xi=0.9$。这些位置的末帧预测相分数仅略低于阈值。半径 40 mm、峰值压力 1.590 MPa 和半径 38 mm、1.588 MPa 的工况在 $r/R=0.32$ 漏判，半径 40 mm、1.496 MPa 的工况在 $r/R=0.10$ 和 $0.12$ 漏判。
+
+The central correction keeps the selected saturation-weighted head as its base. It adds a second decoded-field Ridge fit with an extra weight of 400 on recAs training cells satisfying $\xi\geq0.8$ and $r/R\leq0.4$. Its phase contribution is blended over $0.85\leq\hat\xi\leq0.95$ with a radial smoothing width of 0.04. Twelve fixed candidates were compared on validation, and the selection order prioritised transition-band RMSE, common $\xi=0.9$ arrival MAE and then missed radial nodes. / 中心侧修正以已选近饱和加权读出为基线。第二个解码场 Ridge 头在训练集 recAs 中对 $\xi\geq0.8$ 且 $r/R\leq0.4$ 的网格点额外加权 400，相分数贡献在 $0.85\leq\hat\xi\leq0.95$ 之间混合，径向平滑宽度为 0.04。验证集比较 12 个固定候选，选择顺序为相变带 RMSE、共同 $\xi=0.9$ 到达 MAE、漏判径向节点数。 [Central protocol / 中心侧协议](../evidence/local_studies/loading_phase_central_20261121/protocol.json)
+
+| Test metric / 测试指标 | Selected saturation head / 近饱和基线 | Central-side correction / 中心侧修正 |
+|---|---:|---:|
+| recAs missed $\xi=0.9$ nodes / recAs 漏判节点 | 4 | **3** |
+| Common arrival MAE / 共同到达 MAE (ms) | 0.12072 | **0.11834** |
+| Common arrival P95 / 共同到达 95 分位 (ms) | 0.30188 | **0.29680** |
+| Overall transition-band RMSE / 全体相变带 RMSE | 0.004389247 | 0.004389834 |
+| Phase RMSE / 相分数 RMSE | 0.003313987 | **0.003313467** |
+
+The remaining three misses are $r/R=0.32$ in the 1.590 and 1.588 MPa cases and $r/R=0.12$ in the 1.496 MPa case. Temperature, displacement and deflection remain elementwise identical, with test RMSE 0.106856 K, 0.002085 mm and 0.025462 mm. The central prediction has zero phase-bound violations and zero temporal decreases beyond $10^{-12}$. / 剩余 3 条漏判为 1.590 和 1.588 MPa 工况的 $r/R=0.32$，以及 1.496 MPa 工况的 $r/R=0.12$。温度、位移和挠度仍逐点一致，测试 RMSE 分别为 0.106856 K、0.002085 mm 和 0.025462 mm。中心侧预测没有相分数越界，时间非下降点数在 $10^{-12}$ 容差下为零。 [Central study evidence / 中心侧研究证据](../evidence/local_studies/loading_phase_central_20261121/summary.json)
+
+![recAs central-side arrival errors before and after the radial correction](../evidence/local_studies/loading_phase_central_20261121/phase_central_arrival.png)
+
 ## Verification / 验证
 
 The Ridge head fitted in 0.014 s. The measured archive analysis and rendering took 0.98 s inside the process. Verification independently checks the original prediction replay, the 899 location and value records, the train-only fit and the unchanged mechanical and thermal channels. The study made zero solver calls. / 相分数 Ridge 拟合耗时 0.014 秒，程序内的归档分析与绘图耗时 0.98 秒。核验覆盖原预测回放、899 个越界点坐标和值、仅用训练集拟合及力热通道逐点一致。物理求解器调用为零。 [Saved phase readout / 相分数读出权重](../evidence/local_studies/loading_phase_bounds_20261121/phase_ridge.npz) · [Artifact hashes / 产物哈希](../evidence/local_studies/loading_phase_bounds_20261121/manifest.json)
@@ -72,4 +90,6 @@ python -m examples.loading_phase_study --verify evidence/local_studies/loading_p
 python -m examples.loading_phase_study --output run-output-phase-study
 python -m examples.loading_phase_weighted_study --verify evidence/local_studies/loading_phase_weighted_20261121
 python -m examples.loading_phase_weighted_study --output run-output-phase-weighted-study
+python -m examples.loading_phase_central_study --verify evidence/local_studies/loading_phase_central_20261121
+python -m examples.loading_phase_central_study --output run-output-phase-central-study
 ```

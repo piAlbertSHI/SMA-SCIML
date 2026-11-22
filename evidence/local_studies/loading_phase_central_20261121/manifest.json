@@ -1,0 +1,10 @@
+{
+  "sha256": {
+    "arrival_diagnostics.csv": "31978b40de96dec255f5cd5d724b37958eb4097a0948ac546fb09586dc301457",
+    "central_weighted_phase.npz": "ba1a6e8ae008e906852b0550991ed076e86da8924e076ac9600692038bc4560a",
+    "phase_central_arrival.png": "702513a29bc9d60b94ecc1243358b8281b622bd9488545955ac52ab8e9ea1713",
+    "protocol.json": "9d0e5a9b6b7f70e45ddb821885107051d8d06d5d7f11682f4329d3cc6b848477",
+    "summary.json": "6370dd460e9bd1533751e86556a2bb3394acf4d4432c4417671241cde41f53b0",
+    "verification.json": "2b65f084ba97d1c1e4d6db9bec2560cae9c441c4c3006d6c7cf547401ed50674"
+  }
+}

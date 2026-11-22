@@ -1,0 +1,9 @@
+{
+  "status": "verified",
+  "selection_replayed": "radius_0.40_strength_400_blend_0.85_0.95",
+  "candidate_grid_replayed": 12,
+  "test_arrival_rows_replayed": 110,
+  "test_channels_exact": true,
+  "test_phase_bounds_and_time_monotonicity": true,
+  "fresh_solver_calls": 0
+}
