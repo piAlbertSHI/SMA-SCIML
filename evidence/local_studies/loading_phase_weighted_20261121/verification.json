@@ -1,0 +1,9 @@
+{
+  "status": "verified",
+  "selection_replayed": "weight_100_blend_0.80_0.88",
+  "candidate_grid_replayed": 9,
+  "test_arrival_rows_replayed": 110,
+  "test_channels_exact": true,
+  "test_phase_bounds_and_time_monotonicity": true,
+  "fresh_solver_calls": 0
+}

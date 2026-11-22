@@ -1,0 +1,10 @@
+{
+  "sha256": {
+    "arrival_diagnostics.csv": "166e272c09fce058590a07ff319b656f0e1511dcaaa84353d7eff9ed3ea9b652",
+    "phase_saturation_arrival.png": "b894605ba0416214e72039918cf8287485460c801eb69ccee2ae53f55a21c20b",
+    "protocol.json": "c968dc5f48fe6a4a062e562aaa654a7448eebc0086f539d523487ea30e7d6ec4",
+    "saturation_weighted_phase.npz": "f3615eccef4635dc0f56c7c6498eee7f930836d77732f24265fb780f378df9b2",
+    "summary.json": "a2999b2a6f6c69eea003fd145b7a6cd5ba2adbbd2d053104183bbfec521c0c5f",
+    "verification.json": "05964d513ecb342e2adb3c8f6a30153d13c556da2275c4d55beb52f657fa3d8d"
+  }
+}

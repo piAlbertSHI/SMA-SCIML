@@ -38,6 +38,7 @@ Figures are generated from recorded numerical arrays. The operator comparison in
 | 18 | Paired solver-version temperature fields / 同工况跨版本温度场 | [PNG](../assets/loading_field_study/cooling_version_difference.png) | — | [54-pair audit / 54 对核验](../evidence/local_studies/solver_version_pairs_20261121/summary.json) |
 | 19 | Loading fields and operator error maps / 加载场与算子误差分布 | [PNG](../assets/loading_field_study/loading_benchmark_fields.png) | — | [Fixed loading benchmark / 固定加载基准](LOADING_FIELD_STUDY.md) |
 | 20 | Phase violations and transformation-front error / 相分数越界与相变前沿误差 | [PNG](../evidence/local_studies/loading_phase_bounds_20261121/phase_front_diagnostics.png) | — | [Phase diagnostics / 相分数诊断](LOADING_PHASE_CONSTRAINTS.md) |
+| 21 | recAs saturation-arrival errors and missed radii / recAs 近饱和到达误差与漏判半径 | [PNG](../evidence/local_studies/loading_phase_weighted_20261121/phase_saturation_arrival.png) | — | [Weighted phase study / 加权相分数研究](LOADING_PHASE_CONSTRAINTS.md) |
 | Animation / 动画 | Stage-4 temperature evolution / 第四阶段温度演化 | [GIF](../assets/temperature_evolution.gif) | — | [replay summary](../assets/demo_summary.json) |
 
 The original three-strategy acquisition plot remains available as [historical comparison](../assets/active_learning.png). The six-target plot includes all four strategies, so results are not selected only for favorable targets.
