@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "audit.json": "2ed4902c462bef04b077c88c3a899cad71cd3c12267591c547b31c2c5177dea9",
+    "classification_best_test.csv": "39754f8fe641a0caeef2494f9f9eb0deaa4b0bb884d7afeab185bf8a6ac93a3c",
+    "distribution_shift.csv": "13ab55e19e21bbd7c919c643716148320bc78da2f532052e86993760d2b55f5c",
+    "regression_best_test.csv": "2bb2b78d670121f4419546f870ee9e5ab1c6cc6a6e7a984c2eccbc5075163125",
+    "regression_ridge_test.csv": "b857ee469793c62bc5ea2d2d3173900798108759ce20e07a078711f854de5cf7"
+  }
+}

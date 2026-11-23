@@ -1,0 +1,88 @@
+{
+  "status": "verified_archived_wp2_scalar_reliability",
+  "learning_only": true,
+  "fresh_training_calls": 0,
+  "fresh_solver_calls": 0,
+  "source_repository": "adjacent gx101r1 workspace",
+  "source_scope": {
+    "dataset_version": "1.0",
+    "source_result": "SciML/results/wp2_scalar/wp2_results.json",
+    "source_checkpoint": "SciML/results/wp2_scalar/wp2_checkpoint.json",
+    "source_config": "SciML/configs/wp2_scalar.json",
+    "dataset_files": [
+      "scalar_cases.csv",
+      "split_manifest.json",
+      "provenance.json"
+    ]
+  },
+  "integrity": {
+    "provenance_hashes_match": true,
+    "configured_schemes": [
+      "iid",
+      "geometry_group_holdout",
+      "material_group_holdout",
+      "combined_ood_holdout"
+    ],
+    "raw_result_rows": 1176,
+    "summary_rows": 392,
+    "checkpoint_completed_schemes": [
+      "iid",
+      "geometry_group_holdout",
+      "material_group_holdout",
+      "combined_ood_holdout"
+    ]
+  },
+  "scheme_counts": {
+    "iid": {
+      "train": 2893,
+      "test": 326,
+      "validation": 365
+    },
+    "geometry_group_holdout": {
+      "train": 2659,
+      "test": 617,
+      "validation": 308
+    },
+    "material_group_holdout": {
+      "train": 1649,
+      "test": 1727,
+      "validation": 208
+    },
+    "combined_ood_holdout": {
+      "train": 2977,
+      "test": 448,
+      "validation": 159
+    }
+  },
+  "regression_targets": [
+    "Q_lat_J",
+    "W1_J",
+    "eta_Q_over_W1",
+    "avg_xi",
+    "max_w_mm",
+    "sigma_max_MPa"
+  ],
+  "classification_target": "design_valid",
+  "full_cycle_wp2_status": "incomplete",
+  "full_cycle_missing_fields": [
+    "V_star",
+    "cycle_frequency",
+    "heat_exchange_time",
+    "Qcool",
+    "Wpump",
+    "COP",
+    "SCP",
+    "deltaT"
+  ],
+  "provenance_hashes": {
+    "code_sha256": "16750918b0e9b6d8ac29e043e1edbb3ad159a9664ead9ed152bd744e671673fd",
+    "config_sha256": "163891d242cca8fb2b25dccd4839ccd67040ea06e3ae6aaef4b505811ac536ce",
+    "scalar_cases_sha256": "fb160cd8a4684690381df85b856156db354c6a2c91ed4789967e0f3044cba9e1",
+    "split_manifest_sha256": "2c0f359a087c8a0a39f6f23f98274eaa5a4c68940a4c163096c0444e44261238",
+    "provenance_sha256": "f60707241720ef16490109d97d6c1e0ac09f953decad719c0900edc855f3ee12",
+    "results_sha256": "772eb1083cd6543c29a05fec09c5ba8619d5739431e60cbef67effadfb22a872",
+    "checkpoint_sha256": "21811e3501360c1b220bf5bde7548512b875dd7f5b7f0d9376ef49865c6dbd2b",
+    "progress_sha256": "5b49cfaa8af1338a28eb23e0749163bb1361d9f6670c8a030a0f83cb0fee080c",
+    "audit_code_sha256": "96c5fb6371a16c3010c86641671f1781fe62028a0e18cec579c70550809cbf54"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "status": "verified_wp3_state_field_contract",
+  "learning_only": true,
+  "fresh_training_calls": 0,
+  "fresh_solver_calls": 0,
+  "state_snapshot": {
+    "cases": 12,
+    "train_cases": 8,
+    "test_cases": 4,
+    "transitions": 118,
+    "train_transitions": 72,
+    "test_transitions": 46,
+    "state_dimension": 515,
+    "unique_sample_ids": 118
+  },
+  "field_contract": {
+    "training_field_samples": 32,
+    "training_field_cases": 8,
+    "evaluation_field_samples": 20,
+    "evaluation_field_cases": 4,
+    "evaluation_fields_are_from_training_state_cases": true,
+    "training_and_evaluation_field_keys_disjoint": true,
+    "training_field_initial_reconstruction_max_abs_K": 5.684341886080802e-14,
+    "test_labels_exported_for_training_fields": false
+  },
+  "input_boundary": {
+    "requested_vs_observed_controls_max_abs": 0.0,
+    "stage_start_interface_gap_maxima": {
+      "1": {
+        "T_K_t": 0.0,
+        "w_m_t": 0.0,
+        "u_m_t": 0.0,
+        "xi_t": 0.0
+      },
+      "2": {
+        "cold_buffer_temp_in": 0.0,
+        "hot_sink_temp_in": 0.0,
+        "cold_sink_temp_in": 0.0,
+        "chip_temp_in": 0.0,
+        "simscape_cold_sink_pipe_T_state_in_K": 0.0,
+        "sma_T_in_51_K": 0.0,
+        "stage2_path_pipe_T_state_in_K": 0.0,
+        "htf_internal_start_K": 0.0,
+        "hot_buffer_temp_in": 0.0
+      },
+      "3": {
+        "T_K_t": 0.0,
+        "w_m_t": 0.00012387708904100514,
+        "u_m_t": 2.2574959746643627e-05,
+        "xi_t": 0.19358850705953212
+      },
+      "4": {
+        "cold_buffer_temp_in": 0.0,
+        "hot_sink_temp_in": 0.009650944524196348,
+        "cold_sink_temp_in": 0.0,
+        "chip_temp_in": 0.0,
+        "simscape_cold_sink_pipe_T_state_in_K": 0.009474662545869705,
+        "sma_T_in_51_K": 0.0,
+        "stage4_path_pipe_T_state_in_K": 0.016588283706596485,
+        "htf_internal_start_K": 0.0,
+        "hot_buffer_temp_in": 0.009650944524196348
+      }
+    },
+    "cases_with_stage4_future_initial_difference": 63,
+    "max_htf4_future_initial_difference_K": 0.016588283706596485,
+    "known_inactive_missing_fields": {
+      "2:stage4_path_pipe_T_state_in_K": 63,
+      "2:stage4_path_pipe_T_state_out_K": 63,
+      "4:stage2_path_pipe_T_state_in_K": 63,
+      "4:stage2_path_pipe_T_state_out_K": 63
+    }
+  },
+  "replay_and_physics_interfaces": {
+    "operator_all_four_checkpoint_predictions_exact": true,
+    "operator_withheld_label_poison_refit_exact": true,
+    "increment_identity_max_abs_error_K": 1.2789769243681803e-13,
+    "increment_prediction_replay_max_error_K": 0.0,
+    "increment_candidate_promoted": false,
+    "stage_readout_checkpoint_replay_max_difference": 0.0,
+    "stage_readout_training_only_refit_max_difference": 0.0,
+    "stage_readout_state_fluid_initial_exact": true
+  },
+  "open_boundaries": [
+    "Every historical case has a nonzero stage-4 request/record initialization gap in the input-contract audit.",
+    "The state snapshot and field evaluation are archived numerical evidence, not independent experimental validation.",
+    "Energy closure and hidden storage ownership still require a separate port-level contract."
+  ],
+  "source_sha256": {
+    "state_snapshot": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+    "training_field_snapshot": "15f5cf30948efea558ba514cafea99f146dcdc13435b66b906e58d582a721096",
+    "state_metadata": "12f0005bd0ba0661a592d6cb666279a6918e130252240bba7818283fe21f7464",
+    "field_metadata": "e3d0e93efda134cae3e4e7948a5303e18ae8e61935850766be607b79b012d107",
+    "state_contract_summary": "f8811b052f66a9fe40276d282c1b35dfae5268d3bf99cddf4faa7a88aa8f7410",
+    "operator_audit_summary": "2a7a436fd38683e3048ee25b49a95b937f5ec7867ac7bc0004e27d595bbe3fe8",
+    "increment_verification": "48de1b90acf2c5ca41dddae8a3ea7be3713f8f4cfa5f781bc83e320391d09738",
+    "stage_verification": "6bbfb43da5850d311eaeda19d6ab5f5b299df317feba0d973c2d6bb0caf83cdf",
+    "audit_code": "881fefb41829e4c2f9d67d5e0176c10e1564cd1882125a2d41a7940e54a3700c"
+  }
+}

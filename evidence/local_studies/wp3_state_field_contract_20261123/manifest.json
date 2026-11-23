@@ -1,0 +1,7 @@
+{
+  "sha256": {
+    "audit.json": "d63d1180b65e3aaa9ea69effb5e6bfbb91786819b4a58631828ef7c3bcbea34e",
+    "field_case_counts.csv": "9b519756a4245fa8b0da237083f93ddca5a64cb1e40bef852f5c52107ff2bcc1",
+    "transition_counts.csv": "10c32f8bd183a8f7f7a5943bc17e314b36c4e2fa2304353483a5377d201f31b1"
+  }
+}
