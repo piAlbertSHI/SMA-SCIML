@@ -65,5 +65,6 @@ The candidate is retained as the protected-state research checkpoint. The public
 - [Protected-state screening summary](../evidence/experiments/hro_protected_state_ablation_20261123/summary.json)
 - [Protected-state confirmation summary](../evidence/experiments/hro_protected_state_confirmation_20261123/summary.json)
 - [Third-cycle post-selection audit](../evidence/local_studies/hro_protected_state_confirmation_20261123/test_audit.json)
+- [Third-cycle material diagnostic](../evidence/local_studies/hro_protected_state_confirmation_20261123/material_stage_diagnostics.json)
 - [Stage-resolved confirmation metrics](../evidence/local_studies/hro_protected_state_confirmation_20261123/stage_metrics.json)
 - [Energy boundary audit](HRO_ENERGY_BOUNDARY_AUDIT.md)

@@ -43,6 +43,14 @@
     "c3s4_htf_field_K": 0.817022443335306,
     "selection_changed_after_audit": false
   },
+  "material_stage_diagnostic": {
+    "path": "evidence/local_studies/hro_protected_state_confirmation_20261123/material_stage_diagnostics.json",
+    "sha256": "b794aa5b0804a0e24aafbb94e56a977dd476bc38892601fa764f0459b0257fa7",
+    "recA_htf_field_K": 0.5713302007051678,
+    "recAS_htf_field_K": 1.002511393968689,
+    "recA_sma_field_K": 1.4459866225047744,
+    "recAS_sma_field_K": 1.590288361923184
+  },
   "stage_metrics": {
     "path": "evidence/local_studies/hro_protected_state_confirmation_20261123/stage_metrics.json",
     "sha256": "02c021a3667cbaba0ceffd2040b4c7f8161c01dc70d933c08a4d3e66a3d7c141"
