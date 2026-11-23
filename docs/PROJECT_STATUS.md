@@ -4,6 +4,10 @@
 
 The WP2 static scalar reliability audit, the 54-condition solver-version audit and the 200-condition loading-field benchmark are complete. First loading agrees pointwise across the paired archives. Cooling exchange shows the largest differences. POD/Ridge has the lowest loading-field errors under the fixed protocol. Independent generalization, predictive energy closure and verification of new designs remain open. [WP2 scalar audit](WP2_SCALAR_RELIABILITY.md) · [Paired audit and loading benchmark](LOADING_FIELD_STUDY.md)
 
+The current WP2-WP4 archive and low-cost model evidence has been reconciled in a [readiness audit](../evidence/local_studies/wp2_wp4_readiness_20261123/readiness.json). The audit preserves four open boundaries, including unseen-material/generalization evidence, port-level energy closure, linked failure labels and the unstarted three-seed spatial-supervision confirmation.
+
+当前 WP2–WP4 归档与低成本模型证据已在[就绪审计](../evidence/local_studies/wp2_wp4_readiness_20261123/readiness.json)中统一核对。审计保留四项开放边界，包括未见材料/独立泛化、端口级能量闭合、绑定失败标签以及尚未启动的三种子空间监督确认。
+
 ## 最早的方案与正式编号
 
 | 原始文件（相对工作区） | 用途 |
