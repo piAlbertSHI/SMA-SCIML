@@ -1,0 +1,108 @@
+{
+  "status": "planned_before_fitting",
+  "experiment": "next_stage_hro_internal_validation",
+  "date": "2026-11-23",
+  "scope": {
+    "use_existing_historical_data": true,
+    "fresh_physical_solver_calls": 0,
+    "github_push": false,
+    "wall_time_budget_hours": {
+      "target_min": 4,
+      "target_max": 8,
+      "hard_stop": 8
+    }
+  },
+  "data": {
+    "state_snapshot": "data/historical12_state.npz",
+    "field_snapshot": "data/historical12_training_fields.npz",
+    "training_case_ids": [
+      "confirm_temporal12_01_confirm50_reca_015_r32_t160_p0742_v1019_t2p4_1c_2c",
+      "confirm_temporal12_04_confirm50_reca_022_r40_t200_p0871_v0962_t2p8_1c_2c",
+      "confirm_temporal12_05_confirm50_reca_023_r42_t210_p0943_v1000_t2p0_1c_2c",
+      "confirm_temporal12_07_confirm50_recas_042_r32_t160_p1724_v1000_t2p8_1c_2c",
+      "confirm_temporal12_09_confirm50_recas_040_r38_t190_p1276_v0923_t2p0_1c_2c",
+      "confirm_temporal12_11_confirm50_recas_033_r42_t210_p1612_v0981_t2p4_1c_2c"
+    ],
+    "internal_validation_case_ids": [
+      "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+      "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c"
+    ],
+    "sealed_test_case_ids": [
+      "confirm_temporal12_02_confirm50_reca_024_r35_t175_p0756_v0981_t2p4_1c_2c",
+      "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "confirm_temporal12_10_confirm50_recas_047_r40_t200_p1584_v1019_t2p4_1c_2c",
+      "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c"
+    ],
+    "split_rule": "six fit cases and two material-stratified internal validation cases, fixed before fitting"
+  },
+  "seeds": [20261121, 20261122, 20261123],
+  "screening": {
+    "updates_per_seed": 120,
+    "batch_cases": 2,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 1.0,
+    "candidates": {
+      "coordinate_reference": {
+        "spatial_points": 26,
+        "spatial_jitter_fraction_of_native_spacing": 0.0,
+        "field_channel_weights": [1.0, 1.0],
+        "entry_time_weight": 0.0,
+        "curvature_weight": 0.0
+      },
+      "jitter_fluid2": {
+        "spatial_points": 51,
+        "spatial_jitter_fraction_of_native_spacing": 0.5,
+        "field_channel_weights": [1.0, 2.0],
+        "entry_time_weight": 0.0,
+        "curvature_weight": 0.0
+      },
+      "jitter_fluid2_entry": {
+        "spatial_points": 51,
+        "spatial_jitter_fraction_of_native_spacing": 0.5,
+        "field_channel_weights": [1.0, 2.0],
+        "entry_time_weight": 1.0,
+        "curvature_weight": 0.0
+      },
+      "jitter_fluid3_balance": {
+        "spatial_points": 51,
+        "spatial_jitter_fraction_of_native_spacing": 0.5,
+        "field_channel_weights": [1.0, 3.0],
+        "entry_time_weight": 0.0,
+        "curvature_weight": 0.0
+      }
+    }
+  },
+  "confirmation": {
+    "updates_per_seed": 200,
+    "run_only_after_internal_gate": true,
+    "max_candidates": 1
+  },
+  "metrics": {
+    "state": ["sma", "htf2", "htf4", "side", "phase", "displacement", "deflection", "memory"],
+    "field": ["sma", "htf", "entry", "future", "spatial_gradient"],
+    "stratification": ["material", "cycle", "stage", "channel"],
+    "selection_cohort": "internal_validation_only"
+  },
+  "gates": {
+    "max_mandatory_state_regression_fraction": 0.05,
+    "field_balance": "combined SMA/HTF future-field score improves or is preserved with no material-specific failure",
+    "entry_consistency": "normalized stage-entry field error improves or is preserved",
+    "reproducibility": ["three-seed ranking stability", "exact checkpoint replay", "fixed split recorded", "zero solver calls recorded"]
+  },
+  "artifacts": [
+    "protocol.json",
+    "screening_summary.json",
+    "confirmation_summary.json",
+    "replay_verification.json",
+    "readiness.json",
+    "negative_results.json"
+  ],
+  "open_boundaries": [
+    "port-level energy closure",
+    "hidden storage ownership",
+    "unseen-material transfer",
+    "independent-grid behavior"
+  ]
+}

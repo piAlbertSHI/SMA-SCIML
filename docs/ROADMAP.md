@@ -1,8 +1,8 @@
 # Research roadmap / 研究路线图
 
-The project status maps the original work packages to current model evidence and orders the next experiments. The modal decoder improves spatial regularity, and the thermal response improves the pooled third-cycle SMA field RMSE on the historical benchmark. The directions below describe further HRO studies. [Project status and priorities](PROJECT_STATUS.md) · [Thermal response](HRO_ERROR_SCALED_RESPONSE.md)
+The project status maps the original work packages to current model evidence and orders the next experiments. The modal decoder improves spatial regularity, and the thermal response improves the pooled third-cycle SMA field RMSE on the historical benchmark. The next fixed-budget internal validation protocol is recorded in [Next-stage HRO plan](NEXT_STAGE_HRO_PLAN.md). [Project status and priorities](PROJECT_STATUS.md) · [Thermal response](HRO_ERROR_SCALED_RESPONSE.md)
 
-项目进度表对照原始工作包与当前证据，给出后续任务顺序。模态解码缓解空间振荡，误差收缩热响应在历史基准上降低了第三循环合并 SMA 场误差。下表集中列出 HRO 的后续研究。[项目进度与优先级](PROJECT_STATUS.md) · [物理接口审查](HRO_RESEARCH_DESIGN.md)
+项目进度表对照原始工作包与当前证据，给出后续任务顺序。模态解码缓解空间振荡，误差收缩热响应在历史基准上降低了第三循环合并 SMA 场误差。下一阶段的固定预算内部验证协议见[下一阶段 HRO 计划](NEXT_STAGE_HRO_PLAN.md)。[项目进度与优先级](PROJECT_STATUS.md) · [物理接口审查](HRO_RESEARCH_DESIGN.md)
 
 | Direction / 方向 | Evidence / 依据 | Evaluation / 评价设计 |
 |---|---|---|
@@ -12,6 +12,7 @@ The project status maps the original work packages to current model evidence and
 | Material transfer / 材料迁移 | The historical recA/recAS split shows HRO SMA-state and SMA-field gains for both materials, while recAS HTF error remains higher / 历史 recA/recAS 分组显示 HRO 在两种材料上的 SMA 状态和 SMA 场均改善，recAS 的 HTF 误差仍较高 | Compare categorical and physical descriptors, then establish independent unseen-material coverage / 对照类别与物性描述符，再建立独立未见材料覆盖 |
 | Objective-aware acquisition / 面向目标的选样 | Diversity improves temperature-span prediction but not every performance target / 多样性改善温差预测，未改善全部性能目标 | Specify the primary objective before comparing acquisition rules / 比较选样规则前固定主要目标 |
 | Energy accounting / 能量核算 | State/field predictions and scalar performance surrogates are separate / 状态与场预测、标量性能代理分别训练 | Define independent ports, work and storage terms before validating field-derived cycle performance / 先定义独立端口、功及储能项，再评价场到性能读出 |
+| HRO balance validation / HRO 平衡验证 | The three-seed query-jitter confirmation improves state blocks while leaving HTF field error modestly above the coordinate reference / 三种子查询抖动确认改善状态块，但 HTF 场误差仍略高于坐标参考 | Use six fit cases and two material-stratified validation cases to compare coordinate, fluid-weighted and entry-weighted recipes under a fixed budget / 用 6 个拟合工况和 2 个材料分层验证工况，在固定预算下比较坐标、流体加权和入口加权方案 |
 
 The multi-cycle historical test cohort has already been examined. Further development should use training-only validation and distinguish subsequent exploratory evaluation from independent confirmation. Numerical accuracy, engineering suitability and experimental validation are separate claims.
 
