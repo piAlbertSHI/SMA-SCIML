@@ -1,0 +1,11 @@
+{
+  "status": "generated_third_cycle_temporal_error_figure",
+  "source_sha256": "d8741692f64c10580efce9ee5e2760383ce19f7bc1a5429d64d92e1ab32e4e02",
+  "generator_sha256": "52b0c21d70ce3499e10577048dc1113c33ed6d1176fc36d95ed2f61a72e14a5d",
+  "artifacts": {
+    "third_cycle_temporal_error.svg": "eadb3c02c3f243384bf54a869af2c1b62d5562a45f2cc13dbe8f936271e3c185",
+    "third_cycle_temporal_error.png": "3a0c98f6449f484a450471227deb4cdd5e03a503e197ab4c0f26598e04fb74bd"
+  },
+  "fresh_training_calls": 0,
+  "fresh_solver_calls": 0
+}

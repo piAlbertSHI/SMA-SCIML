@@ -56,6 +56,11 @@
     "decision": "retain_global_pareto_field_weights",
     "selected_candidate": null
   },
+  "temporal_error_audit": {
+    "path": "evidence/local_studies/hro_protected_state_confirmation_20261123/temporal_error.json",
+    "figure": "assets/hro_protected_state/third_cycle_temporal_error.svg",
+    "finding": "recAS SMA late-stage error improves, while recA SMA mid/late error and later HTF plateaus remain open"
+  },
   "stage_metrics": {
     "path": "evidence/local_studies/hro_protected_state_confirmation_20261123/stage_metrics.json",
     "sha256": "02c021a3667cbaba0ceffd2040b4c7f8161c01dc70d933c08a4d3e66a3d7c141"
