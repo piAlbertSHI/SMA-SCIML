@@ -14,9 +14,9 @@ The project status maps the original work packages to current model evidence and
 | Energy accounting / 能量核算 | State/field predictions and scalar performance surrogates are separate / 状态与场预测、标量性能代理分别训练 | Define independent ports, work and storage terms before validating field-derived cycle performance / 先定义独立端口、功及储能项，再评价场到性能读出 |
 | HRO balance validation / HRO 平衡验证 | The three-seed query-jitter confirmation improves state blocks while leaving HTF field error modestly above the coordinate reference / 三种子查询抖动确认改善状态块，但 HTF 场误差仍略高于坐标参考 | Use six fit cases and two material-stratified validation cases to compare coordinate, fluid-weighted and entry-weighted recipes under a fixed budget / 用 6 个拟合工况和 2 个材料分层验证工况，在固定预算下比较坐标、流体加权和入口加权方案 |
 
-The internal screening result is recorded in [Next-stage HRO results](NEXT_STAGE_HRO_RESULTS.md). It found a field-improvement trade-off without a candidate that satisfied the fixed all-channel safety gates.
+The internal screening result is recorded in [Next-stage HRO results](NEXT_STAGE_HRO_RESULTS.md). It found a field-improvement trade-off without a candidate that satisfied the fixed all-channel safety gates. The continuing twelve-hour development stage is specified in [HRO twelve-hour development plan](HRO_12H_DEVELOPMENT_PLAN.md).
 
-内部筛选结果见[下一阶段 HRO 结果](NEXT_STAGE_HRO_RESULTS.md)。当前筛选发现了场误差改善与状态安全之间的权衡，但没有候选同时满足固定的全通道安全门。
+内部筛选结果见[下一阶段 HRO 结果](NEXT_STAGE_HRO_RESULTS.md)。当前筛选发现了场误差改善与状态安全之间的权衡，但没有候选同时满足固定的全通道安全门。持续十二小时推进阶段见[HRO 十二小时推进计划](HRO_12H_DEVELOPMENT_PLAN.md)。
 
 The multi-cycle historical test cohort has already been examined. Further development should use training-only validation and distinguish subsequent exploratory evaluation from independent confirmation. Numerical accuracy, engineering suitability and experimental validation are separate claims.
 

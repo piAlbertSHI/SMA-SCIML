@@ -1,0 +1,44 @@
+{
+  "status": "active_long_stage_protocol",
+  "stage": "hro_multiobjective_protected_state",
+  "date": "2026-11-23",
+  "planned_wall_hours": 12,
+  "data_policy": {
+    "state_snapshot": "data/historical12_state.npz",
+    "field_snapshot": "data/historical12_training_fields.npz",
+    "fresh_physical_solver_calls": 0,
+    "sealed_test_cases_for_selection": false,
+    "github_push": false
+  },
+  "seeds": [20261121, 20261122, 20261123],
+  "fixed_split": {
+    "fit_cases": 6,
+    "internal_validation_cases": 2,
+    "sealed_test_cases": 4,
+    "material_stratified_validation": true
+  },
+  "work_packages": [
+    {"id": "stage0", "planned_hours": 1.0, "deliverable": "baseline and evidence audit"},
+    {"id": "stage1", "planned_hours": 2.0, "deliverable": "state-block and stage-weighted loss"},
+    {"id": "stage2", "planned_hours": 3.0, "deliverable": "protected-state candidate screen"},
+    {"id": "stage3", "planned_hours": 2.0, "deliverable": "stage, material and third-cycle proxy diagnosis"},
+    {"id": "stage4", "planned_hours": 2.0, "deliverable": "shortlisted confirmation and robustness"},
+    {"id": "stage5", "planned_hours": 2.0, "deliverable": "readiness, figures, model note and local commits"}
+  ],
+  "required_records": [
+    "protocol.json",
+    "source hashes",
+    "checkpoint and optimizer state",
+    "training history",
+    "state, field, material and stage metrics",
+    "replay verification",
+    "negative_results.json",
+    "readiness.json"
+  ],
+  "open_boundaries": [
+    "port-level energy closure",
+    "hidden storage ownership",
+    "unseen-material transfer",
+    "independent-grid behavior"
+  ]
+}
