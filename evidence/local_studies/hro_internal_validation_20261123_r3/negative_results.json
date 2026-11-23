@@ -1,0 +1,29 @@
+{
+  "status": "recorded_negative_and_diagnostic_results",
+  "scientific_negative_result": {
+    "screening": "No candidate passed the fixed all-channel promotion gates.",
+    "consequence": "No 200-update confirmation was started because the protocol permits confirmation only after internal promotion.",
+    "default_action": "Retain the current state-priority recipe and do not claim field-balanced promotion."
+  },
+  "diagnostic_history": [
+    {
+      "run": "evidence/experiments/hro_internal_validation_20261123",
+      "status": "failed_before_screening_completion",
+      "cause": "The validation scorer used abbreviated state-block names that do not exist in the archived BLOCKS mapping.",
+      "repair": "Mapped the scorer to the authoritative sma_K and htf2_K block names and added a direct scorer test."
+    },
+    {
+      "run": "evidence/experiments/hro_internal_validation_20261123_r2",
+      "status": "superseded_diagnostic_screen",
+      "summary_sha256": "02af1ecbecd5dbef531ab1cb5ec67046c0771fb2a14386ad57af758a064f8425",
+      "cause": "entry_time_weight emphasized nonzero times only, while the reported entry metric is the time-zero reconstruction.",
+      "repair": "Added optional entry_field_weight to joint_loss and included an explicit time-zero entry-field term in the entry candidate."
+    }
+  ],
+  "preserved_evidence": [
+    "evidence/experiments/hro_internal_validation_20261123",
+    "evidence/experiments/hro_internal_validation_20261123_r2",
+    "evidence/experiments/hro_internal_validation_20261123_r3"
+  ],
+  "fresh_solver_calls": 0
+}

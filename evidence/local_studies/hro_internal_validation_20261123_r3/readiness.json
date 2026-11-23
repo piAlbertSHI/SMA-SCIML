@@ -1,0 +1,86 @@
+{
+  "status": "verified_no_candidate_promoted",
+  "experiment": "hro_internal_validation_20261123_r3",
+  "protocol": {
+    "path": "evidence/experiments/hro_internal_validation_20261123_r3/protocol.json",
+    "sha256": "6a9852e71d34bdd20ffeed1e1fbe2110ed21fd01d539d4a1797865773bdb237e"
+  },
+  "summary": {
+    "path": "evidence/experiments/hro_internal_validation_20261123_r3/summary.json",
+    "sha256": "1b0c156be410c16753fe97144a2efc0adad11af4c4a2cfddd3fb5e29a1094fe2"
+  },
+  "curated_metrics": "evidence/local_studies/hro_internal_validation_20261123_r3/screening_summary.json",
+  "replay_record": "evidence/local_studies/hro_internal_validation_20261123_r3/replay_verification.json",
+  "verification": {
+    "checkpoint_replays": 12,
+    "scores_recomputed": true,
+    "max_replay_absolute_difference": 0.0,
+    "fresh_solver_calls": 0,
+    "test_scores_computed": false
+  },
+  "budget": {
+    "fits": 12,
+    "seeds": [20261121, 20261122, 20261123],
+    "updates_per_fit": 120,
+    "total_fit_seconds": 1143.9922366000028,
+    "total_seconds": 1166.6100998000002
+  },
+  "selection": {
+    "selected_candidate": null,
+    "full_confirmation_run": false,
+    "default_recipe_decision": "retain_current_state_priority_recipe",
+    "reason": "No candidate passed all prewritten state, field-balance, entry-consistency and three-seed gates."
+  },
+  "candidate_gates": {
+    "coordinate_reference": {
+      "state_safe": true,
+      "field_balanced": true,
+      "material_safe": true,
+      "entry_consistent": true,
+      "three_seed_non_regression": true,
+      "passed": false,
+      "reason": "Reference candidate is not eligible for promotion against itself."
+    },
+    "jitter_fluid2": {
+      "state_safe": false,
+      "field_balanced": true,
+      "material_safe": true,
+      "entry_consistent": false,
+      "three_seed_non_regression": true,
+      "passed": false,
+      "max_state_regression_fraction": 0.25619043412442455,
+      "future_field_reduction_fraction": 0.171378
+    },
+    "jitter_fluid2_entry": {
+      "state_safe": false,
+      "field_balanced": true,
+      "material_safe": true,
+      "entry_consistent": true,
+      "three_seed_non_regression": true,
+      "passed": false,
+      "max_state_regression_fraction": 0.10033729934509394,
+      "future_field_reduction_fraction": 0.1609222950028274
+    },
+    "jitter_fluid3_balance": {
+      "state_safe": false,
+      "field_balanced": true,
+      "material_safe": true,
+      "entry_consistent": false,
+      "three_seed_non_regression": true,
+      "passed": false,
+      "max_state_regression_fraction": 0.4342017563754834,
+      "future_field_reduction_fraction": 0.103506
+    }
+  },
+  "interpretation": {
+    "field_result": "All three query-jitter candidates reduce the combined internal future-field RMSE relative to the matched coordinate reference.",
+    "entry_result": "The corrected entry-field candidate reduces both internal time-zero SMA and HTF entry errors, but its displacement block regresses by about 10.0%.",
+    "scientific_decision": "The data support a field-improvement trade-off, not a safe all-channel default replacement under the fixed gates."
+  },
+  "open_boundaries": [
+    "port-level energy closure",
+    "hidden storage ownership",
+    "unseen-material transfer",
+    "independent-grid behavior"
+  ]
+}

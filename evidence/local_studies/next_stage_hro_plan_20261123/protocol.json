@@ -63,6 +63,7 @@
         "spatial_jitter_fraction_of_native_spacing": 0.5,
         "field_channel_weights": [1.0, 2.0],
         "entry_time_weight": 1.0,
+        "entry_field_weight": 1.0,
         "curvature_weight": 0.0
       },
       "jitter_fluid3_balance": {

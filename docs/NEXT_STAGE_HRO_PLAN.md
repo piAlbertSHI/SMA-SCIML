@@ -38,7 +38,7 @@ The runner will be extended only to accept the fixed case split and to report va
 |---|---|---|---|---|
 | `coordinate_reference` | 26 uniform points, no jitter | Equal SMA/HTF channels | None | Matched-budget coordinate reference |
 | `jitter_fluid2` | 51 points with half-spacing jitter | SMA 1, HTF 2 | None | Current state-priority candidate |
-| `jitter_fluid2_entry` | 51 points with half-spacing jitter | SMA 1, HTF 2 | Entry-time weight 1.0 | State–field consistency candidate |
+| `jitter_fluid2_entry` | 51 points with half-spacing jitter | SMA 1, HTF 2 | Entry-time weight 1.0 plus explicit time-zero entry-field weight 1.0 | State–field consistency candidate |
 | `jitter_fluid3_balance` | 51 points with half-spacing jitter | SMA 1, HTF 3 | None | Stronger HTF balance candidate |
 
 The candidate names describe the training recipe and are not release or version labels. The existing coordinate HRO checkpoint is also replayed as an audit reference, but it cannot be used to select a candidate.

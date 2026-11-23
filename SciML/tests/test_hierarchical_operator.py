@@ -108,5 +108,19 @@ class HierarchicalTests(unittest.TestCase):
         self.assertTrue(torch.isfinite(curved['spatial_curvature']))
         self.assertGreater(float(curved['spatial_curvature'].detach()),0.)
 
+    def test_entry_field_loss_is_optional_and_supervised(self):
+        out=self.model(self.initial,self.control,2,times=self.times,positions=self.positions)
+        truth=out['fields'].detach()+.25
+        base=joint_loss(out,self.truth,self.model.feature_scale,field_truth=truth,
+                        field_scale=torch.ones(2),positions=self.positions)
+        weighted=joint_loss(out,self.truth,self.model.feature_scale,field_truth=truth,
+                            field_scale=torch.ones(2),positions=self.positions,
+                            field_channel_weights=[1.,2.],entry_field_weight=1.)
+        self.assertNotIn('entry_field',base)
+        self.assertIn('entry_field',weighted)
+        self.assertTrue(torch.isfinite(weighted['entry_field']))
+        self.assertGreater(float(weighted['entry_field'].detach()),0.)
+        self.assertGreater(float(weighted['total'].detach()),float(base['total'].detach()))
+
 
 if __name__=='__main__':unittest.main()

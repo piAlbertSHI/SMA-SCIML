@@ -1,0 +1,11 @@
+{
+  "status": "verified_hro_internal_validation_screening",
+  "command": "python -m examples.hro_internal_validation --output evidence/experiments/hro_internal_validation_20261123_r3 --verify-only",
+  "checkpoint_replays": 12,
+  "candidate_count": 4,
+  "seed_count": 3,
+  "scores_recomputed": true,
+  "max_replay_absolute_difference": 0.0,
+  "fresh_solver_calls": 0,
+  "test_scores_computed": false
+}

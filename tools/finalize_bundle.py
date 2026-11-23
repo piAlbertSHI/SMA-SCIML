@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 def included(p):
     rel=p.relative_to(ROOT)
-    return p.is_file() and not any(part in ('.git','.venv','__pycache__') or part.startswith(('demo-output','run-output','learning-exercises','hro_spatial_ablation_')) or part == 'hro_field_entry_consistency_20261123' for part in rel.parts) and p.suffix not in ('.pyc','.pyo')
+    return p.is_file() and not any(part in ('.git','.venv','__pycache__','.batch_runtime') or part.startswith(('demo-output','run-output','learning-exercises','hro_spatial_ablation_','hro_internal_validation_')) or part == 'hro_field_entry_consistency_20261123' for part in rel.parts) and p.suffix not in ('.pyc','.pyo')
 def main():
     # Bind LF bytes so Windows worktrees and Linux GitHub checkouts agree.
     for p in ROOT.rglob('*'):

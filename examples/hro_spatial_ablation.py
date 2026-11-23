@@ -32,11 +32,13 @@ DEFAULT = ROOT / 'evidence/experiments/hro_spatial_ablation_20261123'
 FORMAL = ROOT / 'evidence/experiments/v13_formal_v1'
 DEFAULT_SEEDS = (20261121, 20261122, 20261123)
 VARIANTS = {
+    'coordinate_reference': {'spatial_points': 26, 'gradient_weight': 0.01, 'curvature_weight': 0.0, 'curvature_channel_weights': None, 'field_channel_weights': [1.0, 1.0], 'curvature_start_fraction': 1.0},
     'dense_field': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 0.0, 'curvature_channel_weights': None, 'field_channel_weights': None, 'curvature_start_fraction': 1.0},
     'dense_jitter': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 0.0, 'curvature_channel_weights': None, 'field_channel_weights': None, 'curvature_start_fraction': 1.0, 'spatial_jitter_fraction': 0.5},
     'jitter_fluid4': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 0.0, 'curvature_channel_weights': None, 'field_channel_weights': [1.0, 4.0], 'curvature_start_fraction': 1.0, 'spatial_jitter_fraction': 0.5},
     'jitter_fluid2': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 0.0, 'curvature_channel_weights': None, 'field_channel_weights': [1.0, 2.0], 'curvature_start_fraction': 1.0, 'spatial_jitter_fraction': 0.5},
-    'jitter_fluid2_entry': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 0.0, 'curvature_channel_weights': None, 'field_channel_weights': [1.0, 2.0], 'curvature_start_fraction': 1.0, 'spatial_jitter_fraction': 0.5, 'entry_time_weight': 1.0},
+    'jitter_fluid2_entry': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 0.0, 'curvature_channel_weights': None, 'field_channel_weights': [1.0, 2.0], 'curvature_start_fraction': 1.0, 'spatial_jitter_fraction': 0.5, 'entry_time_weight': 1.0, 'entry_field_weight': 1.0},
+    'jitter_fluid3_balance': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 0.0, 'curvature_channel_weights': None, 'field_channel_weights': [1.0, 3.0], 'curvature_start_fraction': 1.0, 'spatial_jitter_fraction': 0.5},
     'dense_curvature': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 0.001, 'curvature_channel_weights': None, 'field_channel_weights': None, 'curvature_start_fraction': 0.0},
     'dense_curvature_light': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 1e-6, 'curvature_channel_weights': None, 'field_channel_weights': None, 'curvature_start_fraction': 0.0},
     'dense_curvature_mid': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 1e-5, 'curvature_channel_weights': None, 'field_channel_weights': None, 'curvature_start_fraction': 0.0},
@@ -121,6 +123,7 @@ def _train_one(output, arrays, ids, hashes, variant, seed, updates, batch_cases,
             'field_channel_weights': settings['field_channel_weights'],
             'curvature_start_fraction': settings['curvature_start_fraction'],
             'entry_time_weight': settings.get('entry_time_weight', 0.0),
+            'entry_field_weight': settings.get('entry_field_weight', 0.0),
         },
         'training_case_ids': ids,
         'training_cycles': [1, 2],
@@ -158,7 +161,7 @@ def _train_one(output, arrays, ids, hashes, variant, seed, updates, batch_cases,
         started = time.perf_counter()
         model.train()
         for step in range(updates):
-            chosen = np.sort(rng.choice(8, batch_cases, replace=False))
+            chosen = np.sort(rng.choice(len(ids), batch_cases, replace=False))
             time_indices = np.r_[0, np.sort(rng.choice(np.arange(1, 49), 6, replace=False)), 49]
             time_indices, spatial_indices = _coordinates(settings['spatial_points'], time_indices)
             times = torch.tensor(time_indices / 49.)
@@ -185,6 +188,7 @@ def _train_one(output, arrays, ids, hashes, variant, seed, updates, batch_cases,
                 field_channel_weights=settings['field_channel_weights'],
                 times=times,
                 entry_time_weight=settings.get('entry_time_weight', 0.0),
+                entry_field_weight=settings.get('entry_field_weight', 0.0),
             )
             losses['total'].backward()
             norm = torch.nn.utils.clip_grad_norm_(model.parameters(), 1., error_if_nonfinite=True)

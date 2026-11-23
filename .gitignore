@@ -8,6 +8,8 @@ demo-output*/
 run-output*/
 learning-exercises*/
 evidence/experiments/hro_spatial_ablation_*/
+evidence/experiments/hro_internal_validation_*/
+.batch_runtime/
 evidence/local_studies/hro_field_entry_consistency_20261123/
 SciML/datasets/
 Output/

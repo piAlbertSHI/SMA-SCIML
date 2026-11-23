@@ -241,7 +241,7 @@ class HierarchicalStateOperator(nn.Module):
 def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale=None,positions=None,
                field_weight=1.,gradient_weight=.01,curvature_weight=0.,curvature_scale=None,
                curvature_channel_weights=None,field_channel_weights=None,times=None,
-               entry_time_weight=0.):
+               entry_time_weight=0.,entry_field_weight=0.):
     """Supervised state + field + spatial derivative losses; no claimed PDE residual.
 
     ``curvature_weight`` is an optional supervised second-spatial-derivative term.
@@ -253,12 +253,16 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
     two-channel mean. ``field_channel_weights`` applies the same normalized
     weighting to field-value and spatial-gradient supervision. ``entry_time_weight``
     emphasizes early nonzero field times with a normalized exponential weight.
+    ``entry_field_weight`` adds a supervised loss on the time-zero field
+    reconstructed from the predicted stage-entry state.
     The default is zero to preserve the original HRO objective exactly.
     """
     if field_weight < 0 or gradient_weight < 0 or curvature_weight < 0:
         raise ValueError('Loss weights must be nonnegative')
     if entry_time_weight < 0:
         raise ValueError('Entry time weight must be nonnegative')
+    if entry_field_weight < 0:
+        raise ValueError('Entry field weight must be nonnegative')
     if curvature_scale is not None and curvature_scale <= 0:
         raise ValueError('Curvature scale must be positive')
     if curvature_channel_weights is not None:
@@ -292,6 +296,8 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
             temporal_weight_tensor=temporal_weights.to(scaled).view(1,1,1,-1,1)
         else:
             temporal_weight_tensor=1.
+        if entry_field_weight:
+            result['entry_field']=(scaled[:,:,:,0].square()*field_weight_tensor[...,0]).mean()
         # Time zero is an input constraint; omit it from supervised future error.
         result['field']=(scaled[:,:,:,1:].square()*field_weight_tensor*temporal_weight_tensor).mean()
         if positions is None or len(positions)<2 or not torch.all(torch.diff(positions)>0):raise ValueError('Increasing spatial grid required')
@@ -318,7 +324,8 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
             result['spatial_curvature']=curvature_error.mean()
     total=(state_loss+field_weight*result.get('field',0.)+
            gradient_weight*result.get('spatial_gradient',0.)+
-           curvature_weight*result.get('spatial_curvature',0.))
+           curvature_weight*result.get('spatial_curvature',0.)+
+           entry_field_weight*result.get('entry_field',0.))
     if not torch.isfinite(total):raise RuntimeError('Nonfinite joint loss')
     result['total']=total
     return result

@@ -1,0 +1,52 @@
+{
+  "status": "curated_internal_validation_metrics",
+  "source": "evidence/experiments/hro_internal_validation_20261123_r3/summary.json",
+  "source_sha256": "1b0c156be410c16753fe97144a2efc0adad11af4c4a2cfddd3fb5e29a1094fe2",
+  "validation_cases": [
+    "confirm_temporal12_03_confirm50_reca_019_r38_t190_p0929_v1077_t2p0_1c_2c",
+    "confirm_temporal12_08_confirm50_recas_030_r35_t175_p1192_v1038_t2p0_1c_2c"
+  ],
+  "seeds": [20261121, 20261122, 20261123],
+  "metrics": {
+    "coordinate_reference": {
+      "state_sma_K": 0.6638446852305381,
+      "state_htf2_K": 0.2234491821199779,
+      "state_htf4_K": 0.2663184588892323,
+      "field_sma_entry_K": 0.7910678611273063,
+      "field_htf_entry_K": 0.29757520426656175,
+      "field_sma_future_K": 1.1381945126605395,
+      "field_htf_future_K": 1.0772105031187833,
+      "field_combined_future_K": 1.1077025078896614
+    },
+    "jitter_fluid2": {
+      "state_sma_K": 0.8339153433309416,
+      "state_htf2_K": 0.20389425134037487,
+      "state_htf4_K": 0.23049330677360466,
+      "field_sma_entry_K": 1.0656848277853908,
+      "field_htf_entry_K": 0.2935594277729523,
+      "field_sma_future_K": 0.896525110818152,
+      "field_htf_future_K": 0.939207784092302,
+      "field_combined_future_K": 0.917866447455227
+    },
+    "jitter_fluid2_entry": {
+      "state_sma_K": 0.5402323443965593,
+      "state_htf2_K": 0.19055413724005235,
+      "state_htf4_K": 0.18049337048533864,
+      "field_sma_entry_K": 0.6675493544626535,
+      "field_htf_entry_K": 0.226216294900723,
+      "field_sma_future_K": 0.9585103499876967,
+      "field_htf_future_K": 0.9003866062916425,
+      "field_combined_future_K": 0.9294484781396696
+    },
+    "jitter_fluid3_balance": {
+      "state_sma_K": 0.9520872135181677,
+      "state_htf2_K": 0.21396838404534332,
+      "state_htf4_K": 0.24389698283139474,
+      "field_sma_entry_K": 1.1979821658382805,
+      "field_htf_entry_K": 0.3175522135808746,
+      "field_sma_future_K": 1.0690645608344675,
+      "field_htf_future_K": 0.9170336443468189,
+      "field_combined_future_K": 0.9930491025906433
+    }
+  }
+}
