@@ -1,0 +1,35 @@
+{
+  "study": "hro_spatial_supervision_20261123",
+  "source_sha256": {
+    "SciML/models/v13/hierarchical_operator.py": "158451f9808c020ec0c5a6c615ffb60d50a4737501b6d3e3496031e58385b16a",
+    "examples/hro_spatial_ablation.py": "206d32e2db7753d544944ceaba6397444343a798dbc8033074acff25c597a803",
+    "SciML/tests/test_hierarchical_operator.py": "c6ebc34cb462a45ebfb46c7ddedb6ff324316aec8b17d9b688481192b821bcab"
+  },
+  "raw_summary_sha256": {
+    "evidence/experiments/v13_formal_v1/summary.json": "dd4c092cbd051406e004c27fc5cd03e822eb60756e19159449af8bd710c54180",
+    "evidence/experiments/hro_spatial_ablation_channel_long_20261123/summary.json": "6cf22b8f15b4575310b94cc30eff4782f40ceb11ba1d7bb2a9ae3165b94cf346",
+    "evidence/experiments/hro_spatial_ablation_fluid_weight_long_20261123/summary.json": "9a4cc8841a6ae18fab4b1cee9d5f8e8544b5aa59b5884ffee91936ac152aae51",
+    "evidence/experiments/hro_spatial_ablation_fluid4_long_20261123/summary.json": "6ea3c14a49647b36968c098886044ec889c3dfe4197aff28d53f602370b9ebf9",
+    "evidence/experiments/hro_spatial_ablation_staged_long_20261123/summary.json": "1e5cfe94f79465ead2b8d1e79e5f164f2749bbad5f22fc6e086cda50c4ec3983"
+  },
+  "raw_run_source_sha256": {
+    "channel_long": {
+      "SciML/models/v13/hierarchical_operator.py": "183cdbf165b5bfe5e85837f21fe9e4e8b4954b2164a042696e2461f8afd1de61",
+      "examples/hro_spatial_ablation.py": "3ec6dc215e5e37a117475a9fe711ec62c5d32007c5a74df00a58833b91bad7ab"
+    },
+    "fluid_weight_long": {
+      "SciML/models/v13/hierarchical_operator.py": "158451f9808c020ec0c5a6c615ffb60d50a4737501b6d3e3496031e58385b16a",
+      "examples/hro_spatial_ablation.py": "a178aa53a87e6503cdbcdbb25c34b617709ecb194b8415ea88d2f393371a3ceb"
+    },
+    "fluid4_long": {
+      "SciML/models/v13/hierarchical_operator.py": "158451f9808c020ec0c5a6c615ffb60d50a4737501b6d3e3496031e58385b16a",
+      "examples/hro_spatial_ablation.py": "206d32e2db7753d544944ecaba6397444343a798dbc8033074acff25c597a803"
+    },
+    "staged_long": {
+      "SciML/models/v13/hierarchical_operator.py": "158451f9808c020ec0c5a6c615ffb60d50a4737501b6d3e3496031e58385b16a",
+      "examples/hro_spatial_ablation.py": "31bc7cbcfe548b8d1fc85164147ad8df392b432666686dfc9d9a973e7c9a9e9c"
+    }
+  },
+  "raw_runs_are_retained_locally": true,
+  "raw_runs_are_not_part_of_the_curated_commit": true
+}

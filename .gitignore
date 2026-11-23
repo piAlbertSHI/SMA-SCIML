@@ -7,6 +7,7 @@ __pycache__/
 demo-output*/
 run-output*/
 learning-exercises*/
+evidence/experiments/hro_spatial_ablation_*/
 SciML/datasets/
 Output/
 *.mat

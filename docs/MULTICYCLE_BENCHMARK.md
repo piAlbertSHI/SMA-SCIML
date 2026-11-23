@@ -78,9 +78,9 @@ The HRO starts less accurately but accumulates less additional SMA-state error f
 
 HRO早期更不准确，但第二至第三循环的 SMA 状态误差增量更小。第三循环末，相比原 Residual MLP + DeepONet，HTF2/HTF4 状态误差升至 **0.1334→0.2420K /0.1675→0.3340K**，相分数误差 **0.02379→0.03755**，横向位移误差 **2.180e-4→2.890e-4m**；方向记忆误差则从 **0.1198降至0.0946K**。边界状态误差与未来场误差是不同指标，场改善不等于边界全部改善。
 
-The atlases reveal spatial oscillations. Full-grid training diagnostics give gradient losses **89.68/86.36/141.44**, contributing **0.897/0.864/1.414** after the0.01 weighting, while full-grid state losses remain near0.01. This directly identifies spatial smoothness as unfinished. Fixed sparse spatial queries and the flexible coordinate decoder are plausible contributors, **not isolated causal findings**. Future work should compare spatial-query jitter/density, decoder regularization and state/field loss balance using case-level validation within the eight training cases; no such tuning was performed here.
+The atlases reveal spatial oscillations. Full-grid training diagnostics give gradient losses **89.68/86.36/141.44**, contributing **0.897/0.864/1.414** after the0.01 weighting, while full-grid state losses remain near0.01. This directly identifies spatial smoothness as unfinished. Fixed sparse spatial queries and the flexible coordinate decoder are plausible contributors, **not isolated causal findings**. A follow-up ablation adds 51-point supervision, a curvature error normalized by training-batch target curvature and optional channel weights. One-seed 200-update runs reduce third-cycle state and SMA-field error, while the HTF field remains above the reference. The default checkpoint is therefore unchanged. [Spatial-supervision study](HRO_SPATIAL_SUPERVISION.md)
 
-图谱显示空间振荡。完整网格训练诊断的梯度损失为 **89.68/86.36/141.44**，乘0.01后贡献 **0.897/0.864/1.414**，而状态损失约0.01，说明空间平滑性仍待改善。固定稀疏空间采样与灵活坐标解码器是合理排查方向，**尚非已隔离的因果结论**。后续应在八个训练工况内按工况验证空间采样抖动/密度、解码正则及状态/场损失权重；该实验没有进行这些调参。
+图谱显示空间振荡。完整网格训练诊断的梯度损失为 **89.68/86.36/141.44**，乘0.01后贡献 **0.897/0.864/1.414**，而状态损失约0.01，说明空间平滑性仍待改善。后续消融加入 51 点监督、按训练批次目标曲率归一化的曲率误差和可选通道权重。单种子 200 次更新下第三循环状态和 SMA 场误差下降，HTF 场仍高于参考模型，因此默认检查点保持不变。[空间监督研究](HRO_SPATIAL_SUPERVISION.md)
 
 ## Visual evidence / 可视证据
 

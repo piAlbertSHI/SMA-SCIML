@@ -239,8 +239,32 @@ class HierarchicalStateOperator(nn.Module):
 
 
 def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale=None,positions=None,
-               field_weight=1.,gradient_weight=.01):
-    """Supervised state + field + spatial-gradient loss; no claimed PDE residual."""
+               field_weight=1.,gradient_weight=.01,curvature_weight=0.,curvature_scale=None,
+               curvature_channel_weights=None,field_channel_weights=None):
+    """Supervised state + field + spatial derivative losses; no claimed PDE residual.
+
+    ``curvature_weight`` is an optional supervised second-spatial-derivative term.
+    It compares the predicted and observed curvature instead of penalizing field
+    curvature itself, so a sharp transformation front remains representable. The
+    error is normalized by the training-batch truth-curvature RMS unless an
+    explicit ``curvature_scale`` is supplied. ``curvature_channel_weights`` can
+    focus the term on the solid or fluid field while preserving a normalized
+    two-channel mean. ``field_channel_weights`` applies the same normalized
+    weighting to field-value and spatial-gradient supervision.
+    The default is zero to preserve the original HRO objective exactly.
+    """
+    if field_weight < 0 or gradient_weight < 0 or curvature_weight < 0:
+        raise ValueError('Loss weights must be nonnegative')
+    if curvature_scale is not None and curvature_scale <= 0:
+        raise ValueError('Curvature scale must be positive')
+    if curvature_channel_weights is not None:
+        channel_weights=torch.as_tensor(curvature_channel_weights,dtype=torch.float64)
+        if channel_weights.shape!=(2,) or not torch.isfinite(channel_weights).all() or torch.any(channel_weights<0) or not torch.any(channel_weights>0):
+            raise ValueError('Curvature channel weights must be two finite nonnegative values with one positive value')
+    if field_channel_weights is not None:
+        field_weights=torch.as_tensor(field_channel_weights,dtype=torch.float64)
+        if field_weights.shape!=(2,) or not torch.isfinite(field_weights).all() or torch.any(field_weights<0) or not torch.any(field_weights>0):
+            raise ValueError('Field channel weights must be two finite nonnegative values with one positive value')
     if prediction['states'].shape!=state_truth.shape:raise ValueError('State supervision shape mismatch')
     error=(prediction['states']-state_truth)/state_scale[:515]
     state_loss=torch.stack([error[...,sl].square().mean() for sl in BLOCKS.values()]).mean()
@@ -249,11 +273,37 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
         if 'fields' not in prediction or prediction['fields'].shape!=field_truth.shape:raise ValueError('Field supervision shape mismatch')
         if field_scale is None or field_scale.shape!=(2,) or torch.any(field_scale<=0):raise ValueError('Train-only field scale required')
         scaled=(prediction['fields']-field_truth)/field_scale[None,None,:,None,None]
+        if field_channel_weights is not None:
+            normalized_field_weights=field_weights.to(scaled)*2/field_weights.sum()
+            field_weight_tensor=normalized_field_weights.view(1,1,2,1,1)
+        else:
+            field_weight_tensor=1.
         # Time zero is an input constraint; omit it from supervised future error.
-        result['field']=scaled[:,:,:,1:].square().mean()
+        result['field']=(scaled[:,:,:,1:].square()*field_weight_tensor).mean()
         if positions is None or len(positions)<2 or not torch.all(torch.diff(positions)>0):raise ValueError('Increasing spatial grid required')
-        result['spatial_gradient']=(torch.diff(scaled[:,:,:,1:],dim=-1)/torch.diff(positions)).square().mean()
-    total=state_loss+field_weight*result.get('field',0.)+gradient_weight*result.get('spatial_gradient',0.)
+        result['spatial_gradient']=(torch.diff(scaled[:,:,:,1:],dim=-1).div(torch.diff(positions)).square()*field_weight_tensor).mean()
+        if curvature_weight:
+            if len(positions)<3:
+                raise ValueError('At least three spatial points are required for curvature loss')
+            spacing=torch.diff(positions)
+            predicted_gradient=torch.diff(scaled[:,:,:,1:],dim=-1)/spacing
+            truth_scaled=field_truth/field_scale[None,None,:,None,None]
+            truth_gradient=torch.diff(truth_scaled[:,:,:,1:],dim=-1)/spacing
+            denominator=(spacing[:-1]+spacing[1:])/2
+            predicted_curvature=torch.diff(predicted_gradient,dim=-1)/denominator
+            truth_curvature=torch.diff(truth_gradient,dim=-1)/denominator
+            scale=(truth_curvature.detach().square().mean().sqrt().clamp_min(1.)
+                   if curvature_scale is None else
+                   torch.as_tensor(curvature_scale,dtype=truth_curvature.dtype,device=truth_curvature.device))
+            curvature_error=((predicted_curvature-truth_curvature)/scale).square()
+            if curvature_channel_weights is not None:
+                weights=channel_weights.to(curvature_error).view(1,1,2,1,1)
+                weights=weights*2/weights.sum()
+                curvature_error=curvature_error*weights
+            result['spatial_curvature']=curvature_error.mean()
+    total=(state_loss+field_weight*result.get('field',0.)+
+           gradient_weight*result.get('spatial_gradient',0.)+
+           curvature_weight*result.get('spatial_curvature',0.))
     if not torch.isfinite(total):raise RuntimeError('Nonfinite joint loss')
     result['total']=total
     return result

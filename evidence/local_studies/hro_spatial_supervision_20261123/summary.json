@@ -1,0 +1,87 @@
+{
+  "status": "completed_hro_spatial_supervision_ablation",
+  "fresh_solver_calls": 0,
+  "data": {
+    "source": "data/historical12_state.npz and data/historical12_training_fields.npz",
+    "training_cases": 8,
+    "test_cases": 4,
+    "fixed_three_cycle_test_cases": 2,
+    "field_query_grid": "51 radial points for the ablation, 50 time points and 101 radial points for evaluation"
+  },
+  "baseline": {
+    "raw_summary": "evidence/experiments/v13_formal_v1/summary.json",
+    "seeds": [20261121, 20261122, 20261123],
+    "updates_per_seed": 200,
+    "spatial_points_per_update": 26,
+    "c3s4_state_rmse_K": {
+      "sma": {"mean": 1.1200462778744624, "sd": 0.06103470421174319},
+      "htf2": {"mean": 0.2420368071170167, "sd": 0.021218340976719874},
+      "htf4": {"mean": 0.33399195436597134, "sd": 0.022239984385505864},
+      "side": {"mean": 0.2634448563799486, "sd": 0.02050125384054626},
+      "phase": {"mean": 0.037548026209850205, "sd": 0.0006442440028590457}
+    },
+    "c3s4_field_rmse_K": {
+      "sma": {"mean": 1.5998873948885823, "sd": 0.11838473858134961},
+      "htf": {"mean": 0.7749564524299996, "sd": 0.020386480585368568}
+    }
+  },
+  "ablation_runs": {
+    "solid_curvature_strong": {
+      "raw_summary": "evidence/experiments/hro_spatial_ablation_channel_long_20261123/summary.json",
+      "seeds": [20261121],
+      "updates_per_seed": 200,
+      "curvature_weight": 0.05,
+      "curvature_channel_weights": [1.0, 0.0],
+      "field_channel_weights": [1.0, 1.0],
+      "c3s4_state_rmse_K": {"sma": 1.0505624516507175, "htf2": 0.22261094541885423, "htf4": 0.2759768618331534, "side": 0.2843126491831446, "phase": 0.03197721507530679},
+      "c3s4_field_rmse_K": {"sma": 1.2550216480691057, "htf": 0.9858698151027724},
+      "replay_verified": true
+    },
+    "solid_curvature_fluid_weighted": {
+      "raw_summary": "evidence/experiments/hro_spatial_ablation_fluid_weight_long_20261123/summary.json",
+      "seeds": [20261121],
+      "updates_per_seed": 200,
+      "curvature_weight": 0.05,
+      "curvature_channel_weights": [1.0, 0.0],
+      "field_channel_weights": [1.0, 2.0],
+      "c3s4_state_rmse_K": {"sma": 1.0723664973224247, "htf2": 0.22596446172614776, "htf4": 0.2814286777277125, "side": 0.28847617938737635, "phase": 0.031799988776958533},
+      "c3s4_field_rmse_K": {"sma": 1.262992685388076, "htf": 0.9485306193884478},
+      "replay_verified": true
+    },
+    "solid_curvature_fluid4": {
+      "raw_summary": "evidence/experiments/hro_spatial_ablation_fluid4_long_20261123/summary.json",
+      "seeds": [20261121],
+      "updates_per_seed": 200,
+      "curvature_weight": 0.05,
+      "curvature_channel_weights": [1.0, 0.0],
+      "field_channel_weights": [1.0, 4.0],
+      "c3s4_state_rmse_K": {"sma": 1.079675854407026, "htf2": 0.2259930111404787, "htf4": 0.2880077327685221, "side": 0.2916232778901765, "phase": 0.030985960428043417},
+      "c3s4_field_rmse_K": {"sma": 1.3374118205877208, "htf": 0.9336006781633426},
+      "replay_verified": true
+    },
+    "staged_solid_curvature": {
+      "raw_summary": "evidence/experiments/hro_spatial_ablation_staged_long_20261123/summary.json",
+      "seeds": [20261121],
+      "updates_per_seed": 200,
+      "curvature_weight": 0.05,
+      "curvature_start_fraction": 0.5,
+      "curvature_channel_weights": [1.0, 0.0],
+      "field_channel_weights": [1.0, 2.0],
+      "c3s4_state_rmse_K": {"sma": 1.7266349737046425, "htf2": 0.1826482691875589, "htf4": 0.48129834512238284, "side": 0.317848232058727, "phase": 0.03605145338860816},
+      "c3s4_field_rmse_K": {"sma": 2.26321258155314, "htf": 1.0925929450449057},
+      "replay_verified": true
+    }
+  },
+  "decision": {
+    "default_model_promoted": false,
+    "reason": "The solid-curvature variants improve third-cycle state and SMA-field error in one fixed-seed 200-update run, but the HTF field remains above the three-seed coordinate-HRO baseline. A one-seed result is insufficient for a public performance claim.",
+    "implementation_status": "The normalized curvature loss, channel weighting and staged-training controls are implemented and unit-tested. The existing coordinate-HRO checkpoint remains the reference model.",
+    "next_low_cost_step": "Run a three-seed fixed-budget confirmation only after choosing a field-balanced objective from an independent validation split."
+  },
+  "verification": {
+    "screening_and_long_runs_replayed": true,
+    "checkpoint_replay_absolute_tolerance": 0.0,
+    "solver_calls": 0,
+    "unit_test_command": "python -m unittest SciML.tests.test_hierarchical_operator"
+  }
+}

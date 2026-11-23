@@ -58,7 +58,7 @@ Compared with coordinate HRO, modal HRO reduces third-cycle SMA-state error by *
 
 相比坐标 HRO，模态 HRO 将第三循环 SMA 状态误差降低 **7.2%**、流体场误差降低 **20.1%**，SMA 场误差增加 **1.7%**。汇总全部四个测试工况及换热阶段，SMA／流体场 RMSE 下降 **18.6%／36.4%**，空间梯度误差显著减小。不同工况改善程度不同，训练预算及空间监督也存在差异；这是在已分析历史测试集上的系统对照，并非独立确证证据。
 
-[Per-case results, diagnostics and protocol / 逐工况结果、诊断与协议](docs/HRO_MODAL.md) · [Residual-cascade comparison / 残差级联对照](docs/MULTICYCLE_BENCHMARK.md)
+[Per-case results, diagnostics and protocol / 逐工况结果、诊断与协议](docs/HRO_MODAL.md) · [Residual-cascade comparison / 残差级联对照](docs/MULTICYCLE_BENCHMARK.md) · [Spatial-supervision ablation / 空间监督消融](docs/HRO_SPATIAL_SUPERVISION.md)
 
 ## Field demonstrations / 场演示
 

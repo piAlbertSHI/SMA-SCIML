@@ -93,5 +93,19 @@ class HierarchicalTests(unittest.TestCase):
             self.assertTrue(any(p.grad is not None and torch.isfinite(p.grad).all() and p.grad.abs().max()>0 for p in module.parameters()),name)
         self.assertFalse(any(b.requires_grad for b in self.model.buffers()))
 
+    def test_curvature_loss_is_optional_and_supervised(self):
+        out=self.model(self.initial,self.control,2,times=self.times,positions=self.positions)
+        perturbation=.25*self.positions.view(1,1,1,1,-1).square()
+        truth=out['fields'].detach()+perturbation
+        base=joint_loss(out,self.truth,self.model.feature_scale,field_truth=truth,
+                        field_scale=torch.ones(2),positions=self.positions)
+        curved=joint_loss(out,self.truth,self.model.feature_scale,field_truth=truth,
+                          field_scale=torch.ones(2),positions=self.positions,curvature_weight=.001,
+                          curvature_channel_weights=[1.,0.],field_channel_weights=[1.,2.])
+        self.assertNotIn('spatial_curvature',base)
+        self.assertIn('spatial_curvature',curved)
+        self.assertTrue(torch.isfinite(curved['spatial_curvature']))
+        self.assertGreater(float(curved['spatial_curvature'].detach()),0.)
+
 
 if __name__=='__main__':unittest.main()
