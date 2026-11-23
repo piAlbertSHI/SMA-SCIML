@@ -25,6 +25,21 @@ Requested controls and recorded controls agree exactly. The input-contract audit
 
 Several archived fields are declared inactive or unavailable for a stage transition. Uniform inactive-fluid values are initialization placeholders. Hidden storage ownership and explicit restart maps remain open. / 部分阶段的字段被声明为不活动或不可用，统一的非活动流体值只是初始化占位。隐藏储能归属和显式重启映射仍未闭合。
 
+## Interface-gap distribution / 接口差异分布
+
+The 63-case distribution audit shows that the stage-4 path-pipe inlet discrepancy is systematic. All 63 cases have a nonzero gap, with RMSE **0.010648 K** and maximum **0.016588 K**. The hot-sink and hot-buffer starts are nonzero in all cases with RMSE **0.007106 K**. These values describe the recorded/request interface mismatch. They are diagnostic bounds for the input contract and are not formal model-error lower bounds.
+
+63 例分布审计显示，阶段 4 管路入口差异具有系统性。63 个工况全部存在非零差异，RMSE 为 **0.010648 K**，最大值为 **0.016588 K**。热汇和热缓冲起点在全部工况中均非零，RMSE 为 **0.007106 K**。这些数值描述记录/请求接口差异，是输入契约的诊断边界，不是形式化的模型误差下界。
+
+| Stage-4 interface field / 阶段 4 接口字段 | Nonzero cases / 非零工况 | RMSE K | Maximum K |
+|---|---:|---:|---:|
+| Path-pipe inlet / 管路入口 | 63 / 63 | 0.010648 | 0.016588 |
+| Hot sink / 热汇 | 63 / 63 | 0.007106 | 0.009651 |
+| Hot buffer / 热缓冲 | 63 / 63 | 0.007106 | 0.009651 |
+| Simscape cold-sink pipe / Simscape 冷汇管路 | 63 / 63 | 0.004304 | 0.009475 |
+
+The full per-case and per-stage records are available in [stage interface gaps / 阶段接口差异](../evidence/local_studies/wp3_interface_gaps_20261123/stage_interface_gaps.csv), [declared initial gaps / 声明初态差异](../evidence/local_studies/wp3_interface_gaps_20261123/declared_initial_gaps.csv) and [distribution audit / 分布审计](../evidence/local_studies/wp3_interface_gaps_20261123/audit.json). The largest path-pipe cases are retained in the audit summary for split-aware review.
+
 ## Replay and consistency checks / 回放与一致性检查
 
 The four operator checkpoints reproduce their saved predictions exactly. Poisoning withheld labels does not change the refit result. The radial-versus-strip increment identity replays over 32 training field rows with maximum absolute error $1.28\times10^{-13}$ K. The conditional thermal readout checkpoints and training-only refits reproduce exactly. / 四个算子检查点均逐点复现保存预测，注入被留出标签不会改变回放结果。32 条训练场记录的径向—条带增量恒等关系最大绝对误差为 $1.28\times10^{-13}$ K。条件热读出检查点和仅训练集重拟合均逐点复现。 [Operator audit / 算子审计](../evidence/archive/wp4-operator-audit-r1/summary.json) · [Increment verification / 增量核验](../evidence/local_studies/sma_increment_consistency/verification.json) · [Thermal verification / 热读出核验](../evidence/local_studies/sma_stage_readout/verification.json)
@@ -36,6 +51,8 @@ Replay from the repository root uses only the included snapshots and archived ev
 ```bash
 python -m examples.audit_wp3_state_field_contract \
   --output run-output-wp3-state-field-contract
+python -m examples.audit_wp3_interface_gaps \
+  --output run-output-wp3-interface-gaps
 python -m examples.verify_increment_consistency
 python -m examples.verify_thermal_readout
 python -m examples.verify_hierarchical
