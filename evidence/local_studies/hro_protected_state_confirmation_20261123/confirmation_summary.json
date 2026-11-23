@@ -1,0 +1,25 @@
+{
+  "status": "curated_protected_state_confirmation_metrics",
+  "source": "evidence/experiments/hro_protected_state_confirmation_20261123/summary.json",
+  "source_sha256": "97939d52889303efebb6eddc6016ce98f56d59c743a88b61cfca3958752700cc",
+  "selected_candidate": "jitter_fluid2_pareto",
+  "seeds": [20261121, 20261122, 20261123],
+  "updates_per_seed": 200,
+  "metrics": {
+    "sma_entry_K": 0.6221492947374072,
+    "htf_entry_K": 0.2078186570099242,
+    "sma_future_K": 0.6685596997138106,
+    "htf_future_K": 0.7185700740820185,
+    "combined_future_K": 0.6935648868979145,
+    "state_sma_K": 0.4915267165964381,
+    "state_htf2_K": 0.1772324615790065,
+    "state_htf4_K": 0.16489480821356559,
+    "state_u_m": 9.780111393148533e-06,
+    "state_w_m": 0.00011697184657405728
+  },
+  "replay": {
+    "checkpoint_replays": 3,
+    "max_replay_absolute_difference": 0.0,
+    "fresh_solver_calls": 0
+  }
+}

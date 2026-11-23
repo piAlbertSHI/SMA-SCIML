@@ -1,0 +1,35 @@
+{
+  "status": "curated_protected_state_screening_metrics",
+  "source": "evidence/experiments/hro_protected_state_ablation_20261123/summary.json",
+  "source_sha256": "e477536d736ab7ec921d18f6ef518befb8f747388bc84709fecd81840be6d78a",
+  "candidates": {
+    "coordinate_reference": {
+      "combined_future_K": 0.998418,
+      "max_state_regression_fraction": 0.0,
+      "passed": false
+    },
+    "jitter_fluid2_stateguard": {
+      "combined_future_K": 0.797048,
+      "max_state_regression_fraction": 0.042295278304494976,
+      "passed": true
+    },
+    "jitter_fluid2_stageguard": {
+      "combined_future_K": 0.795854,
+      "max_state_regression_fraction": 0.041427631099970386,
+      "passed": true
+    },
+    "jitter_fluid2_pareto": {
+      "combined_future_K": 0.775698,
+      "max_state_regression_fraction": 0.035040444665813686,
+      "passed": true
+    },
+    "jitter_fluid2_strong_stateguard": {
+      "combined_future_K": 0.795412,
+      "max_state_regression_fraction": 0.049246284380529914,
+      "passed": true
+    }
+  },
+  "selected_candidate": "jitter_fluid2_pareto",
+  "selection_rule": "lowest combined future-field RMSE among candidates passing all fixed gates",
+  "fresh_solver_calls": 0
+}

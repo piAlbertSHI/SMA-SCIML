@@ -10,6 +10,10 @@
 
 The coordinate-decoder reference is specified below. / 以下保留坐标解码参考方案。
 
+The protected-state HRO continuation adds normalized state-block weights, late-transition weights and an explicit time-zero entry-field term. Its selected research checkpoint uses 51-point jittered queries, SMA/HTF field weights 1.0/1.5 and displacement/deflection weights 2.5. The internal confirmation report is in [HRO state–field balance](HRO_STATE_FIELD_BALANCE.md).
+
+状态保护 HRO 支线增加归一化状态块权重、后期转移权重和显式 time-zero 入口场项。选定研究检查点使用 51 点抖动查询、SMA/HTF 场权重 1.0/1.5，以及位移/挠度权重 2.5。内部确认报告见[HRO 状态—场平衡](HRO_STATE_FIELD_BALANCE.md)。
+
 **[Hierarchical Recurrent Operator (HRO) / 分层循环算子](HIERARCHICAL_OPERATOR.md):** **3,106,989 trainable parameters**, dual spatial CNNs, latent cross-attention, GRU memory, five FiLM transition heads and a joint coordinate field decoder. The [benchmark](MULTICYCLE_BENCHMARK.md) uses three seeds ×200 updates; third-cycle SMA state/field RMSE is **1.120/1.600 K**, with early-cycle and some state-component regressions. The tables below specify the reference models.
 
 HRO 采用双路空间 CNN、潜变量交叉注意力、GRU 记忆、五个 FiLM 阶段头及联合坐标场解码，约 **311 万可训练参数**。固定训练配置为三种子各200次更新，第三循环 SMA 状态/场 RMSE 为 **1.120/1.600 K**；早期循环及部分状态量退步。下表继续保留已有参考模型记录。

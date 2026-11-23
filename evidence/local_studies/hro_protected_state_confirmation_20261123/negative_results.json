@@ -1,0 +1,28 @@
+{
+  "status": "recorded_tradeoffs_and_open_boundaries",
+  "screening": {
+    "passed_candidates": [
+      "jitter_fluid2_stateguard",
+      "jitter_fluid2_stageguard",
+      "jitter_fluid2_pareto",
+      "jitter_fluid2_strong_stateguard"
+    ],
+    "selection_rule": "lowest combined internal future-field RMSE among candidates passing all fixed gates",
+    "selected": "jitter_fluid2_pareto"
+  },
+  "post_selection_tradeoff": {
+    "sma_c3s4_field_K": 1.5233480333001246,
+    "htf_c3s4_field_K": 0.817022443335306,
+    "reference_sma_c3s4_field_K": 1.5998873948885823,
+    "reference_htf_c3s4_field_K": 0.7749564524299996,
+    "interpretation": "SMA field improves relative to the formal reference while HTF field is modestly higher. The checkpoint is retained for research and not presented as an all-channel replacement."
+  },
+  "remaining_gaps": [
+    "port-level energy closure",
+    "hidden storage ownership",
+    "unseen-material transfer",
+    "independent-grid behavior",
+    "independent confirmation of third-cycle HTF error"
+  ],
+  "fresh_solver_calls": 0
+}

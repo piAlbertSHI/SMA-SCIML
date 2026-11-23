@@ -1,0 +1,151 @@
+{
+  "status": "completed_hro_energy_boundary_audit",
+  "state_snapshot_sha256": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+  "field_snapshot_sha256": "15f5cf30948efea558ba514cafea99f146dcdc13435b66b906e58d582a721096",
+  "state_snapshot_provenance_sha256": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+  "field_snapshot_provenance_sha256": "15f5cf30948efea558ba514cafea99f146dcdc13435b66b906e58d582a721096",
+  "state_keys": [
+    "case_ids",
+    "initial",
+    "control",
+    "cycles",
+    "split",
+    "sample_ids",
+    "case_index",
+    "cycle",
+    "stage",
+    "before",
+    "after",
+    "field_case_index",
+    "field_cycle",
+    "field_stage",
+    "field_truth"
+  ],
+  "state_shapes": {
+    "case_ids": [
+      12
+    ],
+    "initial": [
+      12,
+      515
+    ],
+    "control": [
+      12,
+      9
+    ],
+    "cycles": [
+      12
+    ],
+    "split": [
+      12
+    ],
+    "sample_ids": [
+      118
+    ],
+    "case_index": [
+      118
+    ],
+    "cycle": [
+      118
+    ],
+    "stage": [
+      118
+    ],
+    "before": [
+      118,
+      515
+    ],
+    "after": [
+      118,
+      515
+    ],
+    "field_case_index": [
+      20
+    ],
+    "field_cycle": [
+      20
+    ],
+    "field_stage": [
+      20
+    ],
+    "field_truth": [
+      20,
+      2,
+      50,
+      101
+    ]
+  },
+  "field_keys": [
+    "case_ids",
+    "cycle",
+    "stage",
+    "truth"
+  ],
+  "field_shapes": {
+    "case_ids": [
+      32
+    ],
+    "cycle": [
+      32
+    ],
+    "stage": [
+      32
+    ],
+    "truth": [
+      32,
+      2,
+      50,
+      101
+    ]
+  },
+  "required_energy_terms": [
+    "realized_signed_mass_flow",
+    "pressure_command_trajectory",
+    "port_temperature_ownership",
+    "mechanical_work",
+    "capacity_and_latent_restart_convention",
+    "environment_heat",
+    "internal_pipe_fluid_method",
+    "independent_closure_residual"
+  ],
+  "missing_energy_terms": [
+    "realized_signed_mass_flow",
+    "pressure_command_trajectory",
+    "port_temperature_ownership",
+    "mechanical_work",
+    "capacity_and_latent_restart_convention",
+    "environment_heat",
+    "internal_pipe_fluid_method",
+    "independent_closure_residual"
+  ],
+  "archived_information_gaps": {
+    "temperature_only_operator_outputs": [
+      "realized signed mass flow",
+      "pressure-command trajectory",
+      "port temperature ownership",
+      "mechanical work",
+      "capacities and latent-energy/restart convention"
+    ],
+    "energy_export_not_present": [
+      "Q_environment_J",
+      "Q_internal_pipe_fluid_method",
+      "Q_internal_pipe_fluid_temperature_estimate_J"
+    ],
+    "independent_energy_closure": "not established by summing exported residual-derived terms; source/storage provenance must be inspected"
+  },
+  "export_identity_residuals": {
+    "Qcool_J": 0.0,
+    "COP": 0.0,
+    "Wpump_J": 2.168404344971009e-19
+  },
+  "endpoint_port_gaps_K": {
+    "first_vs_inlet": 12.999177231152316,
+    "last_vs_outlet": 12.93937223351088,
+    "last_vs_inlet": 12.928231328733432,
+    "first_vs_outlet": 12.898859531672542
+  },
+  "independent_closure_established": false,
+  "autonomous_field_to_COP_claim": false,
+  "fresh_solver_calls": 0,
+  "interpretation": "Temperature state and field snapshots support state/field prediction audits. They do not contain the signed flow, pressure, work, storage ownership and independent closure terms required for an autonomous field-to-energy claim."
+}

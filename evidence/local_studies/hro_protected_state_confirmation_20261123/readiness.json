@@ -1,0 +1,77 @@
+{
+  "status": "verified_research_checkpoint_confirmed",
+  "screening": {
+    "path": "evidence/experiments/hro_protected_state_ablation_20261123/summary.json",
+    "sha256": "e477536d736ab7ec921d18f6ef518befb8f747388bc84709fecd81840be6d78a",
+    "candidates": 5,
+    "seeds": 3,
+    "updates_per_seed": 160,
+    "selected_candidate": "jitter_fluid2_pareto",
+    "selected_internal_future_field_K": 0.775698
+  },
+  "curated_screening_metrics": "evidence/local_studies/hro_protected_state_confirmation_20261123/screening_summary.json",
+  "confirmation": {
+    "path": "evidence/experiments/hro_protected_state_confirmation_20261123/summary.json",
+    "sha256": "97939d52889303efebb6eddc6016ce98f56d59c743a88b61cfca3958752700cc",
+    "seeds": [20261121, 20261122, 20261123],
+    "updates_per_seed": 200,
+    "checkpoint_replays": 3,
+    "max_replay_absolute_difference": 0.0,
+    "fresh_solver_calls": 0,
+    "sealed_test_cases_opened": false
+  },
+  "curated_confirmation_metrics": "evidence/local_studies/hro_protected_state_confirmation_20261123/confirmation_summary.json",
+  "internal_confirmation_metrics": {
+    "sma_entry_K": 0.6221492947374072,
+    "htf_entry_K": 0.2078186570099242,
+    "sma_future_K": 0.6685596997138106,
+    "htf_future_K": 0.7185700740820185,
+    "combined_future_K": 0.6935648868979145,
+    "state_sma_K": 0.4915267165964381,
+    "state_htf2_K": 0.1772324615790065,
+    "state_htf4_K": 0.16489480821356559,
+    "state_u_m": 9.780111393148533e-06,
+    "state_w_m": 0.00011697184657405728
+  },
+  "post_selection_third_cycle_audit": {
+    "path": "evidence/local_studies/hro_protected_state_confirmation_20261123/test_audit.json",
+    "sha256": "bdaa72d4e4b7903f382b7da9d8594e46262876cb80ecd04b86613caef421c95d",
+    "c3s4_sma_state_K": 1.0880687196300693,
+    "c3s4_htf2_state_K": 0.18393907975351564,
+    "c3s4_htf4_state_K": 0.3047310853459925,
+    "c3s4_sma_field_K": 1.5233480333001246,
+    "c3s4_htf_field_K": 0.817022443335306,
+    "selection_changed_after_audit": false
+  },
+  "stage_metrics": {
+    "path": "evidence/local_studies/hro_protected_state_confirmation_20261123/stage_metrics.json",
+    "sha256": "02c021a3667cbaba0ceffd2040b4c7f8161c01dc70d933c08a4d3e66a3d7c141"
+  },
+  "screening_stage_metrics": {
+    "path": "evidence/local_studies/hro_protected_state_ablation_20261123_stage_metrics.json",
+    "sha256": "6fa679c78c165b9553cc52c0df006178e45b66a634ab4cd32b1e5e02c6dc7715"
+  },
+  "energy_boundary_audit": {
+    "path": "evidence/local_studies/hro_energy_boundary_20261123/audit.json",
+    "sha256": "0181418f9f63223904fd5d82b869814ad43151a8a90ec2f52d15a6710c52d976",
+    "independent_closure_established": false,
+    "missing_term_count": 8
+  },
+  "figure": {
+    "path": "assets/hro_protected_state/protected_state_tradeoff.svg",
+    "sha256": "42a5133e3dfb5d53291d12d48800e627c1573721d1cd97fdb1a37d9bad4ea7a1",
+    "png_sha256": "ed3b0627e8da789f49b95361c849e742e3c90f85545db2228453416088aa2355"
+  },
+  "default_model_decision": {
+    "public_benchmark_default": "retain_state_priority_reference",
+    "research_checkpoint": "promote_jitter_fluid2_pareto_for_follow_up",
+    "reason": "Internal gates and confirmation passed, while post-selection c3s4 HTF field remains a trade-off against the reference."
+  },
+  "open_boundaries": [
+    "port-level energy closure",
+    "hidden storage ownership",
+    "unseen-material transfer",
+    "independent-grid behavior",
+    "third-cycle HTF field trade-off"
+  ]
+}

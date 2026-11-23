@@ -1,0 +1,12 @@
+{
+  "status": "generated_hro_protected_state_tradeoff_figure",
+  "generator_sha256": "30e825a798565a1d5a929c7ce1101b8f48e8233184eda7cd077ea3e45d61cebf",
+  "source_summary_sha256": "e477536d736ab7ec921d18f6ef518befb8f747388bc84709fecd81840be6d78a",
+  "source_stage_metrics_sha256": "6fa679c78c165b9553cc52c0df006178e45b66a634ab4cd32b1e5e02c6dc7715",
+  "artifacts": {
+    "protected_state_tradeoff.svg": "42a5133e3dfb5d53291d12d48800e627c1573721d1cd97fdb1a37d9bad4ea7a1",
+    "protected_state_tradeoff.png": "ed3b0627e8da789f49b95361c849e742e3c90f85545db2228453416088aa2355"
+  },
+  "fresh_training_calls": 0,
+  "fresh_solver_calls": 0
+}
