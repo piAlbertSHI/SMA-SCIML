@@ -101,7 +101,8 @@ class HierarchicalTests(unittest.TestCase):
                         field_scale=torch.ones(2),positions=self.positions)
         curved=joint_loss(out,self.truth,self.model.feature_scale,field_truth=truth,
                           field_scale=torch.ones(2),positions=self.positions,curvature_weight=.001,
-                          curvature_channel_weights=[1.,0.],field_channel_weights=[1.,2.])
+                          curvature_channel_weights=[1.,0.],field_channel_weights=[1.,2.],
+                          times=self.times,entry_time_weight=1.)
         self.assertNotIn('spatial_curvature',base)
         self.assertIn('spatial_curvature',curved)
         self.assertTrue(torch.isfinite(curved['spatial_curvature']))

@@ -90,6 +90,18 @@
       "c3s4_state_rmse_K": {"sma": 1.031828562036494, "htf2": 0.1610164317794434, "htf4": 0.37862509279214446, "side": 0.2763148629593, "phase": 0.03680772303187696},
       "c3s4_field_rmse_K": {"sma": 1.56064181687607, "htf": 0.8542378809837129},
       "replay_verified": true
+    },
+    "jitter_fluid2_entry_screen": {
+      "raw_summary": "evidence/experiments/hro_spatial_ablation_entry_screen_20261123/summary.json",
+      "seeds": [20261121],
+      "updates_per_seed": 60,
+      "spatial_jitter_fraction_of_native_spacing": 0.5,
+      "field_channel_weights": [1.0, 2.0],
+      "entry_time_weight": 1.0,
+      "c3s4_state_rmse_K": {"sma": 1.1839661907549286, "htf2": 0.33538379846269595, "htf4": 0.44194069139547215, "side": 0.32683228305110484, "phase": 0.03437594185156207},
+      "c3s4_field_rmse_K": {"sma": 1.8740311039799156, "htf": 1.3089510723422417},
+      "replay_verified": false,
+      "interpretation": "Exploratory 60-update screen with insufficient budget for comparison to the 200-update candidates. No promotion decision was made."
     }
   },
   "decision": {

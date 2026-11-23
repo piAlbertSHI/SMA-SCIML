@@ -24,6 +24,10 @@ The query-jitter branch keeps 51 nominal radial points and perturbs each interio
 
 查询抖动分支保留 51 个名义径向点，将内部查询点扰动到原生 0.01 径向间距的一半以内，并在这些坐标上对归档 101 点真值做线性插值。两个端点保持精确，模型仍使用学习到的阶段入口场构造。
 
+An optional entry-time weight now emphasizes early nonzero field times with a normalized exponential factor. A one-seed 60-update screen was intentionally retained as exploratory evidence because its budget is insufficient for comparison with the 200-update candidates. It was not promoted.
+
+新增可选入口时间权重，使用归一化指数因子强调入口后的早期非零时间点。单种子 60 次更新筛选的预算不足以与 200 次更新候选直接比较，因此仅作为探索证据保留，没有晋级。
+
 | Setting / 设置 | Reference HRO / 参考 HRO | Spatial ablation / 空间消融 |
 |---|---:|---:|
 | Training cases / 训练工况 | 8 | 8 |

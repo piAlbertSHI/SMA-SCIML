@@ -240,7 +240,8 @@ class HierarchicalStateOperator(nn.Module):
 
 def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale=None,positions=None,
                field_weight=1.,gradient_weight=.01,curvature_weight=0.,curvature_scale=None,
-               curvature_channel_weights=None,field_channel_weights=None):
+               curvature_channel_weights=None,field_channel_weights=None,times=None,
+               entry_time_weight=0.):
     """Supervised state + field + spatial derivative losses; no claimed PDE residual.
 
     ``curvature_weight`` is an optional supervised second-spatial-derivative term.
@@ -250,11 +251,14 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
     explicit ``curvature_scale`` is supplied. ``curvature_channel_weights`` can
     focus the term on the solid or fluid field while preserving a normalized
     two-channel mean. ``field_channel_weights`` applies the same normalized
-    weighting to field-value and spatial-gradient supervision.
+    weighting to field-value and spatial-gradient supervision. ``entry_time_weight``
+    emphasizes early nonzero field times with a normalized exponential weight.
     The default is zero to preserve the original HRO objective exactly.
     """
     if field_weight < 0 or gradient_weight < 0 or curvature_weight < 0:
         raise ValueError('Loss weights must be nonnegative')
+    if entry_time_weight < 0:
+        raise ValueError('Entry time weight must be nonnegative')
     if curvature_scale is not None and curvature_scale <= 0:
         raise ValueError('Curvature scale must be positive')
     if curvature_channel_weights is not None:
@@ -278,10 +282,20 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
             field_weight_tensor=normalized_field_weights.view(1,1,2,1,1)
         else:
             field_weight_tensor=1.
+        if entry_time_weight:
+            if times is None or times.ndim != 1 or len(times) != scaled.shape[3] or not torch.isfinite(times).all():
+                raise ValueError('Increasing field times are required for entry weighting')
+            if torch.any(times < 0) or torch.any(times > 1) or not torch.all(torch.diff(times) > 0):
+                raise ValueError('Field times must increase within [0,1]')
+            temporal_weights=1.+entry_time_weight*torch.exp(-4.*times[1:])
+            temporal_weights=temporal_weights*len(temporal_weights)/temporal_weights.sum()
+            temporal_weight_tensor=temporal_weights.to(scaled).view(1,1,1,-1,1)
+        else:
+            temporal_weight_tensor=1.
         # Time zero is an input constraint; omit it from supervised future error.
-        result['field']=(scaled[:,:,:,1:].square()*field_weight_tensor).mean()
+        result['field']=(scaled[:,:,:,1:].square()*field_weight_tensor*temporal_weight_tensor).mean()
         if positions is None or len(positions)<2 or not torch.all(torch.diff(positions)>0):raise ValueError('Increasing spatial grid required')
-        result['spatial_gradient']=(torch.diff(scaled[:,:,:,1:],dim=-1).div(torch.diff(positions)).square()*field_weight_tensor).mean()
+        result['spatial_gradient']=(torch.diff(scaled[:,:,:,1:],dim=-1).div(torch.diff(positions)).square()*field_weight_tensor*temporal_weight_tensor).mean()
         if curvature_weight:
             if len(positions)<3:
                 raise ValueError('At least three spatial points are required for curvature loss')
@@ -300,6 +314,7 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
                 weights=channel_weights.to(curvature_error).view(1,1,2,1,1)
                 weights=weights*2/weights.sum()
                 curvature_error=curvature_error*weights
+            curvature_error=curvature_error*temporal_weight_tensor
             result['spatial_curvature']=curvature_error.mean()
     total=(state_loss+field_weight*result.get('field',0.)+
            gradient_weight*result.get('spatial_gradient',0.)+
