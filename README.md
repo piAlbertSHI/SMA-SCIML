@@ -106,7 +106,7 @@ Matched-budget ablations, stage-consistent state/field coupling, uncertainty und
 
 匹配预算的消融、符合阶段语义的状态／场耦合、外推不确定性及能量核算构成后续研究方向。历史本构实现及材料参数已恢复，可用于后续兼容性验证和数据扩充。现有证据来自数值数据，实验验证及完整耦合能量闭合仍待完成。
 
-[Research overview / 研究概览](docs/SHOWCASE.md) · [Result gallery / 结果图集](docs/RESULTS_GALLERY.md) · [Data card / 数据说明](docs/DATA_CARD.md)
+[Research overview / 研究概览](docs/SHOWCASE.md) · [Result gallery / 结果图集](docs/RESULTS_GALLERY.md) · [Full-cycle scalar contract / 完整循环标量契约](docs/WP2_SCALAR_RELIABILITY.md#full-cycle-scalar-contract) · [Data card / 数据说明](docs/DATA_CARD.md)
 
 ## Quickstart / 快速开始
 

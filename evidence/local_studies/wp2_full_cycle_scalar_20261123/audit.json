@@ -1,0 +1,89 @@
+{
+  "status": "verified_wp2_full_cycle_scalar_contract",
+  "learning_only": true,
+  "fresh_training_calls": 0,
+  "fresh_solver_calls": 0,
+  "scope": {
+    "cases": 63,
+    "split_counts": {
+      "calibration": 13,
+      "test": 13,
+      "train": 37
+    },
+    "archived_model_targets": [
+      "Qcool_J",
+      "Wpump_J",
+      "COP",
+      "SCP_W_per_kg",
+      "deltaT_hot_cold_max_K"
+    ],
+    "saved_auxiliary_target": "Wtotal_for_COP_J",
+    "saved_features": [
+      "radius_m",
+      "thickness_m",
+      "pressure_Pa",
+      "flush_volume_target_ratio",
+      "exchange_duration_s",
+      "material_recA",
+      "material_recAs"
+    ],
+    "missing_or_unlinked_inputs": [
+      "V_star",
+      "cycle_frequency",
+      "failure_label_linked_to_case_id",
+      "independent_Q_environment_J",
+      "independent_Q_internal_pipe_fluid_J"
+    ],
+    "failure_labels_joined_to_scalar_cases": false
+  },
+  "contract_checks": {
+    "unique_case_ids": 63,
+    "all_values_finite": true,
+    "positive_target_ranges": true,
+    "export_identity_max_abs_residual": {
+      "COP_minus_Qcool_div_Wtotal": 0.0,
+      "Qcool_minus_COP_times_Wtotal": 3.552713678800501e-15
+    },
+    "archived_three_seed_reports_reconciled": true,
+    "metrics_json_reconciled": true
+  },
+  "target_ranges": {
+    "Qcool_J": {
+      "min": 7.8011736613936495,
+      "max": 25.260631298304766
+    },
+    "Wpump_J": {
+      "min": 0.0011465793844075555,
+      "max": 0.004064262214031917
+    },
+    "COP": {
+      "min": 1.595821322045362,
+      "max": 3.5331809488290755
+    },
+    "SCP_W_per_kg": {
+      "min": 370.36671187265273,
+      "max": 1277.75920376127
+    },
+    "deltaT_hot_cold_max_K": {
+      "min": 1.1515900498458223,
+      "max": 2.7814106872483535
+    },
+    "Wtotal_for_COP_J": {
+      "min": 2.61332119779617,
+      "max": 13.666088095616615
+    }
+  },
+  "reliability_boundary": {
+    "model_scores_are_archived_descriptive_results": true,
+    "independent_new_design_confirmation": false,
+    "full_energy_closure": false,
+    "failure_label_reliability": "not evaluable from scalar63 snapshot because failure labels are not linked"
+  },
+  "source_sha256": {
+    "data/scalar63.npz": "63f5bc0b9c19580c1354edde558b1b05f4bf89cb92484fec8d3f21d9bdd8ac5f",
+    "data/metrics.json": "84290c3cbcd125fc08700a7eaef6b6b3af4e84227dc0e6b7b4dcc7f448ab2a21",
+    "evidence/archive/wp2-strong-r1/protocol.json": "df834ce7bc5913d8d3f99153da8525a3b8290892ac6ff5633226f5f22f0a263e",
+    "evidence/archive/wp2-strong-r1/summary.json": "6e1af6f31f61fa6db7e8e80f43d60fe50ed24fe21547a7190ce7a4bd03f21aa6",
+    "audit_code": "0c5158bfc9afd3380e2b0fbef62ac33cdb5d61f72718499dd896562adf54217b"
+  }
+}

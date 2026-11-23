@@ -9,6 +9,7 @@ SMA-SCIML 提供面向弹热制冷科学机器学习的方法、基准与软件�
 | Project and research questions / 项目与研究问题 | [Research overview / 研究概览](SHOWCASE.md) |
 | Work packages and open work / 工作包与研究缺口 | [Project status and priorities / 项目进度与优先级](PROJECT_STATUS.md) |
 | WP2 scalar reliability / WP2 标量可靠性 | [Archived design-law audit / 归档设计规律审计](WP2_SCALAR_RELIABILITY.md) |
+| WP2 full-cycle scalar contract / WP2 完整循环标量契约 | [63-case contract audit / 63 例契约审计](../evidence/local_studies/wp2_full_cycle_scalar_20261123/audit.json) |
 | WP3 state–field contract / WP3 状态—场契约 | [Historical interface audit / 历史接口审计](WP3_STATE_FIELD_CONTRACT.md) |
 | WP4 field-to-energy contract / WP4 场到能量契约 | [Energy information audit / 能量信息审计](WP4_FIELD_ENERGY_CONTRACT.md) |
 | Solver versions and loading fields / 求解器版本与加载场 | [Paired archive audit and operator benchmark / 配对归档核验与算子基准](LOADING_FIELD_STUDY.md) |

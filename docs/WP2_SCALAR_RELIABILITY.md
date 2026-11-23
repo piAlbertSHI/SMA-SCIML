@@ -6,6 +6,16 @@ The adjacent archived WP2 design-law benchmark is complete as a **static design-
 
 The source run contains 1,176 raw metric rows and 392 seed-aggregated rows. All four schemes are present, and the resume checkpoint lists every scheme as completed. The source code, configuration, scalar data, split manifest and provenance hashes match the archived run. No fitting or solver call was made by this audit. / 来源运行包含 1,176 条原始指标记录和 392 条种子聚合记录。四种切分均存在，恢复检查点列出全部已完成方案。来源代码、配置、标量数据、切分清单和来源哈希均与归档运行一致。本审计没有重新拟合模型，也没有调用求解器。 [Audit record / 审计记录](../evidence/local_studies/wp2_scalar_reliability_20261123/audit.json)
 
+## Full-cycle scalar contract / 完整循环标量契约
+
+The separate 63-case full-cycle snapshot has 37 training, 13 calibration and 13 test cases. Its archived neural and classical comparisons predict five targets: $Q_{cool}$, $W_{pump}$, COP, SCP and maximum temperature span. The snapshot also stores $W_{total, COP}$ as an auxiliary target. The audit reconciles all three archived seed reports with the saved aggregate summary and checks the complete finite-value and unique-case contract. [Full-cycle contract audit / 完整循环契约审计](../evidence/local_studies/wp2_full_cycle_scalar_20261123/audit.json)
+
+独立的 63 例完整循环快照包含 37 个训练、13 个校准和 13 个测试工况。归档神经模型与经典模型比较预测五个目标：$Q_{cool}$、$W_{pump}$、COP、SCP 和最大温差。快照另保存 $W_{total, COP}$ 辅助目标。审计已将三个归档种子报告与保存的聚合摘要逐项核对，并检查有限值及工况唯一性契约。[完整循环契约审计](../evidence/local_studies/wp2_full_cycle_scalar_20261123/audit.json)
+
+The saved identity is exact at the recorded precision, with maximum residuals of 0 for COP minus $Q_{cool}/W_{total,COP}$ and $3.55\times10^{-15}$ J for the reverse expression. The model target contract does not include a linked failure label, independent environment heat, internal-pipe-fluid heat or an independently defined work boundary. This closes the archived scalar schema and arithmetic audit while preserving the reliability and energy-closure limits.
+
+记录的恒等关系在保存精度下成立，COP 减去 $Q_{cool}/W_{total,COP}$ 的最大残差为 0，反向表达式的最大残差为 $3.55\times10^{-15}$ J。模型目标契约没有绑定失败标签、独立环境热、管内流体热量或独立定义的功边界。该结果完成了归档标量的模式与算术审计，同时保留可靠性和能量闭合边界。
+
 | Scheme / 方案 | Train | Validation | Test |
 |---|---:|---:|---:|
 | IID | 2,893 | 365 | 326 |
@@ -38,7 +48,7 @@ Material holdout is the weakest invalid-design ranking condition. The archive re
 
 ## Claim boundary / 结论边界
 
-Dataset v1.0 omits $V^*$, cycle frequency, exchange time, $Q_{cool}$, $W_{pump}$, COP, SCP and cycle temperature span. WP2 full-cycle closure therefore remains incomplete. The existing 63-case full-cycle scalar evidence and this static design-law audit are separate sources with separate input contracts. / 数据集 v1.0 缺少 $V^*$、循环频率、换热时间、$Q_{cool}$、$W_{pump}$、COP、SCP 和循环温差。因此 WP2 的完整循环闭合仍未完成。现有 63 例完整循环标量证据与本静态设计规律审计属于不同来源，输入契约也不同。
+Dataset v1.0 omits $V^*$, cycle frequency, exchange time and the complete port-level energy terms. The static design-law subtask therefore remains separate from the 63-case full-cycle scalar archive. The full-cycle scalar contract is now reconciled, while independent failure-label reliability, new-design confirmation and complete energy closure remain open. / 数据集 v1.0 缺少 $V^*$、循环频率、换热时间以及完整端口级能量项。因此静态设计规律子任务仍与 63 例完整循环标量归档分开。完整循环标量契约现已核对，但独立失败标签可靠性、新设计确认和完整能量闭合仍未完成。
 
 The audit can be replayed from the repository root when the adjacent source archive is available.
 
@@ -46,4 +56,13 @@ The audit can be replayed from the repository root when the adjacent source arch
 python -m examples.audit_wp2_scalar_evidence \
   --solver-repo ../../gx101r1 \
   --output run-output-wp2-scalar-reliability
+```
+
+The 63-case contract audit uses only the curated scalar snapshot and archived reports.
+
+63 例契约审计只使用整理后的标量快照和归档报告。
+
+```bash
+python -m examples.audit_wp2_full_cycle_scalar_contract \
+  --output run-output-wp2-full-cycle-contract
 ```
