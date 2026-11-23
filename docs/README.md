@@ -19,6 +19,7 @@ SMA-SCIML 提供面向弹热制冷科学机器学习的方法、基准与软件�
 | HRO spatial supervision / HRO 空间监督 | [Curvature and channel-weight ablation / 曲率与通道权重消融](HRO_SPATIAL_SUPERVISION.md) |
 | HRO memory sensitivity / HRO 记忆敏感性 | [Inference-only memory ablation / 只推理记忆消融](HRO_MEMORY_SENSITIVITY.md) |
 | HRO material split / HRO 材料分组 | [recA/recAS audit / recA/recAS 审计](HRO_MATERIAL_SPLIT.md) |
+| HRO field-entry consistency / HRO 场入口一致性 | [Entry-versus-future audit / 入口与未来场审计](HRO_FIELD_ENTRY_CONSISTENCY.md) |
 | Modal fields and two-phase optimization / 模态场与双阶段优化 | [Architecture, training and benchmark / 架构、训练与基准](HRO_MODAL.md) |
 | SMA field error diagnosis / SMA 场误差诊断 | [Conditional residual readout and local validation / 条件残差读出与本地验证](HRO_SMA_DIAGNOSIS.md) |
 | Stage-specific spatial readout / 分阶段空间读出 | [Regularization, mean constraint and segment analysis / 正则、平均温度约束与逐段分析](HRO_STAGE_READOUT.md) |
