@@ -54,16 +54,17 @@ The primary endpoint is cycle 3, stage 4. Field errors omit the exact stage-entr
 | Staged curvature activation / 分阶段开启曲率 | 1.727 | 0.183 | 0.481 | 2.263 | 1.093 |
 | Query jitter, equal field channels / 查询抖动、等通道场权重 | 1.054 | 0.189 | 0.364 | 1.486 | 0.932 |
 | Query jitter, fluid weight 2 / 查询抖动、流体权重 2 | **1.032** | **0.161** | 0.379 | 1.561 | 0.854 |
+| Query jitter, fluid weight 2, three-seed confirmation / 查询抖动、流体权重 2、三种子确认 | **1.011 ± 0.020** | **0.160 ± 0.010** | 0.386 ± 0.039 | 1.603 ± 0.140 | 0.825 ± 0.066 |
 
-Solid-focused curvature reduces third-cycle SMA state and SMA field error in the fixed-seed runs. Query jitter gives a better state/field compromise, and fluid weight 2 further reduces HTF error while retaining the state improvement. The staged schedule does not preserve state accumulation and is retained as a rejected diagnostic.
+Solid-focused curvature reduces third-cycle SMA state and SMA field error in the fixed-seed runs. Query jitter with fluid weight 2 now has a three-seed confirmation, reducing SMA state RMSE from 1.120 to 1.011 K and HTF2 state RMSE from 0.242 to 0.160 K. SMA field accuracy is preserved within the seed variation, while HTF field RMSE increases from 0.775 to 0.825 K. The candidate is therefore retained as a state-priority configuration, with the coordinate HRO remaining the all-channel reference. The staged schedule does not preserve state accumulation and is retained as a rejected diagnostic.
 
-固体曲率监督在固定种子运行中同时降低第三循环 SMA 状态和 SMA 场误差。查询抖动带来更平衡的状态—场取舍，流体权重 2 进一步降低 HTF 误差，同时保留状态改善。分阶段方案没有保持状态累积精度，作为拒绝的诊断结果保留。
+固体曲率监督在固定种子运行中同时降低第三循环 SMA 状态和 SMA 场误差。查询抖动配合流体权重 2 已完成三种子确认，将 SMA 状态 RMSE 从 1.120 降至 1.011 K、HTF2 状态从 0.242 降至 0.160 K。SMA 场精度处于种子波动范围内，HTF 场则从 0.775 升至 0.825 K。因此该方案作为状态优先配置保留，坐标 HRO 继续作为全通道参考。分阶段方案没有保持状态累积精度，作为拒绝的诊断结果保留。
 
 ## Decision and evidence boundary / 决策与证据边界
 
-The current coordinate-HRO checkpoint remains the reference model. The new loss, channel-weighting and query-jitter controls are implemented, unit-tested and available for a future field-balanced confirmation. The candidate rows use one test-informed historical cohort and therefore do not support a public performance claim or a default-checkpoint replacement. A three-seed 200-update confirmation would require an additional CPU budget of roughly eight minutes and has not been started.
+The current coordinate-HRO checkpoint remains the all-channel reference model. The confirmed query-jitter recipe is available as a state-priority candidate. The candidate rows use one test-informed historical cohort and therefore do not support a public performance claim or an unconditional default-checkpoint replacement. A separate field-balanced objective is still required before promotion.
 
-当前坐标 HRO 检查点继续作为参考模型。新的曲率损失、通道权重和查询抖动控制已经实现并通过单元测试，可用于后续场平衡确认。候选行使用已参与开发的历史测试队列，现阶段不能支持公开性能结论，也不替换默认检查点。三种子、每种子 200 次更新的确认预计需要约 8 分钟 CPU 预算，目前尚未启动。
+当前坐标 HRO 检查点继续作为全通道参考模型。已确认的查询抖动方案作为状态优先候选保留。候选行使用已参与开发的历史测试队列，现阶段不能支持公开性能结论，也不能无条件替换默认检查点。晋级前仍需单独解决场平衡目标。
 
 The compact study record is [summary.json](../evidence/local_studies/hro_spatial_supervision_20261123/summary.json), with source and raw-run hashes in [manifest.json](../evidence/local_studies/hro_spatial_supervision_20261123/manifest.json). Full raw checkpoints remain in the local `evidence/experiments/hro_spatial_ablation_*_20261123` directories for replay. The curated record keeps the large exploratory checkpoints outside the Git commit.
 

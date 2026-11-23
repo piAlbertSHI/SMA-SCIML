@@ -1,0 +1,75 @@
+{
+  "status": "verified_wp2_wp4_current_evidence_boundary",
+  "fresh_training_calls": 0,
+  "fresh_solver_calls": 0,
+  "evidence_records": {
+    "wp2_static": {
+      "status": "verified_archived_wp2_scalar_reliability",
+      "source_sha256": "2ed4902c462bef04b077c88c3a899cad71cd3c12267591c547b31c2c5177dea9"
+    },
+    "wp2_full_cycle": {
+      "status": "verified_wp2_full_cycle_scalar_contract",
+      "source_sha256": "54639153e675b4904946b50e789077035fa1259c948a8b45dbf436d7e5dec654"
+    },
+    "wp3_contract": {
+      "status": "verified_wp3_state_field_contract",
+      "source_sha256": "d63d1180b65e3aaa9ea69effb5e6bfbb91786819b4a58631828ef7c3bcbea34e"
+    },
+    "wp3_gaps": {
+      "status": "verified_wp3_interface_gap_distribution",
+      "source_sha256": "87ba750839385bad72e93d635fa1d4db434705a84b1f4c967cc318a112f02332"
+    },
+    "wp4_energy": {
+      "status": "completed_field_energy_information_audit",
+      "source_sha256": "2865849a85a2a214f0a3b1df758fce57ebfb0ddde8bc6d443e0a5cb50b147087"
+    },
+    "hro_spatial": {
+      "status": "completed_hro_spatial_supervision_ablation",
+      "source_sha256": "dca2e9fe4da538602b805daa95ccc4fbd1d33d114a43678331c4add49520000e"
+    },
+    "hro_spatial_confirm": {
+      "status": "completed_hro_spatial_ablation",
+      "source_sha256": "fdaa74d2907dcde169c7ffaead14f5b5aee71ffdf078233254a756d7e3052ae6"
+    },
+    "hro_memory": {
+      "status": "verified_hro_memory_sensitivity",
+      "source_sha256": "b2db2af884a66e61f02c48cd8718d7d13444e1b3c1a8b7813e30714994660c1e"
+    },
+    "hro_material": {
+      "status": "verified_hro_material_split_audit",
+      "source_sha256": "ac5f90c264a2a5c5f5575371816e7929db24d7cedd1a4760d57d64c906c9cf98"
+    },
+    "hro_entry": {
+      "status": "verified_hro_field_entry_consistency",
+      "source_sha256": "3e96f415698da559e7b388aa4769311eef48b4cedfdeb90eb79c940e6377f14d"
+    }
+  },
+  "curated_documentation_bound": [
+    "docs/WP2_SCALAR_RELIABILITY.md",
+    "docs/WP3_STATE_FIELD_CONTRACT.md",
+    "docs/WP4_FIELD_ENERGY_CONTRACT.md",
+    "docs/HRO_SPATIAL_SUPERVISION.md",
+    "docs/HRO_MEMORY_SENSITIVITY.md",
+    "docs/HRO_MATERIAL_SPLIT.md",
+    "docs/HRO_FIELD_ENTRY_CONSISTENCY.md"
+  ],
+  "fresh_solver_calls_by_record": {
+    "wp2_static": 0,
+    "wp2_full_cycle": 0,
+    "wp3_contract": 0,
+    "wp3_gaps": 0,
+    "wp4_energy": 0,
+    "hro_spatial": 0,
+    "hro_spatial_confirm": 0,
+    "hro_memory": 0,
+    "hro_material": 0,
+    "hro_entry": 0
+  },
+  "verified_open_boundaries": [
+    "The three-seed 200-update query-jitter confirmation is complete. Its HTF field RMSE remains modestly above the coordinate-HRO reference, so the recipe is retained as a state-priority candidate.",
+    "Independent failure-label reliability and new-design confirmation remain unavailable in the archived scalar contract.",
+    "Port-level energy closure, hidden storage ownership and restart maps remain open.",
+    "Unseen-material and independent-grid generalization remain unverified."
+  ],
+  "interpretation": "The current WP2-WP4 archive and low-cost model-improvement evidence is internally reconciled. Open boundaries are explicit and are not promoted to completed claims."
+}

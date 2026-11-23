@@ -14,7 +14,8 @@
     "evidence/experiments/hro_spatial_ablation_staged_long_20261123/summary.json": "1e5cfe94f79465ead2b8d1e79e5f164f2749bbad5f22fc6e086cda50c4ec3983",
     "evidence/experiments/hro_spatial_ablation_jitter_long_20261123/summary.json": "8f8c01798c5f89b59fd118ef65b2fb874958f4318019aa8b82d47adc7771357e",
     "evidence/experiments/hro_spatial_ablation_jitter_fluid2_long_20261123/summary.json": "a8a3501c4ac88aaea84e1b5b70c31b976bba82238e6782a9bfb4a2fe110fe8bd",
-    "evidence/experiments/hro_spatial_ablation_entry_screen_20261123/summary.json": "e08b8f235be31122a588660d6ff140f12312146f762eccb8f73ce14c985dd4a0"
+    "evidence/experiments/hro_spatial_ablation_entry_screen_20261123/summary.json": "e08b8f235be31122a588660d6ff140f12312146f762eccb8f73ce14c985dd4a0",
+    "evidence/experiments/hro_spatial_ablation_jitter_fluid2_confirm_20261123/summary.json": "fdaa74d2907dcde169c7ffaead14f5b5aee71ffdf078233254a756d7e3052ae6"
   },
   "raw_run_source_sha256": {
     "channel_long": {
@@ -42,6 +43,10 @@
       "examples/hro_spatial_ablation.py": "81953833adebd920aa21f2489cc496d87a0917a9075ac441baff9e789d13fe72"
     },
     "entry_screen": {
+      "SciML/models/v13/hierarchical_operator.py": "f3ad56f3eaf2773d3c1a49682b6dc6c13fa3e5bc0c0daed8236cf614f44c133c",
+      "examples/hro_spatial_ablation.py": "0e3cd7bc11375368f5e3bd8d6c5f2ad1c7bc6471fe1a7aaf0c9ab66b5094d6aa"
+    },
+    "jitter_fluid2_confirm": {
       "SciML/models/v13/hierarchical_operator.py": "f3ad56f3eaf2773d3c1a49682b6dc6c13fa3e5bc0c0daed8236cf614f44c133c",
       "examples/hro_spatial_ablation.py": "0e3cd7bc11375368f5e3bd8d6c5f2ad1c7bc6471fe1a7aaf0c9ab66b5094d6aa"
     }

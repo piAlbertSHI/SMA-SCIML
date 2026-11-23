@@ -102,6 +102,17 @@
       "c3s4_field_rmse_K": {"sma": 1.8740311039799156, "htf": 1.3089510723422417},
       "replay_verified": false,
       "interpretation": "Exploratory 60-update screen with insufficient budget for comparison to the 200-update candidates. No promotion decision was made."
+    },
+    "jitter_fluid2_confirm": {
+      "raw_summary": "evidence/experiments/hro_spatial_ablation_jitter_fluid2_confirm_20261123/summary.json",
+      "seeds": [20261121, 20261122, 20261123],
+      "updates_per_seed": 200,
+      "spatial_jitter_fraction_of_native_spacing": 0.5,
+      "field_channel_weights": [1.0, 2.0],
+      "c3s4_state_rmse_K": {"sma": {"mean": 1.0110103956762888, "sd": 0.019680835939243434}, "htf2": {"mean": 0.16035302492829195, "sd": 0.010378449680549661}, "htf4": {"mean": 0.3856680243960211, "sd": 0.039057146664628554}, "side": {"mean": 0.2662030040120658, "sd": 0.01202709426182366}, "phase": {"mean": 0.03739061262117297, "sd": 0.0016716481058728595}},
+      "c3s4_field_rmse_K": {"sma": {"mean": 1.6030886555059631, "sd": 0.13997969560530726}, "htf": {"mean": 0.8245573442759943, "sd": 0.06570856003854926}},
+      "replay_verified": true,
+      "interpretation": "Three-seed confirmation supports the state improvement and preserves SMA-field accuracy, while HTF-field error is modestly higher than the reference. Keep as a state-priority candidate, not the default all-channel checkpoint."
     }
   },
   "decision": {

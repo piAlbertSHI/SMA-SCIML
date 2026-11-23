@@ -20,7 +20,7 @@ SMA-SCIML 提供面向弹热制冷科学机器学习的方法、基准与软件�
 | HRO memory sensitivity / HRO 记忆敏感性 | [Inference-only memory ablation / 只推理记忆消融](HRO_MEMORY_SENSITIVITY.md) |
 | HRO material split / HRO 材料分组 | [recA/recAS audit / recA/recAS 审计](HRO_MATERIAL_SPLIT.md) |
 | HRO field-entry consistency / HRO 场入口一致性 | [Entry-versus-future audit / 入口与未来场审计](HRO_FIELD_ENTRY_CONSISTENCY.md) |
-| WP2–WP4 readiness / WP2–WP4 就绪审计 | [Current evidence boundary / 当前证据边界](../evidence/local_studies/wp2_wp4_readiness_20261123/readiness.json) |
+| WP2–WP4 readiness / WP2–WP4 就绪审计 | [Current evidence boundary / 当前证据边界](../evidence/local_studies/wp2_wp4_readiness_20261123_r2/readiness.json) |
 | Modal fields and two-phase optimization / 模态场与双阶段优化 | [Architecture, training and benchmark / 架构、训练与基准](HRO_MODAL.md) |
 | SMA field error diagnosis / SMA 场误差诊断 | [Conditional residual readout and local validation / 条件残差读出与本地验证](HRO_SMA_DIAGNOSIS.md) |
 | Stage-specific spatial readout / 分阶段空间读出 | [Regularization, mean constraint and segment analysis / 正则、平均温度约束与逐段分析](HRO_STAGE_READOUT.md) |
