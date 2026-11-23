@@ -17,7 +17,11 @@ The project status maps the original work packages to current model evidence and
 
 The internal screening result is recorded in [Next-stage HRO results](NEXT_STAGE_HRO_RESULTS.md). It found a field-improvement trade-off without a candidate that satisfied the fixed all-channel safety gates. The continuing twelve-hour development stage is specified in [HRO twelve-hour development plan](HRO_12H_DEVELOPMENT_PLAN.md).
 
+The completed continuation is summarized in [HRO twelve-hour stage report](HRO_12H_STAGE_REPORT.md).
+
 内部筛选结果见[下一阶段 HRO 结果](NEXT_STAGE_HRO_RESULTS.md)。当前筛选发现了场误差改善与状态安全之间的权衡，但没有候选同时满足固定的全通道安全门。持续十二小时推进阶段见[HRO 十二小时推进计划](HRO_12H_DEVELOPMENT_PLAN.md)。
+
+已完成的持续推进总结见[HRO 十二小时阶段报告](HRO_12H_STAGE_REPORT.md)。
 
 The multi-cycle historical test cohort has already been examined. Further development should use training-only validation and distinguish subsequent exploratory evaluation from independent confirmation. Numerical accuracy, engineering suitability and experimental validation are separate claims.
 
