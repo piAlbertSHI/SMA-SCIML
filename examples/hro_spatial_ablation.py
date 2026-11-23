@@ -95,8 +95,8 @@ def _query_positions(spatial_indices, jitter_fraction, rng):
     return torch.tensor(positions, dtype=torch.float64)
 
 
-def _train_one(output, arrays, ids, hashes, variant, seed, updates, batch_cases, lr):
-    settings = VARIANTS[variant]
+def _train_one(output, arrays, ids, hashes, variant, seed, updates, batch_cases, lr, settings_override=None):
+    settings = VARIANTS[variant] if settings_override is None else settings_override
     output.mkdir(parents=True)
     protocol = {
         'variant': variant,
@@ -124,6 +124,8 @@ def _train_one(output, arrays, ids, hashes, variant, seed, updates, batch_cases,
             'curvature_start_fraction': settings['curvature_start_fraction'],
             'entry_time_weight': settings.get('entry_time_weight', 0.0),
             'entry_field_weight': settings.get('entry_field_weight', 0.0),
+            'state_block_weights': settings.get('state_block_weights'),
+            'state_stage_weights': settings.get('state_stage_weights'),
         },
         'training_case_ids': ids,
         'training_cycles': [1, 2],
@@ -189,6 +191,8 @@ def _train_one(output, arrays, ids, hashes, variant, seed, updates, batch_cases,
                 times=times,
                 entry_time_weight=settings.get('entry_time_weight', 0.0),
                 entry_field_weight=settings.get('entry_field_weight', 0.0),
+                state_block_weights=settings.get('state_block_weights'),
+                state_stage_weights=settings.get('state_stage_weights'),
             )
             losses['total'].backward()
             norm = torch.nn.utils.clip_grad_norm_(model.parameters(), 1., error_if_nonfinite=True)

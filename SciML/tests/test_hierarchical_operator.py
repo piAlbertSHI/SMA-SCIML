@@ -122,5 +122,14 @@ class HierarchicalTests(unittest.TestCase):
         self.assertGreater(float(weighted['entry_field'].detach()),0.)
         self.assertGreater(float(weighted['total'].detach()),float(base['total'].detach()))
 
+    def test_state_block_and_stage_weights_are_optional(self):
+        out=self.model(self.initial,self.control,2,times=self.times,positions=self.positions)
+        base=joint_loss(out,self.truth,self.model.feature_scale)
+        weighted=joint_loss(out,self.truth,self.model.feature_scale,
+                            state_block_weights=[1.,1.,1.,1.,1.,3.,3.,1.],
+                            state_stage_weights=[1.,1.,1.,1.,1.,1.,1.25,1.5,1.75])
+        self.assertTrue(torch.isfinite(weighted['state']))
+        self.assertGreater(float((weighted['state']-base['state']).abs().detach()),0.)
+
 
 if __name__=='__main__':unittest.main()

@@ -12,7 +12,6 @@ import torch
 from threadpoolctl import threadpool_limits
 
 from .hro_internal_validation import (
-    CANDIDATES,
     VALIDATION_CASE_IDS,
     _case_subset,
     _rmse,
@@ -79,11 +78,16 @@ def run(experiment=DEFAULT_EXPERIMENT, output=DEFAULT_OUTPUT):
     protocol = json.loads((experiment / 'protocol.json').read_text())
     arrays, all_ids, hashes = training_data()
     validation = _case_subset(arrays, all_ids, VALIDATION_CASE_IDS)
-    rows = {candidate: [] for candidate in CANDIDATES}
+    if 'candidates' in protocol:
+        candidates = tuple(protocol['candidates'])
+    else:
+        candidates = (protocol['selected_candidate'],)
+    rows = {candidate: [] for candidate in candidates}
     with threadpool_limits(limits=1):
-        for candidate in CANDIDATES:
+        for candidate in candidates:
             for seed in protocol['seeds']:
-                model = HierarchicalStateOperator.load(experiment / candidate / f's{seed}' / 'model.pt')
+                model_dir = experiment / f's{seed}' if 'selected_candidate' in protocol else experiment / candidate / f's{seed}'
+                model = HierarchicalStateOperator.load(model_dir / 'model.pt')
                 rows[candidate].append(_stage_score(model, validation))
     summary = {
         'status': 'completed_stage_resolved_readonly_audit',

@@ -241,7 +241,8 @@ class HierarchicalStateOperator(nn.Module):
 def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale=None,positions=None,
                field_weight=1.,gradient_weight=.01,curvature_weight=0.,curvature_scale=None,
                curvature_channel_weights=None,field_channel_weights=None,times=None,
-               entry_time_weight=0.,entry_field_weight=0.):
+               entry_time_weight=0.,entry_field_weight=0.,state_block_weights=None,
+               state_stage_weights=None):
     """Supervised state + field + spatial derivative losses; no claimed PDE residual.
 
     ``curvature_weight`` is an optional supervised second-spatial-derivative term.
@@ -255,6 +256,8 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
     emphasizes early nonzero field times with a normalized exponential weight.
     ``entry_field_weight`` adds a supervised loss on the time-zero field
     reconstructed from the predicted stage-entry state.
+    ``state_block_weights`` and ``state_stage_weights`` optionally reweight
+    normalized state errors by state block and transition stage.
     The default is zero to preserve the original HRO objective exactly.
     """
     if field_weight < 0 or gradient_weight < 0 or curvature_weight < 0:
@@ -263,6 +266,14 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
         raise ValueError('Entry time weight must be nonnegative')
     if entry_field_weight < 0:
         raise ValueError('Entry field weight must be nonnegative')
+    if state_block_weights is not None:
+        block_weights=torch.as_tensor(state_block_weights,dtype=torch.float64)
+        if block_weights.shape!=(len(BLOCKS),) or not torch.isfinite(block_weights).all() or torch.any(block_weights<0) or not torch.any(block_weights>0):
+            raise ValueError('State block weights must match the eight finite nonnegative blocks with one positive value')
+    if state_stage_weights is not None:
+        stage_weights=torch.as_tensor(state_stage_weights,dtype=torch.float64)
+        if stage_weights.ndim!=1 or stage_weights.shape[0]!=prediction['states'].shape[1] or not torch.isfinite(stage_weights).all() or torch.any(stage_weights<0) or not torch.any(stage_weights>0):
+            raise ValueError('State stage weights must match the state transition count with one positive value')
     if curvature_scale is not None and curvature_scale <= 0:
         raise ValueError('Curvature scale must be positive')
     if curvature_channel_weights is not None:
@@ -275,7 +286,16 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
             raise ValueError('Field channel weights must be two finite nonnegative values with one positive value')
     if prediction['states'].shape!=state_truth.shape:raise ValueError('State supervision shape mismatch')
     error=(prediction['states']-state_truth)/state_scale[:515]
-    state_loss=torch.stack([error[...,sl].square().mean() for sl in BLOCKS.values()]).mean()
+    block_stage_losses=torch.stack([error[...,sl].square().mean(dim=-1) for sl in BLOCKS.values()],dim=-1)
+    if state_block_weights is None:
+        block_weight_tensor=1.
+    else:
+        block_weight_tensor=(block_weights*len(BLOCKS)/block_weights.sum()).to(error).view(1,1,-1)
+    if state_stage_weights is None:
+        stage_weight_tensor=1.
+    else:
+        stage_weight_tensor=(stage_weights*stage_weights.shape[0]/stage_weights.sum()).to(error).view(1,-1,1)
+    state_loss=(block_stage_losses*block_weight_tensor*stage_weight_tensor).mean()
     result={'state':state_loss}
     if field_truth is not None:
         if 'fields' not in prediction or prediction['fields'].shape!=field_truth.shape:raise ValueError('Field supervision shape mismatch')
