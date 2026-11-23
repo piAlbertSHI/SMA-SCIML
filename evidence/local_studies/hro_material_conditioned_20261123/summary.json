@@ -1,0 +1,26 @@
+{
+  "status": "verified_material_conditioned_negative_result",
+  "strong_screen": {
+    "summary_path": "evidence/experiments/hro_material_conditioned_ablation_20261123/summary.json",
+    "summary_sha256": "eda7f33214d5a2df8bdcab6fa47bd00dd8ca3bddf8a04a2221ea25c08832e588",
+    "protocol_sha256": "ad847d86a53baa7fd63b0242002177cf48061551373b0875b4e548f5032492c6",
+    "updates_per_seed": 120,
+    "candidates": 3,
+    "recAS_htf_change_fraction": {"recAS_htf_guard": -0.04177323909335551, "material_htf_balanced": -0.04861759678147837},
+    "max_state_regression_fraction": {"recAS_htf_guard": 0.10368093396846279, "material_htf_balanced": 0.14709336809287255},
+    "selected_candidate": null
+  },
+  "refined_screen": {
+    "summary_path": "evidence/experiments/hro_material_conditioned_refined_20261123/summary.json",
+    "summary_sha256": "891e97d1197e3b6ceff8041fbba35ab9f052b17224e709d63ecb1fb56c47e5a2",
+    "protocol_sha256": "ecef121f9393ccf83e122aa5c08f4a50ade85c75353299b350950d3bf47edd1f",
+    "updates_per_seed": 100,
+    "candidates": 3,
+    "recAS_htf_change_fraction": {"recAS_htf_light": -0.0035685665016924606, "recAS_htf_moderate": -0.004582847051065597},
+    "max_state_regression_fraction": {"recAS_htf_light": 0.014753994854205033, "recAS_htf_moderate": 0.029786164072141963},
+    "selected_candidate": null
+  },
+  "decision": "retain_global_pareto_field_weights",
+  "fresh_solver_calls": 0,
+  "sealed_test_cases_opened": false
+}

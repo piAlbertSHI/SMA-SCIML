@@ -126,6 +126,7 @@ def _train_one(output, arrays, ids, hashes, variant, seed, updates, batch_cases,
             'entry_field_weight': settings.get('entry_field_weight', 0.0),
             'state_block_weights': settings.get('state_block_weights'),
             'state_stage_weights': settings.get('state_stage_weights'),
+            'material_field_channel_weights': settings.get('material_field_channel_weights'),
         },
         'training_case_ids': ids,
         'training_cycles': [1, 2],
@@ -175,6 +176,12 @@ def _train_one(output, arrays, ids, hashes, variant, seed, updates, batch_cases,
             fields = (interpolate(fields_at_times, source_grid, positions)
                       if settings.get('spatial_jitter_fraction', 0.0)
                       else fields_at_times[:, :, :, :, spatial_indices])
+            sample_field_weights = None
+            if settings.get('material_field_channel_weights') is not None:
+                sample_field_weights = torch.tensor([
+                    settings['material_field_channel_weights']['recAS' if '_recas_' in ids[i].lower() else 'recA']
+                    for i in chosen
+                ], dtype=torch.float64)
             curvature_weight = (settings['curvature_weight'] if
                                 (step + 1) > int(updates * settings['curvature_start_fraction']) else 0.0)
             losses = joint_loss(
@@ -193,6 +200,7 @@ def _train_one(output, arrays, ids, hashes, variant, seed, updates, batch_cases,
                 entry_field_weight=settings.get('entry_field_weight', 0.0),
                 state_block_weights=settings.get('state_block_weights'),
                 state_stage_weights=settings.get('state_stage_weights'),
+                field_sample_channel_weights=sample_field_weights,
             )
             losses['total'].backward()
             norm = torch.nn.utils.clip_grad_norm_(model.parameters(), 1., error_if_nonfinite=True)

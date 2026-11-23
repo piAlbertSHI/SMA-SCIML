@@ -242,7 +242,7 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
                field_weight=1.,gradient_weight=.01,curvature_weight=0.,curvature_scale=None,
                curvature_channel_weights=None,field_channel_weights=None,times=None,
                entry_time_weight=0.,entry_field_weight=0.,state_block_weights=None,
-               state_stage_weights=None):
+               state_stage_weights=None,field_sample_channel_weights=None):
     """Supervised state + field + spatial derivative losses; no claimed PDE residual.
 
     ``curvature_weight`` is an optional supervised second-spatial-derivative term.
@@ -258,6 +258,8 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
     reconstructed from the predicted stage-entry state.
     ``state_block_weights`` and ``state_stage_weights`` optionally reweight
     normalized state errors by state block and transition stage.
+    ``field_sample_channel_weights`` supplies optional per-sample channel weights
+    for known material-conditional objectives.
     The default is zero to preserve the original HRO objective exactly.
     """
     if field_weight < 0 or gradient_weight < 0 or curvature_weight < 0:
@@ -284,6 +286,10 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
         field_weights=torch.as_tensor(field_channel_weights,dtype=torch.float64)
         if field_weights.shape!=(2,) or not torch.isfinite(field_weights).all() or torch.any(field_weights<0) or not torch.any(field_weights>0):
             raise ValueError('Field channel weights must be two finite nonnegative values with one positive value')
+    if field_sample_channel_weights is not None:
+        sample_field_weights=torch.as_tensor(field_sample_channel_weights,dtype=torch.float64)
+        if sample_field_weights.shape!=(prediction['states'].shape[0],2) or not torch.isfinite(sample_field_weights).all() or torch.any(sample_field_weights<0) or not torch.all(torch.any(sample_field_weights>0,dim=1)):
+            raise ValueError('Per-sample field weights must have shape [batch,2] with one positive value per sample')
     if prediction['states'].shape!=state_truth.shape:raise ValueError('State supervision shape mismatch')
     error=(prediction['states']-state_truth)/state_scale[:515]
     block_stage_losses=torch.stack([error[...,sl].square().mean(dim=-1) for sl in BLOCKS.values()],dim=-1)
@@ -306,6 +312,9 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
             field_weight_tensor=normalized_field_weights.view(1,1,2,1,1)
         else:
             field_weight_tensor=1.
+        if field_sample_channel_weights is not None:
+            normalized_sample_weights=sample_field_weights.to(scaled)*2/sample_field_weights.sum(dim=1,keepdim=True)
+            field_weight_tensor=field_weight_tensor*normalized_sample_weights.view(-1,1,2,1,1)
         if entry_time_weight:
             if times is None or times.ndim != 1 or len(times) != scaled.shape[3] or not torch.isfinite(times).all():
                 raise ValueError('Increasing field times are required for entry weighting')

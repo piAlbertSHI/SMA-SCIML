@@ -51,6 +51,11 @@
     "recA_sma_field_K": 1.4459866225047744,
     "recAS_sma_field_K": 1.590288361923184
   },
+  "material_conditioned_htf_audit": {
+    "path": "evidence/local_studies/hro_material_conditioned_20261123/summary.json",
+    "decision": "retain_global_pareto_field_weights",
+    "selected_candidate": null
+  },
   "stage_metrics": {
     "path": "evidence/local_studies/hro_protected_state_confirmation_20261123/stage_metrics.json",
     "sha256": "02c021a3667cbaba0ceffd2040b4c7f8161c01dc70d933c08a4d3e66a3d7c141"

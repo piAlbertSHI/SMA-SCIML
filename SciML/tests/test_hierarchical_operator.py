@@ -131,5 +131,16 @@ class HierarchicalTests(unittest.TestCase):
         self.assertTrue(torch.isfinite(weighted['state']))
         self.assertGreater(float((weighted['state']-base['state']).abs().detach()),0.)
 
+    def test_sample_material_field_weights_are_optional(self):
+        out=self.model(self.initial,self.control,2,times=self.times,positions=self.positions)
+        truth=out['fields'].detach()+.25
+        base=joint_loss(out,self.truth,self.model.feature_scale,field_truth=truth,
+                        field_scale=torch.ones(2),positions=self.positions)
+        weighted=joint_loss(out,self.truth,self.model.feature_scale,field_truth=truth,
+                            field_scale=torch.ones(2),positions=self.positions,
+                            field_sample_channel_weights=[[1.,2.]])
+        self.assertTrue(torch.isfinite(weighted['field']))
+        self.assertGreater(float((weighted['field']-base['field']).abs().detach()),0.)
+
 
 if __name__=='__main__':unittest.main()
