@@ -70,18 +70,38 @@
       "c3s4_state_rmse_K": {"sma": 1.7266349737046425, "htf2": 0.1826482691875589, "htf4": 0.48129834512238284, "side": 0.317848232058727, "phase": 0.03605145338860816},
       "c3s4_field_rmse_K": {"sma": 2.26321258155314, "htf": 1.0925929450449057},
       "replay_verified": true
+    },
+    "dense_jitter": {
+      "raw_summary": "evidence/experiments/hro_spatial_ablation_jitter_long_20261123/summary.json",
+      "seeds": [20261121],
+      "updates_per_seed": 200,
+      "spatial_jitter_fraction_of_native_spacing": 0.5,
+      "field_channel_weights": [1.0, 1.0],
+      "c3s4_state_rmse_K": {"sma": 1.0538309884596881, "htf2": 0.18857414728541563, "htf4": 0.36440303685890396, "side": 0.2858093681453281, "phase": 0.03722639744771909},
+      "c3s4_field_rmse_K": {"sma": 1.485814509795909, "htf": 0.932360611698266},
+      "replay_verified": true
+    },
+    "jitter_fluid2": {
+      "raw_summary": "evidence/experiments/hro_spatial_ablation_jitter_fluid2_long_20261123/summary.json",
+      "seeds": [20261121],
+      "updates_per_seed": 200,
+      "spatial_jitter_fraction_of_native_spacing": 0.5,
+      "field_channel_weights": [1.0, 2.0],
+      "c3s4_state_rmse_K": {"sma": 1.031828562036494, "htf2": 0.1610164317794434, "htf4": 0.37862509279214446, "side": 0.2763148629593, "phase": 0.03680772303187696},
+      "c3s4_field_rmse_K": {"sma": 1.56064181687607, "htf": 0.8542378809837129},
+      "replay_verified": true
     }
   },
   "decision": {
     "default_model_promoted": false,
     "reason": "The solid-curvature variants improve third-cycle state and SMA-field error in one fixed-seed 200-update run, but the HTF field remains above the three-seed coordinate-HRO baseline. A one-seed result is insufficient for a public performance claim.",
     "implementation_status": "The normalized curvature loss, channel weighting and staged-training controls are implemented and unit-tested. The existing coordinate-HRO checkpoint remains the reference model.",
-    "next_low_cost_step": "Run a three-seed fixed-budget confirmation only after choosing a field-balanced objective from an independent validation split."
+    "next_low_cost_step": "The jitter-plus-fluid-weight-2 recipe is the best balanced single-seed diagnostic so far. A three-seed fixed-budget confirmation needs a separately approved CPU budget because each 200-update fit takes about 160 seconds."
   },
   "verification": {
     "screening_and_long_runs_replayed": true,
     "checkpoint_replay_absolute_tolerance": 0.0,
     "solver_calls": 0,
-    "unit_test_command": "python -m unittest SciML.tests.test_hierarchical_operator"
+    "unit_test_command": "python -m unittest SciML.tests.test_hierarchical_operator SciML.tests.test_hro_spatial_ablation"
   }
 }

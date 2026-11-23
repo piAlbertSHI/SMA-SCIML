@@ -6,7 +6,7 @@ The project status maps the original work packages to current model evidence and
 
 | Direction / 方向 | Evidence / 依据 | Evaluation / 评价设计 |
 |---|---|---|
-| Spatial regularity / 空间平滑性 | HRO improves third-cycle temperature RMSE but exhibits spatial oscillations / HRO 第三循环温度误差改善，仍有空间振荡 | Compare query density/jitter and decoder regularization using validation cases drawn only from the training partition / 仅用训练分区划分验证工况，对照查询密度、抖动及解码正则 |
+| Spatial regularity / 空间平滑性 | 51-point query jitter with fluid-channel weight 2 gives a balanced single-seed diagnostic, with third-cycle SMA state 1.032 K, SMA field 1.561 K and HTF field 0.854 K / 51 点查询抖动配合流体通道权重 2 形成较平衡的单种子诊断，第三循环 SMA 状态 1.032 K、SMA 场 1.561 K、HTF 场 0.854 K | Confirm the recipe on three fixed seeds, then compare decoder regularization with a training-only validation split / 先用三个固定种子确认，再用训练集内部验证对照解码器正则 |
 | State–field consistency / 状态与场一致性 | Field gains coexist with fluid/phase state regressions / 场收益与流体、相分数状态退步并存 | Evaluate loss balancing and endpoint consistency while retaining all state-block metrics / 评价损失权重及端点一致性，保留全部状态块指标 |
 | Representation and memory / 表示与记忆 | Spatial encoding, latent attention and GRU memory are trained jointly / 空间编码、注意力与 GRU 联合训练 | Isolate module contributions with matched training budgets and case-level validation / 用同预算及工况级验证隔离模块贡献 |
 | Material transfer / 材料迁移 | Two material configurations and structured distribution-shift diagnostics / 两类材料配置及结构化分布变化诊断 | Compare categorical and physical descriptors; establish independent material coverage / 对照类别与物性输入，建立独立材料覆盖 |

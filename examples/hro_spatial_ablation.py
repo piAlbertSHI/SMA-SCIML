@@ -19,6 +19,7 @@ from .formal_hierarchical import cohorts, infer
 from .multicycle_multistep import ROOT, write
 from .train_hierarchical import training_data
 from SciML.models.v12.learning_historical_rollout import HistoricalModel
+from SciML.models.v12.learning_coordinate_operator import interpolate
 from SciML.models.v12.multistep_historical import sha
 from SciML.models.v13.hierarchical_operator import (
     HierarchicalStateOperator,
@@ -32,6 +33,9 @@ FORMAL = ROOT / 'evidence/experiments/v13_formal_v1'
 DEFAULT_SEEDS = (20261121, 20261122, 20261123)
 VARIANTS = {
     'dense_field': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 0.0, 'curvature_channel_weights': None, 'field_channel_weights': None, 'curvature_start_fraction': 1.0},
+    'dense_jitter': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 0.0, 'curvature_channel_weights': None, 'field_channel_weights': None, 'curvature_start_fraction': 1.0, 'spatial_jitter_fraction': 0.5},
+    'jitter_fluid4': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 0.0, 'curvature_channel_weights': None, 'field_channel_weights': [1.0, 4.0], 'curvature_start_fraction': 1.0, 'spatial_jitter_fraction': 0.5},
+    'jitter_fluid2': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 0.0, 'curvature_channel_weights': None, 'field_channel_weights': [1.0, 2.0], 'curvature_start_fraction': 1.0, 'spatial_jitter_fraction': 0.5},
     'dense_curvature': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 0.001, 'curvature_channel_weights': None, 'field_channel_weights': None, 'curvature_start_fraction': 0.0},
     'dense_curvature_light': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 1e-6, 'curvature_channel_weights': None, 'field_channel_weights': None, 'curvature_start_fraction': 0.0},
     'dense_curvature_mid': {'spatial_points': 51, 'gradient_weight': 0.01, 'curvature_weight': 1e-5, 'curvature_channel_weights': None, 'field_channel_weights': None, 'curvature_start_fraction': 0.0},
@@ -76,6 +80,18 @@ def _coordinates(spatial_points, time_indices):
     return np.asarray(time_indices, dtype=int), indices
 
 
+def _query_positions(spatial_indices, jitter_fraction, rng):
+    positions = np.asarray(spatial_indices, dtype=float) / 100.
+    if jitter_fraction:
+        jitter = rng.uniform(-.5, .5, size=len(positions))
+        jitter *= jitter_fraction / 100.
+        jitter[[0, -1]] = 0.
+        positions = positions + jitter
+    if not np.all(np.diff(positions) > 0) or positions[0] != 0. or positions[-1] != 1.:
+        raise ValueError('Query positions must be strictly increasing with exact endpoints')
+    return torch.tensor(positions, dtype=torch.float64)
+
+
 def _train_one(output, arrays, ids, hashes, variant, seed, updates, batch_cases, lr):
     settings = VARIANTS[variant]
     output.mkdir(parents=True)
@@ -93,6 +109,7 @@ def _train_one(output, arrays, ids, hashes, variant, seed, updates, batch_cases,
             'time': 'time zero + endpoint + six random interior indices',
             'spatial_points': settings['spatial_points'],
             'spatial_indices': np.linspace(0, 100, settings['spatial_points'], dtype=int).tolist(),
+            'spatial_jitter_fraction_of_native_spacing': settings.get('spatial_jitter_fraction', 0.0),
         },
         'loss': {
             'state_blocks': 'eight equally weighted normalized blocks',
@@ -134,6 +151,7 @@ def _train_one(output, arrays, ids, hashes, variant, seed, updates, batch_cases,
 
         scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, factor)
         rng = np.random.default_rng(seed)
+        source_grid = torch.linspace(0, 1, 101, dtype=torch.float64)
         history = []
         started = time.perf_counter()
         model.train()
@@ -142,11 +160,14 @@ def _train_one(output, arrays, ids, hashes, variant, seed, updates, batch_cases,
             time_indices = np.r_[0, np.sort(rng.choice(np.arange(1, 49), 6, replace=False)), 49]
             time_indices, spatial_indices = _coordinates(settings['spatial_points'], time_indices)
             times = torch.tensor(time_indices / 49.)
-            positions = torch.tensor(spatial_indices / 100.)
+            positions = _query_positions(spatial_indices, settings.get('spatial_jitter_fraction', 0.0), rng)
             optimizer.zero_grad(set_to_none=True)
             prediction = model(arrays['initial'][chosen], arrays['control'][chosen], 2,
                                times=times, positions=positions)
-            fields = arrays['fields'][chosen][:, :, :, time_indices][:, :, :, :, spatial_indices]
+            fields_at_times = arrays['fields'][chosen][:, :, :, time_indices]
+            fields = (interpolate(fields_at_times, source_grid, positions)
+                      if settings.get('spatial_jitter_fraction', 0.0)
+                      else fields_at_times[:, :, :, :, spatial_indices])
             curvature_weight = (settings['curvature_weight'] if
                                 (step + 1) > int(updates * settings['curvature_start_fraction']) else 0.0)
             losses = joint_loss(
