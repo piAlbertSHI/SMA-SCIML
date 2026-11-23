@@ -37,7 +37,8 @@ The first completed diagnostic screen exposed a scoring-name bug. The next scree
 
 - Screening output and 12 checkpoints are preserved under `evidence/experiments/hro_internal_validation_20261123_r3`.
 - Curated readiness and negative-result records are stored in [readiness.json](../evidence/local_studies/hro_internal_validation_20261123_r3/readiness.json) and [negative_results.json](../evidence/local_studies/hro_internal_validation_20261123_r3/negative_results.json).
+- Stage-resolved state and field metrics are stored in [stage_metrics.json](../evidence/local_studies/hro_internal_validation_20261123_r3/stage_metrics.json), covering all nine state transitions and four exchange stages for each candidate and seed aggregate.
 - Port-level energy closure, hidden storage ownership, unseen-material transfer and independent-grid behavior remain open.
 - This result is an internal historical-data study. It does not establish independent generalization or experimental validity.
 
-筛选输出和 12 个检查点保存在 `evidence/experiments/hro_internal_validation_20261123_r3`。整理后的 readiness 和负面结果记录见 [readiness.json](../evidence/local_studies/hro_internal_validation_20261123_r3/readiness.json) 与 [negative_results.json](../evidence/local_studies/hro_internal_validation_20261123_r3/negative_results.json)。
+筛选输出和 12 个检查点保存在 `evidence/experiments/hro_internal_validation_20261123_r3`。整理后的 readiness 和负面结果记录见 [readiness.json](../evidence/local_studies/hro_internal_validation_20261123_r3/readiness.json) 与 [negative_results.json](../evidence/local_studies/hro_internal_validation_20261123_r3/negative_results.json)。逐阶段状态和场指标见 [stage_metrics.json](../evidence/local_studies/hro_internal_validation_20261123_r3/stage_metrics.json)，覆盖每个候选和种子聚合下的 9 个状态转移及 4 个换热阶段。

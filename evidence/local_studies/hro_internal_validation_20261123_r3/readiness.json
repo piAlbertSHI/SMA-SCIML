@@ -11,6 +11,7 @@
   },
   "curated_metrics": "evidence/local_studies/hro_internal_validation_20261123_r3/screening_summary.json",
   "replay_record": "evidence/local_studies/hro_internal_validation_20261123_r3/replay_verification.json",
+  "stage_metrics": "evidence/local_studies/hro_internal_validation_20261123_r3/stage_metrics.json",
   "verification": {
     "checkpoint_replays": 12,
     "scores_recomputed": true,
