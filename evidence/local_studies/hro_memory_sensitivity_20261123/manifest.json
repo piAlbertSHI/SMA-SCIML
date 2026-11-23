@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "rows.json": "aad1ea5c7a8389ada4ea75ed6c0ad3c3ef7b6e3af030fd5e59d79e823a5332eb",
+    "s20261121_memory_reset_predictions.npz": "a9cf94e62ddf8154e3d894bca478618c15e0ba9e229501896a4f2a93243b6f4b",
+    "s20261122_memory_reset_predictions.npz": "da0873ea23b9a2a695fca676708ece2ab2e39f086f7e1aa53be079357845cdec",
+    "s20261123_memory_reset_predictions.npz": "0e2b0488ea1fa46615f680f0581eb0638b1c136b3a2c6d8e59632fb2b994d2e5",
+    "summary.json": "b2db2af884a66e61f02c48cd8718d7d13444e1b3c1a8b7813e30714994660c1e"
+  }
+}

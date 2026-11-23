@@ -1,0 +1,1934 @@
+{
+  "status": "verified_hro_memory_sensitivity",
+  "fresh_training_calls": 0,
+  "fresh_solver_calls": 0,
+  "data_snapshot_sha256": "b1b5e8686ff033a85755f053a11366eac3602074c7702f71ba09100af5dac41f",
+  "seeds": [
+    20261121,
+    20261122,
+    20261123
+  ],
+  "modes": {
+    "persistent_memory": "archived formal HRO checkpoint replay",
+    "memory_reset_each_step": "same checkpoint, memory argument reset to zero at every stage"
+  },
+  "fixed_three_cycle_comparison": {
+    "state": {
+      "c1s1": {
+        "sma_K": {
+          "persistent_memory_mean": 0.6748392299188648,
+          "memory_reset_mean": 0.6748392299188648,
+          "reset_minus_persistent": 0.0,
+          "persistent_seed_values": [
+            0.6817430720715685,
+            0.618227189469068,
+            0.7245474282159583
+          ],
+          "reset_seed_values": [
+            0.6817430720715685,
+            0.618227189469068,
+            0.7245474282159583
+          ]
+        },
+        "htf2_K": {
+          "persistent_memory_mean": 0.2506445935082557,
+          "memory_reset_mean": 0.2506445935082557,
+          "reset_minus_persistent": 0.0,
+          "persistent_seed_values": [
+            0.28909821125742735,
+            0.18972287819031378,
+            0.27311269107702596
+          ],
+          "reset_seed_values": [
+            0.28909821125742735,
+            0.18972287819031378,
+            0.27311269107702596
+          ]
+        },
+        "htf4_K": {
+          "persistent_memory_mean": 0.0,
+          "memory_reset_mean": 0.0,
+          "reset_minus_persistent": 0.0,
+          "persistent_seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reset_seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "side_K": {
+          "persistent_memory_mean": 0.04217945270700905,
+          "memory_reset_mean": 0.04217945270700905,
+          "reset_minus_persistent": 0.0,
+          "persistent_seed_values": [
+            0.05179014270644835,
+            0.039754069864248134,
+            0.03499414555033069
+          ],
+          "reset_seed_values": [
+            0.05179014270644835,
+            0.039754069864248134,
+            0.03499414555033069
+          ]
+        },
+        "xi": {
+          "persistent_memory_mean": 0.012010623168410115,
+          "memory_reset_mean": 0.012010623168410115,
+          "reset_minus_persistent": 0.0,
+          "persistent_seed_values": [
+            0.011239010436726997,
+            0.012822137672519628,
+            0.01197072139598372
+          ],
+          "reset_seed_values": [
+            0.011239010436726997,
+            0.012822137672519628,
+            0.01197072139598372
+          ]
+        },
+        "u_m": {
+          "persistent_memory_mean": 6.628652044316946e-06,
+          "memory_reset_mean": 6.628652044316946e-06,
+          "reset_minus_persistent": 0.0,
+          "persistent_seed_values": [
+            6.474131214381568e-06,
+            6.572480272143767e-06,
+            6.839344646425503e-06
+          ],
+          "reset_seed_values": [
+            6.474131214381568e-06,
+            6.572480272143767e-06,
+            6.839344646425503e-06
+          ]
+        },
+        "w_m": {
+          "persistent_memory_mean": 7.28288269405386e-05,
+          "memory_reset_mean": 7.28288269405386e-05,
+          "reset_minus_persistent": 0.0,
+          "persistent_seed_values": [
+            7.185608621583842e-05,
+            5.5642619443868073e-05,
+            9.098777516190933e-05
+          ],
+          "reset_seed_values": [
+            7.185608621583842e-05,
+            5.5642619443868073e-05,
+            9.098777516190933e-05
+          ]
+        },
+        "memory_K": {
+          "persistent_memory_mean": 0.0612934585694602,
+          "memory_reset_mean": 0.0612934585694602,
+          "reset_minus_persistent": 0.0,
+          "persistent_seed_values": [
+            0.04605533651950335,
+            0.055159771235446416,
+            0.08266526795343086
+          ],
+          "reset_seed_values": [
+            0.04605533651950335,
+            0.055159771235446416,
+            0.08266526795343086
+          ]
+        }
+      },
+      "c1s2": {
+        "sma_K": {
+          "persistent_memory_mean": 0.6358149731809232,
+          "memory_reset_mean": 0.6414022994237203,
+          "reset_minus_persistent": 0.005587326242797119,
+          "persistent_seed_values": [
+            0.625154733203052,
+            0.5560857799840224,
+            0.726204406355695
+          ],
+          "reset_seed_values": [
+            0.6318059016425803,
+            0.5620222408083826,
+            0.730378755820198
+          ]
+        },
+        "htf2_K": {
+          "persistent_memory_mean": 0.36144890691224796,
+          "memory_reset_mean": 0.36195692651564687,
+          "reset_minus_persistent": 0.0005080196033989496,
+          "persistent_seed_values": [
+            0.36185790202266993,
+            0.3577938595391499,
+            0.364694959174924
+          ],
+          "reset_seed_values": [
+            0.3626572975939271,
+            0.3575494036246905,
+            0.36566407832832304
+          ]
+        },
+        "htf4_K": {
+          "persistent_memory_mean": 0.0,
+          "memory_reset_mean": 0.0,
+          "reset_minus_persistent": 0.0,
+          "persistent_seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reset_seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "side_K": {
+          "persistent_memory_mean": 0.11117499694859423,
+          "memory_reset_mean": 0.11136548060756891,
+          "reset_minus_persistent": 0.00019048365897469943,
+          "persistent_seed_values": [
+            0.10589757117246626,
+            0.11514644748237751,
+            0.11248097219093889
+          ],
+          "reset_seed_values": [
+            0.106320255956592,
+            0.11528896711817473,
+            0.11248721874794003
+          ]
+        },
+        "xi": {
+          "persistent_memory_mean": 0.028318294561130622,
+          "memory_reset_mean": 0.02836898319751011,
+          "reset_minus_persistent": 5.068863637948742e-05,
+          "persistent_seed_values": [
+            0.02781570047820546,
+            0.02976987972561098,
+            0.027369303479575422
+          ],
+          "reset_seed_values": [
+            0.027864872634306426,
+            0.029863966114779022,
+            0.027378110843444877
+          ]
+        },
+        "u_m": {
+          "persistent_memory_mean": 9.021686340635445e-06,
+          "memory_reset_mean": 9.04773342735659e-06,
+          "reset_minus_persistent": 2.6047086721145957e-08,
+          "persistent_seed_values": [
+            8.094061664196321e-06,
+            8.893260030940649e-06,
+            1.0077737326769364e-05
+          ],
+          "reset_seed_values": [
+            8.126272934184261e-06,
+            8.931066212906004e-06,
+            1.0085861134979507e-05
+          ]
+        },
+        "w_m": {
+          "persistent_memory_mean": 7.807817850845744e-05,
+          "memory_reset_mean": 7.922822913152908e-05,
+          "reset_minus_persistent": 1.150050623071649e-06,
+          "persistent_seed_values": [
+            6.310381428630814e-05,
+            8.067896470623363e-05,
+            9.045175653283053e-05
+          ],
+          "reset_seed_values": [
+            6.497347324797433e-05,
+            8.057821226141955e-05,
+            9.213300188519336e-05
+          ]
+        },
+        "memory_K": {
+          "persistent_memory_mean": 0.21932584274393208,
+          "memory_reset_mean": 0.21923896593772865,
+          "reset_minus_persistent": -8.687680620341383e-05,
+          "persistent_seed_values": [
+            0.21357965056390915,
+            0.20952869827124057,
+            0.2348691793966465
+          ],
+          "reset_seed_values": [
+            0.21361550965822898,
+            0.21001652450444763,
+            0.23408486365050937
+          ]
+        }
+      },
+      "c1s3": {
+        "sma_K": {
+          "persistent_memory_mean": 0.8589253530606321,
+          "memory_reset_mean": 0.830968033042733,
+          "reset_minus_persistent": -0.02795732001789904,
+          "persistent_seed_values": [
+            0.7856598988491178,
+            0.7944091783809587,
+            0.9967069819518201
+          ],
+          "reset_seed_values": [
+            0.769605272360417,
+            0.7830326708224205,
+            0.940266155945362
+          ]
+        },
+        "htf2_K": {
+          "persistent_memory_mean": 0.36144890691224796,
+          "memory_reset_mean": 0.36195692651564687,
+          "reset_minus_persistent": 0.0005080196033989496,
+          "persistent_seed_values": [
+            0.36185790202266993,
+            0.3577938595391499,
+            0.364694959174924
+          ],
+          "reset_seed_values": [
+            0.3626572975939271,
+            0.3575494036246905,
+            0.36566407832832304
+          ]
+        },
+        "htf4_K": {
+          "persistent_memory_mean": 0.3162575675725381,
+          "memory_reset_mean": 0.30416578184006277,
+          "reset_minus_persistent": -0.012091785732475288,
+          "persistent_seed_values": [
+            0.26367844252526446,
+            0.28699649012691264,
+            0.3980977700654372
+          ],
+          "reset_seed_values": [
+            0.2561954742557677,
+            0.2819153351597399,
+            0.3743865361046808
+          ]
+        },
+        "side_K": {
+          "persistent_memory_mean": 0.11908798041381514,
+          "memory_reset_mean": 0.11855094446264403,
+          "reset_minus_persistent": -0.0005370359511711239,
+          "persistent_seed_values": [
+            0.11294090600397687,
+            0.12273460762857276,
+            0.12158842760889581
+          ],
+          "reset_seed_values": [
+            0.11272757456971651,
+            0.1226472242562445,
+            0.12027803456197106
+          ]
+        },
+        "xi": {
+          "persistent_memory_mean": 0.027220889708441578,
+          "memory_reset_mean": 0.027068465121162358,
+          "reset_minus_persistent": -0.00015242458727922,
+          "persistent_seed_values": [
+            0.027785402117017736,
+            0.028002701093346332,
+            0.02587456591496066
+          ],
+          "reset_seed_values": [
+            0.027779710066104663,
+            0.027792115489383082,
+            0.025633569807999326
+          ]
+        },
+        "u_m": {
+          "persistent_memory_mean": 8.485018482379673e-06,
+          "memory_reset_mean": 8.483961065330196e-06,
+          "reset_minus_persistent": -1.0574170494756382e-09,
+          "persistent_seed_values": [
+            8.347276985073373e-06,
+            8.450635683293261e-06,
+            8.657142778772384e-06
+          ],
+          "reset_seed_values": [
+            8.333991378528811e-06,
+            8.444888015051985e-06,
+            8.673003802409794e-06
+          ]
+        },
+        "w_m": {
+          "persistent_memory_mean": 0.00023147275082485426,
+          "memory_reset_mean": 0.00023353921562287283,
+          "reset_minus_persistent": 2.066464798018608e-06,
+          "persistent_seed_values": [
+            0.0002227642853660996,
+            0.000233643841699698,
+            0.0002380101254087652
+          ],
+          "reset_seed_values": [
+            0.00022483922303955433,
+            0.00023473795076120222,
+            0.00024104047306786205
+          ]
+        },
+        "memory_K": {
+          "persistent_memory_mean": 0.19821761157060722,
+          "memory_reset_mean": 0.19875550559908003,
+          "reset_minus_persistent": 0.0005378940284727999,
+          "persistent_seed_values": [
+            0.1938983805102657,
+            0.18390978982276063,
+            0.21684466437879535
+          ],
+          "reset_seed_values": [
+            0.19448440319515828,
+            0.18491766774673518,
+            0.21686444585534662
+          ]
+        }
+      },
+      "c1s4": {
+        "sma_K": {
+          "persistent_memory_mean": 0.548875463032167,
+          "memory_reset_mean": 0.48942979249122187,
+          "reset_minus_persistent": -0.059445670540945204,
+          "persistent_seed_values": [
+            0.45067931819997187,
+            0.554904782613717,
+            0.6410422882828124
+          ],
+          "reset_seed_values": [
+            0.4079226850351494,
+            0.49329665216696633,
+            0.56707004027155
+          ]
+        },
+        "htf2_K": {
+          "persistent_memory_mean": 0.36144890691224796,
+          "memory_reset_mean": 0.36195692651564687,
+          "reset_minus_persistent": 0.0005080196033989496,
+          "persistent_seed_values": [
+            0.36185790202266993,
+            0.3577938595391499,
+            0.364694959174924
+          ],
+          "reset_seed_values": [
+            0.3626572975939271,
+            0.3575494036246905,
+            0.36566407832832304
+          ]
+        },
+        "htf4_K": {
+          "persistent_memory_mean": 0.5587072501419806,
+          "memory_reset_mean": 0.5570564023931812,
+          "reset_minus_persistent": -0.0016508477487994961,
+          "persistent_seed_values": [
+            0.5620088486621441,
+            0.548005343632062,
+            0.5661075581317361
+          ],
+          "reset_seed_values": [
+            0.5584601331552386,
+            0.5511726526418477,
+            0.5615364213824574
+          ]
+        },
+        "side_K": {
+          "persistent_memory_mean": 0.185098290030644,
+          "memory_reset_mean": 0.1845206711246815,
+          "reset_minus_persistent": -0.0005776189059625014,
+          "persistent_seed_values": [
+            0.18060742415132758,
+            0.18677675935503324,
+            0.18791068658557122
+          ],
+          "reset_seed_values": [
+            0.1800455763879164,
+            0.18685913055132491,
+            0.18665730643480322
+          ]
+        },
+        "xi": {
+          "persistent_memory_mean": 0.027220889708441578,
+          "memory_reset_mean": 0.027068465121162358,
+          "reset_minus_persistent": -0.00015242458727922,
+          "persistent_seed_values": [
+            0.027785402117017736,
+            0.028002701093346332,
+            0.02587456591496066
+          ],
+          "reset_seed_values": [
+            0.027779710066104663,
+            0.027792115489383082,
+            0.025633569807999326
+          ]
+        },
+        "u_m": {
+          "persistent_memory_mean": 8.485018482379673e-06,
+          "memory_reset_mean": 8.483961065330196e-06,
+          "reset_minus_persistent": -1.0574170494756382e-09,
+          "persistent_seed_values": [
+            8.347276985073373e-06,
+            8.450635683293261e-06,
+            8.657142778772384e-06
+          ],
+          "reset_seed_values": [
+            8.333991378528811e-06,
+            8.444888015051985e-06,
+            8.673003802409794e-06
+          ]
+        },
+        "w_m": {
+          "persistent_memory_mean": 0.00023147275082485426,
+          "memory_reset_mean": 0.00023353921562287283,
+          "reset_minus_persistent": 2.066464798018608e-06,
+          "persistent_seed_values": [
+            0.0002227642853660996,
+            0.000233643841699698,
+            0.0002380101254087652
+          ],
+          "reset_seed_values": [
+            0.00022483922303955433,
+            0.00023473795076120222,
+            0.00024104047306786205
+          ]
+        },
+        "memory_K": {
+          "persistent_memory_mean": 0.2825720209830428,
+          "memory_reset_mean": 0.2803796254809661,
+          "reset_minus_persistent": -0.0021923955020766903,
+          "persistent_seed_values": [
+            0.2725333745410623,
+            0.27322400973585786,
+            0.30195867867220827
+          ],
+          "reset_seed_values": [
+            0.27171918612499235,
+            0.27135442690502154,
+            0.2980652634128845
+          ]
+        }
+      },
+      "c1s5": {
+        "sma_K": {
+          "persistent_memory_mean": 0.3498304928251177,
+          "memory_reset_mean": 0.37687742067183333,
+          "reset_minus_persistent": 0.02704692784671568,
+          "persistent_seed_values": [
+            0.36213939524641287,
+            0.3000419647808715,
+            0.3873101184480687
+          ],
+          "reset_seed_values": [
+            0.37442389882921745,
+            0.3348165371546544,
+            0.42139182603162817
+          ]
+        },
+        "htf2_K": {
+          "persistent_memory_mean": 0.36144890691224796,
+          "memory_reset_mean": 0.36195692651564687,
+          "reset_minus_persistent": 0.0005080196033989496,
+          "persistent_seed_values": [
+            0.36185790202266993,
+            0.3577938595391499,
+            0.364694959174924
+          ],
+          "reset_seed_values": [
+            0.3626572975939271,
+            0.3575494036246905,
+            0.36566407832832304
+          ]
+        },
+        "htf4_K": {
+          "persistent_memory_mean": 0.5587072501419806,
+          "memory_reset_mean": 0.5570564023931812,
+          "reset_minus_persistent": -0.0016508477487994961,
+          "persistent_seed_values": [
+            0.5620088486621441,
+            0.548005343632062,
+            0.5661075581317361
+          ],
+          "reset_seed_values": [
+            0.5584601331552386,
+            0.5511726526418477,
+            0.5615364213824574
+          ]
+        },
+        "side_K": {
+          "persistent_memory_mean": 0.185098290030644,
+          "memory_reset_mean": 0.1845206711246815,
+          "reset_minus_persistent": -0.0005776189059625014,
+          "persistent_seed_values": [
+            0.18060742415132758,
+            0.18677675935503324,
+            0.18791068658557122
+          ],
+          "reset_seed_values": [
+            0.1800455763879164,
+            0.18685913055132491,
+            0.18665730643480322
+          ]
+        },
+        "xi": {
+          "persistent_memory_mean": 0.0006065689255221609,
+          "memory_reset_mean": 0.0006030021301507358,
+          "reset_minus_persistent": -3.5667953714251387e-06,
+          "persistent_seed_values": [
+            0.0002721947664434963,
+            0.0015475120101229865,
+            0.0
+          ],
+          "reset_seed_values": [
+            0.00019407891223311872,
+            0.0016149274782190886,
+            0.0
+          ]
+        },
+        "u_m": {
+          "persistent_memory_mean": 1.3817528325028007e-06,
+          "memory_reset_mean": 1.4570598894242105e-06,
+          "reset_minus_persistent": 7.53070569214097e-08,
+          "persistent_seed_values": [
+            8.917721337774283e-07,
+            1.8450617421062114e-06,
+            1.4084246216247624e-06
+          ],
+          "reset_seed_values": [
+            1.0250476430691317e-06,
+            1.9048661707327983e-06,
+            1.4412658544707012e-06
+          ]
+        },
+        "w_m": {
+          "persistent_memory_mean": 5.1286254131707204e-05,
+          "memory_reset_mean": 5.486608144856175e-05,
+          "reset_minus_persistent": 3.579827316854544e-06,
+          "persistent_seed_values": [
+            4.2577401006520005e-05,
+            5.051037069030649e-05,
+            6.0770990698295104e-05
+          ],
+          "reset_seed_values": [
+            4.6903720877661114e-05,
+            5.2596651362892405e-05,
+            6.509787210513171e-05
+          ]
+        },
+        "memory_K": {
+          "persistent_memory_mean": 0.2825720209830428,
+          "memory_reset_mean": 0.2803796254809661,
+          "reset_minus_persistent": -0.0021923955020766903,
+          "persistent_seed_values": [
+            0.2725333745410623,
+            0.27322400973585786,
+            0.30195867867220827
+          ],
+          "reset_seed_values": [
+            0.27171918612499235,
+            0.27135442690502154,
+            0.2980652634128845
+          ]
+        }
+      },
+      "c2s1": {
+        "sma_K": {
+          "persistent_memory_mean": 1.0226981120640044,
+          "memory_reset_mean": 1.0006479820895053,
+          "reset_minus_persistent": -0.022050129974498806,
+          "persistent_seed_values": [
+            1.0477399179989657,
+            1.0440716434352768,
+            0.9762827747577705
+          ],
+          "reset_seed_values": [
+            1.0285268407193722,
+            0.9956404378203911,
+            0.9777766677287533
+          ]
+        },
+        "htf2_K": {
+          "persistent_memory_mean": 0.4856769599535021,
+          "memory_reset_mean": 0.4830765701935638,
+          "reset_minus_persistent": -0.0026003897599383152,
+          "persistent_seed_values": [
+            0.4948775542666599,
+            0.44899395521742436,
+            0.5131593703764221
+          ],
+          "reset_seed_values": [
+            0.4838367801209464,
+            0.45213064346545373,
+            0.5132622869942913
+          ]
+        },
+        "htf4_K": {
+          "persistent_memory_mean": 0.5587072501419806,
+          "memory_reset_mean": 0.5570564023931812,
+          "reset_minus_persistent": -0.0016508477487994961,
+          "persistent_seed_values": [
+            0.5620088486621441,
+            0.548005343632062,
+            0.5661075581317361
+          ],
+          "reset_seed_values": [
+            0.5584601331552386,
+            0.5511726526418477,
+            0.5615364213824574
+          ]
+        },
+        "side_K": {
+          "persistent_memory_mean": 0.1985359218584887,
+          "memory_reset_mean": 0.19748970188374995,
+          "reset_minus_persistent": -0.0010462199747387861,
+          "persistent_seed_values": [
+            0.19586096399806815,
+            0.1987607587503582,
+            0.20098604282703983
+          ],
+          "reset_seed_values": [
+            0.19348397296046455,
+            0.19942070708977913,
+            0.19956442560100615
+          ]
+        },
+        "xi": {
+          "persistent_memory_mean": 0.028389926792069947,
+          "memory_reset_mean": 0.028067471618143085,
+          "reset_minus_persistent": -0.00032245517392686177,
+          "persistent_seed_values": [
+            0.02851334297153051,
+            0.02839462987412247,
+            0.028261807530556855
+          ],
+          "reset_seed_values": [
+            0.02815803004968762,
+            0.02838003452793953,
+            0.0276643502768021
+          ]
+        },
+        "u_m": {
+          "persistent_memory_mean": 1.3605567767962314e-05,
+          "memory_reset_mean": 1.3605458123242027e-05,
+          "reset_minus_persistent": -1.0964472028468205e-10,
+          "persistent_seed_values": [
+            1.4542825195453338e-05,
+            1.2627912250310307e-05,
+            1.3645965858123292e-05
+          ],
+          "reset_seed_values": [
+            1.4444643393177793e-05,
+            1.2722773795408607e-05,
+            1.3648957181139683e-05
+          ]
+        },
+        "w_m": {
+          "persistent_memory_mean": 0.0001809776343451014,
+          "memory_reset_mean": 0.00018233006817400385,
+          "reset_minus_persistent": 1.3524338289024995e-06,
+          "persistent_seed_values": [
+            0.0001761605903657772,
+            0.00016431058122557595,
+            0.00020246173144395098
+          ],
+          "reset_seed_values": [
+            0.00017410185820919074,
+            0.00016814935271104034,
+            0.00020473899360178054
+          ]
+        },
+        "memory_K": {
+          "persistent_memory_mean": 0.2987528635833486,
+          "memory_reset_mean": 0.2960076426542418,
+          "reset_minus_persistent": -0.0027452209291068583,
+          "persistent_seed_values": [
+            0.27988941681212437,
+            0.28719379920327637,
+            0.3291753747346452
+          ],
+          "reset_seed_values": [
+            0.27795043707380956,
+            0.2851649996586523,
+            0.3249074912302635
+          ]
+        }
+      },
+      "c2s2": {
+        "sma_K": {
+          "persistent_memory_mean": 0.5351539277571732,
+          "memory_reset_mean": 0.5467057941255555,
+          "reset_minus_persistent": 0.01155186636838231,
+          "persistent_seed_values": [
+            0.5773332338365901,
+            0.4643938221926997,
+            0.56373472724223
+          ],
+          "reset_seed_values": [
+            0.5727331920651579,
+            0.47001522233061227,
+            0.5973689679808964
+          ]
+        },
+        "htf2_K": {
+          "persistent_memory_mean": 0.34326228287697164,
+          "memory_reset_mean": 0.33969266069603377,
+          "reset_minus_persistent": -0.0035696221809378517,
+          "persistent_seed_values": [
+            0.3338512419637447,
+            0.35222151449746625,
+            0.3437140921697039
+          ],
+          "reset_seed_values": [
+            0.327884520076423,
+            0.3491389735408473,
+            0.34205448847083103
+          ]
+        },
+        "htf4_K": {
+          "persistent_memory_mean": 0.5587072501419806,
+          "memory_reset_mean": 0.5570564023931812,
+          "reset_minus_persistent": -0.0016508477487994961,
+          "persistent_seed_values": [
+            0.5620088486621441,
+            0.548005343632062,
+            0.5661075581317361
+          ],
+          "reset_seed_values": [
+            0.5584601331552386,
+            0.5511726526418477,
+            0.5615364213824574
+          ]
+        },
+        "side_K": {
+          "persistent_memory_mean": 0.2043224088477246,
+          "memory_reset_mean": 0.2037476383080461,
+          "reset_minus_persistent": -0.0005747705396784986,
+          "persistent_seed_values": [
+            0.20142243923784547,
+            0.20456208147940205,
+            0.20698270582592632
+          ],
+          "reset_seed_values": [
+            0.20034681384650643,
+            0.2044460189637235,
+            0.20645008211390842
+          ]
+        },
+        "xi": {
+          "persistent_memory_mean": 0.036724751963717155,
+          "memory_reset_mean": 0.03672189981265483,
+          "reset_minus_persistent": -2.8521510623200075e-06,
+          "persistent_seed_values": [
+            0.037303552298390705,
+            0.036859658993783254,
+            0.0360110445989775
+          ],
+          "reset_seed_values": [
+            0.03707757082805528,
+            0.03741829890501191,
+            0.03566982970489731
+          ]
+        },
+        "u_m": {
+          "persistent_memory_mean": 1.4144335613017077e-05,
+          "memory_reset_mean": 1.4186200366307487e-05,
+          "reset_minus_persistent": 4.186475329041193e-08,
+          "persistent_seed_values": [
+            1.4390317779311811e-05,
+            1.297465730768582e-05,
+            1.5068031752053596e-05
+          ],
+          "reset_seed_values": [
+            1.4307239619583494e-05,
+            1.3089304349143345e-05,
+            1.5162057130195624e-05
+          ]
+        },
+        "w_m": {
+          "persistent_memory_mean": 0.00015035553102474611,
+          "memory_reset_mean": 0.00015134992556577686,
+          "reset_minus_persistent": 9.943945410307616e-07,
+          "persistent_seed_values": [
+            0.0001306438107412517,
+            0.00015069951224319536,
+            0.00016972327008979126
+          ],
+          "reset_seed_values": [
+            0.00012998475163700557,
+            0.00015151435046878038,
+            0.00017255067459154465
+          ]
+        },
+        "memory_K": {
+          "persistent_memory_mean": 0.245760928809987,
+          "memory_reset_mean": 0.24544682836805787,
+          "reset_minus_persistent": -0.00031410044192914377,
+          "persistent_seed_values": [
+            0.23929038856101847,
+            0.23966143186908212,
+            0.25833096599986044
+          ],
+          "reset_seed_values": [
+            0.23873484939283893,
+            0.23928434503134646,
+            0.2583212906799882
+          ]
+        }
+      },
+      "c2s3": {
+        "sma_K": {
+          "persistent_memory_mean": 1.1473310753627473,
+          "memory_reset_mean": 1.127668086559546,
+          "reset_minus_persistent": -0.019662988803201165,
+          "persistent_seed_values": [
+            1.1524442652495752,
+            1.0823640408468997,
+            1.2071849199917668
+          ],
+          "reset_seed_values": [
+            1.1420492398913362,
+            1.0626848650965417,
+            1.1782701546907604
+          ]
+        },
+        "htf2_K": {
+          "persistent_memory_mean": 0.34326228287697164,
+          "memory_reset_mean": 0.33969266069603377,
+          "reset_minus_persistent": -0.0035696221809378517,
+          "persistent_seed_values": [
+            0.3338512419637447,
+            0.35222151449746625,
+            0.3437140921697039
+          ],
+          "reset_seed_values": [
+            0.327884520076423,
+            0.3491389735408473,
+            0.34205448847083103
+          ]
+        },
+        "htf4_K": {
+          "persistent_memory_mean": 0.574167617430144,
+          "memory_reset_mean": 0.5812092853202011,
+          "reset_minus_persistent": 0.00704166789005715,
+          "persistent_seed_values": [
+            0.5465282680566926,
+            0.5435103773897533,
+            0.6324642068439861
+          ],
+          "reset_seed_values": [
+            0.547705699953835,
+            0.5600233857848669,
+            0.6358987702219016
+          ]
+        },
+        "side_K": {
+          "persistent_memory_mean": 0.2090257406647582,
+          "memory_reset_mean": 0.20812161181100394,
+          "reset_minus_persistent": -0.0009041288537542843,
+          "persistent_seed_values": [
+            0.2072096619295829,
+            0.20884629491901932,
+            0.21102126514567243
+          ],
+          "reset_seed_values": [
+            0.2060142848756585,
+            0.2086644457920771,
+            0.2096861047652762
+          ]
+        },
+        "xi": {
+          "persistent_memory_mean": 0.03186795978752245,
+          "memory_reset_mean": 0.031610767876541365,
+          "reset_minus_persistent": -0.00025719191098108607,
+          "persistent_seed_values": [
+            0.032403750540044705,
+            0.03211339697684757,
+            0.03108673184567508
+          ],
+          "reset_seed_values": [
+            0.03220876099795077,
+            0.03196556623774007,
+            0.03065797639393326
+          ]
+        },
+        "u_m": {
+          "persistent_memory_mean": 1.0018018499943388e-05,
+          "memory_reset_mean": 9.99087124020688e-06,
+          "reset_minus_persistent": -2.7147259736506445e-08,
+          "persistent_seed_values": [
+            9.900479535997557e-06,
+            9.877106062652595e-06,
+            1.0276469901180009e-05
+          ],
+          "reset_seed_values": [
+            9.817047333172144e-06,
+            9.86354893153909e-06,
+            1.0292017455909408e-05
+          ]
+        },
+        "w_m": {
+          "persistent_memory_mean": 0.00028054284981904814,
+          "memory_reset_mean": 0.00028131420815624605,
+          "reset_minus_persistent": 7.713583371978919e-07,
+          "persistent_seed_values": [
+            0.0002647817493597277,
+            0.00027949328574580794,
+            0.0002973535143516088
+          ],
+          "reset_seed_values": [
+            0.00026605680404904206,
+            0.0002797653799672589,
+            0.0002981204404524372
+          ]
+        },
+        "memory_K": {
+          "persistent_memory_mean": 0.22940308365331918,
+          "memory_reset_mean": 0.22905669270061535,
+          "reset_minus_persistent": -0.0003463909527038252,
+          "persistent_seed_values": [
+            0.22399892087859075,
+            0.2217051090858061,
+            0.24250522099556066
+          ],
+          "reset_seed_values": [
+            0.22367628895291317,
+            0.22101670074777088,
+            0.24247708840116197
+          ]
+        }
+      },
+      "c2s4": {
+        "sma_K": {
+          "persistent_memory_mean": 0.8935678568610955,
+          "memory_reset_mean": 0.8584913418141179,
+          "reset_minus_persistent": -0.03507651504697762,
+          "persistent_seed_values": [
+            0.873198219164003,
+            0.8693019030483347,
+            0.9382034483709489
+          ],
+          "reset_seed_values": [
+            0.8533623416429499,
+            0.8223581811644829,
+            0.8997535026349209
+          ]
+        },
+        "htf2_K": {
+          "persistent_memory_mean": 0.34326228287697164,
+          "memory_reset_mean": 0.33969266069603377,
+          "reset_minus_persistent": -0.0035696221809378517,
+          "persistent_seed_values": [
+            0.3338512419637447,
+            0.35222151449746625,
+            0.3437140921697039
+          ],
+          "reset_seed_values": [
+            0.327884520076423,
+            0.3491389735408473,
+            0.34205448847083103
+          ]
+        },
+        "htf4_K": {
+          "persistent_memory_mean": 0.5813234499484167,
+          "memory_reset_mean": 0.5870834539909556,
+          "reset_minus_persistent": 0.005760004042538847,
+          "persistent_seed_values": [
+            0.5855567183906539,
+            0.5660124455101337,
+            0.5924011859444626
+          ],
+          "reset_seed_values": [
+            0.585699857529715,
+            0.5802573679900741,
+            0.5952931364530777
+          ]
+        },
+        "side_K": {
+          "persistent_memory_mean": 0.21037156462589554,
+          "memory_reset_mean": 0.20795541052989816,
+          "reset_minus_persistent": -0.0024161540959973895,
+          "persistent_seed_values": [
+            0.21072467983395624,
+            0.21227120392506413,
+            0.20811881011866626
+          ],
+          "reset_seed_values": [
+            0.20819973197915886,
+            0.21136572380479485,
+            0.20430077580574074
+          ]
+        },
+        "xi": {
+          "persistent_memory_mean": 0.03186795978752245,
+          "memory_reset_mean": 0.031610767876541365,
+          "reset_minus_persistent": -0.00025719191098108607,
+          "persistent_seed_values": [
+            0.032403750540044705,
+            0.03211339697684757,
+            0.03108673184567508
+          ],
+          "reset_seed_values": [
+            0.03220876099795077,
+            0.03196556623774007,
+            0.03065797639393326
+          ]
+        },
+        "u_m": {
+          "persistent_memory_mean": 1.0018018499943388e-05,
+          "memory_reset_mean": 9.99087124020688e-06,
+          "reset_minus_persistent": -2.7147259736506445e-08,
+          "persistent_seed_values": [
+            9.900479535997557e-06,
+            9.877106062652595e-06,
+            1.0276469901180009e-05
+          ],
+          "reset_seed_values": [
+            9.817047333172144e-06,
+            9.86354893153909e-06,
+            1.0292017455909408e-05
+          ]
+        },
+        "w_m": {
+          "persistent_memory_mean": 0.00028054284981904814,
+          "memory_reset_mean": 0.00028131420815624605,
+          "reset_minus_persistent": 7.713583371978919e-07,
+          "persistent_seed_values": [
+            0.0002647817493597277,
+            0.00027949328574580794,
+            0.0002973535143516088
+          ],
+          "reset_seed_values": [
+            0.00026605680404904206,
+            0.0002797653799672589,
+            0.0002981204404524372
+          ]
+        },
+        "memory_K": {
+          "persistent_memory_mean": 0.2941392765462927,
+          "memory_reset_mean": 0.29035711626014354,
+          "reset_minus_persistent": -0.00378216028614912,
+          "persistent_seed_values": [
+            0.2761696325585628,
+            0.2972311097346195,
+            0.3090170873456957
+          ],
+          "reset_seed_values": [
+            0.2740390292409264,
+            0.2944346564239613,
+            0.302597663115543
+          ]
+        }
+      },
+      "c2s5": {
+        "sma_K": {
+          "persistent_memory_mean": 0.5844500706553494,
+          "memory_reset_mean": 0.5742008350484632,
+          "reset_minus_persistent": -0.010249235606886101,
+          "persistent_seed_values": [
+            0.604668502295867,
+            0.5363720583277815,
+            0.6123096513423997
+          ],
+          "reset_seed_values": [
+            0.5968776307496886,
+            0.5221774077205615,
+            0.6035474666751397
+          ]
+        },
+        "htf2_K": {
+          "persistent_memory_mean": 0.34326228287697164,
+          "memory_reset_mean": 0.33969266069603377,
+          "reset_minus_persistent": -0.0035696221809378517,
+          "persistent_seed_values": [
+            0.3338512419637447,
+            0.35222151449746625,
+            0.3437140921697039
+          ],
+          "reset_seed_values": [
+            0.327884520076423,
+            0.3491389735408473,
+            0.34205448847083103
+          ]
+        },
+        "htf4_K": {
+          "persistent_memory_mean": 0.5813234499484167,
+          "memory_reset_mean": 0.5870834539909556,
+          "reset_minus_persistent": 0.005760004042538847,
+          "persistent_seed_values": [
+            0.5855567183906539,
+            0.5660124455101337,
+            0.5924011859444626
+          ],
+          "reset_seed_values": [
+            0.585699857529715,
+            0.5802573679900741,
+            0.5952931364530777
+          ]
+        },
+        "side_K": {
+          "persistent_memory_mean": 0.21037156462589554,
+          "memory_reset_mean": 0.20795541052989816,
+          "reset_minus_persistent": -0.0024161540959973895,
+          "persistent_seed_values": [
+            0.21072467983395624,
+            0.21227120392506413,
+            0.20811881011866626
+          ],
+          "reset_seed_values": [
+            0.20819973197915886,
+            0.21136572380479485,
+            0.20430077580574074
+          ]
+        },
+        "xi": {
+          "persistent_memory_mean": 0.004294338160824825,
+          "memory_reset_mean": 0.004294935263994462,
+          "reset_minus_persistent": 5.971031696376224e-07,
+          "persistent_seed_values": [
+            0.004754643510063815,
+            0.007076010237100035,
+            0.001052360735310625
+          ],
+          "reset_seed_values": [
+            0.005089479046643666,
+            0.0068869930718842036,
+            0.0009083336734555177
+          ]
+        },
+        "u_m": {
+          "persistent_memory_mean": 3.531916347949244e-06,
+          "memory_reset_mean": 3.605098765198556e-06,
+          "reset_minus_persistent": 7.318241724931108e-08,
+          "persistent_seed_values": [
+            3.682002401469083e-06,
+            3.21970706338341e-06,
+            3.6940395789952408e-06
+          ],
+          "reset_seed_values": [
+            3.8453702289988175e-06,
+            3.137035783429586e-06,
+            3.832890283167263e-06
+          ]
+        },
+        "w_m": {
+          "persistent_memory_mean": 0.00013746313531276443,
+          "memory_reset_mean": 0.00013909453358407846,
+          "reset_minus_persistent": 1.6313982713140025e-06,
+          "persistent_seed_values": [
+            0.00011911472045525235,
+            0.0001405001861138805,
+            0.0001527744993691605
+          ],
+          "reset_seed_values": [
+            0.0001200120484506219,
+            0.0001415124369532122,
+            0.00015575911534840127
+          ]
+        },
+        "memory_K": {
+          "persistent_memory_mean": 0.2941392765462927,
+          "memory_reset_mean": 0.29035711626014354,
+          "reset_minus_persistent": -0.00378216028614912,
+          "persistent_seed_values": [
+            0.2761696325585628,
+            0.2972311097346195,
+            0.3090170873456957
+          ],
+          "reset_seed_values": [
+            0.2740390292409264,
+            0.2944346564239613,
+            0.302597663115543
+          ]
+        }
+      },
+      "c3s1": {
+        "sma_K": {
+          "persistent_memory_mean": 0.6794067347126855,
+          "memory_reset_mean": 0.677574300672488,
+          "reset_minus_persistent": -0.001832434040197543,
+          "persistent_seed_values": [
+            0.6581449416731102,
+            0.6560292786448568,
+            0.7240459838200899
+          ],
+          "reset_seed_values": [
+            0.6520769961130712,
+            0.6328309493161154,
+            0.7478149565882777
+          ]
+        },
+        "htf2_K": {
+          "persistent_memory_mean": 0.34497940289667034,
+          "memory_reset_mean": 0.33646424390553253,
+          "reset_minus_persistent": -0.008515158991137787,
+          "persistent_seed_values": [
+            0.36579890806646537,
+            0.30292585156119384,
+            0.36621344906235165
+          ],
+          "reset_seed_values": [
+            0.3438712392753864,
+            0.2996815402631974,
+            0.36583995217801374
+          ]
+        },
+        "htf4_K": {
+          "persistent_memory_mean": 0.5813234499484167,
+          "memory_reset_mean": 0.5870834539909556,
+          "reset_minus_persistent": 0.005760004042538847,
+          "persistent_seed_values": [
+            0.5855567183906539,
+            0.5660124455101337,
+            0.5924011859444626
+          ],
+          "reset_seed_values": [
+            0.585699857529715,
+            0.5802573679900741,
+            0.5952931364530777
+          ]
+        },
+        "side_K": {
+          "persistent_memory_mean": 0.22648529632139047,
+          "memory_reset_mean": 0.22344128883255573,
+          "reset_minus_persistent": -0.003044007488834738,
+          "persistent_seed_values": [
+            0.23182360047561398,
+            0.22402181572041055,
+            0.2236104727681469
+          ],
+          "reset_seed_values": [
+            0.22697816788554717,
+            0.22345411521335837,
+            0.2198915833987617
+          ]
+        },
+        "xi": {
+          "persistent_memory_mean": 0.01671428492386882,
+          "memory_reset_mean": 0.016741797067254517,
+          "reset_minus_persistent": 2.7512143385694892e-05,
+          "persistent_seed_values": [
+            0.017203524069182914,
+            0.017015868236812115,
+            0.015923462465611438
+          ],
+          "reset_seed_values": [
+            0.017481928029136663,
+            0.016979249035710502,
+            0.015764214136916387
+          ]
+        },
+        "u_m": {
+          "persistent_memory_mean": 2.112997817571841e-05,
+          "memory_reset_mean": 2.1279760108235537e-05,
+          "reset_minus_persistent": 1.49781932517124e-07,
+          "persistent_seed_values": [
+            2.327065044144485e-05,
+            1.832141835162572e-05,
+            2.1797865734084662e-05
+          ],
+          "reset_seed_values": [
+            2.3331371226481942e-05,
+            1.8504762266212086e-05,
+            2.200314683201258e-05
+          ]
+        },
+        "w_m": {
+          "persistent_memory_mean": 0.0002998447497009462,
+          "memory_reset_mean": 0.0003007042693624028,
+          "reset_minus_persistent": 8.595196614566157e-07,
+          "persistent_seed_values": [
+            0.0002965053671620404,
+            0.0002725348688494882,
+            0.0003304940130913102
+          ],
+          "reset_seed_values": [
+            0.0002919275154662969,
+            0.0002761126892465648,
+            0.0003340726033743469
+          ]
+        },
+        "memory_K": {
+          "persistent_memory_mean": 0.30683211046766057,
+          "memory_reset_mean": 0.302999717129459,
+          "reset_minus_persistent": -0.003832393338201623,
+          "persistent_seed_values": [
+            0.2820127238550623,
+            0.3073989804145414,
+            0.33108462713337805
+          ],
+          "reset_seed_values": [
+            0.27892582683859324,
+            0.30431991334093283,
+            0.3257534112088508
+          ]
+        }
+      },
+      "c3s2": {
+        "sma_K": {
+          "persistent_memory_mean": 0.5022989406598063,
+          "memory_reset_mean": 0.513708748122257,
+          "reset_minus_persistent": 0.01140980746245072,
+          "persistent_seed_values": [
+            0.59725857355562,
+            0.3990082260027475,
+            0.5106300224210514
+          ],
+          "reset_seed_values": [
+            0.6146011320313026,
+            0.3889299609933827,
+            0.5375951513420857
+          ]
+        },
+        "htf2_K": {
+          "persistent_memory_mean": 0.2420368071170167,
+          "memory_reset_mean": 0.23708117503435025,
+          "reset_minus_persistent": -0.004955632082666435,
+          "persistent_seed_values": [
+            0.22774783556626,
+            0.26641750369467404,
+            0.23194508209011608
+          ],
+          "reset_seed_values": [
+            0.21598728737997258,
+            0.2616971888805741,
+            0.23355904884250414
+          ]
+        },
+        "htf4_K": {
+          "persistent_memory_mean": 0.5813234499484167,
+          "memory_reset_mean": 0.5870834539909556,
+          "reset_minus_persistent": 0.005760004042538847,
+          "persistent_seed_values": [
+            0.5855567183906539,
+            0.5660124455101337,
+            0.5924011859444626
+          ],
+          "reset_seed_values": [
+            0.585699857529715,
+            0.5802573679900741,
+            0.5952931364530777
+          ]
+        },
+        "side_K": {
+          "persistent_memory_mean": 0.25200589732264206,
+          "memory_reset_mean": 0.2517052032489263,
+          "reset_minus_persistent": -0.0003006940737157367,
+          "persistent_seed_values": [
+            0.25508389684319344,
+            0.25103210015027133,
+            0.24990169497446135
+          ],
+          "reset_seed_values": [
+            0.25408387114077763,
+            0.25183220671960654,
+            0.24919953188639474
+          ]
+        },
+        "xi": {
+          "persistent_memory_mean": 0.042726907331822946,
+          "memory_reset_mean": 0.04313900045026312,
+          "reset_minus_persistent": 0.000412093118440172,
+          "persistent_seed_values": [
+            0.04426302869056223,
+            0.04096292280539569,
+            0.04295477049951093
+          ],
+          "reset_seed_values": [
+            0.04429669622125614,
+            0.04197355692544252,
+            0.0431467482040907
+          ]
+        },
+        "u_m": {
+          "persistent_memory_mean": 2.2844867971679638e-05,
+          "memory_reset_mean": 2.2976950131304778e-05,
+          "reset_minus_persistent": 1.3208215962514126e-07,
+          "persistent_seed_values": [
+            2.4178580083326793e-05,
+            2.0020756236796073e-05,
+            2.4335267594916047e-05
+          ],
+          "reset_seed_values": [
+            2.422185484645052e-05,
+            2.015764275636718e-05,
+            2.4551352791096635e-05
+          ]
+        },
+        "w_m": {
+          "persistent_memory_mean": 0.00027629944005088926,
+          "memory_reset_mean": 0.00027655576594650517,
+          "reset_minus_persistent": 2.5632589561592367e-07,
+          "persistent_seed_values": [
+            0.0002583171277483857,
+            0.0002688935675831116,
+            0.00030168762482117047
+          ],
+          "reset_seed_values": [
+            0.0002551968268347314,
+            0.0002689474799482098,
+            0.00030552299105657434
+          ]
+        },
+        "memory_K": {
+          "persistent_memory_mean": 0.07133166616970675,
+          "memory_reset_mean": 0.07112141921579142,
+          "reset_minus_persistent": -0.000210246953915319,
+          "persistent_seed_values": [
+            0.07062827295603728,
+            0.07029282003077642,
+            0.07307390552230651
+          ],
+          "reset_seed_values": [
+            0.07244814887800319,
+            0.07196695668358749,
+            0.06894915208578357
+          ]
+        }
+      },
+      "c3s3": {
+        "sma_K": {
+          "persistent_memory_mean": 1.3722234270422373,
+          "memory_reset_mean": 1.3634460074258996,
+          "reset_minus_persistent": -0.008777419616337564,
+          "persistent_seed_values": [
+            1.4502950415884066,
+            1.2216743296342338,
+            1.4447009099040715
+          ],
+          "reset_seed_values": [
+            1.4610596869425647,
+            1.2009246757535066,
+            1.428353659581628
+          ]
+        },
+        "htf2_K": {
+          "persistent_memory_mean": 0.2420368071170167,
+          "memory_reset_mean": 0.23708117503435025,
+          "reset_minus_persistent": -0.004955632082666435,
+          "persistent_seed_values": [
+            0.22774783556626,
+            0.26641750369467404,
+            0.23194508209011608
+          ],
+          "reset_seed_values": [
+            0.21598728737997258,
+            0.2616971888805741,
+            0.23355904884250414
+          ]
+        },
+        "htf4_K": {
+          "persistent_memory_mean": 0.9381125283915638,
+          "memory_reset_mean": 0.9460750208008828,
+          "reset_minus_persistent": 0.007962492409318974,
+          "persistent_seed_values": [
+            0.9304998529300383,
+            0.8959640390199777,
+            0.9878736932246753
+          ],
+          "reset_seed_values": [
+            0.9306447225231225,
+            0.9141369802443942,
+            0.9934433596351316
+          ]
+        },
+        "side_K": {
+          "persistent_memory_mean": 0.25591394516309457,
+          "memory_reset_mean": 0.25563600169406775,
+          "reset_minus_persistent": -0.0002779434690268201,
+          "persistent_seed_values": [
+            0.2604923883552695,
+            0.25474113400626414,
+            0.25250831312775
+          ],
+          "reset_seed_values": [
+            0.25966788766794774,
+            0.2556264177096724,
+            0.251613699704583
+          ]
+        },
+        "xi": {
+          "persistent_memory_mean": 0.037548026209850205,
+          "memory_reset_mean": 0.03750058115229821,
+          "reset_minus_persistent": -4.7445057552002644e-05,
+          "persistent_seed_values": [
+            0.038044962152949405,
+            0.03682014053257633,
+            0.037778975944024885
+          ],
+          "reset_seed_values": [
+            0.03772413623600485,
+            0.037280210312983494,
+            0.037497396907906266
+          ]
+        },
+        "u_m": {
+          "persistent_memory_mean": 1.1122197210285936e-05,
+          "memory_reset_mean": 1.105978495295213e-05,
+          "reset_minus_persistent": -6.241225733380529e-08,
+          "persistent_seed_values": [
+            1.0858979541913422e-05,
+            1.132148048475356e-05,
+            1.1186131604190828e-05
+          ],
+          "reset_seed_values": [
+            1.0690688991483501e-05,
+            1.141869038673317e-05,
+            1.1069975480639722e-05
+          ]
+        },
+        "w_m": {
+          "persistent_memory_mean": 0.00028900721490649877,
+          "memory_reset_mean": 0.00028986664219921753,
+          "reset_minus_persistent": 8.594272927187945e-07,
+          "persistent_seed_values": [
+            0.0002899359131498696,
+            0.0002810014747713543,
+            0.0002960842567982724
+          ],
+          "reset_seed_values": [
+            0.00029244140104177623,
+            0.0002824007002073775,
+            0.0002947578253484989
+          ]
+        },
+        "memory_K": {
+          "persistent_memory_mean": 0.07566773764978339,
+          "memory_reset_mean": 0.07648764674103474,
+          "reset_minus_persistent": 0.0008199090912513288,
+          "persistent_seed_values": [
+            0.07916351763668515,
+            0.07768426114355105,
+            0.07015543416911399
+          ],
+          "reset_seed_values": [
+            0.08166398475241049,
+            0.08195326396712709,
+            0.0658456915035666
+          ]
+        }
+      },
+      "c3s4": {
+        "sma_K": {
+          "persistent_memory_mean": 1.1200462778744624,
+          "memory_reset_mean": 1.1099938879124358,
+          "reset_minus_persistent": -0.010052389962026472,
+          "persistent_seed_values": [
+            1.1697049189111328,
+            1.0519070318654464,
+            1.1385268828468078
+          ],
+          "reset_seed_values": [
+            1.1831093087537992,
+            1.0381787400135623,
+            1.1086936149699462
+          ]
+        },
+        "htf2_K": {
+          "persistent_memory_mean": 0.2420368071170167,
+          "memory_reset_mean": 0.23708117503435025,
+          "reset_minus_persistent": -0.004955632082666435,
+          "persistent_seed_values": [
+            0.22774783556626,
+            0.26641750369467404,
+            0.23194508209011608
+          ],
+          "reset_seed_values": [
+            0.21598728737997258,
+            0.2616971888805741,
+            0.23355904884250414
+          ]
+        },
+        "htf4_K": {
+          "persistent_memory_mean": 0.33399195436597134,
+          "memory_reset_mean": 0.3513099918836464,
+          "reset_minus_persistent": 0.01731803751767506,
+          "persistent_seed_values": [
+            0.3586197856593415,
+            0.3153757098000281,
+            0.3279803676385444
+          ],
+          "reset_seed_values": [
+            0.36868721296438745,
+            0.3454020087056952,
+            0.3398407539808565
+          ]
+        },
+        "side_K": {
+          "persistent_memory_mean": 0.2634448563799486,
+          "memory_reset_mean": 0.2656249033029404,
+          "reset_minus_persistent": 0.0021800469229918316,
+          "persistent_seed_values": [
+            0.28697354081123105,
+            0.2494217167554287,
+            0.25393931157318594
+          ],
+          "reset_seed_values": [
+            0.2873361239277624,
+            0.25317865539687184,
+            0.25635993058418693
+          ]
+        },
+        "xi": {
+          "persistent_memory_mean": 0.037548026209850205,
+          "memory_reset_mean": 0.03750058115229821,
+          "reset_minus_persistent": -4.7445057552002644e-05,
+          "persistent_seed_values": [
+            0.038044962152949405,
+            0.03682014053257633,
+            0.037778975944024885
+          ],
+          "reset_seed_values": [
+            0.03772413623600485,
+            0.037280210312983494,
+            0.037497396907906266
+          ]
+        },
+        "u_m": {
+          "persistent_memory_mean": 1.1122197210285936e-05,
+          "memory_reset_mean": 1.105978495295213e-05,
+          "reset_minus_persistent": -6.241225733380529e-08,
+          "persistent_seed_values": [
+            1.0858979541913422e-05,
+            1.132148048475356e-05,
+            1.1186131604190828e-05
+          ],
+          "reset_seed_values": [
+            1.0690688991483501e-05,
+            1.141869038673317e-05,
+            1.1069975480639722e-05
+          ]
+        },
+        "w_m": {
+          "persistent_memory_mean": 0.00028900721490649877,
+          "memory_reset_mean": 0.00028986664219921753,
+          "reset_minus_persistent": 8.594272927187945e-07,
+          "persistent_seed_values": [
+            0.0002899359131498696,
+            0.0002810014747713543,
+            0.0002960842567982724
+          ],
+          "reset_seed_values": [
+            0.00029244140104177623,
+            0.0002824007002073775,
+            0.0002947578253484989
+          ]
+        },
+        "memory_K": {
+          "persistent_memory_mean": 0.09455756047735715,
+          "memory_reset_mean": 0.09446557842846792,
+          "reset_minus_persistent": -9.19820488892396e-05,
+          "persistent_seed_values": [
+            0.09899862230184092,
+            0.08197030084940854,
+            0.102703758280822
+          ],
+          "reset_seed_values": [
+            0.10071130049280987,
+            0.08610301997341101,
+            0.09658241481918287
+          ]
+        }
+      }
+    },
+    "field": {
+      "c1s2": {
+        "sma_K": {
+          "persistent_memory_mean": 1.7357109179821828,
+          "memory_reset_mean": 1.3726979110189446,
+          "reset_minus_persistent": -0.3630130069632383,
+          "persistent_seed_values": [
+            1.8376150723653977,
+            1.6328155855045916,
+            1.7367020960765593
+          ],
+          "reset_seed_values": [
+            1.2736124353146423,
+            1.468263388734632,
+            1.3762179090075595
+          ]
+        },
+        "htf_K": {
+          "persistent_memory_mean": 1.491078922852001,
+          "memory_reset_mean": 1.6474332481771814,
+          "reset_minus_persistent": 0.15635432532518054,
+          "persistent_seed_values": [
+            1.5331916807736548,
+            1.535743033454388,
+            1.40430205432796
+          ],
+          "reset_seed_values": [
+            1.770857674541348,
+            1.626197305662062,
+            1.5452447643281344
+          ]
+        }
+      },
+      "c1s4": {
+        "sma_K": {
+          "persistent_memory_mean": 1.1984189724471284,
+          "memory_reset_mean": 1.0074807386861118,
+          "reset_minus_persistent": -0.19093823376101648,
+          "persistent_seed_values": [
+            1.2363252803980158,
+            1.1425393481040995,
+            1.2163922888392698
+          ],
+          "reset_seed_values": [
+            1.0151778655397183,
+            0.9402759221811247,
+            1.0669884283374926
+          ]
+        },
+        "htf_K": {
+          "persistent_memory_mean": 1.033036988410586,
+          "memory_reset_mean": 1.2947788022079232,
+          "reset_minus_persistent": 0.2617418137973371,
+          "persistent_seed_values": [
+            1.0029238620685428,
+            1.0209350464135527,
+            1.075252056749663
+          ],
+          "reset_seed_values": [
+            1.4231437757509615,
+            1.305909402383733,
+            1.1552832284890753
+          ]
+        }
+      },
+      "c2s2": {
+        "sma_K": {
+          "persistent_memory_mean": 1.9741504644162589,
+          "memory_reset_mean": 1.6808906783782962,
+          "reset_minus_persistent": -0.2932597860379627,
+          "persistent_seed_values": [
+            1.8353236674897049,
+            1.7565609909394235,
+            2.330566734819648
+          ],
+          "reset_seed_values": [
+            1.4824272695428033,
+            1.3531915196883189,
+            2.207053245903766
+          ]
+        },
+        "htf_K": {
+          "persistent_memory_mean": 0.9713461689108862,
+          "memory_reset_mean": 1.0916680879048533,
+          "reset_minus_persistent": 0.1203219189939669,
+          "persistent_seed_values": [
+            1.0233538396375312,
+            0.9798898439638946,
+            0.9107948231312331
+          ],
+          "reset_seed_values": [
+            1.194666117776247,
+            1.086341759488424,
+            0.9939963864498886
+          ]
+        }
+      },
+      "c2s4": {
+        "sma_K": {
+          "persistent_memory_mean": 1.5526865147490945,
+          "memory_reset_mean": 1.2704829004124518,
+          "reset_minus_persistent": -0.2822036143366425,
+          "persistent_seed_values": [
+            1.579030699290079,
+            1.5660202814224597,
+            1.5130085635347439
+          ],
+          "reset_seed_values": [
+            1.3244405771561278,
+            1.2789619169451223,
+            1.208046207136105
+          ]
+        },
+        "htf_K": {
+          "persistent_memory_mean": 0.7475036699848189,
+          "memory_reset_mean": 0.8779228394889006,
+          "reset_minus_persistent": 0.1304191695040817,
+          "persistent_seed_values": [
+            0.7564859222687461,
+            0.7411178665076749,
+            0.7449072211780359
+          ],
+          "reset_seed_values": [
+            0.8866346073595174,
+            0.8323737749735577,
+            0.9147601361336268
+          ]
+        }
+      },
+      "c3s2": {
+        "sma_K": {
+          "persistent_memory_mean": 1.3190449024631172,
+          "memory_reset_mean": 1.3727751220464681,
+          "reset_minus_persistent": 0.05373021958335097,
+          "persistent_seed_values": [
+            1.2153714737674388,
+            1.174908359499802,
+            1.5668548741221109
+          ],
+          "reset_seed_values": [
+            1.133766291666832,
+            1.2247270876267031,
+            1.7598319868458694
+          ]
+        },
+        "htf_K": {
+          "persistent_memory_mean": 1.0257605176583118,
+          "memory_reset_mean": 1.121242903294499,
+          "reset_minus_persistent": 0.09548238563618716,
+          "persistent_seed_values": [
+            1.1298446499672772,
+            1.0038200922005633,
+            0.9436168108070947
+          ],
+          "reset_seed_values": [
+            1.3222580462885891,
+            1.0461673754068213,
+            0.9953032881880863
+          ]
+        }
+      },
+      "c3s4": {
+        "sma_K": {
+          "persistent_memory_mean": 1.5998873948885823,
+          "memory_reset_mean": 1.4140825981760046,
+          "reset_minus_persistent": -0.18580479671257746,
+          "persistent_seed_values": [
+            1.6477622621159862,
+            1.4650628829251315,
+            1.686837039624629
+          ],
+          "reset_seed_values": [
+            1.5830656135793875,
+            1.2546300170115268,
+            1.4045521639371001
+          ]
+        },
+        "htf_K": {
+          "persistent_memory_mean": 0.7749564524299996,
+          "memory_reset_mean": 0.9086816990558345,
+          "reset_minus_persistent": 0.13372524662583482,
+          "persistent_seed_values": [
+            0.7982703670975976,
+            0.7661198900705932,
+            0.760479100121808
+          ],
+          "reset_seed_values": [
+            0.9335446559202591,
+            0.8946965842723265,
+            0.8978038569749176
+          ]
+        }
+      }
+    }
+  },
+  "checkpoint_replay_max_abs_difference": 0.0,
+  "interpretation": {
+    "causal_claim": false,
+    "weights_changed": false,
+    "memory_reset_is_inference_ablation": true,
+    "test_cohort_is_historical_and_previously_examined": true
+  },
+  "artifacts": {
+    "rows.json": "aad1ea5c7a8389ada4ea75ed6c0ad3c3ef7b6e3af030fd5e59d79e823a5332eb",
+    "s20261121_memory_reset_predictions.npz": "a9cf94e62ddf8154e3d894bca478618c15e0ba9e229501896a4f2a93243b6f4b",
+    "s20261122_memory_reset_predictions.npz": "da0873ea23b9a2a695fca676708ece2ab2e39f086f7e1aa53be079357845cdec",
+    "s20261123_memory_reset_predictions.npz": "0e2b0488ea1fa46615f680f0581eb0638b1c136b3a2c6d8e59632fb2b994d2e5"
+  }
+}
