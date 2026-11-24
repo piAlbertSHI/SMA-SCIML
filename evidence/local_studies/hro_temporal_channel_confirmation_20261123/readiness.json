@@ -1,0 +1,58 @@
+{
+  "status": "verified_temporal_channel_research_checkpoint",
+  "screening": {
+    "summary_path": "evidence/experiments/hro_temporal_channel_refined_20261123/summary.json",
+    "summary_sha256": "3e96103c3c73173ac0c8bec5f3769d7dfdb582c36fd360af3469e7d050d2474f",
+    "protocol_sha256": "cbe687e2fdba45f7dca2c003e63c98ea86d40b25d02b74ee1ed79aa9daebc217",
+    "selected_candidate": "protected_state_sma_late_small",
+    "late_sma_change_fraction": -0.08709011064165417
+  },
+  "confirmation": {
+    "summary_path": "evidence/experiments/hro_temporal_channel_confirmation_20261123/summary.json",
+    "summary_sha256": "86479f730ab5cce5c750f3f4c781bfa196d3ca0c25549e622356813c00d20d1c",
+    "protocol_sha256": "dcbcd22bf24398e3fd189e8597560448adc31f45d4c50b9e2ab7eccfc40fa0b8",
+    "checkpoint_replays": 3,
+    "max_replay_absolute_difference": 0.0,
+    "fresh_solver_calls": 0
+  },
+  "post_selection_c3s4": {
+    "test_audit_path": "evidence/local_studies/hro_temporal_channel_confirmation_20261123/test_audit.json",
+    "test_audit_sha256": "e6b1b4db35fd447357543428d44d409f1919f88ea7863e94d94187c1c1169818",
+    "sma_field_K": 1.5155692818484532,
+    "htf_field_K": 0.8269621886379693,
+    "previous_protected_sma_field_K": 1.5233480333001246,
+    "previous_protected_htf_field_K": 0.817022443335306,
+    "public_default_changed": false
+  },
+  "stage_metrics": {
+    "path": "evidence/local_studies/hro_temporal_channel_confirmation_20261123/stage_metrics.json",
+    "sha256": "ef49545996d314392b98b853d248d2f9d8cc577672ba3dbac340a62ca613f065"
+  },
+  "material_stage_diagnostic": {
+    "path": "evidence/local_studies/hro_temporal_channel_confirmation_20261123/material_stage_diagnostics.json",
+    "sha256": "18eeee33bfe367a5ae22cc23e07de360a745c87942f655402699caf9882969bf"
+  },
+  "temporal_error_diagnostic": {
+    "path": "evidence/local_studies/hro_temporal_channel_confirmation_20261123/temporal_error.json",
+    "sha256": "a7f6e643f71337d1a8e0ab1d629e8355d7543e1e7349ea09aed3c033583a6907"
+  },
+  "htf_propagation_diagnostic": {
+    "path": "evidence/local_studies/hro_temporal_channel_confirmation_20261123/htf_propagation_diagnostic.json",
+    "sha256": "b1c7d87fb61cf1b6ba830151f1cf1e943193810b9735e0ecf1c3fe8a933a370b",
+    "htf2_field_correlation_all_rows": 0.9676500637819246,
+    "htf4_field_correlation_all_rows": 0.9338155370080099,
+    "causal_claim": false
+  },
+  "decision": {
+    "specialized_research_checkpoint": "promote_protected_state_sma_late_small",
+    "public_all_channel_default": "retain_protected_state_reference",
+    "reason": "SMA late-time error improves, while post-selection HTF is 0.010 K higher than the previous protected-state checkpoint."
+  },
+  "open_boundaries": [
+    "third-cycle HTF trade-off",
+    "port-level energy closure",
+    "hidden storage ownership",
+    "unseen-material transfer",
+    "independent-grid behavior"
+  ]
+}

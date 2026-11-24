@@ -74,3 +74,13 @@ The stage contains separate local commits for the plan, protected-state objectiv
 4. Use a separately approved physical-simulation budget if new trajectories are required.
 
 下一阶段协议已经写入 [next_stage_protocol.json](../evidence/local_studies/hro_12h_development_20261123/next_stage_protocol.json)。
+
+## Continuation after the stage report / 阶段报告后的继续推进
+
+The late-time follow-up was completed after this report was first written. The SMA-only late profile passed its internal gates and three-seed confirmation. It reduced the internal late-SMA error by **8.7%**. The post-selection c3s4 audit gave **1.516 K** SMA field RMSE and **0.827 K** HTF field RMSE. It is retained as a specialized research checkpoint, while the public all-channel default remains the protected-state reference.
+
+阶段报告形成后继续完成了后期时间权重实验。SMA-only 后期方案通过内部门禁和三种子确认，内部后期 SMA 误差降低 **8.7%**。选择后 c3s4 审计得到 SMA 场 RMSE **1.516 K**、HTF 场 RMSE **0.827 K**。该方案保留为专项研究检查点，公共全通道默认仍使用状态保护参考。
+
+The HTF propagation diagnostic found pooled correlations of **0.968** for HTF2 state error and **0.934** for HTF4 state error with c3s4 HTF field error. Memory correlation changes sign by material, so no causal memory claim is made.
+
+HTF 传播诊断发现 c3s4 HTF 场误差与 HTF2、HTF4 状态误差的合并相关系数分别为 **0.968** 和 **0.934**。记忆相关性按材料变号，因此不作记忆因果归因。

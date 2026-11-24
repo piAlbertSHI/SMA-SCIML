@@ -1,0 +1,10 @@
+{
+  "status": "verified_hro_temporal_channel_confirmation",
+  "command": "python -m examples.confirm_hro_temporal_channel --output evidence/experiments/hro_temporal_channel_confirmation_20261123 --verify-only",
+  "checkpoint_replays": 3,
+  "scores_recomputed": true,
+  "max_replay_absolute_difference": 0.0,
+  "fresh_solver_calls": 0,
+  "sealed_test_cases_opened": false,
+  "test_scores_computed": false
+}

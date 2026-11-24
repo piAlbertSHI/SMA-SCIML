@@ -1,0 +1,13 @@
+{
+  "status": "curated_temporal_channel_screening_metrics",
+  "source": "evidence/experiments/hro_temporal_channel_refined_20261123/summary.json",
+  "source_sha256": "3e96103c3c73173ac0c8bec5f3769d7dfdb582c36fd360af3469e7d050d2474f",
+  "candidates": {
+    "protected_state_control": {"late_sma_change_fraction": 0.0, "passed": false},
+    "protected_state_sma_late_micro": {"late_sma_change_fraction": -0.06265372537098857, "passed": true},
+    "protected_state_sma_late_small": {"late_sma_change_fraction": -0.08709011064165417, "passed": true}
+  },
+  "selected_candidate": "protected_state_sma_late_small",
+  "selection_rule": "lowest late-SMA validation RMSE among candidates passing state, entry, material and seed gates",
+  "fresh_solver_calls": 0
+}

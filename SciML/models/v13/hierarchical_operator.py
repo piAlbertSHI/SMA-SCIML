@@ -241,7 +241,7 @@ class HierarchicalStateOperator(nn.Module):
 def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale=None,positions=None,
                field_weight=1.,gradient_weight=.01,curvature_weight=0.,curvature_scale=None,
                curvature_channel_weights=None,field_channel_weights=None,times=None,
-               entry_time_weight=0.,entry_field_weight=0.,state_block_weights=None,
+               entry_time_weight=0.,late_time_weight=0.,late_time_channel_weights=None,entry_field_weight=0.,state_block_weights=None,
                state_stage_weights=None,field_sample_channel_weights=None):
     """Supervised state + field + spatial derivative losses; no claimed PDE residual.
 
@@ -254,6 +254,10 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
     two-channel mean. ``field_channel_weights`` applies the same normalized
     weighting to field-value and spatial-gradient supervision. ``entry_time_weight``
     emphasizes early nonzero field times with a normalized exponential weight.
+    ``late_time_weight`` emphasizes late nonzero field times with a quadratic
+    time profile.
+    ``late_time_channel_weights`` optionally restricts that late profile to
+    selected field channels.
     ``entry_field_weight`` adds a supervised loss on the time-zero field
     reconstructed from the predicted stage-entry state.
     ``state_block_weights`` and ``state_stage_weights`` optionally reweight
@@ -266,6 +270,12 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
         raise ValueError('Loss weights must be nonnegative')
     if entry_time_weight < 0:
         raise ValueError('Entry time weight must be nonnegative')
+    if late_time_weight < 0:
+        raise ValueError('Late time weight must be nonnegative')
+    if late_time_channel_weights is not None:
+        late_channel_weights=torch.as_tensor(late_time_channel_weights,dtype=torch.float64)
+        if late_channel_weights.shape!=(2,) or not torch.isfinite(late_channel_weights).all() or torch.any(late_channel_weights<0) or not torch.any(late_channel_weights>0):
+            raise ValueError('Late time channel weights must be two finite nonnegative values with one positive value')
     if entry_field_weight < 0:
         raise ValueError('Entry field weight must be nonnegative')
     if state_block_weights is not None:
@@ -315,14 +325,21 @@ def joint_loss(prediction,state_truth,state_scale,*,field_truth=None,field_scale
         if field_sample_channel_weights is not None:
             normalized_sample_weights=sample_field_weights.to(scaled)*2/sample_field_weights.sum(dim=1,keepdim=True)
             field_weight_tensor=field_weight_tensor*normalized_sample_weights.view(-1,1,2,1,1)
-        if entry_time_weight:
+        if entry_time_weight or late_time_weight:
             if times is None or times.ndim != 1 or len(times) != scaled.shape[3] or not torch.isfinite(times).all():
                 raise ValueError('Increasing field times are required for entry weighting')
             if torch.any(times < 0) or torch.any(times > 1) or not torch.all(torch.diff(times) > 0):
                 raise ValueError('Field times must increase within [0,1]')
-            temporal_weights=1.+entry_time_weight*torch.exp(-4.*times[1:])
-            temporal_weights=temporal_weights*len(temporal_weights)/temporal_weights.sum()
-            temporal_weight_tensor=temporal_weights.to(scaled).view(1,1,1,-1,1)
+            entry_profile=entry_time_weight*torch.exp(-4.*times[1:])
+            if late_time_channel_weights is None:
+                temporal_weights=1.+entry_profile+late_time_weight*times[1:].square()
+                temporal_weights=temporal_weights*len(temporal_weights)/temporal_weights.sum()
+                temporal_weight_tensor=temporal_weights.to(scaled).view(1,1,1,-1,1)
+            else:
+                normalized_late_weights=late_channel_weights*2/late_channel_weights.sum()
+                temporal_weights=1.+entry_profile.view(1,-1)+late_time_weight*normalized_late_weights.view(-1,1)*times[1:].square().view(1,-1)
+                temporal_weights=temporal_weights*temporal_weights.numel()/temporal_weights.sum()
+                temporal_weight_tensor=temporal_weights.to(scaled).view(1,1,2,-1,1)
         else:
             temporal_weight_tensor=1.
         if entry_field_weight:

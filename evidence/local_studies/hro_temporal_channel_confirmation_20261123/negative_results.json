@@ -1,0 +1,20 @@
+{
+  "status": "recorded_temporal_tradeoff",
+  "global_profiles": {
+    "decision": "rejected",
+    "reason": "Global late weighting improved late SMA but reopened material field gates through HTF trade-offs."
+  },
+  "channel_profiles": {
+    "decision": "micro_and_small_passed_internal_gates",
+    "moderate_decision": "rejected_for_material_field_regression",
+    "selected": "protected_state_sma_late_small"
+  },
+  "post_selection_tradeoff": {
+    "sma_c3s4_field_K": 1.5155692818484532,
+    "htf_c3s4_field_K": 0.8269621886379693,
+    "previous_protected_sma_c3s4_field_K": 1.5233480333001246,
+    "previous_protected_htf_c3s4_field_K": 0.817022443335306,
+    "interpretation": "The late profile is accepted for SMA-late research and retained separately from the public all-channel default."
+  },
+  "fresh_solver_calls": 0
+}

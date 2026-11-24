@@ -63,6 +63,7 @@
   },
   "stage_report": "docs/HRO_12H_STAGE_REPORT.md",
   "next_stage_protocol": "evidence/local_studies/hro_12h_development_20261123/next_stage_protocol.json",
+  "late_time_profile_follow_up": "docs/HRO_TEMPORAL_PROFILE_RESULTS.md",
   "stage_metrics": {
     "path": "evidence/local_studies/hro_protected_state_confirmation_20261123/stage_metrics.json",
     "sha256": "02c021a3667cbaba0ceffd2040b4c7f8161c01dc70d933c08a4d3e66a3d7c141"

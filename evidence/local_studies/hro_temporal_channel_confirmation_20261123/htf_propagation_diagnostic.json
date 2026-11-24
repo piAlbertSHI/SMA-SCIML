@@ -1,0 +1,96 @@
+{
+  "status": "completed_htf_memory_stage_diagnostic",
+  "source": "evidence/local_studies/hro_temporal_channel_confirmation_20261123/test_audit.json",
+  "source_sha256": "e6b1b4db35fd447357543428d44d409f1919f88ea7863e94d94187c1c1169818",
+  "rows": [
+    {
+      "seed": 20261121,
+      "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "material": "recA",
+      "memory_K": 0.09508685513034044,
+      "htf2_state_K": 0.0572565456300236,
+      "htf4_state_K": 0.12744311540557587,
+      "sma_state_K": 1.1399226312647037,
+      "htf_field_K": 0.5938382408705336,
+      "sma_field_K": 1.3708702653259153
+    },
+    {
+      "seed": 20261121,
+      "case_id": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c",
+      "material": "recAS",
+      "memory_K": 0.044985667838198254,
+      "htf2_state_K": 0.2883634194030606,
+      "htf4_state_K": 0.45311756829447425,
+      "sma_state_K": 1.1476001157691615,
+      "htf_field_K": 1.202277256175632,
+      "sma_field_K": 1.498943048247666
+    },
+    {
+      "seed": 20261122,
+      "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "material": "recA",
+      "memory_K": 0.08645631293769412,
+      "htf2_state_K": 0.07186701380242504,
+      "htf4_state_K": 0.10038827786664303,
+      "sma_state_K": 1.021771965389991,
+      "htf_field_K": 0.5446808205820437,
+      "sma_field_K": 1.57312884665775
+    },
+    {
+      "seed": 20261122,
+      "case_id": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c",
+      "material": "recAS",
+      "memory_K": 0.04710763360833105,
+      "htf2_state_K": 0.24356452051402222,
+      "htf4_state_K": 0.37632069954555264,
+      "sma_state_K": 1.060934501343109,
+      "htf_field_K": 0.975989922748511,
+      "sma_field_K": 1.4824185350767527
+    },
+    {
+      "seed": 20261123,
+      "case_id": "confirm_temporal12_06_confirm50_reca_011_r38_t190_p0972_v1230_t2p4_1c_3c",
+      "material": "recA",
+      "memory_K": 0.09705387999912146,
+      "htf2_state_K": 0.06147726802329734,
+      "htf4_state_K": 0.09876811148062314,
+      "sma_state_K": 1.0954276153075682,
+      "htf_field_K": 0.5807194812518887,
+      "sma_field_K": 1.3741534691310595
+    },
+    {
+      "seed": 20261123,
+      "case_id": "confirm_temporal12_12_confirm50_recas_031_r38_t190_p1752_v1230_t2p4_1c_3c",
+      "material": "recAS",
+      "memory_K": 0.04777234915439978,
+      "htf2_state_K": 0.23119948887154948,
+      "htf4_state_K": 0.43113960111626265,
+      "sma_state_K": 1.1451235624998473,
+      "htf_field_K": 0.8746433971901466,
+      "sma_field_K": 1.7654131093935395
+    }
+  ],
+  "correlation_with_c3s4_htf_field": {
+    "all": {
+      "memory_K": -0.9122248696412137,
+      "htf2_state_K": 0.9676500637819246,
+      "htf4_state_K": 0.9338155370080099,
+      "sma_state_K": 0.4106870803194963
+    },
+    "recA": {
+      "memory_K": 0.9064450608617151,
+      "htf2_state_K": -0.9997156867190893,
+      "htf4_state_K": 0.6697908837309027,
+      "sma_state_K": 0.9926380334731176
+    },
+    "recAS": {
+      "memory_K": -0.997075086061069,
+      "htf2_state_K": 0.9950189456620027,
+      "htf4_state_K": 0.4778942867628756,
+      "sma_state_K": 0.2394621430974559
+    }
+  },
+  "interpretation": "Correlations are descriptive over six seed-material rows. They diagnose co-variation and do not establish causal attribution or a physical energy balance.",
+  "fresh_training_calls": 0,
+  "fresh_solver_calls": 0
+}

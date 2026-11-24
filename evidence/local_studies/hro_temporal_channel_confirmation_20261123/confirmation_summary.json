@@ -1,0 +1,23 @@
+{
+  "status": "curated_temporal_channel_confirmation_metrics",
+  "source": "evidence/experiments/hro_temporal_channel_confirmation_20261123/summary.json",
+  "source_sha256": "86479f730ab5cce5c750f3f4c781bfa196d3ca0c25549e622356813c00d20d1c",
+  "selected_candidate": "protected_state_sma_late_small",
+  "seeds": [20261121, 20261122, 20261123],
+  "updates_per_seed": 200,
+  "metrics": {
+    "sma_entry_K": 0.6212459858247451,
+    "htf_entry_K": 0.20252297077300405,
+    "sma_future_K": 0.6536377237837872,
+    "htf_future_K": 0.7250435122371245,
+    "combined_future_K": 0.6893406180104558,
+    "sma_late_K": 0.7527532989740616,
+    "sma_midlate_K": 0.6707462744190461,
+    "htf_late_K": 0.27156338621437803
+  },
+  "replay": {
+    "checkpoint_replays": 3,
+    "max_replay_absolute_difference": 0.0,
+    "fresh_solver_calls": 0
+  }
+}

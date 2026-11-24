@@ -68,5 +68,7 @@ The candidate is retained as the protected-state research checkpoint. The public
 - [Third-cycle material diagnostic](../evidence/local_studies/hro_protected_state_confirmation_20261123/material_stage_diagnostics.json)
 - [Material-conditioned HTF audit](HRO_MATERIAL_CONDITIONED_HTF.md)
 - [Third-cycle temporal error](HRO_THIRD_CYCLE_TEMPORAL_DIAGNOSTIC.md)
+- [Late-time profile results](HRO_TEMPORAL_PROFILE_RESULTS.md)
+- [HTF propagation diagnostic](../evidence/local_studies/hro_temporal_channel_confirmation_20261123/htf_propagation_diagnostic.json)
 - [Stage-resolved confirmation metrics](../evidence/local_studies/hro_protected_state_confirmation_20261123/stage_metrics.json)
 - [Energy boundary audit](HRO_ENERGY_BOUNDARY_AUDIT.md)

@@ -142,5 +142,25 @@ class HierarchicalTests(unittest.TestCase):
         self.assertTrue(torch.isfinite(weighted['field']))
         self.assertGreater(float((weighted['field']-base['field']).abs().detach()),0.)
 
+    def test_late_time_weight_is_optional_and_normalized(self):
+        out=self.model(self.initial,self.control,2,times=self.times,positions=self.positions)
+        truth=out['fields'].detach()+.25*self.times.view(1,1,1,-1,1)
+        base=joint_loss(out,self.truth,self.model.feature_scale,field_truth=truth,
+                        field_scale=torch.ones(2),positions=self.positions)
+        weighted=joint_loss(out,self.truth,self.model.feature_scale,field_truth=truth,
+                            field_scale=torch.ones(2),positions=self.positions,
+                            times=self.times,late_time_weight=.5)
+        self.assertTrue(torch.isfinite(weighted['field']))
+        self.assertGreater(float((weighted['field']-base['field']).abs().detach()),0.)
+
+    def test_late_time_channel_weights_can_restrict_profile(self):
+        out=self.model(self.initial,self.control,2,times=self.times,positions=self.positions)
+        truth=out['fields'].detach()+.25*self.times.view(1,1,1,-1,1)
+        weighted=joint_loss(out,self.truth,self.model.feature_scale,field_truth=truth,
+                            field_scale=torch.ones(2),positions=self.positions,
+                            times=self.times,late_time_weight=.5,
+                            late_time_channel_weights=[1.,0.])
+        self.assertTrue(torch.isfinite(weighted['field']))
+
 
 if __name__=='__main__':unittest.main()
