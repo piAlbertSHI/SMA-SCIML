@@ -32,10 +32,9 @@ SMA-SCIML 研究压力驱动形状记忆合金制冷中的力学、相变与传�
 | Modal decoder / 模态解码器 | Time-query attention → two sets of 24 spatial coefficients; exact stage-entry temperatures | Predict continuous fields with explicit spatial structure / 以显式空间结构预测连续温度场 |
 | Two-phase training / 双阶段训练 | 200 joint updates + 320 cached decoder updates; all 101 spatial points | Learn complete trajectories, then refine fields with the state backbone frozen / 训练完整轨迹，再冻结状态主干精炼温度场 |
 
-The model uses its own predicted states during autonomous rollout. Training spans two cycles; evaluation extends to three. The modal decoder shares latent memory with the state predictor, while decoded fields do not directly update the explicit state. It has **3,111,771 trainable parameters**. Three fixed-seed fits took **7.9 minutes** of CPU training, with no fresh physical simulations.
+The model uses its own predicted states during autonomous rollout. Training spans two cycles; evaluation extends to three. The modal decoder shares latent memory with the state predictor, while decoded fields do not directly update the explicit state. It has **3,111,771 trainable parameters**.
 
-自主推进使用模型自身的预测状态；训练覆盖两循环，评价延伸至三循环。模态解码器与状态预测器共享潜变量记忆，解码温度场不直接回写显式状态。模型包含 **3,111,771 个可训练参数**，三种子正式训练合计耗时 **7.9 分钟 CPU 时间**，未新增物理仿真。
-
+自主推进使用模型自身的预测状态；训练覆盖两循环，评价延伸至三循环。模态解码器与状态预测器共享潜变量记忆，解码温度场不直接回写显式状态。模型包含 **3,111,771 个可训练参数**。
 [Equations, dimensions and training settings / 公式、维度与训练设置](docs/HRO_MODAL.md) · [Research design and literature / 研究设计与论文对照](docs/HRO_RESEARCH_DESIGN.md) · [Editable architecture figure / 可编辑架构图](assets/hro_modal/architecture.svg)
 
 ## Multi-cycle benchmark / 多循环基准
@@ -82,17 +81,16 @@ The project also provides performance surrogates, DeepONet/Fourier/POD compariso
 
 项目还包含性能代理、DeepONet/Fourier/POD 对照、逆问题 PINN、保形不确定性校准及离线选样/设计研究。在**独立配置的 63 工况单循环数据集**中，性能集成相对 Ridge 将 COP 预测 RMSE 从 **0.0627 降至 0.0192**；固定检查点级联对照中，方向记忆接口将第四阶段 SMA 场误差从 **1.6966 降至 0.5927 K**。
 
-Matched-budget ablations, stage-consistent state/field coupling, uncertainty under extrapolation and energy accounting define the research directions. The historical constitutive implementation and material parameters have been recovered for compatible data expansion. The evidence is numerical; experimental validation and complete coupled energy closure remain open.
+Matched-budget ablations, stage-consistent state/field coupling, uncertainty under extrapolation and energy accounting define the research directions. 
 
-匹配预算的消融、符合阶段语义的状态／场耦合、外推不确定性及能量核算构成后续研究方向。历史本构实现及材料参数已恢复，可用于后续兼容性验证和数据扩充。现有证据来自数值数据，实验验证及完整耦合能量闭合仍待完成。
-
+匹配预算的消融、符合阶段语义的状态／场耦合、外推不确定性及能量核算构成后续研究方向。
 [Research overview / 研究概览](docs/SHOWCASE.md) · [Result gallery / 结果图集](docs/RESULTS_GALLERY.md) · [Data card / 数据说明](docs/DATA_CARD.md)
 
 ## Quickstart / 快速开始
 
 Python 3.12 · PyTorch · CPU. Verification and demonstrations use the bundled data and checkpoints.
 
-验证及演示使用仓库内的数据与检查点，支持 CPU 运行。
+验证及演示使用仓库内的数据与检查点。
 
 ```bash
 git clone https://github.com/piAlbertSHI/SMA-SCIML.git
