@@ -62,8 +62,8 @@ The candidate is retained as the protected-state research checkpoint. The public
 ## Evidence / 证据
 
 - [Trade-off and stage figure](../assets/hro_protected_state/protected_state_tradeoff.svg)
-- [Protected-state screening summary](../evidence/experiments/hro_protected_state_ablation_20261123/summary.json)
-- [Protected-state confirmation summary](../evidence/experiments/hro_protected_state_confirmation_20261123/summary.json)
+- [Protected-state screening summary](../evidence/local_studies/hro_protected_state_confirmation_20261123/screening_summary.json)
+- [Protected-state confirmation summary](../evidence/local_studies/hro_protected_state_confirmation_20261123/confirmation_summary.json)
 - [Third-cycle post-selection audit](../evidence/local_studies/hro_protected_state_confirmation_20261123/test_audit.json)
 - [Third-cycle material diagnostic](../evidence/local_studies/hro_protected_state_confirmation_20261123/material_stage_diagnostics.json)
 - [Material-conditioned HTF audit](HRO_MATERIAL_CONDITIONED_HTF.md)

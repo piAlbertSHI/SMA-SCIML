@@ -30,6 +30,4 @@ The next useful direction is a material-aware representation or a longer-cycle d
 
 ## Evidence / 证据
 
-- [Strong-weight screening summary](../evidence/experiments/hro_material_conditioned_ablation_20261123/summary.json)
-- [Refined-weight screening summary](../evidence/experiments/hro_material_conditioned_refined_20261123/summary.json)
-- [Curated material audit](../evidence/local_studies/hro_material_conditioned_20261123/summary.json)
+- [Curated material-conditioned audit summary](../evidence/local_studies/hro_material_conditioned_20261123/summary.json)
