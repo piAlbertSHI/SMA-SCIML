@@ -681,7 +681,7 @@
     "examples/validate_bundle.py": "b24494816488789e648a0c55fd0ddfc5ae1d0d485644d915077411067b01d733",
     "examples/verify_hierarchical.py": "8e0fb47e82613fc6b59555f8f64f24fe4bddc9db8b0e78b41c7fee3db7901712",
     "examples/verify_modal_evidence.py": "050e8c51f6f601ad89e6fbb402f448ab2b8460e7c6ff40b67f9b07bbad3b6734",
-    "README.md": "aae68c210768905b009eb6a7d83558494396dd4da08a9ca3d55d555e00206f18",
+    "README.md": "0b9ef1bfd9820781fe2f66807155cd97c5b47592c2de2c79779cb5ae47ff06c1",
     "requirements.txt": "710b03021968398b312d69081ab3bc67bcb98550e3618cb627896307dad23de6",
     "SciML/__init__.py": "5873b98123dd50ceea7e98f8f1e39e9cfc3a365bc675692d1602a5ab6f44ed2a",
     "SciML/active_learning/learning_design_loop.py": "39e364b361824a132b4d0a0deb245dcc5efa513511707e15336ab7afcd807b23",
